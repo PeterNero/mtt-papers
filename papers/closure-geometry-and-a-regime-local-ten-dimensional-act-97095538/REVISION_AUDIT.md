@@ -1,5 +1,25 @@
 # Proto-Spinor and Foundational Geometry Revision Audit
 
+## Current Editorial Revision: v5 (2026-09-12)
+
+This entry governs the current Action paper. The older multi-paper audit below is preserved as historical release evidence, not a new authorization to edit those papers.
+
+**Supersedes:** Current v4. Published DOI identity, provenance, and earlier revision notes are retained.
+
+**Reason:** The action ansatz needed the subsequent residual, anchor, cyclic-action, and full-string results in context. Its reduction statement also conflated linear inverse control with nonlinear elimination and a local effective action.
+
+**Resolution:** Sections `sec:repair-action`, `sec:anchor`, `sec:cyclic-action`, and `sec:string-cotangent` explain all four assigned frozen results. The examples distinguish central curvature from adjoint flatness, an anchored Helmholtz condition from a positive normal square, and an integrability action from the physical ten-dimensional action. The abstract now correctly says rank-four real alignment for one complex Higgs doublet. The reduction theorem explicitly requires a ball-preserving contraction for nonlinear elimination and a controlled derivative expansion for locality.
+
+**Retained:** Regime-local ansatz, finite SM/profile results, normalization and compact-resolvent gates. The cyclic action and shifted-cotangent completion retain their exact algebraic scope; no full physical BV or Lorentzian selection is inferred.
+
+**Open boundary:** Physical signed action, trace normalization and real slice, common visible endpoint, and BV-compatible compactification remain separate. The shared line's adjoint neutrality is not neutrality of every relative charged Hom lane.
+
+**Verification:** Required scoped build helper passed with one job and no reported TeX/BibTeX warnings. The PDF has 12 pages, all rendered and visually inspected; changed pages were also inspected at full render size. Bounded differentiation and matrix checks support the expository examples, not independent verification of all research packets.
+
+**Review record:** `editorial-reviews/2026-09-12/action_qg.json` carries four source-bound owner reviews, exact hashes, corrections, coverage, and build evidence. The helper's log root was redirected inside this paper, so no global build log was written. No release upload or global catalog update was performed.
+
+## Earlier Audit (Preserved)
+
 Date: 2026-07-15
 
 Status: implemented in new TeX versions; original `_work` projects preserved

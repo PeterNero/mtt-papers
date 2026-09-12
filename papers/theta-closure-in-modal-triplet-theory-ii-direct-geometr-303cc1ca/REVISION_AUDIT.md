@@ -1,5 +1,26 @@
 # Revision Audit: Theta Closure II
 
+## Version 3: Source-Bound Consumer Reconciliation (2026-09-12)
+
+Supersedes the current v2 source once. Retains released identity and the earlier
+audit below. Added `sec:revision-v3` after the abstract and
+`sec:theta-source-consumers` with separate exact Gate-1, complete three-cycle
+non-detection, and global b_K3 kernel imports. Frozen references are bound to
+manifest commit f141a20ea23c5c3ff19cc2161c0e226e29ade8a7. Flux owns the eta9
+context; Cohesive owns the large-gauge kernel explanation. No theorem body
+has been copied into this consumer.
+
+Corrected the appendix's dropped minimum: the full scalar gap is bounded by min(torus branch, Landau branch), not the Landau branch alone. At c=1 the torus eigenvalue is a concrete counterexample to the old stronger inequality. The same uniform 16.2553 lower bound and admissibility conclusion survive. Clarified the magnetic commutator reason for the Landau lower bound.
+
+The source-read/consumer dispositions, hashes and PDF inspection record are in
+`editorial-reviews/2026-09-12/flux.json`. The title/domain local-tube and B89
+candidates are evaluated separately there; a citation to another result is not
+a blanket consumer completion. The independently selected physical source,
+normalizations and paper-specific execution remain open. No scientific reruns,
+release actions, global catalogs or Kernel files are part of this revision.
+
+### Earlier Audit (Retained)
+
 Date: 2026-07-29
 
 ## Supersedes

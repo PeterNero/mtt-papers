@@ -1,12 +1,12 @@
 {
-  "abstract": "The Hull–Strominger system couples a conformally balanced Hermitian metric, holomorphic gauge bundles, Hermitian–Yang–Mills connections, torsion, and the differential Green–Schwarz identity on one compact complex threefold. This paper asks a precise question: when does a fixed point of a Modal Triplet Theory evolution determine a solution of that system? We define a typed bridge from an upstairs MTT configuration space to Hull–Strominger data and prove exact and residual fixed-point descent theorems. Exact descent requires the bridge to intertwine the selected MTT flow with a lower geometric flow, such as the Anomaly flow together with the required bundle evolutions. Approximate intertwining yields only a quantified equation residual. These results establish a conditional correspondence, not compactification selection. The former selection-potential, global-convexity, and automatic Fu–Yau claims are withdrawn. Established Fu–Yau and Anomaly-flow results provide a mathematically appropriate lower target, while the selected q=79 program still lacks one common rank-three visible–hidden Hull–Strominger tuple and a connection-preserving intertwiner from the MTT carrier.",
+  "abstract": "The Hull\u2013Strominger system couples a conformally balanced Hermitian metric, holomorphic gauge bundles, Hermitian\u2013Yang\u2013Mills connections, torsion, and the differential Green\u2013Schwarz identity on one compact complex threefold. This paper asks a precise question: when does a fixed point of a Modal Triplet Theory evolution determine a solution of that system? We define a typed bridge from an upstairs MTT configuration space to Hull\u2013Strominger data and prove exact and residual fixed-point descent theorems. Exact descent requires the bridge to intertwine the selected MTT flow with a lower geometric flow, such as the Anomaly flow together with the required bundle evolutions. Approximate intertwining bounds the lower generator; a full equation bound additionally requires control of the residual-to-generator map. A contextual analysis of the selected q=79 constructions separates the established hidden projective rank-nine bundle and existential Hermitian\u2013Yang\u2013Mills connection from the unconstructed physical visible rank-three bundle and common endpoint. Full Bott\u2013Chern injectivity supplies an anomaly potential once the same-source curvature pair exists, but does not supply positivity or integral differential flux data. A transverse Fu\u2013Yau shortcut is excluded for the required nonzero visible third Chern class; a full nontransverse residual compiler is available conditionally. These results establish a typed completion contract, not compactification selection or a physical action. The connection-preserving continuum intertwiner remains open.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "Version 2, July 2026",
+  "current_version": "v3",
+  "date": "Version 3, September 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17071766",
     "created": "2026-07-30T16:25:07.586713+00:00",
@@ -24,59 +24,117 @@
     ],
     "id": "21707236",
     "match_kind": "published_draft_reconciliation",
-    "match_score": 1.0,
+    "match_score": 1,
     "publication_date": "2026-07-30",
     "record_url": "https://zenodo.org/records/21707236",
     "resource_type": "publication",
-    "title": "Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
+    "title": "Modal Triplet Theory and the Hull\u2013Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
     "updated": "2026-07-30T16:25:07.966761+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "c7cbe4cc0ebe987609ae16a2520b6df9bf18aff70c503657b6a356a7ba2cba2d",
+  "main_tex_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
   "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
-  "paper_md_sha256": "7755c84179047b6c8c1ab1c70cf22714e73be8eeaacf07ce555dd5a27ffacbc9",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "8ee318f12b1e1f14e888996d86f616f3ccca2a391ebc50a8672db9608329068c",
+  "release_state": "current_revised_tex",
   "result_refs": [
+    "causal_base_q79_all_arity_source_promotion_packet",
+    "causal_base_q79_seven_row_endpoint_factorization_packet",
+    "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+    "causal_base_q79_symmetric_response_transferred_m4_packet",
+    "eta9_gate1_campaign",
+    "eta9_three_cycle_b96_nondetection",
     "hym_wiener_contraction",
     "literal_cech_witness",
+    "q79_bk3_rank_zero_kernel",
+    "q79_cech_projector_compiler",
+    "q79_cohesive_superconnection",
+    "q79_eta9_b89_same_source_rejection",
+    "q79_eta9_local_source_tube_consolidation",
     "q79_exact_audit",
-    "q79_exact_theorem"
+    "q79_exact_theorem",
+    "q79_global_fitting_descent",
+    "q79_hidden_qutrit_adjoint",
+    "q79_hidden_spectral_cutset",
+    "q79_maurer_cartan_repair",
+    "q79_projective_hym_naturality",
+    "q79_spectral_strain_hessian",
+    "q79_support_stratified_strain",
+    "qa_su3_support_program",
+    "unified_source_anti_splicing_audit",
+    "unified_source_atiyah_qutrit_chern_nogo",
+    "unified_source_balanced_holomorphic_p39",
+    "unified_source_bidirectional_ext",
+    "unified_source_bott_chern_injectivity",
+    "unified_source_bundle_cohesive_embedding",
+    "unified_source_candidate_adjudication",
+    "unified_source_clock_fixed_yoneda_column",
+    "unified_source_common_hym_chamber",
+    "unified_source_derived_yoneda_reduction",
+    "unified_source_frontier",
+    "unified_source_full_residual_hodge",
+    "unified_source_g3gm_arithmetic_correction",
+    "unified_source_global_wit0_rank9",
+    "unified_source_hidden_direct_stability",
+    "unified_source_hidden_perfect_complex",
+    "unified_source_hidden_projective_hym",
+    "unified_source_hs_global_stability",
+    "unified_source_metric_commutant",
+    "unified_source_monad_yoneda_rank4",
+    "unified_source_nontransverse_endpoint_compiler",
+    "unified_source_opposite_complex_bfield_wit",
+    "unified_source_physical_residual_transfer",
+    "unified_source_projective_translation_chern_weil",
+    "unified_source_qutrit_determinantal_torsion",
+    "unified_source_reverse_ext_nogo",
+    "unified_source_scale_orbit",
+    "unified_source_shared_line_theta_typing",
+    "unified_source_target_slope_nogo",
+    "unified_source_transverse_fuyau_nogo",
+    "unified_source_two_fiber_recombination",
+    "unified_source_upstream_lock",
+    "unified_source_yoneda_column_nogo",
+    "unified_source_zero_section_monad_nogo"
   ],
   "revision": {
     "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "63e4b4928f1be425e5b69193f9bd4a3676e249d10439985d34593ccc0dfe700d",
+    "revision_evidence_sha256": "b546b2f1fec2e2ab992325089bccdd466e67949a2f57c3c93274c5394be419da",
     "selected_revision": true,
     "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 4820,
-      "path": "main.bib",
-      "sha256": "290e1753deea15e28c385190de84c7db31f06eab0c70e425072caa6f8239cfbf"
-    },
-    {
-      "bytes": 29926,
-      "path": "main.tex",
-      "sha256": "c7cbe4cc0ebe987609ae16a2520b6df9bf18aff70c503657b6a356a7ba2cba2d"
-    },
-    {
-      "bytes": 398463,
-      "path": "main.pdf",
-      "sha256": "b061207fb5a80642231191614310d6339e3019c2892500ecd5353c55bdbd5ad2"
-    },
-    {
-      "bytes": 3402,
+      "bytes": 7571,
       "path": "REVISION_AUDIT.md",
-      "sha256": "63e4b4928f1be425e5b69193f9bd4a3676e249d10439985d34593ccc0dfe700d"
+      "sha256": "b546b2f1fec2e2ab992325089bccdd466e67949a2f57c3c93274c5394be419da"
+    },
+    {
+      "bytes": 27006,
+      "path": "main.bib",
+      "sha256": "960c16293debb3ac5e2fe2e63cf1b9f68dc21974a4a2723166b0a67386f4907f"
+    },
+    {
+      "bytes": 549977,
+      "path": "main.pdf",
+      "sha256": "bc786d8a60f4f2650bfe6164ed9e13b2b67c75ec83e6ac7fd6890f98214cc2a2"
+    },
+    {
+      "bytes": 73416,
+      "path": "main.tex",
+      "sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635"
+    },
+    {
+      "bytes": 4793,
+      "path": "paper-markdown.lua",
+      "sha256": "87f75625937572500559131217561f47781fc9059d5815305f0dd94c4eaf708c"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__From_MTT_to_the_Strominger__Heterotic_Flux__System"
   },
-  "source_tree_sha256": "9fcb390f92eec3716cc7a8bd0e926c1980d55bb0fc38713496b9a4a22eed9f93",
-  "title": "Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
-  "version_relation": "matches_latest_release",
+  "source_tree_sha256": "a8f9faafd1e0733cb5c9309e6fa0b843b4ee9283b21d5d91c170aede6b02d6ff",
+  "title": "Modal Triplet Theory and the Hull\u2013Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.17071766",
@@ -95,11 +153,11 @@
       ],
       "id": "21707236",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-30",
       "record_url": "https://zenodo.org/records/21707236",
       "resource_type": "publication",
-      "title": "Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
+      "title": "Modal Triplet Theory and the Hull\u2013Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
       "updated": "2026-07-30T16:25:07.966761+00:00",
       "version": "v2"
     },
@@ -120,7 +178,7 @@
       ],
       "id": "17071767",
       "match_kind": "title_or_file",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2025-09-07",
       "record_url": "https://zenodo.org/records/17071767",
       "resource_type": "publication",

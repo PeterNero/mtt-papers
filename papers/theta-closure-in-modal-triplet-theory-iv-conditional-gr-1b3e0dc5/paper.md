@@ -1,19 +1,36 @@
 ---
 abstract: |
-  We re-evaluate the propagation of the gauge-profile geometry into gravity and cosmology. Within the auxiliary six-dimensional $`S^1\times S^2\times\mathrm{Nil}_3`$ product ansatz of Papers I–III, the updated dimensionless internal-volume coefficient is $`\widehat V_{\mathrm{int}}=20.07064R_1^3`$. Restoring the common internal length $`\ell_{\mathrm{int}}`$ gives $`G_N^{-1}=20.07064\ell_{\mathrm{int}}^6R_1^3/G_{10}`$ if that auxiliary manifold is adopted as the compactification. It is not the selected q79/Fu–Yau space, so the coefficient is an ansatz diagnostic rather than the current MTT internal volume. Even within the ansatz, the gauge profile does not determine Newton’s constant without an absolute scale and fundamental gravity normalization. A gauge matching point does not by itself select the physical cutoff $`\Lambda_\Theta`$. The correctly normalized conditional relation is $`r\leq 2\epsilon^2(\Lambda_\Theta/M_{\mathrm{Pl}})^2/(\pi^2A_s)`$ when $`H\leq\epsilon\Lambda_\Theta`$. The paper therefore supplies conditional scaling laws and an assumption audit, not cross-sector numerical closure.
+  We re-evaluate the propagation of the gauge-profile geometry into gravity and cosmology. Within the auxiliary six-dimensional $`S^1\times S^2\times\mathrm{Nil}_3`$ product ansatz introduced here from the auxiliary supports of Papers I–III, the updated dimensionless internal-volume coefficient is $`\widehat V_{\mathrm{int}}=20.07064R_1^3`$. Restoring the common internal length $`\ell_{\mathrm{int}}`$ gives $`G_N^{-1}=20.07064\ell_{\mathrm{int}}^6R_1^3/G_{10}`$ if that auxiliary manifold is adopted as the compactification. It is not the selected q79/Fu–Yau space, so the coefficient is an ansatz diagnostic rather than the current MTT internal volume. Even within the ansatz, the gauge profile does not determine Newton’s constant without an absolute scale and fundamental gravity normalization. A gauge matching point does not by itself select the physical cutoff $`\Lambda_\Theta`$. The correctly normalized conditional relation is $`r\leq 2\epsilon^2(\Lambda_\Theta/M_{\mathrm{Pl}})^2/(\pi^2A_s)`$ when $`H\leq\epsilon\Lambda_\Theta`$. The paper therefore supplies conditional scaling laws and an assumption audit, not cross-sector numerical closure.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: fcc5f36857314f9df2a8c2dd37dc7e098cf74a14ccee3065808846be317b3d4d
+current_version: v3
+date: September 2026 (Version 3)
+generated_from_main_tex_sha256: 9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6
 paper_id: theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: "Theta Closure in Modal Triplet Theory IV: Conditional Gravity Scaling and Cosmological Cutoff Audit"
 zenodo_doi: 10.5281/zenodo.21666012
 zenodo_record_id: 21666012
 zenodo_url: "https://zenodo.org/records/21666012"
 ---
+
+# Version 3 Revision Note
+
+Supersedes.
+Version 2 of this paper; released identifiers are retained.
+
+Reason.
+The calibration boundary was present, but the selected-source owner results and their distinct scopes were not explicitly connected to it.
+
+Resolution.
+Version 3 imports the exact Gate 1, three-cycle and large-gauge-kernel conclusions through their owners, and retains the independent absolute-scale and cosmological inputs.
+
+Retained.
+The existing calibrated or conditional result, its numerical inputs and all earlier revision notes are retained.
+
+Open boundary.
+A selected physical source, its action normalization and the paper-specific execution inputs remain necessary for a held-out prediction.
 
 # Revision note for this edition
 
@@ -210,6 +227,37 @@ Within the auxiliary product ansatz, the updated gauge profile fixes the dimensi
 
 The cosmological result is likewise a conditional scaling law. The obsolete few-TeV gauge crossing cannot serve as a physical coherence cutoff, and the legacy numerical tensor bound is withdrawn. A future closure theorem must select $`\Lambda_\Theta`$, the quantitative margin $`\epsilon`$, and the applicable cosmological state before Equation <a href="#eq:r_bound_general" data-reference-type="eqref" data-reference="eq:r_bound_general">[eq:r_bound_general]</a> becomes a numerical prediction. Paper IV therefore documents cross-sector dependencies and correct formulas; it does not establish gravity or cosmology closure.
 
+# Selected-source results and this paper’s boundary
+
+The eta9 imports are owned contextually by *Flux Compactifications in Heterotic String Theory*, in the sections on the selected source and the integral comparison, and completed local tests and the global endpoint. Gate 1 closes the original-Jacobian campaign at all 30 groups and 225 selected columns . This is an exact finite source calculation, not the global integral meridian, the 248-coordinate readout or the analytic Deligne class $`\beta_{\mathbb C}`$.
+
+The completed three-cycle transport has independent cycles with Gram matrix $`-2I_3`$ and zero detected affine pairings . Its scope is a non-detecting subsystem: it does not prove global triviality of the twist, and rerunning that same subsystem is not the missing detection theorem. Neither this conclusion nor the finite gate identifies an auxiliary Circle–Lens–Nil model with the physical q79 topology.
+
+The large-gauge result is owned by *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows*, in its subsection on the rank-zero large-gauge kernel. It gives an injective immersion $`b_{K3}:\mathbb R^2\to\mathbb T^{20}`$ with dense nonclosed image . Rank zero counts periodic gauge identifications, not source coordinates or physical modes. It removes a kernel ambiguity without requiring numerical periods, but does not provide kinetic normalization, the selected shared-circle action or the unrelated eta9 affine lift.
+
+For Paper IV, these theorems neither supply the q79 volume nor determine $`\ell_{\mathrm{int}}`$, $`G_{10}`$ or a cosmological state. The auxiliary product used here is an additional diagnostic ansatz, not a consequence of the operator supports in Papers I–III. No rank, kernel or transport certificate turns the matching convention $`Q=M_t`$ into a physical cutoff. The conditional Newton scaling and tensor inequality keep their stated independent inputs.
+
+The managed evidence block below retains its earlier frozen profile snapshot. Its historical source-status labels do not supersede the current exact, local and open boundaries just stated or reopen the retained hidden-HYM existence and shared-primitive Standard Model results.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+This paper audits possible gravity and cosmology scaling from gauge-profile geometry. None of the mapped Standard Model packets derives a physical gravitational normalization or cosmological cutoff, so all closed rows below are corpus-state cross-checks rather than direct proof. The strict upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 #### Corpus-state cross-checks.
 
 - (*profile replay*).
@@ -270,40 +318,15 @@ The cosmological result is likewise a conditional scaling law. The obsolete few-
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
-
-This paper audits possible gravity and cosmology scaling from gauge-profile geometry. None of the mapped Standard Model packets derives a physical gravitational normalization or cosmological cutoff, so all closed rows below are corpus-state cross-checks rather than direct proof. The strict upgrade remains open.
-
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
-
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
-
-## Corpus-state cross-checks
-
-- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
-- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
-- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
-- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
-- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
-- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
-- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
-- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
-- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
-
-## Open boundary (not evidence of closure)
-
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
-
 <div class="thebibliography">
 
 99
+
+P. Nero, *Selected eta9 original-Jacobian Gate 1 campaign* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json).
+
+P. Nero, *Complete selected three-cycle non-detection decision* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json).
+
+P. Nero, *Selected K3 rank-zero large-gauge kernel* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json).
 
 M. J. Duff, B. E. W. Nilsson, and C. N. Pope, *Kaluza–Klein supergravity*, Physics Reports **130** (1986) 1–142. <https://doi.org/10.1016/0370-1573(86)90163-8>
 

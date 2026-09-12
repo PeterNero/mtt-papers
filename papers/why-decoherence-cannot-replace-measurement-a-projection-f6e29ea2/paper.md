@@ -5,11 +5,11 @@ abstract: |
   An MTT basin boundary or chart exit has the same logical limitation: it marks the failure of a supplied effective chart, but it does not choose a successor basin. A complete outcome-resolved model must additionally provide an outcome-indexed completely positive instrument or a normalized selection-completion kernel, together with its source and domain. This yields a rigorous conditional bridge between record-discarded intra-basin suppression and record-resolved inter-basin continuation. Both are ordinary physical dynamics; the distinction concerns which data the effective description retains. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, but general apparatus contexts, a universal Born-source theorem, and objective single-history actualization remain open. Projection, noninjectivity, admissibility loss, and chart exit alone specify none of those missing outcome-resolved data.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026 Version 2
-generated_from_main_tex_sha256: 64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03
+current_version: v3
+date: 12 September 2026 Version 3
+generated_from_main_tex_sha256: 76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5
 paper_id: why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: |
   **Why Decoherence Cannot Replace Measurement
@@ -18,6 +18,33 @@ zenodo_doi: 10.5281/zenodo.21666019
 zenodo_record_id: 21666019
 zenodo_url: "https://zenodo.org/records/21666019"
 ---
+
+# Why Decoherence Cannot Replace Measurement Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory
+
+Peter Nero. 12 September 2026 Version 3
+
+## Abstract
+
+Measurement is not taken to be a fundamental act, an observer intervention, or a separate kind of physics. It is an ordinary system–apparatus–environment process described with a retained physical record. If that record is discarded, the same coupling is represented only by a nonselective channel. Decoherence can suppress interference and stabilize preferred records, but the record-discarded channel does not contain an outcome label or a conditional state update. We make this data distinction exact in finite-dimensional quantum theory and then state its consequence for Modal Triplet Theory (MTT). For a pointer resolution $`\{P_a\}`$, the dephasing channel $`\Delta_P(\rho)=\sum_aP_a\rho P_a`$ is completely positive and trace preserving, removes every off-diagonal pointer block, and preserves all pointer populations. We prove that the same nonselective channel is compatible with distinct outcome instruments having different probability laws. Hence the channel alone specifies neither records nor their probabilities.
+
+An MTT basin boundary or chart exit has the same logical limitation: it marks the failure of a supplied effective chart, but it does not choose a successor basin. A complete outcome-resolved model must additionally provide an outcome-indexed completely positive instrument or a normalized selection-completion kernel, together with its source and domain. This yields a rigorous conditional bridge between record-discarded intra-basin suppression and record-resolved inter-basin continuation. Both are ordinary physical dynamics; the distinction concerns which data the effective description retains. The current canonical q79 binary recorder supplies an exact stopped-output law on its declared finite domain, but general apparatus contexts, a universal Born-source theorem, and objective single-history actualization remain open. Projection, noninjectivity, admissibility loss, and chart exit alone specify none of those missing outcome-resolved data.
+
+# Version 3 Revision Note
+
+Supersedes
+Version 2 as current source; its release identity and historical revision note are retained.
+
+Reason
+The conditional continuum compiler and operational ontology result need explicit consumer treatment beside channel underdetermination.
+
+Resolution
+The new source interface states the owner, hypotheses, transported record data, and ontology limit without duplicating proofs.
+
+Retained
+The finite channel/instrument and chart-exit theorems and closed canonical recorder result remain unchanged.
+
+Open boundary
+The physical continuum source, arbitrary apparatuses, memory control, and any objective actualization rule remain unselected.
 
 # Version 2 Revision Note
 
@@ -40,17 +67,17 @@ General apparatus transport, finite-bandwidth and non-Markov corrections, a univ
 
 Throughout this paper, “measurement” names no privileged physical process. It means an ordinary interaction whose macroscopic record is included in the description. The title’s phrase “cannot replace” is therefore a statement about information: a record-discarded marginal cannot provide the outcome-resolved data that were discarded.
 
-Environment-induced decoherence is a dynamical account of interference suppression and pointer stability . The definite-outcome problem asks for something else: why an individual run has a recorded outcome, what its conditional post-measurement state is, and what law governs the alternatives. Conflating these questions obscures both the success of decoherence and the data still required for measurement.
+Environment-induced decoherence is a dynamical account of interference suppression and pointer stability \[[2](#ref-Zurek2003),[3](#ref-Schlosshauer2005)\]. The definite-outcome problem asks for something else: why an individual run has a recorded outcome, what its conditional post-measurement state is, and what law governs the alternatives. Conflating these questions obscures both the success of decoherence and the data still required for measurement.
 
 This revision separates four claim tiers.
 
-1.  **Established measurement mathematics.** Channels describe nonselective dynamics; instruments describe outcome probabilities and conditional updates .
+1.  **Established measurement mathematics.** Channels describe nonselective dynamics; instruments describe outcome probabilities and conditional updates \[[1](#ref-DaviesLewis1970)\].
 
 2.  **Exact result of this paper.** A dephasing channel does not determine an instrument, and loss of an effective chart does not determine a continuation kernel.
 
 3.  **Conditional MTT bridge.** If a selected MTT descent emits basins, basin-preserving channels, and an inter-basin completion instrument, then record-discarded and record-resolved descriptions can be represented as intra- and inter-basin operations of the same physical system.
 
-4.  **Current selected finite-domain result.** The canonical q79 binary one-anchor recorder emits an operational stopped-output measure and second-moment capture descent on its declared domain . This is not yet a universal apparatus theorem or an objective single-history theorem.
+4.  **Current selected finite-domain result.** The canonical q79 binary one-anchor recorder emits an operational stopped-output measure and second-moment capture descent on its declared domain \[[6](#ref-NeroQ79Recorder)\]. This is not yet a universal apparatus theorem or an objective single-history theorem.
 
 No result below derives a Born source, physical time, entropy arrow, or objective actualization from projection alone. The analysis is finite-dimensional so that every map and norm is elementary. The distinction extends to normal instruments on operator algebras, but that extension is not needed here.
 
@@ -64,20 +91,20 @@ A finite pointer resolution is a family of mutually orthogonal projections $`P=\
 
 <div class="definition">
 
-**Definition 1** (Nonselective dephasing channel). The $`P`$-dephasing channel is
+**Definition 1** (Nonselective dephasing channel). The $`P`$-dephasing channel is <a id="eq:dephasing"></a>
 ``` math
 \begin{equation}
  \Delta_P(\rho)=\sum_{a\in A}P_a\rho P_a.
- \label{eq:dephasing}
+
 \end{equation}
 ```
-Its pointer-coherence functional is
+Its pointer-coherence functional is <a id="eq:coherence"></a>
 ``` math
 \begin{equation}
  C_P(\rho)^2
  =\sum_{\substack{a,b\in A\\a\neq b}}
    \lVert P_a\rho P_b\rVert_2^2,
- \label{eq:coherence}
+
 \end{equation}
 ```
 where $`\lVert X\rVert_2^2=\operatorname{Tr}(X^\dagger X)`$.
@@ -98,7 +125,7 @@ for all $`a\in A`$.*
 
 <div class="proof">
 
-*Proof.* Equation <a href="#eq:dephasing" data-reference-type="eqref" data-reference="eq:dephasing">[eq:dephasing]</a> is a Kraus representation with Kraus operators $`P_a`$, and $`\sum_aP_a^\dagger P_a=I`$. Orthogonality gives $`P_a\Delta_P(\rho)P_b=0`$ for $`a\neq b`$, proving the first identity. Cyclicity of the trace and $`P_aP_b=\delta_{ab}P_a`$ give the second. ◻
+*Proof.* Equation [(2.1)](#eq:dephasing) is a Kraus representation with Kraus operators $`P_a`$, and $`\sum_aP_a^\dagger P_a=I`$. Orthogonality gives $`P_a\Delta_P(\rho)P_b=0`$ for $`a\neq b`$, proving the first identity. Cyclicity of the trace and $`P_aP_b=\delta_{ab}P_a`$ give the second. ◻
 
 </div>
 
@@ -125,14 +152,14 @@ An ordinary physical coupling can be represented at two resolutions. If its clas
 ``` math
 \mathcal I_{\mathrm{ns}}=\sum_{a\in A}\mathcal I_a
 ```
-is trace preserving. For input $`\rho`$ it defines
+is trace preserving. For input $`\rho`$ it defines <a id="eq:instrument-law"></a>
 ``` math
 \begin{equation}
  p(a\mid\rho)=\operatorname{Tr}\mathcal I_a(\rho),
  \qquad
  \rho_a=\frac{\mathcal I_a(\rho)}{p(a\mid\rho)}
  \quad\text{when }p(a\mid\rho)>0.
- \label{eq:instrument-law}
+
 \end{equation}
 ```
 
@@ -142,7 +169,7 @@ The instrument contains three pieces absent from the record-discarded channel: a
 
 <div id="thm:underdetermination" class="theorem">
 
-**Theorem 5** (A nonselective channel does not select an instrument). *The dephasing channel $`\Delta_P`$ does not determine outcome probabilities or conditional states. In particular, for the two-outcome qubit resolution of Example <a href="#ex:qubit" data-reference-type="ref" data-reference="ex:qubit">3</a>, the Lüders instrument
+**Theorem 5** (A nonselective channel does not select an instrument). *The dephasing channel $`\Delta_P`$ does not determine outcome probabilities or conditional states. In particular, for the two-outcome qubit resolution of Example [2.3](#ex:qubit), the Lüders instrument
 ``` math
 \mathcal I_0(\rho)=P_0\rho P_0,\qquad
  \mathcal I_1(\rho)=P_1\rho P_1
@@ -158,7 +185,7 @@ have the same nonselective channel $`\Delta_P`$. On $`\lvert+\rangle\langle+\rve
 
 <div class="proof">
 
-*Proof.* Each displayed map is completely positive and trace nonincreasing. Both families sum to $`\Delta_P`$. Their probabilities follow from Equation <a href="#eq:instrument-law" data-reference-type="eqref" data-reference="eq:instrument-law">[eq:instrument-law]</a>. Choosing $`q\neq1/2`$ proves that the same nonselective channel is compatible with different outcome laws. Their conditional states also differ: the Lüders instrument gives $`P_a`$, whereas $`\mathcal J^{(q)}_a`$ gives the same dephased state for either nonzero outcome. ◻
+*Proof.* Each displayed map is completely positive and trace nonincreasing. Both families sum to $`\Delta_P`$. Their probabilities follow from Equation [(3.1)](#eq:instrument-law). Choosing $`q\neq1/2`$ proves that the same nonselective channel is compatible with different outcome laws. Their conditional states also differ: the Lüders instrument gives $`P_a`$, whereas $`\mathcal J^{(q)}_a`$ gives the same dephased state for either nonzero outcome. ◻
 
 </div>
 
@@ -180,29 +207,29 @@ The basin language used in MTT can be made precise without turning chart failure
 ``` math
 K_\partial(a,d\sigma\mid\eta)
 ```
-on $`A\times\mathsf D(\mathcal H)`$ satisfying
+on $`A\times\mathsf D(\mathcal H)`$ satisfying <a id="eq:kernel-normalization"></a><a id="eq:kernel-support"></a>
 ``` math
 \begin{align}
  &\sum_{a\in A}\int_{\mathsf D(\mathcal H)}
  K_\partial(a,d\sigma\mid\eta)=1,
- \label{eq:kernel-normalization}\\
+ \\
  &K_\partial\bigl(a,\mathsf D(\mathcal H)\setminus\mathcal B_a\mid\eta\bigr)=0.
- \label{eq:kernel-support}
+
 \end{align}
 ```
-Its nonselective continuation is the barycenter
+Its nonselective continuation is the barycenter <a id="eq:barycenter"></a>
 ``` math
 \begin{equation}
  T_K(\eta)=
  \sum_{a\in A}\int_{\mathsf D(\mathcal H)}
  \sigma\,K_\partial(a,d\sigma\mid\eta).
- \label{eq:barycenter}
+
 \end{equation}
 ```
 
 </div>
 
-A deterministic continuation is the special case in which the kernel is a point mass. An affine completely positive realization is more strongly encoded by an instrument. Definition <a href="#def:kernel" data-reference-type="ref" data-reference="def:kernel">7</a> is deliberately minimal: it completes the effective mathematical description; it does not add a special physical act. It exposes exactly the data that the phrase “capture into a basin” must supply.
+A deterministic continuation is the special case in which the kernel is a point mass. An affine completely positive realization is more strongly encoded by an instrument. Definition [4.1](#def:kernel) is deliberately minimal: it completes the effective mathematical description; it does not add a special physical act. It exposes exactly the data that the phrase “capture into a basin” must supply.
 
 <div id="prop:chart" class="proposition">
 
@@ -216,7 +243,7 @@ and
 K^{(1)}_\partial(a,d\sigma\mid\eta)
  =\delta_{a1}\delta_{\sigma_1}(d\sigma)
 ```
-satisfy Equations <a href="#eq:kernel-normalization" data-reference-type="eqref" data-reference="eq:kernel-normalization">[eq:kernel-normalization]</a> and <a href="#eq:kernel-support" data-reference-type="eqref" data-reference="eq:kernel-support">[eq:kernel-support]</a>, while producing different outcomes and continuations.*
+satisfy Equations [(4.1)](#eq:kernel-normalization) and [(4.2)](#eq:kernel-support), while producing different outcomes and continuations.*
 
 </div>
 
@@ -256,7 +283,7 @@ The useful core of the original paper can now be stated without overclaiming.
 
 <div class="proof">
 
-*Proof.* The first two statements are immediate from the declared domains and support conditions. The last follows from Theorem <a href="#thm:underdetermination" data-reference-type="ref" data-reference="thm:underdetermination">5</a> at channel level and Proposition <a href="#prop:chart" data-reference-type="ref" data-reference="prop:chart">8</a> at chart-boundary level. ◻
+*Proof.* The first two statements are immediate from the declared domains and support conditions. The last follows from Theorem [3.2](#thm:underdetermination) at channel level and Proposition [4.2](#prop:chart) at chart-boundary level. ◻
 
 </div>
 
@@ -274,9 +301,9 @@ The arrow is a typed representation, not an ontological division into “measure
 
 # What Current MTT Results Supply
 
-Several earlier formulations attributed too much to noninvertible projection. A noninjective map can identify microscopic states without selecting a time arrow, an entropy law, a probability measure, or a representative of each fiber. The corrected MTT shadow-bridge analysis states exact descent and restricted-recovery criteria and treats measurement instruments as selected updates, not inverse maps .
+Several earlier formulations attributed too much to noninvertible projection. A noninjective map can identify microscopic states without selecting a time arrow, an entropy law, a probability measure, or a representative of each fiber. The corrected MTT shadow-bridge analysis states exact descent and restricted-recovery criteria and treats measurement instruments as selected updates, not inverse maps \[[4](#ref-NeroProjectionProbability)\].
 
-There is nevertheless a concrete positive result. On the canonical q79 binary one-anchor Fock recorder, the selected normal state on the commuting nondemolition output algebra induces a stopped output law, and second-moment capture descent is exact on the declared finite-symbol domain . No observed probability or fitted stochastic parameter is added on that domain.
+There is nevertheless a concrete positive result. On the canonical q79 binary one-anchor Fock recorder, the selected normal state on the commuting nondemolition output algebra induces a stopped output law, and second-moment capture descent is exact on the declared finite-symbol domain \[[6](#ref-NeroQ79Recorder)\]. No observed probability or fitted stochastic parameter is added on that domain.
 
 That theorem closes an operational finite-domain row; it does not prove:
 
@@ -292,23 +319,31 @@ That theorem closes an operational finite-domain row; it does not prove:
 
 Those statements require their own same-source theorems.
 
+<a id="sec:recorder-source-interface"></a>
+
+## Source transport does not remove underdetermination
+
+The Born/record companion contextualizes the frozen canonical output law and the conditional continuum compiler \[[12](#ref-BornCompanion),[8](#ref-FrozenFock),[9](#ref-FrozenContinuum)\]. The latter requires a supplied positive self-adjoint Hessian, an invariant rank-three sector with kernel/support ranks one and two, and a selected isometry intertwining its projectors with the finite pair. With the same clock and minimal coupling, it transports the stopped instrument, including conditional states. Approximate intertwiners give bounded-horizon estimates, with a probability floor needed after conditional normalization. It is not a theorem that any decohering channel supplies those inputs; physical endpoint, finite map and tails, and clock selection remain additional obligations.
+
+The Locality companion explains the separate operational ontology non-entailment result \[[11](#ref-LocalityCompanion),[10](#ref-FrozenOntology)\]. Single-record and coactual completions can share the same channel, dilation, and state-valued instrument; the canonical 448-atom partition supplies the finite single-record witness. This is a stronger-data distinction than Theorem [3.2](#thm:underdetermination): specifying an instrument removes channel-level ambiguity about record probabilities, but it still supplies no actuality predicate. The countermodel neither selects a universal hidden-variable theory nor refutes many-worlds. It prevents an exact operational transport result from being reported as an ontological choice.
+
 # Relation to Standard Outcome-Resolved Dynamics
 
 ## Decoherence and pointer stability
 
-Standard decoherence theory derives suppression of interference in reduced states through system–environment entanglement and explains the dynamical selection and stability of preferred pointer structures . Proposition <a href="#prop:dephasing" data-reference-type="ref" data-reference="prop:dephasing">2</a> is the finite idealization of this nonselective effect. It agrees with, rather than replaces, the standard account.
+Standard decoherence theory derives suppression of interference in reduced states through system–environment entanglement and explains the dynamical selection and stability of preferred pointer structures \[[2](#ref-Zurek2003),[3](#ref-Schlosshauer2005)\]. Proposition [2.2](#prop:dephasing) is the finite idealization of this nonselective effect. It agrees with, rather than replaces, the standard account.
 
 ## Instruments and trajectories
 
-The Davies–Lewis instrument formalism associates classical outcome statistics and conditional quantum operations with a measurement . Quantum-trajectory descriptions add a monitored record and an unravelling of a nonselective master equation. Different unravellings can represent the same ensemble channel, so the master equation alone does not select a unique record process. This is not evidence for a special measurement force. It says only that MTT must emit the ordinary detector coupling, physical readout, and outcome-resolved instrument, not merely reproduce their record-discarded reduced channel.
+The Davies–Lewis instrument formalism associates classical outcome statistics and conditional quantum operations with a measurement \[[1](#ref-DaviesLewis1970)\]. Quantum-trajectory descriptions add a monitored record and an unravelling of a nonselective master equation. Different unravellings can represent the same ensemble channel, so the master equation alone does not select a unique record process. This is not evidence for a special measurement force. It says only that MTT must emit the ordinary detector coupling, physical readout, and outcome-resolved instrument, not merely reproduce their record-discarded reduced channel.
 
 ## Redundant records
 
-Environmental redundancy can explain why information in a pointer observable is robustly accessible. Redundancy is compatible with the distinction made here: it concerns the proliferation of record information, whereas Theorem <a href="#thm:underdetermination" data-reference-type="ref" data-reference="thm:underdetermination">5</a> concerns the missing outcome-resolved law when only the nonselective channel is supplied. No claim that Darwinism presupposes a particular MTT selection mechanism is needed.
+Environmental redundancy can explain why information in a pointer observable is robustly accessible. Redundancy is compatible with the distinction made here: it concerns the proliferation of record information, whereas Theorem [3.2](#thm:underdetermination) concerns the missing outcome-resolved law when only the nonselective channel is supplied. No claim that Darwinism presupposes a particular MTT selection mechanism is needed.
 
 ## Collapse models
 
-Objective-collapse models append nonlinear or stochastic state dynamics that does more than suppress ensemble coherences. Whether an MTT limit reproduces one such model is a separate source-and-error problem. Even an exact dephasing semigroup can possess a random-unitary unravelling and therefore does not by itself prove objective collapse .
+Objective-collapse models append nonlinear or stochastic state dynamics that does more than suppress ensemble coherences. Whether an MTT limit reproduces one such model is a separate source-and-error problem. Even an exact dephasing semigroup can possess a random-unitary unravelling and therefore does not by itself prove objective collapse \[[5](#ref-NeroGravityCollapse)\].
 
 # Consequences and Non-Consequences
 
@@ -318,7 +353,7 @@ If the Lüders instrument is supplied, then
 ``` math
 p(a\mid\rho)=\operatorname{Tr}(P_a\rho)
 ```
-follows immediately. This is an evaluation of a selected instrument, not a derivation of that instrument from decoherence. Basin sizes can represent arbitrary finite probability vectors, so matching target weights by basin volume is not predictive unless the measure and partition were independently selected .
+follows immediately. This is an evaluation of a selected instrument, not a derivation of that instrument from decoherence. Basin sizes can represent arbitrary finite probability vectors, so matching target weights by basin volume is not predictive unless the measure and partition were independently selected \[[4](#ref-NeroProjectionProbability)\].
 
 ## Irreversibility
 
@@ -386,46 +421,79 @@ Measurement is ordinary physics. Nothing in this paper gives it a fundamental st
 
 This does not invalidate the MTT basin picture. It makes the picture precise. Intra-basin suppression and inter-basin record formation may be stages or resolutions of one physical process once both are emitted from selected source data. MTT already has an exact operational account on one canonical finite q79 recorder domain. Extending that result to general apparatus contexts and controlled memory effects is the operational frontier. Objective single-history actualization is a separate, stronger question, not part of what makes an ordinary interaction a measurement.
 
-#### Open boundary (not evidence of closure).
-
-- (*open*).
-
-  Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-
 <!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
 The separation between a nonselective channel and an outcome instrument is proved within the paper. The open strict-upgrade ledger supplies no outcome law, Born source, or one-history selection and is cited only as a stronger unresolved corpus boundary.
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
 
-## Open boundary (not evidence of closure)
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
 
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+= by -
 <!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
-<div class="thebibliography">
+#### Open boundary (not evidence of closure).
 
-99
+- (*open*).
 
-E. B. Davies and J. T. Lewis, *An operational approach to quantum probability*, Communications in Mathematical Physics **17**, 239–260 (1970). <https://doi.org/10.1007/BF01647093>
+  Historical 2/9 strict no-knob ledger snapshot, not a current global completion count.
 
-W. H. Zurek, *Decoherence, einselection, and the quantum origins of the classical*, Reviews of Modern Physics **75**, 715–775 (2003). <https://doi.org/10.1103/RevModPhys.75.715>
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-M. Schlosshauer, *Decoherence, the measurement problem, and interpretations of quantum mechanics*, Reviews of Modern Physics **76**, 1267–1305 (2005). <https://doi.org/10.1103/RevModPhys.76.1267>
+# References
 
-P. Nero, *Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, corrected version 3 manuscript (2026); latest released concept record: <https://doi.org/10.5281/zenodo.18256408>
+<a id="ref-DaviesLewis1970"></a>
 
-P. Nero, *Gravitationally Induced Collapse as an Effective Limit of Modal Triplet Theory*, corrected version 3 manuscript (2026).
+\[1\] E. B. Davies and J. T. Lewis, *An operational approach to quantum probability*, Communications in Mathematical Physics **17**, 239–260 (1970). <https://doi.org/10.1007/BF01647093>
 
-P. Nero, *Canonical q79 Fock Output Measure and Second-Moment Capture Descent Theorem*, MTT QM Source Proof repository (2026). <https://github.com/PeterNero/mtt-qm-source-proof>
+<a id="ref-Zurek2003"></a>
 
-P. Nero, *Modal Triplet Theory: Foundation*, Zenodo (2025). <https://doi.org/10.5281/zenodo.16949762>
+\[2\] W. H. Zurek, *Decoherence, einselection, and the quantum origins of the classical*, Reviews of Modern Physics **75**, 715–775 (2003). <https://doi.org/10.1103/RevModPhys.75.715>
 
-</div>
+<a id="ref-Schlosshauer2005"></a>
+
+\[3\] M. Schlosshauer, *Decoherence, the measurement problem, and interpretations of quantum mechanics*, Reviews of Modern Physics **76**, 1267–1305 (2005). <https://doi.org/10.1103/RevModPhys.76.1267>
+
+<a id="ref-NeroProjectionProbability"></a>
+
+\[4\] P. Nero, *Projection, Probability, and Irreversibility: Shadow Bridges Between Measurement, Black Holes, and Cosmology in Modal Triplet Theory*, corrected version 3 manuscript (2026); latest released concept record: <https://doi.org/10.5281/zenodo.18256408>
+
+<a id="ref-NeroGravityCollapse"></a>
+
+\[5\] P. Nero, *Gravitationally Induced Collapse as an Effective Limit of Modal Triplet Theory*, corrected version 3 manuscript (2026).
+
+<a id="ref-NeroQ79Recorder"></a>
+
+\[6\] P. Nero, *Canonical q79 Fock Output Measure and Second-Moment Capture Descent Theorem*, MTT QM Source Proof repository (2026). <https://github.com/PeterNero/mtt-qm-source-proof>
+
+<a id="ref-NeroFoundation"></a>
+
+\[7\] P. Nero, *Modal Triplet Theory: Foundation*, Zenodo (2025). <https://doi.org/10.5281/zenodo.16949762>
+
+<a id="ref-FrozenFock"></a>
+
+\[8\] P. Nero, *Canonical q79 Fock output measure and second-moment capture descent*, frozen source (2026). <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_fock_output_measure/artifact.json>.
+
+<a id="ref-FrozenContinuum"></a>
+
+\[9\] P. Nero, *Continuum Hessian-to-recorder compiler*, frozen source (2026). <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_continuum_recorder_compiler/artifact.json>.
+
+<a id="ref-FrozenOntology"></a>
+
+\[10\] P. Nero, *q79 operational ontology non-entailment*, frozen source (2026). <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_ontology_nonentailment/artifact.json>.
+
+<a id="ref-LocalityCompanion"></a>
+
+\[11\] P. Nero, *Locality, Coherent Alternatives, and Physical Records: An Interpretive Account of Quantum Experiments in Modal Triplet Theory*, unpublished version 2 (September 2026), subsection *Operational data do not force many actual worlds*.
+
+<a id="ref-BornCompanion"></a>
+
+\[12\] P. Nero, *Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface*, current version 3 (September 2026), Section 4. Released concept DOI: 10.5281/zenodo.18261841.

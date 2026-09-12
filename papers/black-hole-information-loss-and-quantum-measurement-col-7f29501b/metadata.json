@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026 Version 2",
+  "current_version": "v3",
+  "date": "12 September 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261429",
     "created": "2026-07-29T08:49:51.796214+00:00",
@@ -32,36 +32,45 @@
     "updated": "2026-07-29T08:49:52.175496+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "6e5d29deb56f49389363232615d6288d1ff0f402d22c84d9313cc3e92495345d",
+  "main_tex_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
   "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
-  "paper_md_sha256": "79fc5d2912b34028c76d7ad8da729f50059defa744e1d342cb5e5b1f360cf338",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "1a638cd3eef3492b66e43dc6d9a6795916954fe87d46f38346a08cadc9b50927",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "q79_continuum_recorder_compiler",
+    "q79_fock_output_measure",
+    "q79_ontology_nonentailment"
+  ],
   "revision": {
     "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "dfa8123d3fdb7b9afb877c3fc49440d3cf016b67fe9c6ce0427aacd6f88876d3",
+    "revision_evidence_sha256": "ade0baa7e4757e650c2ef784df3455d23e6b918e161add231a77d2585ab8eb2a",
     "selected_revision": true,
     "superseded_source_path": "12 Quantum Gravity/_work/Black_Hole_Information_Loss_and_Quantum_Measurement_Collapse_as_the_Same_Admissibility_Transition_in_MTT"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 20783,
+      "bytes": 25067,
       "path": "main.tex",
-      "sha256": "6e5d29deb56f49389363232615d6288d1ff0f402d22c84d9313cc3e92495345d"
+      "sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 4458,
+      "path": "paper-markdown.lua",
+      "sha256": "3d9060d49d0c0e448ff27b6c62d412c51c46448ce0c6dc20657421c2e684016b"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Black_Hole_Information_Loss_and_Quantum_Measurement_Collapse"
   },
-  "source_tree_sha256": "09d243a1db58991b57ea20751d76ea19d785568929575795476d272d9d2a3966",
+  "source_tree_sha256": "08875e74f751b197ebbcc9932194cb44012e4fa3f3bb8443089fb9006266be5c",
   "title": "Projected Information Loss in Modal Triplet Theory: Fiber Dynamics, Measurement Channels, and the Black-Hole Recovery Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18261429",

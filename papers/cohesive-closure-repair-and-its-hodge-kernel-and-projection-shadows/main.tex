@@ -17,7 +17,7 @@
 \title{\textbf{Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:}\\
 \large From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary}
 \author{Peter Nero}
-\date{September 2026, Version 14}
+\date{September 2026, Version 15}
 
 \begin{document}
 \maketitle
@@ -61,6 +61,21 @@ continuum-to-finite intertwiner remain open.  Thus closure repair explains
 why the operator and kernel language should recur, without promoting that
 recurrence into a completed theory of dynamics or quantization.
 \end{abstract}
+
+\section*{Version 15 Revision Note}
+\begin{description}
+\item[Supersedes] The local Version 14 manuscript; no public release is implied.
+\item[Reason] The complete mathematical-language atlas needed contextual
+integration as an evolving source, not an undated list of open targets.
+\item[Resolution] Explains the certified representation diagram, its exact
+finite compatibility operator and the distinctions between tangent
+directions, moduli, physical parameters and obstruction certificates.
+\item[Retained result] All sixty-seven prior integrations retain their
+scopes; later source authority takes precedence over historical checkpoints.
+The foundational Fixed Points papers do not depend on this paper.
+\item[Remaining boundary] A typed diagram does not select a physical
+point, positive metric, signed action, quantum measure or global analytic lift.
+\end{description}
 
 \section*{Version 14 Revision Note}
 \begin{description}
@@ -603,10 +618,13 @@ thermodynamic limit, or a declared open system. Toral-chaos examples remain
 valid examples of separately supplied drivers; they are not flows of a
 strictly decreasing repair cost. These distinctions preserve the repair
 Hessian theorem and locate the extra dynamical input precisely. The
-owning discussion and certificates are in Fixed Points III and the
-\href{https://github.com/PeterNero/mtt-results-repro}{curated reproduction
-repository}, under the finite-mode recurrence and fixed-point noise
-results; their proofs are not duplicated here.
+stationary-ensemble argument belongs to Fixed Points III. The separate
+finite-spatial-mode theorem and its certified model calculations belong
+to the finite-mode companion~\cite{MTTFiniteModeCompanion}; their proofs
+are not duplicated here. Its improved cubic heat-trace bounds and
+phase-sensitive L11 channel interval are examples for a supplied
+Hamiltonian and preparation, not inputs to the present abstract
+repair-Hessian theorem or selected physical noise amplitudes.
 
 \subsection{Fixed points and basins}
 
@@ -4335,7 +4353,7 @@ reproved in several downstream papers.
 Result & Canonical owner & Use elsewhere\\
 \midrule
 Covariant residual Hessian and exact-zero normal square & This paper &
-Foundations, Fixed Points, QG may cite\\
+Downstream encodings may cite; foundational Fixed Points stay independent\\
 Repair flow to tangent heat semigroup & This paper &
 Wave--particle and stabilization papers may cite\\
 Cohesive q79 realization and twist cancellation & This paper as synthesis;
@@ -4360,6 +4378,193 @@ Research frontier, not a theorem in this paper\\
 The new result should therefore be added to the related papers by a concise
 cross-reference and status update, not by copying the proofs.  This keeps the
 corpus readable and makes later corrections local.
+
+\section{A common reference language without losing the source}
+\label{sec:atlas-reference}
+
+The mathematical-language atlas records an extended search for a common
+preprojection description \cite{MTTLanguageAtlas}. Its useful proposal is
+not that every physical object is the same matrix. It is that arithmetic,
+differential geometry, chain complexes, spectral operators and observables
+should be \emph{compatible readouts of one specified source}. Different
+readouts deliberately forget different information. A finite character
+cannot recover an integral lift; cohomology forgets an acyclic
+determinant; a normal square forgets the signed first-order operator.
+
+This section imports the atlas's organizing contribution, not a new proof
+of each result collected there. The concrete repair, descent, transfer and
+q79 statements have their contextual homes in the preceding sections and
+the companion papers. The atlas is an evolving research notebook: its
+early inventories and successive \emph{next} targets are dated checkpoints,
+not simultaneous assertions of the present frontier.
+
+\subsection{Compatibility has an exact finite meaning}
+\label{sec:atlas-linear}
+
+For a finite directed diagram, give each vertex a finite-dimensional
+Hilbert space \(H_v\), and each edge \(e:u\to v\) a specified linear map
+\(T_e:H_u\to H_v\). Put
+\[
+ H_V=\bigoplus_v H_v,\qquad H_E=\bigoplus_{e:u\to v}H_v,\qquad
+ (\delta x)_e=T_ex_u-x_v .
+\]
+A compatible tuple is exactly an element of \(\ker\delta\). With a
+positive-definite edge metric \(W\), the compatibility operator is
+\begin{equation}
+ L_D=\delta^\dagger W\delta,\qquad
+ \ker L_D=\ker\delta,\qquad
+ \Pi_D=I-\delta^\dagger(\delta\delta^\dagger)^+\delta .
+ \tag{R1}\label{eq:atlas-compatibility}
+\end{equation}
+The last expression is the orthogonal projector for the declared vertex
+inner product; \(+\) denotes the Moore--Penrose inverse. Positivity gives
+the kernel identity, and a singular-value decomposition gives the
+projector formula. A merely semidefinite \(W\) could hide discrepancies,
+so strict positivity matters.
+
+For example, three scalar charts with identity transport around a cycle
+have \(L_D=3I-\mathbf1\mathbf1^T\),
+\(\Pi_D=\mathbf1\mathbf1^T/3\) and spectrum \(0,3,3\).
+There is one common value, not three independent local values. This is
+the finite linear counterpart of the earlier Cech discussion, not a
+tensor-product multiplication of dimensions. Adding a specified
+holonomy can reduce that compatible subspace further.
+
+If the smallest positive eigenvalue is \(\lambda_+>0\), then
+\begin{equation}
+ \|(I-\Pi_D)x\|
+ \leq \lambda_+^{-1/2}\|W^{1/2}\delta x\| .
+ \tag{R2}\label{eq:atlas-gap}
+\end{equation}
+This is a conditioning estimate in these norms, not a physical mass gap
+or a selected Hull--Strominger contraction constant. Rescaling the edge
+metric rescales \(\lambda_+\). To use an infinite-dimensional analogue
+one needs closed operators, common domains and closed-range or suitable
+coercivity hypotheses; the finite pseudoinverse cannot be used
+unboundedly without them.
+
+\subsection{A tangent direction is not automatically a parameter}
+\label{sec:atlas-tangent}
+
+The atlas informally associates the compatibility kernel modulo gauge
+with unresolved source directions. The precise local object is
+\[
+ H^1_{\rm def}=\ker(D\Phi_{s_*})/
+                  \operatorname{im}(d_{\rm gauge}),
+ \qquad D\Phi_{s_*}\,d_{\rm gauge}=0 .
+\]
+This is a deformation tangent space. Its dimension counts actual nearby
+moduli only under additional regularity, integrability and quotient
+hypotheses. The scalar equation \(\Phi(x)=x^2=0\) is a simple warning:
+\(D\Phi_0=0\) has a one-dimensional kernel, although its real zero set is
+the single point \(0\). Higher obstructions can remove tangent
+directions. Conversely discrete branches need not appear as tangent
+parameters at all. A gauge stabilizer also makes a naive subtraction of
+dimensions unreliable.
+
+Nor does every modulus become an independent measured coupling. Source
+selection, boundary conditions, normalization and the observable map
+still matter. A rank-zero large-gauge kernel, a 33-dimensional
+interpolation family and a three-source dependency contract therefore
+answer different questions. They are not competing parameter counts.
+This keeps the adopted shared-primitive/profile result intact without
+asserting a zero-input prediction.
+
+A nonzero residual at a trial point is likewise not a no-go theorem.
+For a linear affine system \(\delta x=b\), an exact component of \(b\)
+orthogonal to \(\operatorname{ran}\delta\) certifies inconsistency. For
+a nonlinear problem one instead needs an exclusion bound over the
+declared domain. Failure of a search, one nonzero \(\beta_C\), or a
+singular Jacobian cannot exclude every source in the corpus.
+
+\subsection{One source can have several inequivalent shadows}
+\label{sec:atlas-arrows}
+
+The useful common object is a diagram with explicitly typed maps and
+compatibility certificates. In a derived or stack-valued setting one
+may propose its homotopy limit. That notation alone constructs neither
+a physical point nor a positive Hilbert metric, action or measure.
+Ordinary equalizers suffice only when higher overlap data can
+legitimately be omitted. Gerbe-twisted descent, gauge stabilizers and
+higher products are reasons not to omit them here.
+
+Three recurring examples explain what the arrows must retain.
+First, a pointed differential determinant or norm fiber includes the
+trivialization, not just the vanishing Chern class. The faithful
+\(S(U(3)\times U(2))\) carrier packages the charge rule without requiring
+a universally available charge-one sixth-root line. Its representation
+theorem belongs to the SM encoding; it does not select the internal
+HYM background.
+
+Second, one contraction can emit higher tree interactions and a
+complement determinant. Keeping only its projected state space loses
+the latter. The Hodge/BV and graph papers consequently need the same
+differential, pairing and eliminated block, not merely matching
+dimensions. Classical or finite BV identities do not supply a
+renormalized continuum measure.
+
+Third, the flat shared differential line and a Cox grading are distinct
+actions. On the truncated label algebra
+\[
+ \mathbb C[u,v,s]/(u,v,s)^3
+\]
+the degrees have dimensions \(1,3,6\), and the quadratic labels split
+as \(s^2\), \(\{us,vs\}\), \(\{u^2,uv,v^2\}\). These give the familiar
+\(1+2+3\) filtration at this operator-label tier. The grading acts with
+weights \(0,1,2\); a common scalar flat line acts uniformly. Tensoring
+the two preserves both, but does not identify them. In particular,
+the grading halfturn has signs \(+,-,+\), whereas a scalar sign line
+acts by the same sign on all degrees. Neither construction makes ten
+ordinary spacetime dimensions or identifies compact phase with time.
+
+\subsection{Why the chronology must remain visible}
+\label{sec:atlas-chronology}
+
+Several apparent contradictions in the notebook are successive answers
+to different questions. A rank-one Hartshorne--Serre witness first showed
+a \(3\to7\) harmonic jump; the later arbitrary-block calculation gives
+\(9-2k\), \(k=\operatorname{rank}A\), and does not select \(k=1\)
+physically. The older 19-block augmented-Hodge pattern is retained as a
+skeleton; the complete residual permits 25 blocks, with the
+\(30+8\cdot9\) character reduction only under its explicit neutral-external
+hypothesis. Later projective hidden-bundle and existential HYM results
+supersede historical hidden-HYM-open sentences without supplying the
+entire common physical endpoint.
+
+The primitive eta9 graph route similarly progresses from curve
+arithmetic to marked maps, interpolation, an explicit equation,
+good-fiber reductions and characteristic-zero structural promotion.
+A number-field coefficient lift is not automatically a lift of all its
+marked graphs. An associated-graded Higgs field is not the full flat
+Gauss--Manin connection. The notebook's partial transform-column counts
+are superseded by the later accepted finite calculations, not
+reopened as current work. Neither finite return coefficients nor a
+local chart certificate alone give integral monodromy, global path
+control or an analytic Deligne zero.
+
+For the analytic question, this paper retains its earlier qualifications
+on quotient versus vanishing lattices and on Neron-model applicability.
+A characteristic-zero rank, rational edge class or auxiliary pencil
+cannot silently change the relevant integral lattice or physical
+spectral class. The detailed source-by-source review accompanying this
+version records these chronological distinctions; current authority is
+not inferred from the earliest status word in a frozen artifact.
+
+\subsection{What would make the language successful?}
+
+The reference language earns its place when one specified object
+generates several previously independent readouts, or when a typed
+comparison rejects a false identification. The common shared-line
+construction, determinant-fiber charges, support-forced transgression,
+and common-source tree/loop calculation are examples at their stated
+tiers. They reduce duplicate work without declaring different
+geometries, operators or empirical inputs interchangeable.
+
+The remaining physical task is consequently not to draw more arrows.
+It is to supply the selected geometry/action, analytic spectral
+comparison and compatible four-dimensional quantum construction
+specified in the frontier section. The language tells us which
+outputs then follow and which choices it still does not contain.
 
 \section{Falsifiers and acceptance tests}
 

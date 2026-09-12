@@ -1,12 +1,12 @@
 {
-  "abstract": "This paper gives a typed compatibility contract for BRST lifting, gauge independence, Borel summation, and reflection positivity in the Modal Triplet Theory quantum-gravity program. First, a common bounded functional calculus preserves a linear BRST complex when the kinetic Laplacians, spectral projections, domains, and boundary conditions intertwine the differential; independently chosen filters do not ensure this. Second, an exact finite-cutoff quantum BRST measure gives Ward identities and gauge-fixing independence by super-Stokes, while Borel summation preserves a linear Ward identity only under a common analytic domain and uniform Gevrey-one remainder bounds. Third, BRST cohomology yields a physical pre-Hilbert space only when reflection positivity is proved on the full BRST-closed positive-time observable algebra and exact classes lie in the reflection null radical. Positivity on the TT subspace alone is insufficient. We also prove that a nonzero positive Kallen–Lehmann measure cannot have permanent Gaussian decay in the same Euclidean spectral variable, so the old SPT positivity argument cannot be used. The result is a rigorous conditional theorem and an explicit exit certificate. Current MTT data provide useful finite classical and free-field inputs, but not yet the selected gravitational quantum measure, quantum master equation, constructive Borel theorem, or physical reflection-positivity theorem required by that certificate.",
+  "abstract": "This paper gives a typed compatibility contract for BRST lifting, gauge independence, Borel summation, and reflection positivity in the Modal Triplet Theory quantum-gravity program. First, a common bounded functional calculus preserves a linear BRST complex when the kinetic Laplacians, spectral projections, domains, and boundary conditions intertwine the differential; independently chosen filters do not ensure this. Second, an exact finite-cutoff quantum BRST measure gives Ward identities and gauge-fixing independence by super-Stokes, while Borel summation preserves a linear Ward identity only under a common analytic domain and uniform Gevrey-one remainder bounds. Third, BRST cohomology yields a physical pre-Hilbert space only when reflection positivity is proved on the full BRST-closed positive-time observable algebra and exact classes lie in the reflection null radical. Positivity on the TT subspace alone is insufficient. We also prove that a nonzero positive Kallen\u2013Lehmann measure cannot have permanent Gaussian decay in the same Euclidean spectral variable, so the old SPT positivity argument cannot be used. The result is a rigorous conditional theorem and an explicit exit certificate. Current MTT data provide useful finite classical and free-field inputs, but not yet the selected gravitational quantum measure, quantum master equation, constructive Borel theorem, or physical reflection-positivity theorem required by that certificate.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026 Version 2",
+  "current_version": "v3",
+  "date": "September 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18209696",
     "created": "2026-07-29T08:50:11.307662+00:00",
@@ -32,28 +32,30 @@
     "updated": "2026-07-29T08:50:11.876730+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "06115993d23c51e9bec4637bf31ff208e2653c48fd138758288da0bfb31bdc40",
+  "main_tex_sha256": "1a449fe49555681552f63d283e281502ac57477d95a4493a45a3637704ffafe5",
   "paper_id": "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
-  "paper_md_sha256": "cb7742c17e3861cff1a9a7266481ed3f9a2e2a6ee1d5f0715ce3ea572a7514fd",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "d35b2f270f39c7268abaf45b31ed3c4d46a3ff617b94def29e51e175b3f30c77",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "q79_family_source_cutset"
+  ],
   "revision": {
     "revision_evidence_path": "papers/constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "9ea213cfac518e4bd070f06d1928cc79818439c7eee926f898be7965542363e1",
+    "revision_evidence_sha256": "f40d4efa0a8615acac3a74f6b4209a6444aeacd6384f772bc76844d0e9142c13",
     "selected_revision": true,
     "superseded_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_II__BRST_Lifting__Gauge_Invariant_Observables__and_the_Physical_Hilbert_Space_under_SPT_Damping"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 31723,
+      "bytes": 34432,
       "path": "main.tex",
-      "sha256": "06115993d23c51e9bec4637bf31ff208e2653c48fd138758288da0bfb31bdc40"
+      "sha256": "1a449fe49555681552f63d283e281502ac57477d95a4493a45a3637704ffafe5"
     },
     {
-      "bytes": 12002,
+      "bytes": 13025,
       "path": "REVISION_AUDIT.md",
-      "sha256": "9ea213cfac518e4bd070f06d1928cc79818439c7eee926f898be7965542363e1"
+      "sha256": "f40d4efa0a8615acac3a74f6b4209a6444aeacd6384f772bc76844d0e9142c13"
     },
     {
       "bytes": 15299,
@@ -64,9 +66,9 @@
   "source_provenance": {
     "legacy_source_path": "12 Quantum Gravity/_work/Constructive_MTT_Quantum_Gravity_II__BRST_Lifting__Gauge_Invariant_Observables__and_the_Physical_Hilbert_Space_under_SPT_Damping"
   },
-  "source_tree_sha256": "3acf7bdf988d2f10d9727b3745a2d1c5beef5af5e0d38af699fce695803e6f45",
+  "source_tree_sha256": "7ee712f54b27ae865e8c550bf7dc463decc35e38d9e51d209a07d2679024274b",
   "title": "Constructive MTT Quantum Gravity II: A Conditional BRST/BV Compatibility and Physical-State Reconstruction Contract for SPT-Filtered Models",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18209696",

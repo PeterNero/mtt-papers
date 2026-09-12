@@ -1,13 +1,13 @@
 ---
 abstract: |
-  We give the precise mathematical content of the world-in-world proposal and separate it from its physical interpretation. The central object is a comparison field $`Q_{\rm WW}\in\Gamma(\operatorname{Hom}(TP,TI))`$ between two oriented rank-three bundles. Its nine local components split, at a nonsingular background, into three orientation and six strain directions. A selected flag resolves the strain sector into scalar, diagonal-shape, and shear sectors of dimensions $`1+2+3`$. Therefore $`1+3\times3=(1+3)+(1+2+3)=4+6`$ is an exact component identity. It is not ordinary manifold-dimension multiplication and does not derive a ten-dimensional spacetime, Lorentzian signature, gravity, matter, or quantization. We state the missing globalization theorem to the selected q79 Fu–Yau carrier, distinguish the shared phase circle from physical time, and formulate the additional gates needed for each proposed physical emergence. The resulting paper is a rigorous local geometry theorem plus a falsifiable research program.
+  We give the precise mathematical content of the world-in-world proposal and separate it from its physical interpretation. The central object is a comparison field $`Q_{\rm WW}\in\Gamma(\operatorname{Hom}(TP,TI))`$ between two oriented rank-three bundles. Its nine local components split, at a nonsingular background, into three orientation and six strain directions. A selected flag resolves the strain sector into scalar, diagonal-shape, and shear sectors of dimensions $`1+2+3`$. Therefore $`1+3\times3=(1+3)+(1+2+3)=4+6`$ is an exact component identity. It is not ordinary manifold-dimension multiplication and does not derive a ten-dimensional spacetime, Lorentzian signature, gravity, matter, or quantization. We state the missing globalization theorem to the selected q79 Fu–Yau carrier, distinguish the shared phase circle from physical time, and formulate the additional gates needed for each proposed physical emergence. The current comparison uses a curved connection compiler and a nonlinear six-coordinate spectral-strain shadow, not the excluded linear root-space embedding. The full relative-phase quotient and its support boundary remain distinct from that shadow. The resulting paper is a rigorous local geometry theorem plus a falsifiable research program.
 author:
 - Peter Nero
-current_version: v5
-date: Corrected fifth edition July 2026
-generated_from_main_tex_sha256: 96721e4f0c34edf7a1c60f08b060b0ac430053c8ce67a7d8b754a0e6d4749076
+current_version: v6
+date: September 2026, Version 6
+generated_from_main_tex_sha256: b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db
 paper_id: world-in-world-genesis-local-comparison-geometry-and-a-9e600e73
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v5
 title: |
   World-in-World Genesis:
@@ -16,6 +16,31 @@ zenodo_doi: 10.5281/zenodo.21654883
 zenodo_record_id: 21654883
 zenodo_url: "https://zenodo.org/records/21654883"
 ---
+
+# World-in-World Genesis: Local Comparison Geometry and a Globalization Program
+
+Peter Nero. September 2026, Version 6
+
+## Abstract
+
+We give the precise mathematical content of the world-in-world proposal and separate it from its physical interpretation. The central object is a comparison field $`Q_{\rm WW}\in\Gamma(\operatorname{Hom}(TP,TI))`$ between two oriented rank-three bundles. Its nine local components split, at a nonsingular background, into three orientation and six strain directions. A selected flag resolves the strain sector into scalar, diagonal-shape, and shear sectors of dimensions $`1+2+3`$. Therefore $`1+3\times3=(1+3)+(1+2+3)=4+6`$ is an exact component identity. It is not ordinary manifold-dimension multiplication and does not derive a ten-dimensional spacetime, Lorentzian signature, gravity, matter, or quantization. We state the missing globalization theorem to the selected q79 Fu–Yau carrier, distinguish the shared phase circle from physical time, and formulate the additional gates needed for each proposed physical emergence. The current comparison uses a curved connection compiler and a nonlinear six-coordinate spectral-strain shadow, not the excluded linear root-space embedding. The full relative-phase quotient and its support boundary remain distinct from that shadow. The resulting paper is a rigorous local geometry theorem plus a falsifiable research program.
+
+# Revision note for version 6
+
+Supersedes.
+Version 5; its release identity and revision note are retained.
+
+Reason.
+The globalization program needed the later curved and nonlinear owner results, rather than an undifferentiated request for a rank-six map.
+
+Resolution.
+Imports projective naturality, the curved connection compiler and support-stratified strain comparison through scoped owner references. Distinguishes identity-coordinate orthogonality from general polar variations and complexifies the real carrier for a complex-linear comparison.
+
+Retained.
+The comparison-field transformation law, local $`1+2+3`$ projectors, component count and independent physical gates.
+
+Open boundary.
+Physical endpoint, reduced Green, symmetry lift and action selection are not consequences of the local normal form. This is an unreleased authoring revision with no new physical source selection.
 
 # Revision note for this edition
 
@@ -83,7 +108,7 @@ The paper advances through four stages:
 
 3.  compare that profile with the independently selected q79 rank-$`1+2+3`$ carrier; and
 
-4.  require an isometric, connection- and operator-preserving intertwiner before treating the two carriers as one physical construction.
+4.  construct the typed curved and nonlinear comparison, with its metrics, domains and effective operators, before treating the two as one physical construction. A stronger linear identification has additional isometry tests.
 
 Only the first two stages are local consequences of $`Q_{\rm WW}`$. The third provides a nontrivial structural clue. The fourth is the proposed globalization theorem and remains the decisive bridge.
 
@@ -150,7 +175,7 @@ S=\log U\in\operatorname{Sym}(3,\mathbb R).
 
 <div class="theorem">
 
-**Theorem 3** (Orientation–strain normal form). *At every nonsingular background, the tangent space of the comparison carrier has the orthogonal Frobenius decomposition
+**Theorem 3** (Orientation–strain normal form). *In identity-normalized matrix coordinates, the tangent component space has the orthogonal Frobenius decomposition
 ``` math
 \operatorname{Mat}(3,\mathbb R)
  =\mathfrak{so}(3)\oplus\operatorname{Sym}(3,\mathbb R),
@@ -164,6 +189,8 @@ S=\log U\in\operatorname{Sym}(3,\mathbb R).
 *Proof.* Every matrix $`X`$ decomposes uniquely as $`X=(X-X^T)/2+(X+X^T)/2`$. Skew and symmetric matrices are orthogonal for $`\langle X,Y\rangle_F=\operatorname{tr}(X^TY)`$ and have dimensions three and six. ◻
 
 </div>
+
+The polar-coordinate dimensions remain $`3+6`$ at every invertible background, but their images in the ambient tangent need not be orthogonal. At $`Q=U=\operatorname{diag}(2,1,1)`$, let $`\Omega_{12}=-1`$, $`\Omega_{21}=1`$ and let $`\delta U_{12}=\delta U_{21}=1`$, with other entries zero. Then $`\langle\Omega U,\delta U\rangle_F=1`$. Thus the proof establishes the skew/symmetric split, not an orthogonal polar tangent splitting at every background. Costs and metrics in polar coordinates must be pulled back; the $`1+2+3`$ projectors below act on the symmetric strain coordinate itself.
 
 Choose an orthonormal flag, equivalently a preferred ordered frame modulo the declared residual symmetry. For $`S\in\operatorname{Sym}(3)`$ define
 ``` math
@@ -255,10 +282,10 @@ The q79 Fu–Yau branch is the current selected compactification candidate. The 
 
 # The globalization theorem
 
-The central open map is a bundle morphism
+The rank-six local strain bundle is real, while the trace-split bundle is complex. A complex-linear comparison first complexifies the source; an alternative real comparison needs a compatible real form of the target. In the former convention, the proposed stronger linear map is
 ``` math
 \mathfrak I:
- \mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O
+ (\mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O)\otimes_{\mathbb R}\mathbb C
  \longrightarrow
  L_{\rm shared}\otimes
  (\mathcal O\oplus\mathcal A_0\oplus\mathcal A).
@@ -266,7 +293,7 @@ The central open map is a bundle morphism
 
 <div class="conjecture">
 
-**Conjecture 6** (Selected world-in-world/q79 intertwiner). On the selected q79 Fu–Yau branch there is a source-selected flag and an isometric bundle isomorphism $`\mathfrak I`$ preserving the $`1+2+3`$ filtration such that
+**Conjecture 6** (Stronger linear world-in-world/q79 identification). On the selected q79 Fu–Yau branch there is a source-selected flag and an isometric bundle isomorphism $`\mathfrak I`$ preserving the $`1+2+3`$ filtration such that
 ``` math
 \mathfrak I\nabla^{\rm WW}=\nabla^{\rm HYM}\mathfrak I,
  \qquad
@@ -286,9 +313,22 @@ The conjecture has four independent tests:
 
 4.  the resulting operator coefficients equal the source coefficients used downstream, with a declared normalization and error certificate.
 
-Rank matching proves none of these clauses, but it makes the conjecture well-typed and finite.
+Rank matching proves none of these clauses. The scalar-field convention makes the comparison well-typed, but the operator problem is not finite merely because the bundle rank is finite.
 
 The conjecture is therefore falsifiable in several independent ways. The bundles may have incompatible characteristic data, monodromy may obstruct the flag, the connections may fail to be conjugate, or the transported Hessian may disagree with the downstream source operator. Failure of any one test would end this proposed identification without undoing the local orientation/strain theorems.
+
+## The curved target and the replacement spectral map
+
+The QM owner now supplies the appropriate curved operator language \[[1](#ref-QMGeometry),[2](#ref-FrozenProjective),[3](#ref-FrozenCech)\]. A smooth finite matrix projector $`p(x)`$ describes a bundle over a base, not a truncation to finitely many base modes. Its Čech compiler retains the supplied connection using $`(p,\Gamma)`$: the Grassmann connection alone generally is not the physical connection. Unitary naturality preserves the connection, curvature, metric, domains and transported spectral windows; it does not make arbitrary raw Fourier windows invariant. The auxiliary Lens/Nil model and the trace-split CLN filtration therefore do not specify the global q79 topology. A selected external flag must not be confused with a parallel splitting of an irreducible physical HYM bundle.
+
+<span id="sec:consumer-strain" label="sec:consumer-strain"></span> The old phase-stable linear rank-six root-space route is excluded by the $`S_3`$ representation mismatch. It cannot implement the preceding stronger conjecture. The surviving spectral map is nonlinear:
+``` math
+\Phi(X)=(d_0,d_1,d_2,|z_{12}|^2,|z_{20}|^2,|z_{01}|^2),
+ \qquad X\in\operatorname{Herm}(3).
+```
+It keeps diagonal values and edge intensities, discarding the triangle phase of $`z_{12}z_{20}z_{01}`$ \[[4](#ref-FrozenStrain)\]. The full relative-phase quotient is generically seven-dimensional; the six-coordinate image is its strain shadow. Neither the discarded phase nor the shared circle is time. Given a positive source Hessian’s reduced Green $`G_Q`$, minimization at fixed linearized strain $`J=D\Phi`$ gives $`(JG_QJ^*)^{-1}`$ where the reduced covariance is invertible. This shorted Hessian does not assert an isometric embedding. For TT-only strain, project $`J`$ first, before inverting its covariance.
+
+The later global result treats all eight edge-support strata \[[5](#ref-FrozenSupport)\]. At a zero edge the first derivative vanishes while the quadratic normal jet is $`|\delta z_e|^2`$. Its normal strain cost is degree one, so an ordinary full six-dimensional boundary Hessian is excluded. Tangential shorting still applies on each fixed stratum. A rank-six surjective derivative or the required local $`C_4`$ derivative $`J_{DE}`$ forces the regular all-nonzero-edge stratum; regularity is no longer an independent physical input under that contract. The physical endpoint, Green and same-source $`S_3\times C_4`$ lift remain to be supplied. $`J_{DE}`$ is a tangent operation, not a global automorphism of the nonnegative intensity cone. These results sharpen the globalization program without identifying the real logarithmic strain with the spectral intensities by fiat.
 
 # Physical emergence gates
 
@@ -308,7 +348,7 @@ A spin bundle, finite representation data, Dirac operator, chirality and real st
 
 ## Quantization
 
-A complex state space, observable algebra, dynamics, probability functional, and gauge and constraint treatment are required. Discrete topology or a compact resolvent can produce discrete spectra but not the Born rule by itself.
+A complex state space, observable algebra, dynamics, probability functional, and gauge and constraint treatment are required. Discrete topology or a compact resolvent can produce discrete spectra but not the Born rule by itself. This local nonimplication does not reopen the canonical operational QM construction. Measurement is an ordinary physical interaction; this paper’s component count adds neither an apparatus model nor an outcome-selection law.
 
 ## Mass and scalar relaxation
 
@@ -320,7 +360,26 @@ The finite $`27\times27`$ matrix, charged Yukawa profile, CKM, electroweak, thre
 
 # Conclusion
 
-World-in-world geometry has a clean surviving core. It is a rank-three comparison field with an exact orientation/strain decomposition and a selected $`1+2+3`$ local normal form. Its physical promise is concentrated into one testable globalization problem rather than many automatic-emergence claims. Failure to construct the q79 intertwiner would falsify the proposed unified identification while leaving the local linear algebra intact.
+World-in-world geometry has a clean surviving core. It is a rank-three comparison field with an exact orientation/strain decomposition and a selected $`1+2+3`$ local normal form. Its physical promise is concentrated into one testable globalization problem rather than many automatic-emergence claims. The excluded linear root-space implementation does not falsify the local linear algebra or the nonlinear spectral-strain replacement. Physical identification now requires the latter’s selected endpoint and operator comparison, or a separately established stronger linear realization.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The earlier capsule below records its own source snapshot. Its quoted status labels are not current obligation counts; the present curved and nonlinear imports are bound separately by the frozen bibliography citations. The q=79, finite-matrix, HYM, and internal TT rows give concrete targets for the proposed globalization map. They do not prove the missing intertwiner from local comparison strain to the physical q=79 vertical geometry. Standard Model profile rows are context, and the strict upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 #### Rows used directly in this paper.
 
@@ -398,49 +457,36 @@ World-in-world geometry has a clean surviving core. It is a rank-three compariso
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
+# References
 
-The q=79, finite-matrix, HYM, and internal TT rows give concrete targets for the proposed globalization map. They do not prove the missing intertwiner from local comparison strain to the physical q=79 vertical geometry. Standard Model profile rows are context, and the strict upgrade remains open.
+<a id="ref-QMGeometry"></a>
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+\[1\] P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, projective HYM, Čech compiler, spectral-strain and support-stratification sections, current owner manuscript, 2026.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+<a id="ref-FrozenProjective"></a>
 
-## Rows used directly in this paper
+\[2\] P. Nero, [Covariant projective-module HYM naturality](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_hym_naturality/artifact.json), frozen result, 2026.
 
-- `A13/gr_tt_support` (**DERIVED_EXACT**): Exact-branch internal TT support certificate; physical normalization remains open.
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
-- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
-- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+<a id="ref-FrozenCech"></a>
 
-## Corpus-state cross-checks
+\[3\] P. Nero, [Explicit curved connection compiler](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cech_projector_compiler/artifact.json), frozen result, 2026.
 
-- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
-- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
-- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
-- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
-- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
-- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
-- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
-- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
-- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+<a id="ref-FrozenStrain"></a>
 
-## Open boundary (not evidence of closure)
+\[4\] P. Nero, [Intrinsic spectral-strain quotient and shorted Hessian](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_spectral_strain_hessian/artifact.json), frozen result, 2026.
 
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+<a id="ref-FrozenSupport"></a>
 
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+\[5\] P. Nero, [Global support-stratified strain and boundary-Hessian exclusion](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_support_stratified_strain/artifact.json), frozen result, 2026.
 
-<div class="thebibliography">
+<a id="ref-Helgason"></a>
 
-9 S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978.
+\[6\] S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978.
 
-J.-X. Fu and S.-T. Yau, *The theory of superstring with flux on non-Kahler manifolds and the complex Monge–Ampere equation*, J. Differential Geom. 78 (2008).
+<a id="ref-FuYau"></a>
 
-P. Nero, *MTT Foundational Geometry Reconciliation*, internal theorem and verification packet, 2026.
+\[7\] J.-X. Fu and S.-T. Yau, *The theory of superstring with flux on non-Kahler manifolds and the complex Monge–Ampere equation*, J. Differential Geom. 78 (2008).
 
-</div>
+<a id="ref-MTTRecon"></a>
+
+\[8\] P. Nero, *MTT Foundational Geometry Reconciliation*, internal theorem and verification packet, 2026.

@@ -1,5 +1,23 @@
 # Admissibility Precosheaves and Conditional AQFT Nets in MTT v2 Revision Audit
 
+## Current Editorial Revision: v3 (2026-09-12)
+
+**Supersedes:** Current v2, retaining its released identity and earlier revision note.
+
+**Reason:** The correct free/interacting boundary was already present, but the assigned physical-family dependency needed a readable owner reference and its actual source hypotheses.
+
+**Resolution:** `sec:physical-family-consumer` explains why a finite projection does not select a smooth connection and what follows conditionally once the same-source HYM/action data, compatible operator domains, and ellipticity are supplied. Riesz/Kato and determinant-line constructions do not provide the Lorentzian local net, a transverse fermion-measure current, crossing gluing, or fixed-coupling continuum control. The contextual owner is the companion QM source account, not a newly reassigned owner.
+
+**Retained:** Conditional locality descent, chart-to-region naturality gate, and the established selected free CAR realization. Older hidden-HYM status wording does not reopen the later existential theorem.
+
+**Open boundary:** The selected common physical interacting endpoint, naturality interface, measure/state/gluing, and nonperturbative interacting completion.
+
+**Verification:** Scoped one-job build passed with no reported warnings. All 10 PDF pages were rendered and visually inspected; the new family discussion and citation were checked at full render size.
+
+**Review record:** One source-bound consumer review appears in `editorial-reviews/2026-09-12/action_qg.json`. No theorem ownership was changed.
+
+## Earlier Audit (Preserved)
+
 ## Source lineage
 
 - Superseded title: `From Modal Triplet Theory to Algebraic Quantum Field Theory: Local Nets from Admissible Charts and Coherent Basin Persistence`

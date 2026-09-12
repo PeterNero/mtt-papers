@@ -1,0 +1,3494 @@
+{
+  "schema": "mtt.research-consumer-reviews.v1",
+  "policy": "Per-paper contextual import decisions; not theorem ownership or scientific promotion.",
+  "result_source_map": {
+    "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+      "q79_family_source_cutset"
+    ],
+    "R.QM.CONTINUUM_RECORDER_COMPILER": [
+      "q79_continuum_recorder_compiler"
+    ],
+    "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+      "q79_ontology_nonentailment"
+    ],
+    "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+      "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+      "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet",
+      "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+      "causal_base_q79_symmetric_response_transferred_m4_packet",
+      "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+      "causal_base_q79_all_arity_source_promotion_packet"
+    ],
+    "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+      "causal_base_q79_seven_row_endpoint_factorization_packet"
+    ],
+    "R.ETA9.LOCAL_SOURCE_TUBE": [
+      "q79_eta9_local_source_tube_consolidation"
+    ],
+    "R.ETA9.B89_REJECTION": [
+      "q79_eta9_b89_same_source_rejection"
+    ],
+    "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+      "eta9_gate1_campaign"
+    ],
+    "R.ETA9.THREE_CYCLE_NONDETECTION": [
+      "eta9_three_cycle_b96_nondetection"
+    ],
+    "R.GEO.GLOBAL_FITTING_DESCENT": [
+      "q79_global_fitting_descent"
+    ],
+    "R.GEO.BK3_RANK_ZERO_KERNEL": [
+      "q79_bk3_rank_zero_kernel"
+    ],
+    "R.GEO.PROJECTIVE_NATURALITY": [
+      "q79_projective_hym_naturality"
+    ],
+    "R.GEO.CECH_COMPILER": [
+      "q79_cech_projector_compiler"
+    ],
+    "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+      "q79_spectral_strain_hessian",
+      "q79_support_stratified_strain"
+    ],
+    "R.FP.CUBIC_HEAT_TRACE": [
+      "fixed_points_cubic_heat_trace_bound"
+    ],
+    "R.FP.L11_PHASE_CHANNEL": [
+      "fixed_points_l11_phase_channel"
+    ],
+    "R.FP.FINITE_MODE_RECURRENCE": [
+      "fixed_points_finite_mode_recurrence_boundary"
+    ],
+    "R.QM.CANONICAL_OUTPUT_DESCENT": [
+      "q79_fock_output_measure"
+    ]
+  },
+  "reviews": [
+    {
+      "id": "CONSUMER-PARENT-01-20260912",
+      "paper_id": "a-projection-first-reframing-of-quantum-gravity",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "What the paper does not claim",
+        "Constructive Gates for an MTT Quantum-Gravity Sector"
+      ],
+      "assessment": "This is an interpretive gravity essay, not the owner or a claimed execution of the q79 chiral elliptic-family compiler. It already requires a same-source Lorentzian symbol, spin-two positivity, conserved response and global gluing. The new conditional matter-family construction does not discharge those gates and need not be inserted as a new theorem in this essay.",
+      "main_tex_lf_sha256": "9a99b9c9786f3b0105c776c2962d41ee28dbf88adb454f28ff9dcb675f20f06a",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-02-20260912",
+      "paper_id": "inflationary-measures-and-the-born-rule-as-a-single-sha-388b32c2",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER",
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler",
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "What the q79 quantum construction supplies",
+        "no selected cosmological history measure"
+      ],
+      "assessment": "The paper explicitly retains the canonical one-anchor quantum leg while leaving the cosmological history law and same-source pushforward open. The three-mode recorder compiler and one-context ontology countermodel select neither a cosmological law nor a universal apparatus family. This title-suggested import is outside its two-pushforward theorem; the existing restricted-q79 boundary remains accurate.",
+      "main_tex_lf_sha256": "541306e01db615f87b7bb7dfcb3072223cebe371281b3f5953fd20ee36c593ac",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ],
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-03-20260912",
+      "paper_id": "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "Finite-volume spectral setting",
+        "The final arrow to a physical gravitational theory is not asserted."
+      ],
+      "assessment": "QG I starts with a supplied positive self-adjoint elliptic TT model and proves trace-class Gaussian control, stable finite-quartic Borel summability and a conditional removal criterion. A selected q79 chiral-family implication neither supplies its gravitational interaction nor strengthens these local hypotheses. The paper already scopes the physical source and cutoff-uniform claims correctly; no extra imported theorem is required.",
+      "main_tex_lf_sha256": "4717ea70ea72ae3ccae251b0b40452eb4c110548e717d214ef4b34fd52d6bdff",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-04-20260912",
+      "paper_id": "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "integrated",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "sec:physical-family-import",
+        "The revised QG-I paper has already repaired the Gaussian step"
+      ],
+      "assessment": "The new version credits the completed QG-I trace-class and stable finite-quartic results, removing a stale request to repair them. It imports the conditional canonical analytic-family construction from the QM owner, while explaining that a chiral determinant line is not the gravitational BV measure or QME and does not supply crossing, positivity or removal control.",
+      "main_tex_lf_sha256": "1a449fe49555681552f63d283e281502ac57477d95a4493a45a3637704ffafe5",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-05-20260912",
+      "paper_id": "constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "The physical massless-graviton route",
+        "The valid massive benchmark"
+      ],
+      "assessment": "The exact wave-operator range and soft-pole results take their Lorentzian/scattering data as declared inputs. The selected chiral-family compiler does not select graviton dressing, soft charges, asymptotic completeness or regulator removal. The current paper explicitly separates these contracts, including the conditional q79 ultraviolet route. No numerical family witness is needed in its infrared theorem.",
+      "main_tex_lf_sha256": "9f6b8bccdc0a55542088280f6900b4d1419f65d0403d7a8742b08d0f865876b8",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-06-20260912",
+      "paper_id": "why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER",
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler",
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "general selected apparatus family:",
+        "contextuality--order equivalence:"
+      ],
+      "assessment": "The local separation theorems concern multi-context valuations and sequential instruments. The manuscript explicitly recognizes the exact one-context q79 output while leaving the apparatus family and contextuality/order comparison open. Neither a binary recorder compiler nor a one-context ontological countermodel supplies the required multi-context package, so adding them as further proofs would not complete this paper's target.",
+      "main_tex_lf_sha256": "e0afb48e4fddfc7039632afed8e5af33550cf19919ea3cd6b0c0d3f4008e2c0f",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ],
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-07-20260912",
+      "paper_id": "entanglement-locality-and-measurement-from-coherent-sec-110e8cbe",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER",
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler",
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "Common ancestors are local channels",
+        "arbitrary bipartite"
+      ],
+      "assessment": "The conditional AQFT locality/entanglement and local-instrument results require supplied bipartite states and operations. The paper already distinguishes the canonical one-anchor output algebra from arbitrary bipartite instruments. The recorder compiler preserves a declared rank-1+2 meter and the ontology countermodel concerns one record context; neither sources Bell-violating bipartite states or a universal entanglement-decay law.",
+      "main_tex_lf_sha256": "613bdba3208c4022ddec9e3cc0f4a1b77b3ca80d4f4bb38343aeb562d4d14886",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ],
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-08-20260912",
+      "paper_id": "measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER",
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler",
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "The width is not yet selected",
+        "The present Gaussian model is therefore"
+      ],
+      "assessment": "This owner paper constructs finite-resolution position effects and a chosen square-root instrument from a supplied response kernel. It explicitly keeps actualized records, geometry-selected width and arbitrary q79 apparatus contexts separate. The low-mode recorder compiler is a different specified instrument, not a derivation of this continuous detector kernel; the ontology non-entailment result is consistent with the already stated limitation.",
+      "main_tex_lf_sha256": "934812854297ed27f26dd704216837a01e7ff20b7265a495fbecd0fdbb2fa43b",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ],
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-09-20260912",
+      "paper_id": "gauge-fixing-as-admissible-section-selection-in-modal-t-459e029d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "Scope of proof.",
+        "does not provide a new rigorous construction of nonperturbative Yang--Mills theory"
+      ],
+      "assessment": "The paper owns a finite-dimensional local slice/Jacobian identity and a conditional formal gauge-theory interpretation. It does not claim to select a smooth q79 Dirac/Hessian family or a nonperturbative measure. The chiral-family source theorem has different hypotheses and output; adding it would not repair or strengthen this local quotient statement.",
+      "main_tex_lf_sha256": "de03c5e3cc1db0ec6e3eaab559cafe2544c4afbeb995b8a6fe7acd8d3e127df8",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-10-20260912",
+      "paper_id": "loop-quantum-gravity-as-a-shadow-of-coherent-fixed-poin-9133be75",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "interpretive comparison",
+        "Constraints and dynamics"
+      ],
+      "assessment": "This interpretation imports the conditional Holst/canonical interface from its technical LQG companion and expressly does not construct the holonomy-flux representation or constraints. The q79 chiral elliptic-family compiler is not the missing parity-odd Holst coefficient, LOST state or LQG Hamiltonian. No source theorem belongs in this interpretive paper merely because its title mentions quantum gravity.",
+      "main_tex_lf_sha256": "8bc6c9f52c7eb7f975585c17f6d9b6c2fab1faf786ac975d9ab090b468ab8670",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-11-20260912",
+      "paper_id": "measurement-induced-phase-transitions-as-a-shadow-of-co-dd424eee",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER",
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler",
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "paper neither re-proves nor enlarges those claims.",
+        "Conditional interface with MTT"
+      ],
+      "assessment": "The manuscript already imports the restricted q79 output boundary from the measurement owner and retains the distinction between trajectory laws, averaged channels, ordinary detector interactions and actual record selection. The new three-mode compiler and one-context ontology witness do not select a monitored-circuit family, OU basin parameters, thermodynamic transition or reservoir. Its local model theorems are unaffected.",
+      "main_tex_lf_sha256": "86b26c459c3a25de7fdcb999a77eada36dc6ac8ac716e03395dc9f1588ca984d",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ],
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-12-20260912",
+      "paper_id": "modal-fixed-points-bell-s-beables-and-the-limits-of-fac-59a69f5c",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY",
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+        "R.QM.CONTINUUM_RECORDER_COMPILER",
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "causal_base_q79_seven_row_endpoint_factorization_packet",
+        "q79_continuum_recorder_compiler",
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "A singlet packet is included as a benchmark,",
+        "The upper-world perspective can remove the need"
+      ],
+      "assessment": "The Bell paper deliberately owns a conditional locality/nonfactorization argument, not a full physical upper-source construction. CBF transfer and endpoint factorization provide upstream language but no selected singlet, apparatus or CHSH probability source. The exact one-context recorder and ontology non-entailment result do not provide that multi-setting state/instrument package. Keeping the explicit benchmark and probability-source boundary is appropriate; importing technical proof bodies would duplicate the owners and distort this paper's role.",
+      "main_tex_lf_sha256": "58f6802a63d13d2106bc61f0cb3620adb7d92576e3a2aa48b2fb37a6a22ee398",
+      "result_hashes": {
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet"
+        ],
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ],
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ],
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-13-20260912",
+      "paper_id": "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION",
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.GEO.GLOBAL_FITTING_DESCENT",
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_local_source_tube_consolidation",
+        "q79_eta9_b89_same_source_rejection",
+        "eta9_gate1_campaign",
+        "eta9_three_cycle_b96_nondetection",
+        "q79_global_fitting_descent",
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "anchors": [
+        "sec:later-selection-imports",
+        "The current hidden rank-nine construction"
+      ],
+      "assessment": "The new version imports Gate 1, the certified local 164-dimensional chart, B89 candidate rejection, B96 non-detection, global Fitting descent and BK3 period-kernel scope. It explicitly preserves the completed hidden-HYM existence tier while distinguishing a full common tuple from its ingredients. Owner links replace proof duplication; no local chart, support divisor or rank-zero period kernel is promoted to unique physical vacuum selection.",
+      "main_tex_lf_sha256": "db115e50f0022f61b5b745524753dd8e0b76ba90a5c77977a4172081c446da67",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756",
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda",
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f",
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f",
+        "q79_global_fitting_descent": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30",
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      },
+      "kernel_result_sources": {
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ],
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ],
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ],
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ],
+        "R.GEO.GLOBAL_FITTING_DESCENT": [
+          "q79_global_fitting_descent"
+        ],
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-14-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-loop-quantum-gravity-a-4ae4b130",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "What this paper owns",
+        "The proposition is intentionally conditional."
+      ],
+      "assessment": "The sole technical result is the conditional normalized Holst-to-Ashtekar-Barbero composition, with later LQG representation and dynamics imported under their own assumptions. The q79 chiral-family result is not its parity-odd coefficient, canonical splitting or quantum state selection. Existing source boundaries already state that finite projection does not manufacture these inputs.",
+      "main_tex_lf_sha256": "08afaad4eed5ab632804a8ba435fc950e59fe8abcbdf1090f0616636d4b5a847",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-15-20260912",
+      "paper_id": "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER",
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_projective_hym_naturality",
+        "q79_cech_projector_compiler",
+        "q79_spectral_strain_hessian"
+      ],
+      "anchors": [
+        "This paper proves a local equivalence of quadratic diagnostics",
+        "Worldsheet Weyl invariance"
+      ],
+      "assessment": "The C2 local bridge compares two declared Hessians after an actual normalized sigma-model derivative is supplied. Projective HYM naturality, the finite Cech compiler and shorted-Hessian criterion are supporting constructions but do not compute this worldsheet derivative, Weyl/modular consistency or the full source. The explicit selected-subspace and global-gate clauses are retained; the technical geometry proofs remain with their canonical owners.",
+      "main_tex_lf_sha256": "d01685ea45ee9d17a95ba8655752775aa9231992012085385726b110220ab48d",
+      "result_hashes": {
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23"
+      },
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ],
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-16-20260912",
+      "paper_id": "temporal-bell-inequalities-and-global-consistency-in-mo-b0f2bdeb",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER",
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler",
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "Scope and Claim Tier",
+        "MTT does not yet derive the physical clock"
+      ],
+      "assessment": "This paper computes sequential pair correlations from declared time-ordered instruments and proves the common-joint-distribution bound. A canonical one-context count process and its ontology countermodel cannot select the three pair protocols, physical clock or general preparation here. The existing supplied-qubit benchmark and no-retro-signaling/source boundaries already state the relevant distinctions.",
+      "main_tex_lf_sha256": "11b1f11c7c8c8123b16e7cd7c0d00f75c9b5407db6a505ffc6794f0b6b12e05b",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ],
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-17-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "integrated",
+      "result_ids": [
+        "R.FP.CUBIC_HEAT_TRACE",
+        "R.FP.L11_PHASE_CHANNEL",
+        "R.FP.FINITE_MODE_RECURRENCE"
+      ],
+      "curated_result_ids": [
+        "fixed_points_cubic_heat_trace_bound",
+        "fixed_points_l11_phase_channel",
+        "fixed_points_finite_mode_recurrence_boundary"
+      ],
+      "anchors": [
+        "finite-mode companion",
+        "strictly decreasing repair cost"
+      ],
+      "assessment": "The repair discussion now names the finite-mode companion as owner of recurrence and its certified numerical examples; FP III retains only the stationary-ensemble theorem. Cubic heat-trace and L11 channel results are described as supplied-model examples, not source-selected noise or extra premises of the abstract repair-Hessian theorem. No proof or numerical table is duplicated.",
+      "main_tex_lf_sha256": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5",
+      "result_hashes": {
+        "fixed_points_cubic_heat_trace_bound": "affd30c6fa9ca9d5c8e08f0349cc92b419afd84ade8d666125f05af483dba54a",
+        "fixed_points_l11_phase_channel": "a4f90611cc10dff2ad8945b0f05d19bb9b7373bf64b1b3b7617c4fa4928f0f0f",
+        "fixed_points_finite_mode_recurrence_boundary": "7bdcad1f8dc2b752e1e4ada03fcea6e7c95d4dbf5e065f04718096fcc507f798"
+      },
+      "kernel_result_sources": {
+        "R.FP.CUBIC_HEAT_TRACE": [
+          "fixed_points_cubic_heat_trace_bound"
+        ],
+        "R.FP.L11_PHASE_CHANNEL": [
+          "fixed_points_l11_phase_channel"
+        ],
+        "R.FP.FINITE_MODE_RECURRENCE": [
+          "fixed_points_finite_mode_recurrence_boundary"
+        ]
+      }
+    },
+    {
+      "id": "CONSUMER-PARENT-18-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex parent contextual scope audit",
+      "state": "integrated",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "sec:analytic-family-import",
+        "They add no further physical parameter"
+      ],
+      "assessment": "The new analytic-family subsection imports the canonical source-to-Dirac/Hessian/Riesz/Kato/determinant construction with its common-domain and regular spectral-window hypotheses. Finite noninjectivity explains why the 27 and 96 matrices do not select the smooth lift. Hidden-HYM existence, all profile values and embedded-equivalence results are retained; full-domain chiral measure, crossing/sector gluing and uniform continuum control remain separate.",
+      "main_tex_lf_sha256": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-001",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ]
+      },
+      "anchors": [
+        "sec:chain-import"
+      ],
+      "assessment": "Flux is the contextual owner for this eta9 import. The completed 30-group/225-column Gate-1 result is explained and cited in its residue-reduction role, with the older incomplete frontier explicitly superseded only at that gate. Exact finite Jacobian closure is not the global meridian, integral readout, beta_C value or common HYM endpoint.",
+      "main_tex_lf_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-002",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.THREE_CYCLE_NONDETECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_three_cycle_b96_nondetection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ]
+      },
+      "anchors": [
+        "sec:cycles-import"
+      ],
+      "assessment": "Flux explains all six stages from coverage through the B96 conclusion, with a frozen source bibliography. The completed subsystem has Gram -2I3 and zero detected rational affine relation defects. Neither integral triviality nor global beta_C=0 follows. Coverage is not reopened; a detecting subsystem needs different information.",
+      "main_tex_lf_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "result_hashes": {
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-003",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchors": [
+        "sec:geometry-consumers",
+        "\\cite{FluxBK3}"
+      ],
+      "assessment": "Imported through Cohesive's rank-zero large-gauge-kernel owner statement. The selected real-K3 hypotheses yield an injective immersion R2 into T20 with dense nonclosed image. V7 explains that rank zero concerns periodic gauge identifications, not zero source dimension, an embedded subspace with the inherited topology, kinetic normalization or the eta9 affine lift.",
+      "main_tex_lf_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-004",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.GLOBAL_FITTING_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_global_fitting_descent"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.GLOBAL_FITTING_DESCENT": [
+          "q79_global_fitting_descent"
+        ]
+      },
+      "anchors": [
+        "sec:geometry-consumers",
+        "\\cite{FluxFitting}"
+      ],
+      "assessment": "Imported through Cohesive's global Fitting-descent owner statement. Local line units leave minor ideals unchanged, so the support descends as ordinary ideals without trivializing the gerbe. The auxiliary 3H+3D0 determinant and generic corank three do not supply a spectral line in the physical eta9 9H+3D0 system. Historical hidden-HYM-open wording is superseded by retained hidden existence, not by a claimed common endpoint.",
+      "main_tex_lf_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "result_hashes": {
+        "q79_global_fitting_descent": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-005",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY"
+      ],
+      "curated_result_ids": [
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ]
+      },
+      "anchors": [
+        "sec:geometry-consumers",
+        "\\cite{FluxNaturality}"
+      ],
+      "assessment": "Imported through the QM owner's projective-HYM operator interface. A supplied unitary connection, metric and domain transport naturally; the lane flag remains outside the irreducible gauge bundle. A smooth finite matrix over the base is not a finite Fourier approximation. Exact restriction requires the reducing condition (1-P)HP=0; otherwise use the complementary resolvent/Feshbach correction. These implications do not select the physical connection.",
+      "main_tex_lf_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "result_hashes": {
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-006",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:geometry-consumers",
+        "\\cite{FluxCechCompiler}"
+      ],
+      "assessment": "Imported through the QM owner's explicit Cech compiler. V7 explains p=UU*, A0=U*dU and Gamma=U(A-A0)U*, so Dp=p d+Gamma transports the supplied connection rather than the bare Grassmann connection. Central twist cancellation is in the rank-80 adjoint and ordinary rank-102 deformation complex, not the hidden fundamental or a 27-mode continuum theorem. Intrinsic subspace and domain transport remain necessary.",
+      "main_tex_lf_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-007",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet"
+        ]
+      },
+      "anchors": [
+        "sec:obligations",
+        "sec:contract"
+      ],
+      "assessment": "Read all four frozen finite-transfer artifacts and the Cohesive owner sections on finite Weyl completion and the response retract. They concern finite DGA/Hodge and nonminimal A-infinity response structures, including m2/m3/m4 and the all-arity nontruncation family. Flux's contract instead assembles actual holomorphic bundles, HYM connections, Bianchi four-forms and flux data. This paper neither uses the transferred products as interactions nor identifies their finite carriers with its residue source; a title/domain match is not a missing consumer import. The owner's finite results remain unchanged.",
+      "main_tex_lf_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "result_hashes": {
+        "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-008",
+      "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian"
+        ]
+      },
+      "anchors": [
+        "sec:response-import",
+        "sec:contract"
+      ],
+      "assessment": "Read the entire frozen spectral-strain artifact and the QM owner statement. Its seven-dimensional relative-phase quotient, nonlinear six-coordinate strain shadow and reduced-Green shorted Hessian are not Flux's linear eta9 graph-coefficient evaluation. V7 explicitly excludes identifying its ranks with a nonlinear global derivative and asks for a genuine common compactification. It makes no physical TT/Reynolds-Hessian claim. Importing the spectral symbol here would add an unrelated operator application, so the candidate is outside this paper's role.",
+      "main_tex_lf_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-009",
+      "paper_id": "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaGate1}"
+      ],
+      "assessment": "Explicitly cited through Flux's selected-source/integral-comparison owner sections. The complete 30-group/225-column original-Jacobian campaign is exact finite reduction data, not the global integral meridian, 248-coordinate readout or analytic Deligne class. Paper I retains measured common-scheme overlap targets and conditional projector/representative estimates; none of these sources selects its period-normalized modes, kinetic weights or action scale.",
+      "main_tex_lf_sha256": "58e8ec8f4b46bd409cedf8db43e64244c1975dd99be3813570af62f61f7fe3be",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-010",
+      "paper_id": "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.THREE_CYCLE_NONDETECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_three_cycle_b96_nondetection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaCycles}"
+      ],
+      "assessment": "Explicitly cited through Flux's completed-local-tests owner section. The independent three-cycle subsystem with Gram -2I3 is complete but non-detecting at its rational affine-pairing tier, not a global untwisting theorem or an incomplete run. The text excludes identifying the auxiliary CLN model with physical q79. Paper I retains measured common-scheme overlap targets and conditional projector/representative estimates; none of these sources selects its period-normalized modes, kinetic weights or action scale.",
+      "main_tex_lf_sha256": "58e8ec8f4b46bd409cedf8db43e64244c1975dd99be3813570af62f61f7fe3be",
+      "result_hashes": {
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-011",
+      "paper_id": "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaBK3}"
+      ],
+      "assessment": "Explicitly cited through Cohesive's rank-zero large-gauge-kernel owner subsection. The injective immersed R2 image is dense and nonclosed in T20. Rank zero removes periodic gauge identifications, not physical modes, continuous coordinates, kinetic normalization or the unrelated eta9 affine lift. Paper I retains measured common-scheme overlap targets and conditional projector/representative estimates; none of these sources selects its period-normalized modes, kinetic weights or action scale.",
+      "main_tex_lf_sha256": "58e8ec8f4b46bd409cedf8db43e64244c1975dd99be3813570af62f61f7fe3be",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-012",
+      "paper_id": "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_local_source_tube_consolidation"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ]
+      },
+      "anchors": [
+        "\\section{Purpose and scope}",
+        "\\section{Scale separation and withdrawn legacy calibration}"
+      ],
+      "assessment": "Candidate evaluated against Flux's established 164-dimensional source tube on 0<=u<=2^-96 and its source-index consolidation. This paper does not execute that selected connection or use its local interval as an overlap, geometry, gravity or weak-angle input. A local certificate cannot select the missing physical normalization or yield useful-width global transport. Paper I retains measured common-scheme overlap targets and conditional projector/representative estimates; none of these sources selects its period-normalized modes, kinetic weights or action scale. The incidental local/global boundary sentence in the consumer discussion is not presented as a numerical import or as this paper's source theorem.",
+      "main_tex_lf_sha256": "58e8ec8f4b46bd409cedf8db43e64244c1975dd99be3813570af62f61f7fe3be",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-013",
+      "paper_id": "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\section{Purpose and scope}",
+        "\\section{Scale separation and withdrawn legacy calibration}"
+      ],
+      "assessment": "Candidate evaluated against Flux's same-source B89 mod-two detector and retained rejection. This paper does not choose B89, assume its twist is zero, or use the B89 method-chart scalar. Its calibrated or conditional conclusion is therefore unchanged by that candidate-specific exclusion, which also does not select a different physical source. Paper I retains measured common-scheme overlap targets and conditional projector/representative estimates; none of these sources selects its period-normalized modes, kinetic weights or action scale.",
+      "main_tex_lf_sha256": "58e8ec8f4b46bd409cedf8db43e64244c1975dd99be3813570af62f61f7fe3be",
+      "result_hashes": {
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-014",
+      "paper_id": "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaGate1}"
+      ],
+      "assessment": "Explicitly cited through Flux's selected-source/integral-comparison owner sections. The complete 30-group/225-column original-Jacobian campaign is exact finite reduction data, not the global integral meridian, 248-coordinate readout or analytic Deligne class. Paper II retains the calibrated round-S2/nil auxiliary realization and its spectral margin; no finite source or gauge-kernel theorem identifies it with the global q79/Fu-Yau topology.",
+      "main_tex_lf_sha256": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-015",
+      "paper_id": "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.THREE_CYCLE_NONDETECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_three_cycle_b96_nondetection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaCycles}"
+      ],
+      "assessment": "Explicitly cited through Flux's completed-local-tests owner section. The independent three-cycle subsystem with Gram -2I3 is complete but non-detecting at its rational affine-pairing tier, not a global untwisting theorem or an incomplete run. The text excludes identifying the auxiliary CLN model with physical q79. Paper II retains the calibrated round-S2/nil auxiliary realization and its spectral margin; no finite source or gauge-kernel theorem identifies it with the global q79/Fu-Yau topology.",
+      "main_tex_lf_sha256": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896",
+      "result_hashes": {
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-016",
+      "paper_id": "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaBK3}"
+      ],
+      "assessment": "Explicitly cited through Cohesive's rank-zero large-gauge-kernel owner subsection. The injective immersed R2 image is dense and nonclosed in T20. Rank zero removes periodic gauge identifications, not physical modes, continuous coordinates, kinetic normalization or the unrelated eta9 affine lift. Paper II retains the calibrated round-S2/nil auxiliary realization and its spectral margin; no finite source or gauge-kernel theorem identifies it with the global q79/Fu-Yau topology.",
+      "main_tex_lf_sha256": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-017",
+      "paper_id": "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_local_source_tube_consolidation"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ]
+      },
+      "anchors": [
+        "\\section{Interpretation of the Route-A result and scope}"
+      ],
+      "assessment": "Candidate evaluated against Flux's established 164-dimensional source tube on 0<=u<=2^-96 and its source-index consolidation. This paper does not execute that selected connection or use its local interval as an overlap, geometry, gravity or weak-angle input. A local certificate cannot select the missing physical normalization or yield useful-width global transport. Paper II retains the calibrated round-S2/nil auxiliary realization and its spectral margin; no finite source or gauge-kernel theorem identifies it with the global q79/Fu-Yau topology.",
+      "main_tex_lf_sha256": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-018",
+      "paper_id": "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\section{Interpretation of the Route-A result and scope}"
+      ],
+      "assessment": "Candidate evaluated against Flux's same-source B89 mod-two detector and retained rejection. This paper does not choose B89, assume its twist is zero, or use the B89 method-chart scalar. Its calibrated or conditional conclusion is therefore unchanged by that candidate-specific exclusion, which also does not select a different physical source. Paper II retains the calibrated round-S2/nil auxiliary realization and its spectral margin; no finite source or gauge-kernel theorem identifies it with the global q79/Fu-Yau topology.",
+      "main_tex_lf_sha256": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896",
+      "result_hashes": {
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-019",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaGate1}"
+      ],
+      "assessment": "Explicitly cited through Flux's selected-source/integral-comparison owner sections. The complete 30-group/225-column original-Jacobian campaign is exact finite reduction data, not the global integral meridian, 248-coordinate readout or analytic Deligne class. Paper III retains a conditional reconstruction-and-norm dictionary; finite source closure does not prove its Hermitian norm, direction-sphere bridge or period-normalized color representative.",
+      "main_tex_lf_sha256": "729c27facd16cdc2c80d4e71b2ffc28b14c42556b9440d634756d9db6b03d63a",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-020",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.THREE_CYCLE_NONDETECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_three_cycle_b96_nondetection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaCycles}"
+      ],
+      "assessment": "Explicitly cited through Flux's completed-local-tests owner section. The independent three-cycle subsystem with Gram -2I3 is complete but non-detecting at its rational affine-pairing tier, not a global untwisting theorem or an incomplete run. The text excludes identifying the auxiliary CLN model with physical q79. Paper III retains a conditional reconstruction-and-norm dictionary; finite source closure does not prove its Hermitian norm, direction-sphere bridge or period-normalized color representative.",
+      "main_tex_lf_sha256": "729c27facd16cdc2c80d4e71b2ffc28b14c42556b9440d634756d9db6b03d63a",
+      "result_hashes": {
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-021",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaBK3}"
+      ],
+      "assessment": "Explicitly cited through Cohesive's rank-zero large-gauge-kernel owner subsection. The injective immersed R2 image is dense and nonclosed in T20. Rank zero removes periodic gauge identifications, not physical modes, continuous coordinates, kinetic normalization or the unrelated eta9 affine lift. Paper III retains a conditional reconstruction-and-norm dictionary; finite source closure does not prove its Hermitian norm, direction-sphere bridge or period-normalized color representative.",
+      "main_tex_lf_sha256": "729c27facd16cdc2c80d4e71b2ffc28b14c42556b9440d634756d9db6b03d63a",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-022",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_local_source_tube_consolidation"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ]
+      },
+      "anchors": [
+        "\\section{Scope and limitations}"
+      ],
+      "assessment": "Candidate evaluated against Flux's established 164-dimensional source tube on 0<=u<=2^-96 and its source-index consolidation. This paper does not execute that selected connection or use its local interval as an overlap, geometry, gravity or weak-angle input. A local certificate cannot select the missing physical normalization or yield useful-width global transport. Paper III retains a conditional reconstruction-and-norm dictionary; finite source closure does not prove its Hermitian norm, direction-sphere bridge or period-normalized color representative.",
+      "main_tex_lf_sha256": "729c27facd16cdc2c80d4e71b2ffc28b14c42556b9440d634756d9db6b03d63a",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-023",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\section{Scope and limitations}"
+      ],
+      "assessment": "Candidate evaluated against Flux's same-source B89 mod-two detector and retained rejection. This paper does not choose B89, assume its twist is zero, or use the B89 method-chart scalar. Its calibrated or conditional conclusion is therefore unchanged by that candidate-specific exclusion, which also does not select a different physical source. Paper III retains a conditional reconstruction-and-norm dictionary; finite source closure does not prove its Hermitian norm, direction-sphere bridge or period-normalized color representative.",
+      "main_tex_lf_sha256": "729c27facd16cdc2c80d4e71b2ffc28b14c42556b9440d634756d9db6b03d63a",
+      "result_hashes": {
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-024",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaGate1}"
+      ],
+      "assessment": "Explicitly cited through Flux's selected-source/integral-comparison owner sections. The complete 30-group/225-column original-Jacobian campaign is exact finite reduction data, not the global integral meridian, 248-coordinate readout or analytic Deligne class. Paper IV retains conditional dimensional scaling in its additional auxiliary product ansatz; these sources provide neither physical q79 volume nor the absolute gravity scale or cosmological state.",
+      "main_tex_lf_sha256": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-025",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.THREE_CYCLE_NONDETECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_three_cycle_b96_nondetection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaCycles}"
+      ],
+      "assessment": "Explicitly cited through Flux's completed-local-tests owner section. The independent three-cycle subsystem with Gram -2I3 is complete but non-detecting at its rational affine-pairing tier, not a global untwisting theorem or an incomplete run. The text excludes identifying the auxiliary CLN model with physical q79. Paper IV retains conditional dimensional scaling in its additional auxiliary product ansatz; these sources provide neither physical q79 volume nor the absolute gravity scale or cosmological state.",
+      "main_tex_lf_sha256": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6",
+      "result_hashes": {
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-026",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaBK3}"
+      ],
+      "assessment": "Explicitly cited through Cohesive's rank-zero large-gauge-kernel owner subsection. The injective immersed R2 image is dense and nonclosed in T20. Rank zero removes periodic gauge identifications, not physical modes, continuous coordinates, kinetic normalization or the unrelated eta9 affine lift. Paper IV retains conditional dimensional scaling in its additional auxiliary product ansatz; these sources provide neither physical q79 volume nor the absolute gravity scale or cosmological state.",
+      "main_tex_lf_sha256": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-027",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_local_source_tube_consolidation"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ]
+      },
+      "anchors": [
+        "\\section{Conclusion}",
+        "sec:theta-source-consumers"
+      ],
+      "assessment": "Candidate evaluated against Flux's established 164-dimensional source tube on 0<=u<=2^-96 and its source-index consolidation. This paper does not execute that selected connection or use its local interval as an overlap, geometry, gravity or weak-angle input. A local certificate cannot select the missing physical normalization or yield useful-width global transport. Paper IV retains conditional dimensional scaling in its additional auxiliary product ansatz; these sources provide neither physical q79 volume nor the absolute gravity scale or cosmological state.",
+      "main_tex_lf_sha256": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-028",
+      "paper_id": "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\section{Conclusion}",
+        "sec:theta-source-consumers"
+      ],
+      "assessment": "Candidate evaluated against Flux's same-source B89 mod-two detector and retained rejection. This paper does not choose B89, assume its twist is zero, or use the B89 method-chart scalar. Its calibrated or conditional conclusion is therefore unchanged by that candidate-specific exclusion, which also does not select a different physical source. Paper IV retains conditional dimensional scaling in its additional auxiliary product ansatz; these sources provide neither physical q79 volume nor the absolute gravity scale or cosmological state.",
+      "main_tex_lf_sha256": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6",
+      "result_hashes": {
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-029",
+      "paper_id": "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaGate1}"
+      ],
+      "assessment": "Explicitly cited through Flux's selected-source/integral-comparison owner sections. The complete 30-group/225-column original-Jacobian campaign is exact finite reduction data, not the global integral meridian, 248-coordinate readout or analytic Deligne class. Paper V retains the exact weak-angle round trip; these sources do not select r21 before the measured electroweak gauge profile, so they do not create an independent weak-angle test.",
+      "main_tex_lf_sha256": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-030",
+      "paper_id": "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.THREE_CYCLE_NONDETECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_three_cycle_b96_nondetection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaCycles}"
+      ],
+      "assessment": "Explicitly cited through Flux's completed-local-tests owner section. The independent three-cycle subsystem with Gram -2I3 is complete but non-detecting at its rational affine-pairing tier, not a global untwisting theorem or an incomplete run. The text excludes identifying the auxiliary CLN model with physical q79. Paper V retains the exact weak-angle round trip; these sources do not select r21 before the measured electroweak gauge profile, so they do not create an independent weak-angle test.",
+      "main_tex_lf_sha256": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d",
+      "result_hashes": {
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-031",
+      "paper_id": "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchors": [
+        "sec:theta-source-consumers",
+        "\\cite{ThetaBK3}"
+      ],
+      "assessment": "Explicitly cited through Cohesive's rank-zero large-gauge-kernel owner subsection. The injective immersed R2 image is dense and nonclosed in T20. Rank zero removes periodic gauge identifications, not physical modes, continuous coordinates, kinetic normalization or the unrelated eta9 affine lift. Paper V retains the exact weak-angle round trip; these sources do not select r21 before the measured electroweak gauge profile, so they do not create an independent weak-angle test.",
+      "main_tex_lf_sha256": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-032",
+      "paper_id": "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_local_source_tube_consolidation"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ]
+      },
+      "anchors": [
+        "\\section{Selected inputs and scope}",
+        "\\section{Criterion for a genuine redundant determination}"
+      ],
+      "assessment": "Candidate evaluated against Flux's established 164-dimensional source tube on 0<=u<=2^-96 and its source-index consolidation. This paper does not execute that selected connection or use its local interval as an overlap, geometry, gravity or weak-angle input. A local certificate cannot select the missing physical normalization or yield useful-width global transport. Paper V retains the exact weak-angle round trip; these sources do not select r21 before the measured electroweak gauge profile, so they do not create an independent weak-angle test.",
+      "main_tex_lf_sha256": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756"
+      }
+    },
+    {
+      "id": "FLUXTHETA-CONSUMER-20260912-033",
+      "paper_id": "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex Flux/Theta contextual editorial review",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\section{Selected inputs and scope}",
+        "\\section{Criterion for a genuine redundant determination}"
+      ],
+      "assessment": "Candidate evaluated against Flux's same-source B89 mod-two detector and retained rejection. This paper does not choose B89, assume its twist is zero, or use the B89 method-chart scalar. Its calibrated or conditional conclusion is therefore unchanged by that candidate-specific exclusion, which also does not select a different physical source. Paper V retains the exact weak-angle round trip; these sources do not select r21 before the measured electroweak gauge profile, so they do not create an independent weak-angle test.",
+      "main_tex_lf_sha256": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d",
+      "result_hashes": {
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      }
+    },
+    {
+      "id": "2026-09-12-hull-consumer-compiler",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_projective_hym_naturality",
+        "q79_cech_projector_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-compiler}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The current QM paper is the canonical manuscript owner, despite stale Kernel title-based owner hints. Given unitary transitions and a supplied Hermitian connection, the Cech construction gives p=UU* and Dp=p d+U(A-U*dU)U*, preserving that supplied connection rather than replacing it with the Grassmann connection. Matrix size does not make the section space finite; the modal flag is external. Naturality transports the intrinsic retained window, and Hodge/Green restriction needs a reducing subspace with compatible domains. The exact Feshbach correction distinguishes a coupled complement from bare compression. These exact conditional constructions make the interface executable when inputs exist; they do not select the physical endpoint.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7"
+      },
+      "source_owners": {
+        "q79_projective_hym_naturality": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "q79_cech_projector_compiler": "modal-triplet-theory-from-mtt-to-quantum-mechanics"
+      },
+      "source_tiers": {
+        "q79_projective_hym_naturality": "DERIVED_EXACT_UNIVERSAL",
+        "q79_cech_projector_compiler": "DERIVED_EXACT_UNIVERSAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 620,
+          "anchor": "\\label{sec:consumer-compiler}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-strain",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-strain}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The QM owner supplies the nonlinear replacement for the excluded linear root-stack strain route. Three diagonal coordinates plus three squared edge amplitudes are not the full seven-dimensional relative-phase quotient. The shorted Hessian is obtained by projecting covariance before inversion, not by compressing the old Hessian. The later support-stratified source is also cited and fully read: zero edges use second jets, tangential shorting and a degree-one normal cost r/2, not an ordinary full six-dimensional boundary Hessian. Rank-six surjectivity or the specified quarter-turn lift forces the regular stratum. This preserves exact universal geometry while leaving the selected physical source, Green operator and same-source symmetry lift open.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23"
+      },
+      "source_owners": {
+        "q79_spectral_strain_hessian": "modal-triplet-theory-from-mtt-to-quantum-mechanics"
+      },
+      "source_tiers": {
+        "q79_spectral_strain_hessian": "DERIVED_EXACT_UNIVERSAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 650,
+          "anchor": "\\label{sec:consumer-strain}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-eta9",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign",
+        "eta9_three_cycle_b96_nondetection",
+        "q79_eta9_local_source_tube_consolidation",
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ],
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ],
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ],
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-global}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Flux owner supplies four different kinds of evidence, explicitly distinguished in prose. The completed original-Jacobian Gate-1 campaign is finite exact polynomial reduction, not a global path or integral marking. The independent three-cycle subsystem is rationally non-detecting; rational boundary membership is not integral membership. The certified positive-width source tube and correlated lift are local progress, not a full physical readout. The same-source B89 detector rejects that candidate from beta_C=0 without selecting a replacement or proving that its integral obstruction has exact order two. The frozen consolidation/rejection explanations were read in full; their larger referenced interval or campaign data were not independently replayed.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f",
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f",
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756",
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      },
+      "source_owners": {
+        "eta9_gate1_campaign": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "eta9_three_cycle_b96_nondetection": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "q79_eta9_local_source_tube_consolidation": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "q79_eta9_b89_same_source_rejection": "flux-compactifications-in-heterotic-string-theory-expli-08b38155"
+      },
+      "source_tiers": {
+        "eta9_gate1_campaign": "DERIVED_EXACT_PARTIAL",
+        "eta9_three_cycle_b96_nondetection": "CLOSED_COMPUTER_ASSISTED_EXACT_LINEAR_ALGEBRA",
+        "q79_eta9_local_source_tube_consolidation": "NUMERIC_CERTIFIED_LOCAL_SOURCE_CHART + SUPPORT_ONLY_CONSOLIDATION",
+        "q79_eta9_b89_same_source_rejection": "CLOSED_COMPUTER_ASSISTED_EXACT_CANDIDATE_REJECTION"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1260,
+          "anchor": "\\label{sec:consumer-global}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-finite-transfer",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-transfer}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Cohesive owner is cited for the finite response contraction, nonzero transferred m3 and m4, and conditional all-arity source-map naturality. The retained product is accompanied by its higher operations and contraction data. Transport of the whole transfer-tree hierarchy requires a product-preserving source map commuting with inclusion, projection and homotopy; matching one matrix is insufficient. The three frozen sources used here support exactly those statements. Finite exact algebra does not supply continuum domains, the selected physical interaction, a signed physical action or nonperturbative QFT.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "source_owners": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "causal_base_q79_all_arity_source_promotion_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "EXACT_FINITE_STRONG_DEFORMATION_RETRACT + EXACT_TRANSFERRED_M1_M2_M3 + EXACT_ARITY_THREE_A_INFINITY_IDENTITY + HIGHER_ARITY_AND_PHYSICAL_PROMOTION_OPEN",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "EXACT_FINITE_TRANSFERRED_M4 + EXACT_ARITY_FOUR_STASHEFF",
+        "causal_base_q79_all_arity_source_promotion_packet": "EXACT_GENERAL + SELECTED_EXACT_FINITE; CONDITIONAL_CONTINUUM"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 684,
+          "anchor": "\\label{sec:consumer-transfer}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-fitting",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.GLOBAL_FITTING_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_global_fitting_descent"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.GLOBAL_FITTING_DESCENT": [
+          "q79_global_fitting_descent"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-global}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Cohesive owner supplies global ordinary Fitting ideal sheaves for twisted cohomology: invertible twists change minor generators by units, so support descends. This does not trivialize the gerbe, supply connection overlaps or construct a spectral line. The auxiliary divisor is 3H+3D0, not the physical 9H+3D0, and generic corank three is not rank-one spectral data. The exact support theorem is used as a typed geometric interface, not promoted to physical source selection.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_global_fitting_descent": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30"
+      },
+      "source_owners": {
+        "q79_global_fitting_descent": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "q79_global_fitting_descent": "DERIVED_EXACT_STRUCTURAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1260,
+          "anchor": "\\label{sec:consumer-global}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-bk3",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-global}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Cohesive BK3 result is used with its precise lattice distinction: the large-gauge kernel is zero while the rank-two image is dense and the indicated parameter torus remains T^20. Rank-zero kernel therefore does not mean zero residual parameters or a selected physical modulus. This exact arithmetic/topological conclusion is kept separate from the visible spectral line and global integral marking problem.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      },
+      "source_owners": {
+        "q79_bk3_rank_zero_kernel": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "q79_bk3_rank_zero_kernel": "DERIVED_EXACT"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1260,
+          "anchor": "\\label{sec:consumer-global}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-endpoint-factorization",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-transfer}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Cohesive seven-row endpoint audit factors the remaining source burden into GAS, SYN and BV4 packets on one common source. The prose explains which same-source physical action, symmetry and interaction data must be compatible; it does not treat the inventory as a construction or as closure of the continuum endpoint. Pure repair cost and a signed physical action remain different objects.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "source_owners": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "EXACT_GENERAL + EXACT_DEPENDENCY_WITNESSES; PHYSICAL_Q79_OPEN"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 684,
+          "anchor": "\\label{sec:consumer-transfer}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-compiler",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_projective_hym_naturality",
+        "q79_cech_projector_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:projector-compiler}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The current QM paper is the canonical manuscript owner, despite stale Kernel title-based owner hints. Given unitary transitions and a supplied Hermitian connection, the Cech construction gives p=UU* and Dp=p d+U(A-U*dU)U*, preserving that supplied connection rather than replacing it with the Grassmann connection. Matrix size does not make the section space finite; the modal flag is external. Naturality transports the intrinsic retained window, and Hodge/Green restriction needs a reducing subspace with compatible domains. The exact Feshbach correction distinguishes a coupled complement from bare compression. These exact conditional constructions make the interface executable when inputs exist; they do not select the physical endpoint.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7"
+      },
+      "source_owners": {
+        "q79_projective_hym_naturality": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "q79_cech_projector_compiler": "modal-triplet-theory-from-mtt-to-quantum-mechanics"
+      },
+      "source_tiers": {
+        "q79_projective_hym_naturality": "DERIVED_EXACT_UNIVERSAL",
+        "q79_cech_projector_compiler": "DERIVED_EXACT_UNIVERSAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 767,
+          "anchor": "\\label{sec:projector-compiler}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-strain",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:nonlinear-strain}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The QM owner supplies the nonlinear replacement for the excluded linear root-stack strain route. Three diagonal coordinates plus three squared edge amplitudes are not the full seven-dimensional relative-phase quotient. The shorted Hessian is obtained by projecting covariance before inversion, not by compressing the old Hessian. The later support-stratified source is also cited and fully read: zero edges use second jets, tangential shorting and a degree-one normal cost r/2, not an ordinary full six-dimensional boundary Hessian. Rank-six surjectivity or the specified quarter-turn lift forces the regular stratum. This preserves exact universal geometry while leaving the selected physical source, Green operator and same-source symmetry lift open.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23"
+      },
+      "source_owners": {
+        "q79_spectral_strain_hessian": "modal-triplet-theory-from-mtt-to-quantum-mechanics"
+      },
+      "source_tiers": {
+        "q79_spectral_strain_hessian": "DERIVED_EXACT_UNIVERSAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 569,
+          "anchor": "\\label{sec:nonlinear-strain}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-eta9",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign",
+        "eta9_three_cycle_b96_nondetection",
+        "q79_eta9_local_source_tube_consolidation",
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ],
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ],
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ],
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:geometric-consumers}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The Flux owner supplies four different kinds of evidence, explicitly distinguished in prose. The completed original-Jacobian Gate-1 campaign is finite exact polynomial reduction, not a global path or integral marking. The independent three-cycle subsystem is rationally non-detecting; rational boundary membership is not integral membership. The certified positive-width source tube and correlated lift are local progress, not a full physical readout. The same-source B89 detector rejects that candidate from beta_C=0 without selecting a replacement or proving that its integral obstruction has exact order two. The frozen consolidation/rejection explanations were read in full; their larger referenced interval or campaign data were not independently replayed.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f",
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f",
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756",
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      },
+      "source_owners": {
+        "eta9_gate1_campaign": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "eta9_three_cycle_b96_nondetection": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "q79_eta9_local_source_tube_consolidation": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "q79_eta9_b89_same_source_rejection": "flux-compactifications-in-heterotic-string-theory-expli-08b38155"
+      },
+      "source_tiers": {
+        "eta9_gate1_campaign": "DERIVED_EXACT_PARTIAL",
+        "eta9_three_cycle_b96_nondetection": "CLOSED_COMPUTER_ASSISTED_EXACT_LINEAR_ALGEBRA",
+        "q79_eta9_local_source_tube_consolidation": "NUMERIC_CERTIFIED_LOCAL_SOURCE_CHART + SUPPORT_ONLY_CONSOLIDATION",
+        "q79_eta9_b89_same_source_rejection": "CLOSED_COMPUTER_ASSISTED_EXACT_CANDIDATE_REJECTION"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 795,
+          "anchor": "\\label{sec:geometric-consumers}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-finite-transfer",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:cohesive-consumers}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The Cohesive owner is cited for the finite response contraction, nonzero transferred m3 and m4, and conditional all-arity source-map naturality. The retained product is accompanied by its higher operations and contraction data. Transport of the whole transfer-tree hierarchy requires a product-preserving source map commuting with inclusion, projection and homotopy; matching one matrix is insufficient. The three frozen sources used here support exactly those statements. Finite exact algebra does not supply continuum domains, the selected physical interaction, a signed physical action or nonperturbative QFT.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "source_owners": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "causal_base_q79_all_arity_source_promotion_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "EXACT_FINITE_STRONG_DEFORMATION_RETRACT + EXACT_TRANSFERRED_M1_M2_M3 + EXACT_ARITY_THREE_A_INFINITY_IDENTITY + HIGHER_ARITY_AND_PHYSICAL_PROMOTION_OPEN",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "EXACT_FINITE_TRANSFERRED_M4 + EXACT_ARITY_FOUR_STASHEFF",
+        "causal_base_q79_all_arity_source_promotion_packet": "EXACT_GENERAL + SELECTED_EXACT_FINITE; CONDITIONAL_CONTINUUM"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 826,
+          "anchor": "\\label{sec:cohesive-consumers}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-fitting",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.GLOBAL_FITTING_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_global_fitting_descent"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.GLOBAL_FITTING_DESCENT": [
+          "q79_global_fitting_descent"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:geometric-consumers}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The Cohesive owner supplies global ordinary Fitting ideal sheaves for twisted cohomology: invertible twists change minor generators by units, so support descends. This does not trivialize the gerbe, supply connection overlaps or construct a spectral line. The auxiliary divisor is 3H+3D0, not the physical 9H+3D0, and generic corank three is not rank-one spectral data. The exact support theorem is used as a typed geometric interface, not promoted to physical source selection.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "q79_global_fitting_descent": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30"
+      },
+      "source_owners": {
+        "q79_global_fitting_descent": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "q79_global_fitting_descent": "DERIVED_EXACT_STRUCTURAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 795,
+          "anchor": "\\label{sec:geometric-consumers}"
+        }
+      ]
+    },
+    {
+      "id": "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-geometry-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler",
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "assessment": "QM is the canonical owner. Explains finite matrix bundle presentation versus infinite base modes; connection correction Gamma, transported metric/domains/windows and curved naturality; CLN is not global q79 topology and a flag is not an inserted parallel physical HYM subbundle. No continuum source is selected.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-strain-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian",
+        "q79_support_stratified_strain"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "assessment": "QM owns the linear root-space exclusion and nonlinear spectral-strain/shorted-Hessian replacement. The later support-stratified source is explicitly used: full generic quotient is seven-dimensional, six coordinates forget triangle phase, zero-edge normal cost is degree one, and a rank-six/local C4 contract forces regularity. Reduced covariance invertibility, actual endpoint/Green/physical symmetry lift and action scale remain required. TT observation is projected before shorting.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-geometry-20260912",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler",
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "assessment": "QM is the canonical owner. Explains finite matrix bundle presentation versus infinite base modes; connection correction Gamma, transported metric/domains/windows and curved naturality; CLN is not global q79 topology and a flag is not an inserted parallel physical HYM subbundle. No continuum source is selected.",
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-strain-20260912",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian",
+        "q79_support_stratified_strain"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "assessment": "QM owns the linear root-space exclusion and nonlinear spectral-strain/shorted-Hessian replacement. The later support-stratified source is explicitly used: full generic quotient is seven-dimensional, six coordinates forget triangle phase, zero-edge normal cost is degree one, and a rank-six/local C4 contract forces regularity. Reduced covariance invertibility, actual endpoint/Green/physical symmetry lift and action scale remain required. TT observation is projected before shorting.",
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-transfer-20260912",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Cohesive Closure Repair owns the exact 144-to-48 nonminimal response retract, nonzero m3/m4 and all-arity nontruncating family. Later all-arity naturality is explained as a source/contraction theorem, not inferred from finite probes or presented as full m5+ operation tables. Physical action and analytic Fixed Points domain/invariance/contraction/gap hypotheses are not supplied by finite transfer.",
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-modal-triplet-theory-foundations-geometry-20260912",
+      "paper_id": "modal-triplet-theory-foundations",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler",
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "assessment": "QM is the canonical owner. Explains finite matrix bundle presentation versus infinite base modes; connection correction Gamma, transported metric/domains/windows and curved naturality; CLN is not global q79 topology and a flag is not an inserted parallel physical HYM subbundle. No continuum source is selected.",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-modal-triplet-theory-foundations-strain-20260912",
+      "paper_id": "modal-triplet-theory-foundations",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian",
+        "q79_support_stratified_strain"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "assessment": "QM owns the linear root-space exclusion and nonlinear spectral-strain/shorted-Hessian replacement. The later support-stratified source is explicitly used: full generic quotient is seven-dimensional, six coordinates forget triangle phase, zero-edge normal cost is degree one, and a rank-six/local C4 contract forces regularity. Reduced covariance invertibility, actual endpoint/Green/physical symmetry lift and action scale remain required. TT observation is projected before shorting.",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-modal-triplet-theory-foundations-transfer-20260912",
+      "paper_id": "modal-triplet-theory-foundations",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Cohesive Closure Repair owns the exact 144-to-48 nonminimal response retract, nonzero m3/m4 and all-arity nontruncating family. Later all-arity naturality is explained as a source/contraction theorem, not inferred from finite probes or presented as full m5+ operation tables. Physical action and analytic Fixed Points domain/invariance/contraction/gap hypotheses are not supplied by finite transfer.",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-modal-triplet-theory-foundations-endpoint-20260912",
+      "paper_id": "modal-triplet-theory-foundations",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-endpoint"
+      ],
+      "assessment": "Cohesive Closure Repair is the actual catalog owner, notwithstanding the stale suggested owner in the older Kernel audit. Explains GAS, SYN and BV4 as three informationally distinct source types, not parameters; action Hessian and synthesis determine Galerkin/Feshbach execution without a fourth source. Physical packets remain uninstantiated; hidden projective existence and adopted finite/profile closure are retained.",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-geometry-20260912",
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler",
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "assessment": "QM is the canonical owner. Explains finite matrix bundle presentation versus infinite base modes; connection correction Gamma, transported metric/domains/windows and curved naturality; CLN is not global q79 topology and a flag is not an inserted parallel physical HYM subbundle. No continuum source is selected.",
+      "main_tex_lf_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-strain-20260912",
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian",
+        "q79_support_stratified_strain"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "assessment": "QM owns the linear root-space exclusion and nonlinear spectral-strain/shorted-Hessian replacement. The later support-stratified source is explicitly used: full generic quotient is seven-dimensional, six coordinates forget triangle phase, zero-edge normal cost is degree one, and a rank-six/local C4 contract forces regularity. Reduced covariance invertibility, actual endpoint/Green/physical symmetry lift and action scale remain required. TT observation is projected before shorting.",
+      "main_tex_lf_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-QM-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-consumer"
+      ],
+      "assessment": "The conditional compiler is explained in context of the broader complete quantum record, with a direct frozen citation and the Born/record companion reference. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-QM-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-consumer"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. A complete quantum record still lacks an actuality predicate. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BORN-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:continuum-recorder"
+      ],
+      "assessment": "The conditional compiler is explained directly in the Born/record source chain, its current contextual owner, with a frozen source citation. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BORN-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:ontology-consumer"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. This preserves the separation of record weights, classical concentration/persistence and actualization. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-MEASUREMENT-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The conditional compiler is explained in context of the completion instrument between physical coupling and record stabilization, with a direct frozen citation and the Born/record companion reference. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM.",
+      "main_tex_lf_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-MEASUREMENT-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. Post-record stabilization cannot choose among ontological completions that already agree operationally. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BH-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The conditional compiler is explained in context of comparison with exterior restriction and recovery on a black-hole code, with a direct frozen citation and the Born/record companion reference. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM and does not identify a detector algebra with an evaporating black hole's exterior/code algebra.",
+      "main_tex_lf_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BH-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. Recoverability on a code is not a criterion selecting one ontic history. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-DECOHERENCE-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The conditional compiler is explained in context of the distinction between a nonselective channel and an outcome-resolved instrument, with a direct frozen citation and the Born/record companion reference. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM.",
+      "main_tex_lf_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-DECOHERENCE-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. Even fixing an instrument leaves this underdetermination, which is stronger data than the earlier unread-channel counterexample. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BH-CANONICAL-OUTPUT-DESCENT-20260912",
+      "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CANONICAL_OUTPUT_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_fock_output_measure"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CANONICAL_OUTPUT_DESCENT": [
+          "q79_fock_output_measure"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface",
+        "The canonical measurement construction is already available"
+      ],
+      "assessment": "Genuine contextual stale-text correction, not a new review solely from the historical title suggestion. The prior completion target asked for one concrete MTT measurement instrument despite the established canonical recorder. Section 4.2 now explains the existing stopped measure and state-valued instrument, cites its frozen source and Born/record owner, and restricts the remaining target to a common-source paired measurement/black-hole construction with explicit exterior/recovery maps. Its checkpoint is not a radiation entropy or Hawking-temperature prediction. Canonical binary closure is retained; no exterior code, shared Born/Hawking source or objective actualization law is inferred.",
+      "main_tex_lf_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "result_hashes": {
+        "q79_fock_output_measure": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e"
+      }
+    },
+    {
+      "id": "STOCH-WAVE-20260912-TRANSFER",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+        "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "anchors": [
+        "\\label{subsec:finite-transfer-consumer}"
+      ],
+      "assessment": "Imports six successive finite packets through the Cohesive v14 structural owner: the two-direction formal harmonic algebra, symmetric 144-coordinate completion, nonminimal 48-coordinate retract, nonzero transferred m3/m4, later all-arity nontruncation and contraction-preserving naturality/covariance. The hierarchy clarifies the distinction between Hodge compatibility and nonlinear product transport. This is exact finite structure, not selection of the continuum A, HYM endpoint, rank-102 response bundle, instrument or signed action. C.FP.01 is addressed without duplicating an owner proof or importing later MTT results into FP I-VI.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c",
+        "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet": "8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+          "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet",
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 493,
+          "label": "subsec:finite-transfer-consumer"
+        }
+      ],
+      "canonical_owners": [
+        "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      ]
+    },
+    {
+      "id": "STOCH-WAVE-20260912-ENDPOINT",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "anchors": [
+        "\\label{subsec:not-claimed}",
+        "\\label{ass:fixed-point-spectral-data}",
+        "\\label{subsec:finite-transfer-consumer}"
+      ],
+      "assessment": "Not applicable as a theorem import: the seven-row GAS/SYN/BV4 endpoint factorization is owned contextually by Cohesive and addresses selecting a physical compactification endpoint, whereas this paper assumes the analytic A/P/window and sector data. Its literal scope says \"Nor does this paper compute all sector-specific numerical parameters.\" The source remains an exact conditional factorization with physical acceptance not supplied; no unrelated numerical endpoint ledger is added merely because of title/domain overlap.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 304,
+          "label": "subsec:not-claimed"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 618,
+          "label": "ass:fixed-point-spectral-data"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 493,
+          "label": "subsec:finite-transfer-consumer"
+        }
+      ],
+      "canonical_owners": [
+        "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      ]
+    },
+    {
+      "id": "STOCH-WAVE-20260912-CONTINUUM",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "anchors": [
+        "\\label{par:continuum-recorder-consumer}",
+        "\\label{subsec:detector-sector-kernels}"
+      ],
+      "assessment": "Imports the current record-measure owner and explains the selected invariant three-mode sector, rank-one/rank-two projectors, isometric projector intertwiner, common clock and minimal nondemolition Luders context. Approximate projector transport and conditional-state probability floors are distinguished. Closed canonical Cauchy/Fock structure is not reopened; internal physical HYM/finite-sector selection and apparatus normalization remain inputs. Current curated ownership, not the older Kernel recommended-owner label, controls placement.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      },
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 563,
+          "label": "par:continuum-recorder-consumer"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 874,
+          "label": "subsec:detector-sector-kernels"
+        }
+      ],
+      "canonical_owners": [
+        "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872"
+      ]
+    },
+    {
+      "id": "STOCH-WAVE-20260912-ONTOLOGY",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "\\label{par:ontology-consumer}",
+        "\\label{sec:measurement-branch-damping}",
+        "\\label{subsec:exact-records}",
+        "\\label{subsec:what-this-paper-adds}",
+        "\\label{subsec:compatibility-summary}"
+      ],
+      "assessment": "Imports the current locality/records owner and explains two ontological completions of the same operational record law without selecting either. The full manuscript read found older unconditional basin-selection prose; v7 now makes the capture/instrument-basin hypotheses govern those experimental modules and replaces assertions that instrument probabilities are automatically basin weights. Measurement is ordinary physics. Neither a global context-independent value assignment nor an objective single-history law is inferred.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 577,
+          "label": "par:ontology-consumer"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 1701,
+          "label": "sec:measurement-branch-damping"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 1793,
+          "label": "subsec:exact-records"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 3594,
+          "label": "subsec:what-this-paper-adds"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 3620,
+          "label": "subsec:compatibility-summary"
+        }
+      ],
+      "canonical_owners": [
+        "locality-coherent-alternatives-and-records-in-mtt"
+      ]
+    },
+    {
+      "id": "STOCH-WAVE-20260912-OUTPUT",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CANONICAL_OUTPUT_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_fock_output_measure"
+      ],
+      "anchors": [
+        "\\label{par:canonical-output-consumer}",
+        "\\label{subsec:born-basin-weights}",
+        "\\label{subsec:projection-duality-interpretive-conclusion}",
+        "\\label{sec:conclusion}"
+      ],
+      "assessment": "A real paper-specific omission was found independently of the title suggestion: generic source/Born-boundary prose omitted the already established canonical stopped output law. V7 explains restriction of the normal joint state to the commuting nondemolition output algebra, first-count/no-count effects and exact second-moment descent through the current record-measure owner. Accepted normal-state probability semantics are explicit. This is not a duplicate owner completion and does not reopen canonical QM; only arbitrary-apparatus extension and an optional additional basin realization remain separate.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "q79_fock_output_measure": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e"
+      },
+      "kernel_result_sources": {
+        "R.QM.CANONICAL_OUTPUT_DESCENT": [
+          "q79_fock_output_measure"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 549,
+          "label": "par:canonical-output-consumer"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 3159,
+          "label": "subsec:born-basin-weights"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 3073,
+          "label": "subsec:projection-duality-interpretive-conclusion"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 4158,
+          "label": "sec:conclusion"
+        }
+      ],
+      "canonical_owners": [
+        "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872"
+      ]
+    },
+    {
+      "id": "AQFT-PHYSICAL-FAMILY-CONSUMER-20260912",
+      "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "anchors": [
+        "sec:physical-family-consumer",
+        "prop:naturality"
+      ],
+      "assessment": "Consumes the physical-family cutset owned contextually by the QM source account. Finite connection projections have an infinite-dimensional kernel, so they cannot select the smooth source. With a supplied physical endpoint, smooth common domains and ellipticity, the internal Dirac/Hessian family, gapped Riesz/Kato data and analytic determinant line follow conditionally. These are not the Lorentzian local net, chart-to-region naturality, transverse measure current, crossing gluing, or fixed-coupling continuum control. Hidden existential HYM and selected free CAR remain established.",
+      "main_tex_lf_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:physical-family-consumer",
+          "path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex",
+          "line": 430
+        },
+        {
+          "anchor": "prop:naturality",
+          "path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "id": "CURVED-QFT-PHYSICAL-FAMILY-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "anchors": [
+        "sec:physical-family"
+      ],
+      "assessment": "Uses the QM-owned family dependency to explain interacting curved-spacetime inputs. The finite rational witness illustrates nonselection, not a physical HYM solution; the positive statement requires a same-source endpoint, unitary operator intertwiner, action, common domains, and ellipticity. Gap-chart Riesz/Kato and determinant constructions do not cross a gap closing or choose the transverse measure current. Locality/gluing and cutoff-uniform fixed-coupling control remain open, without reopening hidden existence or the selected free net.",
+      "main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:physical-family",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 273
+        }
+      ]
+    },
+    {
+      "id": "CURVED-QFT-ENDPOINT-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "anchors": [
+        "sec:endpoint-consumer"
+      ],
+      "assessment": "Consumes Cohesive/CBF.T12 at its exact dependency-contract tier. GAS, SYN and BV4 are structured same-source packets, not three scalar parameters. Symmetry and Galerkin/Feshbach rows follow from compatible GAS/SYN objects. The K_a block example shows equal retained Hessians with unequal Schur complements; cotangent repair on its zero section does not select the charged physical action. No complete physical packet or endpoint row is accepted in the frozen contract. Formal BV/QME and free CAR remain intact.",
+      "main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:endpoint-consumer",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 300
+        }
+      ]
+    },
+    {
+      "id": "DIAGRAM-FINITE-TRANSFER-CONSUMER-20260912",
+      "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "anchors": [
+        "sec:finite-transfer-consumer"
+      ],
+      "assessment": "Consumes Cohesive's exact 144-to-48 finite contraction and conditional all-arity source-morphism theorem. Preservation of differential, product, inclusion, projection and homotopy propagates through every decorated transfer tree; order-36 covariance is therefore not inferred from a few checked vertices. The operations are not already the physical signed-action vertices or measured couplings. Nonreducing or approximate comparison requires separate estimates and does not inherit exact Hodge identities.",
+      "main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:finite-transfer-consumer",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 626
+        }
+      ]
+    },
+    {
+      "id": "DIAGRAM-ENDPOINT-CONSUMER-20260912",
+      "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "anchors": [
+        "sec:finite-transfer-consumer"
+      ],
+      "assessment": "Consumes Cohesive's endpoint contract to state what physical graph promotion still needs: one geometry/signed action, compatible spectral synthesis/domain/contraction data, and BV-compatible four-dimensional compactification. Symmetry and Schur/Galerkin rows are derived from that source, not new free kernels. Retained quadratic data do not determine complement contributions. The zero-accepted-packet status is explicitly physical and does not downgrade the exact finite graph theorem or free CAR.",
+      "main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:finite-transfer-consumer",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 626
+        }
+      ]
+    },
+    {
+      "id": "QG-PHYSICAL-FAMILY-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Uses the QM-owned family cutset at exact nonselection/conditional analytic tiers. The new paragraph explains discarded smooth connection directions, source-bound internal Dirac/Hessian and gapped Riesz/Kato data, and the determinant-line versus transverse-measure distinction. It preserves current hidden existential HYM and operational free CAR/QM while retaining common physical-source, gluing, and fixed-coupling requirements.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "id": "QG-FINITE-TRANSFER-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Uses Cohesive's source-morphism all-arity theorem and selected 144-to-48 order-36 contraction to explain finite perturbative transport. It is exact finite algebra, not an all-orders physical gravity amplitude or continuum HYM realization. Exact Hodge transport additionally needs a unitary reducing map on compatible closed domains; cost pullback alone is insufficient.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "id": "QG-ENDPOINT-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Consumes Cohesive/CBF.T12: seven physical acceptance rows depend on three compatible structured source packets GAS/SYN/BV4, not three continuous parameters. Symmetry and Schur/Galerkin transport are derived from compatible GAS/SYN. The positive normal and internal cotangent action do not select field-only signed action, charged compactification, or real slice. No complete physical packet is accepted by the frozen endpoint record.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "id": "QG-GATE1-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "Gate 1 completes all thirty"
+      ],
+      "assessment": "Consumes the Flux-owned exact original-Jacobian campaign in chronology: all thirty groups and 225 selected support columns are completed despite the older readiness header. This does not compute Gate 2, a marked integral meridian, the 248-coordinate period readout, or beta_C. The local computation is retained, not restarted; no physical Deligne/HYM or UV-completion promotion follows. Only row-accounting arithmetic was independently checked here.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f"
+      },
+      "curated_result_ids": [
+        "eta9_gate1_campaign"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "Gate 1 completes all thirty",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 531
+        }
+      ]
+    },
+    {
+      "id": "QG-B96-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.THREE_CYCLE_NONDETECTION"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "Gram matrix"
+      ],
+      "assessment": "Consumes the Flux-owned transported three-cycle result: Gram matrix -2I_3, determinant -8, rank three, and the frozen affine rational-coboundary conclusion exhaust this particular detector. It is not a vanishing theorem for the global affine class or larger meridian system. The matrix determinant/rank check does not replay transport or integral certificates.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f"
+      },
+      "curated_result_ids": [
+        "eta9_three_cycle_b96_nondetection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "Gram matrix",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 535
+        }
+      ]
+    },
+    {
+      "id": "QG-BK3-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "Its kernel is zero"
+      ],
+      "assessment": "Consumes Cohesive's exact large-gauge kernel result. Kernel rank zero is not zero source dimension: the real two-dimensional source immerses injectively with dense nonclosed image into the transcendental T20. Period normalization, kinetic scales and the shared-circle action intertwiner remain separate physical inputs. No canonical owner is changed.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      },
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "Its kernel is zero",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 525
+        }
+      ]
+    },
+    {
+      "id": "QG-FITTING-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.GLOBAL_FITTING_DESCENT"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "The local determinant"
+      ],
+      "assessment": "Consumes Cohesive's algebraic descent for an auxiliary twisted Hartshorne-Serre derived object. Local module isomorphisms and invertible transition lines preserve minor ideals, so ordinary Fitting ideal sheaves descend before literal chain matrices are executed. The local determinant matches auxiliary 3H+3D0, not physical 9H+3D0. Gerbe trivialization, literal overlaps, and the common physical HYM/intertwiner are not implied; later hidden existential HYM is retained.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_global_fitting_descent": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30"
+      },
+      "curated_result_ids": [
+        "q79_global_fitting_descent"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.GLOBAL_FITTING_DESCENT": [
+          "q79_global_fitting_descent"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "The local determinant",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 515
+        }
+      ]
+    },
+    {
+      "id": "QG-LOCAL-TUBE-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "2^{-96}"
+      ],
+      "assessment": "Consumes the later Flux-owned same-source tube consolidation, not merely an early formal chart. The complete local connection chart has positive interval width 2^-96 in a dimensionless marked connector, not physical time. Useful-width continuation, a global frame/path, integral period readout, and beta_C remain open. This is an achieved local source result, neither a restart request nor global physical-source completion.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756"
+      },
+      "curated_result_ids": [
+        "q79_eta9_local_source_tube_consolidation"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "2^{-96}",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 545
+        }
+      ]
+    },
+    {
+      "id": "QG-B89-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.B89_REJECTION"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "same-source affine Deligne obstruction"
+      ],
+      "assessment": "Consumes the Flux-owned same-source B89 obstruction at its exact candidate-exclusion tier. A mod-two covector annihilates M-I but pairs to one with the affine return, obstructing an integral preimage and rejecting that candidate. It neither provides a replacement endpoint nor determines exact integral class order. The rejection is retained without promotion to a global q79/HYM/UV no-go.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      },
+      "curated_result_ids": [
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "same-source affine Deligne obstruction",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 549
+        }
+      ]
+    }
+  ]
+}

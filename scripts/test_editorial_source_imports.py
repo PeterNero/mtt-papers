@@ -13,10 +13,19 @@ class EditorialImportTests(unittest.TestCase):
     def test_metadata_abstract_is_plain_text_and_release_unchanged(self):
         meta = json.loads((ROOT / "papers" / SM / "metadata.json").read_text())
         self.assertNotIn("\\", meta["abstract"])
-        self.assertEqual(meta["current_version"], "v4")
+        self.assertEqual(meta["current_version"], "v5")
         self.assertEqual(meta["latest_zenodo_release"]["version"], "v3")
         self.assertEqual(meta["latest_zenodo_release"]["doi"],
                          "10.5281/zenodo.21720135")
+        for paper in (
+            "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b",
+            "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927",
+        ):
+            current = json.loads((ROOT / "papers" / paper / "metadata.json").read_text())
+            self.assertEqual(current["current_version"], "v3")
+            self.assertEqual(current["latest_zenodo_release"]["version"], "v2")
+            self.assertEqual(current["version_relation"], "current_source_newer_than_release")
+            self.assertEqual(current["release_state"], "current_revised_tex")
 
     def test_explicit_incidence_correction(self):
         ranks = [3, 8, 8, 80, 3]

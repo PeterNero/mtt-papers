@@ -1,0 +1,3491 @@
+{
+  "schema": "mtt.editorial-review-fragment.v1",
+  "scope": [
+    "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+    "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+    "modal-triplet-theory-foundations",
+    "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73"
+  ],
+  "reviewer": "Codex editorial spinor subagent",
+  "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+  "frozen_manifest_commit": "f141a20ea23c5c3ff19cc2161c0e226e29ade8a7",
+  "kernel_bootstrap": {
+    "repository": "mtt-papers",
+    "model_hash_at_bootstrap": "bf2643bc78d2c723aa813bbae8d0a50848e1d226a58f0088262d564c751d6715",
+    "authority_rule": "Current A/B authority overrides historical packet status. Bootstrap occurred before source editing."
+  },
+  "reviews": [
+    {
+      "id": "SPINOR-OWNER-protospinor_simulation_kernel-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "protospinor_simulation_kernel"
+      ],
+      "anchors": [
+        "sec:simulation"
+      ],
+      "assessment": "Full 7,361-line Vue source read, not run. The manuscript explains supplied species, charge/color, atom/bond/angle and damping inputs, and separates visual toy encodings from CAR statistics, particle derivation and measurement physics. Integrated as an exploratory model with explicit input provenance, not a scientific verification or physical selector.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "protospinor_simulation_kernel": "90263ac518241df2fa5b127ccb25b44f3bfc74820fdb2e5daef2e937c15cd0c1"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_a33_01-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_a33_01"
+      ],
+      "anchors": [
+        "sec:fsba33"
+      ],
+      "assessment": "Explains the odd self-adjoint finite operator, Gram eigenvalues and radial Hessian, with the U(1) x U(2)/generic torus stabilizer boundary. These are finite neutral Gram facts, not the Standard Model gauge group or physical masses.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_a33_01": "a12d32895ab56aaa686694294780f8bbb793d7ef9482faca0a7ef543b5aae678"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_02a_b-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_02a_b"
+      ],
+      "anchors": [
+        "sec:fsb02ab"
+      ],
+      "assessment": "Explains four-summand anomaly/unimodularity branching, native pre-vacuum and Higgs-vacuum quotients, and the A33 block injection with real-conjugate completion. The finite structural branch is not an independently selected profile Dirac operator.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_02a_b": "af24fa273d2f1a79f395d58f3f74505bd635cc839809e1a58d77c7d8cffab868"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_02c1_c5-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_02c1_c5"
+      ],
+      "anchors": [
+        "sec:fsb02c"
+      ],
+      "assessment": "Explains the 864-dimensional carrier, normalized trace/synthesis, finite Weyl gap sectors, Gram pushforward and KO completion. The rank-96 center range is explicitly distinguished from the rank-96 kernel, and dimensionless heat/gap data are not masses.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_02c1_c5": "f4a4f8e22fc1454004e5d29fffe14168caf9af952a5f1a780cf4e32af563e78e"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03a-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03a"
+      ],
+      "anchors": [
+        "sec:fsb03a"
+      ],
+      "assessment": "Imports the overlap-polar compiler in context: an endpoint and injective overlap are supplied, polar normalization does not select them, and small certified error gives a low cluster rather than an exact ambient kernel. Domains, full error budget and complement/Feshbach control remain visible.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03a": "556301462981741d0162e524046b424bcd75b67a55a5c47cd22216038a90e5ad"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03b-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03b"
+      ],
+      "anchors": [
+        "sec:fsb03b"
+      ],
+      "assessment": "Explains separate product and connection transport, the nontrivial polar defect, connection derivative terms and convergent nonlinear tails. Exact raw transport is not assumed to remain exact after polar normalization.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03b": "78f659d726208b3a470f2b76febb737c19acfbbaff5b4fd7a705eaab7a7a285f"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03c-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03c"
+      ],
+      "anchors": [
+        "sec:fsb03c"
+      ],
+      "assessment": "Explains the optional residual-faithful Newton correction and explicit ball/contraction inequalities. This proves a nearby solution and local uniqueness only after the stated endpoint, inverse and derivative estimates, not global physical selection.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03c": "efa2d04d7dfa7c160d44b4cb84b84ef0cc76412db325d37ed8e6b3c9f3fa53b6"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03d-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03d"
+      ],
+      "anchors": [
+        "sec:fsb03d"
+      ],
+      "assessment": "Explains native Riesz selection, multiplicity/product/phase anchors and why squared magnitudes lose phases. The rank-102 fiber and 864/96 finite comparison have different jobs; finite dimension matching does not produce a synthesis or reducing image.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03d": "a46c050e78435a1c72ebfeeb00709fcca8559dc4bbfce1a98813e6df058c9764"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03e-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03e"
+      ],
+      "anchors": [
+        "sec:fsb03e"
+      ],
+      "assessment": "Explains the hidden multiplicity commutant alternative and the scalar-versus-adjoint centralizer test, including why simplicity does not eliminate discrete self-twists. No hidden projective/existential HYM result is reopened.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03e": "68d161450ad0632aed934cfe1e23a89471fe18e6042a02e999caa9d11146f146"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03f-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03f"
+      ],
+      "anchors": [
+        "sec:fsb03f"
+      ],
+      "assessment": "Explains the endpoint atlas and Cech execution after supplied geometric data, physical 9H+3D0 versus auxiliary 3H+3D0, and the distinction between ordinary Prym/Chern rows and a twisted spectral-line cocycle.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03f": "44a3876cc85916a65b2bc0a25980f4b9e0b9f847792e73e96f5ee652d9e61e15"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03g-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03g"
+      ],
+      "anchors": [
+        "sec:fsb03g"
+      ],
+      "assessment": "Explains the graph/Prym full-root criterion, radial/projective dimensions and the certified local Hensel implication. Norm compatibility alone does not set the full moving-connection residual to zero; tiny local eta9 transport is not a global member selection.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03g": "0fa972b02345b660567dc91dccd1c7d978ff42fcb6c6ba4d6c11bba39080f95b"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03h-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03h"
+      ],
+      "anchors": [
+        "sec:fsb03h"
+      ],
+      "assessment": "Explains how a chosen normalized Deligne null-homotopy emits a twisted Prym line, its connection, norm and integral period data. Vanishing of the obstruction proves existence, not selection of a particular trivialization.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03h": "359d8db59d81dfa4eb25d5d9a6914ad2aa2b08288bdb87cb01181ee9de90133c"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03i-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03i"
+      ],
+      "anchors": [
+        "sec:fsb03i"
+      ],
+      "assessment": "Explains least-norm Deligne normalization within one integral branch, with independent constraints or a consistent closed-range Moore-Penrose formulation. A metric-dependent minimizer does not select the discrete branch or the physical Hermitian metric.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03i": "cf1ede0a892b954589f6273dd2a0eaec2ae134efbeaf66705218def62a120739"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03j-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03j"
+      ],
+      "anchors": [
+        "sec:fsb03j"
+      ],
+      "assessment": "Explains the inverse-pullback target metric and constraint transport required for Hodge naturality. Algebraic coordinate change is not an automatically isometric physical analytic BHT transform.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03j": "35b91953eea02b1954bfc041600cd323aaeaf420f5b3693325f184225812f65f"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_03k-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_03k"
+      ],
+      "anchors": [
+        "sec:fsb03k"
+      ],
+      "assessment": "Explains marked path lifting, starting integral lift, covering hypothesis and coherent cochain transport; preserves the non-splicing requirement and distinguishes local Deligne/T70-T73 data from global Picard/BHT descent.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_03k": "bbff68ba6dbc180176cc51d75a70a86485da800010140dabaadcee5be252bcb1"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04a-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04a"
+      ],
+      "anchors": [
+        "sec:fsb04a"
+      ],
+      "assessment": "Explains the determinant-shared trace plane, oriented adjoint three-plane and Pauli/Clifford intertwiner, including the nonorthogonal Gram normalization. Rank alone is not used as a spinorial theorem.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04a": "808dfe793dd23179af24c0809b318568b62b134afea2a9cbe5c6013975e40f60"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04b-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04b"
+      ],
+      "anchors": [
+        "sec:fsb04b"
+      ],
+      "assessment": "Explains full minimal root-stack ramification, the failure of the coarse shortcut, and QWW symbol continuation under its physical-realization premise. The flat symbol is not equated to a nonflat HYM connection.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04b": "46983c707e00599ea413e2d6020c1bef70691f192b2d84964e9547f6302b7c1f"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04c-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04c"
+      ],
+      "anchors": [
+        "sec:fsb04c"
+      ],
+      "assessment": "Explains invariant family block dimensions and the common-line 1+U(2) restriction, without equating direct-sum bookkeeping to the normalized 864-to-96 reduction. Mixing and second-order quark statements keep their hypotheses.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04c": "697ac6558076c937c517c5a482944078c3ff49ac5dd5070a77da5505fe5a3495"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04d-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04d"
+      ],
+      "anchors": [
+        "sec:fsb04d"
+      ],
+      "assessment": "Explains static Fourier family orientation separately from positive magnitude compilation. The later dynamic Weyl-orbit refinement is imported beside it, so an early missing-shape header is not treated as the final source status.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04d": "730618aa53821b23ad533c1e0754b80843ea75f2bc7dd6a08c846ce6c8748260"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04e-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04e"
+      ],
+      "anchors": [
+        "sec:fsb04e"
+      ],
+      "assessment": "Explains the later exact dynamic Weyl-orbit relation, Fourier conjugacy and distinct Hermitian-response versus positive-Gram spectra. This resolves the earlier finite dynamic-shape compatibility issue without selecting physical charged magnitudes.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04e": "a265cf03d5b9e459906bebe17c8bca80152e644765bdfc5d8cb2e77fe931a074"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04f-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04f"
+      ],
+      "anchors": [
+        "sec:fsb04f"
+      ],
+      "assessment": "Explains full M3 response algebra, Hermitian word basis and dual coefficient recovery; the finite CP witness is not a selected physical CKM phase or a physical action.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04f": "9b2c3484d3b0524620bd4a52a36a8becf5c8d270f062543f9e43cd3abfe0789f"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04g-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04g"
+      ],
+      "anchors": [
+        "sec:fsb04g"
+      ],
+      "assessment": "Explains Vandermonde independence and nine-coordinate charged-magnitude minimality only in the stated strict coordinate class. Positive eigenvalues are not logarithmic action coefficients or observed-value selection.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04g": "0c04dc7f1d216099b03930b7f98957b1e12bcc6f618c40529e64da067b453caf"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04h-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04h"
+      ],
+      "anchors": [
+        "sec:fsb04h"
+      ],
+      "assessment": "Separates continuous determinant weight from finite 1/33 root aliases and conjugation, and external helicity Chern data from the flat shared line. No phase/time or internal/external determinant identification is inferred.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04h": "4f96cf3aee6feab1c1454dfce1eb1815b6e73862f72fb37ee5c5a8c454253b69"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04i-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04i"
+      ],
+      "anchors": [
+        "sec:fsb04i"
+      ],
+      "assessment": "Explains same-source determinant correspondence and physical SpinC parity, with the line-power countermodel. It is a conditional physical correspondence, not a rank-only theorem or selected endpoint.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04i": "0dda462ebf8862f46331ca5ecd97c4d13be52447bc03d4999cb67f8d5f0e238e"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04j-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04j"
+      ],
+      "anchors": [
+        "sec:fsb04j"
+      ],
+      "assessment": "Explains associated-sheet descent as a sufficient strong route with cocycles, soldering and comparison data. The later framed route shows that this sufficient S3 route is not a necessary condition for every lawful continuation.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04j": "0ed26044b0b84bbaf5b757cdc761476af1fd50d834aaf0540cb64a28a8799aa6"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04k-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04k"
+      ],
+      "anchors": [
+        "sec:fsb04k"
+      ],
+      "assessment": "Explains why ordered real QQ spectra cannot supply full S3 monodromy, and how a framed binary square-root route nevertheless supplies SpinC descent. Binary roots are distinguished from finite character aliases.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04k": "359988d1032db0ed4d8ed32f600dcc9cc0a95d8d0861d18a95480a91019e4f97"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04l-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04l"
+      ],
+      "anchors": [
+        "sec:fsb04l"
+      ],
+      "assessment": "Explains complete rank-24 product-carrier factorization and cancellation of the two binary-root changes. Multiplicity C2 is not an extra temporal direction; the equivalence is conditional on the framed selected source.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04l": "9dbad2ea0dd63592d0129c4ae101b8303b88b0b7fe297ddca7ce2d6c46a94193"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04m-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04m"
+      ],
+      "anchors": [
+        "sec:fsb04m"
+      ],
+      "assessment": "Explains root-neutral even-degree Hom/End interactions and odd compensators. Root neutrality or even parity does not establish a gauge/Lorentz scalar, a physical Majorana term or the signed action; positive repair is not substituted for that action.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04m": "22a5082dea20e7fa4b1e16a6e328e2e192c1b44d2fec2a2f029fccbd5431b4fd"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-q79_superconnection_04n-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_superconnection_04n"
+      ],
+      "anchors": [
+        "sec:fsb04n"
+      ],
+      "assessment": "Explains intertwining of free Dirac/Green operators, CAR local and even nets, Hadamard states and corresponding GNS representations. It does not identify all states/spin structures or prove an interacting theory or preferred vacuum.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_superconnection_04n": "90b3b1becb069bbccef91c88a45e007a1f77bd34080921bb1fa74bd02f17040f"
+      }
+    },
+    {
+      "id": "SPINOR-OWNER-gr_tt_support-20260912",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "gr_tt_support"
+      ],
+      "anchors": [
+        "sec:gr-tt-support"
+      ],
+      "assessment": "Imports the full internal TT co-shape support argument: physical helicity-two frame covariance, accepted support-map rank premises, finite character support and the internal eigenvalue 15. These are not SI Newton/Planck normalization, a graviton mass, the whole six-dimensional strain space or an independently checked physical stress map.",
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "result_hashes": {
+        "gr_tt_support": "9092e943933ceec3689383cb0b96aff549af07860900c54e185bcaa094c08e4f"
+      }
+    }
+  ],
+  "consumer_reviews": [
+    {
+      "id": "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-geometry-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler",
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "assessment": "QM is the canonical owner. Explains finite matrix bundle presentation versus infinite base modes; connection correction Gamma, transported metric/domains/windows and curved naturality; CLN is not global q79 topology and a flag is not an inserted parallel physical HYM subbundle. No continuum source is selected.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-strain-20260912",
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian",
+        "q79_support_stratified_strain"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "assessment": "QM owns the linear root-space exclusion and nonlinear spectral-strain/shorted-Hessian replacement. The later support-stratified source is explicitly used: full generic quotient is seven-dimensional, six coordinates forget triangle phase, zero-edge normal cost is degree one, and a rank-six/local C4 contract forces regularity. Reduced covariance invertibility, actual endpoint/Green/physical symmetry lift and action scale remain required. TT observation is projected before shorting.",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-geometry-20260912",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler",
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "assessment": "QM is the canonical owner. Explains finite matrix bundle presentation versus infinite base modes; connection correction Gamma, transported metric/domains/windows and curved naturality; CLN is not global q79 topology and a flag is not an inserted parallel physical HYM subbundle. No continuum source is selected.",
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-strain-20260912",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian",
+        "q79_support_stratified_strain"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "assessment": "QM owns the linear root-space exclusion and nonlinear spectral-strain/shorted-Hessian replacement. The later support-stratified source is explicitly used: full generic quotient is seven-dimensional, six coordinates forget triangle phase, zero-edge normal cost is degree one, and a rank-six/local C4 contract forces regularity. Reduced covariance invertibility, actual endpoint/Green/physical symmetry lift and action scale remain required. TT observation is projected before shorting.",
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-transfer-20260912",
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Cohesive Closure Repair owns the exact 144-to-48 nonminimal response retract, nonzero m3/m4 and all-arity nontruncating family. Later all-arity naturality is explained as a source/contraction theorem, not inferred from finite probes or presented as full m5+ operation tables. Physical action and analytic Fixed Points domain/invariance/contraction/gap hypotheses are not supplied by finite transfer.",
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-modal-triplet-theory-foundations-geometry-20260912",
+      "paper_id": "modal-triplet-theory-foundations",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler",
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "assessment": "QM is the canonical owner. Explains finite matrix bundle presentation versus infinite base modes; connection correction Gamma, transported metric/domains/windows and curved naturality; CLN is not global q79 topology and a flag is not an inserted parallel physical HYM subbundle. No continuum source is selected.",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-modal-triplet-theory-foundations-strain-20260912",
+      "paper_id": "modal-triplet-theory-foundations",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian",
+        "q79_support_stratified_strain"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "assessment": "QM owns the linear root-space exclusion and nonlinear spectral-strain/shorted-Hessian replacement. The later support-stratified source is explicitly used: full generic quotient is seven-dimensional, six coordinates forget triangle phase, zero-edge normal cost is degree one, and a rank-six/local C4 contract forces regularity. Reduced covariance invertibility, actual endpoint/Green/physical symmetry lift and action scale remain required. TT observation is projected before shorting.",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-modal-triplet-theory-foundations-transfer-20260912",
+      "paper_id": "modal-triplet-theory-foundations",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Cohesive Closure Repair owns the exact 144-to-48 nonminimal response retract, nonzero m3/m4 and all-arity nontruncating family. Later all-arity naturality is explained as a source/contraction theorem, not inferred from finite probes or presented as full m5+ operation tables. Physical action and analytic Fixed Points domain/invariance/contraction/gap hypotheses are not supplied by finite transfer.",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-modal-triplet-theory-foundations-endpoint-20260912",
+      "paper_id": "modal-triplet-theory-foundations",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-endpoint"
+      ],
+      "assessment": "Cohesive Closure Repair is the actual catalog owner, notwithstanding the stale suggested owner in the older Kernel audit. Explains GAS, SYN and BV4 as three informationally distinct source types, not parameters; action Hessian and synthesis determine Galerkin/Feshbach execution without a fourth source. Physical packets remain uninstantiated; hidden projective existence and adopted finite/profile closure are retained.",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-geometry-20260912",
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_cech_projector_compiler",
+        "q79_projective_hym_naturality"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "assessment": "QM is the canonical owner. Explains finite matrix bundle presentation versus infinite base modes; connection correction Gamma, transported metric/domains/windows and curved naturality; CLN is not global q79 topology and a flag is not an inserted parallel physical HYM subbundle. No continuum source is selected.",
+      "main_tex_lf_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-strain-20260912",
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian",
+        "q79_support_stratified_strain"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain"
+        ]
+      },
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "assessment": "QM owns the linear root-space exclusion and nonlinear spectral-strain/shorted-Hessian replacement. The later support-stratified source is explicitly used: full generic quotient is seven-dimensional, six coordinates forget triangle phase, zero-edge normal cost is degree one, and a rank-six/local C4 contract forces regularity. Reduced covariance invertibility, actual endpoint/Green/physical symmetry lift and action scale remain required. TT observation is projected before shorting.",
+      "main_tex_lf_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    }
+  ],
+  "text_reviews": [
+    {
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reconciliation_id": "C.GEO.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "text_review": {
+        "existing_boundary_present": false,
+        "new_result_exposition_added": true,
+        "assessment": "Actual owner/source reading established the missing curved/nonlinear/finite-transfer context, now explained with physical and analytic nonpromotion boundaries.",
+        "policy_amendment": null
+      }
+    },
+    {
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reconciliation_id": "C.STRAIN.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "text_review": {
+        "existing_boundary_present": false,
+        "new_result_exposition_added": true,
+        "assessment": "Actual owner/source reading established the missing curved/nonlinear/finite-transfer context, now explained with physical and analytic nonpromotion boundaries.",
+        "policy_amendment": null
+      }
+    },
+    {
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "reconciliation_id": "C.FP.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-transfer",
+        "sec:consumer-geometry",
+        "sec:consumer-strain"
+      ],
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "text_review": {
+        "existing_boundary_present": false,
+        "new_result_exposition_added": true,
+        "assessment": "Actual owner/source reading established the missing curved/nonlinear/finite-transfer context, now explained with physical and analytic nonpromotion boundaries.",
+        "policy_amendment": null
+      }
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "reconciliation_id": "C.GEO.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "text_review": {
+        "existing_boundary_present": false,
+        "new_result_exposition_added": true,
+        "assessment": "Actual owner/source reading established the missing curved/nonlinear/finite-transfer context, now explained with physical and analytic nonpromotion boundaries.",
+        "policy_amendment": null
+      }
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "reconciliation_id": "C.STRAIN.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "text_review": {
+        "existing_boundary_present": false,
+        "new_result_exposition_added": true,
+        "assessment": "Actual owner/source reading established the missing curved/nonlinear/finite-transfer context, now explained with physical and analytic nonpromotion boundaries.",
+        "policy_amendment": null
+      }
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "reconciliation_id": "C.FP.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-transfer",
+        "sec:consumer-geometry",
+        "sec:consumer-strain"
+      ],
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "text_review": {
+        "existing_boundary_present": true,
+        "new_result_exposition_added": true,
+        "assessment": "Existing CLN scope or selected-operator analytic boundary already answered the flagged text condition; scoped owner citations and later results are added.",
+        "policy_amendment": "Evaluate semantic scope and actual owner references, not a literal title/keyword match."
+      }
+    },
+    {
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reconciliation_id": "C.GEO.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "text_review": {
+        "existing_boundary_present": true,
+        "new_result_exposition_added": true,
+        "assessment": "Existing CLN scope or selected-operator analytic boundary already answered the flagged text condition; scoped owner citations and later results are added.",
+        "policy_amendment": "Evaluate semantic scope and actual owner references, not a literal title/keyword match."
+      }
+    },
+    {
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "reconciliation_id": "C.STRAIN.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "text_review": {
+        "existing_boundary_present": false,
+        "new_result_exposition_added": true,
+        "assessment": "Actual owner/source reading established the missing curved/nonlinear/finite-transfer context, now explained with physical and analytic nonpromotion boundaries.",
+        "policy_amendment": null
+      }
+    },
+    {
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "reconciliation_id": "C.GEO.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-geometry"
+      ],
+      "main_tex_lf_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "text_review": {
+        "existing_boundary_present": false,
+        "new_result_exposition_added": true,
+        "assessment": "Actual owner/source reading established the missing curved/nonlinear/finite-transfer context, now explained with physical and analytic nonpromotion boundaries.",
+        "policy_amendment": null
+      }
+    },
+    {
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "reconciliation_id": "C.STRAIN.01",
+      "reviewed_at": "2026-09-12T22:07:52.504202+00:00",
+      "reviewer": "Codex editorial spinor subagent",
+      "state": "integrated",
+      "anchors": [
+        "sec:consumer-strain"
+      ],
+      "main_tex_lf_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "text_review": {
+        "existing_boundary_present": false,
+        "new_result_exposition_added": true,
+        "assessment": "Actual owner/source reading established the missing curved/nonlinear/finite-transfer context, now explained with physical and analytic nonpromotion boundaries.",
+        "policy_amendment": null
+      }
+    }
+  ],
+  "new_result_placement_dispositions": [
+    {
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "kernel_result_id": "R.CBF.FINITE_TRANSFER_HIERARCHY",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-transfer-20260912"
+      ]
+    },
+    {
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "kernel_result_id": "R.GEO.PROJECTIVE_NATURALITY",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-geometry-20260912"
+      ]
+    },
+    {
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "kernel_result_id": "R.GEO.CECH_COMPILER",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-geometry-20260912"
+      ]
+    },
+    {
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "kernel_result_id": "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-strain-20260912"
+      ]
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "kernel_result_id": "R.CBF.FINITE_TRANSFER_HIERARCHY",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-transfer-20260912"
+      ]
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "kernel_result_id": "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-endpoint-20260912"
+      ]
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "kernel_result_id": "R.GEO.PROJECTIVE_NATURALITY",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-geometry-20260912"
+      ]
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "kernel_result_id": "R.GEO.CECH_COMPILER",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-geometry-20260912"
+      ]
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "kernel_result_id": "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-strain-20260912"
+      ]
+    },
+    {
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "kernel_result_id": "R.GEO.PROJECTIVE_NATURALITY",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-geometry-20260912"
+      ]
+    },
+    {
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "kernel_result_id": "R.GEO.CECH_COMPILER",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-geometry-20260912"
+      ]
+    },
+    {
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "kernel_result_id": "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-strain-20260912"
+      ]
+    },
+    {
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "kernel_result_id": "R.GEO.PROJECTIVE_NATURALITY",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-geometry-20260912"
+      ]
+    },
+    {
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "kernel_result_id": "R.GEO.CECH_COMPILER",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-geometry-20260912"
+      ]
+    },
+    {
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "kernel_result_id": "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN",
+      "disposition": "integrated",
+      "consumer_review_ids": [
+        "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-strain-20260912"
+      ]
+    }
+  ],
+  "historical_candidate_policy": {
+    "excluded_from_new_review_requirement": [
+      "R.ACTION.COHESIVE_MC_REPAIR",
+      "R.GEO.COHESIVE_SUPERCONNECTION",
+      "R.QG.BRANCH_AND_COFRAME",
+      "R.QM.CANONICAL_OUTPUT_DESCENT"
+    ],
+    "reason": "Parent explicitly corrected candidate generation to missing placements or explicit consumer_review_required. No duplicate historical review is emitted."
+  },
+  "paper_changes": [
+    {
+      "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "previous_current_version": "v7",
+      "current_version": "v8",
+      "version_increment_count": 1,
+      "previous_main_tex_sha256": "7c68851cd2e7e3e17fccc3865ad0135bcb7d9790960ed66d9f7dae6b7ab69ff9",
+      "main_tex_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "source_tree_sha256": "017b1aad88f645256c66f381346bf7353639b5e05cc60439bf624eaefab8391c",
+      "paper_md_sha256": "0418e69113bf16cb8d4a070fa6d6164bde6f2b3f3a4e3373b85b9bd299166268",
+      "pdf_sha256": "e1fdbb97b737a035b332edef7fd61e064ada7bc3e019333f14baefcf1a84e979",
+      "pdf_pages": 21,
+      "released_identity_unchanged": true,
+      "local_build": {
+        "papers": 1,
+        "pass": 1,
+        "warning": 0,
+        "failed": 0,
+        "results": [
+          {
+            "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+            "status": "pass",
+            "pdf_bytes": 499920,
+            "warnings": []
+          }
+        ]
+      },
+      "build_method": "scripts/build_contextual_evidence_papers.py --paper-id SLUG --jobs 1, with LOG_ROOT redirected inside the assigned paper; three pdflatex passes",
+      "markdown_method": {
+        "generator": "scripts/migrate.py build_markdown with local paper-markdown.lua; managed markers restored locally",
+        "warning": "",
+        "forbidden_global_refresh_invoked": false
+      },
+      "visual_qa": {
+        "pdf_pages": 21,
+        "pdf_sha256": "e1fdbb97b737a035b332edef7fd61e064ada7bc3e019333f14baefcf1a84e979",
+        "rendered_page_range": [
+          1,
+          21
+        ],
+        "render_dpi": 110,
+        "text_bounds": [
+          {
+            "page": 1,
+            "characters": 2393,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 2,
+            "characters": 2038,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 3,
+            "characters": 1524,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 4,
+            "characters": 2270,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 5,
+            "characters": 2075,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 6,
+            "characters": 2073,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 7,
+            "characters": 2219,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 8,
+            "characters": 1644,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 9,
+            "characters": 2597,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 10,
+            "characters": 2663,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 11,
+            "characters": 2372,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 12,
+            "characters": 2884,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 13,
+            "characters": 2589,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 14,
+            "characters": 2962,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 15,
+            "characters": 2738,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 16,
+            "characters": 2542,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 17,
+            "characters": 2983,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 18,
+            "characters": 3025,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 19,
+            "characters": 2046,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 20,
+            "characters": 1873,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 21,
+            "characters": 2016,
+            "out_of_page_characters": 0
+          }
+        ],
+        "contact_sheets": [
+          "C:/Users/nero_/Downloads/mtt-papers/papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/tmp/pdfs/sheet-01-04.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/tmp/pdfs/sheet-05-08.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/tmp/pdfs/sheet-09-12.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/tmp/pdfs/sheet-13-16.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/tmp/pdfs/sheet-17-20.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/tmp/pdfs/sheet-21-21.png"
+        ],
+        "visual_inspection_completed": true,
+        "zoomed_pages": [
+          1,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          21
+        ],
+        "visually_inspected_page_range": [
+          1,
+          21
+        ],
+        "zoom_method": "Individual 110-DPI full-page rasters displayed at original resolution after the all-page contact-sheet pass",
+        "visual_notes": "No clipping, overlap, blank pages or unreadable equations; final Strain table remains below its heading."
+      },
+      "line_anchors": {
+        "SPINOR-OWNER-protospinor_simulation_kernel-20260912": [
+          {
+            "anchor": "sec:simulation",
+            "line": 1103
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_a33_01-20260912": [
+          {
+            "anchor": "sec:fsba33",
+            "line": 563
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_02a_b-20260912": [
+          {
+            "anchor": "sec:fsb02ab",
+            "line": 574
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_02c1_c5-20260912": [
+          {
+            "anchor": "sec:fsb02c",
+            "line": 592
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03a-20260912": [
+          {
+            "anchor": "sec:fsb03a",
+            "line": 635
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03b-20260912": [
+          {
+            "anchor": "sec:fsb03b",
+            "line": 656
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03c-20260912": [
+          {
+            "anchor": "sec:fsb03c",
+            "line": 672
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03d-20260912": [
+          {
+            "anchor": "sec:fsb03d",
+            "line": 688
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03e-20260912": [
+          {
+            "anchor": "sec:fsb03e",
+            "line": 700
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03f-20260912": [
+          {
+            "anchor": "sec:fsb03f",
+            "line": 715
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03g-20260912": [
+          {
+            "anchor": "sec:fsb03g",
+            "line": 736
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03h-20260912": [
+          {
+            "anchor": "sec:fsb03h",
+            "line": 751
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03i-20260912": [
+          {
+            "anchor": "sec:fsb03i",
+            "line": 765
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03j-20260912": [
+          {
+            "anchor": "sec:fsb03j",
+            "line": 779
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_03k-20260912": [
+          {
+            "anchor": "sec:fsb03k",
+            "line": 788
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04a-20260912": [
+          {
+            "anchor": "sec:fsb04a",
+            "line": 809
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04b-20260912": [
+          {
+            "anchor": "sec:fsb04b",
+            "line": 827
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04c-20260912": [
+          {
+            "anchor": "sec:fsb04c",
+            "line": 1043
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04d-20260912": [
+          {
+            "anchor": "sec:fsb04d",
+            "line": 1057
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04e-20260912": [
+          {
+            "anchor": "sec:fsb04e",
+            "line": 1067
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04f-20260912": [
+          {
+            "anchor": "sec:fsb04f",
+            "line": 1078
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04g-20260912": [
+          {
+            "anchor": "sec:fsb04g",
+            "line": 1089
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04h-20260912": [
+          {
+            "anchor": "sec:fsb04h",
+            "line": 840
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04i-20260912": [
+          {
+            "anchor": "sec:fsb04i",
+            "line": 851
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04j-20260912": [
+          {
+            "anchor": "sec:fsb04j",
+            "line": 863
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04k-20260912": [
+          {
+            "anchor": "sec:fsb04k",
+            "line": 872
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04l-20260912": [
+          {
+            "anchor": "sec:fsb04l",
+            "line": 884
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04m-20260912": [
+          {
+            "anchor": "sec:fsb04m",
+            "line": 904
+          }
+        ],
+        "SPINOR-OWNER-q79_superconnection_04n-20260912": [
+          {
+            "anchor": "sec:fsb04n",
+            "line": 919
+          }
+        ],
+        "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-geometry-20260912": [
+          {
+            "anchor": "sec:consumer-geometry",
+            "line": 960
+          }
+        ],
+        "SPINOR-CONSUMER-the-proto-spinor-conditional-spinorial-closure-and-the-973217d8-strain-20260912": [
+          {
+            "anchor": "sec:consumer-strain",
+            "line": 1001
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "previous_current_version": "v7",
+      "current_version": "v8",
+      "version_increment_count": 1,
+      "previous_main_tex_sha256": "364847103297b529053639ed1975998b3758cf55226eda53dc63da3f4f126bba",
+      "main_tex_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "source_tree_sha256": "884f9f4b0808e2ec814511d27b237825438c22f49f8106285f085ad0a06861e3",
+      "paper_md_sha256": "3c20861ce660d245929eca505dd289762af79edb0fa6cae224bf9e428b1270a3",
+      "pdf_sha256": "fc6f7f84a4d1847fa8348143f30a8d320a8875c6a7e75e175ae9787609b9fe3f",
+      "pdf_pages": 13,
+      "released_identity_unchanged": true,
+      "local_build": {
+        "papers": 1,
+        "pass": 1,
+        "warning": 0,
+        "failed": 0,
+        "results": [
+          {
+            "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+            "status": "pass",
+            "pdf_bytes": 393119,
+            "warnings": []
+          }
+        ]
+      },
+      "build_method": "scripts/build_contextual_evidence_papers.py --paper-id SLUG --jobs 1, with LOG_ROOT redirected inside the assigned paper; three pdflatex passes",
+      "markdown_method": {
+        "generator": "scripts/migrate.py build_markdown with local paper-markdown.lua; managed markers restored locally",
+        "warning": "",
+        "forbidden_global_refresh_invoked": false
+      },
+      "visual_qa": {
+        "pdf_pages": 13,
+        "pdf_sha256": "fc6f7f84a4d1847fa8348143f30a8d320a8875c6a7e75e175ae9787609b9fe3f",
+        "rendered_page_range": [
+          1,
+          13
+        ],
+        "render_dpi": 110,
+        "text_bounds": [
+          {
+            "page": 1,
+            "characters": 2486,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 2,
+            "characters": 1502,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 3,
+            "characters": 1913,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 4,
+            "characters": 1655,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 5,
+            "characters": 2282,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 6,
+            "characters": 2213,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 7,
+            "characters": 2001,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 8,
+            "characters": 2546,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 9,
+            "characters": 2775,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 10,
+            "characters": 2599,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 11,
+            "characters": 2431,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 12,
+            "characters": 1788,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 13,
+            "characters": 1785,
+            "out_of_page_characters": 0
+          }
+        ],
+        "contact_sheets": [
+          "C:/Users/nero_/Downloads/mtt-papers/papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/tmp/pdfs/sheet-01-04.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/tmp/pdfs/sheet-05-08.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/tmp/pdfs/sheet-09-12.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/closure-strain-geometry-local-normal-forms-and-conditio-b62ade60/tmp/pdfs/sheet-13-13.png"
+        ],
+        "visual_inspection_completed": true,
+        "zoomed_pages": [
+          1,
+          8,
+          9,
+          10,
+          11,
+          13
+        ],
+        "visually_inspected_page_range": [
+          1,
+          13
+        ],
+        "zoom_method": "Individual 110-DPI full-page rasters displayed at original resolution after the all-page contact-sheet pass",
+        "visual_notes": "No clipping, overlap, blank pages or unreadable equations; final Strain table remains below its heading."
+      },
+      "line_anchors": {
+        "SPINOR-OWNER-gr_tt_support-20260912": [
+          {
+            "anchor": "sec:gr-tt-support",
+            "line": 587
+          }
+        ],
+        "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-geometry-20260912": [
+          {
+            "anchor": "sec:consumer-geometry",
+            "line": 491
+          }
+        ],
+        "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-strain-20260912": [
+          {
+            "anchor": "sec:consumer-strain",
+            "line": 505
+          }
+        ],
+        "SPINOR-CONSUMER-closure-strain-geometry-local-normal-forms-and-conditio-b62ade60-transfer-20260912": [
+          {
+            "anchor": "sec:consumer-transfer",
+            "line": 546
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": "modal-triplet-theory-foundations",
+      "previous_current_version": "v10",
+      "current_version": "v11",
+      "version_increment_count": 1,
+      "previous_main_tex_sha256": "8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae",
+      "main_tex_sha256": "3e4687594762c72391fcee2fc653b5e69e42c7330a7a6f8d4326f90f612a6a05",
+      "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+      "source_tree_sha256": "62ee734a15e0f8e6c8cdbd14b5b2e308a33c3e1fdff265c3b744e89fb1522e38",
+      "paper_md_sha256": "6ffc755e1bc7f5bc2ff08cf06302d2b13ad6e292ac87ed17d7a605565ea04806",
+      "pdf_sha256": "e4a28abd9e02f6d71d6af8aecaac041f4eb34995b3c46dd37661c3ca273d8e03",
+      "pdf_pages": 20,
+      "released_identity_unchanged": true,
+      "local_build": {
+        "papers": 1,
+        "pass": 1,
+        "warning": 0,
+        "failed": 0,
+        "results": [
+          {
+            "paper_id": "modal-triplet-theory-foundations",
+            "status": "pass",
+            "pdf_bytes": 460705,
+            "warnings": []
+          }
+        ]
+      },
+      "build_method": "scripts/build_contextual_evidence_papers.py --paper-id SLUG --jobs 1, with LOG_ROOT redirected inside the assigned paper; three pdflatex passes",
+      "markdown_method": {
+        "generator": "scripts/migrate.py build_markdown with local paper-markdown.lua; managed markers restored locally",
+        "warning": "",
+        "forbidden_global_refresh_invoked": false
+      },
+      "visual_qa": {
+        "pdf_pages": 20,
+        "pdf_sha256": "e4a28abd9e02f6d71d6af8aecaac041f4eb34995b3c46dd37661c3ca273d8e03",
+        "rendered_page_range": [
+          1,
+          20
+        ],
+        "render_dpi": 110,
+        "text_bounds": [
+          {
+            "page": 1,
+            "characters": 2699,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 2,
+            "characters": 2182,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 3,
+            "characters": 1653,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 4,
+            "characters": 2574,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 5,
+            "characters": 2345,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 6,
+            "characters": 2303,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 7,
+            "characters": 2066,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 8,
+            "characters": 2668,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 9,
+            "characters": 2790,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 10,
+            "characters": 2007,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 11,
+            "characters": 2344,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 12,
+            "characters": 2485,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 13,
+            "characters": 1661,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 14,
+            "characters": 2462,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 15,
+            "characters": 2236,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 16,
+            "characters": 2379,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 17,
+            "characters": 2694,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 18,
+            "characters": 3178,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 19,
+            "characters": 1913,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 20,
+            "characters": 503,
+            "out_of_page_characters": 0
+          }
+        ],
+        "contact_sheets": [
+          "C:/Users/nero_/Downloads/mtt-papers/papers/modal-triplet-theory-foundations/tmp/pdfs/sheet-01-04.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/modal-triplet-theory-foundations/tmp/pdfs/sheet-05-08.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/modal-triplet-theory-foundations/tmp/pdfs/sheet-09-12.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/modal-triplet-theory-foundations/tmp/pdfs/sheet-13-16.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/modal-triplet-theory-foundations/tmp/pdfs/sheet-17-20.png"
+        ],
+        "visual_inspection_completed": true,
+        "zoomed_pages": [
+          9,
+          13,
+          14,
+          17,
+          18,
+          19
+        ],
+        "visually_inspected_page_range": [
+          1,
+          20
+        ],
+        "zoom_method": "Individual 110-DPI full-page rasters displayed at original resolution after the final all-page contact-sheet pass",
+        "visual_notes": "Final PDF inspected after the last source change. No clipping, overlap, unreadable equations or accidental blank pages. Corrected analytic premises and nonlinear comparison are legible."
+      },
+      "line_anchors": {
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-geometry-20260912": [
+          {
+            "anchor": "sec:consumer-geometry",
+            "line": 479
+          }
+        ],
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-strain-20260912": [
+          {
+            "anchor": "sec:consumer-strain",
+            "line": 493
+          }
+        ],
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-transfer-20260912": [
+          {
+            "anchor": "sec:consumer-transfer",
+            "line": 1048
+          }
+        ],
+        "SPINOR-CONSUMER-modal-triplet-theory-foundations-endpoint-20260912": [
+          {
+            "anchor": "sec:consumer-endpoint",
+            "line": 1067
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+      "previous_current_version": "v5",
+      "current_version": "v6",
+      "version_increment_count": 1,
+      "previous_main_tex_sha256": "96721e4f0c34edf7a1c60f08b060b0ac430053c8ce67a7d8b754a0e6d4749076",
+      "main_tex_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "main_tex_lf_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "source_tree_sha256": "ee4dbd725ef7903c905a1125fddd59ce000b110c89ae69837c2ca321f8711004",
+      "paper_md_sha256": "52205e9d992823c8cf8ce005f08a55209122ce9836e91f18bc281257bdeb21a7",
+      "pdf_sha256": "14f4fbb2ad6a9df9aa23b798debc6fbab874e7cabb980f4b70cbee2cf882e008",
+      "pdf_pages": 10,
+      "released_identity_unchanged": true,
+      "local_build": {
+        "papers": 1,
+        "pass": 1,
+        "warning": 0,
+        "failed": 0,
+        "results": [
+          {
+            "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+            "status": "pass",
+            "pdf_bytes": 370303,
+            "warnings": []
+          }
+        ]
+      },
+      "build_method": "scripts/build_contextual_evidence_papers.py --paper-id SLUG --jobs 1, with LOG_ROOT redirected inside the assigned paper; three pdflatex passes",
+      "markdown_method": {
+        "generator": "scripts/migrate.py build_markdown with local paper-markdown.lua; managed markers restored locally",
+        "warning": "",
+        "forbidden_global_refresh_invoked": false
+      },
+      "visual_qa": {
+        "pdf_pages": 10,
+        "pdf_sha256": "14f4fbb2ad6a9df9aa23b798debc6fbab874e7cabb980f4b70cbee2cf882e008",
+        "rendered_page_range": [
+          1,
+          10
+        ],
+        "render_dpi": 110,
+        "text_bounds": [
+          {
+            "page": 1,
+            "characters": 2055,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 2,
+            "characters": 1351,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 3,
+            "characters": 1786,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 4,
+            "characters": 1763,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 5,
+            "characters": 2087,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 6,
+            "characters": 1883,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 7,
+            "characters": 2841,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 8,
+            "characters": 2120,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 9,
+            "characters": 2104,
+            "out_of_page_characters": 0
+          },
+          {
+            "page": 10,
+            "characters": 1428,
+            "out_of_page_characters": 0
+          }
+        ],
+        "contact_sheets": [
+          "C:/Users/nero_/Downloads/mtt-papers/papers/world-in-world-genesis-local-comparison-geometry-and-a-9e600e73/tmp/pdfs/sheet-01-04.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/world-in-world-genesis-local-comparison-geometry-and-a-9e600e73/tmp/pdfs/sheet-05-08.png",
+          "C:/Users/nero_/Downloads/mtt-papers/papers/world-in-world-genesis-local-comparison-geometry-and-a-9e600e73/tmp/pdfs/sheet-09-10.png"
+        ],
+        "visual_inspection_completed": true,
+        "zoomed_pages": [
+          1,
+          5,
+          6,
+          7,
+          8,
+          10
+        ],
+        "visually_inspected_page_range": [
+          1,
+          10
+        ],
+        "zoom_method": "Individual 110-DPI full-page rasters displayed at original resolution after the final all-page contact-sheet pass",
+        "visual_notes": "Final PDF inspected after the last source change. No clipping, overlap, unreadable equations or accidental blank pages. Corrected analytic premises and nonlinear comparison are legible."
+      },
+      "line_anchors": {
+        "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-geometry-20260912": [
+          {
+            "anchor": "sec:consumer-geometry",
+            "line": 398
+          }
+        ],
+        "SPINOR-CONSUMER-world-in-world-genesis-local-comparison-geometry-and-a-9e600e73-strain-20260912": [
+          {
+            "anchor": "sec:consumer-strain",
+            "line": 411
+          }
+        ]
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "id": "SPINOR.POLAR.METRIC.01",
+      "kind": "shared_manuscript_statement_correction",
+      "severity": "substantive",
+      "source_theorem_issue": "The Genesis orientation-strain theorem and sibling prose allowed ambient Frobenius orthogonality at every polar background to be inferred from the identity-coordinate skew/symmetric proof.",
+      "preserved_result": "Unique polar coordinates and 3+6 dimensions on GL+(3); orthogonal skew/symmetric split at identity; flag-selected 1+2+3 projectors on Sym(3).",
+      "correction": "State the orthogonal decomposition in identity-normalized coordinates; pull back the metric at general U. Omega U and delta U can pair nontrivially.",
+      "bounded_witness": {
+        "U": "diag(2,1,1)",
+        "Omega_12": -1,
+        "Omega_21": 1,
+        "deltaU_12": 1,
+        "deltaU_21": 1,
+        "ambient_frobenius_pairing": 1
+      },
+      "affected_papers": [
+        "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+        "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+        "modal-triplet-theory-foundations",
+        "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73"
+      ],
+      "consumer_guidance": "Parent should propagate this metric qualification wherever an arbitrary-background polar split is called ambient-orthogonal. No frozen assigned result is blanket-downgraded."
+    },
+    {
+      "id": "SPINOR.SCALAR.FIELD.01",
+      "kind": "shared_consumer_typing_correction",
+      "severity": "substantive",
+      "source_theorem_issue": "The prior displayed linear bridge compared a real rank-six strain bundle with a complex rank-six trace bundle while calling rank agreement well-typed.",
+      "preserved_result": "Both rank profiles and local decompositions remain exact over their stated scalar fields.",
+      "correction": "Complexify the strain source for a complex-linear bridge, or choose a compatible real form of the trace carrier. A generic underlying complex rank-six bundle has real rank twelve.",
+      "affected_papers": [
+        "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+        "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+        "modal-triplet-theory-foundations",
+        "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73"
+      ],
+      "consumer_guidance": "Keep scalar field and metric transport explicit; complexification does not increase physical spacetime dimension."
+    },
+    {
+      "id": "SPINOR.SHORTING.ORDER.01",
+      "kind": "consumer_guidance",
+      "source_theorem_issue": null,
+      "preserved_result": "Shorted Hessian on the declared reduced observable image.",
+      "correction": "For TT-only output, use J_TT=P_TT J before covariance inversion; projecting the inverse of a larger covariance is generally a different operation. State reduced covariance invertibility.",
+      "affected_papers": [
+        "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+        "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+        "modal-triplet-theory-foundations",
+        "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73"
+      ],
+      "bounded_witness": "Covariance [[2,1],[1,2]] gives inverse-then-project 2/3 versus projected-covariance inverse 1/2."
+    },
+    {
+      "id": "SPINOR.KERNEL.OWNER.01",
+      "kind": "parent_catalog_policy_guidance",
+      "source_theorem_issue": null,
+      "correction": "R.GEO projective/Cech/strain results are owned by the QM paper in the current ownership catalog; the endpoint factorization is owned by Cohesive Closure Repair. Older Kernel recommendations are not canonical ownership. Historical title candidates removed by the parent are not duplicated.",
+      "affected_papers": [
+        "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+        "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+        "modal-triplet-theory-foundations",
+        "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73"
+      ]
+    },
+    {
+      "id": "SPINOR.RIESZ.FINITERANK.01",
+      "kind": "shared_manuscript_statement_correction",
+      "severity": "substantive",
+      "source_theorem_issue": "Foundation v10 inferred constant finite rank from an isolated spectral cluster and norm-resolvent continuity without an explicit initial finite-rank assumption.",
+      "preserved_result": "Norm continuity of the Riesz projection, and constant finite rank after a finite-rank assumption at one point of a connected neighborhood.",
+      "correction": "The proposition now assumes finite rank at one parameter. A zero operator on an infinite-dimensional Hilbert space has an isolated spectral point and infinite-rank enclosing projector.",
+      "affected_papers": [
+        "modal-triplet-theory-foundations"
+      ],
+      "anchors": [
+        "Riesz-projector stability",
+        "finite rank at one parameter value"
+      ],
+      "consumer_guidance": "Propagate the finite-rank or compact-resolvent premise in consumers; do not revise FP I--VI through this fragment."
+    },
+    {
+      "id": "SPINOR.FESHBACH.GRAPHNORM.01",
+      "kind": "shared_consumer_norm_correction",
+      "severity": "substantive",
+      "source_theorem_issue": "Foundation v10 used a graph-norm-bounded off-diagonal block with an inverse bound whose displayed norm did not specify the graph-domain target.",
+      "preserved_result": "Exact Schur-Feshbach equation and bounded graph-domain block composition.",
+      "correction": "The bound now explicitly uses the inverse norm from QH into D(L_QQ) with its graph norm, not only its Hilbert operator norm.",
+      "affected_papers": [
+        "modal-triplet-theory-foundations"
+      ],
+      "anchors": [
+        "additional graph-norm bound",
+        "thm:feshbach"
+      ],
+      "consumer_guidance": "Retain graph-norm constants when transferring unbounded-operator estimates. The bounded one-dimensional witness is recorded with the checks.",
+      "additional_typing_correction": "The L_PP block maps P H to P H, not to Q H; the prior combined codomain line was a typographical error. L_QP still maps P H to Q H."
+    },
+    {
+      "id": "SPINOR.LINEAR.ROUTE.01",
+      "kind": "shared_consumer_scope_guidance",
+      "source_theorem_issue": "The earlier Strain theorem and proof called their bundle-isomorphism contract a requirement for physical identification without restricting the route.",
+      "preserved_result": "The same-source bundle/metric/connection/operator contract remains valid for the stronger linear identification.",
+      "correction": "The theorem and the sole changed proof sentence now say linear identification. Nonlinear spectral reduction and shorting are not excluded by the absence of an isometric bundle isomorphism.",
+      "affected_papers": [
+        "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+        "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+        "modal-triplet-theory-foundations",
+        "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73"
+      ],
+      "anchors": [
+        "Requirements for a linear physical identification",
+        "A linear identification must be independent"
+      ],
+      "consumer_guidance": "Do not rebind an older review as requiring a linear isometry for every physical effective reduction; use the explicit current route scope."
+    }
+  ],
+  "source_read_coverage": {
+    "original_assignment_count": 30,
+    "original_assigned_results_read_complete": 30,
+    "frozen_artifact_count": 41,
+    "frozen_artifacts": [
+      {
+        "result_id": "causal_base_q79_all_arity_source_promotion_packet",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json",
+        "artifact_sha256": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+        "bytes_read": 9861,
+        "line_ranges_read": [
+          [
+            1,
+            229
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet/artifact.json",
+        "artifact_sha256": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "bytes_read": 16849,
+        "line_ranges_read": [
+          [
+            1,
+            546
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "causal_base_q79_seven_row_endpoint_factorization_packet",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json",
+        "artifact_sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
+        "bytes_read": 14943,
+        "line_ranges_read": [
+          [
+            1,
+            665
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json",
+        "artifact_sha256": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "bytes_read": 9310,
+        "line_ranges_read": [
+          [
+            1,
+            288
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json",
+        "artifact_sha256": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "bytes_read": 7650,
+        "line_ranges_read": [
+          [
+            1,
+            232
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "gr_tt_support",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/gr_tt_support/artifact.json",
+        "artifact_sha256": "9092e943933ceec3689383cb0b96aff549af07860900c54e185bcaa094c08e4f",
+        "bytes_read": 4796,
+        "line_ranges_read": [
+          [
+            1,
+            76
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "protospinor_simulation_kernel",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/protospinor_simulation_kernel/artifact.vue",
+        "artifact_sha256": "90263ac518241df2fa5b127ccb25b44f3bfc74820fdb2e5daef2e937c15cd0c1",
+        "bytes_read": 301664,
+        "line_ranges_read": [
+          [
+            1,
+            7361
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_cech_projector_compiler",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_cech_projector_compiler/artifact.json",
+        "artifact_sha256": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "bytes_read": 28189,
+        "line_ranges_read": [
+          [
+            1,
+            650
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_cohesive_superconnection",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_cohesive_superconnection/artifact.json",
+        "artifact_sha256": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
+        "bytes_read": 18455,
+        "line_ranges_read": [
+          [
+            1,
+            768
+          ]
+        ],
+        "scope": "supplemental historical candidate read; no duplicate placement review requested after parent correction",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_maurer_cartan_repair",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_maurer_cartan_repair/artifact.json",
+        "artifact_sha256": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
+        "bytes_read": 14558,
+        "line_ranges_read": [
+          [
+            1,
+            369
+          ]
+        ],
+        "scope": "supplemental historical candidate read; no duplicate placement review requested after parent correction",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_projective_hym_naturality",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_projective_hym_naturality/artifact.json",
+        "artifact_sha256": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+        "bytes_read": 35279,
+        "line_ranges_read": [
+          [
+            1,
+            1043
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_spectral_strain_hessian",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_spectral_strain_hessian/artifact.json",
+        "artifact_sha256": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "bytes_read": 44633,
+        "line_ranges_read": [
+          [
+            1,
+            1469
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_02a_b",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_02a_b/artifact.json",
+        "artifact_sha256": "af24fa273d2f1a79f395d58f3f74505bd635cc839809e1a58d77c7d8cffab868",
+        "bytes_read": 8921,
+        "line_ranges_read": [
+          [
+            1,
+            265
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_02c1_c5",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_02c1_c5/artifact.json",
+        "artifact_sha256": "f4a4f8e22fc1454004e5d29fffe14168caf9af952a5f1a780cf4e32af563e78e",
+        "bytes_read": 16069,
+        "line_ranges_read": [
+          [
+            1,
+            344
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03a",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03a/artifact.json",
+        "artifact_sha256": "556301462981741d0162e524046b424bcd75b67a55a5c47cd22216038a90e5ad",
+        "bytes_read": 9041,
+        "line_ranges_read": [
+          [
+            1,
+            172
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03b",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03b/artifact.json",
+        "artifact_sha256": "78f659d726208b3a470f2b76febb737c19acfbbaff5b4fd7a705eaab7a7a285f",
+        "bytes_read": 5763,
+        "line_ranges_read": [
+          [
+            1,
+            112
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03c",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03c/artifact.json",
+        "artifact_sha256": "efa2d04d7dfa7c160d44b4cb84b84ef0cc76412db325d37ed8e6b3c9f3fa53b6",
+        "bytes_read": 4633,
+        "line_ranges_read": [
+          [
+            1,
+            93
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03d",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03d/artifact.json",
+        "artifact_sha256": "a46c050e78435a1c72ebfeeb00709fcca8559dc4bbfce1a98813e6df058c9764",
+        "bytes_read": 9887,
+        "line_ranges_read": [
+          [
+            1,
+            188
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03e",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03e/artifact.json",
+        "artifact_sha256": "68d161450ad0632aed934cfe1e23a89471fe18e6042a02e999caa9d11146f146",
+        "bytes_read": 5793,
+        "line_ranges_read": [
+          [
+            1,
+            97
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03f",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03f/artifact.json",
+        "artifact_sha256": "44a3876cc85916a65b2bc0a25980f4b9e0b9f847792e73e96f5ee652d9e61e15",
+        "bytes_read": 25200,
+        "line_ranges_read": [
+          [
+            1,
+            1038
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03g",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03g/artifact.json",
+        "artifact_sha256": "0fa972b02345b660567dc91dccd1c7d978ff42fcb6c6ba4d6c11bba39080f95b",
+        "bytes_read": 9104,
+        "line_ranges_read": [
+          [
+            1,
+            225
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03h",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03h/artifact.json",
+        "artifact_sha256": "359d8db59d81dfa4eb25d5d9a6914ad2aa2b08288bdb87cb01181ee9de90133c",
+        "bytes_read": 9296,
+        "line_ranges_read": [
+          [
+            1,
+            385
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03i",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03i/artifact.json",
+        "artifact_sha256": "cf1ede0a892b954589f6273dd2a0eaec2ae134efbeaf66705218def62a120739",
+        "bytes_read": 4181,
+        "line_ranges_read": [
+          [
+            1,
+            127
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03j",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03j/artifact.json",
+        "artifact_sha256": "35b91953eea02b1954bfc041600cd323aaeaf420f5b3693325f184225812f65f",
+        "bytes_read": 5961,
+        "line_ranges_read": [
+          [
+            1,
+            224
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_03k",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_03k/artifact.json",
+        "artifact_sha256": "bbff68ba6dbc180176cc51d75a70a86485da800010140dabaadcee5be252bcb1",
+        "bytes_read": 5907,
+        "line_ranges_read": [
+          [
+            1,
+            188
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04a",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04a/artifact.json",
+        "artifact_sha256": "808dfe793dd23179af24c0809b318568b62b134afea2a9cbe5c6013975e40f60",
+        "bytes_read": 32258,
+        "line_ranges_read": [
+          [
+            1,
+            1296
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04b",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04b/artifact.json",
+        "artifact_sha256": "46983c707e00599ea413e2d6020c1bef70691f192b2d84964e9547f6302b7c1f",
+        "bytes_read": 9043,
+        "line_ranges_read": [
+          [
+            1,
+            229
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04c",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04c/artifact.json",
+        "artifact_sha256": "697ac6558076c937c517c5a482944078c3ff49ac5dd5070a77da5505fe5a3495",
+        "bytes_read": 14255,
+        "line_ranges_read": [
+          [
+            1,
+            374
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04d",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04d/artifact.json",
+        "artifact_sha256": "730618aa53821b23ad533c1e0754b80843ea75f2bc7dd6a08c846ce6c8748260",
+        "bytes_read": 22230,
+        "line_ranges_read": [
+          [
+            1,
+            946
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04e",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04e/artifact.json",
+        "artifact_sha256": "a265cf03d5b9e459906bebe17c8bca80152e644765bdfc5d8cb2e77fe931a074",
+        "bytes_read": 29262,
+        "line_ranges_read": [
+          [
+            1,
+            1362
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04f",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04f/artifact.json",
+        "artifact_sha256": "9b2c3484d3b0524620bd4a52a36a8becf5c8d270f062543f9e43cd3abfe0789f",
+        "bytes_read": 46068,
+        "line_ranges_read": [
+          [
+            1,
+            2395
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04g",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04g/artifact.json",
+        "artifact_sha256": "0c04dc7f1d216099b03930b7f98957b1e12bcc6f618c40529e64da067b453caf",
+        "bytes_read": 21218,
+        "line_ranges_read": [
+          [
+            1,
+            845
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04h",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04h/artifact.json",
+        "artifact_sha256": "4f96cf3aee6feab1c1454dfce1eb1815b6e73862f72fb37ee5c5a8c454253b69",
+        "bytes_read": 7717,
+        "line_ranges_read": [
+          [
+            1,
+            148
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04i",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04i/artifact.json",
+        "artifact_sha256": "0dda462ebf8862f46331ca5ecd97c4d13be52447bc03d4999cb67f8d5f0e238e",
+        "bytes_read": 18777,
+        "line_ranges_read": [
+          [
+            1,
+            762
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04j",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04j/artifact.json",
+        "artifact_sha256": "0ed26044b0b84bbaf5b757cdc761476af1fd50d834aaf0540cb64a28a8799aa6",
+        "bytes_read": 16752,
+        "line_ranges_read": [
+          [
+            1,
+            425
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04k",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04k/artifact.json",
+        "artifact_sha256": "359988d1032db0ed4d8ed32f600dcc9cc0a95d8d0861d18a95480a91019e4f97",
+        "bytes_read": 22392,
+        "line_ranges_read": [
+          [
+            1,
+            487
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04l",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04l/artifact.json",
+        "artifact_sha256": "9dbad2ea0dd63592d0129c4ae101b8303b88b0b7fe297ddca7ce2d6c46a94193",
+        "bytes_read": 30656,
+        "line_ranges_read": [
+          [
+            1,
+            554
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04m",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04m/artifact.json",
+        "artifact_sha256": "22a5082dea20e7fa4b1e16a6e328e2e192c1b44d2fec2a2f029fccbd5431b4fd",
+        "bytes_read": 22315,
+        "line_ranges_read": [
+          [
+            1,
+            502
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_04n",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_04n/artifact.json",
+        "artifact_sha256": "90b3b1becb069bbccef91c88a45e007a1f77bd34080921bb1fa74bd02f17040f",
+        "bytes_read": 17876,
+        "line_ranges_read": [
+          [
+            1,
+            477
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_superconnection_a33_01",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_superconnection_a33_01/artifact.json",
+        "artifact_sha256": "a12d32895ab56aaa686694294780f8bbb793d7ef9482faca0a7ef543b5aae678",
+        "bytes_read": 3723,
+        "line_ranges_read": [
+          [
+            1,
+            222
+          ]
+        ],
+        "scope": "original assigned owner result",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      },
+      {
+        "result_id": "q79_support_stratified_strain",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_support_stratified_strain/artifact.json",
+        "artifact_sha256": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8",
+        "bytes_read": 47734,
+        "line_ranges_read": [
+          [
+            1,
+            1014
+          ]
+        ],
+        "scope": "consumer source or later refinement",
+        "read_complete": true,
+        "hash_matches_frozen_ownership": true,
+        "verification_claim": "Editorial reading and byte-hash check only; packet booleans are not independent proof verification."
+      }
+    ],
+    "full_proof_explanation_count": 34,
+    "proof_explanations": [
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/SELECTED_Q79_TOTAL_SUPERCONNECTION_BRANCHING_PROGRAM_v1.md",
+        "sha256": "31db2f9a1a91deee3fe2f9660004d975d952d82f35534b0c9508ef35422fd3cf",
+        "line_ranges_read": [
+          [
+            1,
+            1370
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/WS01_SELECTED_ENDPOINT_ATLAS_AND_CECH_EXECUTION_THEOREM_v1.md",
+        "sha256": "91fe244353afefea3a7d747dbdd33a2949160c21f64e621c92569cad0686533e",
+        "line_ranges_read": [
+          [
+            1,
+            225
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/GRAPH_PRYM_BETA_ROOT_ENDPOINT_SELECTION_THEOREM_v1.md",
+        "sha256": "fe1f0820b9dd5b6cbd90d4bdac83b6057a2b743052fd7b815d18b1bd22ca14d4",
+        "line_ranges_read": [
+          [
+            1,
+            135
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/NORMALIZED_DELIGNE_NULL_HOMOTOPY_TO_TWISTED_PRYM_LINE_THEOREM_v1.md",
+        "sha256": "70e310aa04c631c08985c08f52fdbbbcd2e933d1902a69b87243f9c96c30f706",
+        "line_ranges_read": [
+          [
+            1,
+            156
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/HODGE_NORMALIZED_DELIGNE_NULL_HOMOTOPY_SELECTION_THEOREM_v1.md",
+        "sha256": "e1ed00aff9f7315c516ca3ef4f70727ff4c91d8f3be4885ada73530b920c264d",
+        "line_ranges_read": [
+          [
+            1,
+            111
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/TRANSPORTED_DELIGNE_COCHAIN_METRIC_AND_HODGE_NATURALITY_THEOREM_v1.md",
+        "sha256": "ded410e0b44cf31e76dea4564cd3768cd626aed530f70ae7327db3e1684374b3",
+        "line_ranges_read": [
+          [
+            1,
+            100
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/SELECTED_DELIGNE_PATH_LIFT_AND_INTEGRAL_BRANCH_THEOREM_v1.md",
+        "sha256": "4b6463fb1c9a5a65fd09aaa8799b5abf50a46a3be81009893608ea762e74c3cb",
+        "line_ranges_read": [
+          [
+            1,
+            93
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/TRIADIC_TRACEPLANE_SPINC_INTERTWINER_THEOREM_v1.md",
+        "sha256": "ef28603bfb494fa0ea1f900cbf1b43263a5134806f7b2cbb784d9b9fde4de670",
+        "line_ranges_read": [
+          [
+            1,
+            397
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/TRIADIC_ROOTSTACK_QWW_SPINC_CONTINUATION_CUTSET_THEOREM_v1.md",
+        "sha256": "322e77fa19c5e344836a0b01dbd7fc049ae6951659f9c09343ca5d51d81d5ed7",
+        "line_ranges_read": [
+          [
+            1,
+            140
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/TRIADIC_BLOCK_DECOMPOSITION_SM_COMPATIBILITY_THEOREM_v1.md",
+        "sha256": "8a5889a5fbe576b9b4d6bf5e52e2d7083f07537bf91513d7f58dc8010fd1bcf6",
+        "line_ranges_read": [
+          [
+            1,
+            238
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/TRIADIC_STATIC_FAMILY_TRANSPORT_SOURCE_THEOREM_v1.md",
+        "sha256": "01dc89d7cf5bccf03043d8a7784c3901b2a2cde0313ff26f2c302ba7173280f0",
+        "line_ranges_read": [
+          [
+            1,
+            134
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/TRIADIC_DYNAMIC_WEYL_ORBIT_COMPATIBILITY_THEOREM_v1.md",
+        "sha256": "f6066a90c0a28c6991d24cbe0e7013b07b68981d00209db08341d34f0e568353",
+        "line_ranges_read": [
+          [
+            1,
+            137
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/TRIADIC_FAMILY_RESPONSE_ALGEBRA_THEOREM_v1.md",
+        "sha256": "75f3a7d78b4d21cb4aa6b971c5ac9c696c83bdc714e6abb7f8106ac28867b6d6",
+        "line_ranges_read": [
+          [
+            1,
+            188
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/TRIADIC_SPECTRAL_COORDINATE_MINIMALITY_THEOREM_v1.md",
+        "sha256": "f72e891a7299b3082aa0a813c1510798a3b3ab651d6f0476a27dc562447adaba",
+        "line_ranges_read": [
+          [
+            1,
+            135
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/DIFFERENTIAL_WEIGHT_ONE_ROOT_SELECTION_THEOREM_v1.md",
+        "sha256": "b9ca9580a2f3ed98e156542bfe9ab742b0cb39bf899c3a22ccde355654fb733c",
+        "line_ranges_read": [
+          [
+            1,
+            126
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/PHYSICAL_SPINC_DETERMINANT_CORRESPONDENCE_CUTSET_THEOREM_v1.md",
+        "sha256": "4df3990e1d7d61420a123619ca90b09456d7d1f4bbe4a551938ab10da3df4eec",
+        "line_ranges_read": [
+          [
+            1,
+            195
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/ASSOCIATED_SHEET_SPINC_DESCENT_THEOREM_v1.md",
+        "sha256": "70d06ea1f79ddd104e35fa886521d4b2866948db31bf741cb6ddd20d93315a35",
+        "line_ranges_read": [
+          [
+            1,
+            177
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/FRAMED_QWW_BINARY_ROOT_SPINC_DESCENT_THEOREM_v1.md",
+        "sha256": "784b498883a56e9aa7764ee160a2f96f0bc574de294763681b3df078cfc7ed26",
+        "line_ranges_read": [
+          [
+            1,
+            202
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/ALMOST_COMMUTATIVE_SHARED_ROOT_SPINC_FACTORIZATION_THEOREM_v1.md",
+        "sha256": "dbda6cf8a0b9c9c3bd11c8e488cdcf40350da3a6d4f4f2d73a2f7ff22cc54d92",
+        "line_ranges_read": [
+          [
+            1,
+            224
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/COMPLETE_CARRIER_ROOT_BLIND_INTERACTION_CUTSET_THEOREM_v1.md",
+        "sha256": "9ba1db3cf17a3c6dab9c8e7a045f11686f8761ef3ca09674d969ebeb9fa56098",
+        "line_ranges_read": [
+          [
+            1,
+            243
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-q79-total-superconnection-branching/theorems/BINARY_ROOT_CAR_NET_AND_GNS_EQUIVALENCE_THEOREM_v1.md",
+        "sha256": "5fc87738556241e4321b4a87ea4841ed7d73ff199d5addf2d96b1e50d443e4d2",
+        "line_ranges_read": [
+          [
+            1,
+            235
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-protospinor-gr-response-proof/proof_corpus/GR_TT_Support_Final_Theorem_v1.md",
+        "sha256": "d3c8e6bf1b3ed25c81d548edd17fc2fb13f08a4bd9ce9c1ff7f655c2c323363a",
+        "line_ranges_read": [
+          [
+            1,
+            48
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-protospinor-gr-response-proof/proof_corpus/q79_Selected_Lorentzian_Coframe_Causal_Representative_Closure_v1.md",
+        "sha256": "fdc4121a2e8513ba7386b670391ffcc261041c6eb10f21c90cc9cb297349fb7a",
+        "line_ranges_read": [
+          [
+            1,
+            143
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-qm-source-proof/proof_corpus/q79_CovariantProjectiveModule_HYMSymbol_Naturality_and_CompressionResidual_Theorem_v1.md",
+        "sha256": "8d41b02bcbd1018233a4da7dbf06363ec12e80a5e074d6480ac6cb2596ea91cc",
+        "line_ranges_read": [
+          [
+            1,
+            446
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-qm-source-proof/proof_corpus/q79_IntrinsicSpectralStrainQuotient_and_ShortedHessian_Theorem_v1.md",
+        "sha256": "579a1da01691354ad002b8bb3558d8954f3fd99ac2dfefb1e1732b9185cfba2a",
+        "line_ranges_read": [
+          [
+            1,
+            712
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-qm-source-proof/proof_corpus/q79_GlobalSupportStratifiedSpectralStrain_and_BoundaryHessian_NoGo_Theorem_v1.md",
+        "sha256": "0fe26f28d7bd8015dfabe55afc5f40c408f92ca5fcfe495a9f96159224a3b76b",
+        "line_ranges_read": [
+          [
+            1,
+            417
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-qm-source-proof/reports/GEO01_EXPLICIT_CECH_CONNECTION_COMPILER_2026-07-26.md",
+        "sha256": "f980c470e1f8c991ca4ab1a560a627305f3add099c2a5df67d9bee9e81de17bb",
+        "line_ranges_read": [
+          [
+            1,
+            102
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/20 Mathematical Language Discovery Program - Closure Dynamics/Q79_TWISTED_COHESIVE_SUPERCONNECTION_AND_STRATIFIED_HODGE_THEOREM_v1.md",
+        "sha256": "0716ea1378098508c01106308bf32b3aa90bbc8cad47529f48752aed4eb3d6c7",
+        "line_ranges_read": [
+          [
+            1,
+            229
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/20 Mathematical Language Discovery Program - Closure Dynamics/Q79_COHESIVE_MAURER_CARTAN_REPAIR_AND_DERIVED_TRANSFORM_INTERTWINER_THEOREM_v1.md",
+        "sha256": "55db305c7139bc181011bf1bba3667ed4c238a10bd1d99ae0240609d293bfa15",
+        "line_ranges_read": [
+          [
+            1,
+            189
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-causal-base-constraint-fiber/SymmetricWeylResponseRetractionAndTransferredM3Theorem_v1.md",
+        "sha256": "24bf251b0d0ccdcd32ce700689843731e926638c1a4d2794dfa8be3b46a45463",
+        "line_ranges_read": [
+          [
+            1,
+            364
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-causal-base-constraint-fiber/SymmetricWeylTransferredM4AndArityFourStasheffTheorem_v1.md",
+        "sha256": "4ce40859a885417f8c9537915da2bb11e560b38327e9e2bd1ad05c893e58ab33",
+        "line_ranges_read": [
+          [
+            1,
+            334
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-causal-base-constraint-fiber/HigherJetFiltrationAndTransferredAritySupportTheorem_v1.md",
+        "sha256": "669117805e9e5058d71cf6bf0ce8cdb96548fd98ffb4a2d84a1ae0d65b64bd6e",
+        "line_ranges_read": [
+          [
+            1,
+            384
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-causal-base-constraint-fiber/AllArityContractionMorphismSourcePromotionTheorem_v1.md",
+        "sha256": "8add68855ce9d0cc7ff93c666f2c00afae3bda4391eddfc08de4d2ebc08118a9",
+        "line_ranges_read": [
+          [
+            1,
+            289
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-causal-base-constraint-fiber/SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md",
+        "sha256": "2e9a860a759877a4df06c3885c246ed4cc2679c5069e7d95d5d44b4f0bf213ae",
+        "line_ranges_read": [
+          [
+            1,
+            435
+          ]
+        ],
+        "scope": "Complete local proof explanation read; not an independent verifier run."
+      }
+    ],
+    "manuscripts_read_in_full": [
+      "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+      "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+      "modal-triplet-theory-foundations",
+      "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73"
+    ],
+    "supporting_owner_context": [
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "anchors_read": [
+          "sec:geometry-interface",
+          "sec:projective-hym",
+          "sec:cech-compiler",
+          "sec:spectral-strain",
+          "sec:support-strain",
+          "sec:shared-root-c4"
+        ],
+        "scope": "Relevant whole owner sections, not a claim of full QM-manuscript reading."
+      },
+      {
+        "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "anchors_read": [
+          "sec:finite-weyl-completion",
+          "sec:first-jet-quotient",
+          "sec:response-retract",
+          "sec:all-arity-source-map"
+        ],
+        "scope": "Whole relevant v14 structural sections; parent owns the full atlas and additive v15."
+      }
+    ],
+    "policy_files_read": [
+      "AGENTS.md",
+      "PAPER_RELEASE_REQUIREMENTS.md",
+      "THEOREM_OWNERSHIP_AND_STANDALONE_POLICY.md",
+      "CONTINUE_HERE.md"
+    ],
+    "truncation_handling": "Long Vue, JSON and manuscript output was read in chunks; every truncated interval was retrieved before coverage was marked complete."
+  },
+  "bounded_checks": {
+    "polar_pairing": "1",
+    "positive_cost_pullback_not_reducing": true,
+    "invert_then_project": "2/3",
+    "project_covariance_then_invert": "1/2",
+    "graph_norm_example": {
+      "L_QQ": "2I",
+      "L_PQ": "I",
+      "L_QP": "I",
+      "graph_norm": "norm(x)+norm(L_QQ x)",
+      "hilbert_inverse_norm": "1/2",
+      "graph_inverse_norm": "3/2",
+      "L_PQ_graph_operator_norm": "1/3",
+      "actual_correction": "1/2",
+      "incorrect_Hilbert_only_bound": "1/6"
+    },
+    "scope": "Four small exact illustrative checks only; no scientific packet verifier or heavy result rerun."
+  },
+  "remaining_genuine_research": [
+    "Selected visible-hidden common-chamber HYM endpoint, literal physical Hermitian metrics/connections and source-bound Green/domains; hidden projective/existential HYM is already retained.",
+    "Actual physical same-source S3 x C4 lift and nonlinear strain/operator comparison; universal support stratification is complete and regularity follows under the stronger rank-six/C4 contract.",
+    "Signed physical action, BV-compatible compactification, interactions and strict source-selected charged magnitudes; existing adopted finite/profile SM and canonical operational QM remain closed at their declared tiers.",
+    "Internal TT to physical stress-energy response and SI Newton/Planck normalization; the internal support/eigenvalue is not reopened.",
+    "Strict global Spin obstruction where required; the selected framed complete free SpinC/CAR carrier is already explained as closed conditional."
+  ],
+  "author_approval_questions": [
+    "Approval of the unreleased current v8/v8/v11/v6 revisions and later publication remains with the author; no release was attempted."
+  ],
+  "remaining_editorial_items": [
+    "Parent integrates owner/consumer fragments, shared correction guidance and global catalog/Kernel artifacts, then performs global validation. No assigned source remains unreviewed."
+  ],
+  "write_boundary": "Only four assigned paper directories and spinor.json/spinor.md. No global refresh/freeze/consolidation, Kernel/catalog writes, scientific reruns, commits, pushes, publication or automation.",
+  "prior_review_validation": {
+    "catalog_path": "catalog/research-integration-reviews.json",
+    "catalog_sha256_at_validation": "b35ae19584d1e086da68e1de5c806932d2e0c3fe0877d3fb91d699a2e2c39ab0",
+    "prior_review_rebindings": [],
+    "paper_proof_preservation": [
+      {
+        "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
+        "prior_integrated_or_historical_catalog_review_count": 0,
+        "baseline_commit": "838a0860ed8cdca474d1c11ef2fa063f2a5f908d",
+        "main_tex_lf_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+        "old_labels_retained": [],
+        "prior_formal_proof_paragraph_count": 6,
+        "proof_paragraphs": [
+          {
+            "ordinal": 1,
+            "current_line": 209,
+            "lf_sha256": "f051be30ebb35913a586a7480ede5e0ed4b4413d0c1e702336ef5f2ce83f3614",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 2,
+            "current_line": 271,
+            "lf_sha256": "89b8524f7638dc04437d447682394a7f81338c18bc8a80d66641ac60f1dcdb70",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 3,
+            "current_line": 333,
+            "lf_sha256": "97466b6b5555bfe91f8c1b1e32efdf7a179a0e3519b99cc7b065e366121a3145",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 4,
+            "current_line": 389,
+            "lf_sha256": "ae61fe0192779b0199935ae4ec9a53fb26d1e75f7223a037f06e455778720445",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 5,
+            "current_line": 423,
+            "lf_sha256": "83cd4657a8ce1c089baeac20208aedb282456e592af54e0a89a3f5c00811d851",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 6,
+            "current_line": 505,
+            "lf_sha256": "0c5086e1618c843e80add9ddc826139854cd607be43db3321b3faa53536479f1",
+            "body_unchanged": true,
+            "edit_assessment": null
+          }
+        ],
+        "contextual_validity": "Prior proof paragraphs remain valid for their scoped statements. No proof block was removed or duplicated. Overbroad metric/scalar-field wording and the two Foundations analytic premises were corrected explicitly, not treated as unchanged universal claims.",
+        "qualification_ids": [
+          "SPINOR.POLAR.METRIC.01",
+          "SPINOR.SCALAR.FIELD.01"
+        ],
+        "rebind_guidance": "No prior global owner-review hash requires rebinding for this paper when the count is zero; parent should use the supplied current LF hash for the new reviews and any separately held historical consumer records."
+      },
+      {
+        "paper_id": "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60",
+        "prior_integrated_or_historical_catalog_review_count": 0,
+        "baseline_commit": "838a0860ed8cdca474d1c11ef2fa063f2a5f908d",
+        "main_tex_lf_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+        "old_labels_retained": [],
+        "prior_formal_proof_paragraph_count": 4,
+        "proof_paragraphs": [
+          {
+            "ordinal": 1,
+            "current_line": 215,
+            "lf_sha256": "551433a3bf643ebc90f7529f4f0b6d64bec833b361ce368686d1736b202568a5",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 2,
+            "current_line": 280,
+            "lf_sha256": "eee788c9e13aa519ebe1d60a1d2ecc8bd7d1b1a726b2fe961bca0374ea177516",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 3,
+            "current_line": 432,
+            "lf_sha256": "e8e06a80c2d9b04569a2363c605b04157b92d4e8a38944b1a19c5dc37c44912a",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 4,
+            "current_line": 477,
+            "lf_sha256": "8048a47b0f27b65fc878eec47e16761eb9576d3ac9eadcb4616c0892d641b25d",
+            "body_unchanged": false,
+            "edit_assessment": "The sole wording change is physical identification -> linear identification. The bundle-isomorphism proof remains valid in that explicitly restricted route; it is not a necessary condition for every nonlinear effective reduction."
+          }
+        ],
+        "contextual_validity": "Prior proof paragraphs remain valid for their scoped statements. No proof block was removed or duplicated. Overbroad metric/scalar-field wording and the two Foundations analytic premises were corrected explicitly, not treated as unchanged universal claims.",
+        "qualification_ids": [
+          "SPINOR.POLAR.METRIC.01",
+          "SPINOR.SCALAR.FIELD.01"
+        ],
+        "rebind_guidance": "No prior global owner-review hash requires rebinding for this paper when the count is zero; parent should use the supplied current LF hash for the new reviews and any separately held historical consumer records."
+      },
+      {
+        "paper_id": "modal-triplet-theory-foundations",
+        "prior_integrated_or_historical_catalog_review_count": 0,
+        "baseline_commit": "838a0860ed8cdca474d1c11ef2fa063f2a5f908d",
+        "main_tex_lf_sha256": "451f729d580465fb25be0ce823f7b2a3eb5293965d112f92c4f7adb91bd5aa72",
+        "old_labels_retained": [
+          "thm:shared-line",
+          "ass:joint",
+          "ass:gap",
+          "eq:q-semigroup",
+          "thm:feshbach",
+          "thm:robust",
+          "thm:foundation"
+        ],
+        "prior_formal_proof_paragraph_count": 4,
+        "proof_paragraphs": [
+          {
+            "ordinal": 1,
+            "current_line": 396,
+            "lf_sha256": "2822db91f13ab6544e15e3b4fdcc4590ad267407cfb24f92c2d522ae6205a1e8",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 2,
+            "current_line": 636,
+            "lf_sha256": "aef8a49370fd66fab7982459e29a810e071420c274f7686eb195c68ab5f424f6",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 3,
+            "current_line": 814,
+            "lf_sha256": "45394a43cb83dad63b351eadd402103ffb4be065b6fc3109a5e9c9ccae97afd3",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 4,
+            "current_line": 875,
+            "lf_sha256": "7f208f958c12bd18f6ae36695c8662dffd450edeb499c4cb6aaa3ec5f536e7f5",
+            "body_unchanged": true,
+            "edit_assessment": null
+          }
+        ],
+        "contextual_validity": "Prior proof paragraphs remain valid for their scoped statements. No proof block was removed or duplicated. Overbroad metric/scalar-field wording and the two Foundations analytic premises were corrected explicitly, not treated as unchanged universal claims.",
+        "qualification_ids": [
+          "SPINOR.POLAR.METRIC.01",
+          "SPINOR.SCALAR.FIELD.01",
+          "SPINOR.RIESZ.FINITERANK.01",
+          "SPINOR.FESHBACH.GRAPHNORM.01"
+        ],
+        "rebind_guidance": "No prior global owner-review hash requires rebinding for this paper when the count is zero; parent should use the supplied current LF hash for the new reviews and any separately held historical consumer records."
+      },
+      {
+        "paper_id": "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73",
+        "prior_integrated_or_historical_catalog_review_count": 0,
+        "baseline_commit": "838a0860ed8cdca474d1c11ef2fa063f2a5f908d",
+        "main_tex_lf_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+        "old_labels_retained": [],
+        "prior_formal_proof_paragraph_count": 4,
+        "proof_paragraphs": [
+          {
+            "ordinal": 1,
+            "current_line": 184,
+            "lf_sha256": "d24e3b95a3ca9cb3c9a26c1e62cee69bfdcedb05120f11ba4a981ecc6111706c",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 2,
+            "current_line": 218,
+            "lf_sha256": "b64167295a1debc68cedde4e90e792208759c72e5fc83a8d12529a70ab505277",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 3,
+            "current_line": 254,
+            "lf_sha256": "84b025fc7736c964510a04b2186108ac80cf89a7dede373694f28c3cb4f26431",
+            "body_unchanged": true,
+            "edit_assessment": null
+          },
+          {
+            "ordinal": 4,
+            "current_line": 284,
+            "lf_sha256": "225393c47460b6d38208b0d9e86743b37cef413ab72a705bda8ccd8a525f657c",
+            "body_unchanged": true,
+            "edit_assessment": null
+          }
+        ],
+        "contextual_validity": "Prior proof paragraphs remain valid for their scoped statements. No proof block was removed or duplicated. Overbroad metric/scalar-field wording and the two Foundations analytic premises were corrected explicitly, not treated as unchanged universal claims.",
+        "qualification_ids": [
+          "SPINOR.POLAR.METRIC.01",
+          "SPINOR.SCALAR.FIELD.01"
+        ],
+        "rebind_guidance": "No prior global owner-review hash requires rebinding for this paper when the count is zero; parent should use the supplied current LF hash for the new reviews and any separately held historical consumer records."
+      }
+    ]
+  },
+  "blocking_gaps": [],
+  "completion_state": "complete",
+  "pending_qa": []
+}

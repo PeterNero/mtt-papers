@@ -1,15 +1,17 @@
 ---
 abstract: |
-  This paper asks what Modal Triplet Theory (MTT) presently establishes about nonrelativistic quantum mechanics. We separate four questions that are often conflated: whether MTT can encode a quantum model, whether a coherent sector reconstructs its Hilbert-space dynamics, whether one selected MTT source emits the required operators and instruments, and whether the probability law is derived for every apparatus. A complete quantum-mechanical record is defined, including the complex Hilbert space, state cone, operator algebra, self-adjoint Hamiltonian and domain, unitary evolution, clock convention, composition rule, effects, instruments, and source certificates. The main theorem is conditional: if one selected upper MTT state emits this record and the evaluation diagram commutes, then MTT reconstructs the corresponding quantum theory on the declared domain. Projection alone does not create a complex structure, noncommutative observable algebra, self-adjoint Hamiltonian, tensor product, or probability law. We give sufficient closed-form and reducing-subspace conditions for an exact coherent-sector Hamiltonian, and we show why reproducing an arbitrarily supplied Schrodinger potential is an expressiveness result rather than a prediction. Time is treated as an evolution or clock parameter; the valid Mandelstam–Tamm relation replaces the former unsupported universal self-adjoint time operator. Gleason- and Busch-type theorems characterize probability assignments after Hilbert/effect structure and additivity are assumed; they do not source those assignments. A stronger positive result is available on one selected domain: the canonical $`q=79`$ binary one-anchor recorder gives an exact stopped output measure and second-moment Born descent on its commuting Fock output algebra, with no fitted probability or additional classical noise. General apparatus contexts, finite-bandwidth and non-Markov control, pre-quantum probability semantics, and objective single-history selection remain open. The result is therefore a rigorous coherent-sector reconstruction with one exact selected measurement domain, not a complete first-principles derivation of all quantum mechanics.
+  This paper asks what Modal Triplet Theory (MTT) presently establishes about nonrelativistic quantum mechanics. We separate four questions that are often conflated: whether MTT can encode a quantum model, whether a coherent sector reconstructs its Hilbert-space dynamics, whether one selected MTT source emits the required operators and instruments, and whether the probability law is derived for every apparatus. A complete quantum-mechanical record is defined, including the complex Hilbert space, state cone, operator algebra, self-adjoint Hamiltonian and domain, unitary evolution, clock convention, composition rule, effects, instruments, and source certificates. The main theorem is conditional: if one selected upper MTT state emits this record and the evaluation diagram commutes, then MTT reconstructs the corresponding quantum theory on the declared domain. Projection alone does not create a complex structure, noncommutative observable algebra, self-adjoint Hamiltonian, tensor product, or probability law. We give sufficient closed-form and reducing-subspace conditions for an exact coherent-sector Hamiltonian, and we show why reproducing an arbitrarily supplied Schrodinger potential is an expressiveness result rather than a prediction. Time is treated as an evolution or clock parameter; the valid Mandelstam–Tamm relation replaces the former unsupported universal self-adjoint time operator. Gleason- and Busch-type theorems characterize probability assignments after Hilbert/effect structure and additivity are assumed; they do not source those assignments. A stronger positive result is available on one selected domain: the canonical $`q=79`$ finite-symbol Cauchy quantum model fixes its reduced semigroup and minimal dilation, and its binary one-anchor recorder gives an exact stopped output measure and second-moment Born descent on its commuting Fock output algebra, with no fitted probability or additional classical noise. General apparatus contexts, finite-bandwidth and non-Markov control, pre-quantum probability semantics, and objective single-history selection remain open. The result is therefore a rigorous coherent-sector reconstruction with one exact selected operational model, not a complete first-principles derivation of all quantum mechanics. Contextual imports explain the exact projector and strain compilers, conditional physical-Hessian interface, free local field net, and formal quantum master equation without promoting them to a selected interacting continuum theory.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v4
-date: Version 4, July 2026
-generated_from_main_tex_sha256: 582ba1b90adaf594fcf10271b41d0f0bfc2ab6f2c03490747e233b549d626cb2
+- frozen-qm.bib
+- consumer-qm.bib
+current_version: v5
+date: Version 5, 12 September 2026
+generated_from_main_tex_sha256: ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1
 paper_id: modal-triplet-theory-from-mtt-to-quantum-mechanics
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v4
 title: |
   Modal Triplet Theory and Nonrelativistic Quantum Mechanics:
@@ -19,27 +21,45 @@ zenodo_record_id: 21708961
 zenodo_url: "https://zenodo.org/records/21708961"
 ---
 
+#  Modal Triplet Theory and Nonrelativistic Quantum Mechanics: A Coherent-Sector Reconstruction and the Born-Source Boundary
+
+Peter Nero. Version 5, 12 September 2026
+
+## Abstract
+
+This paper asks what Modal Triplet Theory (MTT) presently establishes about nonrelativistic quantum mechanics. We separate four questions that are often conflated: whether MTT can encode a quantum model, whether a coherent sector reconstructs its Hilbert-space dynamics, whether one selected MTT source emits the required operators and instruments, and whether the probability law is derived for every apparatus. A complete quantum-mechanical record is defined, including the complex Hilbert space, state cone, operator algebra, self-adjoint Hamiltonian and domain, unitary evolution, clock convention, composition rule, effects, instruments, and source certificates. The main theorem is conditional: if one selected upper MTT state emits this record and the evaluation diagram commutes, then MTT reconstructs the corresponding quantum theory on the declared domain. Projection alone does not create a complex structure, noncommutative observable algebra, self-adjoint Hamiltonian, tensor product, or probability law. We give sufficient closed-form and reducing-subspace conditions for an exact coherent-sector Hamiltonian, and we show why reproducing an arbitrarily supplied Schrodinger potential is an expressiveness result rather than a prediction. Time is treated as an evolution or clock parameter; the valid Mandelstam–Tamm relation replaces the former unsupported universal self-adjoint time operator. Gleason- and Busch-type theorems characterize probability assignments after Hilbert/effect structure and additivity are assumed; they do not source those assignments. A stronger positive result is available on one selected domain: the canonical $`q=79`$ finite-symbol Cauchy quantum model fixes its reduced semigroup and minimal dilation, and its binary one-anchor recorder gives an exact stopped output measure and second-moment Born descent on its commuting Fock output algebra, with no fitted probability or additional classical noise. General apparatus contexts, finite-bandwidth and non-Markov control, pre-quantum probability semantics, and objective single-history selection remain open. The result is therefore a rigorous coherent-sector reconstruction with one exact selected operational model, not a complete first-principles derivation of all quantum mechanics. Contextual imports explain the exact projector and strain compilers, conditional physical-Hessian interface, free local field net, and formal quantum master equation without promoting them to a selected interacting continuum theory.
+
+# Revision note: Version 5
+
+**Supersedes** Version 4 as the current manuscript; its release identity and historical revision note are retained below.
+
+**Reason** The selected canonical quantum model and the later geometric and field-theoretic refinements require contextual explanation. Version 4 also misstated what bounded pullback preserves.
+
+**Resolution** This revision integrates thirteen frozen source records, distinguishes compiler theorems from physical source selection, and corrects the pullback, no-count-amplitude, and quasifree-convexity statements at their precise scopes. Source prose and finite checks are evidence, not independent verification of every theorem recorded in a packet.
+
+**Retained** The conditional reconstruction, standard theorem ownership, closed canonical operational model, exact binary output law, finite/local field results, and existential hidden HYM result remain intact.
+
+**Open boundary** General apparatuses and actualization, the selected physical HYM-to-operator map, and a positive fixed-coupling interacting continuum theory are not supplied. A pure nonnegative repair cost is not identified with the physical signed action.
+
 # Revision note: Version 4
 
-<div class="description">
+**Supersedes** Version 4 supersedes Version 3 and its claims of a complete first-principles derivation of quantum mechanics, a universal MTT derivation of the Born rule, and automatic realization of arbitrary Schrodinger dynamics from the former ten-dimensional tri-product geometry.
 
-Version 4 supersedes Version 3 and its claims of a complete first-principles derivation of quantum mechanics, a universal MTT derivation of the Born rule, and automatic realization of arbitrary Schrodinger dynamics from the former ten-dimensional tri-product geometry.
+**Reason** The former paper combined valid standard operator theory with unsupported source claims. It did not distinguish an assumed complex Hilbert space from one derived by projection, treated bounded pullback as sufficient for closedness of an unbounded quadratic form, and reproduced an arbitrary target potential by inserting that same potential upstairs. It also used a self-adjoint time operator without establishing one, treated Gleason-type probability characterization as a physical source theorem, and inferred general POVMs, entanglement, and Lindblad dynamics from projection alone. The literal three-factor internal product used there is no longer the canonical MTT geometry.
 
-The former paper combined valid standard operator theory with unsupported source claims. It did not distinguish an assumed complex Hilbert space from one derived by projection, treated bounded pullback as sufficient for closedness of an unbounded quadratic form, and reproduced an arbitrary target potential by inserting that same potential upstairs. It also used a self-adjoint time operator without establishing one, treated Gleason-type probability characterization as a physical source theorem, and inferred general POVMs, entanglement, and Lindblad dynamics from projection alone. The literal three-factor internal product used there is no longer the canonical MTT geometry.
+**Resolution** This revision defines the complete lower quantum record and a typed, conditional reconstruction theorem. It states explicit hypotheses for complex, symplectic, self-adjoint, unitary, clock, composition, and instrument structures; separates exact compression from approximate elimination; replaces the time-operator claim by operational clock and Mandelstam–Tamm statements; and separates Gleason–Busch characterization from probability sourcing. Standard mathematical theorems retain their literature ownership.
 
-This revision defines the complete lower quantum record and a typed, conditional reconstruction theorem. It states explicit hypotheses for complex, symplectic, self-adjoint, unitary, clock, composition, and instrument structures; separates exact compression from approximate elimination; replaces the time-operator claim by operational clock and Mandelstam–Tamm statements; and separates Gleason–Busch characterization from probability sourcing. Standard mathematical theorems retain their literature ownership.
+**Retained content** Closed semibounded forms remain an appropriate route to self-adjoint Hamiltonians once their domains and closedness are proved. Stone’s theorem then supplies unitary evolution. Target-form matching remains a useful exact representation test. Quantum instruments, dilations, tensor products, semiclassical kernels, and weak-coupling master equations remain valid lower-level tools under their standard hypotheses. The canonical $`q=79`$ binary recorder adds a selected exact output-measure result on its declared domain.
 
-Closed semibounded forms remain an appropriate route to self-adjoint Hamiltonians once their domains and closedness are proved. Stone’s theorem then supplies unitary evolution. Target-form matching remains a useful exact representation test. Quantum instruments, dilations, tensor products, semiclassical kernels, and weak-coupling master equations remain valid lower-level tools under their standard hypotheses. The canonical $`q=79`$ binary recorder adds a selected exact output-measure result on its declared domain.
+**Remaining boundary** The universal Born-source blocker remains open. The current exact result covers one selected binary $`P/Q`$ counting context with standard normal-state operational semantics. It does not yet cover arbitrary preparations and apparatuses, finite-bandwidth or non-Markov detectors, pre-quantum probability semantics, or selection of one uniquely actual history.
 
-The universal Born-source blocker remains open. The current exact result covers one selected binary $`P/Q`$ counting context with standard normal-state operational semantics. It does not yet cover arbitrary preparations and apparatuses, finite-bandwidth or non-Markov detectors, pre-quantum probability semantics, or selection of one uniquely actual history.
-
-</div>
+<a id="sec:question"></a>
 
 # The question in its correct order
 
-Nonrelativistic quantum mechanics is not one equation. It is a coordinated mathematical structure. A state belongs to a complex Hilbert space or a density-operator cone; observables are represented by a generally noncommutative operator algebra; dynamics is generated by a self-adjoint Hamiltonian; composition uses a tensor product; and experiments are described by effects or instruments. These pieces constrain one another, but no one of them is identical to the others .
+Nonrelativistic quantum mechanics is not one equation. It is a coordinated mathematical structure. A state belongs to a complex Hilbert space or a density-operator cone; observables are represented by a generally noncommutative operator algebra; dynamics is generated by a self-adjoint Hamiltonian; composition uses a tensor product; and experiments are described by effects or instruments. These pieces constrain one another, but no one of them is identical to the others \[[1](#ref-ReedSimon1972),[2](#ref-Kato1995),[3](#ref-DaviesLewis1970)\].
 
-MTT begins with an upper state, admissibility conditions, reduction maps, and coherent or fixed sectors . It is therefore natural to ask whether a coherent sector can carry quantum mechanics. Four logically distinct questions must be kept apart:
+MTT begins with an upper state, admissibility conditions, reduction maps, and coherent or fixed sectors \[[4](#ref-MTTFoundation2026)\]. It is therefore natural to ask whether a coherent sector can carry quantum mechanics. Four logically distinct questions must be kept apart:
 
 1.  *Encoding.* Can a chosen quantum model be represented inside an MTT carrier?
 
@@ -51,7 +71,9 @@ MTT begins with an upper state, admissibility conditions, reduction maps, and co
 
 An exact answer to the first question can coexist with an open answer to the third. This is what happens when an arbitrary potential $`V`$ is placed upstairs and then recovered downstairs: the construction proves expressive capacity, not why nature selected $`V`$. Conversely, a selected result on one detector context is genuine source progress even when the universal apparatus theorem remains open.
 
-The paper’s positive claims occupy two levels. The general theory is a conditional reconstruction. In addition, one selected $`q=79`$ recorder supplies an exact finite-domain probability and capture result. Nothing below promotes that recorder into a universal derivation.
+The paper’s positive claims occupy two levels. The general theory is a conditional reconstruction. The selected $`q=79`$ finite-symbol Cauchy model also supplies a complete operational model on its declared domain, including its reduced dynamics, minimal dilation, and binary probability and capture result. The conditional formulation is not a reopening of this established model. Sections [13](#sec:geometry-interface) and [14](#sec:field-interface) explain which further source and field constructions extend that domain and which remain conditional.
+
+<a id="sec:record"></a>
 
 # The complete quantum record
 
@@ -101,6 +123,8 @@ Let $`\mathcal U_{\mathrm{adm}}`$ be the declared upper MTT domain. A partial so
 ```
 is allowed to be undefined when one or more rows cannot be emitted. This is preferable to filling a missing row with the desired lower object and calling the result a derivation.
 
+<a id="sec:reconstruction"></a>
+
 # Conditional coherent-sector reconstruction
 
 Suppose an upper MTT state $`z`$ has a coherent sector $`\mathcal H_{\mathrm{coh}}(z)`$, and let
@@ -110,13 +134,13 @@ Suppose an upper MTT state $`z`$ has a coherent sector $`\mathcal H_{\mathrm{coh
 ```
 be its orthogonal coherent projector. The notation alone says only that $`\mathcal P_z^2=\mathcal P_z=\mathcal P_z^*`$. It does not say that the coherent range is complex, invariant under an upper Hamiltonian, closed under a chosen observable algebra, or equipped with a probability interpretation.
 
-Let $`\operatorname{Eval}_{\mathrm{MTT}}(z,C)`$ denote the MTT prediction for an allowed preparation-and-apparatus context $`C`$. Let $`\operatorname{Eval}_{\mathrm{QM}}(\mathcal R,C)`$ denote the standard quantum evaluation of the record in <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">1</a>.
+Let $`\operatorname{Eval}_{\mathrm{MTT}}(z,C)`$ denote the MTT prediction for an allowed preparation-and-apparatus context $`C`$. Let $`\operatorname{Eval}_{\mathrm{QM}}(\mathcal R,C)`$ denote the standard quantum evaluation of the record in Definition [2.1](#def:record).
 
 <div id="thm:conditional" class="theorem">
 
 **Theorem 2** (Conditional MTT–QM reconstruction). *Fix an upper state $`z\in\mathcal U_{\mathrm{adm}}`$ and a declared family $`\mathfrak C_z`$ of contexts. Assume:*
 
-1.  *$`\mathcal S_{\mathrm{QM}}(z)=\mathcal R_{\mathrm{QM}}(z)`$ is defined and every row of <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">1</a> needed by $`\mathfrak C_z`$ is present;*
+1.  *$`\mathcal S_{\mathrm{QM}}(z)=\mathcal R_{\mathrm{QM}}(z)`$ is defined and every row of Definition [2.1](#def:record) needed by $`\mathfrak C_z`$ is present;*
 
 2.  *the Hilbert identification $`J_z\colon\mathcal H_{\mathrm{coh}}(z)\to\mathcal H`$ is unitary and intertwines the declared state and observable maps;*
 
@@ -151,6 +175,8 @@ Let $`\operatorname{Eval}_{\mathrm{MTT}}(z,C)`$ denote the MTT prediction for an
 
 The theorem is intentionally simple. Its value is diagnostic. It turns the phrase “MTT gives quantum mechanics” into a finite list of diagrams that can succeed or fail separately. It also distinguishes a theorem of reconstruction from a theorem that selects the record’s numerical or operator entries.
 
+<a id="sec:complex"></a>
+
 # Complex, symplectic, and noncommutative structure
 
 A complex Hilbert space can be viewed as a real Hilbert space equipped with a compatible complex structure. If $`g`$ is a real inner product and $`J^2=-\operatorname{Id}`$ with $`J`$ orthogonal, then
@@ -171,15 +197,17 @@ need not even form an algebra, because
 \neq
 \mathcal PAB\mathcal P
 ```
-unless suitable invariance conditions hold. The observable-algebra row in <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">1</a> is therefore an independent obligation, not a consequence of the word “coherent.”
+unless suitable invariance conditions hold. The observable-algebra row in Definition [2.1](#def:record) is therefore an independent obligation, not a consequence of the word “coherent.”
+
+<a id="sec:hamiltonian"></a>
 
 # Hamiltonians from forms and exact compression
 
 ## The valid quadratic-form route
 
-Closed semibounded quadratic forms are a robust way to construct self-adjoint Hamiltonians. The first representation theorem associates a unique self-adjoint lower-bounded operator with every densely defined closed semibounded form; KLMN controls suitable form-bounded perturbations . These are imported standard theorems. MTT must still prove their hypotheses for the selected form.
+Closed semibounded quadratic forms are a robust way to construct self-adjoint Hamiltonians. The first representation theorem associates a unique self-adjoint lower-bounded operator with every densely defined closed semibounded form; KLMN controls suitable form-bounded perturbations \[[2](#ref-Kato1995),[1](#ref-ReedSimon1972)\]. These are imported standard theorems. MTT must still prove their hypotheses for the selected form.
 
-The old paper used a bounded pullback as if it automatically preserved closedness. That is false without additional control. The following sufficient condition is the one needed for an exact coherent restriction.
+There are three different issues: closedness of a pullback form, density of its domain, and identification of its operator with a reducing operator part. For a bounded map $`I`$ and a closed semibounded form $`q`$, the pullback $`q(Ix,Iy)`$ on the *full preimage* $`I^{-1}\mathcal D(q)`$ is closed and semibounded. Indeed, after shifting $`q`$ to a nonnegative form, a sequence Cauchy in $`\|x\|^2+q_\beta(Ix)`$ converges downstairs and in the upstairs form norm; boundedness of $`I`$ identifies the two limits. This norm is equivalent to a sufficiently shifted pullback form norm. Density need not follow: on $`\ell^2`$, take $`q(v)=\sum_{n\geq1}n^2|v_n|^2`$ and the bounded map $`I:\mathbb C\to\ell^2`$, $`Ic=(c/n)_{n\geq1}`$. Its preimage form domain is $`\{0\}`$. Thus the historical Version 4 objection to *closedness* was incorrect; a densely defined Hamiltonian and an exact operator restriction still require the additional hypotheses below. <span id="sec:pullback-correction" label="sec:pullback-correction"></span>
 
 <div id="prop:closed-pullback" class="proposition">
 
@@ -217,7 +245,7 @@ is densely defined, closed, and semibounded whenever $`\mathcal D_{\mathrm{coh}}
 
 </div>
 
-The proposition is a sufficient theorem, not a claim that every coherent projector satisfies its assumptions. A bounded nonisometric map can lose the lower norm needed for completeness, while a nonreducing range couples retained and discarded modes.
+The proposition is a sufficient theorem, not a claim that every coherent projector satisfies its assumptions. A general cost pullback need not have a dense domain or identify an operator part. A nonreducing range couples retained and discarded modes even when its pullback form is closed.
 
 ## When a compression is exact
 
@@ -249,6 +277,8 @@ H_{\mathrm{eff}}(z)
 ```
 It is energy dependent and is not the same object as $`H_{MM}`$. A genuine approximation must bound the resolvent, the coupling, and the relevant time or spectral window. This is why “project and evolve” is not a universal derivation of unitary lower dynamics.
 
+<a id="sec:representation"></a>
+
 # Representation is not prediction
 
 The old reconstruction theorem allowed an arbitrary target
@@ -270,11 +300,13 @@ and let $`P`$ project onto $`\mathcal H`$. Then the coherent restriction of $`q_
 
 <div class="proof">
 
-*Proof.* The direct sum is closed and semibounded on the direct-sum form domain. The first summand reduces it. Applying <a href="#prop:closed-pullback" data-reference-type="ref+label" data-reference="prop:closed-pullback">3</a> to the canonical inclusion gives the result. ◻
+*Proof.* The direct sum is closed and semibounded on the direct-sum form domain. The first summand reduces it. Applying Proposition [5.1](#prop:closed-pullback) to the canonical inclusion gives the result. ◻
 
 </div>
 
 This proposition is useful. It proves that the MTT carrier is not too small to represent the target class. It can also test a proposed decoder and normalization. It does not select $`m`$, $`V`$, the boundary condition, or $`\hbar`$, because all of them entered the source record. Prediction begins only when an upstream theorem emits those entries from data that did not already contain the desired answer.
+
+<a id="sec:time"></a>
 
 # Unitary dynamics, clocks, and uncertainty
 
@@ -284,7 +316,7 @@ For a self-adjoint $`H`$, Stone’s theorem gives the strongly continuous unitar
 ``` math
 U(t)=e^{-itH/\hbar}.
 ```
-Thus unitarity follows after self-adjointness and the time parameter have been established, not from projection alone . For a time-dependent family $`H(t)`$, a propagator requires common-domain, stability, and regularity hypotheses of the appropriate Kato theorem . Writing $`H(t)`$ is not by itself an existence proof.
+Thus unitarity follows after self-adjointness and the time parameter have been established, not from projection alone \[[5](#ref-Stone1932),[1](#ref-ReedSimon1972)\]. For a time-dependent family $`H(t)`$, a propagator requires common-domain, stability, and regularity hypotheses of the appropriate Kato theorem \[[2](#ref-Kato1995)\]. Writing $`H(t)`$ is not by itself an existence proof.
 
 ## Time is not automatically an observable
 
@@ -305,7 +337,7 @@ the Robertson inequality applied to $`A`$ and $`H`$, together with the Heisenber
 ``` math
 \tau_A\,\Delta_\psi H\geq\frac{\hbar}{2}.
 ```
-This is the Mandelstam–Tamm form: $`\tau_A`$ is a characteristic evolution time for a chosen observable, not the standard deviation of an assumed universal time operator . Other clock or quantum speed-limit statements require their own hypotheses.
+This is the Mandelstam–Tamm form: $`\tau_A`$ is a characteristic evolution time for a chosen observable, not the standard deviation of an assumed universal time operator \[[6](#ref-MandelstamTamm1945)\]. Other clock or quantum speed-limit statements require their own hypotheses.
 
 ## Ordinary observable uncertainty
 
@@ -318,6 +350,8 @@ For self-adjoint $`A`$ and $`B`$ on a common state domain,
 \right|.
 ```
 This is a consequence of the Hilbert-space inner product and the supplied operators. It does not derive their commutator from an MTT projector. A complete MTT source theorem must identify the lower operators and prove that their commutator or Weyl relations descend from the same upper structure.
+
+<a id="sec:probability"></a>
 
 # Three probability questions
 
@@ -333,7 +367,7 @@ These are not equivalent.
 
 ## What Gleason and Busch establish
 
-Gleason’s theorem begins with a countably additive measure on the projection lattice of a Hilbert space of dimension at least three and concludes, under its hypotheses, that the measure has density-operator trace form . Busch’s effect-algebra formulation similarly characterizes generalized probability assignments on effects . These theorems are fundamental because they show how little freedom remains once Hilbert/effect structure and the relevant additivity assumptions are accepted.
+Gleason’s theorem begins with a countably additive measure on the projection lattice of a Hilbert space of dimension at least three and concludes, under its hypotheses, that the measure has density-operator trace form \[[7](#ref-Gleason1957)\]. Busch’s effect-algebra formulation similarly characterizes generalized probability assignments on effects \[[8](#ref-Busch2003)\]. These theorems are fundamental because they show how little freedom remains once Hilbert/effect structure and the relevant additivity assumptions are accepted.
 
 They do not construct a detector, derive countable additivity from MTT closure, or explain why a physical preparation is represented by a positive normal functional. Consequently one cannot start with an arbitrary “re-coherence weight,” assume it is additive on every orthogonal partition, invoke Gleason, and then count the result as an independent MTT derivation of probability. The additivity assumption is already a major part of the probability contract.
 
@@ -352,13 +386,32 @@ An instrument carries more information: each event $`B`$ has a completely positi
 ```
 when the denominator is nonzero. Measurement is therefore an ordinary physical interaction followed by a durable or readable record. It does not require consciousness or a fundamental observer boundary.
 
-Naimark and Stinespring dilation theorems show that POVMs and completely positive maps admit larger-space representations . They do not say that the required ancilla, isometry, pointer algebra, and coupling are selected by MTT. Those remain source rows.
+Naimark and Stinespring dilation theorems show that POVMs and completely positive maps admit larger-space representations \[[9](#ref-Naimark1940),[10](#ref-Stinespring1955)\]. They do not say that the required ancilla, isometry, pointer algebra, and coupling are selected by MTT. Those remain source rows.
+
+<a id="sec:q79"></a>
 
 # The selected $`q=79`$ binary recorder
 
-The present research corpus contains one result stronger than abstract Gleason characterization. It constructs a selected recorder on a declared binary apparatus domain and computes its full stopped output measure. The canonical theorem and its machine-readable certificate are owned by the MTT QM source-proof repository at commit `1615da7e1b2c917556fe04a44d073b905644071e` . We summarize the result here without transferring the theorem’s ownership.
+The present research corpus contains one result stronger than abstract Gleason characterization. It constructs a selected recorder on a declared binary apparatus domain and computes its full stopped output measure. The canonical theorem and its machine-readable certificate are owned by the MTT QM source-proof repository at commit `1615da7e1b2c917556fe04a44d073b905644071e` \[[11](#ref-Q79Recorder2026)\]. We summarize the result here without transferring the theorem’s ownership.
+
+<a id="sec:canonical-model"></a>
 
 ## Input data
+
+The canonical-model source fixes more than a measurement effect \[[12](#ref-FrozenCanonicalQM)\]. Its finite carrier is the complexification of two real three-sheet permutation modules, with the selected shared-line complex structure. On the resulting complex six-dimensional fiber,
+``` math
+P=\operatorname{diag}(J_3/3,J_3/3),\qquad Q=I-P,
+\qquad \operatorname{rank}P=2,\quad\operatorname{rank}Q=4,
+```
+where $`J_3`$ is the all-ones matrix. After the declared geometric and causal background hypotheses, this fiber supplies the Cauchy Hilbert space below, normal trace-class states, and the declared decomposable observable algebra. The Cauchy realization is not restricted to a finite-dimensional total Hilbert space. The finite symbol, rather than an arbitrarily inserted target potential, fixes the bounded internal reduced dynamics.
+
+With one physical clock calibration $`u=t/t_0`$ and $`\gamma=\log448`$, its channel is
+``` math
+\Phi_u(\rho)=P\rho P+Q\rho Q+448^{-u}(P\rho Q+Q\rho P),
+\qquad
+\mathcal L(\rho)=\gamma(P\rho P+Q\rho Q-\rho).
+```
+The semigroup, its minimal Fock dilation, and comparison of instruments are established at this canonical operational scope. The clock scale $`t_0`$ is metrological input, not a newly predicted number of seconds. Nor does fixing an unread channel fix an apparatus: distinct informative and state-independent phase-flip instruments can have the same channel. The selected binary output algebra and coupling are essential additional rows of this particular model.
 
 Let
 ``` math
@@ -383,9 +436,11 @@ The environment is the two-channel symmetric Fock recorder with vacuum input. Th
 \rho_\lambda
 =\int |z\rangle\langle z|\,\mathrm d\lambda(z).
 ```
-The output number processes generate a commuting nondemolition algebra, so restriction of the selected normal joint state to that algebra has a classical spectral measure. This is standard quantum-stochastic machinery applied to MTT-selected projector, clock, preparation, and context data .
+The output number processes generate a commuting nondemolition algebra, so restriction of the selected normal joint state to that algebra has a classical spectral measure. This is standard quantum-stochastic machinery applied to MTT-selected projector, clock, preparation, and context data \[[13](#ref-HudsonParthasarathy1984),[14](#ref-Belavkin2005),[15](#ref-AttalPautrat2006)\].
 
 ## Exact output law
+
+The no-count *amplitude* is $`K_0(u)=e^{-\gamma u/2}I`$, so its effect is $`K_0(u)^*K_0(u)=e^{-\gamma u}I`$. A line in the evolving status source calls the latter a propagator; it must be read as the effect, not as a Kraus amplitude \[[16](#ref-FrozenQMStatus)\]. The underlying output-measure proof has the half-exponent amplitude. This correction leaves the stopped probabilities unchanged. <span id="sec:no-count-correction" label="sec:no-count-correction"></span>
 
 For a horizon $`u`$, let $`r_u`$ mean no count by $`u`$, and let $`(s,a)`$, $`a\in\{p,q\}`$, denote the first count at time $`s`$ in channel $`a`$. The imported selected-source result gives the effects
 ``` math
@@ -447,6 +502,16 @@ The universal source blocker therefore remains open for:
 
 This boundary is not a defect in the exact binary theorem. It is the difference between a selected finite-domain result and a universal measurement theory.
 
+<a id="sec:recorder-consumer"></a>
+
+## Consumer boundary: continuum transport and ontology
+
+The conditional continuum compiler is explained in the Born/record companion \[[17](#ref-BornCompanionV3),[18](#ref-FrozenContinuumConsumer)\]. A supplied positive self-adjoint continuum Hessian, invariant rank-three sector with kernel/support ranks one and two, and a selected isometry intertwining its projectors with the canonical pair transport the jump, drift, Fock cocycle, and stopped instrument when the same clock and minimal coupling are used. Approximate intertwining yields finite-horizon bounds, with a positive probability floor needed for normalized rare-event states. The physical endpoint, finite map, tail control, and clock still have to be selected. This conditional transport does not reopen the canonical Cauchy model.
+
+The ontology result, contextualized in the Locality companion, concerns a different missing datum \[[19](#ref-LocalityCompanionV2),[20](#ref-FrozenOntologyConsumer)\]. The same operational record data admit single-record and coactual completions: the $`1,149,298`$ partition of 448 atoms realizes the canonical checkpoint, and attaching the conditional states preserves its instrument. No actuality predicate is contained in the channel or dilation. This proves non-entailment, not a selected global hidden-variable law, a refutation of many-worlds, or universal apparatus control. Measurement remains ordinary record-forming physics under either operational description.
+
+<a id="sec:composition"></a>
+
 # Composition, entanglement, and locality
 
 Once the record supplies
@@ -464,19 +529,23 @@ Thus the statistics of $`B`$ are unchanged by an unconditioned local operation o
 
 An MTT account may seek an upper-local explanation of Bell correlations. To establish it, the source map must still show which upper variables, settings, and record algebras descend to the lower tensor factors while preserving the relevant statistical-independence assumptions. That separate Bell-locality question is not solved by merely calling the upper space local.
 
+<a id="sec:extensions"></a>
+
 # Open systems and alternative representations
 
 ## Weak-coupling master equations
 
-Completely positive Markov semigroups have generators of Gorini–Kossakowski–Sudarshan–Lindblad form under the standard bounded or finite-dimensional hypotheses . Davies’ weak-coupling limit gives a rigorous route from a system–reservoir model to such a semigroup under spectral, correlation, scaling, and limiting assumptions . These theorems do not imply that every MTT disturbance has a Markov limit.
+Completely positive Markov semigroups have generators of Gorini–Kossakowski–Sudarshan–Lindblad form under the standard bounded or finite-dimensional hypotheses \[[21](#ref-GoriniKossakowskiSudarshan1976),[22](#ref-Lindblad1976)\]. Davies’ weak-coupling limit gives a rigorous route from a system–reservoir model to such a semigroup under spectral, correlation, scaling, and limiting assumptions \[[23](#ref-Davies1974)\]. These theorems do not imply that every MTT disturbance has a Markov limit.
 
-The $`q=79`$ recorder in <a href="#sec:q79" data-reference-type="ref+label" data-reference="sec:q79">9</a> is a selected quantum-stochastic instrument on one declared domain. A general MTT open-system theorem would need to emit the reservoir state, interaction, correlation decay, renormalization, bandwidth regime, and approximation error. Memory effects are not failures of quantum mechanics; they indicate that a Markovian generator is not the correct reduced object.
+The $`q=79`$ recorder in [9](#sec:q79) is a selected quantum-stochastic instrument on one declared domain. A general MTT open-system theorem would need to emit the reservoir state, interaction, correlation decay, renormalization, bandwidth regime, and approximation error. Memory effects are not failures of quantum mechanics; they indicate that a Markovian generator is not the correct reduced object.
 
 ## Path integrals and semiclassical kernels
 
-When a self-adjoint Hamiltonian and suitable action are already available, Trotter product formulas, Feynman–Kac formulas in imaginary time, or oscillatory integral constructions can provide kernel representations. Stationary phase can then recover classical trajectories and Van Vleck-type amplitudes in an appropriate semiclassical regime. These are alternative representations or asymptotic consequences of supplied dynamics. They do not select the Hamiltonian or establish a measure for an arbitrary real-time path integral .
+When a self-adjoint Hamiltonian and suitable action are already available, Trotter product formulas, Feynman–Kac formulas in imaginary time, or oscillatory integral constructions can provide kernel representations. Stationary phase can then recover classical trajectories and Van Vleck-type amplitudes in an appropriate semiclassical regime. These are alternative representations or asymptotic consequences of supplied dynamics. They do not select the Hamiltonian or establish a measure for an arbitrary real-time path integral \[[1](#ref-ReedSimon1972),[24](#ref-FeynmanHibbs1965)\].
 
 This distinction matters for MTT. A closure path or modal history can be a valuable upper description, but calling it a path integral does not make the quantum measure, phase, boundary condition, or continuum limit automatic.
+
+<a id="sec:examples"></a>
 
 # Two concrete tests
 
@@ -514,55 +583,181 @@ H_{\mathrm{osc}}
 =-\frac{\hbar^2}{2m}\frac{\mathrm d^2}{\mathrm dx^2}
 +\frac12m\omega^2x^2
 ```
-on its standard self-adjoint domain. By <a href="#prop:embedding" data-reference-type="ref+label" data-reference="prop:embedding">4</a>, it can be placed as a reducing block of a larger upper Hamiltonian and recovered exactly on the coherent summand. The eigenvalues and propagator then agree with ordinary quantum mechanics.
+on its standard self-adjoint domain. By Proposition [6.1](#prop:embedding), it can be placed as a reducing block of a larger upper Hamiltonian and recovered exactly on the coherent summand. The eigenvalues and propagator then agree with ordinary quantum mechanics.
 
 This is an excellent decoder test: a wrong normalization, domain, or intertwiner is exposed immediately. It is not a prediction of $`m`$ or $`\omega`$. Those values were part of the inserted target block. To turn the example into a selected MTT result, an upstream source theorem must emit the oscillator scale and coupling without using the target spectrum as construction data.
 
+<a id="sec:geometry-interface"></a>
+
+# From a geometric source to a retained operator
+
+The following imports explain how the complete-record requirements can be met by a geometric source. They are not new local proofs of the source theorems. In particular, an exact construction acting on a *supplied* connection cannot select that connection by itself.
+
+<a id="sec:projective-hym"></a>
+
+## Projector realization and its domains
+
+For a supplied compact unitary bundle with connection, the projective-HYM naturality result realizes the bundle as the range of a smooth finite-matrix projector $`p(x)`$, with an isometric module map $`U`$ \[[25](#ref-FrozenProjectiveHYM)\]. The intertwined differential and Hessian obey $`D_pU=UD`$ and $`H_p=UHU^*`$ on the range, with their metrics and operator domains transported. This is finite matrix size over an infinite-dimensional space of sections, not a finite Fourier truncation. Ambient vectors outside the range are not additional physical harmonic modes. Likewise, the external lane flag lives on a separate factor; it is not a flag of parallel subbundles inside an irreducible stable HYM bundle, whose parallel endomorphism commutant is scalar. The flat shared line and the curved bundle have different roles.
+
+The explicit Cech compiler starts with Hermitian metrics and transitions, forms unitary transitions $`u_{ij}=h_i^{1/2}g_{ij}h_j^{-1/2}`$, and uses a partition satisfying $`\sum_i\chi_i^2=1`$. Its projector blocks are $`p_{ij}=\chi_i\chi_j u_{ij}`$ \[[26](#ref-FrozenCech)\]. The bare Grassmann connection need not be the input connection. In a local realization,
+``` math
+A_0=U^*dU,\qquad \Gamma=U(A-A_0)U^*,\qquad D_p=p\,d+\Gamma.
+```
+The correction is what makes the differential natural. Cover and partition changes give partial unitary equivalences on the range, not new physical source choices. Central phases cancel on an adjoint bundle, but not on its twisted fundamental. Thus the ordinary deformation complex may have ranks $`3+8+8+80+3=102`$; it is not the finite 27-dimensional algebra carrier. <span id="sec:cech-compiler" label="sec:cech-compiler"></span>
+
+Cutoffs must respect this range identification. A simple winding isometry $`U(x)=(3/5,(4/5)e^{ix})`$ shifts the second Fourier component. Cutting both components at the same raw Fourier index loses squared norm $`16/25`$ on a boundary mode, although the uncut map is an exact isometry. Transporting the intrinsic finite subspace before applying the cutoff avoids confusing this presentation artifact with physical loss.
+
+There is a separate dynamical test. A domain-preserving orthogonal projector $`R`$ gives an exact compression only when $`(I-R)HR=0`$. Otherwise the retained resolvent contains the Schur–Feshbach term of [5](#sec:hamiltonian). In the source’s rational example, a retained mode of energy 1 couples by $`1/2`$ to an eliminated mode of energy 3. At spectral parameter zero its effective coefficient is $`1-(1/2)^2/3=11/12`$, not 1. This illustrates why a closed pulled-back cost and a reducing isometry cannot be used interchangeably.
+
+<a id="sec:spectral-strain"></a>
+
+## Strain coordinates and the cost of eliminating modes
+
+For a Hermitian three-by-three matrix, write the diagonal coordinates as $`d_i`$, the oriented off-diagonal entries as $`z_{12},z_{20},z_{01}`$, and $`r_e=|z_e|^2`$. The relative phase torus leaves invariant not only $`d,r`$ but also the triangle product
+``` math
+t=z_{12}z_{20}z_{01},\qquad
+(\operatorname{Re}t)^2+(\operatorname{Im}t)^2=r_{12}r_{20}r_{01}.
+```
+Thus the generic invariant quotient is seven-dimensional; the six strain coordinates $`\Phi_{\rm strain}=(d,r)`$ deliberately forget a genuine triangle phase \[[27](#ref-FrozenStrain)\]. They are a nonlinear reduction, not an equivariant linear identification of the root plane with the two permutation modules. The respective $`S_3`$ characters $`(6,0,0)`$ and $`(6,2,0)`$ already prohibit that linear identification.
+
+On the regular all-edge-nonzero stratum, the derivative $`J=d\Phi_{\rm strain}`$ has rank six. Let $`H`$ be the positive physical Hessian with a spectral gap on the declared harmonic complement and $`G_{\perp}=H^{-1}`$ its reduced Green operator. When the indicated covariance is invertible, the minimum upstairs cost compatible with a retained variation $`y`$ is
+``` math
+\inf_{Jx=y}\frac12\langle x,Hx\rangle
+=\frac12\langle y,H_{\rm strain}y\rangle,
+\qquad H_{\rm strain}=(J G_{\perp}J^*)^{-1}.
+```
+This is a shorted covariance, not the Hessian of an arbitrary linear slice. For a further TT sector the appropriate retained derivative and image must be used before taking the inverse. Inverting first and projecting later is not a general identity.
+
+<a id="sec:support-strain"></a>
+
+## What changes when an edge vanishes
+
+The support-stratified refinement supplies the boundary missing from a single regular-chart formula \[[28](#ref-FrozenSupport)\]. The eight edge-support masks have derivative ranks $`3+|S|`$, with multiplicities $`1,3,3,1`$. The target is $`\mathbb R^3\times\mathbb R_+^3`$. At an absent edge, the first derivative of $`|z_e|^2`$ vanishes and its second jet is $`|\delta z_e|^2`$. The tangential Green shorting remains valid on its proper image, but an outward normal strain $`\eta`$ has the constrained value function
+``` math
+\inf\left\{\frac12\langle v,Hv\rangle:
+J_Sv=0,\ |v_e|^2=\eta_e\text{ for absent edges}\right\}.
+```
+It is homogeneous of degree one in $`\eta`$, not an ordinary quadratic Hessian on six unrestricted boundary coordinates. For example, $`r=t^2`$ and cost $`t^2/2`$ give cost $`r/2`$, not $`r^2/2`$. This corrects the boundary consumer, not the regular-stratum theorem. A full rank-six derivative, or the proposed local full six-coordinate complex symmetry, already forces the top stratum. Regularity is therefore not an additional independent obligation once that stronger input holds.
+
+<a id="sec:monodromy-strain"></a>
+
+## Monodromy, the shared root, and operator symmetry
+
+A connected three-sheet cover with full $`S_3`$ monodromy is not an $`S_3`$-Galois cover: its deck group is the centralizer of that monodromy in $`S_3`$, hence trivial. The appropriate strain object is the associated bundle with fiber $`\mathbb R^3\oplus\mathbb R^3`$, rather than six globally labeled functions \[[29](#ref-FrozenMonodromy)\]. Reynolds averaging gives parallel rank-two $`P`$ and rank-four $`Q`$. The nonsplit binary lift has a central sign acting trivially on this quadratic strain representation, so its twelve-term average equals the six-term $`S_3`$ average. This does not settle a spinor’s Spin or Spin$`^{c}`$ structure.
+
+If a closed operator, its domain, and the harmonic complement are monodromy-natural, the reduced Green operator is natural by uniqueness of the inverse. Symbol equivariance alone does not prove those hypotheses for a physical connection and Hessian.
+
+<span id="sec:shared-root-c4" label="sec:shared-root-c4"></span> The later shared-root refinement closes an important *symbol* question \[[30](#ref-FrozenC4)\]. The two $`\mathbb Z_{64}`$ characters with exponents 1 and 33 restrict to the same $`i^m`$ on the subgroup with elements $`0,16,32,48`$. The determinant-twisted sheet/edge identification then gives a parallel order-four map
+``` math
+J_{DE}(d,e)=(-e,d),\qquad J_{DE}^2=-I,
+```
+commuting with the $`S_3`$ action. On the two real standard TT copies an $`S_3`$-invariant symmetric covariance has the form $`\left(\begin{smallmatrix}a&c\\c&b\end{smallmatrix}\right)\otimes I_2`$. Commutation with $`J_{DE}`$ forces $`c=0`$ and $`a=b`$, leaving one positive scale. No independent TT shape fits are needed *after* this physical invariance is established.
+
+The remaining issue is the actual nonzero-Chern HYM source and its Hessian, or a direct check of the physical TT block. The order-four map is not a global symmetry of the nonlinear positive strain orthant, nor an automorphism preserving the marked Fu–Yau branch: it exchanges the shared circle marking. A direct unital adjoint action on Hermitian matrices cannot implement a map sending their trace direction into an edge direction. These exclusions clarify how the source may realize the symbol; they do not revoke the canonical complex structure or the local order-four result.
+
+<a id="sec:fm-hym"></a>
+
+## Which source packages are still needed
+
+The Fourier–Mukai/HYM dependency compression distinguishes compiler outputs from independent inputs \[[31](#ref-FrozenFM)\]. In that literal route two of eleven rows are instantiated, while the nine uninstantiated rows factor through three sequential packages: a visible same-member spectral/flat-Deligne source, a common physical HYM endpoint, and physical order-four invariance or the direct TT block. WIT concentration, a locally free rank-three transform, determinant normalization, and the stated Chern-character output are consequences once their source hypotheses hold, not nine independent searches. A full Fourier–Mukai autoequivalence is an optional stronger route, not a prerequisite for every direct operator exit.
+
+This compression preserves the hidden rank-nine projective construction and existential HYM theorem. It does not select a common visible–hidden endpoint or the visible norm-compatible twisted line. The physical support $`9H+3D_0`$ is not the auxiliary $`3H+3D_0`$ support. Vanishing integral Dixmier–Douady class is not holomorphic or flat-gerbe triviality; integral ambient quotients must retain their dual-lattice convention rather than replace $`V^{\vee}`$ by $`V`$. An ordinary Neron model is not automatic. Finite/formal HYM and closure-repair results therefore stay closed at their scopes without becoming a physical source selector.
+
+<span id="sec:family-cutset" label="sec:family-cutset"></span> The family-source result explains what a selected smooth family would buy \[[32](#ref-FrozenFamily)\]. Given a physical HYM/upper-action family with common Sobolev domains and a uniform spectral gap, one obtains closed operators, Riesz projectors by contour integration, and Kato transport generated by $`[\dot P,P]`$. Determinant-line connection and parallel transport are then defined on that family. A gap crossing requires additional work; these constructions alone do not furnish a transverse fermion-measure current or disconnected phase gluing. Conversely, finitely many projected coefficients cannot select an infinite-dimensional smooth connection: the projection has a kernel. The packet’s rank-four projection on eight coordinates makes this elementary failure explicit with different lifts and different operators. It is a source-nonuniqueness witness, not a new physical HYM solution or a reopening of existential HYM.
+
+<a id="sec:field-interface"></a>
+
+# The local field interface and its limits
+
+<a id="sec:free-dirac"></a>
+
+## A selected free net is already available
+
+On the declared framed globally hyperbolic, spin-preserving category, the selected massless Dirac operator acts on spinor rank four tensored with the six-dimensional finite fiber, giving rank 24 \[[33](#ref-FrozenDirac)\]. Its causal propagator supplies the CAR algebra, graded locality, and the time-slice map; the even observables commute at spacelike separation. The commuting $`P/Q`$ sectors have ranks 8 and 16, or 4 and 8 in each chirality. These are the accepted free-field results, conditional on the declared geometric/causal background, not obligations to restart. Omitting an added mass or gauge zero-order term defines this free tier; it does not predict all physical masses to vanish. The Hadamard state space is nonempty without selecting a preferred vacuum or identifying inequivalent spin structures.
+
+One wording in the packet needs correction: quasifree states do not in general form a convex set. For two CAR modes, the equal mixture of vacuum and double occupation has $`\langle n_1\rangle=\langle n_2\rangle=1/2`$ but $`\langle n_1n_2\rangle=1/2`$, whereas Wick factorization with its vanishing cross-correlations gives $`1/4`$. Thus one may use the nonempty quasifree Hadamard class, or a convex ordinary Hadamard state space containing its convex hull; one must not call every member of that hull quasifree. Locality, positivity, and the free-net construction are unaffected.
+
+<a id="sec:local-qme"></a>
+
+## Local quantum master equations are formal interacting results
+
+The local QME result uses the accepted finite Standard Model content and declared profile-dependent coefficients on relatively compact on-shell globally hyperbolic charts in four dimensions \[[34](#ref-FrozenQME)\]. Its interactions have compact support. Time-ordered local multilinear maps are controlled inside the equicausal functional setting; this is a domain condition, not permission to multiply arbitrary singular functionals. The five perturbative anomaly coefficients $`SU(3)^3`$, $`SU(3)^2U(1)`$, $`SU(2)^2U(1)`$, $`U(1)^3`$, and $`\mathrm{grav}^2U(1)`$ vanish, and the faithful $`\mathbb Z_6`$ spin-bordism obstruction is zero in the stated model. Causal renormalization, local BRST cohomology, and the Adler–Bardeen input remove exact remainders order by order. The result is an all-orders *formal* QME, nilpotent quantum BV differential, degree-zero physical algebra, and the stated gauge-fixing independence. No finite/profile Yukawa or electroweak result is being rederived here.
+
+The evolving status source contains later mathematical refinements and cannot be discarded on the strength of its early open-status header \[[16](#ref-FrozenQMStatus)\]. On bounded charts with the specified $`H^1=0`$ condition, quartet reduction supplies formal positive physical states: the illustrative Gram matrix $`\operatorname{diag}(1,1,0)`$ becomes positive on the physical quotient. State cones restrict contravariantly from a common parent. Equal restrictions on an overlap are necessary but not sufficient for arbitrary states to glue: two maximally entangled states on $`AB`$ and $`BC`$ have the same maximally mixed $`B`$ marginal but no common $`ABC`$ extension. This is ordinary quantum marginal compatibility, not a failure of the formal local algebra or a signal between regions.
+
+<a id="sec:status-refinements"></a>
+
+## What the later regulator refinements actually control
+
+The same status source develops compact Hilbert-BV Hodge projectors and finite-shell free cycles, with Kato transport under common-boundary and gap hypotheses. Collar and ambient-isotopy changes concern presentation of the declared local model. The auxiliary sign-flipped metric $`g_E=g_L+2n^{\flat}\otimes n^{\flat}`$ organizes an elliptic construction; it is not a physical Wick-rotation theorem or a global reflection symmetry. Even matching a slice is insufficient for the latter.
+
+For counterterms the first-order Yang–Mills complex has ranks $`1\to7\to7\to1`$; its heat-kernel construction must not be replaced by a naive quartic detour complex. A direct Lorentzian alternative smooths Cauchy data with $`R_\varepsilon=\exp[-\varepsilon(\log2)A_\Sigma]`$. At finite cutoff this smoothing is nonlocal and satisfies modified Ward identities. After local subtraction, the normalized causal-renormalization bridge recovers the formal QME. These are genuine local regulator and comparison advances, not a positive interacting continuum limit at fixed coupling. The older status numbers attached to intermediate routes are not current global completion counts.
+
+<a id="sec:free-cstar"></a>
+
+## Free positivity and fixed-coupling nonpromotion
+
+The free $`C^*`$ construction combines the physical gauge Weyl algebra, four-real-component Higgs Weyl algebra, and rank-48 chiral CAR factor with the minimal tensor product, then takes the declared compact-gauge and even observables \[[35](#ref-FrozenCstar)\]. Its state/GNS and local von Neumann constructions are established at zero coupling. Quasifree local quasiequivalence applies to the stated Higgs/fermion sectors; for the gauge factor the comparison stays inside each constraint-preserving, implementable Hilbert–Schmidt orbit. It is not an arbitrary global gauge orbit theorem.
+
+There are also literal finite interacting regulator algebras at declared nonzero coupling and a norm-Duhamel first-tangent comparison with the formal theory. The comparison transports observables through the renormalization map: a normalized first derivative does not erase its higher derivatives on composite observables. Orbitwise normalized finite chiral determinants remove a common absolute phase, but relative phases across disconnected pieces, transverse currents, crossings, and uniform limiting control are separate data. A determinant line is not by itself a full fermion measure.
+
+The packet gives an exact reason that agreement to every perturbative order does not select a smooth fixed-coupling completion. Set
+``` math
+f(\lambda)=\tfrac12 e^{1-1/\lambda^2}\quad(\lambda\ne0),\qquad f(0)=0.
+```
+All its derivatives at zero vanish, but $`f(1)=1/2`$. Hamiltonians with diagonal entries $`(0,1)`$ and $`(f(\lambda),1)`$, with correspondingly different positive normalized states, can therefore share every formal jet and differ at finite coupling. This excludes inference from smooth formal jets alone. It does not exclude a future analytic, summability, or genuinely nonperturbative source theorem. Free positivity, formal interacting QME, and finite-regulator positivity remain distinct established statements.
+
+<a id="sec:mtt"></a>
+
 # Relation to the current MTT program
 
-The canonical MTT foundation now uses a ten-dimensional bundle over a four-dimensional Lorentzian base with compact six-dimensional fiber, not a literal product of three independent internal manifolds . The shared finite line and root-plane complex structure provide promising upstream data for a complex coherent sector, but matching dimensions or finite carriers is not yet a continuum operator-intertwining theorem.
+The canonical MTT foundation now uses a ten-dimensional bundle over a four-dimensional Lorentzian base with compact six-dimensional fiber, not a literal product of three independent internal manifolds \[[4](#ref-MTTFoundation2026)\]. The shared finite line and root-plane complex structure already supply the canonical complex operational sector. Matching dimensions or finite carriers alone does not supply the additional physical HYM-to-continuum operator-intertwining theorem.
 
-The current quantization audit records conditional quantization results and constructive finite-domain QFT results while retaining open capture, BRST/gauge-orbit, continuum, and full four-dimensional obligations. The present paper is consistent with that status:
+The current authority distinguishes established canonical QM, free-field, and local formal constructions from their genuine source and interacting continuum extensions. The present paper uses that distinction:
 
 1.  *General coherent-sector QM:* conditional reconstruction.
 
-2.  *Selected binary output law:* exact on the canonical $`q=79`$ recorder domain.
+2.  *Canonical finite-symbol Cauchy QM:* established operational model, reduced semigroup, minimal dilation, and instrument comparison.
 
-3.  *Universal Born source:* open.
+3.  *Selected binary output law:* exact on the canonical $`q=79`$ recorder domain.
 
-4.  *Nonperturbative QFT and continuum physics:* separate, open obligations not promoted here.
+4.  *Universal Born source:* open.
 
-The possible upstream “closure repair” or nonlinear stabilization program would fit one level before this paper. If a selected nonlinear repair flow has a fixed state and its linearization produces the self-adjoint or dissipative operators in <a href="#def:record" data-reference-type="ref+label" data-reference="def:record">1</a>, then the operator row would become a theorem rather than an input. That is a promising research direction, but no such universal source theorem is assumed in the present reconstruction.
+5.  *Selected free CAR net and local formal QME:* established at their declared free and formal domains.
+
+6.  *Nonperturbative QFT and continuum physics:* separate, open obligations not promoted here.
+
+The possible upstream “closure repair” or nonlinear stabilization program would fit one level before this paper. If a selected nonlinear repair flow has a fixed state and its linearization produces the self-adjoint or dissipative operators in Definition [2.1](#def:record), then the operator row would become a theorem rather than an input. That is a promising research direction, but no such universal source theorem is assumed in the present reconstruction.
+
+<a id="sec:claims"></a>
 
 # Claim disposition
 
-<div class="description">
+**Complete derivation** Withdrawn. The general result is a conditional coherent-sector reconstruction.
 
-Withdrawn. The general result is a conditional coherent-sector reconstruction.
+**Hilbert structure** Must be emitted as a complex Hilbert space or as a real Hilbert space with a compatible selected complex structure. It is not derived from projection alone.
 
-Must be emitted as a complex Hilbert space or as a real Hilbert space with a compatible selected complex structure. It is not derived from projection alone.
+**Self-adjoint Hamiltonian** Retained when a selected densely defined closed semibounded form or self-adjoint operator and its domain are proved. Bounded pullback preserves closedness on the full preimage domain, but alone supplies neither density nor a reducing operator part.
 
-Retained when a selected densely defined closed semibounded form or self-adjoint operator and its domain are proved. Bounded pullback alone is insufficient.
+**Unitary dynamics** Retained as a standard consequence of self-adjointness and Stone’s theorem. Time-dependent propagators remain conditional on their regularity hypotheses.
 
-Retained as a standard consequence of self-adjointness and Stone’s theorem. Time-dependent propagators remain conditional on their regularity hypotheses.
+**Arbitrary Schrodinger models** Retained as exact representability when the target form is inserted. This is not source selection or parameter prediction.
 
-Retained as exact representability when the target form is inserted. This is not source selection or parameter prediction.
+**Noncommutativity** Part of the supplied operator algebra or a separate source theorem. It is not created by an orthogonal projector.
 
-Part of the supplied operator algebra or a separate source theorem. It is not created by an orthogonal projector.
+**Born rule** Gleason–Busch gives characterization under probability assumptions. Selected exact Born descent is established only for the canonical binary $`q=79`$ output context. The universal source theorem remains open.
 
-Gleason–Busch gives characterization under probability assumptions. Selected exact Born descent is established only for the canonical binary $`q=79`$ output context. The universal source theorem remains open.
+**POVMs and dilations** Standard mathematical representations. MTT must separately source the ancilla, interaction, pointer algebra, and context.
 
-Standard mathematical representations. MTT must separately source the ancilla, interaction, pointer algebra, and context.
+**Time uncertainty** Corrected to an operational clock or Mandelstam–Tamm statement. No universal self-adjoint time operator is claimed.
 
-Corrected to an operational clock or Mandelstam–Tamm statement. No universal self-adjoint time operator is claimed.
+**Entanglement** Available once the tensor-product composition rule is supplied. Projection alone does not derive physical subsystem composition.
 
-Available once the tensor-product composition rule is supplied. Projection alone does not derive physical subsystem composition.
+**Lindblad dynamics** Conditional on an explicit open-system or weak-coupling limit. Not every modal disturbance is Markovian.
 
-Conditional on an explicit open-system or weak-coupling limit. Not every modal disturbance is Markovian.
+**Path-integral language** An alternative or asymptotic representation after the Hamiltonian and action are supplied, not an independent source theorem.
 
-An alternative or asymptotic representation after the Hamiltonian and action are supplied, not an independent source theorem.
-
-</div>
+<a id="sec:completion"></a>
 
 # Completion contract
 
@@ -588,7 +783,9 @@ To upgrade the general reconstruction to a selected derivation, one upper source
 
 10. a commuting evaluation diagram with held-out predictions and an uncertainty budget.
 
-The $`q=79`$ recorder closes a nontrivial part of item 8 for one binary context. It does not close the other rows by implication. Conversely, future progress on the upper action, operator naturality, or closure-repair flow could source several earlier rows at once. The contract makes such progress visible without changing the meaning of already closed results.
+The canonical $`q=79`$ model instantiates its own Hilbert, state, observable, clock, semigroup, dilation, and instrument rows, including item 8 on one binary context. It does not close this more general all-apparatus and physical-source contract by implication. Conversely, future progress on the upper action, operator naturality, or closure-repair flow could source several earlier rows at once. The contract makes such progress visible without changing the meaning of already closed results.
+
+<a id="sec:discussion"></a>
 
 # Discussion
 
@@ -610,32 +807,211 @@ The immediate mathematical target is not another abstract Gleason argument. It i
 
 # Conclusion
 
-Projection is not quantization, and reconstruction is not selection. Nonrelativistic quantum mechanics requires a complex Hilbert space, state cone, operator algebra, self-adjoint dynamics, clock convention, composition rule, and operational instruments. Version 4 makes each of these rows explicit and proves the corresponding conditional MTT reconstruction theorem.
+Projection is not quantization, and reconstruction is not selection. Nonrelativistic quantum mechanics requires a complex Hilbert space, state cone, operator algebra, self-adjoint dynamics, clock convention, composition rule, and operational instruments. This revision makes each of these rows explicit and proves the corresponding conditional MTT reconstruction theorem.
 
 The operator-theoretic part is rigorous once its standard hypotheses are met. Closed reducing forms give self-adjoint coherent Hamiltonians; Stone’s theorem gives unitary evolution; and arbitrary target forms can be embedded exactly. That last fact measures expressive capacity, not predictive power. Time is treated through evolution or clock observables, and the valid Mandelstam–Tamm relation replaces an unsupported universal time operator. Gleason and Busch characterize probability assignments but do not source a detector law.
 
-The canonical $`q=79`$ binary recorder supplies the paper’s strongest selected result: an exact stopped output measure and second-moment Born descent on one commuting Fock output domain, without fitted probabilities or extra classical noise. The universal apparatus theorem, non-Markov control, pre-quantum probability semantics, and objective actualization remain open. MTT therefore reaches a conditional reconstruction of general nonrelativistic quantum mechanics and an exact selected measurement theorem on one important domain. That is the correct present frontier.
+The canonical $`q=79`$ model supplies a selected operational realization, including an exact stopped output measure and second-moment Born descent on one commuting Fock output domain, without fitted probabilities or extra classical noise. The universal apparatus theorem, non-Markov control, pre-quantum probability semantics, and objective actualization remain open. MTT therefore reaches a conditional reconstruction of general nonrelativistic quantum mechanics and an exact selected measurement theorem on one important domain. The projector, stratified-strain, and family compilers explain the remaining physical-source interface; the free net and local formal QME remain positive results without implying an interacting fixed-coupling continuum completion.
+
+# Frozen contextual sources for Version 5
+
+The thirteen contextual imports cited above use the immutable results manifest at commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`. Each artifact was read in full, including later refinements in the evolving status source, and its frozen byte hash is recorded in the accompanying review. The local revision audit distinguishes source reading and bounded illustrative checks from independent verification of the source theorems. Current authority determines scope; early packet status headings do not override later proof explanations. The earlier ledger provenance below remains historical provenance for that separately cited row.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The curated strict-upgrade ledger is used only as a corpus-state cross-check that stronger no-knob and universal-source obligations remain open. It does not prove this paper’s Hilbert, Hamiltonian, clock, instrument, or probability statements. The exact canonical q79 binary output-measure theorem is instead cited at its immutable source-proof repository commit and remains restricted to its declared P/Q Fock-output domain.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 #### Open boundary (not evidence of closure).
 
 - (*open*).
 
-  Current 2/9 strict no-knob upgrade ledger.
+  Historical 2/9 strict no-knob ledger snapshot, not a current global completion count.
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
+# References
 
-The curated strict-upgrade ledger is used only as a corpus-state cross-check that stronger no-knob and universal-source obligations remain open. It does not prove this paper's Hilbert, Hamiltonian, clock, instrument, or probability statements. The exact canonical q79 binary output-measure theorem is instead cited at its immutable source-proof repository commit and remains restricted to its declared P/Q Fock-output domain.
+<a id="ref-ReedSimon1972"></a>
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+\[1\] Michael Reed and Barry Simon. *Methods of Modern Mathematical Physics*. Academic Press, New York, 1972. Four volumes published 1972–1978.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+<a id="ref-Kato1995"></a>
 
-## Open boundary (not evidence of closure)
+\[2\] Tosio Kato. *Perturbation Theory for Linear Operators*. Springer, Berlin, 2nd edition, 1995.
 
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+<a id="ref-DaviesLewis1970"></a>
 
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+\[3\] E. B. Davies and J. T. Lewis. An operational approach to quantum probability. *Communications in Mathematical Physics*, 17:239–260, 1970.
+
+<a id="ref-MTTFoundation2026"></a>
+
+\[4\] Peter Nero. Modal triplet theory: Foundations. Zenodo, 2026.
+
+<a id="ref-Stone1932"></a>
+
+\[5\] Marshall H. Stone. On one-parameter unitary groups in hilbert space. *Annals of Mathematics*, 33(3):643–648, 1932.
+
+<a id="ref-MandelstamTamm1945"></a>
+
+\[6\] Leonid Mandelstam and Igor Tamm. The uncertainty relation between energy and time in non-relativistic quantum mechanics. *Journal of Physics (USSR)*, 9:249–254, 1945.
+
+<a id="ref-Gleason1957"></a>
+
+\[7\] Andrew M. Gleason. Measures on the closed subspaces of a hilbert space. *Journal of Mathematics and Mechanics*, 6:885–893, 1957.
+
+<a id="ref-Busch2003"></a>
+
+\[8\] Paul Busch. Quantum states and generalized observables: A simple proof of gleason’s theorem. *Physical Review Letters*, 91(12):120403, 2003.
+
+<a id="ref-Naimark1940"></a>
+
+\[9\] Mark A. Naimark. Spectral functions of a symmetric operator. *Izvestiya Akademii Nauk SSSR, Seriya Matematicheskaya*, 4:277–318, 1940.
+
+<a id="ref-Stinespring1955"></a>
+
+\[10\] W. Forrest Stinespring. Positive functions on $`c^*`$-algebras. *Proceedings of the American Mathematical Society*, 6(2):211–216, 1955.
+
+<a id="ref-Q79Recorder2026"></a>
+
+\[11\] Peter Nero. Canonical q79 fock output measure and second-moment capture descent theorem. MTT QM Source Proof repository, commit 1615da7e1b2c917556fe04a44d073b905644071e, 2026.
+
+<a id="ref-FrozenCanonicalQM"></a>
+
+\[12\] Peter Nero. Canonical q79 quantum model.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_canonical_quantum_model/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-HudsonParthasarathy1984"></a>
+
+\[13\] Robin L. Hudson and Kalyanapuram R. Parthasarathy. Quantum ito’s formula and stochastic evolutions. *Communications in Mathematical Physics*, 93:301–323, 1984.
+
+<a id="ref-Belavkin2005"></a>
+
+\[14\] Viacheslav P. Belavkin. Quantum stochastic calculus and quantum nonlinear filtering. arXiv:math/0512362, 2005.
+
+<a id="ref-AttalPautrat2006"></a>
+
+\[15\] Stephane Attal and Yan Pautrat. From repeated to continuous quantum interactions. *Annales Henri Poincare*, 7(1):59–104, 2006.
+
+<a id="ref-FrozenQMStatus"></a>
+
+\[16\] Peter Nero. Current quantum mechanics and local field source status.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/qm_current_status/artifact.md>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-BornCompanionV3"></a>
+
+\[17\] Peter Nero. Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface, 2026. Current manuscript v3, Section 4, September 2026; released concept DOI 10.5281/zenodo.18261841.
+
+<a id="ref-FrozenContinuumConsumer"></a>
+
+\[18\] Peter Nero. Continuum Hessian-to-recorder compiler.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_continuum_recorder_compiler/artifact.json>, 2026.
+
+<a id="ref-LocalityCompanionV2"></a>
+
+\[19\] Peter Nero. Locality, Coherent Alternatives, and Physical Records: An Interpretive Account of Quantum Experiments in Modal Triplet Theory, 2026. Unpublished manuscript v2, Operational data do not force many actual worlds, September 2026.
+
+<a id="ref-FrozenOntologyConsumer"></a>
+
+\[20\] Peter Nero. q79 ontology non-entailment.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_ontology_nonentailment/artifact.json>, 2026.
+
+<a id="ref-GoriniKossakowskiSudarshan1976"></a>
+
+\[21\] Vittorio Gorini, Andrzej Kossakowski, and E. C. G. Sudarshan. Completely positive dynamical semigroups of $`n`$-level systems. *Journal of Mathematical Physics*, 17(5):821–825, 1976.
+
+<a id="ref-Lindblad1976"></a>
+
+\[22\] Goran Lindblad. On the generators of quantum dynamical semigroups. *Communications in Mathematical Physics*, 48:119–130, 1976.
+
+<a id="ref-Davies1974"></a>
+
+\[23\] E. B. Davies. Markovian master equations. *Communications in Mathematical Physics*, 39:91–110, 1974.
+
+<a id="ref-FeynmanHibbs1965"></a>
+
+\[24\] Richard P. Feynman and Albert R. Hibbs. *Quantum Mechanics and Path Integrals*. McGraw–Hill, New York, 1965.
+
+<a id="ref-FrozenProjectiveHYM"></a>
+
+\[25\] Peter Nero. Projective HYM realization and operator naturality.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_hym_naturality/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenCech"></a>
+
+\[26\] Peter Nero. Cech projector and connection compiler.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cech_projector_compiler/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenStrain"></a>
+
+\[27\] Peter Nero. Spectral strain and shorted Hessian.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_spectral_strain_hessian/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenSupport"></a>
+
+\[28\] Peter Nero. Support-stratified strain reduction.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_support_stratified_strain/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenMonodromy"></a>
+
+\[29\] Peter Nero. Monodromy and Reynolds descent.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_monodromy_reynolds_descent/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenC4"></a>
+
+\[30\] Peter Nero. Shared-root order-four symbol promotion.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_shared_root_c4_promotion/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenFM"></a>
+
+\[31\] Peter Nero. Fourier–Mukai and HYM dependency compression.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_fm_hym_dependency_compression/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenFamily"></a>
+
+\[32\] Peter Nero. Family source and operator dependency cutset.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_family_source_cutset/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenDirac"></a>
+
+\[33\] Peter Nero. Selected q79 free Dirac CAR net.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_free_dirac_car_net/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenQME"></a>
+
+\[34\] Peter Nero. Local q79 quantum master equation.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_local_qme/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+
+<a id="ref-FrozenCstar"></a>
+
+\[35\] Peter Nero. Free C-star positivity and fixed-coupling nonpromotion.
+
+<https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_free_cstar_nonpromotion/artifact.json>, 2026. Frozen contextual source, manifest f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.

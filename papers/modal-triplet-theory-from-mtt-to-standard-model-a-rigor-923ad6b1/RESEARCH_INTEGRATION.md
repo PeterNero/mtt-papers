@@ -22,8 +22,8 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: This is the frozen status/provenance map behind the cited audit, not an additional theorem that must be copied into the manuscript. Retain it as capsule navigation; the reconstruction result is already contextualized.
 
-- `main.tex:752`: `an old file containing`
-- `main.tex:507`: `Current released reconstruction`
+- `main.tex:794`: `an old file containing`
+- `main.tex:520`: `Current released reconstruction`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -43,8 +43,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The reconstruction theorem and its discussion import the twelve-obligation audit and the stricter upgrade ledger with measured-parameter, nonperturbative-QFT and source-selection limits. The paper need not reproduce the entire runtime audit to own this conditional synthesis.
 
-- `main.tex:507`: `Current released reconstruction`
-- `main.tex:777`: `Remaining Theorems and Falsifiers`
+- `main.tex:520`: `Current released reconstruction`
+- `main.tex:819`: `Remaining Theorems and Falsifiers`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -64,10 +64,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:190`: `Exact Gauge and Chiral Structure`
-- `main.tex:295`: `Finite Geometry and the Higgs Module`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:152`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:203`: `Exact Gauge and Chiral Structure`
+- `main.tex:308`: `Finite Geometry and the Higgs Module`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -87,10 +87,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:407`: `Where the Numerical Values Enter`
-- `main.tex:473`: `Multi-loop precision transport`
-- `main.tex:560`: `Parameter ledger`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:420`: `Where the Numerical Values Enter`
+- `main.tex:486`: `Multi-loop precision transport`
+- `main.tex:573`: `Parameter ledger`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -110,10 +110,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:407`: `Where the Numerical Values Enter`
-- `main.tex:473`: `Multi-loop precision transport`
-- `main.tex:560`: `Parameter ledger`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:420`: `Where the Numerical Values Enter`
+- `main.tex:486`: `Multi-loop precision transport`
+- `main.tex:573`: `Parameter ledger`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -133,10 +133,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:407`: `Where the Numerical Values Enter`
-- `main.tex:473`: `Multi-loop precision transport`
-- `main.tex:560`: `Parameter ledger`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:420`: `Where the Numerical Values Enter`
+- `main.tex:486`: `Multi-loop precision transport`
+- `main.tex:573`: `Parameter ledger`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -156,10 +156,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:407`: `Where the Numerical Values Enter`
-- `main.tex:473`: `Multi-loop precision transport`
-- `main.tex:560`: `Parameter ledger`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:420`: `Where the Numerical Values Enter`
+- `main.tex:486`: `Multi-loop precision transport`
+- `main.tex:573`: `Parameter ledger`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -179,10 +179,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:407`: `Where the Numerical Values Enter`
-- `main.tex:473`: `Multi-loop precision transport`
-- `main.tex:560`: `Parameter ledger`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:420`: `Where the Numerical Values Enter`
+- `main.tex:486`: `Multi-loop precision transport`
+- `main.tex:573`: `Parameter ledger`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -202,10 +202,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:407`: `Where the Numerical Values Enter`
-- `main.tex:473`: `Multi-loop precision transport`
-- `main.tex:560`: `Parameter ledger`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:420`: `Where the Numerical Values Enter`
+- `main.tex:486`: `Multi-loop precision transport`
+- `main.tex:573`: `Parameter ledger`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -225,9 +225,9 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:270`: `What the finite gauge spectra add`
-- `main.tex:680`: `What the geometric support witnesses do establish`
-- `main.tex:624`: `Strong CP: the current and the quality question`
+- `main.tex:283`: `What the finite gauge spectra add`
+- `main.tex:693`: `What the geometric support witnesses do establish`
+- `main.tex:637`: `Strong CP: the current and the quality question`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -247,9 +247,9 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:270`: `What the finite gauge spectra add`
-- `main.tex:680`: `What the geometric support witnesses do establish`
-- `main.tex:624`: `Strong CP: the current and the quality question`
+- `main.tex:283`: `What the finite gauge spectra add`
+- `main.tex:693`: `What the geometric support witnesses do establish`
+- `main.tex:637`: `Strong CP: the current and the quality question`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -269,10 +269,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Rechecked in v4: charged, neutral, CKM, shared-primitive electroweak/Higgs and SMDR covariance rows retain their inputs and frozen references. The later neutral-holonomy refinement is now explained as a reparameterization of the two supplied neutral coordinates, not an extra reduction. Numerical replay and supplied covariance remain distinct from independent prediction.
 
-- `main.tex:407`: `Where the Numerical Values Enter`
-- `main.tex:473`: `Multi-loop precision transport`
-- `main.tex:560`: `Parameter ledger`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:420`: `Where the Numerical Values Enter`
+- `main.tex:486`: `Multi-loop precision transport`
+- `main.tex:573`: `Parameter ledger`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -292,10 +292,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:190`: `Exact Gauge and Chiral Structure`
-- `main.tex:295`: `Finite Geometry and the Higgs Module`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:152`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:203`: `Exact Gauge and Chiral Structure`
+- `main.tex:308`: `Finite Geometry and the Higgs Module`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -315,10 +315,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:190`: `Exact Gauge and Chiral Structure`
-- `main.tex:295`: `Finite Geometry and the Higgs Module`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:152`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:203`: `Exact Gauge and Chiral Structure`
+- `main.tex:308`: `Finite Geometry and the Higgs Module`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -338,10 +338,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:190`: `Exact Gauge and Chiral Structure`
-- `main.tex:295`: `Finite Geometry and the Higgs Module`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:152`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:203`: `Exact Gauge and Chiral Structure`
+- `main.tex:308`: `Finite Geometry and the Higgs Module`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -361,10 +361,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:190`: `Exact Gauge and Chiral Structure`
-- `main.tex:295`: `Finite Geometry and the Higgs Module`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:152`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:203`: `Exact Gauge and Chiral Structure`
+- `main.tex:308`: `Finite Geometry and the Higgs Module`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -384,10 +384,10 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The manuscript explains both carriers, native automorphisms, the chiral anomaly checks, neutral algebra completion and one-Higgs projection, then names the frozen packets. The 96-dimensional Dirac entries are explicitly profile dependent. These are present at their declared scopes, not missing proofs.
 
-- `main.tex:139`: `The Two Finite Matrices Have Different Jobs`
-- `main.tex:190`: `Exact Gauge and Chiral Structure`
-- `main.tex:295`: `Finite Geometry and the Higgs Module`
-- `main.tex:699`: `Reproducibility and Result Ownership`
+- `main.tex:152`: `The Two Finite Matrices Have Different Jobs`
+- `main.tex:203`: `Exact Gauge and Chiral Structure`
+- `main.tex:308`: `Finite Geometry and the Higgs Module`
+- `main.tex:741`: `Reproducibility and Result Ownership`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -407,9 +407,9 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:270`: `What the finite gauge spectra add`
-- `main.tex:680`: `What the geometric support witnesses do establish`
-- `main.tex:624`: `Strong CP: the current and the quality question`
+- `main.tex:283`: `What the finite gauge spectra add`
+- `main.tex:693`: `What the geometric support witnesses do establish`
+- `main.tex:637`: `Strong CP: the current and the quality question`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -429,9 +429,9 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:270`: `What the finite gauge spectra add`
-- `main.tex:680`: `What the geometric support witnesses do establish`
-- `main.tex:624`: `Strong CP: the current and the quality question`
+- `main.tex:283`: `What the finite gauge spectra add`
+- `main.tex:693`: `What the geometric support witnesses do establish`
+- `main.tex:637`: `Strong CP: the current and the quality question`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -451,9 +451,9 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 explains the finite weak/color spectra and ghost indices, the 81-entry Cech witness and numerical Wiener ball, and the cancelling E6 Qpsi anomaly. It keeps the rank-two witness separate from the physical rank-three endpoint and the finite gauge spectrum separate from absolute action normalization. Imported results have frozen source citations rather than duplicate proofs.
 
-- `main.tex:270`: `What the finite gauge spectra add`
-- `main.tex:680`: `What the geometric support witnesses do establish`
-- `main.tex:624`: `Strong CP: the current and the quality question`
+- `main.tex:283`: `What the finite gauge spectra add`
+- `main.tex:693`: `What the geometric support witnesses do establish`
+- `main.tex:637`: `Strong CP: the current and the quality question`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -473,8 +473,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: The reconstruction theorem and its discussion import the twelve-obligation audit and the stricter upgrade ledger with measured-parameter, nonperturbative-QFT and source-selection limits. The paper need not reproduce the entire runtime audit to own this conditional synthesis.
 
-- `main.tex:507`: `Current released reconstruction`
-- `main.tex:777`: `Remaining Theorems and Falsifiers`
+- `main.tex:520`: `Current released reconstruction`
+- `main.tex:819`: `Remaining Theorems and Falsifiers`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -494,8 +494,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.
 
-- `main.tex:363`: `Selected density, relative shape and the remaining amplitude`
-- `main.tex:585`: `The rows overlap and must not be arithmetically summed`
+- `main.tex:376`: `Selected density, relative shape and the remaining amplitude`
+- `main.tex:598`: `The rows overlap and must not be arithmetically summed`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -515,8 +515,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.
 
-- `main.tex:363`: `Selected density, relative shape and the remaining amplitude`
-- `main.tex:585`: `The rows overlap and must not be arithmetically summed`
+- `main.tex:376`: `Selected density, relative shape and the remaining amplitude`
+- `main.tex:598`: `The rows overlap and must not be arithmetically summed`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -536,8 +536,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.
 
-- `main.tex:363`: `Selected density, relative shape and the remaining amplitude`
-- `main.tex:585`: `The rows overlap and must not be arithmetically summed`
+- `main.tex:376`: `Selected density, relative shape and the remaining amplitude`
+- `main.tex:598`: `The rows overlap and must not be arithmetically summed`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -557,8 +557,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 gives the Gram density operators, normalized gauge-shape vector, common c=6f0 convention, one g2 anchor and scale orbit. The numerical comparison is explicitly not held-out validation. The effective 13/19-coordinate ledger identifies its empirical inputs, excludes QCD theta and avoids counting SMDR output coordinates twice. P_EW and the gauge amplitude remain distinct.
 
-- `main.tex:363`: `Selected density, relative shape and the remaining amplitude`
-- `main.tex:585`: `The rows overlap and must not be arithmetically summed`
+- `main.tex:376`: `Selected density, relative shape and the remaining amplitude`
+- `main.tex:598`: `The rows overlap and must not be arithmetically summed`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -578,8 +578,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 imports the U5 holonomy chamber, Majorana compatibility test and supplied scale/nil-boundary assumptions. It explains the U9 equal-weight antiunitary orbit and probability-one conditioning on the selected retarded branch without claiming a unique universal branch. Adopted 4/4/1 and strict 2/6/1 tallies are kept separate.
 
-- `main.tex:439`: `Neutral profile`
-- `main.tex:608`: `The conditional branch measure`
+- `main.tex:452`: `Neutral profile`
+- `main.tex:621`: `The conditional branch measure`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -599,8 +599,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 imports the U5 holonomy chamber, Majorana compatibility test and supplied scale/nil-boundary assumptions. It explains the U9 equal-weight antiunitary orbit and probability-one conditioning on the selected retarded branch without claiming a unique universal branch. Adopted 4/4/1 and strict 2/6/1 tallies are kept separate.
 
-- `main.tex:439`: `Neutral profile`
-- `main.tex:608`: `The conditional branch measure`
+- `main.tex:452`: `Neutral profile`
+- `main.tex:621`: `The conditional branch measure`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -620,8 +620,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.
 
-- `main.tex:624`: `Strong CP: the current and the quality question`
-- `main.tex:664`: `The multi-axion import supplies a complementary route`
+- `main.tex:637`: `Strong CP: the current and the quality question`
+- `main.tex:677`: `The multi-axion import supplies a complementary route`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -641,8 +641,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.
 
-- `main.tex:624`: `Strong CP: the current and the quality question`
-- `main.tex:664`: `The multi-axion import supplies a complementary route`
+- `main.tex:637`: `Strong CP: the current and the quality question`
+- `main.tex:677`: `The multi-axion import supplies a complementary route`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -662,8 +662,8 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 Reviewed 2026-09-12: Version 4 distinguishes the periodic model-independent Green-Schwarz axion from the flat internal gerbe, states primitive k3=1 at its declared normalization, gives all three nonlinear quality inequalities with convergence and angle assumptions, and explains the hidden-blind rank criterion. Hidden amplitudes, phases, lifting and selection remain open; the illustrative flat hidden case is not substituted for physical HYM data.
 
-- `main.tex:624`: `Strong CP: the current and the quality question`
-- `main.tex:664`: `The multi-axion import supplies a complementary route`
+- `main.tex:637`: `Strong CP: the current and the quality question`
+- `main.tex:677`: `The multi-axion import supplies a complementary route`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 

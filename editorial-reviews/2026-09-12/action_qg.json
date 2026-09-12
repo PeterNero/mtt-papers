@@ -1,0 +1,3758 @@
+{
+  "schema": "mtt.editorial-review-fragment.v1",
+  "reviewed_at": "2026-09-12",
+  "reviewer": "Codex action_qg contextual editorial review",
+  "repository": "mtt-papers",
+  "baseline_commit": "838a0860ed8cdca474d1c11ef2fa063f2a5f908d",
+  "curated_manifest_commit": "f141a20ea23c5c3ff19cc2161c0e226e29ade8a7",
+  "exclusive_paper_scope": [
+    "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+    "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+    "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+    "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+    "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+    "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba"
+  ],
+  "authority": {
+    "bootstrap_repository": "mtt-papers",
+    "kernel_model_sha256": "bf2643bc78d2c723aa813bbae8d0a50848e1d226a58f0088262d564c751d6715",
+    "policy": "Current A/B authorities and later refinements outrank older packet status fields; no raw status promotion.",
+    "policies_read": [
+      "AGENTS.md",
+      "PAPER_RELEASE_REQUIREMENTS.md",
+      "THEOREM_OWNERSHIP_AND_STANDALONE_POLICY.md"
+    ],
+    "pdf_authoring_marker_runs": [
+      {
+        "expected_output_count": 4,
+        "operation_kind": "edit"
+      },
+      {
+        "expected_output_count": 2,
+        "operation_kind": "edit"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "id": "ACTION-CURVED-GERM-20260912",
+      "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "preprojection_curved_cyclic_repair_germ"
+      ],
+      "anchors": [
+        "sec:repair-action"
+      ],
+      "assessment": "Full frozen packet and proof explanation read. The manuscript explains d_Q^2=[Q^2,-], the zero/central/noncentral curvature trichotomy, and the odd Q^2=I witness: adjoint nilpotence can coexist with a nonzero defect and Jordan response 2X. It states the additional metric/domain inputs needed for Hodge or dissipative language. This is exact local algebra, not a physical-action selection or a proof that every representation detects closure.",
+      "main_tex_lf_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+      "result_hashes": {
+        "preprojection_curved_cyclic_repair_germ": "b3a3c82a427a164d6392b60bea1f1edd220ccf2ca34e5d37c49b8327d80bd997"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:repair-action",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 207
+        }
+      ]
+    },
+    {
+      "id": "ACTION-CYCLIC-DESCENT-20260912",
+      "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "preprojection_h4_cyclic_mc_action_descent"
+      ],
+      "anchors": [
+        "sec:cyclic-action"
+      ],
+      "assessment": "Full packet and proof explanation read. The degree-three cyclic action, variation, nondegeneracy needed to identify the full critical locus, infinitesimal gauge invariance, and projective-overlap trace descent are explained. The signed Hessian C_tau J is contrasted with J* W J, including the negative signed direction in the frozen witness. Large-gauge coefficient quantization, a physical trace/real slice, and identification with the ten-dimensional ansatz are not supplied by this integrability-lane result.",
+      "main_tex_lf_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+      "result_hashes": {
+        "preprojection_h4_cyclic_mc_action_descent": "f2be34f379b0940c6e056f7f78b722fd4118d76fabfa7c54c0429654cfe977f7"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:cyclic-action",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "id": "ACTION-STRING-COTANGENT-20260912",
+      "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "preprojection_h4_q79_string_cyclic_cotangent"
+      ],
+      "anchors": [
+        "sec:string-cotangent"
+      ],
+      "assessment": "Full packet and proof explanation read. The local trace grammar places form/anomaly lanes in the pairing radical on a complex threefold; the semisimple gauge algebra supplies no invariant linear cross-pairing. This is an obstruction to that grammar, not every possible action. The density-valued shifted cotangent completion L semidirect L![-3], explicit shift convention, dual variation, and zero-section lift are explained. Adjoint/ordinary-form shared-line neutrality does not apply automatically to relative charged Hom lanes. Physical BV identification and action normalization remain open.",
+      "main_tex_lf_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+      "result_hashes": {
+        "preprojection_h4_q79_string_cyclic_cotangent": "84aaa6a28a2ecb2d239d6e3c2cfe363104c1b44ceb79f1ac919634edc8a4f8e3"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:string-cotangent",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 310
+        }
+      ]
+    },
+    {
+      "id": "ACTION-VARIATIONAL-ANCHOR-20260912",
+      "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "preprojection_h4_variational_anchor_multiplier_lift"
+      ],
+      "anchors": [
+        "sec:anchor"
+      ],
+      "assessment": "Full packet and proof explanation read. The anchored Helmholtz criterion on a star-shaped finite domain is illustrated by rotational versus gradient residuals with equal positive costs. The universal multiplier block Hessian and its normal-square blocks are explained. A scalar cubic example exhibits different signed-action and repair vertices, including opposite signed Hessians at two roots with the same normal square. This supplies an exact variational construction and information-loss example, not physical source, particle, or Lorentzian-Dirac selection.",
+      "main_tex_lf_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+      "result_hashes": {
+        "preprojection_h4_variational_anchor_multiplier_lift": "de69f05c11f0e21e128a33924bd48090aac35194238b9ec05a3f62f56f304d31"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:anchor",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 236
+        }
+      ]
+    },
+    {
+      "id": "DIAGRAM-REPAIR-JETS-20260912",
+      "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "preprojection_repair_jet_graph_functor"
+      ],
+      "anchors": [
+        "sec:repair-jets",
+        "sec:repair-example",
+        "sec:repair-transport",
+        "eq:graph-weight",
+        "eq:PK"
+      ],
+      "assessment": "Full packet and proof explanation read. The paper imports the joint residual/metric jet rather than a residual-only vertex claim; its polynomial example gives Hessian 1 and cubic/quartic derivatives 6/12, changing to 9/48 with a variable metric. It explains exact coordinate pullback and contraction invariance, distinguishes it from fixed-metric isometry and reducing projection, and gives the correct Euclidean Wick sign and coefficients. Formal finite repair graphs are not selected physical Feynman rules, causal inverses, statistics, or states. Existing graph theorems are retained with the sign and typing corrections recorded separately.",
+      "main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+      "result_hashes": {
+        "preprojection_repair_jet_graph_functor": "1c64f479eb8916c4a0de6ad50a868121d1be563665d2c4a4c1acedea3946a15f"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:repair-jets",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 488
+        },
+        {
+          "anchor": "sec:repair-example",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 514
+        },
+        {
+          "anchor": "sec:repair-transport",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 534
+        },
+        {
+          "anchor": "eq:graph-weight",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 192
+        },
+        {
+          "anchor": "eq:PK",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 271
+        }
+      ]
+    },
+    {
+      "id": "QG-CURRENT-SOURCE-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "qg_current_status"
+      ],
+      "anchors": [
+        "The finite source is stronger than a mode count.",
+        "sec:consumer-transfer",
+        "sec:physical-spectral"
+      ],
+      "assessment": "The entire mixed-status ledger was read, including later proof interfaces, rather than treating its early open fields as controlling. The finite normalized Reynolds Hessian and declared A_QG/A_causal branch/coframe inputs are explained at exact/conditional tiers. The flat root-stack symbol is not a nonzero-Chern physical HYM connection, and a covariant family is not automatically a single-branch invariant Hessian. Current hidden projective/existential HYM and free CAR/QM conclusions are retained. The source does not select Wilson values, vacuum, common physical endpoints, or UV completion.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "qg_current_status": "4b009744eda7d5a01db14236598503128a799110f30635daeec354bfefa68217"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "The finite source is stronger than a mode count.",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 169
+        },
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        },
+        {
+          "anchor": "sec:physical-spectral",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 383
+        }
+      ]
+    },
+    {
+      "id": "QG-PHYSICAL-SPECTRAL-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "q79_visible_spectral_cutset"
+      ],
+      "anchors": [
+        "sec:physical-spectral",
+        "sec:bott-chern"
+      ],
+      "assessment": "Full frozen cutset read. The physical character requires rank-one spectral support 9H+3D0, not the older H+3D0 or the auxiliary 3H+3D0 pencil. The manuscript explains generic finite-flat degree-three members, cancellation of the local twist before pushforward of an ordinary line, the twisted norm baseline, and trace-free Prym constraints. The inherited ambient-line ansatz fails integrality for c3=6, but the full Picard/Prym problem is not excluded. T69's invalid fixed-fiber-to-global rank inference remains withdrawn; T70--T73 are local observability, not global Picard/BHT completion.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_visible_spectral_cutset": "e7b870265b49f64672d0bb2f25d4153d8ecc755d6ca74d99372e9229a2d065af"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:physical-spectral",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 383
+        },
+        {
+          "anchor": "sec:bott-chern",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 454
+        }
+      ]
+    },
+    {
+      "id": "QG-BOTT-CHERN-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "q79_bott_chern_reduction"
+      ],
+      "anchors": [
+        "sec:bott-chern"
+      ],
+      "assessment": "Full invariant packet and the later full Fourier-homotopy source were read. The invariant 21/20/1 dimensions yield a 19-dimensional Bott-Chern quotient injecting into de Rham cohomology; the later nonzero Fourier contraction and invariant averaging extend exactness to the full relevant map. Thus a total exact anomaly representative does not require separately imposed visible/hidden Aeppli primitives. This removes a source condition, not positivity, a conformally balanced metric, integral string refinement, or physical-source selection. Later hidden existential HYM is explicitly retained, with the finite chamber bound separated from explicit metric arrays and a common visible-hidden chamber.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_bott_chern_reduction": "e25f735b928f654a80f123bfbdf1dba92eb3722274bdb1be3e0896a6052e9691"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:bott-chern",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 454
+        }
+      ]
+    },
+    {
+      "id": "QG-FERMI-COMPLETION-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "q79_minimal_fermi_completion"
+      ],
+      "anchors": [
+        "sec:fermi-completion"
+      ],
+      "assessment": "Full frozen completion read. The text distinguishes ordered rank-three/rank-nine carriers in different E8 factors from the aggregate rank-twelve monad: the aggregate c2=20 does not yield the odd physical 9+11 split. Four neutral complex left-moving Fermis with E=J=0 give the stated free-current completion and anomaly shifts, with basis permutation invariance and no duplicate bosonized copy. The smooth-projective free-current construction is integrated; interacting holomorphic E/J data, right-moving spin/GSO, and the exact IR (0,2) SCFT remain separate.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_minimal_fermi_completion": "7e3f8a011c2c84f189710a3a93464997bf24b78f414e4d238cac3f570c4b2690"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:fermi-completion",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 485
+        }
+      ]
+    },
+    {
+      "id": "QG-POINCARE-OBJECT-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "q79_poincare_heisenberg_intertwiner"
+      ],
+      "anchors": [
+        "sec:poincare-object"
+      ],
+      "assessment": "Full packet read. Translation of the normalized Poincare kernel produces a nontrivial degree-zero line for nonzero three-torsion, so a bare scalar-projective kernel linearization is not inferred. The qutrit multiplier belongs to isomorphisms of the twisted spectral object; its finite cocycle and rank-three/rank-nine transform behavior are explained. This is an exact categorical intertwiner once the object is supplied, not a selected global physical line or connection.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_poincare_heisenberg_intertwiner": "6bf4048eb7b3d610d30053daae0abb6eb416fdac5eff024aa65ea642358e13bb"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:poincare-object",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 433
+        }
+      ]
+    },
+    {
+      "id": "QG-MIRROR-STRATA-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "q79_mirror_zero_zero_final_classification"
+      ],
+      "anchors": [
+        "sec:mirror-classification"
+      ],
+      "assessment": "Every row of the frozen finite-field classification was read. The manuscript gives two 35-stratum parent charts, 58 exact unit-ideal exclusions and 12 open strata, with the same six open degree pairs in each chart; neither parent is excluded. It explains why emptiness of a superset excludes a source sublocus whereas a positive-dimensional superset, timeout, missing row, or incomplete Laurent quotient does not. These are hash-bound F_101 algebraic strata, not a characteristic-zero physical-mirror no-go or worldsheet completion. Reading/count checks are not independent replay of Groebner certificates.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_mirror_zero_zero_final_classification": "401d9794d57d46db845637c50bc8bb9ca7dffb6defa517ffcdfc367015d32156"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:mirror-classification",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 630
+        }
+      ]
+    },
+    {
+      "id": "PARAMETERS-NONSM-CHRONOLOGY-20260912",
+      "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "nonsm_constants_program"
+      ],
+      "anchors": [
+        "sec:constants-programs",
+        "sec:scale-example",
+        "sec:source-chronology",
+        "sec:effective-ledger"
+      ],
+      "assessment": "The full 1,396-line evolving program was read, including late selected-character, gap, and operator first-variation refinements. The paper distinguishes conditional strict-convex scale selection from physical coefficient and unit selection, retains the explicit radius dependence of the p=4 branch, and separates Brownian covariance conventions, propagated noise power, Green-Kubo inputs, and tangent normalization from measured constants. Finite positive source results are retained rather than disposed of as historical. The independent later effective and U5/U9 ledgers clarify why the original construction count and current effective count are not interchangeable prediction totals.",
+      "main_tex_lf_sha256": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768",
+      "result_hashes": {
+        "nonsm_constants_program": "3c9e7cda981ec9b10445a929e32d3cd8fa3ca529ec1abc6b3e850131d9837971"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:constants-programs",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 475
+        },
+        {
+          "anchor": "sec:scale-example",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 496
+        },
+        {
+          "anchor": "sec:source-chronology",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 527
+        },
+        {
+          "anchor": "sec:effective-ledger",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 410
+        }
+      ]
+    },
+    {
+      "id": "PARAMETERS-INDIVIDUAL-POLICY-20260912",
+      "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "individual_constants_program"
+      ],
+      "anchors": [
+        "sec:constants-programs",
+        "def:prediction",
+        "prop:replay"
+      ],
+      "assessment": "The complete frozen policy was read and integrated as a source-provenance rule: measured constants may test a construction downstream but cannot secretly select its branch, source, kernel, or claimed universal constant upstream. Shared global construction parameters are not banned; undisclosed per-observable fits are. The manuscript connects this policy to its existing disjoint construction/test-data ledger and held-out prediction certificate. It is not treated as a numerical derivation, a blanket historical note, or a reason to reopen finite/profile SM closure.",
+      "main_tex_lf_sha256": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768",
+      "result_hashes": {
+        "individual_constants_program": "e57e10360ec9c864098a04c7e6dd2a1c2b696b41ac2ecb2a80563f00f5468b01"
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:constants-programs",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 475
+        },
+        {
+          "anchor": "def:prediction",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 263
+        },
+        {
+          "anchor": "prop:replay",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 276
+        }
+      ]
+    }
+  ],
+  "consumer_reviews": [
+    {
+      "id": "AQFT-PHYSICAL-FAMILY-CONSUMER-20260912",
+      "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "anchors": [
+        "sec:physical-family-consumer",
+        "prop:naturality"
+      ],
+      "assessment": "Consumes the physical-family cutset owned contextually by the QM source account. Finite connection projections have an infinite-dimensional kernel, so they cannot select the smooth source. With a supplied physical endpoint, smooth common domains and ellipticity, the internal Dirac/Hessian family, gapped Riesz/Kato data and analytic determinant line follow conditionally. These are not the Lorentzian local net, chart-to-region naturality, transverse measure current, crossing gluing, or fixed-coupling continuum control. Hidden existential HYM and selected free CAR remain established.",
+      "main_tex_lf_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:physical-family-consumer",
+          "path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex",
+          "line": 430
+        },
+        {
+          "anchor": "prop:naturality",
+          "path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "id": "CURVED-QFT-PHYSICAL-FAMILY-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "anchors": [
+        "sec:physical-family"
+      ],
+      "assessment": "Uses the QM-owned family dependency to explain interacting curved-spacetime inputs. The finite rational witness illustrates nonselection, not a physical HYM solution; the positive statement requires a same-source endpoint, unitary operator intertwiner, action, common domains, and ellipticity. Gap-chart Riesz/Kato and determinant constructions do not cross a gap closing or choose the transverse measure current. Locality/gluing and cutoff-uniform fixed-coupling control remain open, without reopening hidden existence or the selected free net.",
+      "main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:physical-family",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 273
+        }
+      ]
+    },
+    {
+      "id": "CURVED-QFT-ENDPOINT-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "anchors": [
+        "sec:endpoint-consumer"
+      ],
+      "assessment": "Consumes Cohesive/CBF.T12 at its exact dependency-contract tier. GAS, SYN and BV4 are structured same-source packets, not three scalar parameters. Symmetry and Galerkin/Feshbach rows follow from compatible GAS/SYN objects. The K_a block example shows equal retained Hessians with unequal Schur complements; cotangent repair on its zero section does not select the charged physical action. No complete physical packet or endpoint row is accepted in the frozen contract. Formal BV/QME and free CAR remain intact.",
+      "main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:endpoint-consumer",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 300
+        }
+      ]
+    },
+    {
+      "id": "DIAGRAM-FINITE-TRANSFER-CONSUMER-20260912",
+      "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "anchors": [
+        "sec:finite-transfer-consumer"
+      ],
+      "assessment": "Consumes Cohesive's exact 144-to-48 finite contraction and conditional all-arity source-morphism theorem. Preservation of differential, product, inclusion, projection and homotopy propagates through every decorated transfer tree; order-36 covariance is therefore not inferred from a few checked vertices. The operations are not already the physical signed-action vertices or measured couplings. Nonreducing or approximate comparison requires separate estimates and does not inherit exact Hodge identities.",
+      "main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:finite-transfer-consumer",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 626
+        }
+      ]
+    },
+    {
+      "id": "DIAGRAM-ENDPOINT-CONSUMER-20260912",
+      "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "anchors": [
+        "sec:finite-transfer-consumer"
+      ],
+      "assessment": "Consumes Cohesive's endpoint contract to state what physical graph promotion still needs: one geometry/signed action, compatible spectral synthesis/domain/contraction data, and BV-compatible four-dimensional compactification. Symmetry and Schur/Galerkin rows are derived from that source, not new free kernels. Retained quadratic data do not determine complement contributions. The zero-accepted-packet status is explicitly physical and does not downgrade the exact finite graph theorem or free CAR.",
+      "main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:finite-transfer-consumer",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 626
+        }
+      ]
+    },
+    {
+      "id": "QG-PHYSICAL-FAMILY-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+      ],
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Uses the QM-owned family cutset at exact nonselection/conditional analytic tiers. The new paragraph explains discarded smooth connection directions, source-bound internal Dirac/Hessian and gapped Riesz/Kato data, and the determinant-line versus transverse-measure distinction. It preserves current hidden existential HYM and operational free CAR/QM while retaining common physical-source, gluing, and fixed-coupling requirements.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      },
+      "curated_result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "kernel_result_sources": {
+        "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": [
+          "q79_family_source_cutset"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "id": "QG-FINITE-TRANSFER-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Uses Cohesive's source-morphism all-arity theorem and selected 144-to-48 order-36 contraction to explain finite perturbative transport. It is exact finite algebra, not an all-orders physical gravity amplitude or continuum HYM realization. Exact Hodge transport additionally needs a unitary reducing map on compatible closed domains; cost pullback alone is insufficient.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "id": "QG-ENDPOINT-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "anchors": [
+        "sec:consumer-transfer"
+      ],
+      "assessment": "Consumes Cohesive/CBF.T12: seven physical acceptance rows depend on three compatible structured source packets GAS/SYN/BV4, not three continuous parameters. Symmetry and Schur/Galerkin transport are derived from compatible GAS/SYN. The positive normal and internal cotangent action do not select field-only signed action, charged compactification, or real slice. No complete physical packet is accepted by the frozen endpoint record.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        }
+      ]
+    },
+    {
+      "id": "QG-GATE1-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "Gate 1 completes all thirty"
+      ],
+      "assessment": "Consumes the Flux-owned exact original-Jacobian campaign in chronology: all thirty groups and 225 selected support columns are completed despite the older readiness header. This does not compute Gate 2, a marked integral meridian, the 248-coordinate period readout, or beta_C. The local computation is retained, not restarted; no physical Deligne/HYM or UV-completion promotion follows. Only row-accounting arithmetic was independently checked here.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f"
+      },
+      "curated_result_ids": [
+        "eta9_gate1_campaign"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "Gate 1 completes all thirty",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 531
+        }
+      ]
+    },
+    {
+      "id": "QG-B96-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.THREE_CYCLE_NONDETECTION"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "Gram matrix"
+      ],
+      "assessment": "Consumes the Flux-owned transported three-cycle result: Gram matrix -2I_3, determinant -8, rank three, and the frozen affine rational-coboundary conclusion exhaust this particular detector. It is not a vanishing theorem for the global affine class or larger meridian system. The matrix determinant/rank check does not replay transport or integral certificates.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f"
+      },
+      "curated_result_ids": [
+        "eta9_three_cycle_b96_nondetection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "Gram matrix",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 535
+        }
+      ]
+    },
+    {
+      "id": "QG-BK3-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "Its kernel is zero"
+      ],
+      "assessment": "Consumes Cohesive's exact large-gauge kernel result. Kernel rank zero is not zero source dimension: the real two-dimensional source immerses injectively with dense nonclosed image into the transcendental T20. Period normalization, kinetic scales and the shared-circle action intertwiner remain separate physical inputs. No canonical owner is changed.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      },
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "Its kernel is zero",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 525
+        }
+      ]
+    },
+    {
+      "id": "QG-FITTING-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.GLOBAL_FITTING_DESCENT"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "The local determinant"
+      ],
+      "assessment": "Consumes Cohesive's algebraic descent for an auxiliary twisted Hartshorne-Serre derived object. Local module isomorphisms and invertible transition lines preserve minor ideals, so ordinary Fitting ideal sheaves descend before literal chain matrices are executed. The local determinant matches auxiliary 3H+3D0, not physical 9H+3D0. Gerbe trivialization, literal overlaps, and the common physical HYM/intertwiner are not implied; later hidden existential HYM is retained.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_global_fitting_descent": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30"
+      },
+      "curated_result_ids": [
+        "q79_global_fitting_descent"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.GLOBAL_FITTING_DESCENT": [
+          "q79_global_fitting_descent"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "The local determinant",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 515
+        }
+      ]
+    },
+    {
+      "id": "QG-LOCAL-TUBE-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "2^{-96}"
+      ],
+      "assessment": "Consumes the later Flux-owned same-source tube consolidation, not merely an early formal chart. The complete local connection chart has positive interval width 2^-96 in a dimensionless marked connector, not physical time. Useful-width continuation, a global frame/path, integral period readout, and beta_C remain open. This is an achieved local source result, neither a restart request nor global physical-source completion.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756"
+      },
+      "curated_result_ids": [
+        "q79_eta9_local_source_tube_consolidation"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "2^{-96}",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 545
+        }
+      ]
+    },
+    {
+      "id": "QG-B89-CONSUMER-20260912",
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex action_qg contextual editorial review",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.B89_REJECTION"
+      ],
+      "anchors": [
+        "sec:geometric-consumers",
+        "same-source affine Deligne obstruction"
+      ],
+      "assessment": "Consumes the Flux-owned same-source B89 obstruction at its exact candidate-exclusion tier. A mod-two covector annihilates M-I but pairs to one with the affine return, obstructing an integral preimage and rejecting that candidate. It neither provides a replacement endpoint nor determines exact integral class order. The rejection is retained without promotion to a global q79/HYM/UV no-go.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "result_hashes": {
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      },
+      "curated_result_ids": [
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchor_locations": [
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "same-source affine Deligne obstruction",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 549
+        }
+      ]
+    }
+  ],
+  "paper_changes": [
+    {
+      "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+      "previous_version": "v4",
+      "current_version": "v5",
+      "version_increment_count": 1,
+      "additional_context_result_refs": [],
+      "pdf_pages": 12,
+      "build": {
+        "helper": "scripts/build_contextual_evidence_papers.py",
+        "jobs": 1,
+        "status": "passed",
+        "warning_count": 0,
+        "scope": "Helper LOG_ROOT redirected to the Action paper editorial-build-20260912 directory; helper generated local PDF/TeX auxiliaries, not Markdown.",
+        "log_directory": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial-build-20260912/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538"
+      },
+      "pdf_inspection": {
+        "render_dpi": 120,
+        "all_pages_rendered": true,
+        "all_pages_contact_sheet_inspected": true,
+        "full_size_pages": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          9,
+          11,
+          12
+        ],
+        "findings": [],
+        "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+        "contact_sheet_pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "layout_verdict": "No clipping, overlap, missing glyphs, blank content pages, or unreadable equation/table layout observed."
+      },
+      "main_tex_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+      "main_tex_lf_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+      "paper_md_sha256": "bd4215ff07096946c7c211fc46681b7caa8e680207675071e395fc77d78dfe96",
+      "metadata_sha256": "f6a110dae4ff137d046fb3fb6b7c4163b7e2cee27f0b6357149ca0dca0faddee",
+      "source_tree_sha256": "79eeb1a654b7279b57a7b88d2b1dbffa3724d051b61ef41ec63aabcdc39358a0",
+      "pdf_sha256": "630812a41be2f464a76d03c165516d4f290d6b336d0ded3ad2cab57e8d3444dd",
+      "pdf_bytes": 439291,
+      "released_identity_preserved": true,
+      "common_style_unchanged": true,
+      "markdown_generation": {
+        "helper": "scripts/migrate.py build_markdown only, with local managed-marker restoration",
+        "warning": "",
+        "local_filter": "paper-markdown.lua",
+        "bibliography_entries": 8,
+        "bibliography_matches_built_pdf": true,
+        "abstract_and_revision_notes_retained": true
+      }
+    },
+    {
+      "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+      "previous_version": "v2",
+      "current_version": "v3",
+      "version_increment_count": 1,
+      "additional_context_result_refs": [
+        "q79_cohesive_superconnection",
+        "q79_maurer_cartan_repair"
+      ],
+      "pdf_pages": 15,
+      "build": {
+        "helper": "scripts/build_contextual_evidence_papers.py",
+        "jobs": 1,
+        "status": "passed",
+        "warning_count": 0,
+        "scope": "Helper LOG_ROOT redirected to the Action paper editorial-build-20260912 directory; helper generated local PDF/TeX auxiliaries, not Markdown.",
+        "log_directory": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial-build-20260912/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8"
+      },
+      "pdf_inspection": {
+        "render_dpi": 120,
+        "all_pages_rendered": true,
+        "all_pages_contact_sheet_inspected": true,
+        "full_size_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          14,
+          15
+        ],
+        "findings": [],
+        "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+        "contact_sheet_pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "layout_verdict": "No clipping, overlap, missing glyphs, blank content pages, or unreadable equation/table layout observed."
+      },
+      "main_tex_sha256": "68d7df7ac9702611b5cfc5d62f75d452d1d2a9c72215cb7240b53dcb49004e05",
+      "main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+      "paper_md_sha256": "51ab13c5941d7024295ace38a45af9002a975007fbb97015069377ae0aff6364",
+      "metadata_sha256": "09816bf71a73fc79bdebf816e4d046daa8a85f192c43df6b1dcc5cb43ebf8040",
+      "source_tree_sha256": "a635faac7207ebf8fab92e0b7d9a68b2a8c666bc9b0f4bc7dbd3114a7999b014",
+      "pdf_sha256": "d24e1a48357ce78647af8ea814c8304b342c30a0698d9686590303a009d4206b",
+      "pdf_bytes": 413904,
+      "released_identity_preserved": true,
+      "common_style_unchanged": true,
+      "markdown_generation": {
+        "helper": "scripts/migrate.py build_markdown only, with local managed-marker restoration",
+        "warning": "",
+        "local_filter": "paper-markdown.lua",
+        "bibliography_entries": 15,
+        "bibliography_matches_built_pdf": true,
+        "abstract_and_revision_notes_retained": true
+      }
+    },
+    {
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "previous_version": "v6",
+      "current_version": "v7",
+      "version_increment_count": 1,
+      "additional_context_result_refs": [
+        "q79_eta9_framed_member_spectral_rank_exclusion",
+        "q79_cohesive_superconnection",
+        "q79_maurer_cartan_repair",
+        "unified_source_bott_chern_injectivity",
+        "unified_source_hidden_projective_hym"
+      ],
+      "pdf_pages": 16,
+      "build": {
+        "helper": "scripts/build_contextual_evidence_papers.py",
+        "jobs": 1,
+        "status": "passed",
+        "warning_count": 0,
+        "scope": "Helper LOG_ROOT redirected to the Action paper editorial-build-20260912 directory; helper generated local PDF/TeX auxiliaries, not Markdown.",
+        "log_directory": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial-build-20260912/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d"
+      },
+      "pdf_inspection": {
+        "render_dpi": 120,
+        "all_pages_rendered": true,
+        "all_pages_contact_sheet_inspected": true,
+        "full_size_pages": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "findings": [],
+        "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "contact_sheet_pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "layout_verdict": "No clipping, overlap, missing glyphs, blank content pages, or unreadable equation/table layout observed."
+      },
+      "main_tex_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "paper_md_sha256": "b0ffdc425ba02c11f65506b90da7dded377677318932e1bace6817d908208bb0",
+      "metadata_sha256": "9c9f1cfddc7fafda6b6e4e063b360f20dae01e621e3a90a5fc952b197a2abf69",
+      "source_tree_sha256": "256ccb8f9f86390e6b9516f02555910cad197196f8d4006576dd605f5489a108",
+      "pdf_sha256": "a62e8a1e898f7d59c99e3988cf08d5c6e960edc68b03f0a0e355afcab5707add",
+      "pdf_bytes": 395553,
+      "released_identity_preserved": true,
+      "common_style_unchanged": true,
+      "markdown_generation": {
+        "helper": "scripts/migrate.py build_markdown only, with local managed-marker restoration",
+        "warning": "",
+        "local_filter": "paper-markdown.lua",
+        "bibliography_entries": 39,
+        "bibliography_matches_built_pdf": true,
+        "abstract_and_revision_notes_retained": true
+      }
+    },
+    {
+      "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+      "previous_version": "v2",
+      "current_version": "v3",
+      "version_increment_count": 1,
+      "additional_context_result_refs": [
+        "sm_minimal_parameter_ledger",
+        "sm_neutral_u5_tier_decision",
+        "sm_branch_u9_conditional_measure"
+      ],
+      "pdf_pages": 16,
+      "build": {
+        "helper": "scripts/build_contextual_evidence_papers.py",
+        "jobs": 1,
+        "status": "passed",
+        "warning_count": 0,
+        "scope": "Helper LOG_ROOT redirected to the Action paper editorial-build-20260912 directory; helper generated local PDF/TeX auxiliaries, not Markdown.",
+        "log_directory": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial-build-20260912/modal-triplet-theory-parameters-closure-and-structural-ae734bf0"
+      },
+      "pdf_inspection": {
+        "render_dpi": 120,
+        "all_pages_rendered": true,
+        "all_pages_contact_sheet_inspected": true,
+        "full_size_pages": [
+          1,
+          2,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "findings": [],
+        "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+        "contact_sheet_pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "layout_verdict": "No clipping, overlap, missing glyphs, blank content pages, or unreadable equation/table layout observed."
+      },
+      "main_tex_sha256": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768",
+      "main_tex_lf_sha256": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768",
+      "paper_md_sha256": "a09539ed946c3afc7b25737a58fb1ba220e1cb662015bbb0c80fcf321b85ebc9",
+      "metadata_sha256": "966139c863450e41971a08e443fb8a02759c0ba569c24974a1538795a785ff24",
+      "source_tree_sha256": "376fd3142f82dff3bb2361e585f37f0a9d9d4260a02604e5aada3402344e9031",
+      "pdf_sha256": "ba98c562c687d0d6b50a5c4b16c0db4c58f292b61fdf1467a8a46151c2c095fd",
+      "pdf_bytes": 368147,
+      "released_identity_preserved": true,
+      "common_style_unchanged": true,
+      "markdown_generation": {
+        "helper": "scripts/migrate.py build_markdown only, with local managed-marker restoration",
+        "warning": "",
+        "local_filter": "paper-markdown.lua",
+        "bibliography_entries": 11,
+        "bibliography_matches_built_pdf": true,
+        "abstract_and_revision_notes_retained": true
+      }
+    },
+    {
+      "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+      "previous_version": "v2",
+      "current_version": "v3",
+      "version_increment_count": 1,
+      "additional_context_result_refs": [],
+      "pdf_pages": 10,
+      "build": {
+        "helper": "scripts/build_contextual_evidence_papers.py",
+        "jobs": 1,
+        "status": "passed",
+        "warning_count": 0,
+        "scope": "Helper LOG_ROOT redirected to the Action paper editorial-build-20260912 directory; helper generated local PDF/TeX auxiliaries, not Markdown.",
+        "log_directory": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial-build-20260912/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7"
+      },
+      "pdf_inspection": {
+        "render_dpi": 120,
+        "all_pages_rendered": true,
+        "all_pages_contact_sheet_inspected": true,
+        "full_size_pages": [
+          1,
+          7,
+          8,
+          10
+        ],
+        "findings": [],
+        "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+        "contact_sheet_pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "layout_verdict": "No clipping, overlap, missing glyphs, blank content pages, or unreadable equation/table layout observed."
+      },
+      "main_tex_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+      "main_tex_lf_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+      "paper_md_sha256": "f000d37aa8b744e78b8a3d9b3fd2f7a6f5a58b655c3734ef3fe3078f28c051d4",
+      "metadata_sha256": "68fb7390d679d56c88a95dcc81515c62a130f54b2487c94c5fa1aae8293b87b6",
+      "source_tree_sha256": "efeaac601cae21b33ce0ea96909690f354d43b5e1f3318ea1b881e386bb5f621",
+      "pdf_sha256": "8b65f746e9aad006f6e8aa35c3696c7e09f90f48f5b4612f968a2ab5e574f79e",
+      "pdf_bytes": 350828,
+      "released_identity_preserved": true,
+      "common_style_unchanged": true,
+      "markdown_generation": {
+        "helper": "scripts/migrate.py build_markdown only, with local managed-marker restoration",
+        "warning": "",
+        "local_filter": "paper-markdown.lua",
+        "bibliography_entries": 9,
+        "bibliography_matches_built_pdf": true,
+        "abstract_and_revision_notes_retained": true
+      }
+    },
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+      "previous_version": "v4",
+      "current_version": "v5",
+      "version_increment_count": 1,
+      "additional_context_result_refs": [
+        "q79_maurer_cartan_repair"
+      ],
+      "pdf_pages": 10,
+      "build": {
+        "helper": "scripts/build_contextual_evidence_papers.py",
+        "jobs": 1,
+        "status": "passed",
+        "warning_count": 0,
+        "scope": "Helper LOG_ROOT redirected to the Action paper editorial-build-20260912 directory; helper generated local PDF/TeX auxiliaries, not Markdown.",
+        "log_directory": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial-build-20260912/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba"
+      },
+      "pdf_inspection": {
+        "render_dpi": 120,
+        "all_pages_rendered": true,
+        "all_pages_contact_sheet_inspected": true,
+        "full_size_pages": [
+          1,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "findings": [],
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+        "contact_sheet_pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "layout_verdict": "No clipping, overlap, missing glyphs, blank content pages, or unreadable equation/table layout observed."
+      },
+      "main_tex_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+      "main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+      "paper_md_sha256": "d8605ff2411e2bde164126e1effc1810054d7f0f79dcf09e9fa052bf1272c6e3",
+      "metadata_sha256": "4d45a99309b96d96f2b7f14c0d15c8b0d7d5719a71b2a04f58a2effed3e596f3",
+      "source_tree_sha256": "0668be4d293c31aef5b83af0cd086c7f2fb5ac1890a22f6060fd918a959c3507",
+      "pdf_sha256": "5b120dbcd4d323deb9c8466d10b4aa9181be7491dcdda1e42ccaadb103043a87",
+      "pdf_bytes": 357314,
+      "released_identity_preserved": true,
+      "common_style_unchanged": true,
+      "markdown_generation": {
+        "helper": "scripts/migrate.py build_markdown only, with local managed-marker restoration",
+        "warning": "",
+        "local_filter": "paper-markdown.lua",
+        "bibliography_entries": 16,
+        "bibliography_matches_built_pdf": true,
+        "abstract_and_revision_notes_retained": true
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "id": "ACTION-ALIGNMENT-RANK",
+      "kind": "manuscript_correction",
+      "paper_ids": [
+        "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538"
+      ],
+      "anchors": [
+        "rank-four real alignment projector"
+      ],
+      "assessment": "The abstract's rank-one wording was inconsistent with the real four-dimensional retained alignment space for one complex weak doublet. Corrected the representation count, without changing the finite Higgs result.",
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "rank-four real alignment projector",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "id": "ACTION-NONLINEAR-REDUCTION",
+      "kind": "manuscript_theorem_hypothesis_correction",
+      "paper_ids": [
+        "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538"
+      ],
+      "anchors": [
+        "Conditional coherent reduction",
+        "N(0)=0"
+      ],
+      "assessment": "An inverse-gap bound proves the leading linear estimate only. The nonlinear eliminated equation now requires a ball-preserving contraction with q<1 and N(0)=0. A local effective action also requires a controlled derivative expansion of the generally nonlocal Schur kernel. The original conditional reduction is retained at the corrected scope.",
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "Conditional coherent reduction",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 505
+        },
+        {
+          "anchor": "N(0)=0",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 519
+        }
+      ]
+    },
+    {
+      "id": "DIAGRAM-EUCLIDEAN-SIGN",
+      "kind": "manuscript_formula_correction",
+      "paper_ids": [
+        "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8"
+      ],
+      "anchors": [
+        "eq:graph-weight",
+        "thm:wick-graph"
+      ],
+      "assessment": "The Euclidean exp(-S_int) graph weight needs (-1) per interaction vertex. External insertions are labelled and automorphisms fix them; normalization removes disconnected vacuum factors. Exact finite Wick transport survives with the corrected common weight convention.",
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "eq:graph-weight",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 192
+        },
+        {
+          "anchor": "thm:wick-graph",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 216
+        }
+      ]
+    },
+    {
+      "id": "DIAGRAM-DUAL-PROJECTION",
+      "kind": "manuscript_type_correction",
+      "paper_ids": [
+        "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8"
+      ],
+      "anchors": [
+        "eq:PK",
+        "thm:projection"
+      ],
+      "assessment": "For the bilinear Hessian K:E->E*, [P,K] is not typed. Use KP=P*K and covariance PGP*. After a Riesz identification and orthogonal P this is the familiar commutator condition. The projection theorem retains its exact stated subspace scope.",
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "eq:PK",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 271
+        },
+        {
+          "anchor": "thm:projection",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 286
+        }
+      ]
+    },
+    {
+      "id": "DIAGRAM-INTEGRABILITY",
+      "kind": "manuscript_scope_correction",
+      "paper_ids": [
+        "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8"
+      ],
+      "anchors": [
+        "Euclidean scalar model"
+      ],
+      "assessment": "Positive Gaussian K does not make every quartic Boltzmann weight integrable. The probability claim now requires full integrability, with a nonnegative quartic as a sufficient case; arbitrary quartic Wick expansions are formal.",
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "Euclidean scalar model",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 668
+        }
+      ]
+    },
+    {
+      "id": "PARAMETERS-HOPF-CATEGORY",
+      "kind": "manuscript_regularity_correction",
+      "paper_ids": [
+        "modal-triplet-theory-parameters-closure-and-structural-ae734bf0"
+      ],
+      "anchors": [
+        "prop:no-section",
+        "The regularity category matters here."
+      ],
+      "assessment": "The Hopf bundle has no continuous section, but it has a Borel section assembled from local trivializations over a Borel partition. It cannot witness absence of a measurable decoder. The general scoped-falsification rule remains unchanged.",
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "prop:no-section",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 618
+        },
+        {
+          "anchor": "The regularity category matters here.",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 632
+        }
+      ]
+    },
+    {
+      "id": "CURVED-QFT-ADIABATIC-HADAMARD",
+      "kind": "manuscript_external_theorem_correction",
+      "paper_ids": [
+        "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba"
+      ],
+      "anchors": [
+        "Illustrative FRW benchmark",
+        "Finite adiabatic order"
+      ],
+      "assessment": "A fixed high finite adiabatic order is not the full microlocal Hadamard condition. The FRW example now requires infinite-order construction with the relevant smoothness assumptions or a direct Hadamard check. This leaves the separate selected free-CAR state-existence result unchanged.",
+      "references": [
+        {
+          "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.48.3779",
+          "scope_read": "primary abstract"
+        },
+        {
+          "url": "https://arxiv.org/abs/math-ph/0109010",
+          "scope_read": "primary abstract"
+        }
+      ],
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "Illustrative FRW benchmark",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 385
+        },
+        {
+          "anchor": "Finite adiabatic order",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 399
+        }
+      ]
+    },
+    {
+      "id": "SHARED-ISOMETRIC-ADJOINT-QUALIFICATION",
+      "kind": "source_theorem_consumer_correction",
+      "paper_ids": [
+        "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+        "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba"
+      ],
+      "result_ids": [
+        "q79_maurer_cartan_repair",
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "result_hashes": {
+        "q79_maurer_cartan_repair": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "source_anchors": [
+        {
+          "path": "release/results/q79_maurer_cartan_repair/artifact.json",
+          "lines": [
+            268,
+            282
+          ],
+          "json_path": "isometric_intertwiner_sufficient_condition.chain_rows/consequences"
+        },
+        {
+          "path": "20 Mathematical Language Discovery Program - Closure Dynamics/Q79_COHESIVE_MAURER_CARTAN_REPAIR_AND_DERIVED_TRANSFORM_INTERTWINER_THEOREM_v1.md",
+          "lines": [
+            120,
+            123
+          ]
+        },
+        {
+          "path": "release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json",
+          "lines": [
+            215,
+            218
+          ],
+          "json_path": "theorem.hodge_corollary"
+        }
+      ],
+      "anchors_by_paper": {
+        "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8": [
+          "sec:repair-transport",
+          "sec:finite-transfer-consumer"
+        ],
+        "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d": [
+          "sec:consumer-transfer"
+        ],
+        "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba": [
+          "sec:endpoint-consumer"
+        ]
+      },
+      "assessment": "The older sufficient-condition wording lists chain, product and isometry rows then concludes adjoint/Hodge intertwining, without explicitly requiring an onto or reducing map. This is too broad for non-surjective isometric embeddings. In degrees 1->2 let d=[1], d'=[1,1], U1=(1,0)^T, U2=[1]. Both U maps are isometries and d'U1=U2d, but d'^*U2=(1,1)^T differs from U1d^*=(1,0)^T. Adjoining an orthogonal degree-zero unit and taking positive-degree products to be zero makes this a unital square-zero DGA example, so product preservation alone does not repair the inference. The packet's actual square orthogonal finite witness remains valid.",
+      "consumer_guidance": "Retain the exact orthogonal witness and conditional derived-deformation results. For general Hilbert transport require unitary onto maps, or identify the source with a closed reducing target subcomplex and preserve the differential/adjoint domains. The later CBF.T11 hodge_corollary already states this corrected condition. Non-isometric comparisons need quantified form/spectral estimates rather than equality.",
+      "bounded_check": "isometric_cochain_adjoint_counterexample",
+      "shared_erratum_required": true,
+      "parent_action": "Record source-bound shared erratum/consumer guidance; do not silently downgrade the whole packet or reopen established finite witnesses.",
+      "consumer_locations": [
+        {
+          "anchor": "sec:repair-transport",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 534
+        },
+        {
+          "anchor": "sec:finite-transfer-consumer",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 626
+        },
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        },
+        {
+          "anchor": "sec:endpoint-consumer",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 300
+        }
+      ]
+    },
+    {
+      "id": "RETAINED-T69-LOCAL-GLOBAL",
+      "kind": "existing_source_erratum_propagated",
+      "paper_ids": [
+        "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d"
+      ],
+      "result_ids": [
+        "q79_eta9_framed_member_spectral_rank_exclusion"
+      ],
+      "result_hashes": {
+        "q79_eta9_framed_member_spectral_rank_exclusion": "1649d0cae1c89a0ff32d87d65b288c3a5de761bff3fbe4feb754170f4441d2f8"
+      },
+      "anchors": [
+        "sec:physical-spectral"
+      ],
+      "assessment": "Retains the existing retraction of the fixed-fiber Picard-point implication for global spectral rank. T70--T73 prove local coefficient observability, not the global Picard/BHT derivative. No new global exclusion or restart is inferred.",
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "sec:physical-spectral",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 383
+        }
+      ]
+    },
+    {
+      "id": "PHYSICAL-AUXILIARY-SUPPORT",
+      "kind": "consumer_scope_clarification",
+      "paper_ids": [
+        "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d"
+      ],
+      "anchors": [
+        "sec:physical-spectral",
+        "sec:geometric-consumers"
+      ],
+      "assessment": "Keeps the physical 9H+3D0 spectral support distinct from the earlier H+3D0 ansatz and the exact auxiliary 3H+3D0 Fitting divisor. Generic finite-flat pushforward and local Fitting descent do not select the global physical line or trivialize its gerbe.",
+      "shared_erratum_required": false,
+      "consumer_locations": [
+        {
+          "anchor": "sec:physical-spectral",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 383
+        },
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        }
+      ]
+    },
+    {
+      "id": "CURRENT-AUTHORITY-CHRONOLOGY",
+      "kind": "consumer_status_reconciliation",
+      "paper_ids": [
+        "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+        "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+        "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba"
+      ],
+      "assessment": "Current A/B authorities and later full sources outrank old packet openings. Retain hidden projective/existential HYM, finite SM/shared-primitive/Yukawa/EW, canonical operational QM and free CAR. The selected common physical endpoint, strict values, global transport and interacting continuum remain separate. The long constants program, Gate 1 and mixed QG ledger are not discarded from early headers.",
+      "shared_erratum_required": false,
+      "consumer_locations": []
+    }
+  ],
+  "text_reviews": [
+    {
+      "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+      "reconciliation_ids": [],
+      "state": "no_additional_kernel_consumer_required",
+      "anchors": [
+        "sec:repair-action",
+        "sec:string-cotangent"
+      ],
+      "assessment": "No applicable coherence_reconciliation or new_result_placement in the inspected ledger. Four original owner assignments are integrated. The physical signed-action boundary is explicit.",
+      "main_tex_lf_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+      "anchor_locations": [
+        {
+          "anchor": "sec:repair-action",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 207
+        },
+        {
+          "anchor": "sec:string-cotangent",
+          "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+          "line": 310
+        }
+      ]
+    },
+    {
+      "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+      "reconciliation_ids": [
+        "C.QFT.01"
+      ],
+      "state": "already_satisfied_boundary_with_result_import",
+      "anchors": [
+        "sec:quantum-boundary",
+        "sec:finite-transfer-consumer"
+      ],
+      "assessment": "The free/formal versus fixed-coupling boundary was already present. Added contextual finite-transfer and endpoint imports satisfy the two actual consumer requirements. No unrelated result details were added to satisfy a title pattern.",
+      "main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+      "anchor_locations": [
+        {
+          "anchor": "sec:quantum-boundary",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 173
+        },
+        {
+          "anchor": "sec:finite-transfer-consumer",
+          "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+          "line": 626
+        }
+      ]
+    },
+    {
+      "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+      "reconciliation_ids": [
+        "C.QFT.01",
+        "C.QG.01"
+      ],
+      "state": "already_satisfied_boundary_with_result_import",
+      "anchors": [
+        "sec:consumer-transfer",
+        "sec:geometric-consumers",
+        "sec:physical-spectral",
+        "thm:inheritance"
+      ],
+      "assessment": "The existing QFT and UV boundaries were correct. Seven unique reconciliation-source IDs plus the local-tube/B89 title candidates now have contextual consumer explanations. Finite/existential results are retained without promoting physical endpoints.",
+      "main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "anchor_locations": [
+        {
+          "anchor": "sec:consumer-transfer",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 278
+        },
+        {
+          "anchor": "sec:geometric-consumers",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 509
+        },
+        {
+          "anchor": "sec:physical-spectral",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 383
+        },
+        {
+          "anchor": "thm:inheritance",
+          "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+          "line": 559
+        }
+      ]
+    },
+    {
+      "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+      "reconciliation_ids": [
+        "C.SM.01"
+      ],
+      "state": "already_satisfied",
+      "anchors": [
+        "thm:current-ledger",
+        "sec:effective-ledger"
+      ],
+      "assessment": "Existing profile versus strict-source distinction was already satisfied. The new execution/effective/adopted distinctions improve chronology but do not reopen profile closure. No consumer result IDs or title candidates are assigned.",
+      "main_tex_lf_sha256": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768",
+      "anchor_locations": [
+        {
+          "anchor": "thm:current-ledger",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 451
+        },
+        {
+          "anchor": "sec:effective-ledger",
+          "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+          "line": 410
+        }
+      ]
+    },
+    {
+      "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+      "reconciliation_ids": [
+        "C.QFT.01"
+      ],
+      "state": "already_satisfied_boundary_with_result_import",
+      "anchors": [
+        "sec:physical-family-consumer",
+        "prop:naturality"
+      ],
+      "assessment": "The free versus interacting boundary was already correct; the actual physical-family source dependency is now explained. Naturality is retained as its own local theorem and not replaced by the source citation.",
+      "main_tex_lf_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+      "anchor_locations": [
+        {
+          "anchor": "sec:physical-family-consumer",
+          "path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex",
+          "line": 430
+        },
+        {
+          "anchor": "prop:naturality",
+          "path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex",
+          "line": 318
+        }
+      ]
+    },
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+      "reconciliation_ids": [
+        "C.QFT.01"
+      ],
+      "state": "already_satisfied_boundary_with_result_import_and_text_correction",
+      "anchors": [
+        "sec:physical-family",
+        "sec:endpoint-consumer",
+        "Illustrative FRW benchmark"
+      ],
+      "assessment": "The free/formal versus interacting boundary was already present. Family and endpoint imports add the requested source content. The finite-adiabatic/Hadamard overstatement was a genuine text defect, corrected separately and with primary references.",
+      "main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+      "anchor_locations": [
+        {
+          "anchor": "sec:physical-family",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 273
+        },
+        {
+          "anchor": "sec:endpoint-consumer",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 300
+        },
+        {
+          "anchor": "Illustrative FRW benchmark",
+          "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+          "line": 385
+        }
+      ]
+    }
+  ],
+  "historical_candidate_policy": {
+    "excluded_from_new_consumer_reviews": [
+      "R.QM.CANONICAL_OUTPUT_DESCENT",
+      "R.QG.BRANCH_AND_COFRAME",
+      "R.GEO.COHESIVE_SUPERCONNECTION",
+      "R.ACTION.COHESIVE_MC_REPAIR"
+    ],
+    "reason": "Parent identified already-integrated groups spuriously resurfacing in title suggestions. Per the latest user instruction these receive no duplicate consumer review solely from title matching. Useful source-context prose and the separately reported MC adjoint qualification are retained.",
+    "parent_policy_action": "Candidate selection should honor missing_result_placements or explicit consumer_review_required, not every title regex hit.",
+    "candidate_disposition": "After these historical exclusions every remaining candidate in the six-paper scope is contextually applicable and integrated; no unrelated numerical insertion or new not_applicable review was necessary."
+  },
+  "kernel_result_sources": {
+    "R.QFT.PHYSICAL_FAMILY_DEPENDENCY": "q79_family_source_cutset",
+    "R.CBF.FINITE_TRANSFER_HIERARCHY": "causal_base_q79_all_arity_source_promotion_packet",
+    "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": "causal_base_q79_seven_row_endpoint_factorization_packet",
+    "R.ETA9.ORIGINAL_JACOBIAN_GATE1": "eta9_gate1_campaign",
+    "R.ETA9.THREE_CYCLE_NONDETECTION": "eta9_three_cycle_b96_nondetection",
+    "R.GEO.BK3_RANK_ZERO_KERNEL": "q79_bk3_rank_zero_kernel",
+    "R.GEO.GLOBAL_FITTING_DESCENT": "q79_global_fitting_descent",
+    "R.ETA9.LOCAL_SOURCE_TUBE": "q79_eta9_local_source_tube_consolidation",
+    "R.ETA9.B89_REJECTION": "q79_eta9_b89_same_source_rejection"
+  },
+  "source_read_coverage": {
+    "standard": "Complete source reading is distinct from independent verification. Frozen artifacts and named proof explanations were read in full. Boolean success fields and links do not establish independent proof replay.",
+    "frozen_artifacts": [
+      {
+        "result_id": "preprojection_curved_cyclic_repair_germ",
+        "integration_owner": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+        "source_theorem_owner": "PREP.R1-T1",
+        "tier": "DEFINITION_AND_LOCAL_THEOREM_WITH_EXACT_FINITE_WITNESS",
+        "sha256": "b3a3c82a427a164d6392b60bea1f1edd220ccf2ca34e5d37c49b8327d80bd997",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_curved_cyclic_repair_germ/artifact.json",
+        "description": "Curved repair germs split cleanly into zero, central nonzero and noncentral curvature regimes.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/preprojection_curved_cyclic_repair_germ/artifact.json",
+        "bytes": 2415,
+        "line_count": 132,
+        "read_line_ranges": [
+          [
+            1,
+            132
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "preprojection_h4_cyclic_mc_action_descent",
+        "integration_owner": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+        "source_theorem_owner": "PREP.H4-T10",
+        "tier": "FINITE_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_OVERLAP_DESCENT_THEOREM_WITH_EXACT_WITNESS",
+        "sha256": "f2be34f379b0940c6e056f7f78b722fd4118d76fabfa7c54c0429654cfe977f7",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_cyclic_mc_action_descent/artifact.json",
+        "description": "A degree-three cyclic dg algebra canonically transgresses its Maurer-Cartan residual F(a)=d a+a^2 to the signed action S(a)=1/2<a,da>+1/3<a,a^2>. Its variation is <delta a,F(a)>, it is infinitesimally gauge invariant, and it descends through projective module overlaps because the scalar twist cancels under endomorphism conjugation and the cyclic trace is invariant. At an exact zero, its signed Hessian is the cyclic anchor composed with D F, whereas the positive repair Hessian is the normal square (D F)^dagger D F; these are not the same operator.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/preprojection_h4_cyclic_mc_action_descent/artifact.json",
+        "bytes": 16464,
+        "line_count": 835,
+        "read_line_ranges": [
+          [
+            1,
+            835
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "preprojection_h4_q79_string_cyclic_cotangent",
+        "integration_owner": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+        "source_theorem_owner": "PREP.H4-T14",
+        "tier": "EXACT_SHARED_LINE_ADJOINT_NEUTRALITY_LOCAL_CYCLIC_PAIRING_OBSTRUCTION_AND_UNIVERSAL_SHIFTED_COTANGENT_COMPLETION",
+        "sha256": "84aaa6a28a2ecb2d239d6e3c2cfe363104c1b44ceb79f1ac919634edc8a4f8e3",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_string_cyclic_cotangent/artifact.json",
+        "description": "The central shared line extends to the q79 string DGLA but acts trivially on its adjoint and ordinary-form lanes. Under the H4-T10 local wedge/trace grammar, the form/anomaly lane is in the radical, so the raw string DGLA has no nondegenerate full cyclic pairing of that type. Its shifted-cotangent semidirect completion has a canonical nondegenerate cyclic pairing and action whose dual variation is exactly the full string Maurer-Cartan residual.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/preprojection_h4_q79_string_cyclic_cotangent/artifact.json",
+        "bytes": 7288,
+        "line_count": 235,
+        "read_line_ranges": [
+          [
+            1,
+            235
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "preprojection_h4_variational_anchor_multiplier_lift",
+        "integration_owner": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+        "source_theorem_owner": "PREP.H4-T9",
+        "tier": "FINITE_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_WITH_EXACT_WITNESSES",
+        "sha256": "de69f05c11f0e21e128a33924bd48090aac35194238b9ec05a3f62f56f304d31",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_variational_anchor_multiplier_lift/artifact.json",
+        "description": "A residual admits a direct scalar action for a declared variational anchor exactly when its anchored one-form satisfies the Helmholtz closure condition. Every residual nevertheless has a multiplier action whose exact-zero Hessian is the first-order block operator [[0,J*],[J,0]] and whose square contains the positive repair Hessian J*J. The repair square does not determine the signed action Hessian, physical response, or action vertices.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/preprojection_h4_variational_anchor_multiplier_lift/artifact.json",
+        "bytes": 8580,
+        "line_count": 349,
+        "read_line_ranges": [
+          [
+            1,
+            349
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "preprojection_repair_jet_graph_functor",
+        "integration_owner": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+        "source_theorem_owner": "PREP.H4-T8",
+        "tier": "FINITE_REPAIR_JET_TO_PERTURBATIVE_GRAPH_FUNCTOR_THEOREM_WITH_EXACT_WITNESS",
+        "sha256": "1c64f479eb8916c4a0de6ad50a868121d1be563665d2c4a4c1acedea3946a15f",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_repair_jet_graph_functor/artifact.json",
+        "description": "One residual-and-metric jet derives the repair Hessian, all Taylor vertices, Euclidean reduced propagator and every finite formal Wick coefficient; physical action and quantization remain open.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/preprojection_repair_jet_graph_functor/artifact.json",
+        "bytes": 5424,
+        "line_count": 164,
+        "read_line_ranges": [
+          [
+            1,
+            164
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "qg_current_status",
+        "integration_owner": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "source_theorem_owner": "QG",
+        "tier": "MIXED_AUDITED",
+        "sha256": "4b009744eda7d5a01db14236598503128a799110f30635daeec354bfefa68217",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/qg_current_status/artifact.json",
+        "description": "Current low-energy GR/QG, worldsheet and UV-completion status ledger.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/qg_current_status/artifact.json",
+        "bytes": 29376,
+        "line_count": 308,
+        "read_line_ranges": [
+          [
+            1,
+            308
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_visible_spectral_cutset",
+        "integration_owner": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "source_theorem_owner": "QG",
+        "tier": "OPEN_PHYSICAL_ENDPOINT",
+        "sha256": "e7b870265b49f64672d0bb2f25d4153d8ecc755d6ca74d99372e9229a2d065af",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_visible_spectral_cutset/artifact.json",
+        "description": "Visible physical spectral-support and inverse-BHT norm cutset.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_visible_spectral_cutset/artifact.json",
+        "bytes": 11093,
+        "line_count": 203,
+        "read_line_ranges": [
+          [
+            1,
+            203
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_bott_chern_reduction",
+        "integration_owner": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "source_theorem_owner": "QG",
+        "tier": "DERIVED_EXACT_REDUCTION",
+        "sha256": "e25f735b928f654a80f123bfbdf1dba92eb3722274bdb1be3e0896a6052e9691",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bott_chern_reduction/artifact.json",
+        "description": "Invariant Bott-Chern injectivity and source-reduction packet.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_bott_chern_reduction/artifact.json",
+        "bytes": 4543,
+        "line_count": 86,
+        "read_line_ranges": [
+          [
+            1,
+            86
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_minimal_fermi_completion",
+        "integration_owner": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "source_theorem_owner": "QG",
+        "tier": "OPEN_PHYSICAL_ENDPOINT",
+        "sha256": "7e3f8a011c2c84f189710a3a93464997bf24b78f414e4d238cac3f570c4b2690",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_minimal_fermi_completion/artifact.json",
+        "description": "Physical current-source separation and minimal Fermi-completion cutset.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_minimal_fermi_completion/artifact.json",
+        "bytes": 8737,
+        "line_count": 157,
+        "read_line_ranges": [
+          [
+            1,
+            157
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_poincare_heisenberg_intertwiner",
+        "integration_owner": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "source_theorem_owner": "QG",
+        "tier": "DERIVED_EXACT_STRUCTURAL",
+        "sha256": "6bf4048eb7b3d610d30053daae0abb6eb416fdac5eff024aa65ea642358e13bb",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_poincare_heisenberg_intertwiner/artifact.json",
+        "description": "Poincare categorical Heisenberg intertwiner at structural tier.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_poincare_heisenberg_intertwiner/artifact.json",
+        "bytes": 5491,
+        "line_count": 99,
+        "read_line_ranges": [
+          [
+            1,
+            99
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_mirror_zero_zero_final_classification",
+        "integration_owner": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "source_theorem_owner": "Q79.QG.MIRROR.00",
+        "tier": "EXACT_PARTIAL_CLASSIFICATION_58_OF_70_UNIT_12_OPEN",
+        "sha256": "401d9794d57d46db845637c50bc8bb9ca7dffb6defa517ffcdfc367015d32156",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_mirror_zero_zero_final_classification/artifact.json",
+        "description": "Exact classification of 58 of 70 D10/D6 mirror-zero-zero strata as unit ideals; 12 strata and both parent charts remain open.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_mirror_zero_zero_final_classification/artifact.json",
+        "bytes": 26765,
+        "line_count": 719,
+        "read_line_ranges": [
+          [
+            1,
+            719
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "nonsm_constants_program",
+        "integration_owner": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+        "source_theorem_owner": null,
+        "tier": "STRICT_UPGRADE_EVIDENCE",
+        "sha256": "3c9e7cda981ec9b10445a929e32d3cd8fa3ca529ec1abc6b3e850131d9837971",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/nonsm_constants_program/artifact.md",
+        "description": "Non-SM constants and no-knob source-search chronology.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/nonsm_constants_program/artifact.md",
+        "bytes": 80124,
+        "line_count": 1396,
+        "read_line_ranges": [
+          [
+            1,
+            1396
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "individual_constants_program",
+        "integration_owner": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+        "source_theorem_owner": null,
+        "tier": "STRICT_UPGRADE_EVIDENCE",
+        "sha256": "e57e10360ec9c864098a04c7e6dd2a1c2b696b41ac2ecb2a80563f00f5468b01",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/individual_constants_program/artifact.md",
+        "description": "Individual-constant source-search policy and evidence.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "assigned_owner_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/individual_constants_program/artifact.md",
+        "bytes": 887,
+        "line_count": 23,
+        "read_line_ranges": [
+          [
+            1,
+            23
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "sm_minimal_parameter_ledger",
+        "integration_owner": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+        "source_theorem_owner": "A90",
+        "tier": "AUDITED_PROFILE_PARAMETER_LEDGER",
+        "sha256": "b75c2545c3472d0745519137090e47b01a0b8cca95fa24cef0bae9197be0c80f",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_minimal_parameter_ledger/artifact.md",
+        "description": "Current effective 13-coordinate non-neutrino and 19-coordinate minimal-neutral profile ledger.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/sm_minimal_parameter_ledger/artifact.md",
+        "bytes": 2316,
+        "line_count": 55,
+        "read_line_ranges": [
+          [
+            1,
+            55
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "sm_neutral_u5_tier_decision",
+        "integration_owner": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+        "source_theorem_owner": "A94",
+        "tier": "PROFILE_CLOSURE_ADOPTED_TIER_OPEN_STRICT",
+        "sha256": "8e9ebe682f13d8ec1bb16b728661a6cfcff9c8a6c53b11e4a727fd6b9a2d40a1",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_neutral_u5_tier_decision/artifact.md",
+        "description": "One-holonomy plus one-scale neutral profile closure, Dirac-only branch and normal-ordering chamber.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/sm_neutral_u5_tier_decision/artifact.md",
+        "bytes": 2404,
+        "line_count": 58,
+        "read_line_ranges": [
+          [
+            1,
+            58
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "sm_branch_u9_conditional_measure",
+        "integration_owner": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+        "source_theorem_owner": "A95",
+        "tier": "DERIVED_EXACT_CONDITIONAL_MEASURE_OPEN_GLOBAL_UNIQUENESS",
+        "sha256": "7b9a420629f047d44605d6f8e47a49602c11be91e23bb55471d15a193a4e4c4c",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/sm_branch_u9_conditional_measure/artifact.md",
+        "description": "Antiunitary two-branch invariant measure and retarded conditional q79 selection at the adopted tier.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/sm_branch_u9_conditional_measure/artifact.md",
+        "bytes": 2053,
+        "line_count": 49,
+        "read_line_ranges": [
+          [
+            1,
+            49
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "unified_source_hidden_projective_hym",
+        "integration_owner": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+        "source_theorem_owner": "UST.G3V",
+        "tier": "DERIVED_EXACT_EXISTENTIAL_HIDDEN_PROJECTIVE_HYM",
+        "sha256": "aaa577c0d6b90643069f0547a76bf71aa476c4d968bea050eaf2ac7e6354f25a",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hidden_projective_hym/artifact.json",
+        "description": "A finite threshold theorem proves existence of a qutrit-equivariant hidden projective HYM connection; explicit chamber and visible endpoint remain open.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_hidden_projective_hym/artifact.json",
+        "bytes": 3260,
+        "line_count": 82,
+        "read_line_ranges": [
+          [
+            1,
+            82
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "unified_source_bott_chern_injectivity",
+        "integration_owner": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+        "source_theorem_owner": "UST.G3X",
+        "tier": "DERIVED_EXACT_BOTT_CHERN_INJECTIVITY",
+        "sha256": "5c8f76f252bca66c208d6dec0f3446b75b3eb316d2fd163e16a4ef02bc816ace",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_bott_chern_injectivity/artifact.json",
+        "description": "Vertical Fourier homotopy proves full real Bott-Chern (2,2) to de Rham injectivity on the q79 target.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_bott_chern_injectivity/artifact.json",
+        "bytes": 3336,
+        "line_count": 72,
+        "read_line_ranges": [
+          [
+            1,
+            72
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_family_source_cutset",
+        "integration_owner": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "source_theorem_owner": "QFT",
+        "tier": "OPEN_PHYSICAL_SOURCE",
+        "sha256": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_family_source_cutset/artifact.json",
+        "description": "Physical family-source dependency and analytic-completion cutset.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_family_source_cutset/artifact.json",
+        "bytes": 35300,
+        "line_count": 1166,
+        "read_line_ranges": [
+          [
+            1,
+            1166
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "causal_base_q79_all_arity_source_promotion_packet",
+        "integration_owner": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "source_theorem_owner": "CBF.T11",
+        "tier": "EXACT_GENERAL + SELECTED_EXACT_FINITE; CONDITIONAL_CONTINUUM",
+        "sha256": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json",
+        "description": "Exact all-arity functoriality of homotopy transfer and faithful order-36 covariance on the selected 48-dimensional finite target; continuum HYM, rank-102 and physical-action promotion remain open.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json",
+        "bytes": 9861,
+        "line_count": 229,
+        "read_line_ranges": [
+          [
+            1,
+            229
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "causal_base_q79_seven_row_endpoint_factorization_packet",
+        "integration_owner": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "source_theorem_owner": "CBF.T12",
+        "tier": "EXACT_GENERAL + EXACT_DEPENDENCY_WITNESSES; PHYSICAL_Q79_OPEN",
+        "sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json",
+        "description": "The seven physical endpoint rows factor exactly through three same-source packet types (GAS, SYN and BV4), with no fourth source packet required; none of the three physical packets is yet accepted.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json",
+        "bytes": 14943,
+        "line_count": 665,
+        "read_line_ranges": [
+          [
+            1,
+            665
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "eta9_gate1_campaign",
+        "integration_owner": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "source_theorem_owner": "ETA9",
+        "tier": "DERIVED_EXACT_PARTIAL",
+        "sha256": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json",
+        "description": "All 30 original-Jacobian groups and 225 selected support columns complete.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/eta9_gate1_campaign/artifact.json",
+        "bytes": 31373,
+        "line_count": 933,
+        "read_line_ranges": [
+          [
+            1,
+            933
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "eta9_three_cycle_b96_nondetection",
+        "integration_owner": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "source_theorem_owner": "MTTQ79Eta9ThreeCycleB96Decision.v1",
+        "tier": "CLOSED_COMPUTER_ASSISTED_EXACT_LINEAR_ALGEBRA",
+        "sha256": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json",
+        "description": "The selected cycles have Gram matrix -2 I3, determinant -8 and rank three; B96 therefore proves this three-cycle subsystem is independent but non-detecting for the global affine class.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/eta9_three_cycle_b96_nondetection/artifact.json",
+        "bytes": 2929,
+        "line_count": 67,
+        "read_line_ranges": [
+          [
+            1,
+            67
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_bk3_rank_zero_kernel",
+        "integration_owner": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "source_theorem_owner": "MATH",
+        "tier": "DERIVED_EXACT",
+        "sha256": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json",
+        "description": "Rank-zero large-gauge kernel with injective dense nonclosed two-real-parameter image.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_bk3_rank_zero_kernel/artifact.json",
+        "bytes": 15939,
+        "line_count": 600,
+        "read_line_ranges": [
+          [
+            1,
+            600
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_global_fitting_descent",
+        "integration_owner": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "source_theorem_owner": "MATH",
+        "tier": "DERIVED_EXACT_STRUCTURAL",
+        "sha256": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_global_fitting_descent/artifact.json",
+        "description": "Global Fitting-sheaf descent and spectral-divisor class match.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_global_fitting_descent/artifact.json",
+        "bytes": 12664,
+        "line_count": 259,
+        "read_line_ranges": [
+          [
+            1,
+            259
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_eta9_framed_member_spectral_rank_exclusion",
+        "integration_owner": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "source_theorem_owner": "CBF.T69",
+        "tier": "CORRECTED_RETRACTION",
+        "sha256": "1649d0cae1c89a0ff32d87d65b288c3a5de761bff3fbe4feb754170f4441d2f8",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_framed_member_spectral_rank_exclusion/artifact.json",
+        "description": "Retracts the attempted global spectral-rank exclusion through 1449: fixed-fiber non-torsion does not determine the global BHT handle sweep. The input fiber computation survives; ranks 1 and 2 remain undecided globally.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_eta9_framed_member_spectral_rank_exclusion/artifact.json",
+        "bytes": 5521,
+        "line_count": 112,
+        "read_line_ranges": [
+          [
+            1,
+            112
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_cohesive_superconnection",
+        "integration_owner": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "source_theorem_owner": "MATH",
+        "tier": "DERIVED_EXACT_STRUCTURAL",
+        "sha256": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cohesive_superconnection/artifact.json",
+        "description": "Twisted cohesive superconnection, untwisted endomorphism dg algebra and stratified Hodge package.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_cohesive_superconnection/artifact.json",
+        "bytes": 18455,
+        "line_count": 768,
+        "read_line_ranges": [
+          [
+            1,
+            768
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_maurer_cartan_repair",
+        "integration_owner": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "source_theorem_owner": "MATH",
+        "tier": "DERIVED_EXACT_STRUCTURAL_CONDITIONAL_TRANSFER",
+        "sha256": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_maurer_cartan_repair/artifact.json",
+        "description": "Maurer-Cartan repair residual, Hodge tangent and conditional derived-transform intertwiner.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_maurer_cartan_repair/artifact.json",
+        "bytes": 14558,
+        "line_count": 369,
+        "read_line_ranges": [
+          [
+            1,
+            369
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_eta9_local_source_tube_consolidation",
+        "integration_owner": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "source_theorem_owner": "MTTQ79Eta9LocalSourceTubeConsolidation.v1",
+        "tier": "NUMERIC_CERTIFIED_LOCAL_SOURCE_CHART + SUPPORT_ONLY_CONSOLIDATION",
+        "sha256": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_local_source_tube_consolidation/artifact.json",
+        "description": "A hash-bound consolidation proves a positive-width source-certified local 164x164 Gauss-Manin chart on 0 <= u <= 2^-96 and records its exact nonpromotion boundary; useful-width transport, the global frame/path, beta_C and physical values remain open.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_eta9_local_source_tube_consolidation/artifact.json",
+        "bytes": 6267,
+        "line_count": 155,
+        "read_line_ranges": [
+          [
+            1,
+            155
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      },
+      {
+        "result_id": "q79_eta9_b89_same_source_rejection",
+        "integration_owner": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "source_theorem_owner": "Q79B89SameSourceAffineDeligneObstructionAndBranchDecisionTheorem.v1",
+        "tier": "CLOSED_COMPUTER_ASSISTED_EXACT_CANDIDATE_REJECTION",
+        "sha256": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda",
+        "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_b89_same_source_rejection/artifact.json",
+        "description": "Complete exact branch and boundary coverage (2195/2195 each), independent replay of all 463 hard mixed targets and 28,295,568 mixed-pair comparisons certify the 288-strand same-source isotopy. The affine Deligne detector has rank(M)=164, rank(M-I)=42, w(M-I)=0 and w n=1, hence beta_C(B89) is nonzero and B89 is rejected from the beta-zero locus. This decides one candidate only; it does not select the eta9 physical endpoint.",
+        "full_text_read": true,
+        "coverage": "all lines",
+        "role": "contextual_refinement_or_consumer_source",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_eta9_b89_same_source_rejection/artifact.json",
+        "bytes": 1784,
+        "line_count": 25,
+        "read_line_ranges": [
+          [
+            1,
+            25
+          ]
+        ],
+        "source_hash_matches_frozen_bytes": true
+      }
+    ],
+    "proof_explanations": [
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-preprojection-repair-calculus/theorems/CURVED_CYCLIC_REPAIR_GERM_AND_CURVATURE_TRICHOTOMY_v1.md",
+        "source_root_relative_path": "mtt-preprojection-repair-calculus/theorems/CURVED_CYCLIC_REPAIR_GERM_AND_CURVATURE_TRICHOTOMY_v1.md",
+        "result_ids": [
+          "preprojection_curved_cyclic_repair_germ"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "aae9e978b730bb9d9e3ade9e8e2c28b0b77d763c31ffc4b1002400f960a0130a",
+        "bytes": 5764,
+        "line_count": 241,
+        "read_line_ranges": [
+          [
+            1,
+            241
+          ]
+        ]
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-preprojection-repair-calculus/theorems/PREPROJECTION_REPAIR_JET_TO_PERTURBATIVE_GRAPH_FUNCTOR_THEOREM_v1.md",
+        "source_root_relative_path": "mtt-preprojection-repair-calculus/theorems/PREPROJECTION_REPAIR_JET_TO_PERTURBATIVE_GRAPH_FUNCTOR_THEOREM_v1.md",
+        "result_ids": [
+          "preprojection_repair_jet_graph_functor"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "dd4acbb95e63cdd5c5203352f9ab2593628d98d3c6fa3ce9c4da2290f84995c9",
+        "bytes": 9976,
+        "line_count": 368,
+        "read_line_ranges": [
+          [
+            1,
+            368
+          ]
+        ]
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+        "source_root_relative_path": "mtt-preprojection-repair-calculus/theorems/PREPROJECTION_VARIATIONAL_ANCHOR_MULTIPLIER_LIFT_AND_NORMAL_SQUARE_THEOREM_v1.md",
+        "result_ids": [
+          "preprojection_h4_variational_anchor_multiplier_lift"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "f0c878c01e5f3d34ac81ee7d245990d91802bb904fc5f2b80b2f9641e4f10516",
+        "bytes": 11267,
+        "line_count": 377,
+        "read_line_ranges": [
+          [
+            1,
+            377
+          ]
+        ]
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+        "source_root_relative_path": "mtt-preprojection-repair-calculus/theorems/PREPROJECTION_CYCLIC_MAURER_CARTAN_ACTION_AND_TWISTED_DESCENT_THEOREM_v1.md",
+        "result_ids": [
+          "preprojection_h4_cyclic_mc_action_descent"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "ec2ee508c7d81f578c2fe5c64af87b910750f39ecedca6ecd6d0f9f287564f43",
+        "bytes": 13230,
+        "line_count": 429,
+        "read_line_ranges": [
+          [
+            1,
+            429
+          ]
+        ]
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-preprojection-repair-calculus/theorems/PREPROJECTION_Q79_SHARED_LINE_NEUTRALITY_AND_CYCLIC_COTANGENT_COMPLETION_THEOREM_v1.md",
+        "source_root_relative_path": "mtt-preprojection-repair-calculus/theorems/PREPROJECTION_Q79_SHARED_LINE_NEUTRALITY_AND_CYCLIC_COTANGENT_COMPLETION_THEOREM_v1.md",
+        "result_ids": [
+          "preprojection_h4_q79_string_cyclic_cotangent"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "5e0f0d7d16bf70a45882f3a39354a95891b16394e4843973edc4bef405d223a2",
+        "bytes": 14019,
+        "line_count": 413,
+        "read_line_ranges": [
+          [
+            1,
+            413
+          ]
+        ]
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-qm-source-proof/proof_corpus/q79_PhysicalFamily_SourceDependency_AnalyticCompletion_and_FiniteProjection_Nonpromotion_Theorem_v1.md",
+        "source_root_relative_path": "mtt-qm-source-proof/proof_corpus/q79_PhysicalFamily_SourceDependency_AnalyticCompletion_and_FiniteProjection_Nonpromotion_Theorem_v1.md",
+        "result_ids": [
+          "q79_family_source_cutset"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "16bb2d2f0afe1fd56089856e74c0d54be6436eaeff0ef27007e7d20b989e35b2",
+        "bytes": 8328,
+        "line_count": 274,
+        "read_line_ranges": [
+          [
+            1,
+            274
+          ]
+        ]
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-causal-base-constraint-fiber/AllArityContractionMorphismSourcePromotionTheorem_v1.md",
+        "source_root_relative_path": "mtt-causal-base-constraint-fiber/AllArityContractionMorphismSourcePromotionTheorem_v1.md",
+        "result_ids": [
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "8add68855ce9d0cc7ff93c666f2c00afae3bda4391eddfc08de4d2ebc08118a9",
+        "bytes": 9656,
+        "line_count": 289,
+        "read_line_ranges": [
+          [
+            1,
+            289
+          ]
+        ]
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-causal-base-constraint-fiber/SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md",
+        "source_root_relative_path": "mtt-causal-base-constraint-fiber/SevenRowEndpointFactorizationAndMinimalSourceTheorem_v1.md",
+        "result_ids": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "2e9a860a759877a4df06c3885c246ed4cc2679c5069e7d95d5d44b4f0bf213ae",
+        "bytes": 15116,
+        "line_count": 435,
+        "read_line_ranges": [
+          [
+            1,
+            435
+          ]
+        ]
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/20 Mathematical Language Discovery Program - Closure Dynamics/Q79_COHESIVE_MAURER_CARTAN_REPAIR_AND_DERIVED_TRANSFORM_INTERTWINER_THEOREM_v1.md",
+        "source_root_relative_path": "20 Mathematical Language Discovery Program - Closure Dynamics/Q79_COHESIVE_MAURER_CARTAN_REPAIR_AND_DERIVED_TRANSFORM_INTERTWINER_THEOREM_v1.md",
+        "result_ids": [
+          "q79_maurer_cartan_repair"
+        ],
+        "full_text_read": true,
+        "scope": "Complete proof explanation read; linked payloads were not automatically treated as read or independently replayed.",
+        "sha256": "55db305c7139bc181011bf1bba3667ed4c238a10bd1d99ae0240609d293bfa15",
+        "bytes": 6868,
+        "line_count": 189,
+        "read_line_ranges": [
+          [
+            1,
+            189
+          ]
+        ]
+      }
+    ],
+    "manuscripts": [
+      {
+        "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+        "pre_edit_current_manuscript_full_text_read": true,
+        "current_revision_context_rechecked": true,
+        "current_main_tex_lf_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+        "current_line_count": 679,
+        "baseline_main_tex_sha256": "691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d"
+      },
+      {
+        "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+        "pre_edit_current_manuscript_full_text_read": true,
+        "current_revision_context_rechecked": true,
+        "current_main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+        "current_line_count": 886,
+        "baseline_main_tex_sha256": "3e02bffabd34d5a711ba23c10a8d5a63d77d409de28fc75b62f5bc29cf88a2a6"
+      },
+      {
+        "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "pre_edit_current_manuscript_full_text_read": true,
+        "current_revision_context_rechecked": true,
+        "current_main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+        "current_line_count": 744,
+        "baseline_main_tex_sha256": "b5306c19857e56517685d64be04d196570780d6f315cf8987b54aeb3c68afe19"
+      },
+      {
+        "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+        "pre_edit_current_manuscript_full_text_read": true,
+        "current_revision_context_rechecked": true,
+        "current_main_tex_lf_sha256": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768",
+        "current_line_count": 893,
+        "baseline_main_tex_sha256": "f7fb7e7c3f6e7355614a06c8717e4d3cc9e554c20c5401cdbe192b8ccdb77d2e"
+      },
+      {
+        "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+        "pre_edit_current_manuscript_full_text_read": true,
+        "current_revision_context_rechecked": true,
+        "current_main_tex_lf_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+        "current_line_count": 610,
+        "baseline_main_tex_sha256": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc"
+      },
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+        "pre_edit_current_manuscript_full_text_read": true,
+        "current_revision_context_rechecked": true,
+        "current_main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+        "current_line_count": 599,
+        "baseline_main_tex_sha256": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2"
+      }
+    ],
+    "context_only_owner_reading": [
+      {
+        "paper": "Cohesive",
+        "scope": "Relevant all-arity source-map, frontier, Fitting, Hodge and MC sections only; parent owns full atlas reading and v15 integration."
+      },
+      {
+        "paper": "QM",
+        "scope": "Physical-family source-cutset section and adjoining free-interface context only."
+      }
+    ],
+    "not_claimed": [
+      "Reading every raw artifact linked from a frozen packet",
+      "Independent Groebner or Macaulay replay",
+      "New HYM, spectral, global transport or worldsheet calculation",
+      "Independent verification from all_checks boolean fields"
+    ]
+  },
+  "remaining_genuine_research": [
+    "Physical signed action and metric/trace/real-slice identification, then same-source Lorentzian/BV compactification.",
+    "Selected common visible-hidden physical HYM endpoint and explicit common chamber/connections; hidden projective/existential HYM remains established.",
+    "Global Picard/BHT derivative, marked integral meridian and beta_C; local T70--T73/tube and finite Gate 1/B96/B89 conclusions remain established.",
+    "Interacting E/J, right-moving spin/GSO, IR worldsheet, q79 BV vertices, all-genus and nonperturbative completion.",
+    "Transverse fermion-measure current, crossing/disconnected-sector gluing and cutoff-uniform fixed-coupling interacting QFT.",
+    "Strict no-knob physical constants, absolute normalization and genuinely held-out value/uncertainty packets; established finite/profile SM is retained."
+  ],
+  "author_approval_questions": [],
+  "parent_integration_actions": [
+    "Import 13 owner reviews and 14 source-bound consumer placements into parent-owned catalogs and Kernel only after parent validation.",
+    "Carry SHARED-ISOMETRIC-ADJOINT-QUALIFICATION into shared source-bound errata/consumer policy; keep the valid square orthogonal witness.",
+    "Refresh global catalogs, Kernel, and release snapshots under parent ownership. These local revisions are not published releases."
+  ],
+  "remaining_editorial_items": [],
+  "scope_blocked": false,
+  "no_commits_push_publication_automation_or_scientific_reruns": true,
+  "kernel_queue_snapshot": {
+    "path": "C:/Users/nero_/Downloads/BrainOfEnterprise-MTT-Research-Environment/data/paper-completion-ledger.json",
+    "sha256": "c4f5a282f3c4351cbcfa52c0dfb7626102e0460a5135225a215e7401e3f03afb",
+    "snapshot_at": "2026-09-11T22:45:00+02:00",
+    "papers": [
+      {
+        "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+        "new_result_placements": [
+          "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+        ],
+        "review_required_after_historical_exclusions": [
+          "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+        ],
+        "applicable_reconciliations": [
+          {
+            "applicability_basis": "the paper owns or directly consumes the free/formal-to-interacting QFT boundary",
+            "applicable": true,
+            "evidence": [
+              {
+                "excerpt": "\\item[Remaining boundary] The selected free CAR sector is now available, but the chart-to-region natural equivalence, interacting physical C-star completion, selected interacting state, and nonperturbative continuum limit remain independent obligations.",
+                "group": "the achieved QFT object is explicitly free, formal or perturbative",
+                "line_start": 52,
+                "source_ref": "mtt-papers/papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex"
+              },
+              {
+                "excerpt": "The chart-to-region natural equivalence and the nonperturbative interacting C-star completion remain open. \\end{abstract}",
+                "group": "interacting fixed-coupling nonperturbative QFT remains a separate exit",
+                "line_start": 32,
+                "source_ref": "mtt-papers/papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex"
+              }
+            ],
+            "global_status": "resolved_at_declared_tier",
+            "integration_status": "needs_result_integration",
+            "missing_evidence_groups": [],
+            "overall_status": "needs_result_integration",
+            "reconciliation_id": "C.QFT.01",
+            "required_action": "Integrate or cite the designated owner statement for R.QFT.PHYSICALFAMILYDEPENDENCY without duplicating its theorem body. Do not use formal perturbative or free-net closure as a synonym for interacting QFT closure.",
+            "result_ids": [
+              "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+            ],
+            "severity": "critical",
+            "text_status": "already_satisfied",
+            "title": "Selected free QFT net versus interacting nonperturbative QFT"
+          }
+        ]
+      },
+      {
+        "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+        "new_result_placements": [],
+        "review_required_after_historical_exclusions": [],
+        "applicable_reconciliations": []
+      },
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+        "new_result_placements": [
+          "R.ACTION.COHESIVE_MC_REPAIR",
+          "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+          "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+        ],
+        "review_required_after_historical_exclusions": [
+          "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+          "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+        ],
+        "applicable_reconciliations": [
+          {
+            "applicability_basis": "the paper owns or directly consumes the free/formal-to-interacting QFT boundary",
+            "applicable": true,
+            "evidence": [
+              {
+                "excerpt": "classical BV master-action and formal perturbative QME/equicausal construction, while a physical nonperturbative gauge-BRST C-star net, selected state, renormalization-group matching, and observable uncertainty packet remain open. The paper also separates Hadamard regularity from",
+                "group": "the achieved QFT object is explicitly free, formal or perturbative",
+                "line_start": 50,
+                "source_ref": "mtt-papers/papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex"
+              },
+              {
+                "excerpt": "\\large A Selected Free CAR Net and the Interacting Reconstruction Boundary} \\author{Peter Nero} \\date{July 2026\\\\Version 4}",
+                "group": "interacting fixed-coupling nonperturbative QFT remains a separate exit",
+                "line_start": 33,
+                "source_ref": "mtt-papers/papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex"
+              }
+            ],
+            "global_status": "resolved_at_declared_tier",
+            "integration_status": "needs_result_integration",
+            "missing_evidence_groups": [],
+            "overall_status": "needs_result_integration",
+            "reconciliation_id": "C.QFT.01",
+            "required_action": "Integrate or cite the designated owner statement for R.CBF.ENDPOINTTHREEPACKETFACTORIZATION, R.QFT.PHYSICALFAMILYDEPENDENCY without duplicating its theorem body. Do not use formal perturbative or free-net closure as a synonym for interacting QFT closure.",
+            "result_ids": [
+              "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+              "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+            ],
+            "severity": "critical",
+            "text_status": "already_satisfied",
+            "title": "Selected free QFT net versus interacting nonperturbative QFT"
+          }
+        ]
+      },
+      {
+        "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "new_result_placements": [
+          "R.ETA9.LOCAL_SOURCE_TUBE",
+          "R.ETA9.B89_REJECTION",
+          "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+          "R.ETA9.THREE_CYCLE_NONDETECTION",
+          "R.GEO.COHESIVE_SUPERCONNECTION",
+          "R.CBF.FINITE_TRANSFER_HIERARCHY",
+          "R.GEO.GLOBAL_FITTING_DESCENT",
+          "R.GEO.BK3_RANK_ZERO_KERNEL",
+          "R.ACTION.COHESIVE_MC_REPAIR",
+          "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+          "R.QFT.PHYSICAL_FAMILY_DEPENDENCY",
+          "R.QG.BRANCH_AND_COFRAME"
+        ],
+        "review_required_after_historical_exclusions": [
+          "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+          "R.CBF.FINITE_TRANSFER_HIERARCHY",
+          "R.ETA9.B89_REJECTION",
+          "R.ETA9.LOCAL_SOURCE_TUBE",
+          "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+          "R.ETA9.THREE_CYCLE_NONDETECTION",
+          "R.GEO.BK3_RANK_ZERO_KERNEL",
+          "R.GEO.GLOBAL_FITTING_DESCENT",
+          "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+        ],
+        "applicable_reconciliations": [
+          {
+            "applicability_basis": "the paper owns or directly consumes the free/formal-to-interacting QFT boundary",
+            "applicable": true,
+            "evidence": [
+              {
+                "excerpt": "SPT endpoint, and sometimes described imported perturbative QFT machinery as though it were selected by MTT. \\item[Resolution.] This edition assigns the SPT mathematics to the companion Euclidean TT paper, states the low-energy result at its exact fixed-order",
+                "group": "the achieved QFT object is explicitly free, formal or perturbative",
+                "line_start": 64,
+                "source_ref": "mtt-papers/papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex"
+              },
+              {
+                "excerpt": "control, and nonperturbative definition remain open. The resulting claim is therefore low-energy quantum-gravity parity plus a sharply specified heterotic completion program, not completed ultraviolet quantum gravity. \\end{abstract}",
+                "group": "interacting fixed-coupling nonperturbative QFT remains a separate exit",
+                "line_start": 51,
+                "source_ref": "mtt-papers/papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex"
+              }
+            ],
+            "global_status": "resolved_at_declared_tier",
+            "integration_status": "needs_result_integration",
+            "missing_evidence_groups": [],
+            "overall_status": "needs_result_integration",
+            "reconciliation_id": "C.QFT.01",
+            "required_action": "Integrate or cite the designated owner statement for R.CBF.ENDPOINTTHREEPACKETFACTORIZATION, R.CBF.FINITETRANSFERHIERARCHY, R.QFT.PHYSICALFAMILYDEPENDENCY without duplicating its theorem body. Do not use formal perturbative or free-net closure as a synonym for interacting QFT closure.",
+            "result_ids": [
+              "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+              "R.CBF.FINITE_TRANSFER_HIERARCHY",
+              "R.QFT.PHYSICAL_FAMILY_DEPENDENCY"
+            ],
+            "severity": "critical",
+            "text_status": "already_satisfied",
+            "title": "Selected free QFT net versus interacting nonperturbative QFT"
+          },
+          {
+            "applicability_basis": "the paper owns or directly consumes the perturbative/UV-complete quantum-gravity boundary",
+            "applicable": true,
+            "evidence": [
+              {
+                "excerpt": "fixed-genus ultraviolet inheritance from all-genus and nonperturbative completion. \\item[Retained result.] The current chain supports an exact internal TT carrier, conditional classical GR reduction, fixed-order quantum-GR EFT",
+                "group": "the achieved result is scoped as low-energy, effective or perturbative",
+                "line_start": 69,
+                "source_ref": "mtt-papers/papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex"
+              },
+              {
+                "excerpt": "control, and nonperturbative definition remain open. The resulting claim is therefore low-energy quantum-gravity parity plus a sharply specified heterotic completion program, not completed ultraviolet quantum gravity. \\end{abstract}",
+                "group": "UV-complete nonperturbative quantum gravity remains open",
+                "line_start": 51,
+                "source_ref": "mtt-papers/papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex"
+              }
+            ],
+            "global_status": "resolved_at_declared_tier",
+            "integration_status": "needs_result_integration",
+            "missing_evidence_groups": [],
+            "overall_status": "needs_result_integration",
+            "reconciliation_id": "C.QG.01",
+            "required_action": "Integrate or cite the designated owner statement for R.CBF.ENDPOINTTHREEPACKETFACTORIZATION, R.CBF.FINITETRANSFERHIERARCHY, R.ETA9.ORIGINALJACOBIANGATE1, R.ETA9.THREECYCLENONDETECTION, R.GEO.BK3RANKZEROKERNEL, R.GEO.GLOBALFITTINGDESCENT without duplicating its theorem body. Keep EFT parity, perturbative control, cohesive structural calculus, worldsheet completion and nonperturbative UV completion as distinct status rows.",
+            "result_ids": [
+              "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+              "R.CBF.FINITE_TRANSFER_HIERARCHY",
+              "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+              "R.ETA9.THREE_CYCLE_NONDETECTION",
+              "R.GEO.BK3_RANK_ZERO_KERNEL",
+              "R.GEO.GLOBAL_FITTING_DESCENT"
+            ],
+            "severity": "critical",
+            "text_status": "already_satisfied",
+            "title": "Low-energy gravity/QG control versus UV-complete quantum gravity"
+          }
+        ]
+      },
+      {
+        "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+        "new_result_placements": [],
+        "review_required_after_historical_exclusions": [],
+        "applicable_reconciliations": [
+          {
+            "applicability_basis": "the paper owns or directly consumes profile-level SM equivalence and its no-input boundary",
+            "applicable": true,
+            "evidence": [
+              {
+                "excerpt": "\\newcommand{\\Profile}{\\mathcal P} \\newcommand{\\Inputs}{\\mathcal I} \\newcommand{\\Outputs}{\\mathcal O} \\newcommand{\\Data}{\\mathcal D}",
+                "group": "the achieved tier is identified as profile, replay or measured-coordinate equivalence",
+                "line_start": 9,
+                "source_ref": "mtt-papers/papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex"
+              },
+              {
+                "excerpt": "counts are not invariant under reparameterization or gauge redundancy, that replay of data used in construction is not a held-out prediction, that loss of a global right inverse is not by itself a falsifier, and that a scalar coherence-capacity diagnostic cannot eliminate the full source ledger.",
+                "group": "strict no-input prediction is not claimed",
+                "line_start": 32,
+                "source_ref": "mtt-papers/papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex"
+              }
+            ],
+            "global_status": "resolved_at_declared_tier",
+            "integration_status": "none",
+            "missing_evidence_groups": [],
+            "overall_status": "already_satisfied",
+            "reconciliation_id": "C.SM.01",
+            "required_action": "Retain this scope boundary in future revisions.",
+            "result_ids": [],
+            "severity": "critical",
+            "text_status": "already_satisfied",
+            "title": "SM parity/profile equivalence versus strict no-input equivalence"
+          }
+        ]
+      },
+      {
+        "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+        "new_result_placements": [
+          "R.GEO.COHESIVE_SUPERCONNECTION",
+          "R.CBF.FINITE_TRANSFER_HIERARCHY",
+          "R.ACTION.COHESIVE_MC_REPAIR",
+          "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+        ],
+        "review_required_after_historical_exclusions": [
+          "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+          "R.CBF.FINITE_TRANSFER_HIERARCHY"
+        ],
+        "applicable_reconciliations": [
+          {
+            "applicability_basis": "the paper owns or directly consumes the free/formal-to-interacting QFT boundary",
+            "applicable": true,
+            "evidence": [
+              {
+                "excerpt": "CAR/AQFT machinery to give a free even local net. The present theorem explains how a selected upper action could transfer its perturbative graph data to a lower effective sector. It does not manufacture that action. The geometry-selected upper action, fixed-coupling interacting",
+                "group": "the achieved QFT object is explicitly free, formal or perturbative",
+                "line_start": 48,
+                "source_ref": "mtt-papers/papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex"
+              },
+              {
+                "excerpt": "The geometry-selected upper action, fixed-coupling interacting gauge--BRST \\(C^\\)-completion, renormalization-group matching, and observable uncertainty packet remain open. The formulation retains the explanatory value of modal diagrammatics while making its",
+                "group": "interacting fixed-coupling nonperturbative QFT remains a separate exit",
+                "line_start": 51,
+                "source_ref": "mtt-papers/papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex"
+              }
+            ],
+            "global_status": "resolved_at_declared_tier",
+            "integration_status": "needs_result_integration",
+            "missing_evidence_groups": [],
+            "overall_status": "needs_result_integration",
+            "reconciliation_id": "C.QFT.01",
+            "required_action": "Integrate or cite the designated owner statement for R.CBF.ENDPOINTTHREEPACKETFACTORIZATION, R.CBF.FINITETRANSFERHIERARCHY without duplicating its theorem body. Do not use formal perturbative or free-net closure as a synonym for interacting QFT closure.",
+            "result_ids": [
+              "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+              "R.CBF.FINITE_TRANSFER_HIERARCHY"
+            ],
+            "severity": "critical",
+            "text_status": "already_satisfied",
+            "title": "Selected free QFT net versus interacting nonperturbative QFT"
+          }
+        ]
+      }
+    ],
+    "required_consumer_placements": 14,
+    "unreviewed_remaining_in_assigned_queue": 0
+  },
+  "owner_queue_check": {
+    "baseline_unreviewed_assigned_results": 13,
+    "reviewed_results": 13,
+    "remaining": 0
+  },
+  "prior_review_rebinding_audit": {
+    "reviewed_at": "2026-09-13 Europe/Stockholm (2026-09-12 UTC)",
+    "catalog_path": "catalog/research-integration-reviews.json",
+    "baseline_commit": "838a0860ed8cdca474d1c11ef2fa063f2a5f908d",
+    "baseline_catalog_sha256": "b35ae19584d1e086da68e1de5c806932d2e0c3fe0877d3fb91d699a2e2c39ab0",
+    "inspected_current_catalog_sha256": "b35ae19584d1e086da68e1de5c806932d2e0c3fe0877d3fb91d699a2e2c39ab0",
+    "baseline_scoped_review_count": 0,
+    "current_scoped_review_count": 0,
+    "baseline_review_ids": [],
+    "current_review_ids": [],
+    "registry_assessment": "No scoped integrated or historical review entries exist in the baseline or inspected current catalog/research-integration-reviews.json. Therefore there are no prior review IDs to restamp here. Parent must update global paper/source hashes when integrating the new fragment. The four already-completed Kernel groups remain excluded from duplicate consumer reviews.",
+    "review_rebindings": [],
+    "proof_audit_method": "All six complete pre-edit manuscripts were read contextually, their current revisions rechecked, and pre-existing labels and proof environments compared against the baseline. Byte equality below is LF-normalized preservation evidence, not independent theorem verification. Changed statements/proofs require the explicit corrections, not a blind hash renewal.",
+    "all_prior_tex_labels_retained": true,
+    "prior_tex_label_count": 34,
+    "baseline_proof_block_count": 22,
+    "retained_unchanged_proof_blocks": 19,
+    "retained_explicitly_corrected_proof_blocks": 3,
+    "papers": [
+      {
+        "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
+        "path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+        "baseline_main_tex_lf_sha256": "691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d",
+        "current_main_tex_lf_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+        "prior_label_count": 1,
+        "prior_labels_missing": [],
+        "prior_label_locations": [
+          {
+            "anchor": "eq:action",
+            "line": 158
+          }
+        ],
+        "proof_blocks": [
+          {
+            "proof_ordinal": 1,
+            "baseline_line": 212,
+            "current_line": 372,
+            "baseline_block_lf_sha256": "491a780011d291f922b4bdc3d6a4656007c5f35414329b8b5a78d02fedfa877b",
+            "current_block_lf_sha256": "491a780011d291f922b4bdc3d6a4656007c5f35414329b8b5a78d02fedfa877b",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 2,
+            "baseline_line": 360,
+            "current_line": 526,
+            "baseline_block_lf_sha256": "b5d579b2f3cf0f644f262c1ee90e6bdc639b2f48b16c674f54b6d3a3592e56f6",
+            "current_block_lf_sha256": "d9b710c0298451103c7a0be15b9395720cf0678ac8b3344e43fc64a4807d6020",
+            "unchanged": false,
+            "disposition": "retained_with_explicit_correction",
+            "correction_id": "ACTION-NONLINEAR-REDUCTION"
+          }
+        ],
+        "unchanged_proof_blocks": 1,
+        "changed_proof_blocks": 1,
+        "contextual_retention_assessment": "Both prior proof paragraphs remain present. The nonlinear reduction proof is corrected to require a ball-preserving contraction; locality remains an additional derivative-expansion assumption. The alignment rank and signed-action distinctions are separately recorded. Do not rebind any earlier unqualified nonlinear/locality assessment without ACTION-NONLINEAR-REDUCTION.",
+        "correction_ids": [
+          "ACTION-ALIGNMENT-RANK",
+          "ACTION-NONLINEAR-REDUCTION"
+        ]
+      },
+      {
+        "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
+        "path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+        "baseline_main_tex_lf_sha256": "4c384017998efa433eb2feb26c6dd0403aacc40cbd586bbe7d526497a447d434",
+        "current_main_tex_lf_sha256": "be1e4f44b1f0eab7eb1c966e6067932ed3a6f84d529d19be3d4b5b91dd236b10",
+        "prior_label_count": 10,
+        "prior_labels_missing": [],
+        "prior_label_locations": [
+          {
+            "anchor": "eq:action",
+            "line": 165
+          },
+          {
+            "anchor": "eq:graph-weight",
+            "line": 192
+          },
+          {
+            "anchor": "thm:wick-graph",
+            "line": 216
+          },
+          {
+            "anchor": "eq:PK",
+            "line": 271
+          },
+          {
+            "anchor": "thm:projection",
+            "line": 286
+          },
+          {
+            "anchor": "cor:closed-sector",
+            "line": 306
+          },
+          {
+            "anchor": "eq:no-mixed",
+            "line": 311
+          },
+          {
+            "anchor": "prop:ward",
+            "line": 345
+          },
+          {
+            "anchor": "thm:nonselection",
+            "line": 367
+          },
+          {
+            "anchor": "sec:quantum-boundary",
+            "line": 409
+          }
+        ],
+        "proof_blocks": [
+          {
+            "proof_ordinal": 1,
+            "baseline_line": 201,
+            "current_line": 226,
+            "baseline_block_lf_sha256": "5ac3940dac7479638598bb8a1fec7aaa9317dd733e33da74491d8e6eb82a8608",
+            "current_block_lf_sha256": "4a58455eda968594282d003853acb984995a9f14816669bf9da3ca9ef22b6ced",
+            "unchanged": false,
+            "disposition": "retained_with_explicit_correction",
+            "correction_id": "DIAGRAM-EUCLIDEAN-SIGN"
+          },
+          {
+            "proof_ordinal": 2,
+            "baseline_line": 267,
+            "current_line": 297,
+            "baseline_block_lf_sha256": "afba23587381cbc5b42e69d63685fb8e028c584247a063dd959af10e4c1a4043",
+            "current_block_lf_sha256": "a0e62bd3b69340c6b00af76c653d73e36a9b76e153beb6eb3582c74e605f57af",
+            "unchanged": false,
+            "disposition": "retained_with_explicit_correction",
+            "correction_id": "DIAGRAM-DUAL-PROJECTION"
+          },
+          {
+            "proof_ordinal": 3,
+            "baseline_line": 289,
+            "current_line": 319,
+            "baseline_block_lf_sha256": "a0ee0473f89daaf4697113ea92aa011016885550de4d750082655cd0bf875276",
+            "current_block_lf_sha256": "a0ee0473f89daaf4697113ea92aa011016885550de4d750082655cd0bf875276",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 4,
+            "baseline_line": 325,
+            "current_line": 355,
+            "baseline_block_lf_sha256": "496867411570be0ad823512237785af6aeb2c12fe6957e4b264c21142ffa7570",
+            "current_block_lf_sha256": "496867411570be0ad823512237785af6aeb2c12fe6957e4b264c21142ffa7570",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 5,
+            "baseline_line": 352,
+            "current_line": 382,
+            "baseline_block_lf_sha256": "49eaa1c61253a319bc2d6a625d5c3fbf3ec3da4a86feef119efe74d8d93b7b7b",
+            "current_block_lf_sha256": "49eaa1c61253a319bc2d6a625d5c3fbf3ec3da4a86feef119efe74d8d93b7b7b",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          }
+        ],
+        "unchanged_proof_blocks": 3,
+        "changed_proof_blocks": 2,
+        "contextual_retention_assessment": "All five prior proofs remain present. Three are unchanged; the graph proof now includes the Euclidean minus sign per vertex and the projection proof now uses the correctly typed dual map. Existing formal/conditional diagrammatic scope is retained. Earlier unqualified graph-sign or primal-only projection assessments require the two named corrections.",
+        "correction_ids": [
+          "DIAGRAM-EUCLIDEAN-SIGN",
+          "DIAGRAM-DUAL-PROJECTION",
+          "DIAGRAM-INTEGRABILITY",
+          "SHARED-ISOMETRIC-ADJOINT-QUALIFICATION"
+        ]
+      },
+      {
+        "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
+        "path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+        "baseline_main_tex_lf_sha256": "b5306c19857e56517685d64be04d196570780d6f315cf8987b54aeb3c68afe19",
+        "current_main_tex_lf_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+        "prior_label_count": 4,
+        "prior_labels_missing": [],
+        "prior_label_locations": [
+          {
+            "anchor": "eq:composition",
+            "line": 208
+          },
+          {
+            "anchor": "prop:parity",
+            "line": 216
+          },
+          {
+            "anchor": "eq:power",
+            "line": 258
+          },
+          {
+            "anchor": "thm:inheritance",
+            "line": 559
+          }
+        ],
+        "proof_blocks": [
+          {
+            "proof_ordinal": 1,
+            "baseline_line": 179,
+            "current_line": 224,
+            "baseline_block_lf_sha256": "a38b75ded7a3d308d257f4b307ddee6017da55387782a0e7bc2bf306c289458f",
+            "current_block_lf_sha256": "a38b75ded7a3d308d257f4b307ddee6017da55387782a0e7bc2bf306c289458f",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 2,
+            "baseline_line": 307,
+            "current_line": 569,
+            "baseline_block_lf_sha256": "4b5f107636135b613e50373c4df20852f0edc9454dd8ad038c67d26974864677",
+            "current_block_lf_sha256": "4b5f107636135b613e50373c4df20852f0edc9454dd8ad038c67d26974864677",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          }
+        ],
+        "unchanged_proof_blocks": 2,
+        "changed_proof_blocks": 0,
+        "contextual_retention_assessment": "Both prior proof blocks are unchanged, and their stated low-energy/conditional inheritance scope is retained. New finite/local source explanations are additive. The current HYM existence tier, T69 correction and physical/auxiliary spectral-support distinction remain explicit; no old status header is promoted.",
+        "correction_ids": [
+          "SHARED-ISOMETRIC-ADJOINT-QUALIFICATION",
+          "RETAINED-T69-LOCAL-GLOBAL",
+          "PHYSICAL-AUXILIARY-SUPPORT",
+          "CURRENT-AUTHORITY-CHRONOLOGY"
+        ]
+      },
+      {
+        "paper_id": "modal-triplet-theory-parameters-closure-and-structural-ae734bf0",
+        "path": "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+        "baseline_main_tex_lf_sha256": "f7fb7e7c3f6e7355614a06c8717e4d3cc9e554c20c5401cdbe192b8ccdb77d2e",
+        "current_main_tex_lf_sha256": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768",
+        "prior_label_count": 12,
+        "prior_labels_missing": [],
+        "prior_label_locations": [
+          {
+            "anchor": "def:ledger",
+            "line": 154
+          },
+          {
+            "anchor": "def:count",
+            "line": 200
+          },
+          {
+            "anchor": "prop:symbol-count",
+            "line": 215
+          },
+          {
+            "anchor": "def:prediction",
+            "line": 263
+          },
+          {
+            "anchor": "prop:replay",
+            "line": 276
+          },
+          {
+            "anchor": "prop:min-not-injective",
+            "line": 312
+          },
+          {
+            "anchor": "tab:current-ledger",
+            "line": 375
+          },
+          {
+            "anchor": "thm:current-ledger",
+            "line": 451
+          },
+          {
+            "anchor": "def:falsifier",
+            "line": 556
+          },
+          {
+            "anchor": "prop:scope-rule",
+            "line": 569
+          },
+          {
+            "anchor": "prop:no-section",
+            "line": 618
+          },
+          {
+            "anchor": "tab:falsifiers",
+            "line": 654
+          }
+        ],
+        "proof_blocks": [
+          {
+            "proof_ordinal": 1,
+            "baseline_line": 202,
+            "current_line": 223,
+            "baseline_block_lf_sha256": "0387ef47284d9294ae456af8f8358fcbfa5439bcc8b939f5c34add161dd53434",
+            "current_block_lf_sha256": "0387ef47284d9294ae456af8f8358fcbfa5439bcc8b939f5c34add161dd53434",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 2,
+            "baseline_line": 262,
+            "current_line": 283,
+            "baseline_block_lf_sha256": "4b09be45bb9283785fea367b8473c82134800454024e90275755f27ca6a6c7ca",
+            "current_block_lf_sha256": "4b09be45bb9283785fea367b8473c82134800454024e90275755f27ca6a6c7ca",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 3,
+            "baseline_line": 301,
+            "current_line": 322,
+            "baseline_block_lf_sha256": "4c3c8e2327c91ecfe072cbc84c521ba624b5d7a9cf348cc491a2d82b568c6f10",
+            "current_block_lf_sha256": "4c3c8e2327c91ecfe072cbc84c521ba624b5d7a9cf348cc491a2d82b568c6f10",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 4,
+            "baseline_line": 410,
+            "current_line": 465,
+            "baseline_block_lf_sha256": "d1de8cae1a1629ad1ed8ef36d7533340702ec30e8e30b94fe9c68945f45d88e4",
+            "current_block_lf_sha256": "d1de8cae1a1629ad1ed8ef36d7533340702ec30e8e30b94fe9c68945f45d88e4",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 5,
+            "baseline_line": 447,
+            "current_line": 577,
+            "baseline_block_lf_sha256": "0494ff3b7146c610f96d138c938e439a1b6568449d87ffbd769336b4e05b2cc2",
+            "current_block_lf_sha256": "0494ff3b7146c610f96d138c938e439a1b6568449d87ffbd769336b4e05b2cc2",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 6,
+            "baseline_line": 494,
+            "current_line": 624,
+            "baseline_block_lf_sha256": "7846301c38938388197540a271d0f1cc38f281261ed795b93e4fc2e94e0482b1",
+            "current_block_lf_sha256": "7846301c38938388197540a271d0f1cc38f281261ed795b93e4fc2e94e0482b1",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          }
+        ],
+        "unchanged_proof_blocks": 6,
+        "changed_proof_blocks": 0,
+        "contextual_retention_assessment": "All six prior proof blocks are unchanged. The Hopf obstruction statement now explicitly concerns a continuous section, matching its topological proof; measurable sections are not excluded. Execution, effective, profile and strict ledgers are separated. An earlier assertion excluding every set-theoretic or Borel section must not be rebound unchanged.",
+        "correction_ids": [
+          "PARAMETERS-HOPF-CATEGORY",
+          "CURRENT-AUTHORITY-CHRONOLOGY"
+        ]
+      },
+      {
+        "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+        "path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex",
+        "baseline_main_tex_lf_sha256": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc",
+        "current_main_tex_lf_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+        "prior_label_count": 6,
+        "prior_labels_missing": [],
+        "prior_label_locations": [
+          {
+            "anchor": "prop:noextension",
+            "line": 185
+          },
+          {
+            "anchor": "eq:compressed-net",
+            "line": 264
+          },
+          {
+            "anchor": "thm:descent",
+            "line": 267
+          },
+          {
+            "anchor": "prop:naturality",
+            "line": 318
+          },
+          {
+            "anchor": "eq:naturality",
+            "line": 324
+          },
+          {
+            "anchor": "thm:scoped",
+            "line": 459
+          }
+        ],
+        "proof_blocks": [
+          {
+            "proof_ordinal": 1,
+            "baseline_line": 178,
+            "current_line": 191,
+            "baseline_block_lf_sha256": "3bbab5b3d2a3d8f788f3ad003f12304b781b0451b306f15f4a7533a52eff623c",
+            "current_block_lf_sha256": "3bbab5b3d2a3d8f788f3ad003f12304b781b0451b306f15f4a7533a52eff623c",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 2,
+            "baseline_line": 194,
+            "current_line": 207,
+            "baseline_block_lf_sha256": "4eb1db079b38d32afb7e1f2eb415ec2560848451777c84aee57657b29bd38927",
+            "current_block_lf_sha256": "4eb1db079b38d32afb7e1f2eb415ec2560848451777c84aee57657b29bd38927",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 3,
+            "baseline_line": 261,
+            "current_line": 274,
+            "baseline_block_lf_sha256": "0a58daac27830685f93f61250606f64aecb80bad1ade8e0f91017ca630c06b0e",
+            "current_block_lf_sha256": "0a58daac27830685f93f61250606f64aecb80bad1ade8e0f91017ca630c06b0e",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 4,
+            "baseline_line": 318,
+            "current_line": 331,
+            "baseline_block_lf_sha256": "0f8f9d838ed3b0e3a5081af43b164a5fe9c771499ccf927b4ddde275a273d24c",
+            "current_block_lf_sha256": "0f8f9d838ed3b0e3a5081af43b164a5fe9c771499ccf927b4ddde275a273d24c",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 5,
+            "baseline_line": 345,
+            "current_line": 358,
+            "baseline_block_lf_sha256": "91d9e25c1f15b17b8e96461f246d13c8265fcfc6c39e59f2af7e0e1c78d99dc5",
+            "current_block_lf_sha256": "91d9e25c1f15b17b8e96461f246d13c8265fcfc6c39e59f2af7e0e1c78d99dc5",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          },
+          {
+            "proof_ordinal": 6,
+            "baseline_line": 436,
+            "current_line": 477,
+            "baseline_block_lf_sha256": "5b18877ede951bc552f046ec14f1f78c5a227ece59fd72855e8cc27b9819a795",
+            "current_block_lf_sha256": "5b18877ede951bc552f046ec14f1f78c5a227ece59fd72855e8cc27b9819a795",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          }
+        ],
+        "unchanged_proof_blocks": 6,
+        "changed_proof_blocks": 0,
+        "contextual_retention_assessment": "All six prior proofs are unchanged, including the naturality proposition. The selected free net and Hadamard-state existence remain present, while the new family dependency neither replaces these proofs nor supplies interacting completion. No convex-quasifree claim is present.",
+        "correction_ids": []
+      },
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+        "path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+        "baseline_main_tex_lf_sha256": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2",
+        "current_main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+        "prior_label_count": 1,
+        "prior_labels_missing": [],
+        "prior_label_locations": [
+          {
+            "anchor": "thm:car",
+            "line": 191
+          }
+        ],
+        "proof_blocks": [
+          {
+            "proof_ordinal": 1,
+            "baseline_line": 189,
+            "current_line": 203,
+            "baseline_block_lf_sha256": "5b5e180f15c4825fdfd1fe57abfb7406b59f7cba55bd4bbbff7a3a57a69febfb",
+            "current_block_lf_sha256": "5b5e180f15c4825fdfd1fe57abfb7406b59f7cba55bd4bbbff7a3a57a69febfb",
+            "unchanged": true,
+            "disposition": "retained_unchanged"
+          }
+        ],
+        "unchanged_proof_blocks": 1,
+        "changed_proof_blocks": 0,
+        "contextual_retention_assessment": "The prior free-CAR theorem proof is unchanged and remains conditional on its declared source and standard QFT hypotheses. The finite-order adiabatic example is separately corrected; Hadamard-state existence is not reopened. No convex-quasifree claim is present.",
+        "correction_ids": [
+          "CURVED-QFT-ADIABATIC-HADAMARD"
+        ]
+      }
+    ]
+  },
+  "upstream_shared_errata_acknowledgements": [
+    {
+      "id": "QM-REPORTED-QUASIFREE-CONVEXITY-CONSUMER-CHECK",
+      "reported_by": "Parent relaying the QM editorial fragment",
+      "source_reference": {
+        "result_id": "q79_free_dirac_car_net",
+        "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_free_dirac_car_net/artifact.json",
+        "artifact_sha256": "a08510eb3ac77607094bf9e5469523b6c0e4841680ff2e729f592fbbeb66e36d"
+      },
+      "source_anchors": [
+        "state_space",
+        "assignment"
+      ],
+      "source_read_scope": "Parent-supplied shared wording defect. Frozen bytes were hashed for binding; this source is not added to the full-read source coverage and no duplicate proof review is claimed.",
+      "correction": "The quasifree Hadamard states need not form a convex set. Their convex hull consists of ordinary Hadamard states that are not generally quasifree. Free-net construction and nonempty positive Hadamard-state existence are retained.",
+      "consumer_disposition": "No TeX/PDF change needed: the two consumers already use nonempty positive Hadamard state space, and neither asserts convex quasifree states.",
+      "consumer_checks": [
+        {
+          "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
+          "main_tex_lf_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+          "anchors": [
+            {
+              "text": "and nonempty positive Hadamard state space through standard AQFT results.",
+              "line": 31
+            },
+            {
+              "text": "covariance, the time-slice property, and a nonempty positive Hadamard state",
+              "line": 405
+            }
+          ],
+          "scope": "The only convex wording concerns causally convex spacetime regions, not a quasifree state space."
+        },
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
+          "main_tex_lf_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+          "anchors": [
+            {
+              "text": "its positive Hadamard state space is nonempty;",
+              "line": 183
+            },
+            {
+              "text": "property. If a quasifree Hadamard two-point function exists, it defines a",
+              "line": 197
+            },
+            {
+              "text": "The current free q79 certificate establishes a nonempty positive Hadamard",
+              "line": 225
+            }
+          ],
+          "scope": "Existence and the conditional quasifree construction do not assert closure under convex mixing."
+        }
+      ],
+      "shared_erratum_owner": "Parent/QM fragment; do not duplicate ownership or reopen the free-net result.",
+      "blocked": false
+    }
+  ],
+  "helper_portability": {
+    "qa": {
+      "options": [
+        "--frozen-results"
+      ],
+      "environment": [
+        "MTT_FROZEN_RESULTS"
+      ],
+      "default": "Sibling mtt-results-repro/release/results relative to the mtt-papers repository."
+    },
+    "finalizer": {
+      "options": [
+        "--frozen-results",
+        "--kernel-data",
+        "--proof-root"
+      ],
+      "environment": [
+        "MTT_FROZEN_RESULTS",
+        "MTT_KERNEL_DATA",
+        "MTT_PROOF_ROOT"
+      ],
+      "defaults": {
+        "frozen_results": "Sibling mtt-results-repro/release/results.",
+        "kernel_data": "Sibling BrainOfEnterprise-MTT-Research-Environment/data.",
+        "proof_root": "Parent of the selected mtt-results-repro repository."
+      }
+    },
+    "proof_binding": "Proof records include source_root_relative_path; the finalizer resolves these under the selected proof root and rejects byte changes instead of silently restamping a previously read proof.",
+    "tests": [
+      "Both helper --help commands passed.",
+      "QA checks passed using --frozen-results ../TEXPAPERS/mtt-results-repro/release/results.",
+      "Finalizer passed with explicit relative frozen, Kernel and proof-root options; all six existing PDF/Markdown/metadata records synchronized without another version increment."
+    ],
+    "pdf_rebuild_needed": false
+  },
+  "changed_files": [
+    "editorial-reviews/2026-09-12/action_qg.json",
+    "editorial-reviews/2026-09-12/action_qg.md",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/RESEARCH_INTEGRATION.md",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/REVISION_AUDIT.md",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial_finalize.py",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/editorial_qa.py",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.pdf",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/main.tex",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/metadata.json",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/paper-markdown.lua",
+    "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/paper.md",
+    "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/RESEARCH_INTEGRATION.md",
+    "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/REVISION_AUDIT.md",
+    "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.pdf",
+    "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/main.tex",
+    "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/metadata.json",
+    "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/paper-markdown.lua",
+    "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/paper.md",
+    "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/RESEARCH_INTEGRATION.md",
+    "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/REVISION_AUDIT.md",
+    "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.bib",
+    "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.pdf",
+    "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex",
+    "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/metadata.json",
+    "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/paper-markdown.lua",
+    "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/paper.md",
+    "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/RESEARCH_INTEGRATION.md",
+    "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/REVISION_AUDIT.md",
+    "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.pdf",
+    "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/main.tex",
+    "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/metadata.json",
+    "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/paper-markdown.lua",
+    "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/paper.md",
+    "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/RESEARCH_INTEGRATION.md",
+    "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/REVISION_AUDIT.md",
+    "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.bib",
+    "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.pdf",
+    "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/main.tex",
+    "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/metadata.json",
+    "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/paper-markdown.lua",
+    "papers/modal-triplet-theory-parameters-closure-and-structural-ae734bf0/paper.md",
+    "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/RESEARCH_INTEGRATION.md",
+    "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/REVISION_AUDIT.md",
+    "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.bib",
+    "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.pdf",
+    "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/main.tex",
+    "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/metadata.json",
+    "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/paper-markdown.lua",
+    "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/paper.md"
+  ],
+  "generation_notes": [
+    "Required scripts/build_contextual_evidence_papers.py used with scoped --paper-id selectors and --jobs 1. LOG_ROOT was redirected inside the Action directory, so there was no global log write. It generated six main.pdf files and local TeX auxiliaries, not Markdown.",
+    "Six paper.md files were generated through existing scripts/migrate.py build_markdown helpers with one local paper-markdown.lua filter per paper. Built bibliography keys and references, abstract and revision-note fields were preserved and checked.",
+    "Local metadata and RESEARCH_INTEGRATION.md synchronization used only editorial_finalize.py's guarded six-paper/own-fragment writes. Released Zenodo identity, source provenance and common series.sty files were preserved.",
+    "Scratch renders, page text/contact sheets and bounded-check records reside in the Action paper tmp/editorial-qa-20260912 tree; build logs reside in its editorial-build-20260912 tree. Parent owns central ignore rules. These are generated QA material, not new scientific outputs.",
+    "Only the two helpers changed after PDF QA. Final validation binds each unchanged PDF hash to its completed render and visual-inspection records."
+  ],
+  "finalization": {
+    "local_date": "2026-09-13",
+    "utc_date": "2026-09-12",
+    "owner_results_reviewed": 13,
+    "consumer_placements_reviewed": 14,
+    "unique_consumer_kernel_results": 9,
+    "remaining_owner_assignments": 0,
+    "remaining_consumer_suggestions": 0,
+    "blocking_gaps": [],
+    "author_approval_questions": [],
+    "parent_owned_work": "Global catalog/Kernel/hash integration and shared errata; no publication or commit was performed."
+  },
+  "checks": {
+    "final_scoped_validation": {
+      "owner_reviews": 13,
+      "consumer_placements": 14,
+      "unique_consumer_kernel_ids": 9,
+      "frozen_artifacts": 30,
+      "frozen_lines": 10370,
+      "full_proof_explanations": 9,
+      "proof_explanation_lines": 3015,
+      "pdf_builds": 6,
+      "pdf_pages": 79,
+      "all_page_visual_records_bound": true,
+      "zoomed_pages": 55,
+      "old_labels_retained": 34,
+      "prior_proofs_unchanged": 19,
+      "prior_proofs_corrected": 3,
+      "changed_files": 49,
+      "scoped_diff_check": 0,
+      "diff_advisory": "warning: in the working copy of 'papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/main.tex', CRLF will be replaced by LF the next time Git touches it",
+      "helper_syntax_and_portability": true,
+      "hash_anchor_metadata_bibliography_checks": true,
+      "remaining_blockers": []
+    },
+    "scoped_pdf_builds_passed": 6,
+    "reported_build_warnings": 0,
+    "rendered_and_contact_sheet_inspected_pages": 79,
+    "bounded_checks": {
+      "scope": "Small exact arithmetic and matrix checks, not independent scientific packet or continuum verification.",
+      "checks": {
+        "repair_jets_1_6_12": true,
+        "joint_metric_jets_9_48": true,
+        "signed_vs_normal_vertices": true,
+        "quartic_Wick_coefficient": true,
+        "two_cubic_Wick_coefficient": true,
+        "isometric_cochain_adjoint_counterexample": true,
+        "frozen_finite_projection_kernel": true,
+        "frozen_distinct_lifts_distinct_normals": true,
+        "frozen_Kato_rotation_and_gap": true,
+        "frozen_Feshbach_9_over_5_and_det81": true,
+        "gate1_row_accounting_not_Macaulay_replay": true,
+        "B96_Gram_only_not_transport_replay": true,
+        "scale_stationarity_p4": true,
+        "cohesive_Hodge_square_only": true
+      },
+      "passed": 14,
+      "total": 14
+    },
+    "source_hashes_match": true,
+    "release_identity_preserved": true,
+    "common_styles_unchanged": true,
+    "consumer_queue_coverage_exact": true,
+    "owner_queue_coverage_exact": true,
+    "no_global_refresh_or_catalog_write": true,
+    "full_size_changed_page_inspections": 55,
+    "markdown_bibliographies_match_built_pdfs": true,
+    "markdown_abstract_and_revision_notes_retained": true
+  }
+}

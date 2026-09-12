@@ -16,7 +16,7 @@
 \title{Theta Closure in Modal Triplet Theory I:
 Gauge-Profile Targets from Multi-Loop Common-Scheme Transport}
 \author{Peter Nero}
-\date{July 2026}
+\date{September 2026 (Version 3)}
 
 \begin{document}
 \maketitle
@@ -41,6 +41,21 @@ The scale $Q=M_t$ is a renormalization and matching convention, not a physical
 coherence, gap, or quantum-gravity scale.  The result is a calibrated target
 and conditional existence test; independent geometric selection remains open.
 \end{abstract}
+
+\section*{Version 3 Revision Note}
+\label{sec:revision-v3}
+\begin{description}
+\item[Supersedes.] Version~2 of this paper; released identifiers are retained.
+\item[Reason.] The calibration boundary was present, but the selected-source
+owner results and their distinct scopes were not explicitly connected to it.
+\item[Resolution.] Version~3 imports the exact Gate~1, three-cycle and
+large-gauge-kernel conclusions through their owners, and also removes residual equality/ontology overstatements in the gap discussion.
+\item[Retained.] The existing calibrated or conditional result, its numerical
+inputs and all earlier revision notes are retained.
+\item[Open boundary.] A selected physical source, its action normalization and
+the paper-specific execution inputs remain necessary for a held-out prediction.
+\end{description}
+
 
 \section*{Revision note for this edition}
 \addcontentsline{toc}{section}{Revision note for this edition}
@@ -296,8 +311,8 @@ We use the following $\overline{\mathrm{MS}}$-scheme inputs at $\mu=M_Z$:
 \label{eq:EWinputs}
 \end{equation}
 
-These values are representative of current PDG averages and are sufficient
-for the present analysis.
+These declared illustrative inputs are retained for the elementary conversion
+below; the selected multi-loop profile is specified separately.
 
 \subsection{Definition of gauge couplings}
 
@@ -445,7 +460,7 @@ and positivity conditions.
 
 The next step is to determine whether the internal geometry of MTT
 admits overlap integrals $I_1,I_2,I_3$ satisfying the above ratios
-while maintaining the baseline spectral gap $\lambda_{\ast}=0.25$.
+while maintaining the declared baseline spectral floor $0.25$.
 
 This problem is addressed in the next section.
 % ===========================
@@ -482,9 +497,9 @@ The following are model-specific lower bounds on the smallest nonzero
 eigenvalues of the auxiliary vertical Laplacians.
 
 \paragraph{Circle factor $\Sigma_1$.}
-For a circle of radius $R_1$,
+For the scalar Laplacian on the auxiliary circle of radius $R_1$,
 \begin{equation}
-\lambda_{\Sigma_1} \sim \frac{1}{R_1^2}.
+\lambda_{\Sigma_1} = \frac{1}{R_1^2}.
 \label{eq:gapSigma1}
 \end{equation}
 
@@ -510,7 +525,7 @@ In the worked numerical baseline of the Foundation,
 \begin{equation}
 h_0 = 1
 \quad\Rightarrow\quad
-\lambda_{\mathrm{nil}} = \frac{1}{4} = 0.25.
+\lambda_{\mathrm{nil}} \ge \frac{1}{4} = 0.25.
 \end{equation}
 
 We enforce the \emph{baseline lower bound} $\lambda_{\ast}\ge 0.25$ using $h_0=1$.
@@ -542,8 +557,7 @@ This is an ansatz for the weighted coefficients defined above, not a theorem
 equating the norm of an $L^2$-normalized mode with
 a geometric volume. A selected compactification must emit the corresponding
 weights and representatives on one $X_6$ before these coefficients become
-source-derived.
-where:
+source-derived. Here:
 \begin{itemize}
 \item $\kappa_\ell$ is the unit-area normalization of the lens sheet,
 \item $\kappa_n\,\mathcal{S}_n$ is the effective nil overlap weight,
@@ -557,8 +571,10 @@ This separation is required because the nil spectral gap
 \section{Solving the \texorpdfstring{$\Theta$}{Theta}--system}
 % ===========================
 
-We now solve the overlap constraints from Section~4 of Part~II
-together with the spectral gap bounds.
+We now solve the overlap constraints \eqref{eq:targets} in the displayed
+auxiliary coefficient ansatz, together with the assumed spectral bounds.
+Decimal coefficients below are rounded representations of the expressions
+containing $\pi$, not additional exact input identities.
 
 \subsection{Overlap constraints}
 
@@ -616,7 +632,7 @@ We require:
 \end{align}
 
 \paragraph{Nil.}
-Set $h_0=1$, so \eqref{eq:gapNil} gives $\lambda_{\mathrm{nil}}=0.25$.
+Set $h_0=1$, so \eqref{eq:gapNil} gives $\lambda_{\mathrm{nil}}\ge0.25$.
 
 \paragraph{Circle.}
 From \eqref{eq:gapSigma1} and \eqref{eq:gap1},
@@ -658,7 +674,7 @@ are satisfied;
 \item the spectral gap inequalities
 $\lambda_{\Sigma_1},\lambda_{\mathrm{lens}},\lambda_{\mathrm{nil}}\ge 0.25$
 hold;
-\item the minimal spectral gap remains $\lambda_{\ast}=0.25$.
+\item the guaranteed spectral floor remains $\lambda_{\ast}\ge0.25$.
 \end{enumerate}
 \end{theorem}
 
@@ -667,7 +683,7 @@ Let $R_1\in(0,2]$. Then $\lambda_{\Sigma_1}\ge 0.25$.
 With $\kappa_\ell=1$ and $f_2\ge 1$, \eqref{eq:RlFinal} implies
 $(f_2R_{\mathrm{lens}})^2=3.210879R_1\le 6.421758<8$, hence
 $\lambda_{\mathrm{lens}}>0.25$.
-With $h_0=1$, $\lambda_{\mathrm{nil}}=0.25$.
+With $h_0=1$, $\lambda_{\mathrm{nil}}\ge0.25$.
 The overlap constraints are satisfied by construction.
 \end{proof}
 
@@ -676,7 +692,7 @@ The overlap constraints are satisfied by construction.
 The existence theorem shows only that the measured Standard Model gauge
 profile can be represented inside this auxiliary coefficient ansatz without
 violating its assumed dimensionless gap inequalities. The choice $h_0=1$
-saturates the declared nil lower bound in this ansatz; it does not prove that
+sets the declared nil lower-bound certificate in this ansatz; it does not prove that
 the selected q79 geometry has this value or that the nil lane physically
 controls the onset of noncoherent behavior.
 
@@ -689,11 +705,9 @@ representatives are specified.
 \begin{remark}[Coherent sector stability]
 All results in this work are conditional on the stability of the coherent
 sector.
-If the coherent sector were dynamically unstable, the theory would not merely
-predict different numerical values; rather, it would fail to support persistent
-observables, reproducible measurements, or probabilistic interpretation.
-Accordingly, coherent sector stability is treated here as a prerequisite for
-physics rather than a phenomenological assumption.
+Instability removes this paper's controlled coherent truncation and its
+error estimates. It does not imply the absence of physical interactions,
+ordinary measurements, records or probabilities in other descriptions.
 \end{remark}
 
 % ===========================
@@ -716,8 +730,8 @@ nor that twistor space is fundamental.
 
 \subsection{High--coherence regime and admissible truncation}
 
-The twistor formulation of MTT establishes the existence of a high--coherence
-regime in which:
+The twistor corner used here is a conditional high--coherence regime
+\cite{Twistor} in which:
 \begin{enumerate}
 \item the spectral gap $\lambda_Q$ separating coherent and noncoherent modes
 is parametrically large;
@@ -736,8 +750,7 @@ $O(\lambda_Q^{-1})$.
 
 \begin{remark}
 This assumption invokes no ultraviolet completion and no string-theoretic
-structure; it relies only on the coherence and gap hypotheses already stated
-in Sections~2 and~10.
+structure; it relies on the declared coherence, gap and truncation hypotheses.
 \end{remark}
 
 \subsection{Canonical definition of the massless gauge subspace}
@@ -757,8 +770,8 @@ associated with the self--dual Yang--Mills corner of the MTT configuration
 space.
 \end{definition}
 
-This definition is canonical within the admissible slab and does not depend
-on additional choices.
+This definition is relative to the supplied operator, metric, domain and
+isolated spectral slab; it does not select those data physically.
 
 \subsection{Schur--Feshbach reduction and error control}
 
@@ -781,7 +794,8 @@ P_0 L P_0
 P_0 L Q (Q L Q)^{-1} Q L P_0.
 \]
 
-The twistor analysis proves the operator bound
+Under the stated complementary inverse and off-diagonal operator bounds,
+the Schur--Feshbach correction obeys
 \[
 \|P_0 L Q (Q L Q)^{-1} Q L P_0\|
 \;\le\;
@@ -801,7 +815,8 @@ $L^2$ normalization, fixes its scale.
 
 \begin{remark}
 The abelian overlap $I_1$ remains fixed by the explicit $S^1_{\mathrm{cen}}$
-normalization of Appendix~G and is not modified by the twistor construction.
+normalization $I_1=2\pi R_1$ in \eqref{eq:I1}; the twistor construction does
+not replace that declared convention.
 \end{remark}
 
 \subsection{Leading--order overlap integrals}
@@ -822,7 +837,7 @@ normalization data.
 
 \subsection{Control of overlap deviations}
 
-Let $I_a$ denote the full overlap integrals defined in Section~4.
+Let $I_a$ denote the full weighted gauge-kinetic overlaps defined above.
 
 \begin{lemma}[Conditional overlap stability under coherent truncation]
 Assume the full and leading projectors, period-normalized representatives,
@@ -855,7 +870,8 @@ Combining the above with the experimentally extracted targets at the selected co
 we obtain:
 
 \begin{theorem}[Twistor-corner $\Theta$--closure condition]
-If the twistor-corner admissibility assumption holds at $\mu_\Theta$, then
+If the twistor-corner admissibility assumption and the preceding projector,
+representative, weight and measure perturbation bounds hold at $\mu_\Theta$, then
 $\Theta$--closure at leading order reduces to the computable conditions
 \[
 \frac{I_2^{(0)}}{I_1} = 0.5110273,
@@ -932,10 +948,52 @@ fifteen-coordinate likelihood is stated explicitly.
 
 The former $5~\mathrm{TeV}$ crossing, the geometry calibrated to its ratios,
 and the identification of that scale with an internal gap, proper-time cutoff,
-or cosmological scale are not results of this revision.  Papers II--V must be
-re-executed or reclassified accordingly.  This paper therefore supplies a
+or cosmological scale are not results of this revision. Revised Papers II--V
+retain the corresponding calibrated, conditional and round-trip roles.
+This paper therefore supplies a
 reproducible profile target and a precise geometric test, not a unique
 first-principles prediction of gauge couplings or internal geometry.
+
+\section{Selected-source results and this paper's boundary}
+\label{sec:theta-source-consumers}
+
+The eta9 imports are owned contextually by \emph{Flux Compactifications in
+Heterotic String Theory}, in the sections on the selected source and the
+integral comparison, and completed local tests and the global endpoint.
+Gate~1 closes the original-Jacobian campaign at all 30 groups and 225 selected
+columns \cite{ThetaGate1}. This is an exact finite source calculation, not
+the global integral meridian, the 248-coordinate readout or the analytic
+Deligne class $\beta_{\mathbb C}$.
+
+The completed three-cycle transport has independent cycles with Gram matrix
+$-2I_3$ and zero detected affine pairings \cite{ThetaCycles}. Its scope is
+a non-detecting subsystem: it does not prove global triviality of the twist,
+and rerunning that same subsystem is not the missing detection theorem.
+Neither this conclusion nor the finite gate identifies an auxiliary
+Circle--Lens--Nil model with the physical q79 topology.
+
+The large-gauge result is owned by \emph{Cohesive Closure Repair and Its
+Hodge, Kernel, and Projection Shadows}, in its subsection on the rank-zero
+large-gauge kernel. It gives an injective immersion
+$b_{K3}:\mathbb R^2\to\mathbb T^{20}$ with dense nonclosed image
+\cite{ThetaBK3}. Rank zero counts periodic gauge identifications, not source
+coordinates or physical modes. It removes a kernel ambiguity without
+requiring numerical periods, but does not provide kinetic normalization,
+the selected shared-circle action or the unrelated eta9 affine lift.
+
+For Paper~I, none of these results selects the period-normalized modes,
+gauge-kinetic weights or action scale that would emit the two measured
+overlap targets. A rank-zero gauge kernel is not zero-input gauge prediction.
+The selected eta9 local source tube is also not a useful-width global
+transport certificate. The established one-shared-primitive Standard Model
+profile closure remains retained; the stricter source-independent overlap
+prediction is a different question.
+
+
+The managed evidence block below retains its earlier frozen profile snapshot.
+Its historical source-status labels do not supersede the current exact,
+local and open boundaries just stated or reopen the retained hidden-HYM
+existence and shared-primitive Standard Model results.
 
 % BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
 \section*{Computational Evidence and Reproducibility}
@@ -987,16 +1045,31 @@ Tier labels are quoted verbatim from that manifest. A row used directly supports
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
-\section*{References}
-% ===========================
+\begin{thebibliography}{99}
+\bibitem{PDG} Particle Data Group (PDG), Review of Particle Physics (declared electroweak inputs).
+\bibitem{MachacekVaughn} M.~E. Machacek and M.~T. Vaughn, ``Two-loop renormalization group equations in a general quantum field theory,'' Nucl. Phys. B222 (1983) 83--103.
+\bibitem{Kato} T.~Kato, \emph{Perturbation Theory for Linear Operators}, Springer (1995).
+\bibitem{Foundation} P.~Nero, \emph{Modal Triplet Theory: Foundation} (MTT corpus).
+\bibitem{Amplitudes} P.~Nero, \emph{Modal Triplet Theory: Quantum Amplitudes from Modal Geometry} (MTT corpus).
+\bibitem{Twistor} P.~Nero, \emph{Twistor Encodings as High-Coherence Limits of Modal Triplet Theory} (MTT corpus).
+\bibitem{ThetaGate1}
+P.~Nero, \emph{Selected eta9 original-Jacobian Gate 1 campaign} (2026).
+Frozen source at curated manifest commit
+\texttt{f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7}:
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json}{source artifact}.
 
-\begin{enumerate}
-\item Particle Data Group (PDG), Review of Particle Physics (for $M_Z$, $\alpha(M_Z)$, $\sin^2\theta_W(M_Z)$, $\alpha_s(M_Z)$).
-\item M. E. Machacek and M. T. Vaughn, ``Two-loop renormalization group equations in a general quantum field theory,'' Nucl. Phys. B222 (1983) 83--103.  % for RGE conventions
-\item T. Kato, \emph{Perturbation Theory for Linear Operators}, Springer (1995). % for spectral projection continuity
-\item Peter Nero, \emph{Modal Triplet Theory: Foundation} (MTT corpus).
-\item Peter Nero, \emph{Modal Triplet Theory: Quantum Amplitudes from Modal Geometry} (MTT corpus).
-\item Peter Nero, \emph{Twistor Encodings as High-Coherence Limits of Modal Triplet Theory} (MTT corpus).
-\end{enumerate}
+\bibitem{ThetaCycles}
+P.~Nero, \emph{Complete selected three-cycle non-detection decision} (2026).
+Frozen source at curated manifest commit
+\texttt{f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7}:
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json}{source artifact}.
+
+\bibitem{ThetaBK3}
+P.~Nero, \emph{Selected K3 rank-zero large-gauge kernel} (2026).
+Frozen source at curated manifest commit
+\texttt{f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7}:
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json}{source artifact}.
+
+\end{thebibliography}
 
 \end{document}

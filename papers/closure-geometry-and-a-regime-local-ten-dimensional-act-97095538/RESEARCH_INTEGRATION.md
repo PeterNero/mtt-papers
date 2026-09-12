@@ -14,11 +14,17 @@ Curved repair germs split cleanly into zero, central nonzero and noncentral curv
 
 Action construction and normalization contract; physical action selection remains separate.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_curved_cyclic_repair_germ/artifact.json); SHA-256 `b3a3c82a427a164d6392b60bea1f1edd220ccf2ca34e5d37c49b8327d80bd997`.
+
+Reviewed 2026-09-12: Full frozen packet and proof explanation read. The manuscript explains d_Q^2=[Q^2,-], the zero/central/noncentral curvature trichotomy, and the odd Q^2=I witness: adjoint nilpotence can coexist with a nonzero defect and Jordan response 2X. It states the additional metric/domain inputs needed for Hodge or dissipative language. This is exact local algebra, not a physical-action selection or a proof that every representation detects closure.
+
+- `main.tex:207`: `sec:repair-action`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_cyclic_mc_action_descent
 
@@ -28,11 +34,17 @@ A degree-three cyclic dg algebra canonically transgresses its Maurer-Cartan resi
 
 Action construction and normalization contract; physical action selection remains separate.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_cyclic_mc_action_descent/artifact.json); SHA-256 `f2be34f379b0940c6e056f7f78b722fd4118d76fabfa7c54c0429654cfe977f7`.
+
+Reviewed 2026-09-12: Full packet and proof explanation read. The degree-three cyclic action, variation, nondegeneracy needed to identify the full critical locus, infinitesimal gauge invariance, and projective-overlap trace descent are explained. The signed Hessian C_tau J is contrasted with J* W J, including the negative signed direction in the frozen witness. Large-gauge coefficient quantization, a physical trace/real slice, and identification with the ten-dimensional ansatz are not supplied by this integrability-lane result.
+
+- `main.tex:278`: `sec:cyclic-action`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_string_cyclic_cotangent
 
@@ -42,11 +54,17 @@ The central shared line extends to the q79 string DGLA but acts trivially on its
 
 Action construction and normalization contract; physical action selection remains separate.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_string_cyclic_cotangent/artifact.json); SHA-256 `84aaa6a28a2ecb2d239d6e3c2cfe363104c1b44ceb79f1ac919634edc8a4f8e3`.
+
+Reviewed 2026-09-12: Full packet and proof explanation read. The local trace grammar places form/anomaly lanes in the pairing radical on a complex threefold; the semisimple gauge algebra supplies no invariant linear cross-pairing. This is an obstruction to that grammar, not every possible action. The density-valued shifted cotangent completion L semidirect L![-3], explicit shift convention, dual variation, and zero-section lift are explained. Adjoint/ordinary-form shared-line neutrality does not apply automatically to relative charged Hom lanes. Physical BV identification and action normalization remain open.
+
+- `main.tex:310`: `sec:string-cotangent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_variational_anchor_multiplier_lift
 
@@ -56,9 +74,15 @@ A residual admits a direct scalar action for a declared variational anchor exact
 
 Action construction and normalization contract; physical action selection remains separate.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_variational_anchor_multiplier_lift/artifact.json); SHA-256 `de69f05c11f0e21e128a33924bd48090aac35194238b9ec05a3f62f56f304d31`.
+
+Reviewed 2026-09-12: Full packet and proof explanation read. The anchored Helmholtz criterion on a star-shaped finite domain is illustrated by rotational versus gradient residuals with equal positive costs. The universal multiplier block Hessian and its normal-square blocks are explained. A scalar cubic example exhibits different signed-action and repair vertices, including opposite signed Hessians at two roots with the same normal square. This supplies an exact variational construction and information-loss example, not physical source, particle, or Lorentzian-Dirac selection.
+
+- `main.tex:236`: `sec:anchor`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 

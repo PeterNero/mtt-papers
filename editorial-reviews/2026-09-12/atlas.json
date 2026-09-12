@@ -1,0 +1,57 @@
+{
+  "schema": "mtt.editorial-workstream.v1",
+  "workstream": "atlas",
+  "reviews": [
+    {
+      "id": "COH-ATLAS-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "mathematical_language_atlas"
+      ],
+      "anchors": [
+        "sec:atlas-reference",
+        "sec:atlas-linear",
+        "sec:atlas-tangent",
+        "sec:atlas-arrows",
+        "sec:atlas-chronology"
+      ],
+      "assessment": "Full 4045-line mixed-scope atlas read, including unheaded return/Krylov tail. Integrates representation-diagram architecture and exact finite compatibility/gap with explicit metric/domain conditions, obstructed-tangent counterexample and historical-to-current chronology. Source-family details remain in their owners; neither historical open counts nor notebook candidates replace current A/B authority. Corrects diagnostic slogans without inventing physical points, parameter reductions or global analytic promotion.",
+      "main_tex_lf_sha256": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5",
+      "result_hashes": {
+        "mathematical_language_atlas": "38358a3a03d3fcb2026434fcfd76a3d2d6059f05d2dde6d94de70cceb8d144ac"
+      }
+    }
+  ],
+  "paper_changes": [
+    {
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_version": "v14",
+      "version": "v15",
+      "main_tex_lf_sha256": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5",
+      "pdf_pages": 75,
+      "build": "pass_zero_warnings",
+      "visual_review": "Final 75-page PDF inspected on all ten contact sheets; new atlas pp.64-67 and updated recurrence p.13 inspected at full resolution. No clipping or overlaps.",
+      "prior_text_preserved": "V14 theorem text retained. Changes are atlas/revision additions, current version, FP ownership-table clarification, and explicit reference to the separate finite-mode companion in the recurrence discussion."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "PAPER.COH.ATLAS_DIAGNOSTICS.01",
+      "result_id": "mathematical_language_atlas",
+      "scope": "Finite compatibility versus deformation tangent, parameter count, norm-specific conditioning and domain-wide exclusion.",
+      "resolution": "Cohesive v15 sec:atlas-linear/sec:atlas-tangent; exact bounded tests6."
+    }
+  ],
+  "source_read_coverage": {
+    "artifact": "mathematical_language_atlas",
+    "lines": 4045,
+    "complete": true,
+    "details": "editorial-reviews/2026-09-12/atlas.md"
+  },
+  "remaining_research": [
+    "Selected common physical endpoint/action, analytic comparison, global periods and quantum measure are not supplied by diagram notation."
+  ]
+}

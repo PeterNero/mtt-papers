@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "July 2026 Version 4",
+  "current_version": "v5",
+  "date": "September 2026 Version 5",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16950915",
     "created": "2026-07-29T08:51:37.194125+00:00",
@@ -32,23 +32,42 @@
     "updated": "2026-07-29T08:51:37.805171+00:00",
     "version": "v4"
   },
-  "main_tex_sha256": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2",
+  "main_tex_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
   "paper_id": "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba",
-  "paper_md_sha256": "e063bc7df99d2a565daf5680bbc9bc6ed713cde4e60d47bf76e3810f9e60dde7",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "d8605ff2411e2bde164126e1effc1810054d7f0f79dcf09e9fa052bf1272c6e3",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "causal_base_q79_seven_row_endpoint_factorization_packet",
+    "q79_family_source_cutset",
+    "q79_maurer_cartan_repair"
+  ],
   "revision": {
-    "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "f1d21a368aff32c2476cd2fd6c09195963d5f04ecda5db890b0f8ed5593cce67",
+    "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "b8ff4feccb66876a6a78bb47264c65aff47b1b395879e013bb8edaadcae2ff51",
     "selected_revision": true,
     "superseded_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 20513,
+      "bytes": 693,
+      "path": "RESEARCH_INTEGRATION.md",
+      "sha256": "451468981ec994147fe15a013f8ec803b433d4ac300bd143512e937ee369d086"
+    },
+    {
+      "bytes": 3532,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "b8ff4feccb66876a6a78bb47264c65aff47b1b395879e013bb8edaadcae2ff51"
+    },
+    {
+      "bytes": 26879,
       "path": "main.tex",
-      "sha256": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2"
+      "sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce"
+    },
+    {
+      "bytes": 4496,
+      "path": "paper-markdown.lua",
+      "sha256": "eda1aef847606bd8399a98fb3fc9facb577e19e5f4780fce518485aafd2e8157"
     },
     {
       "bytes": 3784,
@@ -59,9 +78,9 @@
   "source_provenance": {
     "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Triplet_Theory__From_MTT_to_Quantum_Field_Theory_on_Curved_Spacetime_v3"
   },
-  "source_tree_sha256": "465c5b0d48915d5f8303fbf6ef37db0fd6c33514de6b16a073c1bc6fa4c8d0f7",
+  "source_tree_sha256": "60d475fd4f992fcfcf2631d01c662d207890504bcdd3124f1b0a6b6af37c3de7",
   "title": "Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A Selected Free CAR Net and the Interacting Reconstruction Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.16950915",

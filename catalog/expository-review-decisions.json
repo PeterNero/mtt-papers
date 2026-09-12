@@ -3,32 +3,41 @@
   "papers": {
     "locality-coherent-alternatives-and-records-in-mtt": {
       "status": "needs_author_review",
-      "reviewed_on": "2026-09-06",
+      "reviewed_on": "2026-09-13",
       "reviewer_kind": "assistant_editorial_and_artifact_review",
-      "note": "New standalone interpretive manuscript. Technical and visual review completed on all 22 pages, with 31 explanatory model checks and 6 publication-artifact checks. The paper separates established experiments, scoped MTT results, and the proposed single-world ontology; preserves canonical recorder/free-net results; imports rather than duplicates theorems; distinguishes one-arm monitoring, particle number, temporal protocols, Bell assumptions, and local-first Wigner reversal. Author approval and any Zenodo release remain pending.",
-      "reviewed_main_tex_sha256": "3b4b684061ccc70355858af985bf1a58bd952f0f9897955f30733b59ec0d2f7d",
-      "reviewed_pdf_sha256": "6f234eeebbf74ad78c331b06a056a05c00a5d6e78934891bac1a2a2107072135",
-      "reviewed_source_tree_sha256": "70a64bc2a9279d944fa78b51bd75add1d84f6423d668e46f3b69549099c257fc",
+      "note": "Current v2 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. Author review remains required; this editorial review does not authorize release.",
+      "reviewed_main_tex_sha256": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac",
+      "reviewed_pdf_sha256": "71a6c095083455b0848c47828da0f1564e8fbfe7146af46291425b1b12503d4a",
+      "reviewed_source_tree_sha256": "b406f106d92a3f681a659c1009dc8df93174b00472ed846ccba0ba06830f22f9",
       "author_review_required": true,
-      "release_authorized": false
+      "release_authorized": false,
+      "prior_review_note": "New standalone interpretive manuscript. Technical and visual review completed on all 22 pages, with 31 explanatory model checks and 6 publication-artifact checks. The paper separates established experiments, scoped MTT results, and the proposed single-world ontology; preserves canonical recorder/free-net results; imports rather than duplicates theorems; distinguishes one-arm monitoring, particle number, temporal protocols, Bell assumptions, and local-first Wigner reversal. Author approval and any Zenodo release remain pending.",
+      "reviewed_artifact_version": "v2",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
-      "reviewed_on": "2026-09-12",
-      "note": "V12 integrates eight PBW/apolar/socle results through a connected explanatory section, examples and frozen source citations. All 48 prior source integrations remain unchanged. Distinguishes finite field and anchor scopes, tensor covariance from fixed-metric invariance, quotient descent from complement lifts, and actual source returns from reconstructed quotient bases. All 62 final PDF pages visually inspected; zero build warnings and nine new exact editorial tests pass. Worker code, frozen artifacts and FP I--VI unchanged. No physics-tier promotion or Zenodo authorization.",
-      "reviewed_main_tex_sha256": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
-      "reviewed_pdf_sha256": "378bfbd07d7af2b9735be1d8ec62ae1e0d75dcd7480f397e5599ee7eea06d66c",
-      "reviewed_source_tree_sha256": "7183d703c19fe912c573ca9de8d2ad310135fc5f11ff85593a8a8df32bc43090",
-      "release_authorized": false
+      "reviewed_on": "2026-09-13",
+      "note": "Current v15 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5",
+      "reviewed_pdf_sha256": "37b75dc555f86ea73eaacbca5514c0a018e3f48ce6d0d143750babeea607cdb1",
+      "reviewed_source_tree_sha256": "222da3c4d761cd9d38541e4604f2b8aa44c003f86d96f29eba5307c88c453354",
+      "release_authorized": false,
+      "prior_review_note": "V12 integrates eight PBW/apolar/socle results through a connected explanatory section, examples and frozen source citations. All 48 prior source integrations remain unchanged. Distinguishes finite field and anchor scopes, tensor covariance from fixed-metric invariance, quotient descent from complement lifts, and actual source returns from reconstructed quotient bases. All 62 final PDF pages visually inspected; zero build warnings and nine new exact editorial tests pass. Worker code, frozen artifacts and FP I--VI unchanged. No physics-tier promotion or Zenodo authorization.",
+      "reviewed_artifact_version": "v15",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {
       "status": "reviewed",
-      "reviewed_on": "2026-09-12",
-      "note": "Version 4 retains the reconstruction and family-intertwiner theorems and contextually integrates all fourteen queued SM results. It explains gauge spectra and density, common normalization with one anchor, the effective 13/19-coordinate profile ledger, neutral holonomy and conditional branch measure, axion quality and multi-axion rank tests, and the limited Cech/rank-two HYM support witnesses. Profile compatibility is not independent prediction. All sixteen PDF pages were rendered and visually inspected; compilation has no warnings. The metadata abstract is plain text. This authoring revision is not a Zenodo release.",
-      "reviewed_main_tex_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
-      "reviewed_pdf_sha256": "9915388f1dd95d9dc0029598558c1db1e564b63de886e6358e3ee68dfa8e33a3",
-      "reviewed_source_tree_sha256": "87d22b9d35e414173bee3b1f1da853bc72d769093eab5358751611f4dcbc9c36",
-      "release_authorized": false
+      "reviewed_on": "2026-09-13",
+      "note": "Current v5 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af",
+      "reviewed_pdf_sha256": "efe6b2fb8c36630d1d41367d286700a8fee2591d0ae8cd4b603d01f0525bdac0",
+      "reviewed_source_tree_sha256": "46257232adcdd4c27d37730d380e88272227eab865c1589d7f6c39e8ebd6ea29",
+      "release_authorized": false,
+      "prior_review_note": "Version 4 retains the reconstruction and family-intertwiner theorems and contextually integrates all fourteen queued SM results. It explains gauge spectra and density, common normalization with one anchor, the effective 13/19-coordinate profile ledger, neutral holonomy and conditional branch measure, axion quality and multi-axion rank tests, and the limited Cech/rank-two HYM support witnesses. Profile compatibility is not independent prediction. All sixteen PDF pages were rendered and visually inspected; compilation has no warnings. The metadata abstract is plain text. This authoring revision is not a Zenodo release.",
+      "reviewed_artifact_version": "v5",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "mtt-gpt-corpus-index-grouped-reference": {
       "status": "reviewed",
@@ -56,11 +65,14 @@
     },
     "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-31",
-      "note": "Version 2 replaces the claim that coherence alone makes physical Feynman rules inevitable by a typed finite graded Wick graph theorem, an exact all-retained projection theorem, a closed-sector factorization corollary, and an identity-intertwining proposition. It proves that graph combinatorics cannot select numerical weights, statistics, causal prescriptions, gauge data, or renormalization; distinguishes six commonly conflated kernels; assigns the selected q79 free even-CAR theorem to its companion paper; keeps the upper action and fixed-coupling interacting gauge-BRST completion open; adds examples, validation obligations, and current ledger reconciliation; and the complete 11-page PDF was visually inspected.",
-      "reviewed_main_tex_sha256": "3e02bffabd34d5a711ba23c10a8d5a63d77d409de28fc75b62f5bc29cf88a2a6",
-      "reviewed_pdf_sha256": "ea92e10f12ee7cf6bc129dfcabb08c4d4339675efcb9d6dff835db94addffab2",
-      "reviewed_source_tree_sha256": "da72d1f433f4df6de56759f92f139321a4505548f251a3563c77c6c4ab9d69c0"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "68d7df7ac9702611b5cfc5d62f75d452d1d2a9c72215cb7240b53dcb49004e05",
+      "reviewed_pdf_sha256": "d24e1a48357ce78647af8ea814c8304b342c30a0698d9686590303a009d4206b",
+      "reviewed_source_tree_sha256": "369189c3230ba671fb396ae9bec46fb74a1bb738b61823544abcd0b8df1102d0",
+      "prior_review_note": "Version 2 replaces the claim that coherence alone makes physical Feynman rules inevitable by a typed finite graded Wick graph theorem, an exact all-retained projection theorem, a closed-sector factorization corollary, and an identity-intertwining proposition. It proves that graph combinatorics cannot select numerical weights, statistics, causal prescriptions, gauge data, or renormalization; distinguishes six commonly conflated kernels; assigns the selected q79 free even-CAR theorem to its companion paper; keeps the upper action and fixed-coupling interacting gauge-BRST completion open; adds examples, validation obligations, and current ledger reconciliation; and the complete 11-page PDF was visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "effective-field-theory-as-a-shadow-of-projection-admiss-ec123406": {
       "status": "reviewed",
@@ -80,11 +92,14 @@
     },
     "modal-triplet-theory-from-mtt-to-quantum-mechanics": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "note": "Rebuilt as a standalone explanatory coherent-sector reconstruction and Born-source boundary. The paper defines the complete Hilbert, state, observable, Hamiltonian, unitary, clock, instrument, composition, locality, and source record; proves a conditional MTT-QM reconstruction theorem, a sufficient closed reducing-form pullback, and an exact target-embedding result while classifying the latter as expressiveness rather than prediction; separates complex structure and noncommutativity from projection; replaces the invalid universal self-adjoint time operator by clock-POVM and Mandelstam-Tamm statements; separates Gleason-Busch characterization from probability sourcing; imports the exact selected q79 binary stopped output-measure and second-moment descent result only on its declared Fock-output domain; treats measurement as an ordinary physical interaction and record; narrows entanglement, path-integral, and Lindblad claims to their standard hypotheses; retains B.QM.01 as globally open; and the complete 18-page PDF was visually inspected.",
-      "reviewed_main_tex_sha256": "582ba1b90adaf594fcf10271b41d0f0bfc2ab6f2c03490747e233b549d626cb2",
-      "reviewed_pdf_sha256": "11d3c508932549006540c512b4db81ebe0f70bcbf7ade04928996ef7c4367f0c",
-      "reviewed_source_tree_sha256": "0e8425ba20399ce79fbc3b26f1a591aadd37dd6a1fb1eefb90fb60a5acba2bf9"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v5 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "reviewed_pdf_sha256": "031d8f7f5ff811e96dc1cbc4f982c29eef57f81f7a0687ae519b82adb75d6969",
+      "reviewed_source_tree_sha256": "69d81c0719476deb68156ea7f30fdb347a54e236f058e1f2af382cb710bf9141",
+      "prior_review_note": "Rebuilt as a standalone explanatory coherent-sector reconstruction and Born-source boundary. The paper defines the complete Hilbert, state, observable, Hamiltonian, unitary, clock, instrument, composition, locality, and source record; proves a conditional MTT-QM reconstruction theorem, a sufficient closed reducing-form pullback, and an exact target-embedding result while classifying the latter as expressiveness rather than prediction; separates complex structure and noncommutativity from projection; replaces the invalid universal self-adjoint time operator by clock-POVM and Mandelstam-Tamm statements; separates Gleason-Busch characterization from probability sourcing; imports the exact selected q79 binary stopped output-measure and second-moment descent result only on its declared Fock-output domain; treats measurement as an ordinary physical interaction and record; narrows entanglement, path-integral, and Lindblad claims to their standard hypotheses; retains B.QM.01 as globally open; and the complete 18-page PDF was visually inspected.",
+      "reviewed_artifact_version": "v5",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "modal-triplet-theory-from-mtt-to-pilot-wave-dynamics": {
       "status": "reviewed",
@@ -120,28 +135,37 @@
     },
     "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "note": "Rebuilt around a five-level selection ladder separating projected consistency, full equation closure, ansatz-local isolation, dynamical attraction, and physical selection. The paper proves the projected-residual completeness criterion, ansatz isolation theorem, no-selection-from-equations theorem, and finite-ansatz conclusion theorem; imports rather than duplicates the neighboring flow-intertwining theorem; withdraws the invalid Iwasawa bundle/anomaly/Yukawa chain and physical Lens-Nil claim; retains q79/Cech/rank-two HYM evidence at its declared tiers; and the 11-page PDF was visually inspected.",
-      "reviewed_main_tex_sha256": "4501582a4a3483668d18eba74773813fc8d4e23e4863b271270f1454f2f9f4f6",
-      "reviewed_pdf_sha256": "2aeced97a05d6365f45ce828f22b7998613761016c515186eceb17fc388ba044",
-      "reviewed_source_tree_sha256": "0fa961119004f39dcc7d337f1da0d8731eb0e6dfe58700c3140f26250cb87ac9"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "db115e50f0022f61b5b745524753dd8e0b76ba90a5c77977a4172081c446da67",
+      "reviewed_pdf_sha256": "e9731dbd70cf0b99315256e150af1eef81979b7f36a1543525371df09350ac0d",
+      "reviewed_source_tree_sha256": "d50c9e9a482d09322ee926db3439f5dfb77597aac1fdc61fdc3ff4e8de5cf643",
+      "prior_review_note": "Rebuilt around a five-level selection ladder separating projected consistency, full equation closure, ansatz-local isolation, dynamical attraction, and physical selection. The paper proves the projected-residual completeness criterion, ansatz isolation theorem, no-selection-from-equations theorem, and finite-ansatz conclusion theorem; imports rather than duplicates the neighboring flow-intertwining theorem; withdraws the invalid Iwasawa bundle/anomaly/Yukawa chain and physical Lens-Nil claim; retains q79/Cech/rank-two HYM evidence at its declared tiers; and the 11-page PDF was visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-30",
-      "note": "Rebuilt as a conditional fixed-point correspondence: the invalid twisted differential, coercive selection potential, automatic contraction, global-minimizer, and selected Fu-Yau claims are withdrawn; a typed MTT-to-Hull-Strominger bridge, exact flow-intertwining descent theorem, generator-defect bound, and separate contraction-basin criterion are supplied; q79 finite/topological/rank-two evidence is retained at its declared tiers through the managed reproducibility section, and the 12-page PDF was visually inspected.",
-      "reviewed_main_tex_sha256": "c7cbe4cc0ebe987609ae16a2520b6df9bf18aff70c503657b6a356a7ba2cba2d",
-      "reviewed_pdf_sha256": "b061207fb5a80642231191614310d6339e3019c2892500ecd5353c55bdbd5ad2",
-      "reviewed_source_tree_sha256": "9fcb390f92eec3716cc7a8bd0e926c1980d55bb0fc38713496b9a4a22eed9f93"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "reviewed_pdf_sha256": "bc786d8a60f4f2650bfe6164ed9e13b2b67c75ec83e6ac7fd6890f98214cc2a2",
+      "reviewed_source_tree_sha256": "a8f9faafd1e0733cb5c9309e6fa0b843b4ee9283b21d5d91c170aede6b02d6ff",
+      "prior_review_note": "Rebuilt as a conditional fixed-point correspondence: the invalid twisted differential, coercive selection potential, automatic contraction, global-minimizer, and selected Fu-Yau claims are withdrawn; a typed MTT-to-Hull-Strominger bridge, exact flow-intertwining descent theorem, generator-defect bound, and separate contraction-basin criterion are supplied; q79 finite/topological/rank-two evidence is retained at its declared tiers through the managed reproducibility section, and the 12-page PDF was visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "flux-compactifications-in-heterotic-string-theory-expli-08b38155": {
       "status": "reviewed",
-      "reviewed_on": "2026-09-12",
-      "note": "Version 6 preserves the Iwasawa audit and T69-T73 local/global reconciliation. Corrects the V2/H1 table and explains the already established rank-nine projective hidden carrier and existential HYM threshold using frozen UST.G3T/G3V records. Explicitly separates existence from numerical M/t/connection coefficients and the common visible-hidden/Bianchi endpoint. All 14 rebuilt pages were rendered and visually inspected, including the changed table and discussion at full resolution. Metadata abstract is plain text with no correction history. No theorem is duplicated and no physical endpoint or Zenodo release is claimed.",
+      "reviewed_on": "2026-09-13",
+      "note": "Current v7 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
       "release_authorized": false,
-      "reviewed_main_tex_sha256": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e",
-      "reviewed_pdf_sha256": "4ff0598249125317c611caf4dae2f40602fde8d1bfd141fb0e98a4ffa1c5f011",
-      "reviewed_source_tree_sha256": "f278d1d5136d31eaf0beac6f6fd19c8fcb51a92f6b59d8cdaf1717e416dc4dff"
+      "reviewed_main_tex_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
+      "reviewed_pdf_sha256": "10ac98cfa616f58d3ee449b3269d9ff1fd3034f35d7f9b1c32ae0afa73983ae8",
+      "reviewed_source_tree_sha256": "1723ca0d4668e8086e431fa88317e6bff6abd6a0ee02e9b329f2551ab01638d6",
+      "prior_review_note": "Version 6 preserves the Iwasawa audit and T69-T73 local/global reconciliation. Corrects the V2/H1 table and explains the already established rank-nine projective hidden carrier and existential HYM threshold using frozen UST.G3T/G3V records. Explicitly separates existence from numerical M/t/connection coefficients and the common visible-hidden/Bianchi endpoint. All 14 rebuilt pages were rendered and visually inspected, including the changed table and discussion at full resolution. Metadata abstract is plain text with no correction history. No theorem is duplicated and no physical endpoint or Zenodo release is claimed.",
+      "reviewed_artifact_version": "v7",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "a-projection-first-reframing-of-quantum-gravity": {
       "status": "reviewed",
@@ -161,11 +185,14 @@
     },
     "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Rebuilt around exact finite-TT support, conditional fixed-order quantum-GR parity, the limits of the SPT filter, and the selected compatible q79 heterotic route; the 5 available, 2 partial, and 5 open worldsheet rows are stated explicitly; 9-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "b5306c19857e56517685d64be04d196570780d6f315cf8987b54aeb3c68afe19",
-      "reviewed_pdf_sha256": "614c64c9cb46a8dad7d3e9e617ceef8df204b8485d4b83a4f6c8d4f8be5caa95",
-      "reviewed_source_tree_sha256": "63fdb8ca34fdb53b02337a3323f3f8b1950fa03f96fa878e250c7937045ea0f2"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v7 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
+      "reviewed_pdf_sha256": "a62e8a1e898f7d59c99e3988cf08d5c6e960edc68b03f0a0e355afcab5707add",
+      "reviewed_source_tree_sha256": "2d9d21336ee8096976dcf1f3a968cce1066defd71b43a87592a8927bb92b04c5",
+      "prior_review_note": "Rebuilt around exact finite-TT support, conditional fixed-order quantum-GR parity, the limits of the SPT filter, and the selected compatible q79 heterotic route; the 5 available, 2 partial, and 5 open worldsheet rows are stated explicitly; 9-page PDF visually inspected.",
+      "reviewed_artifact_version": "v7",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "constructive-mtt-quantum-gravity-i-borel-summability-of-217bd014": {
       "status": "reviewed",
@@ -177,11 +204,14 @@
     },
     "constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Shared-filter chain map, finite-cutoff Ward theorem, Borel inheritance, cohomological OS contract, and theorem ownership reviewed in context; 10-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "06115993d23c51e9bec4637bf31ff208e2653c48fd138758288da0bfb31bdc40",
-      "reviewed_pdf_sha256": "f342622fce2d26eb33984aca776a7f88e900d4f64310a0b6e8125c499e4a1fbb",
-      "reviewed_source_tree_sha256": "3acf7bdf988d2f10d9727b3745a2d1c5beef5af5e0d38af699fce695803e6f45"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "1a449fe49555681552f63d283e281502ac57477d95a4493a45a3637704ffafe5",
+      "reviewed_pdf_sha256": "efce06d540530f9e1862c6e73b37d0828651f479d5e3a65955d2254e1b25a43d",
+      "reviewed_source_tree_sha256": "7ee712f54b27ae865e8c550bf7dc463decc35e38d9e51d209a07d2679024274b",
+      "prior_review_note": "Shared-filter chain map, finite-cutoff Ward theorem, Borel inheritance, cohomological OS contract, and theorem ownership reviewed in context; 10-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "constructive-mtt-quantum-gravity-iii-infrared-limit-asy-6f8b88d9": {
       "status": "reviewed",
@@ -193,11 +223,14 @@
     },
     "black-hole-information-loss-and-quantum-measurement-col-7f29501b": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Rebuilt around the exact fiber-factorization theorem, ordinary measurement instruments, code-restricted island recovery, and separate Born/Hawking source obligations; the former equivalence theorem is withdrawn; 8-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "6e5d29deb56f49389363232615d6288d1ff0f402d22c84d9313cc3e92495345d",
-      "reviewed_pdf_sha256": "84eeeeb09e93b5f872ef26abc195a2620501ec4661ddec18048335ad293d197a",
-      "reviewed_source_tree_sha256": "09d243a1db58991b57ea20751d76ea19d785568929575795476d272d9d2a3966"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "reviewed_pdf_sha256": "960047e44dd3fd79f38601f70ff2ebdf6a5f2f8067deb3187058eec0195c8458",
+      "reviewed_source_tree_sha256": "08875e74f751b197ebbcc9932194cb44012e4fa3f3bb8443089fb9006266be5c",
+      "prior_review_note": "Rebuilt around the exact fiber-factorization theorem, ordinary measurement instruments, code-restricted island recovery, and separate Born/Hawking source obligations; the former equivalence theorem is withdrawn; 8-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "modal-triplet-theory-from-mtt-to-loop-quantum-gravity-a-4ae4b130": {
       "status": "reviewed",
@@ -265,11 +298,14 @@
     },
     "modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Rebuilt around the selected zero-order-free q79 twisted Dirac source and closed even free CAR net; standard AQFT inputs, formal all-orders BV/QME reconstruction, nonperturbative completion, state selection, and semiclassical backreaction are cleanly separated; 7-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2",
-      "reviewed_pdf_sha256": "ded1ce90fedf1d66ade1fddea427c5d5928b4e5601f392455f85aa4bcf79de78",
-      "reviewed_source_tree_sha256": "465c5b0d48915d5f8303fbf6ef37db0fd6c33514de6b16a073c1bc6fa4c8d0f7"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v5 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce",
+      "reviewed_pdf_sha256": "5b120dbcd4d323deb9c8466d10b4aa9181be7491dcdda1e42ccaadb103043a87",
+      "reviewed_source_tree_sha256": "60d475fd4f992fcfcf2631d01c662d207890504bcdd3124f1b0a6b6af37c3de7",
+      "prior_review_note": "Rebuilt around the selected zero-order-free q79 twisted Dirac source and closed even free CAR net; standard AQFT inputs, formal all-orders BV/QME reconstruction, nonperturbative completion, state selection, and semiclassical backreaction are cleanly separated; 7-page PDF visually inspected.",
+      "reviewed_artifact_version": "v5",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "gravitationally-induced-collapse-as-an-effective-limit-d74eb471": {
       "status": "reviewed",
@@ -306,12 +342,15 @@
     },
     "modal-triplet-theory-foundations": {
       "status": "reference_ready",
-      "reviewed_on": "2026-09-11",
-      "note": "Technical expository reference; context-reviewed, compiled, and visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
-      "reviewed_main_tex_sha256": "8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae",
-      "reviewed_pdf_sha256": "2b5af97fd9121c2c209793ad481b56356f41255bbdce718fe02c075950ebc55a",
-      "reviewed_source_tree_sha256": "a00789d4973ab75f48ad6da5591ae6b0a846b2c5e3d8aba759c4562dfb965bca",
-      "release_authorized": false
+      "reviewed_on": "2026-09-13",
+      "note": "Current v11 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "3e4687594762c72391fcee2fc653b5e69e42c7330a7a6f8d4326f90f612a6a05",
+      "reviewed_pdf_sha256": "e4a28abd9e02f6d71d6af8aecaac041f4eb34995b3c46dd37661c3ca273d8e03",
+      "reviewed_source_tree_sha256": "62ee734a15e0f8e6c8cdbd14b5b2e308a33c3e1fdff265c3b744e89fb1522e38",
+      "release_authorized": false,
+      "prior_review_note": "Technical expository reference; context-reviewed, compiled, and visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_artifact_version": "v11",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce": {
       "status": "reviewed",
@@ -449,11 +488,14 @@
     },
     "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Typed realization dictionary explained through a concrete modal lane and five-step pipeline; 15-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "d180d1c4e425f46d2976b9f04f1312e8a6631b8b51ac7a5c889038b50ed51dec",
-      "reviewed_pdf_sha256": "faf9248c706980e0e6b63dcfa1d084558b1468ff2e33f35a320bcdfe274e516b",
-      "reviewed_source_tree_sha256": "67a1b310ab3960996ffa4aea7aff58b4fb50e6ccb71721bc89a53c614abcd34e"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v5 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "5885d707c939d1e0a8040c14f311e5ccd92cb008f5b3c03482dfd5c2accda246",
+      "reviewed_pdf_sha256": "b9a8100cbb92a06df86d3e41b46cdbe596547df3d33fc6587c953e562963e214",
+      "reviewed_source_tree_sha256": "b4f1dc80fa9190b6b879cf4d1ffca227b55fd15b32241a6fc88977d246e9b5ea",
+      "prior_review_note": "Typed realization dictionary explained through a concrete modal lane and five-step pipeline; 15-page PDF visually inspected.",
+      "reviewed_artifact_version": "v5",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "the-modal-triplet-theory-program-d1-the-dark-sector-as-d93ac707": {
       "status": "reviewed",
@@ -489,11 +531,14 @@
     },
     "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Local comparison, spin lift, q79 finite return, and physical fermion layers separated with 2pi/4pi intuition; 10-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "7c68851cd2e7e3e17fccc3865ad0135bcb7d9790960ed66d9f7dae6b7ab69ff9",
-      "reviewed_pdf_sha256": "c6e9bbf3b391b112a62a1680093fc27b9e04f9bb8f32776aac7660ef3c3b3308",
-      "reviewed_source_tree_sha256": "962f7066ff056f3b87a7da3ead5d6a028eea100e6ab46cfd9982f0506f680e96"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v8 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
+      "reviewed_pdf_sha256": "e1fdbb97b737a035b332edef7fd61e064ada7bc3e019333f14baefcf1a84e979",
+      "reviewed_source_tree_sha256": "017b1aad88f645256c66f381346bf7353639b5e05cc60439bf624eaefab8391c",
+      "prior_review_note": "Local comparison, spin lift, q79 finite return, and physical fermion layers separated with 2pi/4pi intuition; 10-page PDF visually inspected.",
+      "reviewed_artifact_version": "v8",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "proto-spinor-closure-and-worldsheet-encoding-in-modal-t-6a9d7abf": {
       "status": "reviewed",
@@ -505,27 +550,36 @@
     },
     "world-in-world-genesis-local-comparison-geometry-and-a-9e600e73": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Comparison-field geometry explained through deformation-gradient intuition and an explicit 1+2+3 strain split; 7-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "96721e4f0c34edf7a1c60f08b060b0ac430053c8ce67a7d8b754a0e6d4749076",
-      "reviewed_pdf_sha256": "d157a235e219ea4a96f7b279fdb911f8689a6590e21a5f8515287be4e0b47059",
-      "reviewed_source_tree_sha256": "10599807d208b8876f2793499d2cbeed627048496921c454ec6d7ca5507a24d2"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v6 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "b31a25b33ed0af64f0fd7c2c95e520b28fd1655bb6ed21bb78b6030dbc4042db",
+      "reviewed_pdf_sha256": "14f4fbb2ad6a9df9aa23b798debc6fbab874e7cabb980f4b70cbee2cf882e008",
+      "reviewed_source_tree_sha256": "ee4dbd725ef7903c905a1125fddd59ce000b110c89ae69837c2ca321f8711004",
+      "prior_review_note": "Comparison-field geometry explained through deformation-gradient intuition and an explicit 1+2+3 strain split; 7-page PDF visually inspected.",
+      "reviewed_artifact_version": "v6",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "closure-strain-geometry-local-normal-forms-and-conditio-b62ade60": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Closure Hessian explained as stiffness and distinguished from generalized pole-mass extraction; 9-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "364847103297b529053639ed1975998b3758cf55226eda53dc63da3f4f126bba",
-      "reviewed_pdf_sha256": "4099bdb7f0910c49404dab89260e6c594889d5aa417900030bc6d5770e4ff994",
-      "reviewed_source_tree_sha256": "cbff50e225f7bfc8968e92e64c43f3d7158de9a90c3d1bf9b23725b27af3a1fa"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v8 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975",
+      "reviewed_pdf_sha256": "fc6f7f84a4d1847fa8348143f30a8d320a8875c6a7e75e175ae9787609b9fe3f",
+      "reviewed_source_tree_sha256": "884f9f4b0808e2ec814511d27b237825438c22f49f8106285f085ad0a06861e3",
+      "prior_review_note": "Closure Hessian explained as stiffness and distinguished from generalized pole-mass extraction; 9-page PDF visually inspected.",
+      "reviewed_artifact_version": "v8",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-28",
-      "note": "Ansatz, variation, reduction, and observables separated with an explicit T6 Kaluza--Klein example; 8-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d",
-      "reviewed_pdf_sha256": "b5b24a00eb2861f9c76cfb58e0919c6cbd9c526abce2ca2faa9a6e0ba72c356e",
-      "reviewed_source_tree_sha256": "8bb1ebbdad23e99c0a703f766f9ca80e7e523cc3a8b43f74cb27eed620f7c102"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v5 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
+      "reviewed_pdf_sha256": "630812a41be2f464a76d03c165516d4f290d6b336d0ded3ad2cab57e8d3444dd",
+      "reviewed_source_tree_sha256": "319925de3425b27473c96e74aec9c06cf43c286bdb71440230a43543a39fcc6c",
+      "prior_review_note": "Ansatz, variation, reduction, and observables separated with an explicit T6 Kaluza--Klein example; 8-page PDF visually inspected.",
+      "reviewed_artifact_version": "v5",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "closure-and-inevitability-in-modal-triplet-theory": {
       "status": "reviewed",
@@ -553,51 +607,69 @@
     },
     "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Probability source, Markov order, fixed-state indivisibility, sufficient-state compression, measurement intervention, and the classical-quantum boundary reviewed in context; 11-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "3209a96436978bb986571d595e4a36f50b2038352dfae838cf9d34c444f6e7bf",
-      "reviewed_pdf_sha256": "d08f7a7f1b107f72909c4e389a9f2c12f88fb552784b4a2c554df8e6564b800c",
-      "reviewed_source_tree_sha256": "8ac9593e793d29f0da58c0892052b49f797433ea41dd44b1d3cc09feae8ddd61"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "reviewed_pdf_sha256": "15a65ee024816ce1921f8bffb6f75aa104e09c788208f1e7ad5c1b2ba619e136",
+      "reviewed_source_tree_sha256": "3b56aa7347267fe356fe4116831455135cd89b54a7650ee7d0d07f1f0ea767fc",
+      "prior_review_note": "Probability source, Markov order, fixed-state indivisibility, sufficient-state compression, measurement intervention, and the classical-quantum boundary reviewed in context; 11-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "theta-closure-in-modal-triplet-theory-i-gauge-profile-t-c11e7b8f": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Gauge-profile calibration, overlap normalization, dependency chain, worked ratio interpretation, and prediction boundary reviewed in context; 13-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "83634ba0257825ccdfde570055204fb0f3af70e47e1f7eb5d27a200bda128201",
-      "reviewed_pdf_sha256": "2820ad156adf2bd79fb6112d47a177e58ac4789902b6e4941497173b226dbd34",
-      "reviewed_source_tree_sha256": "380ddfa1fb72bbdfc5b25c6891e3c4f97ef468c86fcfa1dddaebca4ab083fbf1"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "58e8ec8f4b46bd409cedf8db43e64244c1975dd99be3813570af62f61f7fe3be",
+      "reviewed_pdf_sha256": "3e513145e201e050b217bf44b6c123b48ca3891b67bc8958220a3f2adc99ca44",
+      "reviewed_source_tree_sha256": "bd0203278a51c1cdb7ee655be129213d0059fbcd248f99d69d79dd37b29ded16",
+      "prior_review_note": "Gauge-profile calibration, overlap normalization, dependency chain, worked ratio interpretation, and prediction boundary reviewed in context; 13-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Auxiliary geometric calibration, shared-circle scope, corrected lens and nil spectral bounds, worked unit-radius case, and q79 non-identification reviewed in context; 8-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "82df865f0bc9b012cfccebec428cd333458ff5269ad87b043aeb90be95e15906",
-      "reviewed_pdf_sha256": "5b876f1cb6dc9ce97d83818a557eaa7b7e628499ba8aa729273865a06042d028",
-      "reviewed_source_tree_sha256": "11382ec9e5311915956381b1a6a6384e032a0364eb381c81eed06f057e7e1b74"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896",
+      "reviewed_pdf_sha256": "6958bc3ea93a3ca3be2f1623d135bc4c3369c1a5b3f069763a4c4a96edeae878",
+      "reviewed_source_tree_sha256": "53b2f9425cdb27ef356e2329626fc8d29b4b6893a50fce3ab7a3fff4d9608d00",
+      "prior_review_note": "Auxiliary geometric calibration, shared-circle scope, corrected lens and nil spectral bounds, worked unit-radius case, and q79 non-identification reviewed in context; 8-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "theta-closure-in-modal-triplet-theory-iii-conditional-t-36bd7643": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Holomorphic SDYM action, Penrose-Ward correspondence, Hermitian norm bridge, shared-circle color support, numerical dictionary example, and independence boundary reviewed in context; 12-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "86fdc659bb995483be2885b1e91dfe5d69c8914e74e94850e25abcc019bd8460",
-      "reviewed_pdf_sha256": "b3a56eb59712f23a0637ddf4746c2af07dc62a56fcbc75d12e0dafaa8f16cff7",
-      "reviewed_source_tree_sha256": "b8b809dead31075bb25f0b39ea81a2dabe9db7096dadf164aac4ba702eb3012c"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "729c27facd16cdc2c80d4e71b2ffc28b14c42556b9440d634756d9db6b03d63a",
+      "reviewed_pdf_sha256": "b087855f37b86b5bed39e324e2cabbee48372605538fc338f152eb140a981e93",
+      "reviewed_source_tree_sha256": "5676ecf8c4405345c0a491f02fb367bb88ca7ae9d8c0b225b731964146ba068d",
+      "prior_review_note": "Holomorphic SDYM action, Penrose-Ward correspondence, Hermitian norm bridge, shared-circle color support, numerical dictionary example, and independence boundary reviewed in context; 12-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Auxiliary volume coefficient, absolute-scale degeneracy, conditional Newton reduction, cutoff distinction, and tensor inequality reviewed in context; 5-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "fcc5f36857314f9df2a8c2dd37dc7e098cf74a14ccee3065808846be317b3d4d",
-      "reviewed_pdf_sha256": "7a11f4f425abae6a088f4231e8b97fb5e20a136acf49d7f77bd3fa8515642c9e",
-      "reviewed_source_tree_sha256": "effe41c0205cba33149ade9fd07cef9021778f47627afb6bf66f2d4961ac2bb0"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6",
+      "reviewed_pdf_sha256": "a5aeda317f09c32830b7d92b98e823e419567dadf58de300bf0399e628e5e4be",
+      "reviewed_source_tree_sha256": "50897d545662dcc6c44ef6656e872271e5f3f460cbf8a2bdb1bcef42b279cd1e",
+      "prior_review_note": "Auxiliary volume coefficient, absolute-scale degeneracy, conditional Newton reduction, cutoff distinction, and tensor inequality reviewed in context; 5-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Weak-angle information flow, exact round trip, uncertainty propagation, absolute-normalization circularity, and held-out-test criterion reviewed in context; 5-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "6d1a8603a811400c880f05b0fbd64f511478858c76d01294bf29e4e07e2078d8",
-      "reviewed_pdf_sha256": "c8e5bb309e7082ea899d5ec020899ba408804dbdfc5b2a90ccbddfd9e81ab15d",
-      "reviewed_source_tree_sha256": "be9e5074f8e48880be08bcd270343e22a07685fdec038cbbf5d4ba2ff10a8be6"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d",
+      "reviewed_pdf_sha256": "c24763ae9a018a2da196e9e280a2eb36ec10d47b707b129510ede2aaa5e60fd3",
+      "reviewed_source_tree_sha256": "3a360fcb1807a31004538b09198c2580868117c5e49c142c5f9718b19b5adb8f",
+      "prior_review_note": "Weak-angle information flow, exact round trip, uncertainty propagation, absolute-normalization circularity, and held-out-test criterion reviewed in context; 5-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "topology-only-constraints-in-modal-triplet-theory-mtt-i-20d0edb2": {
       "status": "reviewed",
@@ -609,19 +681,25 @@
     },
     "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Context-reviewed measurement correction: measurement remains ordinary record-forming physics; exact dephasing, instrument-underdetermination, chart-exit nonselection, and the conditional typed-basin bridge are retained; the q79 recorder is exact only on its declared finite domain; 10-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03",
-      "reviewed_pdf_sha256": "9f6a71a59891f0068f65654aef81e703bd52969545d42085c59a9ddb9a930e09",
-      "reviewed_source_tree_sha256": "a2e72be431ef16e2863473d33ec5584ded380e582075228654948f26fec779ba"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
+      "reviewed_pdf_sha256": "20fb159886bdc8516b8cde5b94bd3316f1848197fc9da7cc20c97434e1e98525",
+      "reviewed_source_tree_sha256": "af74f44db2cf483716d3afbd1577ae64414b6a66f3746851bb7edde8a97a901f",
+      "prior_review_note": "Context-reviewed measurement correction: measurement remains ordinary record-forming physics; exact dephasing, instrument-underdetermination, chart-exit nonselection, and the conditional typed-basin bridge are retained; the q79 recorder is exact only on its declared finite domain; 10-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Context-reviewed AQFT bridge and advanced to the latest frontier: chart non-comparability does not imply commutation, compatible compression preserves an upper local net, and the selected q79 twisted-Dirac source now closes the even free CAR net with covariance, time slice, and positive Hadamard states; chart naturality and interacting C-star completion remain open; 8-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc",
-      "reviewed_pdf_sha256": "be0b11537921d7918327db56ca93b4dcd71eae3ffe8e63f24922d283fdfd8c86",
-      "reviewed_source_tree_sha256": "86d67065cc57908dcde4ffb1c2a64ba93961bdaac1b1285ec7d7e9dda1549e53"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
+      "reviewed_pdf_sha256": "8b65f746e9aad006f6e8aa35c3696c7e09f90f48f5b4612f968a2ab5e574f79e",
+      "reviewed_source_tree_sha256": "43dcbc9c77d453f86df1d61045bd13e069a85b71e3e9c655672f5dd9d90eb270",
+      "prior_review_note": "Context-reviewed AQFT bridge and advanced to the latest frontier: chart non-comparability does not imply commutation, compatible compression preserves an upper local net, and the selected q79 twisted-Dirac source now closes the even free CAR net with covariance, time slice, and positive Hadamard states; chart naturality and interacting C-star completion remain open; 8-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "baseline-scales-and-phenomenological-consistency-in-mod-b28fa79e": {
       "status": "reviewed",
@@ -770,11 +848,14 @@
     },
     "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Version 2 retires the claim that the Born rule and classical limit are one theorem: standard instruments, conditional Gleason representation, decoherence, probability source, concentration, persistence, and ontic actualization are separated; the exact current q79 canonical binary-recorder output law is promoted at its declared domain without universalization; and new exact total-variation, observable-error, and finite-horizon persistence bounds quantify the classical regime by delta, epsilon, and n eta; 8-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "dcedc23f54f0a2c6faacd995b733e28ea5a39bd5d6cfbff2bdf470bcfe0d0526",
-      "reviewed_pdf_sha256": "fdc607ccc9417918a58b030aca26c3b72420eb9dbefe6d9fe97728a819c48318",
-      "reviewed_source_tree_sha256": "6c701f4df4f3a3af1bd5c56ef468344a0b7bc73eb40faafc37c704b6c7889c26"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "reviewed_pdf_sha256": "b17ba4ebb75fe6baaf2ff8fb3cc6fe854f4fbddc4fb7e175c0e4c4f9f421dba9",
+      "reviewed_source_tree_sha256": "8cd4926fc5aa0f6c6bcd9b7a1e8c4f7ed1a741a223b8acde9eb421b23f039afc",
+      "prior_review_note": "Version 2 retires the claim that the Born rule and classical limit are one theorem: standard instruments, conditional Gleason representation, decoherence, probability source, concentration, persistence, and ontic actualization are separated; the exact current q79 canonical binary-recorder output law is promoted at its declared domain without universalization; and new exact total-variation, observable-error, and finite-horizon persistence bounds quantify the classical regime by delta, epsilon, and n eta; 8-page PDF visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "why-quantum-contextuality-and-measurement-order-depende-e0bdb9bf": {
       "status": "reviewed",
@@ -794,11 +875,14 @@
     },
     "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-29",
-      "note": "Version 6 separates physical coupling, outcome-resolved completion and record stabilization; adds the missing normalized completion kernel and conditional post-outcome law; proves basin-local contraction, the impossibility of multiple records under one global contraction, and the unique-decoder/representative-section distinction; replaces the basin-volume Born claim by an explicit source equality; guards the OU model; removes unrelated Bell, neutrino and landscape claims; and reports the q79 binary recorder only at its exact restricted tier; 10-page PDF visually inspected.",
-      "reviewed_main_tex_sha256": "2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686",
-      "reviewed_pdf_sha256": "83ed5f0ee1d0c8034159a4fb6d0fb3136c8a77e2f3aebc00f394dba1fd67f4e7",
-      "reviewed_source_tree_sha256": "a05cb0eb8d453555372c62dd4e344ec709673051ea6e204a5d2c3e8fcde9149d"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v7 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
+      "reviewed_pdf_sha256": "c665f970ae0b7d8b5f0bd5ec96269819e8d2eb0c623f6aa18061d6f836740bb9",
+      "reviewed_source_tree_sha256": "a63d60fd8499f2fa7707dc902593a95cc4bce606545da372b709a0b0befe968e",
+      "prior_review_note": "Version 6 separates physical coupling, outcome-resolved completion and record stabilization; adds the missing normalized completion kernel and conditional post-outcome law; proves basin-local contraction, the impossibility of multiple records under one global contraction, and the unique-decoder/representative-section distinction; replaces the basin-volume Born claim by an explicit source equality; guards the OU model; removes unrelated Bell, neutrino and landscape claims; and reports the q79 binary recorder only at its exact restricted tier; 10-page PDF visually inspected.",
+      "reviewed_artifact_version": "v7",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "measurement-effects-as-finite-survivor-basin-kernels-pr-eb7737ce": {
       "status": "reviewed",
@@ -933,12 +1017,15 @@
     },
     "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8": {
       "status": "reviewed",
-      "reviewed_on": "2026-09-11",
-      "note": "Version 5 retains the local/spectral kernel mathematics, distinguishes exact exit time from semigroup-certified time, adds quantum instruments and an exact basin-Born bridge criterion, and makes physical source selection explicit; 57-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
-      "reviewed_main_tex_sha256": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a",
-      "reviewed_pdf_sha256": "5071f7c3a257dc6f4ddd707ad9790d2aaee5a374a3efd0c05fe735b594e9575c",
-      "reviewed_source_tree_sha256": "f922cf73d97b4bf4f69553b92ee6e268986e075fed1c9c6de431a10c00dcd549",
-      "release_authorized": false
+      "reviewed_on": "2026-09-13",
+      "note": "Current v7 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "reviewed_pdf_sha256": "202962ea24be867d51a297b427692f1bf1758a55181cdc231e66881ae69808ed",
+      "reviewed_source_tree_sha256": "254af9c2bda589da1fbd25843d9060ddc97aaa50147741b299029d55fd762314",
+      "release_authorized": false,
+      "prior_review_note": "Version 5 retains the local/spectral kernel mathematics, distinguishes exact exit time from semigroup-certified time, adds quantum instruments and an exact basin-Born bridge criterion, and makes physical source selection explicit; 57-page PDF visually inspected. September consolidation: evaluated the scoped analytic correction and its exposition in context; all pages of the rebuilt current PDF were rendered and visually inspected. This is an unreleased manuscript revision, not a new Zenodo release or promotion of physical-source claims.",
+      "reviewed_artifact_version": "v7",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "coherence-capacity-as-the-invariant-admissibility-margi-423433d4": {
       "status": "reviewed",
@@ -1046,11 +1133,14 @@
     },
     "modal-triplet-theory-parameters-closure-and-structural-ae734bf0": {
       "status": "reviewed",
-      "reviewed_on": "2026-07-31",
-      "note": "Version 2 replaces the zero-parameter and universal-falsifier narrative by a tier-relative identifiability ledger. It distinguishes structural assumptions, selected discrete data, one continuous construction primitive, fifteen measured source coordinates, nuisance and metrology inputs, derived outputs, uncertainty data, and genuinely held-out tests; proves raw symbol-count noninvariance, the nonpredictive status of profile replay, and the insufficiency of a scalar capacity diagnostic to reconstruct source data; replaces absence of a global right inverse by a scope-bound conditional test; preserves the current 12-of-12 profile-standard result while keeping strict no-knob closure at 2-of-9; supplies exact certificate, provenance, cross-sector, and held-out falsification capsules; and the complete 13-page PDF was visually inspected.",
-      "reviewed_main_tex_sha256": "f7fb7e7c3f6e7355614a06c8717e4d3cc9e554c20c5401cdbe192b8ccdb77d2e",
-      "reviewed_pdf_sha256": "99a37230c678968a867c6ced40646861663bfe5beef782376f2f2e77ab99b4e6",
-      "reviewed_source_tree_sha256": "0d0dcea1b6bb19b5603fad22419813eb857deffc8b3d1f28e61a43653ab8d984"
+      "reviewed_on": "2026-09-13",
+      "note": "Current v3 received the completed September contextual result and consumer review, explanatory integration, bounded checks, and final PDF visual review recorded in editorial-reviews/2026-09-12. The approved artifacts are bound below; source theorem ownership and scientific nonpromotion boundaries are retained. No Zenodo release is authorized by this review.",
+      "reviewed_main_tex_sha256": "d510e6d0d28ad3d5b97a6245abf059c6386c129dbb60f7c1a3385600668eb768",
+      "reviewed_pdf_sha256": "ba98c562c687d0d6b50a5c4b16c0db4c58f292b61fdf1467a8a46151c2c095fd",
+      "reviewed_source_tree_sha256": "66c28b882482a5b299842c025770b9a83d579d5950346e86944874dc67a3c08a",
+      "prior_review_note": "Version 2 replaces the zero-parameter and universal-falsifier narrative by a tier-relative identifiability ledger. It distinguishes structural assumptions, selected discrete data, one continuous construction primitive, fifteen measured source coordinates, nuisance and metrology inputs, derived outputs, uncertainty data, and genuinely held-out tests; proves raw symbol-count noninvariance, the nonpredictive status of profile replay, and the insufficiency of a scalar capacity diagnostic to reconstruct source data; replaces absence of a global right inverse by a scope-bound conditional test; preserves the current 12-of-12 profile-standard result while keeping strict no-knob closure at 2-of-9; supplies exact certificate, provenance, cross-sector, and held-out falsification capsules; and the complete 13-page PDF was visually inspected.",
+      "reviewed_artifact_version": "v3",
+      "editorial_batch_ref": "editorial-reviews/2026-09-12/SUMMARY.md"
     },
     "projection-induced-network-geometry-sprouting-hidden-co-6919523e": {
       "status": "reviewed",

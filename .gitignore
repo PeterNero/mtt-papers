@@ -13,3 +13,6 @@ __pycache__/
 .papers-previous/
 tmp/
 papers/**/build-*.txt
+papers/**/editorial-build*/
+papers/**/editorial-qa/
+papers/**/qa-v*/

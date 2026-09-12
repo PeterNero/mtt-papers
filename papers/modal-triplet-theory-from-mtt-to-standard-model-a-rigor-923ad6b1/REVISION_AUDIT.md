@@ -1,5 +1,25 @@
 # From MTT to a Standard-Model Sector Revision Audit
 
+## Version 5 Analytic-Family Import Delta
+
+Date: 2026-09-12. Local version 4 remains the preceding authoring edition;
+the Zenodo release is unchanged. No release is authorized.
+
+The subsection sec:analytic-family-import imports the conditional
+Dirac/Hessian, Riesz/Kato and determinant-family construction from the
+quantum-mechanics owner paper and frozen q79_family_source_cutset result
+(SHA256 503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e).
+The analytical functors are available after selection of a smooth physical
+elliptic source and a regular spectral chart. Finite noninjectivity prevents
+reconstructing that source from retained rows alone. Three full-domain
+chiral-measure/locality/gluing obligations remain separate.
+
+This corrects an incomplete frontier description, not any matrix or profile.
+All earlier mathematical results, numbers and parameter counts are retained;
+there is no repeated source theorem body, new fit or physics-status promotion.
+The later hidden-HYM existence result is not reopened: it is distinguished
+from the complete common source family. The original abstract is retained.
+
 ## Version 4 Contextual Integration Delta
 
 Date: 2026-09-12. Supersedes the local authoring version v3; published DOI

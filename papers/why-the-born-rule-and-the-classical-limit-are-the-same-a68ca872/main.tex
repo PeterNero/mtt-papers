@@ -4,6 +4,7 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage{hyperref}
+\hypersetup{pdftitle={Born-Compatible Record Measures and the Classical Concentration Limit},pdfauthor={Peter Nero}}
 
 \newcommand{\Tr}{\operatorname{Tr}}
 \newcommand{\TV}{d_{\mathrm{TV}}}
@@ -14,7 +15,7 @@
 
 \author{Peter Nero}
 
-\date{July 2026, Version 2}
+\date{12 September 2026, Version 3}
 
 \begin{document}
 \maketitle
@@ -41,6 +42,25 @@ probability at most \(\eta\) survives \(n\) steps with probability at least
 \(1-\varepsilon-n\eta\). These statements define a controlled classical limit.
 They do not derive the outcome weights or select one realized history.
 \end{abstract}
+
+\section*{Version 3 Revision Note}
+\begin{description}
+\item[Supersedes] Version 2 as the current manuscript. The released identity
+and previous revision note are preserved.
+\item[Reason] The canonical output-measure result needs its source chain,
+state update, and conditional extension hypotheses explained alongside the
+separate concentration theorems.
+\item[Resolution] Five frozen sources are integrated: output measure,
+minimal recorder action, Hessian square-root source, continuum compiler,
+and projective record descent. Exact finite and operational constructions
+are distinguished from supplied continuum endpoints and apparatus clocks.
+\item[Retained] The canonical binary law and second-moment descent remain
+closed on their declared domain. The concentration and persistence bounds
+below are unchanged. Measurement remains an ordinary physical interaction.
+\item[Open boundary] A universal physical apparatus family, selected
+physical continuum repair-to-recorder coupling, and objective actualization
+are not inferred from the finite Hessian or the nonselective limit.
+\end{description}
 
 \section*{Version 2 Revision Note}
 \addcontentsline{toc}{section}{Version 2 Revision Note}
@@ -189,7 +209,159 @@ numerical fit is added on that domain.
 
 Thus equation \eqref{eq:basin-trace} has a selected operational realization for
 that binary apparatus context. This is stronger than the conditional
-Gleason-only status of the earlier paper.
+Gleason-only status of the earlier paper. The following source chain explains
+why; it does not replace ordinary normal-state operational semantics with a
+pre-quantum probability theory.
+
+\subsection{The stopped output law and second-moment descent}
+\label{sec:frozen-output}
+Let \(P,Q=I-P\) be the canonical orthogonal projectors and let
+\(u=t/t_0\), \(\gamma=\log448\). The two-channel vacuum Fock coupling uses
+\(L_P=\sqrt\gamma P\), \(L_Q=\sqrt\gamma Q\). Its commuting nondemolition
+output algebra is the algebra of record events, and restriction of the
+selected normal state supplies its probability measure
+\cite{FrozenFock}. The no-count amplitude and its effect are different:
+\[
+K_0(u)=e^{-\gamma u/2}I,\qquad K_0(u)^*K_0(u)=e^{-\gamma u}I.
+\]
+For a first count at \(s\) with label \(a\in\{P,Q\}\), and for the ready
+event at horizon \(u\), the stopped law and instrument are
+\[
+\begin{aligned}
+\mu_\rho(ds,a)&=\gamma e^{-\gamma s}\Tr(\rho P_a)\,ds,\quad 0<s\leq u,\\
+\mathcal I_{\rm ready}^{u}(\rho)&=e^{-\gamma u}\rho,\\
+\mathcal I_a^u(\rho)&=(1-e^{-\gamma u})P_a\rho P_a.
+\end{aligned}
+\]
+The instrument sums to the dephasing channel, not to one selected outcome.
+Its normalization follows from \(P+Q=I\). For the selected first carrier
+basis preparation, the conditional label weights are \(1/3,2/3\); at
+\(u=1\) the ready, \(P\), and \(Q\) weights are
+\((1,149,298)/448\). These numbers are consequences of the declared source
+and clock, not fitted frequencies.
+
+If two normalized preparation ensembles have the same second moment
+\(\rho=\int |z\rangle\langle z|\,d\lambda(z)\), every stopped event and
+state-valued instrument output agrees. This is the exact capture descent.
+For example, the equal ensemble of a unit vector in each of \(P,Q\) and
+the equal ensemble of their normalized plus/minus superpositions have the
+same density matrix and recorder label weights \(1/2,1/2\). Their bare
+fourth moments \(\int\|Pz\|^4d\lambda\) are \(1/2\) and \(1/4\).
+The latter statistic is a counterexample to an unrestricted geometric basin
+claim, not a counterexample to this output measure: it is not the recorder's
+event effect.
+
+\subsection{Why the meter and its clock are part of the source}
+\label{sec:minimal-recorder}
+The minimal-action source distinguishes two constructions that should not
+be conflated \cite{FrozenMinimal}. A two-state defect meter can use
+\(K_r=P+cQ\), \(K_d=sQ\), where \(c^2+s^2=1\). A ready-plus-two-label
+meter instead uses \(K_r=cI\), \(K_P=sP\), \(K_Q=sQ\), retaining
+information about both channels. Fresh three-state pointers with
+\(c^2=e^{-\gamma\Delta}\) reproduce the exact channel and stopped law on
+the time grid. Their Fock limit supplies the continuous recorder.
+
+A fixed bounded Hamiltonian on a finite meter cannot generate an exact
+positive-rate Markov dephasing law from time zero in a product preparation:
+the reduced derivative at zero is Hamiltonian, while dissipative loss
+starts at second order. Repeated-interaction couplings with the singular
+\(\Delta^{-1/2}\) scaling evade that finite-meter obstruction in the
+specified limit. This is a limit theorem, not an exact finite-bandwidth
+apparatus theorem. Nor does the unread channel identify its instrument:
+an informative meter and a state-independent phase-flip record can realize
+the same dephasing channel.
+
+\label{sec:hessian-recorder}
+The Hessian-source refinement identifies what the repair action contributes
+\cite{FrozenHessian}. With the finite defect normalization
+\(D_{\rm fin}^*D_{\rm fin}=Q\),
+\[
+S_{\rm fin}(w)=\frac{\kappa}{4|G|}
+\sum_{g\in G}\|(I-\rho(g))w\|^2
+=\frac\kappa2\|D_{\rm fin}w\|^2,
+\]
+the positive Hessian square root is \(\sqrt\kappa Q\). It selects the
+zero/positive support and hence the binary projector pair. The declared
+minimal-disturbance meter, preparation-blind clock, and apparatus context
+then give the minimal recorder source. This does not add a new universal
+measurement axiom. It also does not identify the stiffness \(\kappa\) with
+an independently predicted physical detector rate.
+
+For unequal channel rates the total hazard in a normalized pure state is
+\(\gamma_P\|P\psi\|^2+\gamma_Q\|Q\psi\|^2\). It is preparation-blind
+exactly when the two rates agree. Thus equal rates implement a stated clock
+condition, not a conclusion of the projector alone. Normalized unequal-angle
+instruments exist and explain why specifying only the repair Hessian would
+leave apparatus freedom. Pure repair energy is not the physical signed
+action, and neither cost descent nor this positive square root selects one
+ontic record.
+
+\subsection{The conditional continuum compiler}
+\label{sec:continuum-recorder}
+The continuum compiler begins with a \emph{supplied} positive self-adjoint
+augmented Hessian, an invariant three-mode sector with kernel/support ranks
+one and two, and a selected isometry \(T\) intertwining that sector's
+\(P/Q\) with the finite projectors \cite{FrozenContinuum}. With the same
+clock, minimal Luders coupling, and no added Hamiltonian, intertwining the
+bounded jump and drift operators lifts to the Fock cocycle by uniqueness.
+Consequently the stopped measure and state-valued paths transport as well.
+An exact Fourier-conjugated three-mode example with Hessian eigenvalues
+\(0,2,5\) demonstrates the compiler; it is not selection of a physical
+continuum HYM Hessian.
+
+The approximate version gives a useful consumer contract. For an isometry
+\(T\) with projector defect
+\(\varepsilon=\|P_fT-TP_c\|\), the projector-weight error is at most
+\(\varepsilon\), and the finite-horizon label-mass error is at most
+\((1-e^{-\gamma u})\varepsilon\). The unnormalized projected state has
+trace-norm error at most \(2\varepsilon+\varepsilon^2\). If both conditional
+weights are at least \(m>0\), a conservative normalized-state bound is
+\[
+\|\rho'_{a,f}-T\rho'_{a,c}T^*\|_1
+\leq \frac{2(2\varepsilon+\varepsilon^2)}{m}.
+\]
+Without the weight floor, rare-event normalization need not be stable.
+These estimates require the declared isometry and do not control arbitrary
+nonisometric encoders or unproved cutoff tails.
+
+The still missing physical inputs are the selected continuum endpoint,
+metric, Hessian, low sector, finite comparison map and tails, and apparatus
+clock. This is an internal geometric source problem, not a reopening of the
+already established canonical Cauchy quantum model or its binary law.
+
+\subsection{Records on projective overlaps and at long times}
+\label{sec:projective-records}
+The projective descent result transports both probabilities and conditional
+states \cite{FrozenProjectiveRecords}. On overlaps,
+\(\rho_j=U_{ij}\rho_iU_{ij}^*\) and
+\(P_{a,j}=U_{ij}P_{a,i}U_{ij}^*\); the instrument intertwines under the same
+conjugation. Traces agree and central projective phases cancel. Thus one
+need not choose global vector phases to define physical record laws.
+This is a statement on the specified open constant-rank stratum, not an
+automatic extension through the example's harmonic rank jump from three
+to seven.
+
+For the selected root preparation, the long-time nonselective state has
+nonzero eigenvalues \(1/3,2/3\), hence purity \(5/9\). It is neither of the
+two selective states. This example connects directly to the next section:
+exact loss of cross-sector coherence and exact Born-compatible record
+weights need not make one record dominant. Projective consistency also does
+not decide which record is actual. No new role for an observer is required
+for either the ordinary instrument or its conditional state update.
+
+\subsection{Why an output law does not choose an ontology}
+\label{sec:ontology-consumer}
+The Locality companion contextualizes the frozen operational ontology
+non-entailment result \cite{LocalityCompanion,FrozenOntology}. At the
+canonical checkpoint, a 448-atom probability space with record classes of
+sizes 1, 149, and 298 gives one label per atom and the same law as the unitary
+recorder. Attaching its ordinary conditional states also preserves the
+instrument, not just the three probabilities. A coactual completion can
+retain the same operational data. Hence those data select neither ontology.
+This is a context-specific countermodel, not a settings-independent global
+hidden-variable theory or a physical actualization source. It supports the
+distinction between record probability, concentration, and actualization
+used in this paper without duplicating the source theorem.
 
 \subsection{The quantifier boundary}
 
@@ -478,7 +650,15 @@ appear in all of them.
 
 % BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
 \section*{Computational Evidence and Reproducibility}
-The concentration and persistence bounds are proved in this paper, while the general Born-source theorem remains open. The strict-upgrade ledger is included only as a current source-level boundary; it does not provide the missing outcome weights or select one realized history.
+The concentration and persistence bounds are proved in this paper. The five
+contextual sources cited in Section~\ref{sec:frozen-output} and its following
+subsections are frozen at manifest commit
+\texttt{f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7}. Their full source
+explanations and byte hashes were reviewed; packet flags are not independent
+theorem verification. The general apparatus and actualization boundaries
+remain open. The older strict-upgrade ledger below is historical provenance
+for a separate source boundary, not a current global completion count or a
+source of new outcome weights.
 
 The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
 \begin{quote}\small
@@ -496,13 +676,15 @@ Tier labels are quoted verbatim from that manifest. A row used directly supports
 \paragraph{Open boundary (not evidence of closure).}
 \begin{itemize}
 \setlength{\itemsep}{0.25em}
-\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Current 2/9 strict no-knob upgrade ledger.
+\item \path{A05/strict_upgrade_ledger} (\emph{open}).\par Historical 2/9
+strict no-knob ledger snapshot; its count is not promoted to current authority.
 \end{itemize}
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{99}
+\raggedright
 
 \bibitem{Gleason1957}
 A.~M. Gleason,
@@ -522,6 +704,35 @@ arXiv:quant-ph/0306179.
 W.~H. Zurek,
 \emph{Decoherence and the Transition from Quantum to Classical---Revisited},
 arXiv:quant-ph/0306072.
+
+\bibitem{FrozenFock}
+P.~Nero, \emph{Canonical q79 Fock output measure and second-moment capture descent}, frozen contextual source (2026).
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_fock_output_measure/artifact.json}.
+
+\bibitem{FrozenMinimal}
+P.~Nero, \emph{Minimal q79 recorder action}, frozen contextual source (2026).
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_minimal_recorder_action/artifact.json}.
+
+\bibitem{FrozenHessian}
+P.~Nero, \emph{Hessian square-root to minimal recorder source}, frozen contextual source (2026).
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_hessian_recorder_source/artifact.json}.
+
+\bibitem{FrozenContinuum}
+P.~Nero, \emph{Continuum Hessian-to-recorder compiler}, frozen contextual source (2026).
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_continuum_recorder_compiler/artifact.json}.
+
+\bibitem{FrozenProjectiveRecords}
+P.~Nero, \emph{Projective record descent and long-time limit}, frozen contextual source (2026).
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_record_descent/artifact.json}.
+
+\bibitem{FrozenOntology}
+P.~Nero, \emph{q79 operational ontology non-entailment}, frozen source (2026).
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_ontology_nonentailment/artifact.json}.
+\bibitem{LocalityCompanion}
+P.~Nero, \emph{Locality, Coherent Alternatives, and Physical Records:
+An Interpretive Account of Quantum Experiments in Modal Triplet Theory},
+unpublished version 2 (September 2026), subsection \emph{Operational data do not
+force many actual worlds}.
 
 \end{thebibliography}
 

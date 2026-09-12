@@ -3,11 +3,11 @@ abstract: |
   Measurement is an ordinary physical interaction, but an adequate mathematical description must distinguish three stages: apparatus coupling, completion into an outcome-resolved transition, and stabilization of the resulting record. This paper formulates that distinction for Modal Triplet Theory (MTT). A localized coupling may displace a state from a quiet coherent regime, and contractive dynamics inside a selected record basin may then stabilize a repeatable record. Neither fact chooses a basin. We therefore introduce the missing transition-completion object: a normalized kernel, or in quantum language an instrument, that assigns both an outcome probability and a post-outcome state. We prove that one global contraction cannot support multiple stable outcomes, derive the exact normalization and conditional-state laws of a completion kernel, and distinguish failure of unique decoding from the possible existence of a representative section. Decoherence suppresses interference within an outcome algebra but does not select one instrument element. The Born rule requires a selected preparation law and a basin–trace or instrument–trace equality. The current q79 binary one-anchor recorder supplies such an exact stopped-output law on its declared domain; arbitrary apparatus contexts and objective one-history selection remain open. An Ornstein–Uhlenbeck variance is retained only as a conditional linear-response model and is not identified with the Heisenberg uncertainty principle.
 author:
 - Peter Nero
-current_version: v6
-date: July 2026, Version 6
-generated_from_main_tex_sha256: 2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686
+current_version: v7
+date: 12 September 2026, Version 7
+generated_from_main_tex_sha256: c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8
 paper_id: measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v6
 title: |
   Measurement as Physical Disturbance, Outcome Completion,
@@ -17,21 +17,37 @@ zenodo_record_id: 21665982
 zenodo_url: "https://zenodo.org/records/21665982"
 ---
 
+# Measurement as Physical Disturbance, Outcome Completion, and Record Stabilization in Modal Triplet Theory
+
+Peter Nero. 12 September 2026, Version 7
+
+## Abstract
+
+Measurement is an ordinary physical interaction, but an adequate mathematical description must distinguish three stages: apparatus coupling, completion into an outcome-resolved transition, and stabilization of the resulting record. This paper formulates that distinction for Modal Triplet Theory (MTT). A localized coupling may displace a state from a quiet coherent regime, and contractive dynamics inside a selected record basin may then stabilize a repeatable record. Neither fact chooses a basin. We therefore introduce the missing transition-completion object: a normalized kernel, or in quantum language an instrument, that assigns both an outcome probability and a post-outcome state. We prove that one global contraction cannot support multiple stable outcomes, derive the exact normalization and conditional-state laws of a completion kernel, and distinguish failure of unique decoding from the possible existence of a representative section. Decoherence suppresses interference within an outcome algebra but does not select one instrument element. The Born rule requires a selected preparation law and a basin–trace or instrument–trace equality. The current q79 binary one-anchor recorder supplies such an exact stopped-output law on its declared domain; arbitrary apparatus contexts and objective one-history selection remain open. An Ornstein–Uhlenbeck variance is retained only as a conditional linear-response model and is not identified with the Heisenberg uncertainty principle.
+
+# Version 7 Revision Note
+
+**Supersedes** Version 6 as the current manuscript; its released identity and revision note are retained.
+
+**Reason** The continuum-recorder and ontology refinements need explicit consumer references in the coupling/completion/stabilization account.
+
+**Resolution** A concise source interface states the compiler hypotheses and operational non-entailment result with their contextual owners.
+
+**Retained** The local kernel and contraction theorems, ordinary physical measurement, and exact canonical binary recorder remain unchanged.
+
+**Open boundary** Physical continuum source selection, universal apparatus control, and objective actualization remain separate research obligations.
+
 # Version 6 Revision Note
 
-<div class="description">
+**Supersedes** *Measurement as Disturbance and Stabilization in Modal Triplet Theory*, version 5.
 
-*Measurement as Disturbance and Stabilization in Modal Triplet Theory*, version 5.
+**Reason** The earlier paper combined localized disturbance, global contractivity, multiple outcome basins, decoherence, Born probabilities, uncertainty, Bell correlations, and neutrino mass in one mechanism. A global contraction has only one fixed point, basin volume does not by itself produce Born weights, and noninjective projection does not imply that no right inverse or representative section can exist.
 
-The earlier paper combined localized disturbance, global contractivity, multiple outcome basins, decoherence, Born probabilities, uncertainty, Bell correlations, and neutrino mass in one mechanism. A global contraction has only one fixed point, basin volume does not by itself produce Born weights, and noninjective projection does not imply that no right inverse or representative section can exist.
+**Resolution** This version separates coupling, transition completion, outcome-conditioned stabilization, decoherence, probability source, and one-history actualization. It adds the missing completion kernel, corrects the inverse terminology, and states the current q79 recorder result at its exact restricted tier.
 
-This version separates coupling, transition completion, outcome-conditioned stabilization, decoherence, probability source, and one-history actualization. It adds the missing completion kernel, corrects the inverse terminology, and states the current q79 recorder result at its exact restricted tier.
+**Retained result** A measuring apparatus can be treated as a localized physical coupling followed by basin-local stabilization. Contractive dynamics can explain record persistence and repeatability after an outcome has been resolved.
 
-A measuring apparatus can be treated as a localized physical coupling followed by basin-local stabilization. Contractive dynamics can explain record persistence and repeatability after an outcome has been resolved.
-
-MTT has not yet derived the completion instrument and Born-compatible source law for every apparatus context, nor an objective rule selecting one ontic history. The physical upper geometry must be supplied by the selected branch rather than assumed to be a generic ten-dimensional product.
-
-</div>
+**Remaining boundary** MTT has not yet derived the completion instrument and Born-compatible source law for every apparatus context, nor an objective rule selecting one ontic history. The physical upper geometry must be supplied by the selected branch rather than assumed to be a generic ten-dimensional product.
 
 # The measurement chain
 
@@ -76,17 +92,17 @@ E_i\geq0,\qquad
 
 </div>
 
-The outcome probability and conditional state are
+The outcome probability and conditional state are <a id="eq:instrument"></a>
 ``` math
 \begin{equation}
 p_i=\operatorname{Tr}[\mathcal{I}_i(\rho)]=\operatorname{Tr}(\rho E_i),
 \qquad
 \rho_i'=\frac{\mathcal{I}_i(\rho)}{p_i}
 \quad(p_i>0).
-\label{eq:instrument}
+
 \end{equation}
 ```
-An instrument therefore includes both the classical record $`i`$ and the state passed to later physical interactions .
+An instrument therefore includes both the classical record $`i`$ and the state passed to later physical interactions \[[1](#ref-DaviesLewis1970)\].
 
 The nonselective channel
 ``` math
@@ -96,7 +112,7 @@ describes what remains if the outcome label is ignored. It is not an outcome-sel
 
 # An upper transition-completion kernel
 
-MTT seeks an upper physical account of equation <a href="#eq:instrument" data-reference-type="eqref" data-reference="eq:instrument">[eq:instrument]</a>. The minimal classical-measure analogue is an outcome-resolved kernel.
+MTT seeks an upper physical account of equation [(1)](#eq:instrument). The minimal classical-measure analogue is an outcome-resolved kernel.
 
 <div class="definition">
 
@@ -121,20 +137,20 @@ The kernel can encode unresolved upper degrees of freedom, an effective stochast
 
 <div id="thm:completion" class="theorem">
 
-**Theorem 3** (Completion law). *Let $`\nu`$ be a probability measure on $`E`$ and $`\{\mathcal{K}_i\}_{i\in I}`$ a transition-completion kernel. Define
+**Theorem 3** (Completion law). *Let $`\nu`$ be a probability measure on $`E`$ and $`\{\mathcal{K}_i\}_{i\in I}`$ a transition-completion kernel. Define <a id="eq:completion-prob"></a>
 ``` math
 \begin{equation}
 p_i=\int_E\mathcal{K}_i(x,D_i)\,d\nu(x).
-\label{eq:completion-prob}
+
 \end{equation}
 ```
-Then $`p_i\geq0`$ and $`\sum_i p_i=1`$. If $`p_i>0`$, the conditional post-completion law
+Then $`p_i\geq0`$ and $`\sum_i p_i=1`$. If $`p_i>0`$, the conditional post-completion law <a id="eq:completion-state"></a>
 ``` math
 \begin{equation}
 \nu_i'(A)
 =\frac{1}{p_i}\int_E\mathcal{K}_i(x,A)\,d\nu(x),
 \qquad A\in\mathfrak{B}(D_i),
-\label{eq:completion-state}
+
 \end{equation}
 ```
 is a probability measure on $`D_i`$.*
@@ -149,13 +165,13 @@ is a probability measure on $`D_i`$.*
 =\int_E\sum_i\mathcal{K}_i(x,D_i)\,d\nu(x)
 =\int_E1\,d\nu(x)=1.
 ```
-For $`p_i>0`$, equation <a href="#eq:completion-state" data-reference-type="eqref" data-reference="eq:completion-state">[eq:completion-state]</a> inherits countable additivity from $`\mathcal{K}_i(x,\cdot)`$, is nonnegative, and satisfies $`\nu_i'(D_i)=1`$. ◻
+For $`p_i>0`$, equation [(3)](#eq:completion-state) inherits countable additivity from $`\mathcal{K}_i(x,\cdot)`$, is nonnegative, and satisfies $`\nu_i'(D_i)=1`$. ◻
 
 </div>
 
 <div class="remark">
 
-*Remark 4*. Theorem <a href="#thm:completion" data-reference-type="ref" data-reference="thm:completion">3</a> is a normalization theorem, not a source theorem. It says what follows once $`\nu`$ and $`\mathcal{K}`$ have been physically selected. It does not determine either object and does not imply Born weights.
+*Remark 4*. Theorem [3.2](#thm:completion) is a normalization theorem, not a source theorem. It says what follows once $`\nu`$ and $`\mathcal{K}`$ have been physically selected. It does not determine either object and does not imply Born weights.
 
 </div>
 
@@ -213,7 +229,7 @@ This corrects a central tension in version 5. Multiple outcomes require separate
 
 ## Repeatability
 
-Repeatability is a statement about what happens after record $`i`$ is completed. If the later apparatus interaction preserves $`D_i`$ and its readout identifies the same record throughout a neighborhood of $`r_i`$, then Theorem <a href="#thm:basin-contraction" data-reference-type="ref" data-reference="thm:basin-contraction">5</a> supplies asymptotic stabilization. Immediate exact repeatability requires a stronger nondemolition or idempotence condition on the instrument. It does not follow from attraction alone.
+Repeatability is a statement about what happens after record $`i`$ is completed. If the later apparatus interaction preserves $`D_i`$ and its readout identifies the same record throughout a neighborhood of $`r_i`$, then Theorem [4.1](#thm:basin-contraction) supplies asymptotic stabilization. Immediate exact repeatability requires a stronger nondemolition or idempotence condition on the instrument. It does not follow from attraction alone.
 
 # Projection, decoding, and irreversibility
 
@@ -263,7 +279,7 @@ Suppose a pointer decomposition defines a dephasing channel
 ``` math
 \mathcal{D}(\rho)=\sum_iP_i\rho P_i.
 ```
-Decoherence controls the off-diagonal blocks of the reduced state and explains why interference between record alternatives can become negligible . It does not, by itself, choose an index $`i`$.
+Decoherence controls the off-diagonal blocks of the reduced state and explains why interference between record alternatives can become negligible \[[2](#ref-Zurek2003)\]. It does not, by itself, choose an index $`i`$.
 
 The distinction is visible algebraically:
 ``` math
@@ -286,12 +302,12 @@ Given an instrument, standard quantum mechanics predicts
 ``` math
 p_i^{\mathrm{QM}}=\operatorname{Tr}(\rho E_i).
 ```
-Given an upper completion package, Theorem <a href="#thm:completion" data-reference-type="ref" data-reference="thm:completion">3</a> predicts
+Given an upper completion package, Theorem [3.2](#thm:completion) predicts
 ``` math
 p_i^{\mathrm{upper}}
 =\int_E\mathcal{K}_i(x,D_i)\,d\nu_\rho(x).
 ```
-The required MTT equality is
+The required MTT equality is <a id="eq:born-source"></a>
 ``` math
 \begin{equation}
 \boxed{
@@ -299,11 +315,11 @@ The required MTT equality is
 =\operatorname{Tr}(\rho E_i)
 \quad\text{for every allowed }\rho,\mathcal{I},i.
 }
-\label{eq:born-source}
+
 \end{equation}
 ```
 
-Equation <a href="#eq:born-source" data-reference-type="eqref" data-reference="eq:born-source">[eq:born-source]</a> displays all the missing data:
+Equation [(4)](#eq:born-source) displays all the missing data:
 
 - the preparation-dependent upper law $`\nu_\rho`$;
 
@@ -317,7 +333,7 @@ Relative basin volume
 ``` math
 \frac{\mu(B_i)}{\sum_j\mu(B_j)}
 ```
-is merely a normalized probability model until the measure, preparation dependence, and equality <a href="#eq:born-source" data-reference-type="eqref" data-reference="eq:born-source">[eq:born-source]</a> are proved. Contractivity does not determine those weights. The version 5 “Born rule from basin measures” proved only that a random initial point lands in a basin with the measure assigned to that basin; it did not prove equality to quantum trace weights.
+is merely a normalized probability model until the measure, preparation dependence, and equality [(4)](#eq:born-source) are proved. Contractivity does not determine those weights. The version 5 “Born rule from basin measures” proved only that a random initial point lands in a basin with the measure assigned to that basin; it did not prove equality to quantum trace weights.
 
 # Current q79 measurement status
 
@@ -335,9 +351,15 @@ The q79 program now supplies a selected operational realization on one restricte
 
 - no separate Born axiom, stochastic primitive, observed probability, or fit is inserted on that domain.
 
-Thus the analogue of equation <a href="#eq:born-source" data-reference-type="eqref" data-reference="eq:born-source">[eq:born-source]</a> is closed for that canonical binary apparatus. This is stronger than the conditional basin-volume story in version 5.
+Thus the analogue of equation [(4)](#eq:born-source) is closed for that canonical binary apparatus. This is stronger than the conditional basin-volume story in version 5.
+
+<a id="sec:recorder-source-interface"></a>
 
 ## Open quantifiers
+
+The Born/record companion explains the selected Fock law and its conditional continuum compiler \[[3](#ref-NeroBornClassical2026),[6](#ref-FrozenFock),[7](#ref-FrozenContinuum)\]. The compiler requires a supplied positive self-adjoint Hessian, an invariant rank-three sector with kernel/support ranks one and two, and an isometry intertwining its projector pair with the finite pair. With the same clock, minimal Luders coupling, and no added Hamiltonian, it transports both the stopped probabilities and conditional states. Approximate intertwining gives finite-horizon error bounds; normalized rare-event states require a positive weight floor. This is how a selected geometric source could supply this paper’s completion instrument. It does not select the physical continuum endpoint, finite comparison map and tails, or clock by itself.
+
+The ontology source has a different consumer role \[[9](#ref-LocalityCompanion),[8](#ref-FrozenOntology)\]. Its 448-atom canonical checkpoint admits one record per atom with the same probabilities and conditional states as the operational instrument; a coactual completion can preserve those data as well. Thus the completed operational instrument does not entail either ontology. This context-specific countermodel is not an apparatus-independent hidden-variable model, a physical one-history selector, or an additional stabilization law. In particular, stabilization after a record cannot choose between completions that already agree on every retained operational datum.
 
 The exact result does not yet establish:
 
@@ -365,18 +387,18 @@ The correct ledger is
 
 Version 5 used Ornstein–Uhlenbeck (OU) widths as an explanation of quantum uncertainty. The OU calculation is valid as a conditional linear-response model, but the identification with Heisenberg uncertainty is not derived.
 
-Let $`W_t`$ be standard Brownian motion and let a square-integrable $`a_0`$ be independent of its future increments. Suppose a reduced disturbance coordinate satisfies
+Let $`W_t`$ be standard Brownian motion and let a square-integrable $`a_0`$ be independent of its future increments. Suppose a reduced disturbance coordinate satisfies <a id="eq:ou"></a>
 ``` math
 \begin{equation}
 da_t=-\gamma a_t\,dt+\sigma\,dW_t,
 \qquad \gamma>0.
-\label{eq:ou}
+
 \end{equation}
 ```
 
 <div id="lem:ou" class="lemma">
 
-**Lemma 8** (OU stationary variance). *Equation <a href="#eq:ou" data-reference-type="eqref" data-reference="eq:ou">[eq:ou]</a> has the solution
+**Lemma 8** (OU stationary variance). *Equation [(5)](#eq:ou) has the solution
 ``` math
 a_t=e^{-\gamma t}a_0
 +\sigma\int_0^t e^{-\gamma(t-s)}\,dW_s,
@@ -418,7 +440,7 @@ then variation of constants gives
 ```
 The stochastic variance and deterministic amplitude bound have different meanings and should not be identified.
 
-To turn Lemma <a href="#lem:ou" data-reference-type="ref" data-reference="lem:ou">8</a> into a quantum-uncertainty theorem, MTT would need to derive:
+To turn Lemma [9.1](#lem:ou) into a quantum-uncertainty theorem, MTT would need to derive:
 
 1.  the reduced coordinate $`a`$ from selected observables;
 
@@ -472,7 +494,7 @@ The next measurement theorem should be built in this order:
 
 3.  Derive every instrument element or transition-completion kernel from the same coupling.
 
-4.  Prove equation <a href="#eq:born-source" data-reference-type="eqref" data-reference="eq:born-source">[eq:born-source]</a> for a nontrivial family of preparations and apparatus contexts.
+4.  Prove equation [(4)](#eq:born-source) for a nontrivial family of preparations and apparatus contexts.
 
 5.  Prove basin-local stabilization or nondemolition repeatability after completion.
 
@@ -497,42 +519,67 @@ The corrected inverse language also matters. Noninjective projection forbids uni
 
 MTT has one substantial exact foothold: the canonical q79 binary one-anchor recorder emits its stopped-output law and exact capture descent on the declared domain without a fitted probability. The general apparatus and one-history problems remain open. The transition-completion kernel introduced here makes their missing content explicit and gives the measurement program a testable, noncircular next step.
 
-#### Open boundary (not evidence of closure).
-
-- (*open*).
-
-  Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-
 <!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
 The distinction among coupling, outcome completion, and record stabilization is established from instruments and transition kernels. The open strict-upgrade ledger does not select an outcome law and is cited only to mark the stronger unresolved source boundary.
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
 
-## Open boundary (not evidence of closure)
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
 
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
+= by -
 <!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
-<div class="thebibliography">
+#### Open boundary (not evidence of closure).
 
-99
+- (*open*).
 
-E. B. Davies and J. T. Lewis, *An Operational Approach to Quantum Probability*, Communications in Mathematical Physics **17** (1970) 239–260, doi:10.1007/BF01647093.
+  Historical 2/9 strict no-knob ledger snapshot, not a current global completion count.
 
-W. H. Zurek, *Decoherence, Einselection, and the Quantum Origins of the Classical*, Reviews of Modern Physics **75** (2003) 715–775, doi:10.1103/RevModPhys.75.715, arXiv:quant-ph/0105127.
+No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-P. Nero, *Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface*, version 2, MTT research manuscript, July 2026.
+# References
 
-P. Nero, *Contextuality and Sequential Measurement Order: Distinct Obstructions with a Shared MTT Interface*, version 2, MTT research manuscript, July 2026.
+<a id="ref-DaviesLewis1970"></a>
 
-P. Nero, *MTT Results Reproducibility Repository*, <https://github.com/PeterNero/mtt-results-repro>.
+\[1\] E. B. Davies and J. T. Lewis, *An Operational Approach to Quantum Probability*, Communications in Mathematical Physics **17** (1970) 239–260, doi:10.1007/BF01647093.
 
-</div>
+<a id="ref-Zurek2003"></a>
+
+\[2\] W. H. Zurek, *Decoherence, Einselection, and the Quantum Origins of the Classical*, Reviews of Modern Physics **75** (2003) 715–775, doi:10.1103/RevModPhys.75.715, arXiv:quant-ph/0105127.
+
+<a id="ref-NeroBornClassical2026"></a>
+
+\[3\] P. Nero, *Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface*, version 3, MTT research manuscript, September 2026, Section 4.
+
+<a id="ref-NeroContextOrder2026"></a>
+
+\[4\] P. Nero, *Contextuality and Sequential Measurement Order: Distinct Obstructions with a Shared MTT Interface*, version 2, MTT research manuscript, July 2026.
+
+<a id="ref-MTTResults"></a>
+
+\[5\] P. Nero, *MTT Results Reproducibility Repository*, <https://github.com/PeterNero/mtt-results-repro>.
+
+<a id="ref-FrozenFock"></a>
+
+\[6\] P. Nero, *Canonical q79 Fock output measure and second-moment capture descent*, frozen source (2026). <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_fock_output_measure/artifact.json>.
+
+<a id="ref-FrozenContinuum"></a>
+
+\[7\] P. Nero, *Continuum Hessian-to-recorder compiler*, frozen source (2026). <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_continuum_recorder_compiler/artifact.json>.
+
+<a id="ref-FrozenOntology"></a>
+
+\[8\] P. Nero, *q79 operational ontology non-entailment*, frozen source (2026). <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_ontology_nonentailment/artifact.json>.
+
+<a id="ref-LocalityCompanion"></a>
+
+\[9\] P. Nero, *Locality, Coherent Alternatives, and Physical Records: An Interpretive Account of Quantum Experiments in Modal Triplet Theory*, unpublished version 2 (September 2026), subsection *Operational data do not force many actual worlds*.

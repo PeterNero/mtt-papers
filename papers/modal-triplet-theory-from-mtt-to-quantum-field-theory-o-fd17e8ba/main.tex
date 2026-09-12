@@ -32,7 +32,7 @@
 \title{Modal Triplet Theory and Quantum Field Theory on Curved Spacetime:\\
 \large A Selected Free CAR Net and the Interacting Reconstruction Boundary}
 \author{Peter Nero}
-\date{July 2026\\Version 4}
+\date{September 2026\\Version 5}
 
 \begin{document}
 \maketitle
@@ -56,6 +56,20 @@ FRW particle production as conditional applications. This establishes a
 selected free local QFT source and a formal interacting bridge, not a
 first-principles derivation of full interacting QFT from finite projection.
 \end{abstract}
+
+\section*{Version 5 Revision Note}
+\begin{description}[leftmargin=3.2cm,style=nextline]
+\item[Supersedes] Current Version 4; released metadata and earlier revision
+history are retained.
+\item[Reason] The interacting interface needed its explicit source
+dependencies; the FRW example overstated finite-order adiabatic regularity.
+\item[Resolution] Explains the physical-family dependency and three-packet
+endpoint contract, and requires the full Hadamard condition in the example.
+\item[Retained] The selected free CAR net and formal interacting BV/QME tier
+remain established under their declared hypotheses.
+\item[Open boundary] Same-source interacting realization, global measure and
+state, continuum control, matching, and backreaction remain independent.
+\end{description}
 
 \section*{Version 4 Revision Note}
 \begin{description}[leftmargin=3.2cm,style=nextline]
@@ -255,6 +269,65 @@ multiple inequivalent nonperturbative completions. A physical interacting
 theory therefore still requires a selected gauge-BRST C-star bridge or a
 regulator/continuum limit.
 
+\subsection{A physical family is not selected by its finite shadow}
+\label{sec:physical-family}
+
+The frozen family-source theorem supplies a precise dependency reduction
+\cite{FrozenFamily}. A finite-rank projection on a smooth connection space
+has a kernel. Two connections differing in that kernel have the same retained
+source coefficients but can have different twisted Dirac operators and
+positive normals. Its rational eight-coordinate witness illustrates this
+loss of information; it is not a physical HYM solution. Finite projection
+therefore cannot replace a same-source HYM, Bianchi, and action selection.
+
+The positive result is conditional analytic completion. Given the physical
+HYM endpoint, its unitary operator intertwiner, and the selected action with
+smooth common domains and the required ellipticity, the internal family
+admits Riesz projectors on every common-gap chart, Kato transport, and the
+analytic determinant line. These are canonical after the source and chart
+are fixed. They do not extend a spectral projector through a gap closing or
+choose a transverse chiral-measure current. Full quotient-moduli locality,
+crossing and disconnected-sector gluing, and cutoff-uniform fixed-coupling
+norm control remain distinct requirements.
+
+This dependency statement is owned in the companion quantum-mechanics
+source account; here it specifies the interacting QFT input. The older
+packet's hidden-source status does not override the later hidden projective
+and existential HYM theorem. The still-missing source is the common physical
+visible--hidden realization, not a proof that any hidden HYM bundle exists.
+
+\subsection{Three same-source packets, not seven free choices}
+\label{sec:endpoint-consumer}
+
+The cohesive Maurer--Cartan repair result supplies a useful internal
+comparison \cite{FrozenCohesiveMC,Cohesive14}: after metric and gauge-row
+choice, its squared integrability residual has Hodge Hessian at the exact
+background, so its linearized repair flow is a heat semigroup. This is a
+tangent statement, not nonlinear interacting time evolution. Formal derived
+deformation equivalence does not alone identify Hilbert adjoints or spectra;
+those require compatible metrics and reducing operator domains. In
+particular, a positive repair normal is not the signed action Hessian used
+by the QFT construction.
+
+Cohesive's endpoint discussion and the frozen CBF.T12 theorem organize seven
+physical acceptance rows through three structured inputs
+\cite{FrozenEndpoint,Cohesive14}: geometry and signed action (GAS), spectral
+synthesis with domains and contraction identities (SYN), and BV-compatible
+four-dimensional compactification (BV4). Symmetry transport and the
+Galerkin/Feshbach operator then use the same GAS and SYN objects; no fourth
+independent source is needed. Three packets are not three scalar parameters.
+
+The distinction has observable mathematical content. The two block Hessians
+\(K_a=\left(\begin{smallmatrix}2I&I\\I&aI\end{smallmatrix}\right)\),
+with \(a=5\) or \(6\), have the same retained block \(2I\), but eliminating
+the complement gives \((2-1/a)I\). A lower retained action therefore does
+not determine the missing upper dynamics. An internal cotangent action also
+vanishes on its zero section and cannot by itself select the charged
+four-dimensional field action. The frozen record accepts none of the three
+complete physical packets or seven endpoint rows. This is an exact
+dependency contract, not a downgrade of free CAR or a construction of the
+nonperturbative interacting net.
+
 \section{Standard-Model profile results}
 
 The selected MTT Standard-Model program has closed its declared 12-of-12
@@ -323,8 +396,12 @@ has rescaled modes satisfying an equation of the form
 \]
 where \(\Omega_{\mathbf k}\) is determined by
 \(|\mathbf k|^2/a^2\), \(m^2\), \(\xi R\), and the chosen rescaling.
-Adiabatic initial data of sufficiently high order can define Hadamard states
-under standard smoothness assumptions.
+Finite adiabatic order controls only a corresponding finite regularity
+level; no fixed high order alone implies the full Hadamard condition. For
+this example, use an infinite-order adiabatic construction under its
+smoothness hypotheses, or independently verify the microlocal Hadamard
+condition \cite{Pirk1993,JunkerSchrohe}. This correction does not alter the
+separate existence theorem for the selected free CAR state space.
 
 This is a test bed for the QFT machinery, not a numerical MTT prediction.
 To promote it, one must derive \(a(t)\), the state, masses, couplings, and
@@ -424,6 +501,39 @@ No imported row changes theorem ownership or promotes a neighboring claim: all l
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{99}
+
+\bibitem{FrozenFamily}
+P. Nero, \emph{Physical-Family Source Dependency, Analytic Completion, and
+Finite-Projection Nonpromotion}, frozen source record, 2026.
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_family_source_cutset/artifact.json}.
+Contextual owner: \emph{Modal Triplet Theory and Nonrelativistic Quantum
+Mechanics}, source-family discussion.
+
+\bibitem{FrozenEndpoint}
+P. Nero, \emph{Seven-Row Endpoint Factorization and Minimal-Source Theorem},
+CBF.T12, frozen source record, 2026.
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json}.
+
+\bibitem{FrozenCohesiveMC}
+P. Nero, \emph{Cohesive Maurer--Cartan Repair and Derived-Transform
+Intertwiner}, frozen structural/conditional source record, 2026.
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_maurer_cartan_repair/artifact.json}.
+
+\bibitem{Cohesive14}
+P. Nero, \emph{Cohesive Closure Repair and Its Hodge, Kernel, and Projection
+Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action
+Boundary}, version 14 structural identities, 2026.
+
+\bibitem{Pirk1993}
+K.-T. Pirk, ``Hadamard states and adiabatic vacua,''
+\emph{Physical Review D} \textbf{48} (1993), 3779.
+\url{https://doi.org/10.1103/PhysRevD.48.3779}.
+
+\bibitem{JunkerSchrohe}
+W. Junker and E. Schrohe, ``Adiabatic vacuum states on general spacetime
+manifolds: Definition, construction, and physical properties,''
+\emph{Annales Henri Poincare} \textbf{3} (2002), 1113--1182.
+\url{https://arxiv.org/abs/math-ph/0109010}.
 
 \bibitem{Wald}
 R.~M.~Wald,

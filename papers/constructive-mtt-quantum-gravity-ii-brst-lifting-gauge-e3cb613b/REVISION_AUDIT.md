@@ -1,4 +1,25 @@
-# Constructive MTT Quantum Gravity II v2 Revision Audit
+# Constructive MTT Quantum Gravity II Revision Audit
+
+## Version 3 Contextual Dependency Delta
+
+Date: 2026-09-12. Local successor to v2; no Zenodo action.
+
+Correct the obsolete request to repair QG I: its revised trace-class
+Gaussian construction and finite nonnegative-quartic Borel theorem already
+exist. Neither supplies the gravitational mixed boson/ghost interaction,
+QME or uniform cutoff removal. This is a stale cross-paper dependency
+correction, not a weakening of either paper's actual local theorem.
+
+The new sec:physical-family-import cites the quantum-mechanics owner and
+frozen q79_family_source_cutset (SHA256
+503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e).
+The conditional elliptic-family, Riesz/Kato and determinant machinery is
+available after source selection; it does not provide the gravitational
+measure, crossing/sector gluing or physical OS positivity. The completed
+hidden-HYM existence tier is preserved. All v2 theorem bodies and their
+proofs, the abstract and physical-source conditions are retained.
+
+## Historical Version 2 Audit
 
 ## Source lineage
 

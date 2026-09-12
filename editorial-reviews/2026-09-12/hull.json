@@ -1,0 +1,3559 @@
+{
+  "schema": "mtt-editorial-review-fragment-v1",
+  "fragment_id": "2026-09-12-hull",
+  "completed_at": "2026-09-12T22:01:42Z",
+  "reviewed_at": "2026-09-12T21:48:36Z",
+  "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+  "repository": "C:/Users/nero_/Downloads/mtt-papers",
+  "exclusive_write_scope": [
+    "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/",
+    "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/",
+    "editorial-reviews/2026-09-12/hull.json",
+    "editorial-reviews/2026-09-12/hull.md"
+  ],
+  "frozen_manifest_commit": "f141a20ea23c5c3ff19cc2161c0e226e29ade8a7",
+  "authority_policy": "Kernel bootstrapped for repository mtt-papers before edits. Current A/B authority outranks older packet headers. No raw status promotion; finite SM/shared-primitive/Yukawa/EW, canonical operational QM, hidden P(3,9)/existential HYM and finite/local q79 remain established at their declared tiers.",
+  "summary": {
+    "initial_assigned_unreviewed_owner_results": 37,
+    "owner_reviews": 37,
+    "owner_integrated": 36,
+    "owner_historical_context": 1,
+    "owner_pending_in_assigned_scope": 0,
+    "consumer_reviews": 12,
+    "consumer_integrated_paper_result_placements": 20,
+    "consumer_not_applicable": 0,
+    "title_candidates_examined": 23,
+    "title_candidates_prior_completion_no_duplicate_review": 3,
+    "consumer_pending_in_assigned_scope": 0,
+    "unique_full_frozen_sources_read": 53,
+    "frozen_bytes_read": 753338,
+    "papers_revised": 2,
+    "total_pdf_pages": 44,
+    "all_pages_inspected": true,
+    "individual_zoom_pages_inspected": 29,
+    "small_bounded_checks": 15
+  },
+  "reviews": [
+    {
+      "id": "2026-09-12-hull-owner-01",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "qa_su3_support_program"
+      ],
+      "anchors": [
+        "\\label{sec:evidence}"
+      ],
+      "assessment": "The complete Qa chronology is imported as support, not promoted wholesale to a theorem. The revised evidence discussion preserves the valid Iwasawa complex-geometric example, the one-complex-orbit and noncentral-commutant restrictions, the displayed Gram determinant 2008 and the normalized driver convention. It explicitly rejects treating normalization as a physically selected amplitude and leaves current finite SM/shared-primitive/Yukawa/EW authority unchanged.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "qa_su3_support_program": "9ba17705129fd08e636276b6877215e8cd383f9f5ff88de0af706d0e51033b5e"
+      },
+      "source_tier": "SUPPORT_ONLY",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 866,
+          "anchor": "\\label{sec:evidence}"
+        }
+      ],
+      "bibliography_key": "FRQa"
+    },
+    {
+      "id": "2026-09-12-hull-owner-02",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "q79_hidden_spectral_cutset"
+      ],
+      "anchors": [
+        "\\label{sec:aux-spectral}"
+      ],
+      "assessment": "The auxiliary rank-three spectral cutset is explained with its effectivity assumptions and class 3H+3D0, distinct from the physical rank-nine class 9H+3D0. The old packet's open hidden-endpoint wording is read alongside the later balanced projective object and existential HYM result; it does not reopen those closed tiers. Physical visible-hidden compatibility and selection remain open.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_hidden_spectral_cutset": "0a5698e250267f54b7b796e42684ca3332d61237442317621381266b65ff5323"
+      },
+      "source_tier": "OPEN_PHYSICAL_ENDPOINT",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 897,
+          "anchor": "\\label{sec:aux-spectral}"
+        }
+      ],
+      "bibliography_key": "FRSpectral"
+    },
+    {
+      "id": "2026-09-12-hull-owner-03",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "q79_hidden_qutrit_adjoint"
+      ],
+      "anchors": [
+        "\\label{sec:symmetry-bc}"
+      ],
+      "assessment": "The internal qutrit action cancels its projective phases on the adjoint and gives rank 8 plus eight rank-9 isotypic summands, totaling 80. The manuscript distinguishes this structural decomposition from base translations and from a selected physical Hessian. It imports the decomposition without inventing a metric or identifying a fundamental twisted bundle with an ordinary bundle.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_hidden_qutrit_adjoint": "f00b3ef3a8c968d62f8d60d208a9f2d3c8269c3c6909e54155944c7e045a4e5b"
+      },
+      "source_tier": "DERIVED_EXACT_STRUCTURAL_OPEN_PHYSICAL_HESSIAN",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1090,
+          "anchor": "\\label{sec:symmetry-bc}"
+        }
+      ],
+      "bibliography_key": "FRAdjoint"
+    },
+    {
+      "id": "2026-09-12-hull-owner-04",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_frontier"
+      ],
+      "anchors": [
+        "\\label{sec:source-frontier}"
+      ],
+      "assessment": "The whole evolving frontier was read, including its later Prym, incidence, arithmetic and correction sections, not classified by its early open header. The new narrative distinguishes exact reductions and local certificates from finite modular ranks, characteristic-zero bounds, integral marking and the remaining visible twisted Prym/anomaly problem. It retains the corrected T69 boundary, local T70--T73 versus global Picard/BHT, Vdual rather than V for the integral ambient quotient, and the nonautomatic ordinary Neron model.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_frontier": "9304a26b6fc045166e50a459843e417dd713684767209eeaf801ab53644247b8"
+      },
+      "source_tier": "HYPOTHESIS_WITH_EXACT_GATES_AND_CORRECTED_ARITHMETIC",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1194,
+          "anchor": "\\label{sec:source-frontier}"
+        }
+      ],
+      "bibliography_key": "FRFrontier"
+    },
+    {
+      "id": "2026-09-12-hull-owner-05",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_g3gm_arithmetic_correction"
+      ],
+      "anchors": [
+        "\\label{sec:source-frontier}"
+      ],
+      "assessment": "The inherited-modulus defect is reported explicitly, with the false fresh-prime 4752/1270 branch retracted and corrected finite rank/corank 4748/1274 retained. The characteristic-zero statement is the bound 4748<=rank<=5102, not an exact rank inferred from one finite field. Unaffected component and fixed-minor sources survive. This is integration of the source's concrete erratum, not a blanket downgrade.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_g3gm_arithmetic_correction": "3e0b3c8a9a3276cd5718a9cdacea338be8f91af9c0d9919e410474243d89a42a"
+      },
+      "source_tier": "CLOSED_EXACT_CALCULATION_CORRECTION",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1194,
+          "anchor": "\\label{sec:source-frontier}"
+        }
+      ],
+      "bibliography_key": "FRG3GM"
+    },
+    {
+      "id": "2026-09-12-hull-owner-06",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "historical_context",
+      "result_ids": [
+        "unified_source_upstream_lock"
+      ],
+      "anchors": [
+        "\\label{sec:reproducibility}"
+      ],
+      "assessment": "This fixed upstream-lock packet is provenance for a particular historical source snapshot, not a new mathematical or current-status claim. The reproducibility section cites it for hash-addressed chronology while making current A/B authority and later scoped refinements controlling. Only this non-evolving lock is classified historical_context; the full Qa and frontier sources receive substantive contextual integrations.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_upstream_lock": "7bf91fc82193851ebf6ddd3f4d0489905d0d2d9d90f8f569be7ecbb9241e3f2c"
+      },
+      "source_tier": "HASH_LOCK",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1466,
+          "anchor": "\\label{sec:reproducibility}"
+        }
+      ],
+      "bibliography_key": "FRLock"
+    },
+    {
+      "id": "2026-09-12-hull-owner-07",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_candidate_adjudication"
+      ],
+      "anchors": [
+        "\\label{sec:source-presentations}"
+      ],
+      "assessment": "The two source presentations are explained in context: an augmented bundle presentation and a derived/cohesive presentation with its residual and comparison data. Their shared output rows do not identify their input objects or make one a selected physical endpoint. The import supplies the source contract needed before the conditional fixed-point bridge can be applied.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_candidate_adjudication": "9eaccb4610f062e718c6548894aeaacf96eacf4e4d505e4eb2a6cace67778800"
+      },
+      "source_tier": "DERIVED_EXACT_CLASSIFICATION",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 426,
+          "anchor": "\\label{sec:source-presentations}"
+        }
+      ],
+      "bibliography_key": "FRG1"
+    },
+    {
+      "id": "2026-09-12-hull-owner-08",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_bundle_cohesive_embedding"
+      ],
+      "anchors": [
+        "\\label{sec:source-presentations}"
+      ],
+      "assessment": "The bundle-to-cohesive construction is contextualized as a forward embedding, with augmentation data retained. A reverse realization requires the appropriate degree-zero cohomology to be locally free and to have the right topology and physical rows. Derived representability alone is not silently promoted to an honest selected bundle.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_bundle_cohesive_embedding": "866d747361335af4dd53913ac61176efa35133ade3e1316cc4052082528953f3"
+      },
+      "source_tier": "DERIVED_EXACT_EMBEDDING_OPEN_REVERSE",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 426,
+          "anchor": "\\label{sec:source-presentations}"
+        }
+      ],
+      "bibliography_key": "FRG1E"
+    },
+    {
+      "id": "2026-09-12-hull-owner-09",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_full_residual_hodge"
+      ],
+      "anchors": [
+        "\\label{sec:full-repair}"
+      ],
+      "assessment": "The full residual gives a Hodge contribution plus K-dagger-K with the actual residual metric and any cross terms retained. The manuscript explains why pure closure repair cannot stand in for all six physical residual rows, and supplies a bounded isometric-embedding counterexample to separate equality of pulled-back costs from adjoint/Hessian transport.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_full_residual_hodge": "f1e2f7e830e3b11be02d8727e5ac3dc8c862874191efb121690dc26be74ea904"
+      },
+      "source_tier": "DERIVED_EXACT_UNIVERSAL",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 563,
+          "anchor": "\\label{sec:full-repair}"
+        }
+      ],
+      "bibliography_key": "FRG2"
+    },
+    {
+      "id": "2026-09-12-hull-owner-10",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_physical_residual_transfer"
+      ],
+      "anchors": [
+        "\\label{sec:full-repair}"
+      ],
+      "assessment": "The physical five-sector rank-102 inventory has 25 ordered coupling blocks, not the obsolete 19-block mask. The six residual rows and corrected transfer criterion are explained without deleting off-diagonal couplings. A reducing, domain-compatible isometry or unitary equivalence is needed for operator transfer; a matching finite cost alone does not execute the physical continuum operator.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_physical_residual_transfer": "6ae7d98b9a436f8ad5252bf61ea920310fed5b6c979f4e5a119cded5318769be"
+      },
+      "source_tier": "DERIVED_EXACT_SYMBOLIC_OPEN_ENDPOINT",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 563,
+          "anchor": "\\label{sec:full-repair}"
+        }
+      ],
+      "bibliography_key": "FRG2P"
+    },
+    {
+      "id": "2026-09-12-hull-owner-11",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_anti_splicing_audit"
+      ],
+      "anchors": [
+        "\\label{sec:source-presentations}"
+      ],
+      "assessment": "The zero-promotable anti-splicing audit is read at its snapshot scope. It excludes assembling one putative endpoint from unrelated candidates, metrics or residual rows; later hidden existence is not invalidated by that earlier inventory. A common source and its comparison data remain necessary for visible-hidden physical promotion.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_anti_splicing_audit": "53cbb74bec75cb85cfc8b9143b9c2ad85aab6023b0648d9261b3bf7d809cb99e"
+      },
+      "source_tier": "DERIVED_EXACT_ZERO_PROMOTABLE",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 426,
+          "anchor": "\\label{sec:source-presentations}"
+        }
+      ],
+      "bibliography_key": "FRG3A"
+    },
+    {
+      "id": "2026-09-12-hull-owner-12",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_scale_orbit"
+      ],
+      "anchors": [
+        "\\label{sec:metric-scale}"
+      ],
+      "assessment": "The exact common positive scale orbit preserves the specified dimensionless readouts, but it does not select an absolute physical scale. The reference scale freedom is stated next to the residual metric choice so it cannot be mistaken for a measured normalization or a source-selection law.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_scale_orbit": "0d120691ae466ae46c5f2fe1f46da7bff70d1aed5765da59fd94d656e54a9929"
+      },
+      "source_tier": "DERIVED_EXACT_OPEN_ABSOLUTE_SCALE",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 717,
+          "anchor": "\\label{sec:metric-scale}"
+        }
+      ],
+      "bibliography_key": "FRG3B"
+    },
+    {
+      "id": "2026-09-12-hull-owner-13",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_metric_commutant"
+      ],
+      "anchors": [
+        "\\label{sec:metric-scale}"
+      ],
+      "assessment": "The one-ray commutant is the reference source-metric classification under its declared symmetry, not a proof that the physical metric is unique or selected. Its scope is kept separate from the more general noncentral Qa commutant and from the unconstructed physical residual metric.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_metric_commutant": "bf3f0ab162f3dfbdde0bbc055b9d82c6564907359a93bc1ad5646acbfb976e4a"
+      },
+      "source_tier": "DERIVED_EXACT_REFERENCE_OPEN_PHYSICAL_METRIC",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 717,
+          "anchor": "\\label{sec:metric-scale}"
+        }
+      ],
+      "bibliography_key": "FRG3C"
+    },
+    {
+      "id": "2026-09-12-hull-owner-14",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_common_hym_chamber"
+      ],
+      "anchors": [
+        "\\label{sec:hidden-hym}"
+      ],
+      "assessment": "The common Gauduchon chamber statement is retained as a criterion with stability and module hypotheses. Later hidden projective HYM existence is expressly retained; the remaining problem is a common positive chamber with the selected visible bundle and anomaly/Bianchi data. No numerical chamber threshold is invented.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_common_hym_chamber": "6bcc9471b35d01bbb0b221650f6e55ba8a38be69ab6cfe9b9136b2199bf28d8a"
+      },
+      "source_tier": "DERIVED_EXACT_CRITERION_OPEN_PHYSICAL_MODULES",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1046,
+          "anchor": "\\label{sec:hidden-hym}"
+        }
+      ],
+      "bibliography_key": "FRG3D"
+    },
+    {
+      "id": "2026-09-12-hull-owner-15",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_opposite_complex_bfield_wit"
+      ],
+      "anchors": [
+        "\\label{sec:aux-spectral}"
+      ],
+      "assessment": "The opposite-complex and B-field relative-transform reduction is explained as an auxiliary construction that isolates two defect fibers. It is not global local-freeness or the physical rank-nine spectral datum by itself. The subsequent repair chronology is used to explain what this reduction enables and what it does not settle.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_opposite_complex_bfield_wit": "4fe31eb0169664cc061173804a082bba287f1ab42976560b886d55a00434069b"
+      },
+      "source_tier": "DERIVED_EXACT_LOCAL_BFIELD_WIT_REDUCTION",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 897,
+          "anchor": "\\label{sec:aux-spectral}"
+        }
+      ],
+      "bibliography_key": "FRG3E"
+    },
+    {
+      "id": "2026-09-12-hull-owner-16",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_hs_global_stability"
+      ],
+      "anchors": [
+        "\\label{sec:aux-spectral}"
+      ],
+      "assessment": "The Hartshorne--Serre source stability result is retained on its actual source and stability hypotheses. It is a genuine auxiliary existence/stability step, not a certificate that the selected transformed visible-hidden endpoint is solved. The later obstruction and balanced-repair results are kept in the same narrative.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_hs_global_stability": "4bad15e911de145c8215448358e78c5c5a7ff98a45ad470fdc533467ce3b2a02"
+      },
+      "source_tier": "DERIVED_EXACT_SOURCE_STABILITY_PROJECTIVE_HE",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 897,
+          "anchor": "\\label{sec:aux-spectral}"
+        }
+      ],
+      "bibliography_key": "FRG3F"
+    },
+    {
+      "id": "2026-09-12-hull-owner-17",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_two_fiber_recombination"
+      ],
+      "anchors": [
+        "\\label{sec:recombination}"
+      ],
+      "assessment": "The two-fiber stable recombination supplies a local repair mechanism with its same-source and extension hypotheses. The paper explains its role in the hidden construction chronology without treating a local recombination as the global physical solution or concealing the subsequent reverse-extension obstruction.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_two_fiber_recombination": "9ce145889744fc12d511758aeb3c6a7d424479fcb26ef308afc04f6f6c5914aa"
+      },
+      "source_tier": "DERIVED_EXACT_FIBERWISE_RECOMBINATION_CUTSET",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 943,
+          "anchor": "\\label{sec:recombination}"
+        }
+      ],
+      "bibliography_key": "FRG3G"
+    },
+    {
+      "id": "2026-09-12-hull-owner-18",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_qutrit_determinantal_torsion"
+      ],
+      "anchors": [
+        "\\label{sec:recombination}"
+      ],
+      "assessment": "The qutrit determinantal torsion line is imported with its determinant/equivariance typing. Such torsion bookkeeping constrains the proposed recombination but does not furnish a globally untwisted physical spectral line. The ordinary versus equivariant distinction is maintained through the later theta-typing correction.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_qutrit_determinantal_torsion": "5448e827f1e698604257a8a62471841c4e953af78d868608f19bd03e36ee0ee5"
+      },
+      "source_tier": "DERIVED_EXACT_QUTRIT_TORSION_REDUCTION",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 943,
+          "anchor": "\\label{sec:recombination}"
+        }
+      ],
+      "bibliography_key": "FRG3H"
+    },
+    {
+      "id": "2026-09-12-hull-owner-19",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_bidirectional_ext"
+      ],
+      "anchors": [
+        "\\label{sec:recombination}"
+      ],
+      "assessment": "The forward and reverse Ext computations are explained as extension-space information. Nonzero Ext classes alone do not ensure local-freeness or successful bidirectional recombination; the adjacent reverse-Ext no-go and Yoneda obstruction give the needed consumer boundary.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_bidirectional_ext": "10196b1de3e189b5693f9500278cbf342932e483089d3fb203f4301e5e823b2b"
+      },
+      "source_tier": "DERIVED_EXACT_EXT_RIGIDITY_EXISTENCE",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 943,
+          "anchor": "\\label{sec:recombination}"
+        }
+      ],
+      "bibliography_key": "FRG3I"
+    },
+    {
+      "id": "2026-09-12-hull-owner-20",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_reverse_ext_nogo"
+      ],
+      "anchors": [
+        "\\label{sec:recombination}"
+      ],
+      "assessment": "The reverse-extension local-freeness obstruction excludes the stated reverse Hartshorne--Serre route. It is recorded as an integrated exact scoped no-go, not disposed of as historical or expanded into a no-go for the later balanced hidden projective construction.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_reverse_ext_nogo": "aa0dca8ec6bd430342802025aac30bb6a76abab63517c8c3cc5147681ebc6d5a"
+      },
+      "source_tier": "NO_GO_REVERSE_EXT_BUNDLE_ROUTE",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 943,
+          "anchor": "\\label{sec:recombination}"
+        }
+      ],
+      "bibliography_key": "FRG3J"
+    },
+    {
+      "id": "2026-09-12-hull-owner-21",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_derived_yoneda_reduction"
+      ],
+      "anchors": [
+        "\\label{sec:yoneda}"
+      ],
+      "assessment": "The derived Yoneda reduction makes the obstruction finite and explicit under the source contraction assumptions. It reduces a completion test to a residual column; it does not prove that column vanishes. The later rank-four, clock-fixed and nonzero-pairing results are explained as refinements of this test.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_derived_yoneda_reduction": "7145ffccdd9cdf6eb354045aacfd4cb2d4265f6df46fbbbd07cc59bda6e41a8d"
+      },
+      "source_tier": "DERIVED_EXACT_YONEDA_REDUCTION",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 977,
+          "anchor": "\\label{sec:yoneda}"
+        }
+      ],
+      "bibliography_key": "FRG3K"
+    },
+    {
+      "id": "2026-09-12-hull-owner-22",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_monad_yoneda_rank4"
+      ],
+      "anchors": [
+        "\\label{sec:yoneda}"
+      ],
+      "assessment": "The monad Yoneda calculation has a rank-four image with the stated five-dimensional normal quotient. These finite dimensions explain why an additional obstruction column survives; they are not evidence for an unobstructed physical moduli space.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_monad_yoneda_rank4": "e8af654895d0e34b3004c940eac0163084c2ba04b44fac3ccb888e1ffb34bf6c"
+      },
+      "source_tier": "DERIVED_EXACT_RANK4_YONEDA_REDUCTION",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 977,
+          "anchor": "\\label{sec:yoneda}"
+        }
+      ],
+      "bibliography_key": "FRG3L"
+    },
+    {
+      "id": "2026-09-12-hull-owner-23",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_clock_fixed_yoneda_column"
+      ],
+      "anchors": [
+        "\\label{sec:yoneda}"
+      ],
+      "assessment": "The clock condition selects the invariant Yoneda column within the reduced obstruction problem. Selection of that column is not its vanishing. The manuscript reads this intermediate exact result through the following nonzero-pairing exclusion instead of freezing the chronology at an early hopeful step.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_clock_fixed_yoneda_column": "44415f6dc23dd5fedad2bb8cbaccedae6e6999da05ac76839decc6d9e365041e"
+      },
+      "source_tier": "DERIVED_EXACT_INVARIANT_COLUMN_REDUCTION",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 977,
+          "anchor": "\\label{sec:yoneda}"
+        }
+      ],
+      "bibliography_key": "FRG3M"
+    },
+    {
+      "id": "2026-09-12-hull-owner-24",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_yoneda_column_nogo"
+      ],
+      "anchors": [
+        "\\label{sec:yoneda}"
+      ],
+      "assessment": "The exact fiber-Serre pairing makes the locked Yoneda column nonzero and excludes the bidirectional Hartshorne--Serre completion route. That concrete excluded mechanism is retained, while the later balanced holomorphic P(3,9) route remains established.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_yoneda_column_nogo": "7f5c00ace92a27c2940af764f32ce63ed9c6c3b23c7153a54f5e84f04eedaa09"
+      },
+      "source_tier": "NO_GO_BIDIRECTIONAL_HS_ROUTE",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 977,
+          "anchor": "\\label{sec:yoneda}"
+        }
+      ],
+      "bibliography_key": "FRG3N"
+    },
+    {
+      "id": "2026-09-12-hull-owner-25",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_atiyah_qutrit_chern_nogo"
+      ],
+      "anchors": [
+        "\\label{sec:yoneda}"
+      ],
+      "assessment": "The ambient Atiyah/qutrit shortcut has the wrong hidden Chern sign and is excluded on that explicit invariant. The manuscript explains why tensor resemblance cannot overcome this sign obstruction and does not extend the exclusion to all hidden rank-nine constructions.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_atiyah_qutrit_chern_nogo": "8962ac22d30ae1f2bc1db9804a65c699e1bddab6a47343342edd94d0838f6d46"
+      },
+      "source_tier": "NO_GO_AMBIENT_ATIYAH_HIDDEN_SHORTCUT",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 977,
+          "anchor": "\\label{sec:yoneda}"
+        }
+      ],
+      "bibliography_key": "FRG3O"
+    },
+    {
+      "id": "2026-09-12-hull-owner-26",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_hidden_perfect_complex"
+      ],
+      "anchors": [
+        "\\label{sec:hidden-object}"
+      ],
+      "assessment": "The corrected hidden projective perfect complex supplies the stated rank and Chern rows. The paper distinguishes a perfect-complex/K-theoretic realization from degree-zero locally free representability, and follows the later WIT-zero and balanced mutation refinements rather than claiming physical HYM at this intermediate stage.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_hidden_perfect_complex": "5e9f8aa54f6642219a7bef5ba4d4cf77cc3936e92e374c0c2b34b574c4229db8"
+      },
+      "source_tier": "DERIVED_EXACT_HIDDEN_PERFECT_COMPLEX_ROWS",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1007,
+          "anchor": "\\label{sec:hidden-object}"
+        }
+      ],
+      "bibliography_key": "FRG3P"
+    },
+    {
+      "id": "2026-09-12-hull-owner-27",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_zero_section_monad_nogo"
+      ],
+      "anchors": [
+        "\\label{sec:hidden-object}"
+      ],
+      "assessment": "The direct zero-section monad promotion is excluded by its support-fiber rank obstruction. The required horizontal repair is explained. This is a scoped obstruction to one shortcut, not a withdrawal of the subsequent global rank-nine locally free target.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_zero_section_monad_nogo": "f6eb1524f4b276151c903e2511e05df41ffd6871f7012b7c7768f2c7ebf039ba"
+      },
+      "source_tier": "NO_GO_ZERO_SECTION_MONAD_PROMOTION",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1007,
+          "anchor": "\\label{sec:hidden-object}"
+        }
+      ],
+      "bibliography_key": "FRG3Q"
+    },
+    {
+      "id": "2026-09-12-hull-owner-28",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_global_wit0_rank9"
+      ],
+      "anchors": [
+        "\\label{sec:hidden-object}"
+      ],
+      "assessment": "The global alpha/sigma repair and uniform WIT-zero statement produce a locally free twisted projective rank-nine object. The paper preserves this exact geometric progress while explaining that the unbalanced target still has a separate slope defect addressed by the later balanced construction.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_global_wit0_rank9": "ff66eac4c2cb84d3a862dd2a9e1682d8641cd7763dfe53069fb888c77cafe8b7"
+      },
+      "source_tier": "DERIVED_EXACT_GLOBAL_WIT0_LOCALLY_FREE_RANK9",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1007,
+          "anchor": "\\label{sec:hidden-object}"
+        }
+      ],
+      "bibliography_key": "FRG3R"
+    },
+    {
+      "id": "2026-09-12-hull-owner-29",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_target_slope_nogo"
+      ],
+      "anchors": [
+        "\\label{sec:hidden-object}"
+      ],
+      "assessment": "The Harder--Narasimhan target-slope calculation excludes the unbalanced transformed target and motivates factorwise degree-zero qutrit structure. It does not reopen the balanced P(3,9) object or existential hidden HYM supplied later in the same chronology.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_target_slope_nogo": "ca300fce589b86e177c5319ba55b1a0e78689d59c18829b371034db61509e7d0"
+      },
+      "source_tier": "NO_GO_UNBALANCED_TARGET_SLOPE",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1007,
+          "anchor": "\\label{sec:hidden-object}"
+        }
+      ],
+      "bibliography_key": "FRG3S"
+    },
+    {
+      "id": "2026-09-12-hull-owner-30",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_balanced_holomorphic_p39"
+      ],
+      "anchors": [
+        "\\label{sec:hidden-object}"
+      ],
+      "assessment": "The support-wide balanced mutation and determinant reduction yield the holomorphic P(3,9) carrier and relative polystability. This established hidden construction is affirmatively retained, not demoted because earlier routes failed. Physical visible-hidden compatibility is a different remaining obligation.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_balanced_holomorphic_p39": "b6c068e95504522ca23c6b78e229038094913f9902240c69ac2ce0d6461a1ab3"
+      },
+      "source_tier": "DERIVED_EXACT_BALANCED_HOLOMORPHIC_P39",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1007,
+          "anchor": "\\label{sec:hidden-object}"
+        }
+      ],
+      "bibliography_key": "FRG3T"
+    },
+    {
+      "id": "2026-09-12-hull-owner-31",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_hidden_direct_stability"
+      ],
+      "anchors": [
+        "\\label{sec:hidden-hym}"
+      ],
+      "assessment": "The direct stable-factor estimates are explained without assuming reduced spectral support. The finite-but-unspecified bound is an existential analytic input, not a numerical certificate; placeholder constants in the packet are not physical values. Later existence closes the hidden stability tier without requiring a newly computed chamber number.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_hidden_direct_stability": "f9d6649c385a8b7896444585950f2281b703a4bf9e2750ea92777ccb63ea81d3"
+      },
+      "source_tier": "DERIVED_EXACT_HIDDEN_DIRECT_STABILITY",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1046,
+          "anchor": "\\label{sec:hidden-hym}"
+        }
+      ],
+      "bibliography_key": "FRG3U"
+    },
+    {
+      "id": "2026-09-12-hull-owner-32",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_hidden_projective_hym"
+      ],
+      "anchors": [
+        "\\label{sec:hidden-hym}"
+      ],
+      "assessment": "The finite-threshold argument establishes a qutrit-equivariant hidden projective HYM connection for sufficiently large parameter, with the displayed condition t>1+3M understood existentially. The paper explicitly retains this closed existence result while leaving the selected visible bundle, common positive solution and integral anomaly data open.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_hidden_projective_hym": "aaa577c0d6b90643069f0547a76bf71aa476c4d968bea050eaf2ac7e6354f25a"
+      },
+      "source_tier": "DERIVED_EXACT_EXISTENTIAL_HIDDEN_PROJECTIVE_HYM",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1046,
+          "anchor": "\\label{sec:hidden-hym}"
+        }
+      ],
+      "bibliography_key": "FRG3V"
+    },
+    {
+      "id": "2026-09-12-hull-owner-33",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_projective_translation_chern_weil"
+      ],
+      "anchors": [
+        "\\label{sec:symmetry-bc}"
+      ],
+      "assessment": "The projective translations cover the relevant base orbit and make the hidden HYM Chern--Weil form vertically invariant under the stated equivariance. The paper distinguishes these base-covering translations from the internal qutrit adjoint decomposition and does not infer that all noninvariant modes vanish.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_projective_translation_chern_weil": "feea878a3a218f913708f06ee950b0e3673d79d97c61f0b4a9f22ceb71fe21d1"
+      },
+      "source_tier": "DERIVED_EXACT_PROJECTIVE_TRANSLATION_CHERN_WEIL",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1090,
+          "anchor": "\\label{sec:symmetry-bc}"
+        }
+      ],
+      "bibliography_key": "FRG3W"
+    },
+    {
+      "id": "2026-09-12-hull-owner-34",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_bott_chern_injectivity"
+      ],
+      "anchors": [
+        "\\label{sec:symmetry-bc}"
+      ],
+      "assessment": "The full vertical-Fourier argument gives real Bott--Chern (2,2)-to-de-Rham injectivity, not merely an invariant-subcomplex check. This enables the stated potential conclusion for appropriate exact forms; it does not imply positivity of a nonlinear solution or integral differential Green--Schwarz trivialization. The later ordinary/equivariant string-class correction is retained separately.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_bott_chern_injectivity": "5c8f76f252bca66c208d6dec0f3446b75b3eb316d2fd163e16a4ef02bc816ace"
+      },
+      "source_tier": "DERIVED_EXACT_BOTT_CHERN_INJECTIVITY",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1090,
+          "anchor": "\\label{sec:symmetry-bc}"
+        }
+      ],
+      "bibliography_key": "FRG3X"
+    },
+    {
+      "id": "2026-09-12-hull-owner-35",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_transverse_fuyau_nogo"
+      ],
+      "anchors": [
+        "\\label{sec:transverse-nogo}"
+      ],
+      "assessment": "The transverse condition F wedge omega_B=0 forces the relevant horizontal F cubed to vanish and conflicts with the selected visible c3=+/-6. The exclusion is therefore of the transverse Fu--Yau shortcut, not of a full nontransverse HYM solution satisfying F wedge omega squared=0.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_transverse_fuyau_nogo": "1b40b0fb3a0f4ecabec32cdcb84d9c74d430d585fec448a66e962f957a53ec23"
+      },
+      "source_tier": "NO_GO_TRANSVERSE_FUYAU_VISIBLE_C3",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1143,
+          "anchor": "\\label{sec:transverse-nogo}"
+        }
+      ],
+      "bibliography_key": "FRG3Y"
+    },
+    {
+      "id": "2026-09-12-hull-owner-36",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_nontransverse_endpoint_compiler"
+      ],
+      "anchors": [
+        "\\label{sec:endpoint-compiler}"
+      ],
+      "assessment": "The full-residual Newton--Kantorovich compiler is explained with same-source inverse, residual, Lipschitz, radius and invariant-domain hypotheses. Its small displayed rational majorant example is checked only as arithmetic, not asserted to certify a physical endpoint. The result is conditional exact analysis, not physical source selection.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_nontransverse_endpoint_compiler": "9c7fc76a957b47df203f34f357ec99ba2c989f5f7697c98f571b2e605cb86e80"
+      },
+      "source_tier": "DERIVED_EXACT_NONTRANSVERSE_ENDPOINT_COMPILER",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 786,
+          "anchor": "\\label{sec:endpoint-compiler}"
+        }
+      ],
+      "bibliography_key": "FRG3Z"
+    },
+    {
+      "id": "2026-09-12-hull-owner-37",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "unified_source_shared_line_theta_typing"
+      ],
+      "anchors": [
+        "\\label{sec:shared-line}"
+      ],
+      "assessment": "The shared-line/theta typing result distinguishes the equivariant projective theta extension from ordinary cohomology. Ordinary H^3 here is torsion-free, so the old ordinary order-three string-class shortcut is excluded; the degree-four anomaly and degree-three trivialization torsor are kept distinct. L^9=L only on the order-two sheet, and a flat line does not generally untwist the physical projective fundamental.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "unified_source_shared_line_theta_typing": "8be85c69e0eea231a5f341bcc747b58429c824fa88eec791ba61072c32601017"
+      },
+      "source_tier": "DERIVED_EXACT_SHARED_LINE_THETA_TYPING",
+      "source_scope": "Entire frozen artifact read; tier and hypothesis retained; no independent large-certificate replay.",
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1163,
+          "anchor": "\\label{sec:shared-line}"
+        }
+      ],
+      "bibliography_key": "FRG3AA"
+    }
+  ],
+  "consumer_reviews": [
+    {
+      "id": "2026-09-12-hull-consumer-compiler",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_projective_hym_naturality",
+        "q79_cech_projector_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-compiler}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The current QM paper is the canonical manuscript owner, despite stale Kernel title-based owner hints. Given unitary transitions and a supplied Hermitian connection, the Cech construction gives p=UU* and Dp=p d+U(A-U*dU)U*, preserving that supplied connection rather than replacing it with the Grassmann connection. Matrix size does not make the section space finite; the modal flag is external. Naturality transports the intrinsic retained window, and Hodge/Green restriction needs a reducing subspace with compatible domains. The exact Feshbach correction distinguishes a coupled complement from bare compression. These exact conditional constructions make the interface executable when inputs exist; they do not select the physical endpoint.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7"
+      },
+      "source_owners": {
+        "q79_projective_hym_naturality": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "q79_cech_projector_compiler": "modal-triplet-theory-from-mtt-to-quantum-mechanics"
+      },
+      "source_tiers": {
+        "q79_projective_hym_naturality": "DERIVED_EXACT_UNIVERSAL",
+        "q79_cech_projector_compiler": "DERIVED_EXACT_UNIVERSAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 620,
+          "anchor": "\\label{sec:consumer-compiler}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-strain",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-strain}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The QM owner supplies the nonlinear replacement for the excluded linear root-stack strain route. Three diagonal coordinates plus three squared edge amplitudes are not the full seven-dimensional relative-phase quotient. The shorted Hessian is obtained by projecting covariance before inversion, not by compressing the old Hessian. The later support-stratified source is also cited and fully read: zero edges use second jets, tangential shorting and a degree-one normal cost r/2, not an ordinary full six-dimensional boundary Hessian. Rank-six surjectivity or the specified quarter-turn lift forces the regular stratum. This preserves exact universal geometry while leaving the selected physical source, Green operator and same-source symmetry lift open.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23"
+      },
+      "source_owners": {
+        "q79_spectral_strain_hessian": "modal-triplet-theory-from-mtt-to-quantum-mechanics"
+      },
+      "source_tiers": {
+        "q79_spectral_strain_hessian": "DERIVED_EXACT_UNIVERSAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 650,
+          "anchor": "\\label{sec:consumer-strain}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-eta9",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign",
+        "eta9_three_cycle_b96_nondetection",
+        "q79_eta9_local_source_tube_consolidation",
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ],
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ],
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ],
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-global}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Flux owner supplies four different kinds of evidence, explicitly distinguished in prose. The completed original-Jacobian Gate-1 campaign is finite exact polynomial reduction, not a global path or integral marking. The independent three-cycle subsystem is rationally non-detecting; rational boundary membership is not integral membership. The certified positive-width source tube and correlated lift are local progress, not a full physical readout. The same-source B89 detector rejects that candidate from beta_C=0 without selecting a replacement or proving that its integral obstruction has exact order two. The frozen consolidation/rejection explanations were read in full; their larger referenced interval or campaign data were not independently replayed.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f",
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f",
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756",
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      },
+      "source_owners": {
+        "eta9_gate1_campaign": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "eta9_three_cycle_b96_nondetection": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "q79_eta9_local_source_tube_consolidation": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "q79_eta9_b89_same_source_rejection": "flux-compactifications-in-heterotic-string-theory-expli-08b38155"
+      },
+      "source_tiers": {
+        "eta9_gate1_campaign": "DERIVED_EXACT_PARTIAL",
+        "eta9_three_cycle_b96_nondetection": "CLOSED_COMPUTER_ASSISTED_EXACT_LINEAR_ALGEBRA",
+        "q79_eta9_local_source_tube_consolidation": "NUMERIC_CERTIFIED_LOCAL_SOURCE_CHART + SUPPORT_ONLY_CONSOLIDATION",
+        "q79_eta9_b89_same_source_rejection": "CLOSED_COMPUTER_ASSISTED_EXACT_CANDIDATE_REJECTION"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1260,
+          "anchor": "\\label{sec:consumer-global}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-finite-transfer",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-transfer}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Cohesive owner is cited for the finite response contraction, nonzero transferred m3 and m4, and conditional all-arity source-map naturality. The retained product is accompanied by its higher operations and contraction data. Transport of the whole transfer-tree hierarchy requires a product-preserving source map commuting with inclusion, projection and homotopy; matching one matrix is insufficient. The three frozen sources used here support exactly those statements. Finite exact algebra does not supply continuum domains, the selected physical interaction, a signed physical action or nonperturbative QFT.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "source_owners": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "causal_base_q79_all_arity_source_promotion_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "EXACT_FINITE_STRONG_DEFORMATION_RETRACT + EXACT_TRANSFERRED_M1_M2_M3 + EXACT_ARITY_THREE_A_INFINITY_IDENTITY + HIGHER_ARITY_AND_PHYSICAL_PROMOTION_OPEN",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "EXACT_FINITE_TRANSFERRED_M4 + EXACT_ARITY_FOUR_STASHEFF",
+        "causal_base_q79_all_arity_source_promotion_packet": "EXACT_GENERAL + SELECTED_EXACT_FINITE; CONDITIONAL_CONTINUUM"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 684,
+          "anchor": "\\label{sec:consumer-transfer}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-fitting",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.GLOBAL_FITTING_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_global_fitting_descent"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.GLOBAL_FITTING_DESCENT": [
+          "q79_global_fitting_descent"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-global}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Cohesive owner supplies global ordinary Fitting ideal sheaves for twisted cohomology: invertible twists change minor generators by units, so support descends. This does not trivialize the gerbe, supply connection overlaps or construct a spectral line. The auxiliary divisor is 3H+3D0, not the physical 9H+3D0, and generic corank three is not rank-one spectral data. The exact support theorem is used as a typed geometric interface, not promoted to physical source selection.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_global_fitting_descent": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30"
+      },
+      "source_owners": {
+        "q79_global_fitting_descent": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "q79_global_fitting_descent": "DERIVED_EXACT_STRUCTURAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1260,
+          "anchor": "\\label{sec:consumer-global}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-bk3",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.BK3_RANK_ZERO_KERNEL"
+      ],
+      "curated_result_ids": [
+        "q79_bk3_rank_zero_kernel"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.BK3_RANK_ZERO_KERNEL": [
+          "q79_bk3_rank_zero_kernel"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-global}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Cohesive BK3 result is used with its precise lattice distinction: the large-gauge kernel is zero while the rank-two image is dense and the indicated parameter torus remains T^20. Rank-zero kernel therefore does not mean zero residual parameters or a selected physical modulus. This exact arithmetic/topological conclusion is kept separate from the visible spectral line and global integral marking problem.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_bk3_rank_zero_kernel": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b"
+      },
+      "source_owners": {
+        "q79_bk3_rank_zero_kernel": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "q79_bk3_rank_zero_kernel": "DERIVED_EXACT"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 1260,
+          "anchor": "\\label{sec:consumer-global}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-hull-consumer-endpoint-factorization",
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:consumer-transfer}"
+      ],
+      "assessment": "Hull uses this as a conditional geometric-to-operator bridge. The Cohesive seven-row endpoint audit factors the remaining source burden into GAS, SYN and BV4 packets on one common source. The prose explains which same-source physical action, symmetry and interaction data must be compatible; it does not treat the inventory as a construction or as closure of the continuum endpoint. Pure repair cost and a signed physical action remain different objects.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "source_owners": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "EXACT_GENERAL + EXACT_DEPENDENCY_WITNESSES; PHYSICAL_Q79_OPEN"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "line": 684,
+          "anchor": "\\label{sec:consumer-transfer}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-compiler",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_projective_hym_naturality",
+        "q79_cech_projector_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.PROJECTIVE_NATURALITY": [
+          "q79_projective_hym_naturality"
+        ],
+        "R.GEO.CECH_COMPILER": [
+          "q79_cech_projector_compiler"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:projector-compiler}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The current QM paper is the canonical manuscript owner, despite stale Kernel title-based owner hints. Given unitary transitions and a supplied Hermitian connection, the Cech construction gives p=UU* and Dp=p d+U(A-U*dU)U*, preserving that supplied connection rather than replacing it with the Grassmann connection. Matrix size does not make the section space finite; the modal flag is external. Naturality transports the intrinsic retained window, and Hodge/Green restriction needs a reducing subspace with compatible domains. The exact Feshbach correction distinguishes a coupled complement from bare compression. These exact conditional constructions make the interface executable when inputs exist; they do not select the physical endpoint.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7"
+      },
+      "source_owners": {
+        "q79_projective_hym_naturality": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "q79_cech_projector_compiler": "modal-triplet-theory-from-mtt-to-quantum-mechanics"
+      },
+      "source_tiers": {
+        "q79_projective_hym_naturality": "DERIVED_EXACT_UNIVERSAL",
+        "q79_cech_projector_compiler": "DERIVED_EXACT_UNIVERSAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 767,
+          "anchor": "\\label{sec:projector-compiler}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-strain",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "curated_result_ids": [
+        "q79_spectral_strain_hessian"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+          "q79_spectral_strain_hessian"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:nonlinear-strain}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The QM owner supplies the nonlinear replacement for the excluded linear root-stack strain route. Three diagonal coordinates plus three squared edge amplitudes are not the full seven-dimensional relative-phase quotient. The shorted Hessian is obtained by projecting covariance before inversion, not by compressing the old Hessian. The later support-stratified source is also cited and fully read: zero edges use second jets, tangential shorting and a degree-one normal cost r/2, not an ordinary full six-dimensional boundary Hessian. Rank-six surjectivity or the specified quarter-turn lift forces the regular stratum. This preserves exact universal geometry while leaving the selected physical source, Green operator and same-source symmetry lift open.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23"
+      },
+      "source_owners": {
+        "q79_spectral_strain_hessian": "modal-triplet-theory-from-mtt-to-quantum-mechanics"
+      },
+      "source_tiers": {
+        "q79_spectral_strain_hessian": "DERIVED_EXACT_UNIVERSAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 569,
+          "anchor": "\\label{sec:nonlinear-strain}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-eta9",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION"
+      ],
+      "curated_result_ids": [
+        "eta9_gate1_campaign",
+        "eta9_three_cycle_b96_nondetection",
+        "q79_eta9_local_source_tube_consolidation",
+        "q79_eta9_b89_same_source_rejection"
+      ],
+      "kernel_result_sources": {
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+          "eta9_gate1_campaign"
+        ],
+        "R.ETA9.THREE_CYCLE_NONDETECTION": [
+          "eta9_three_cycle_b96_nondetection"
+        ],
+        "R.ETA9.LOCAL_SOURCE_TUBE": [
+          "q79_eta9_local_source_tube_consolidation"
+        ],
+        "R.ETA9.B89_REJECTION": [
+          "q79_eta9_b89_same_source_rejection"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:geometric-consumers}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The Flux owner supplies four different kinds of evidence, explicitly distinguished in prose. The completed original-Jacobian Gate-1 campaign is finite exact polynomial reduction, not a global path or integral marking. The independent three-cycle subsystem is rationally non-detecting; rational boundary membership is not integral membership. The certified positive-width source tube and correlated lift are local progress, not a full physical readout. The same-source B89 detector rejects that candidate from beta_C=0 without selecting a replacement or proving that its integral obstruction has exact order two. The frozen consolidation/rejection explanations were read in full; their larger referenced interval or campaign data were not independently replayed.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "eta9_gate1_campaign": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f",
+        "eta9_three_cycle_b96_nondetection": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f",
+        "q79_eta9_local_source_tube_consolidation": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756",
+        "q79_eta9_b89_same_source_rejection": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda"
+      },
+      "source_owners": {
+        "eta9_gate1_campaign": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "eta9_three_cycle_b96_nondetection": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "q79_eta9_local_source_tube_consolidation": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
+        "q79_eta9_b89_same_source_rejection": "flux-compactifications-in-heterotic-string-theory-expli-08b38155"
+      },
+      "source_tiers": {
+        "eta9_gate1_campaign": "DERIVED_EXACT_PARTIAL",
+        "eta9_three_cycle_b96_nondetection": "CLOSED_COMPUTER_ASSISTED_EXACT_LINEAR_ALGEBRA",
+        "q79_eta9_local_source_tube_consolidation": "NUMERIC_CERTIFIED_LOCAL_SOURCE_CHART + SUPPORT_ONLY_CONSOLIDATION",
+        "q79_eta9_b89_same_source_rejection": "CLOSED_COMPUTER_ASSISTED_EXACT_CANDIDATE_REJECTION"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 795,
+          "anchor": "\\label{sec:geometric-consumers}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-finite-transfer",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:cohesive-consumers}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The Cohesive owner is cited for the finite response contraction, nonzero transferred m3 and m4, and conditional all-arity source-map naturality. The retained product is accompanied by its higher operations and contraction data. Transport of the whole transfer-tree hierarchy requires a product-preserving source map commuting with inclusion, projection and homotopy; matching one matrix is insufficient. The three frozen sources used here support exactly those statements. Finite exact algebra does not supply continuum domains, the selected physical interaction, a signed physical action or nonperturbative QFT.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "source_owners": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+        "causal_base_q79_all_arity_source_promotion_packet": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "EXACT_FINITE_STRONG_DEFORMATION_RETRACT + EXACT_TRANSFERRED_M1_M2_M3 + EXACT_ARITY_THREE_A_INFINITY_IDENTITY + HIGHER_ARITY_AND_PHYSICAL_PROMOTION_OPEN",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "EXACT_FINITE_TRANSFERRED_M4 + EXACT_ARITY_FOUR_STASHEFF",
+        "causal_base_q79_all_arity_source_promotion_packet": "EXACT_GENERAL + SELECTED_EXACT_FINITE; CONDITIONAL_CONTINUUM"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 826,
+          "anchor": "\\label{sec:cohesive-consumers}"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-12-program-c-consumer-fitting",
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "state": "integrated",
+      "result_ids": [
+        "R.GEO.GLOBAL_FITTING_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_global_fitting_descent"
+      ],
+      "kernel_result_sources": {
+        "R.GEO.GLOBAL_FITTING_DESCENT": [
+          "q79_global_fitting_descent"
+        ]
+      },
+      "anchors": [
+        "\\label{sec:geometric-consumers}"
+      ],
+      "assessment": "Program C uses this as a typed realization example, not a new theorem owner. The Cohesive owner supplies global ordinary Fitting ideal sheaves for twisted cohomology: invertible twists change minor generators by units, so support descends. This does not trivialize the gerbe, supply connection overlaps or construct a spectral line. The auxiliary divisor is 3H+3D0, not the physical 9H+3D0, and generic corank three is not rank-one spectral data. The exact support theorem is used as a typed geometric interface, not promoted to physical source selection.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "q79_global_fitting_descent": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30"
+      },
+      "source_owners": {
+        "q79_global_fitting_descent": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      },
+      "source_tiers": {
+        "q79_global_fitting_descent": "DERIVED_EXACT_STRUCTURAL"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "line": 795,
+          "anchor": "\\label{sec:geometric-consumers}"
+        }
+      ]
+    }
+  ],
+  "result_source_map": {
+    "R.GEO.PROJECTIVE_NATURALITY": [
+      "q79_projective_hym_naturality"
+    ],
+    "R.GEO.CECH_COMPILER": [
+      "q79_cech_projector_compiler"
+    ],
+    "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN": [
+      "q79_spectral_strain_hessian"
+    ],
+    "R.GEO.GLOBAL_FITTING_DESCENT": [
+      "q79_global_fitting_descent"
+    ],
+    "R.GEO.BK3_RANK_ZERO_KERNEL": [
+      "q79_bk3_rank_zero_kernel"
+    ],
+    "R.ETA9.ORIGINAL_JACOBIAN_GATE1": [
+      "eta9_gate1_campaign"
+    ],
+    "R.ETA9.THREE_CYCLE_NONDETECTION": [
+      "eta9_three_cycle_b96_nondetection"
+    ],
+    "R.ETA9.LOCAL_SOURCE_TUBE": [
+      "q79_eta9_local_source_tube_consolidation"
+    ],
+    "R.ETA9.B89_REJECTION": [
+      "q79_eta9_b89_same_source_rejection"
+    ],
+    "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+      "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+      "causal_base_q79_symmetric_response_transferred_m4_packet",
+      "causal_base_q79_all_arity_source_promotion_packet"
+    ],
+    "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+      "causal_base_q79_seven_row_endpoint_factorization_packet"
+    ]
+  },
+  "result_source_map_scope": "Proposed exact R-to-curated mapping for the sources actually imported here, taken from Kernel placements plus source metadata. Parent owns central map integration and source-bound validation; supporting later refinements are listed separately rather than silently broadening a Kernel R mapping.",
+  "consumer_candidate_dispositions": [
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "suggested_result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION",
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.GEO.COHESIVE_SUPERCONNECTION",
+        "R.CBF.FINITE_TRANSFER_HIERARCHY",
+        "R.GEO.GLOBAL_FITTING_DESCENT",
+        "R.GEO.BK3_RANK_ZERO_KERNEL",
+        "R.ACTION.COHESIVE_MC_REPAIR",
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER",
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "integrated_result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER",
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN",
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION",
+        "R.CBF.FINITE_TRANSFER_HIERARCHY",
+        "R.GEO.GLOBAL_FITTING_DESCENT",
+        "R.GEO.BK3_RANK_ZERO_KERNEL",
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "prior_completion_result_ids": [
+        "R.GEO.COHESIVE_SUPERCONNECTION",
+        "R.ACTION.COHESIVE_MC_REPAIR"
+      ],
+      "not_applicable_result_ids": [],
+      "pending_result_ids": [],
+      "assessment": "Each candidate was evaluated in the full manuscript and actual source-owner context. Every nonhistorical scoped candidate has a substantive, cited import; none was added solely to satisfy a title regex."
+    },
+    {
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "suggested_result_ids": [
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION",
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.GEO.COHESIVE_SUPERCONNECTION",
+        "R.CBF.FINITE_TRANSFER_HIERARCHY",
+        "R.GEO.GLOBAL_FITTING_DESCENT",
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER",
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN"
+      ],
+      "integrated_result_ids": [
+        "R.GEO.PROJECTIVE_NATURALITY",
+        "R.GEO.CECH_COMPILER",
+        "R.GEO.SPECTRAL_STRAIN_SHORTED_HESSIAN",
+        "R.ETA9.ORIGINAL_JACOBIAN_GATE1",
+        "R.ETA9.THREE_CYCLE_NONDETECTION",
+        "R.ETA9.LOCAL_SOURCE_TUBE",
+        "R.ETA9.B89_REJECTION",
+        "R.CBF.FINITE_TRANSFER_HIERARCHY",
+        "R.GEO.GLOBAL_FITTING_DESCENT"
+      ],
+      "prior_completion_result_ids": [
+        "R.GEO.COHESIVE_SUPERCONNECTION"
+      ],
+      "not_applicable_result_ids": [],
+      "pending_result_ids": [],
+      "assessment": "Each candidate was evaluated in the full manuscript and actual source-owner context. Every nonhistorical scoped candidate has a substantive, cited import; none was added solely to satisfy a title regex."
+    }
+  ],
+  "prior_completion_dispositions": [
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "result_id": "R.GEO.COHESIVE_SUPERCONNECTION",
+      "curated_result_ids": [
+        "q79_cohesive_superconnection"
+      ],
+      "disposition": "prior_completion_retained_no_duplicate_consumer_review",
+      "anchors": [
+        "\\label{sec:consumer-transfer}"
+      ],
+      "assessment": "Per parent correction, the title candidate is already completed historically. The additive current paragraph still explains twist cancellation and global Hodge versus fiberwise rank-jump behavior.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_cohesive_superconnection": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8"
+      }
+    },
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "result_id": "R.ACTION.COHESIVE_MC_REPAIR",
+      "curated_result_ids": [
+        "q79_maurer_cartan_repair"
+      ],
+      "disposition": "prior_completion_retained_no_duplicate_consumer_review",
+      "anchors": [
+        "\\label{sec:consumer-transfer}",
+        "\\label{sec:full-repair}"
+      ],
+      "assessment": "Per parent correction, no duplicate completion is emitted. Current prose preserves pure repair versus signed physical action. The separate isometric-embedding hypothesis issue is reported in corrections rather than silently repaired only here.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "result_hashes": {
+        "q79_maurer_cartan_repair": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6"
+      }
+    },
+    {
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "result_id": "R.GEO.COHESIVE_SUPERCONNECTION",
+      "curated_result_ids": [
+        "q79_cohesive_superconnection"
+      ],
+      "disposition": "prior_completion_retained_no_duplicate_consumer_review",
+      "anchors": [
+        "\\label{sec:cohesive-consumers}"
+      ],
+      "assessment": "Per parent correction, no duplicate completion is emitted. The current typed example retains the supplied twisted complex, ordinary endomorphism DGA and global/fiberwise Hodge distinction.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "result_hashes": {
+        "q79_cohesive_superconnection": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8"
+      }
+    }
+  ],
+  "contextual_refinements": [
+    {
+      "result_id": "q79_support_stratified_strain",
+      "sha256": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8",
+      "owner": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "paper_ids": [
+        "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+        "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c"
+      ],
+      "anchors": {
+        "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83": [
+          "\\label{sec:consumer-strain}"
+        ],
+        "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c": [
+          "\\label{sec:nonlinear-strain}"
+        ]
+      },
+      "assessment": "Fully read and cited later refinement of the strain consumer source: support strata, second jets, normal cost and regular-stratum implications. Kept explicit rather than broadening the primary Kernel R mapping by inference."
+    }
+  ],
+  "text_reviews": [
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reconciliation_id": "C.GEO.01",
+      "state": "integrated",
+      "text_disposition": "existing_scope_retained_with_contextual_consumer_imports",
+      "anchors": [
+        "\\label{sec:current-gates}",
+        "\\text{local Circle--Lens--Nil filtration}",
+        "\\label{sec:consumer-global}",
+        "\\label{sec:consumer-compiler}"
+      ],
+      "assessment": "The literal local CLN filtration is explicitly not identified with Lens x Nil or X79. This boundary was already present in substance; the automated empty evidence group was a pattern miss. New Fitting/BK3/transport and supplied-connection prose explains the owner interfaces without changing that scope.",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635"
+    },
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "reconciliation_id": "C.FP.01",
+      "state": "integrated",
+      "text_disposition": "existing_physical_boundary_retained_and_analytic_hypotheses_clarified",
+      "anchors": [
+        "\\label{eq:generator-intertwine}",
+        "\\label{sec:consumer-transfer}",
+        "\\label{sec:consumer-strain}",
+        "\\label{sec:frontier}"
+      ],
+      "assessment": "The original conditional bridge did not establish a selected physical operator. Current prose makes the connection/domain-preserving same-source obligation explicit and corrects interval, norm-comparison and invariant-basin qualifications. FP I--VI and the Cohesive theorem owner are untouched.",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635"
+    },
+    {
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reconciliation_id": "C.GEO.01",
+      "state": "integrated",
+      "text_disposition": "existing_text_boundary_retained_with_contextual_consumer_imports",
+      "anchors": [
+        "\\subsection{Literal Circle--Lens--Nil products}",
+        "\\label{sec:projector-compiler}",
+        "\\label{sec:geometric-consumers}"
+      ],
+      "assessment": "The existing seven-versus-six dimensional distinction and filtration/operator-profile interpretation remain valid. Current owner-bound compiler, Fitting and selected-transport examples fill the actual consumer integration gap.",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825"
+    },
+    {
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reconciliation_id": "C.STRAIN.01",
+      "state": "integrated",
+      "text_disposition": "text_updated",
+      "anchors": [
+        "\\label{sec:nonlinear-strain}",
+        "\\label{thm:spatial}"
+      ],
+      "assessment": "The excluded linear root-stack route is explicitly replaced by nonlinear strain, projected covariance, shorting and the later support-stratified boundary. This is a concise QM-owner import, not a duplicated theorem.",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825"
+    },
+    {
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "reconciliation_id": "C.DIM.01",
+      "state": "integrated",
+      "text_disposition": "already_satisfied_scope_retained",
+      "anchors": [
+        "\\label{prop:dimension}",
+        "\\label{thm:spatial}",
+        "\\label{def:intertwiner}"
+      ],
+      "assessment": "Hom(TP,TI) comparison data and its component split are not multiplied manifold dimensions. The existing literal product warning is retained. The orientation-tangent clarification narrows interpretation without changing the algebraic split.",
+      "reviewed_at": "2026-09-12T21:48:36Z",
+      "reviewer": "Codex contextual editorial subagent: Hull and Program C",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825"
+    }
+  ],
+  "prior_review_rebinding_audit": [
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "prior_catalog_review_ids": [],
+      "existing_review_anchor_rebinding": "No pre-existing integrated/historical review entry for this paper was present in catalog/research-integration-reviews.json at the final scoped audit; therefore no old formal review anchor was silently rebound. Parent should bind this fragment to the new LF hash.",
+      "existing_consumer_catalog_present": false,
+      "retained_result_refs": [
+        "hym_wiener_contraction",
+        "literal_cech_witness",
+        "q79_exact_audit",
+        "q79_exact_theorem"
+      ],
+      "retained_prose_anchors": [
+        "\\label{sec:retained-q79}",
+        "\\label{sec:reproducibility}",
+        "\\label{thm:descent}",
+        "\\label{prop:defect}",
+        "\\label{prop:contraction}"
+      ],
+      "scope_assessment": "The existing finite q79/A11, literal rank-two Cech and certified rank-two Wiener paragraphs remain valid and cited, with rank/carrier restrictions made explicit. Conditional descent is retained; its interval, residual-norm and invariant-basin hypotheses are corrected, not merely hash-rebound. Those local theorem qualifications must accompany any external review referring to the old proof wording.",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "old_proof_hash_not_reused": true
+    },
+    {
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "prior_catalog_review_ids": [],
+      "existing_review_anchor_rebinding": "No pre-existing integrated/historical review entry for this paper was present in catalog/research-integration-reviews.json at the final scoped audit; therefore no old formal review anchor was silently rebound. Parent should bind this fragment to the new LF hash.",
+      "existing_consumer_catalog_present": false,
+      "retained_result_refs": [
+        "q79_exact_theorem"
+      ],
+      "retained_prose_anchors": [
+        "\\label{prop:dimension}",
+        "\\label{thm:joint}",
+        "\\label{thm:compact}",
+        "\\label{thm:spatial}",
+        "\\label{def:intertwiner}",
+        "A11/q79_exact_theorem"
+      ],
+      "scope_assessment": "Existing exact finite q79/A11 and typed dimension, joint-projector, compact-resolvent and local matrix-split statements remain with their hypotheses. The matrix split gains the orientation-tangent qualification. Old revision notes remain dated history; their old Born/HYM open labels are superseded by the v5 current text.",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "old_proof_hash_not_reused": true
+    }
+  ],
+  "corrections": [
+    {
+      "id": "hull-dc-degree",
+      "kind": "manuscript_mathematical_correction",
+      "requires_shared_erratum": false,
+      "anchors": [
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{sec:hs}",
+          "line": 206
+        }
+      ],
+      "assessment": "The old manuscript assigned a degree-two expression to the degree-one operator d^c. Corrected to d^c=(i/2)(bar-partial-partial), dd^c=i partial bar-partial and H=d^c omega. No frozen theorem is downgraded."
+    },
+    {
+      "id": "hull-fixed-point-analytic-qualifications",
+      "kind": "manuscript_mathematical_correction",
+      "requires_shared_erratum": false,
+      "anchors": [
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{def:intertwiner}",
+          "line": 463
+        },
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{thm:descent}",
+          "line": 488
+        },
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{prop:defect}",
+          "line": 525
+        },
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{prop:contraction}",
+          "line": 741
+        }
+      ],
+      "assessment": "Intertwining times contain an interval from zero; an isolated sampled fixed point can be periodic. Approximate intertwining bounds the lower generator; a bound for every residual row additionally needs a controlled residual-to-generator map. A sampled contraction implies a stationary point only in a basin invariant for the whole semiflow. Discrete admission/topological obstructions are not treated as ordinary Sobolev coordinates."
+    },
+    {
+      "id": "g3gm-inherited-prime-correction",
+      "kind": "existing_frozen_source_erratum",
+      "requires_shared_erratum": true,
+      "parent_action": "Retain the existing G3GM erratum in shared consumers; do not edit frozen bytes or downgrade unaffected components.",
+      "result_ids": [
+        "unified_source_g3gm_arithmetic_correction",
+        "unified_source_frontier"
+      ],
+      "result_hashes": {
+        "unified_source_g3gm_arithmetic_correction": "3e0b3c8a9a3276cd5718a9cdacea338be8f91af9c0d9919e410474243d89a42a",
+        "unified_source_frontier": "9304a26b6fc045166e50a459843e417dd713684767209eeaf801ab53644247b8"
+      },
+      "anchors": [
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{sec:source-frontier}",
+          "line": 1194
+        }
+      ],
+      "assessment": "Calls labelled 79903, 81359 and 82963 inherited modulus 33863. Retract the supposed fresh-prime rank/nullity 4752/1270 and associated component-23/24 changes. Corrected finite charts give 4748/1274; the valid characteristic-zero bound remains 4748<=rank<=5102. Preserve the unaffected component-20 fixed-minor source and explicitly distinguish finite rank from characteristic-zero rank."
+    },
+    {
+      "id": "g3aa-ordinary-equivariant-theta-correction",
+      "kind": "existing_frozen_source_erratum",
+      "requires_shared_erratum": true,
+      "parent_action": "Carry the corrected ordinary/equivariant typing into consumers, including legacy G3X string-class shorthand; retain the full Bott--Chern injectivity theorem.",
+      "result_ids": [
+        "unified_source_shared_line_theta_typing",
+        "unified_source_bott_chern_injectivity"
+      ],
+      "result_hashes": {
+        "unified_source_shared_line_theta_typing": "8be85c69e0eea231a5f341bcc747b58429c824fa88eec791ba61072c32601017",
+        "unified_source_bott_chern_injectivity": "5c8f76f252bca66c208d6dec0f3446b75b3eb316d2fd163e16a4ef02bc816ace"
+      },
+      "anchors": [
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{sec:shared-line}",
+          "line": 1163
+        },
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{sec:symmetry-bc}",
+          "line": 1090
+        }
+      ],
+      "assessment": "Ordinary H^3(X,Z)=Z^42 is torsion-free, so a nonzero ordinary order-three string class on X cannot supply the proposed obstruction. The theta class is equivariant, in H^3(BE[3],Z) and the quotient stack. It is distinct from the ordinary degree-four anomaly cocycle and its degree-three differential-trivialization torsor. A flat determinant identity neither untwists the projective fundamental nor identifies its nonflat HYM connection."
+    },
+    {
+      "id": "isometric-chain-embedding-adjoint-gap",
+      "kind": "source_statement_requires_hypothesis_qualification",
+      "requires_shared_erratum": true,
+      "parent_action": "Qualify isometry-only source/consumer wording by unitary surjectivity or a reducing range and compatible analytic domains. Preserve exact unitary finite witnesses and the correct pulled-back cost.",
+      "result_ids": [
+        "q79_maurer_cartan_repair",
+        "unified_source_physical_residual_transfer"
+      ],
+      "result_hashes": {
+        "q79_maurer_cartan_repair": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
+        "unified_source_physical_residual_transfer": "6ae7d98b9a436f8ad5252bf61ea920310fed5b6c979f4e5a119cded5318769be"
+      },
+      "source_anchor": {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_maurer_cartan_repair/artifact.json",
+        "line": 268,
+        "field": "isometric_intertwiner_sufficient_condition"
+      },
+      "anchors": [
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{sec:full-repair}",
+          "line": 563
+        },
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{sec:consumer-compiler}",
+          "line": 620
+        },
+        {
+          "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "anchor": "\\label{sec:projector-compiler}",
+          "line": 767
+        }
+      ],
+      "assessment": "The frozen q79_maurer_cartan_repair field lists isometric chain/product rows and concludes adjoint, Hodge and heat intertwining without explicitly requiring surjectivity or reduction. Those rows alone are insufficient for an embedding. For T(x)=(x,0), Kc=[1] and Kf=[1,1/2], Kf T=Kc and T* Kf* Kf T=Kc* Kc, but Kf* Kf T=(1,1/2)^t differs from T Kc* Kc=(1,0)^t. This bounded check exhibits the missing hypothesis, not a refutation of the source's unitary finite witness or of later reducing-range formulations."
+    },
+    {
+      "id": "program-c-current-authority-and-mask",
+      "kind": "manuscript_coherence_correction",
+      "requires_shared_erratum": false,
+      "anchors": [
+        {
+          "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "anchor": "\\label{sec:hidden-boundary}",
+          "line": 752
+        },
+        {
+          "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "anchor": "\\label{sec:canonical-measurement}",
+          "line": 491
+        },
+        {
+          "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "anchor": "\\label{tab:ledger}",
+          "line": 1052
+        }
+      ],
+      "assessment": "The current text no longer describes hidden P(3,9)/existential HYM or canonical operational Born closure as missing. Five physical source sectors have 25 ordered blocks, not 19. The selected common visible-hidden endpoint and broader apparatus extensions remain separate open obligations. Archived revision notes are retained as dated history, not current authority."
+    },
+    {
+      "id": "program-c-orientation-tangent-qualification",
+      "kind": "manuscript_mathematical_qualification",
+      "requires_shared_erratum": false,
+      "anchors": [
+        {
+          "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "anchor": "\\label{thm:spatial}",
+          "line": 520
+        },
+        {
+          "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+          "path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+          "anchor": "\\label{def:intertwiner}",
+          "line": 666
+        }
+      ],
+      "assessment": "The orthogonal-frame matrix decomposition is algebraically exact for every matrix. Interpreting its symmetric part as an orientation quotient requires the identity-background tangent identification or the appropriate polar identification at a general nonsingular background; it is not automatically a global nonlinear quotient."
+    },
+    {
+      "id": "fgv-bibliography-doi",
+      "kind": "bibliographic_correction",
+      "requires_shared_erratum": false,
+      "anchors": [
+        {
+          "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+          "path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+          "anchor": "\\label{sec:evidence}",
+          "line": 866
+        }
+      ],
+      "assessment": "Corrected the Fino--Grantcharov--Vezzoni reference to the official publisher DOI 10.1007/s00220-021-04223-7.",
+      "source_url": "https://doi.org/10.1007/s00220-021-04223-7"
+    }
+  ],
+  "source_theorem_issues": [
+    "g3gm-inherited-prime-correction",
+    "g3aa-ordinary-equivariant-theta-correction",
+    "isometric-chain-embedding-adjoint-gap"
+  ],
+  "parent_policy_notes": [
+    "Kernel recommended-owner hints for projective naturality, the Cech compiler and spectral strain lag the actual ownership catalog/current QM manuscript. This fragment cites the QM owner; it does not move ownership.",
+    "Hull C.GEO.01's empty evidence groups missed the existing local CLN filtration/not-X79 distinction; C.FP.01 likewise missed the explicit selected-intertwiner boundary. Treat text matching as evidence discovery, not a theorem-status decision.",
+    "Program C C.DIM.01 and the literal CLN paragraph were already scoped; those anchors are retained, not counted as newly proved mathematics.",
+    "Historical v2/v4 revision notes preserve old open labels as chronology. Current v3/v5 revision notes and current theorem/ledger prose control present status.",
+    "The three resurfaced historical consumer suggestions are separately accounted for without duplicate consumer completion reviews, per parent correction. No R.QM.CANONICAL_OUTPUT_DESCENT or R.QG.BRANCH_AND_COFRAME suggestion was assigned here.",
+    "Central catalogs, Kernel synchronization, global artifact hashes and validation are parent-owned; no attempt was made to resolve concurrent global staleness."
+  ],
+  "paper_changes": [
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+      "previous_version": "v2",
+      "current_version": "v3",
+      "version_increments": 1,
+      "date": "Version 3, September 2026",
+      "source_tree_sha256": "a8f9faafd1e0733cb5c9309e6fa0b843b4ee9283b21d5d91c170aede6b02d6ff",
+      "main_tex_raw_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "main_tex_lf_sha256": "ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635",
+      "pdf_sha256": "bc786d8a60f4f2650bfe6164ed9e13b2b67c75ec83e6ac7fd6890f98214cc2a2",
+      "paper_md_sha256": "24d825a115b9e4024fdd74a6193e8b28a329f2508e7d00e47c7aa83bf495ebce",
+      "pdf_pages": 26,
+      "result_ref_count": 57,
+      "release_state": "current_revised_tex",
+      "version_relation": "current_source_newer_than_release",
+      "released_identity_preserved": true,
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.17071766",
+        "created": "2026-07-30T16:25:07.586713+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21707236",
+        "files": [
+          {
+            "checksum": "md5:8f83ff8c4a31581ea557228a5f56528e",
+            "content_url": "https://zenodo.org/api/records/21707236/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 398463
+          }
+        ],
+        "id": "21707236",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21707236",
+        "resource_type": "publication",
+        "title": "Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary",
+        "updated": "2026-07-30T16:25:07.966761+00:00",
+        "version": "v2"
+      },
+      "manual_changes": [
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.tex",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.bib",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/REVISION_AUDIT.md",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/metadata.json",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/paper-markdown.lua",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/RESEARCH_INTEGRATION.md",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/tmp/editorial_qa.py",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/tmp/verify_editorial_fragment.py"
+      ],
+      "generated_outputs": [
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.pdf",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/paper.md"
+      ],
+      "generated_scratch": [
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/tmp/build-contextual-evidence/",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/tmp/pdfs/",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.aux",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.bbl",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.blg",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.log",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.out",
+        "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/main.toc"
+      ],
+      "build": {
+        "command": "scripts/build_contextual_evidence_papers.py --paper-id modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83 --jobs 1",
+        "invocation": "Imported the prescribed helper and called main with the displayed arguments; only LOG_ROOT redirected to the owned paper/tmp/build-contextual-evidence directory.",
+        "status": "pass",
+        "warning_count": 0,
+        "failed_count": 0,
+        "global_outputs_written": false,
+        "summary_path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/tmp/build-contextual-evidence/summary.json",
+        "markdown_method": "Generated separately after PDF compilation with scripts/migrate.py build_markdown and the local paper-markdown.lua filter; not manually substituted for TeX.",
+        "metadata_method": "Manually patched from mechanically derived current source hashes, parsed version/abstract and generated Markdown; released identity/history unchanged."
+      },
+      "visual_qa": {
+        "status": "pass",
+        "all_pages_rendered": true,
+        "all_pages_visually_inspected": true,
+        "render_dpi": 96,
+        "pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "zoom_dpi": 144,
+        "zoom_pages_inspected": [
+          1,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "method": "Actual view_image inspection of every two-page full-resolution sheet, then individual 144-dpi renders of new/revised pages. Automated nonblank and MediaBox span checks are additional checks, not substitutes for visual inspection.",
+        "observations": "No clipped equations, overlapping text, blank pages or broken tables observed. Final build logs have no warning rows. Title metadata correct; inherited unrelated Program C PDF title overridden locally.",
+        "qa_path": "papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/tmp/pdfs/qa.json",
+        "pdf_skill_read": true,
+        "authoring_marker": "Ran once before editing for this expected PDF output."
+      },
+      "retained_style": "Existing common TeX layout retained."
+    },
+    {
+      "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+      "previous_version": "v4",
+      "current_version": "v5",
+      "version_increments": 1,
+      "date": "September 2026 Version 5",
+      "source_tree_sha256": "b4f1dc80fa9190b6b879cf4d1ffca227b55fd15b32241a6fc88977d246e9b5ea",
+      "main_tex_raw_sha256": "5885d707c939d1e0a8040c14f311e5ccd92cb008f5b3c03482dfd5c2accda246",
+      "main_tex_lf_sha256": "9ab09ee0aa56565503a4e0a60c4b195f90082a2e6a59904c3fc8415465b73825",
+      "pdf_sha256": "b9a8100cbb92a06df86d3e41b46cdbe596547df3d33fc6587c953e562963e214",
+      "paper_md_sha256": "12749b3e11774aadacdcb0be524f8e92c4e7730a2d3042e41145feccd38e79d9",
+      "pdf_pages": 18,
+      "result_ref_count": 15,
+      "release_state": "current_revised_tex",
+      "version_relation": "current_source_newer_than_release",
+      "released_identity_preserved": true,
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18355142",
+        "created": "2026-07-31T09:23:12.265009+00:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21718498",
+        "files": [
+          {
+            "checksum": "md5:6c7e65715b3e424a0457db42f8cd1a79",
+            "content_url": "https://zenodo.org/api/records/21718498/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 447707
+          }
+        ],
+        "id": "21718498",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1,
+        "publication_date": "2026-07-31",
+        "record_url": "https://zenodo.org/records/21718498",
+        "resource_type": "publication",
+        "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations",
+        "updated": "2026-07-31T09:23:12.575499+00:00",
+        "version": "v4"
+      },
+      "manual_changes": [
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.tex",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/REVISION_AUDIT.md",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/metadata.json",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/paper-markdown.lua",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/RESEARCH_INTEGRATION.md"
+      ],
+      "generated_outputs": [
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.pdf",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/paper.md"
+      ],
+      "generated_scratch": [
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/tmp/build-contextual-evidence/",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/tmp/pdfs/",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.aux",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.log",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.out",
+        "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/main.toc"
+      ],
+      "build": {
+        "command": "scripts/build_contextual_evidence_papers.py --paper-id the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c --jobs 1",
+        "invocation": "Imported the prescribed helper and called main with the displayed arguments; only LOG_ROOT redirected to the owned paper/tmp/build-contextual-evidence directory.",
+        "status": "pass",
+        "warning_count": 0,
+        "failed_count": 0,
+        "global_outputs_written": false,
+        "summary_path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/tmp/build-contextual-evidence/summary.json",
+        "markdown_method": "Generated separately after PDF compilation with scripts/migrate.py build_markdown and the local paper-markdown.lua filter; not manually substituted for TeX.",
+        "metadata_method": "Manually patched from mechanically derived current source hashes, parsed version/abstract and generated Markdown; released identity/history unchanged."
+      },
+      "visual_qa": {
+        "status": "pass",
+        "all_pages_rendered": true,
+        "all_pages_visually_inspected": true,
+        "render_dpi": 96,
+        "pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "zoom_dpi": 144,
+        "zoom_pages_inspected": [
+          1,
+          2,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18
+        ],
+        "method": "Actual view_image inspection of every two-page full-resolution sheet, then individual 144-dpi renders of new/revised pages. Automated nonblank and MediaBox span checks are additional checks, not substitutes for visual inspection.",
+        "observations": "No clipped equations, overlapping text, blank pages or broken tables observed. Final build logs have no warning rows. Title metadata correct; inherited unrelated Program C PDF title overridden locally.",
+        "qa_path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/tmp/pdfs/qa.json",
+        "pdf_skill_read": true,
+        "authoring_marker": "Ran once before editing for this expected PDF output."
+      },
+      "retained_style": "series.sty retained byte-for-byte; local PDF-title override only."
+    }
+  ],
+  "source_read_coverage": [
+    {
+      "result_id": "qa_su3_support_program",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/qa_su3_support_program/artifact.md",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/qa_su3_support_program/artifact.md",
+      "sha256": "9ba17705129fd08e636276b6877215e8cd383f9f5ff88de0af706d0e51033b5e",
+      "bytes": 148911,
+      "total_lines": 374,
+      "read_line_ranges": [
+        [
+          1,
+          374
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": "Complete evolving chronology read to its final section, not classified from an early header."
+    },
+    {
+      "result_id": "q79_projective_hym_naturality",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_projective_hym_naturality/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_hym_naturality/artifact.json",
+      "sha256": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+      "bytes": 35279,
+      "total_lines": 1043,
+      "read_line_ranges": [
+        [
+          1,
+          1043
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_cech_projector_compiler",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_cech_projector_compiler/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cech_projector_compiler/artifact.json",
+      "sha256": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+      "bytes": 28189,
+      "total_lines": 650,
+      "read_line_ranges": [
+        [
+          1,
+          650
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_spectral_strain_hessian",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_spectral_strain_hessian/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_spectral_strain_hessian/artifact.json",
+      "sha256": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+      "bytes": 44633,
+      "total_lines": 1469,
+      "read_line_ranges": [
+        [
+          1,
+          1469
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_support_stratified_strain",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_support_stratified_strain/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_support_stratified_strain/artifact.json",
+      "sha256": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8",
+      "bytes": 47734,
+      "total_lines": 1014,
+      "read_line_ranges": [
+        [
+          1,
+          1014
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_hidden_spectral_cutset",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_hidden_spectral_cutset/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_hidden_spectral_cutset/artifact.json",
+      "sha256": "0a5698e250267f54b7b796e42684ca3332d61237442317621381266b65ff5323",
+      "bytes": 6016,
+      "total_lines": 99,
+      "read_line_ranges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_cohesive_superconnection",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_cohesive_superconnection/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cohesive_superconnection/artifact.json",
+      "sha256": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
+      "bytes": 18455,
+      "total_lines": 768,
+      "read_line_ranges": [
+        [
+          1,
+          768
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_maurer_cartan_repair",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_maurer_cartan_repair/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_maurer_cartan_repair/artifact.json",
+      "sha256": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
+      "bytes": 14558,
+      "total_lines": 369,
+      "read_line_ranges": [
+        [
+          1,
+          369
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_global_fitting_descent",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_global_fitting_descent/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_global_fitting_descent/artifact.json",
+      "sha256": "5a841918a978ea9fb8b192a137c2b40603ab2330829690e1454cb4b51f0c9a30",
+      "bytes": 12664,
+      "total_lines": 259,
+      "read_line_ranges": [
+        [
+          1,
+          259
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_bk3_rank_zero_kernel",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_bk3_rank_zero_kernel/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json",
+      "sha256": "edafb44cb361f179c83134b5d10bb45039743ae2e31f623606100e28fb6e322b",
+      "bytes": 15939,
+      "total_lines": 600,
+      "read_line_ranges": [
+        [
+          1,
+          600
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_hidden_qutrit_adjoint",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_hidden_qutrit_adjoint/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_hidden_qutrit_adjoint/artifact.json",
+      "sha256": "f00b3ef3a8c968d62f8d60d208a9f2d3c8269c3c6909e54155944c7e045a4e5b",
+      "bytes": 9149,
+      "total_lines": 309,
+      "read_line_ranges": [
+        [
+          1,
+          309
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "eta9_gate1_campaign",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/eta9_gate1_campaign/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json",
+      "sha256": "87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f",
+      "bytes": 31373,
+      "total_lines": 933,
+      "read_line_ranges": [
+        [
+          1,
+          933
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_frontier",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_frontier/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_frontier/artifact.json",
+      "sha256": "9304a26b6fc045166e50a459843e417dd713684767209eeaf801ab53644247b8",
+      "bytes": 129274,
+      "total_lines": 1242,
+      "read_line_ranges": [
+        [
+          1,
+          1242
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": "Complete evolving chronology read to its final section, not classified from an early header."
+    },
+    {
+      "result_id": "unified_source_g3gm_arithmetic_correction",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_g3gm_arithmetic_correction/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gm_arithmetic_correction/artifact.json",
+      "sha256": "3e0b3c8a9a3276cd5718a9cdacea338be8f91af9c0d9919e410474243d89a42a",
+      "bytes": 6502,
+      "total_lines": 147,
+      "read_line_ranges": [
+        [
+          1,
+          147
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_upstream_lock",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_upstream_lock/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_upstream_lock/artifact.json",
+      "sha256": "7bf91fc82193851ebf6ddd3f4d0489905d0d2d9d90f8f569be7ecbb9241e3f2c",
+      "bytes": 25013,
+      "total_lines": 479,
+      "read_line_ranges": [
+        [
+          1,
+          479
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_candidate_adjudication",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_candidate_adjudication/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_candidate_adjudication/artifact.json",
+      "sha256": "9eaccb4610f062e718c6548894aeaacf96eacf4e4d505e4eb2a6cace67778800",
+      "bytes": 4020,
+      "total_lines": 68,
+      "read_line_ranges": [
+        [
+          1,
+          68
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_bundle_cohesive_embedding",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_bundle_cohesive_embedding/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_bundle_cohesive_embedding/artifact.json",
+      "sha256": "866d747361335af4dd53913ac61176efa35133ade3e1316cc4052082528953f3",
+      "bytes": 2898,
+      "total_lines": 84,
+      "read_line_ranges": [
+        [
+          1,
+          84
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_full_residual_hodge",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_full_residual_hodge/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_full_residual_hodge/artifact.json",
+      "sha256": "f1e2f7e830e3b11be02d8727e5ac3dc8c862874191efb121690dc26be74ea904",
+      "bytes": 1304,
+      "total_lines": 41,
+      "read_line_ranges": [
+        [
+          1,
+          41
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_physical_residual_transfer",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_physical_residual_transfer/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_physical_residual_transfer/artifact.json",
+      "sha256": "6ae7d98b9a436f8ad5252bf61ea920310fed5b6c979f4e5a119cded5318769be",
+      "bytes": 3636,
+      "total_lines": 90,
+      "read_line_ranges": [
+        [
+          1,
+          90
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_anti_splicing_audit",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_anti_splicing_audit/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_anti_splicing_audit/artifact.json",
+      "sha256": "53cbb74bec75cb85cfc8b9143b9c2ad85aab6023b0648d9261b3bf7d809cb99e",
+      "bytes": 9585,
+      "total_lines": 142,
+      "read_line_ranges": [
+        [
+          1,
+          142
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_scale_orbit",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_scale_orbit/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_scale_orbit/artifact.json",
+      "sha256": "0d120691ae466ae46c5f2fe1f46da7bff70d1aed5765da59fd94d656e54a9929",
+      "bytes": 1541,
+      "total_lines": 45,
+      "read_line_ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_metric_commutant",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_metric_commutant/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_metric_commutant/artifact.json",
+      "sha256": "bf3f0ab162f3dfbdde0bbc055b9d82c6564907359a93bc1ad5646acbfb976e4a",
+      "bytes": 4017,
+      "total_lines": 111,
+      "read_line_ranges": [
+        [
+          1,
+          111
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_common_hym_chamber",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_common_hym_chamber/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_common_hym_chamber/artifact.json",
+      "sha256": "6bcc9471b35d01bbb0b221650f6e55ba8a38be69ab6cfe9b9136b2199bf28d8a",
+      "bytes": 4275,
+      "total_lines": 106,
+      "read_line_ranges": [
+        [
+          1,
+          106
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_opposite_complex_bfield_wit",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_opposite_complex_bfield_wit/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_opposite_complex_bfield_wit/artifact.json",
+      "sha256": "4fe31eb0169664cc061173804a082bba287f1ab42976560b886d55a00434069b",
+      "bytes": 3224,
+      "total_lines": 92,
+      "read_line_ranges": [
+        [
+          1,
+          92
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_hs_global_stability",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_hs_global_stability/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hs_global_stability/artifact.json",
+      "sha256": "4bad15e911de145c8215448358e78c5c5a7ff98a45ad470fdc533467ce3b2a02",
+      "bytes": 2599,
+      "total_lines": 70,
+      "read_line_ranges": [
+        [
+          1,
+          70
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_two_fiber_recombination",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_two_fiber_recombination/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_two_fiber_recombination/artifact.json",
+      "sha256": "9ce145889744fc12d511758aeb3c6a7d424479fcb26ef308afc04f6f6c5914aa",
+      "bytes": 3282,
+      "total_lines": 90,
+      "read_line_ranges": [
+        [
+          1,
+          90
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_qutrit_determinantal_torsion",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_qutrit_determinantal_torsion/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_qutrit_determinantal_torsion/artifact.json",
+      "sha256": "5448e827f1e698604257a8a62471841c4e953af78d868608f19bd03e36ee0ee5",
+      "bytes": 4685,
+      "total_lines": 118,
+      "read_line_ranges": [
+        [
+          1,
+          118
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_bidirectional_ext",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_bidirectional_ext/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_bidirectional_ext/artifact.json",
+      "sha256": "10196b1de3e189b5693f9500278cbf342932e483089d3fb203f4301e5e823b2b",
+      "bytes": 2935,
+      "total_lines": 79,
+      "read_line_ranges": [
+        [
+          1,
+          79
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_reverse_ext_nogo",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_reverse_ext_nogo/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_reverse_ext_nogo/artifact.json",
+      "sha256": "aa0dca8ec6bd430342802025aac30bb6a76abab63517c8c3cc5147681ebc6d5a",
+      "bytes": 4586,
+      "total_lines": 130,
+      "read_line_ranges": [
+        [
+          1,
+          130
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_derived_yoneda_reduction",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_derived_yoneda_reduction/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_derived_yoneda_reduction/artifact.json",
+      "sha256": "7145ffccdd9cdf6eb354045aacfd4cb2d4265f6df46fbbbd07cc59bda6e41a8d",
+      "bytes": 5528,
+      "total_lines": 127,
+      "read_line_ranges": [
+        [
+          1,
+          127
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_monad_yoneda_rank4",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_monad_yoneda_rank4/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_monad_yoneda_rank4/artifact.json",
+      "sha256": "e8af654895d0e34b3004c940eac0163084c2ba04b44fac3ccb888e1ffb34bf6c",
+      "bytes": 6353,
+      "total_lines": 226,
+      "read_line_ranges": [
+        [
+          1,
+          226
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_clock_fixed_yoneda_column",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_clock_fixed_yoneda_column/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_clock_fixed_yoneda_column/artifact.json",
+      "sha256": "44415f6dc23dd5fedad2bb8cbaccedae6e6999da05ac76839decc6d9e365041e",
+      "bytes": 4672,
+      "total_lines": 110,
+      "read_line_ranges": [
+        [
+          1,
+          110
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_yoneda_column_nogo",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_yoneda_column_nogo/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_yoneda_column_nogo/artifact.json",
+      "sha256": "7f5c00ace92a27c2940af764f32ce63ed9c6c3b23c7153a54f5e84f04eedaa09",
+      "bytes": 4187,
+      "total_lines": 121,
+      "read_line_ranges": [
+        [
+          1,
+          121
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_atiyah_qutrit_chern_nogo",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_atiyah_qutrit_chern_nogo/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_atiyah_qutrit_chern_nogo/artifact.json",
+      "sha256": "8962ac22d30ae1f2bc1db9804a65c699e1bddab6a47343342edd94d0838f6d46",
+      "bytes": 3343,
+      "total_lines": 74,
+      "read_line_ranges": [
+        [
+          1,
+          74
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_hidden_perfect_complex",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_hidden_perfect_complex/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hidden_perfect_complex/artifact.json",
+      "sha256": "5e9f8aa54f6642219a7bef5ba4d4cf77cc3936e92e374c0c2b34b574c4229db8",
+      "bytes": 4978,
+      "total_lines": 111,
+      "read_line_ranges": [
+        [
+          1,
+          111
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_zero_section_monad_nogo",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_zero_section_monad_nogo/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_zero_section_monad_nogo/artifact.json",
+      "sha256": "f6eb1524f4b276151c903e2511e05df41ffd6871f7012b7c7768f2c7ebf039ba",
+      "bytes": 2744,
+      "total_lines": 64,
+      "read_line_ranges": [
+        [
+          1,
+          64
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_global_wit0_rank9",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_global_wit0_rank9/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_global_wit0_rank9/artifact.json",
+      "sha256": "ff66eac4c2cb84d3a862dd2a9e1682d8641cd7763dfe53069fb888c77cafe8b7",
+      "bytes": 4903,
+      "total_lines": 115,
+      "read_line_ranges": [
+        [
+          1,
+          115
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_target_slope_nogo",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_target_slope_nogo/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_target_slope_nogo/artifact.json",
+      "sha256": "ca300fce589b86e177c5319ba55b1a0e78689d59c18829b371034db61509e7d0",
+      "bytes": 3114,
+      "total_lines": 84,
+      "read_line_ranges": [
+        [
+          1,
+          84
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_balanced_holomorphic_p39",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_balanced_holomorphic_p39/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_balanced_holomorphic_p39/artifact.json",
+      "sha256": "b6c068e95504522ca23c6b78e229038094913f9902240c69ac2ce0d6461a1ab3",
+      "bytes": 4341,
+      "total_lines": 110,
+      "read_line_ranges": [
+        [
+          1,
+          110
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_hidden_direct_stability",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_hidden_direct_stability/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hidden_direct_stability/artifact.json",
+      "sha256": "f9d6649c385a8b7896444585950f2281b703a4bf9e2750ea92777ccb63ea81d3",
+      "bytes": 3146,
+      "total_lines": 83,
+      "read_line_ranges": [
+        [
+          1,
+          83
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_hidden_projective_hym",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_hidden_projective_hym/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hidden_projective_hym/artifact.json",
+      "sha256": "aaa577c0d6b90643069f0547a76bf71aa476c4d968bea050eaf2ac7e6354f25a",
+      "bytes": 3260,
+      "total_lines": 82,
+      "read_line_ranges": [
+        [
+          1,
+          82
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_projective_translation_chern_weil",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_projective_translation_chern_weil/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_projective_translation_chern_weil/artifact.json",
+      "sha256": "feea878a3a218f913708f06ee950b0e3673d79d97c61f0b4a9f22ceb71fe21d1",
+      "bytes": 6302,
+      "total_lines": 136,
+      "read_line_ranges": [
+        [
+          1,
+          136
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_bott_chern_injectivity",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_bott_chern_injectivity/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_bott_chern_injectivity/artifact.json",
+      "sha256": "5c8f76f252bca66c208d6dec0f3446b75b3eb316d2fd163e16a4ef02bc816ace",
+      "bytes": 3336,
+      "total_lines": 72,
+      "read_line_ranges": [
+        [
+          1,
+          72
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_transverse_fuyau_nogo",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_transverse_fuyau_nogo/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_transverse_fuyau_nogo/artifact.json",
+      "sha256": "1b40b0fb3a0f4ecabec32cdcb84d9c74d430d585fec448a66e962f957a53ec23",
+      "bytes": 3161,
+      "total_lines": 71,
+      "read_line_ranges": [
+        [
+          1,
+          71
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_nontransverse_endpoint_compiler",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_nontransverse_endpoint_compiler/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_nontransverse_endpoint_compiler/artifact.json",
+      "sha256": "9c7fc76a957b47df203f34f357ec99ba2c989f5f7697c98f571b2e605cb86e80",
+      "bytes": 4228,
+      "total_lines": 102,
+      "read_line_ranges": [
+        [
+          1,
+          102
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "unified_source_shared_line_theta_typing",
+      "role": "assigned_owner_source",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/unified_source_shared_line_theta_typing/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_shared_line_theta_typing/artifact.json",
+      "sha256": "8be85c69e0eea231a5f341bcc747b58429c824fa88eec791ba61072c32601017",
+      "bytes": 6722,
+      "total_lines": 149,
+      "read_line_ranges": [
+        [
+          1,
+          149
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json",
+      "sha256": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+      "bytes": 9310,
+      "total_lines": 288,
+      "read_line_ranges": [
+        [
+          1,
+          288
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "causal_base_q79_symmetric_response_transferred_m4_packet",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json",
+      "sha256": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+      "bytes": 7650,
+      "total_lines": 232,
+      "read_line_ranges": [
+        [
+          1,
+          232
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "causal_base_q79_all_arity_source_promotion_packet",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json",
+      "sha256": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+      "bytes": 9861,
+      "total_lines": 229,
+      "read_line_ranges": [
+        [
+          1,
+          229
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "causal_base_q79_seven_row_endpoint_factorization_packet",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json",
+      "sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
+      "bytes": 14943,
+      "total_lines": 665,
+      "read_line_ranges": [
+        [
+          1,
+          665
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "eta9_three_cycle_b96_nondetection",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/eta9_three_cycle_b96_nondetection/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json",
+      "sha256": "972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f",
+      "bytes": 2929,
+      "total_lines": 67,
+      "read_line_ranges": [
+        [
+          1,
+          67
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": null
+    },
+    {
+      "result_id": "q79_eta9_local_source_tube_consolidation",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_eta9_local_source_tube_consolidation/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_local_source_tube_consolidation/artifact.json",
+      "sha256": "6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756",
+      "bytes": 6267,
+      "total_lines": 155,
+      "read_line_ranges": [
+        [
+          1,
+          155
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": "Full hash-bound consolidation read; underlying interval calculations were not rerun."
+    },
+    {
+      "result_id": "q79_eta9_b89_same_source_rejection",
+      "role": "consumer_or_later_refinement",
+      "artifact_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_eta9_b89_same_source_rejection/artifact.json",
+      "artifact_url": "https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_b89_same_source_rejection/artifact.json",
+      "sha256": "8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda",
+      "bytes": 1784,
+      "total_lines": 25,
+      "read_line_ranges": [
+        [
+          1,
+          25
+        ]
+      ],
+      "coverage": "full",
+      "hash_check": "matched raw frozen bytes to catalog/research-ownership.json .results",
+      "read_scope": "Entire frozen artifact, including every proof/explanation field and later chronological section present. Truncated display gaps were explicitly reread during source review.",
+      "independent_large_certificate_replay": false,
+      "notes": "The complete 1784-byte frozen source-index/rejection explanation was read. Its referenced larger candidate/campaign artifact was not independently replayed."
+    }
+  ],
+  "source_read_coverage_summary": {
+    "unique_frozen_artifacts": 53,
+    "assigned_owner_artifacts": 37,
+    "consumer_and_refinement_artifacts": 16,
+    "bytes": 753338,
+    "all_full": true,
+    "whole_manuscripts_read": [
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83",
+        "initial_version": "v2",
+        "current_version": "v3",
+        "scope": "Complete initial manuscript, bibliography, local metadata/revision context and complete revised text."
+      },
+      {
+        "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
+        "initial_version": "v4",
+        "current_version": "v5",
+        "scope": "Complete initial manuscript, inline bibliography, local metadata/revision context and complete revised text."
+      }
+    ],
+    "owner_context": "Relevant current QM, Cohesive and Flux owner passages were read for consumer meaning and tier; no claim of reading those entire unrelated manuscripts.",
+    "proof_reading_limit": "All 53 frozen artifacts and their proof/explanation content were read. Large external arrays, modular campaigns and interval computations referenced by the packets were not independently replayed. Boolean fields are not treated as independent verification."
+  },
+  "verification": {
+    "local_builds": "2 pass; 0 warnings; 0 failures",
+    "pdf_visual_qa": "44/44 pages actually inspected; 29 individual 144-dpi zoom pages inspected.",
+    "bounded_checks": {
+      "kind": "small rational identities and displayed dimension checks only",
+      "checks": {
+        "degree_dc_is_one_ddc_is_two": true,
+        "five_source_sectors_have_25_ordered_blocks": true,
+        "rank102_sector_sum": true,
+        "hidden_adjoint_rank": true,
+        "gram_determinant_2008": true,
+        "three_cycle_gram_determinant": true,
+        "cech_partition_norm": true,
+        "cech_connection_correction": true,
+        "coupled_schur_is_not_bare_block": true,
+        "boundary_source_cost_is_linear_in_strain": true,
+        "boundary_quadratic_cost_differs": true,
+        "support_rank_distribution": true,
+        "newton_majorant_example": true,
+        "isometric_cost_pullback_does_not_reduce": true,
+        "hidden_slope_threshold_affine_identity": true
+      },
+      "not_checked": [
+        "No independent proof of any frozen certificate from boolean fields",
+        "No large matrix, modular campaign, interval transport or scientific rerun",
+        "No physical source, metric, action or observational value selected"
+      ]
+    },
+    "additional_check_explanation": "The hidden slope check is coefficient cancellation after t=1+3M+epsilon, giving -2 epsilon/3; it chooses no numerical physical M. The isometric-embedding example is evaluated explicitly. Remaining dimension and rational examples are bounded explanatory checks only.",
+    "local_structural_checks": {
+      "status": "pass",
+      "validated_at": "2026-09-12T22:01:42Z",
+      "command": "python -B papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83/tmp/verify_editorial_fragment.py",
+      "owner_reviews": 37,
+      "consumer_reviews": 12,
+      "consumer_placements": 20,
+      "candidate_dispositions": 23,
+      "frozen_raw_hashes": 53,
+      "literal_review_and_text_anchors": "pass",
+      "prior_result_refs": "retained",
+      "paper_metadata_and_source_tree_hashes": "pass",
+      "released_title_authors_doi_and_release_history": "unchanged against pre-edit metadata",
+      "git_diff_check": "pass; exit 0",
+      "git_line_ending_advisories": "Git reported CRLF-to-LF normalization advisories for Hull RESEARCH_INTEGRATION.md and Program C main.tex. Raw hashes and LF-normalized review hashes are recorded separately; no whitespace-error finding."
+    },
+    "global_tests_run": false,
+    "scientific_reruns": false,
+    "forbidden_global_writes": false
+  },
+  "remaining_genuine_research": [
+    "Select the actual visible twisted Prym/spectral datum on the physical 9H+3D0 source and settle the relevant beta_C/integral condition; local tube progress and B89 rejection do not select a replacement.",
+    "Supply a common positive nontransverse visible-hidden-tangent solution, with conformal balance and Bianchi compatibility. Hidden projective rank-nine existence and existential HYM are already established and must not be restarted.",
+    "Provide ordinary integral differential Green--Schwarz trivialization, correctly typed equivariant theta data, integral marking/global transport and any required admissible Neron-model hypotheses.",
+    "Construct the same-source connection/domain-preserving reducing continuum intertwiner, selected physical residual metric/operator and certified inverse/radii bounds.",
+    "Select a signed physical action and compatible symmetry/interaction source; pure closure repair, finite higher transfer and endpoint packet inventories do not do this.",
+    "Program C still has no complete worldsheet or universal apparatus extension supplied by the dictionary. Canonical operational Born closure remains established; measurement remains ordinary physics."
+  ],
+  "author_approval_questions": [],
+  "release_approval": "No release requested or performed. Existing released identities remain intact; any subsequent publication is parent/author-owned.",
+  "pending_work": {
+    "assigned_editorial_items": [],
+    "blocking_gaps": [],
+    "parent_integration": [
+      "Import the 37 owner reviews and 12 grouped consumer reviews covering 20 paper/result placements.",
+      "Use the new LF manuscript hashes and the prior-review audit when rebinding; preserve correction hypotheses and source tiers.",
+      "Integrate the proposed R-to-curated mappings, retain the distinct support-stratified refinement, and run central catalog/Kernel validation after concurrent editors finish.",
+      "Carry the existing G3GM and G3AA errata and the concrete isometric-embedding hypothesis correction to shared consumer guidance."
+    ]
+  },
+  "no_scope_expansion": true,
+  "no_commits_pushes_releases_or_automations": true
+}

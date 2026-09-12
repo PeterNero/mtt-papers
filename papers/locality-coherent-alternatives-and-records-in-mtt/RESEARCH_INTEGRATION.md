@@ -14,9 +14,15 @@ Operational non-entailment theorem separating record predictions from one-histor
 
 Interpretive consumer of the source non-entailment theorem, not a new ontology proof.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_ontology_nonentailment/artifact.json); SHA-256 `4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c`.
+
+Reviewed 2026-09-12: Explained the complete retained operational signature, including channel, dilation and instrument, and the absence of an actuality predicate. The 448-atom checkpoint is extended by ordinary conditional output states, so the single-record countermodel preserves the instrument rather than merely three probabilities; a coactual completion preserves the same data. Basis-dependent coefficient counts and alternative ensembles of one density operator make the underdetermination explicit. This is a context-specific existence/non-entailment theorem, not a selected global hidden-variable dynamics, simultaneous assignment to incompatible projectors, evasion of Bell/contextuality constraints, or refutation of many-worlds. The conditional marked-Poisson construction adds hazard and clock hypotheses, not an MTT-selected universal actualization source. The Locality account stays interpretive and author-review required.
+
+- `main.tex:392`: `sec:ontology-nonentailment`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 

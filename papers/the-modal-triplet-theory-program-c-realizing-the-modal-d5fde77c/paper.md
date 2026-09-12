@@ -21,16 +21,16 @@ abstract: |
   L_{\mathrm{shared}}\otimes
    (\mathcal O\oplus\mathcal A_0\oplus\mathcal A).
   ```
-  The shared circle is line-bundle phase and holonomy data, counted once and not identified with physical time. Equality of the local and global rank profiles does not construct their connection-preserving intertwiner. The physical visible-hidden HYM endpoints, the continuum geometry-to-operator intertwiner, the selected continuum Hessian, the upper action, the general Born source theorem, and the complete worldsheet contract remain open.
+  The shared circle is line-bundle phase and holonomy data, counted once and not identified with physical time. Equality of the local and global rank profiles does not construct their connection-preserving intertwiner. The hidden projective rank-nine bundle and existential HYM connection are established; the selected visible bundle and common physical endpoint remain open. Projective-module compilers preserve a supplied connection, and the intrinsic nonlinear spectral-strain map has a shorted Hessian on its regular stratum with a precise support-stratified boundary. These results do not supply the continuum geometry-to-operator intertwiner, selected continuum Hessian, upper action or complete worldsheet contract. The canonical operational Born-source result is retained on its declared recorder domain, without asserting an extension to every apparatus.
 
   The resulting conclusion is deliberately typed: realizations can establish mathematical existence and compatibility, but nonuniqueness prevents physical prediction until a source law selects one realization and supplies its dynamics and observable map.
 author:
 - Peter Nero
-current_version: v4
-date: July 2026 Version 4
-generated_from_main_tex_sha256: d180d1c4e425f46d2976b9f04f1312e8a6631b8b51ac7a5c889038b50ed51dec
+current_version: v5
+date: September 2026 Version 5
+generated_from_main_tex_sha256: 5885d707c939d1e0a8040c14f311e5ccd92cb008f5b3c03482dfd5c2accda246
 paper_id: the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v4
 title: |
   The Modal Triplet Theory Program C:
@@ -41,21 +41,60 @@ zenodo_record_id: 21718498
 zenodo_url: "https://zenodo.org/records/21718498"
 ---
 
+# The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations
+
+Peter Nero. September 2026 Version 5
+
+## Abstract
+
+This paper gives a typed realization dictionary for the Modal Triplet Theory (MTT) program. In the canonical physical specialization,
+``` math
+M_{10}=Y_4\times X_6,
+```
+where $`Y_4`$ is the four-dimensional Lorentzian spacetime and $`X_6`$ is the compact Riemannian internal space. Coordinate factors of $`X_6`$, vector bundles over $`X_6`$, Hermitian line bundles, vertical operators, and spectral projectors are distinct objects and cannot be interchanged by notation. A modal lane is therefore represented by a typed triple $`(\mathcal E_i,A_i,P_i)`$, not by an additional coordinate manifold.
+
+We prove the conditional operator statements needed by this dictionary. Strongly commuting self-adjoint vertical operators have a well-defined joint spectral projector, while compact resolvent, not the mere presence of discrete labels, is what gives a discrete spectrum. We also record the exact local spatial-triplet decomposition
+``` math
+\operatorname{Mat}(3,\mathbb R)
+ =
+ \mathfrak{so}(3)\oplus
+ \mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O,
+ \qquad 9=3+(1+2+3),
+```
+for a comparison field $`Q_{\mathrm{WW}}\in\Gamma(\operatorname{Hom}(TP,TI))`$. This is a component decomposition after a flag is chosen; it is not a multiplication of manifold dimensions.
+
+On the selected q=79 degree-three carrier, the global rank profile $`1+2+3`$ is realized by
+``` math
+L_{\mathrm{shared}}\otimes
+ (\mathcal O\oplus\mathcal A_0\oplus\mathcal A).
+```
+The shared circle is line-bundle phase and holonomy data, counted once and not identified with physical time. Equality of the local and global rank profiles does not construct their connection-preserving intertwiner. The hidden projective rank-nine bundle and existential HYM connection are established; the selected visible bundle and common physical endpoint remain open. Projective-module compilers preserve a supplied connection, and the intrinsic nonlinear spectral-strain map has a shorted Hessian on its regular stratum with a precise support-stratified boundary. These results do not supply the continuum geometry-to-operator intertwiner, selected continuum Hessian, upper action or complete worldsheet contract. The canonical operational Born-source result is retained on its declared recorder domain, without asserting an extension to every apparatus.
+
+The resulting conclusion is deliberately typed: realizations can establish mathematical existence and compatibility, but nonuniqueness prevents physical prediction until a source law selects one realization and supplies its dynamics and observable map.
+
+# Revision note for version 5
+
+**Supersedes.** The current Version 4 manuscript, retaining its released identity and earlier revision note below. This is not a new public release.
+
+**Reason.** The realization ledger still described hidden HYM existence and the canonical Born-source result as open. It also retained an obsolete nineteen-block physical mask and omitted the later nonlinear strain and connection-compiler distinctions.
+
+**Resolution.** Current owner statements now have source-bound references. The additions cover compiled connections, nonlinear and stratified strain, global support, selected transport, and finite cohesive transfer. The local matrix decomposition is distinguished from a nonlinear orientation quotient, and the physical mask has twenty-five blocks.
+
+**Retained content.** The typed dictionary, conditional joint-projector and compact-resolvent theorems, local component split, selected global rank profile, and shared line remain intact. Established finite physics and canonical operational QM are not reopened.
+
+**Open boundary.** The selected visible bundle, common positive endpoint, integral anomaly data, same-source continuum operator and symmetry lift, physical action, and complete worldsheet contract remain open. Broader apparatus extensions are not a reopening of the canonical Born-source theorem.
+
 # Revision note for version 4
 
-<div class="description">
+**Supersedes.** Version 3 of Program C.
 
-Version 3 of Program C.
+**Reason.** Version 3 already supplied the reviewed typed dictionary and explanatory workflow, but its managed reproducibility block reported that no result row was mapped although the paper uses the exact selected q=79 arithmetic packet.
 
-Version 3 already supplied the reviewed typed dictionary and explanatory workflow, but its managed reproducibility block reported that no result row was mapped although the paper uses the exact selected q=79 arithmetic packet.
+**Resolution.** Version 4 maps the A11 q=79 theorem explicitly in both canonical sources and pins the curated repository revision. The in-paper release note now records only the current version delta; the complete revision history remains in the accompanying audit. No realization or intertwiner theorem changes.
 
-Version 4 maps the A11 q=79 theorem explicitly in both canonical sources and pins the curated repository revision. The in-paper release note now records only the current version delta; the complete revision history remains in the accompanying audit. No realization or intertwiner theorem changes.
+**Retained content.** The typed dictionary, joint-projector and compact-resolvent statements, local $`3\times3`$ decomposition, global $`1+2+3`$ carrier, shared-line interpretation, and nonselection statements remain at their version 3 tiers.
 
-The typed dictionary, joint-projector and compact-resolvent statements, local $`3\times3`$ decomposition, global $`1+2+3`$ carrier, shared-line interpretation, and nonselection statements remain at their version 3 tiers.
-
-The physical realization, action, visible-hidden HYM pair, continuum intertwiner and Hessian, Born source, and complete worldsheet remain open.
-
-</div>
+**Open boundary.** The physical realization, action, visible-hidden HYM pair, continuum intertwiner and Hessian, Born source, and complete worldsheet remain open.
 
 # How to Use Program C
 
@@ -144,7 +183,7 @@ where $`Y_4`$ is a four-dimensional globally hyperbolic Lorentzian manifold and 
 
 </div>
 
-A nontrivial bundle $`\pi:M_{10}\to Y_4`$ may replace the global product in a more general realization, with local trivializations $`\pi^{-1}(U)\simeq U\times X_6`$. Whenever the product notation is used below, however, it means Definition <a href="#def:product" data-reference-type="ref" data-reference="def:product">1</a>; it never means three independent three-manifolds or a compact time circle.
+A nontrivial bundle $`\pi:M_{10}\to Y_4`$ may replace the global product in a more general realization, with local trivializations $`\pi^{-1}(U)\simeq U\times X_6`$. Whenever the product notation is used below, however, it means Definition [3.1](#def:product); it never means three independent three-manifolds or a compact time circle.
 
 ## Coordinate factors
 
@@ -212,7 +251,7 @@ $`\mathcal O\oplus\mathcal A_0\oplus\mathcal A`$ & Rank $`1+2+3`$ q=79 carrier &
 
 </div>
 
-Unqualified notation such as $`B_i`$ is deprecated when it could mean a base, bundle, factor, boundary, or filter. The symbols in Table <a href="#tab:dictionary" data-reference-type="ref" data-reference="tab:dictionary">[tab:dictionary]</a> are used throughout the corrected corpus.
+Unqualified notation such as $`B_i`$ is deprecated when it could mean a base, bundle, factor, boundary, or filter. The symbols in Table [4.1](#tab:dictionary) are used throughout the corrected corpus.
 
 <div class="example">
 
@@ -250,7 +289,7 @@ If the three bundles differ, a common Hilbert bundle or specified embeddings mus
 
 <div id="thm:joint" class="theorem">
 
-**Theorem 8** (Joint coherent projector). *Under Assumption <a href="#ass:strong" data-reference-type="ref" data-reference="ass:strong">7</a>,
+**Theorem 8** (Joint coherent projector). *Under Assumption [5.2](#ass:strong),
 ``` math
 P_{\mathrm{coh}}=P_1P_2P_3
 ```
@@ -309,9 +348,11 @@ All summands are nonnegative, so the sum vanishes exactly when every summand van
 
 The compact-resolvent hypothesis is essential. Multiplication by $`x`$ on $`L^2([0,1])`$ is bounded and self-adjoint with spectrum $`[0,1]`$. It is an operator realization with continuous spectrum. Therefore the version 1 claim that every admissible observable has purely discrete spectrum is withdrawn.
 
+<a id="sec:canonical-measurement"></a>
+
 ## Measurement and probability boundary
 
-A spectral projector supplies a mathematical event or selected subspace. It does not by itself supply a state, a probability measure, a detector model, or an objective history. The selected q=79 one-anchor recorder closes an exact restricted capture statement on its declared commuting output algebra, but the general Born-source problem remains open. Program C therefore makes no universal measurement or probability claim.
+A spectral projector supplies a mathematical event or selected subspace. It does not by itself supply a state, a probability measure, a detector model, or an objective history. Measurement itself is ordinary physical interaction, not an additional foundational primitive. The canonical q=79 binary one-anchor recorder now emits the stopped law from its selected normal state on the commuting Fock output algebra, with exact second-moment capture descent and no added stochastic primitive \[[12](#ref-OwnerQM)\]. This closes the canonical operational Born-source question at its declared tier. Generalizing beyond that recorder and output algebra is a separate problem, not evidence that the canonical result is missing. Nor is an objective-history interpretation required to call the operational measurement model physics.
 
 # The Local Spatial-Triplet Representation
 
@@ -325,7 +366,7 @@ After choosing local orthonormal frames, $`Q_{\mathrm{WW}}`$ is a $`3\times3`$ m
 
 <div id="thm:spatial" class="theorem">
 
-**Theorem 11** (Orientation-strain and $`1+2+3`$ split). *At a nonsingular comparison background,
+**Theorem 11** (Orientation-strain and $`1+2+3`$ split). *In the selected orthonormal frames,
 ``` math
 \operatorname{Mat}(3,\mathbb R)
  =
@@ -354,11 +395,27 @@ The first summand is antisymmetric and has dimension three. Relative to the sele
 
 </div>
 
+The algebraic splitting holds for every matrix. Calling its symmetric part an orientation quotient requires an additional local identification: at the identity comparison background the infinitesimal orthogonal orbit is the antisymmetric summand, while at a general nonsingular background one must use the corresponding polar or tangent identification. The displayed linear identity alone does not perform a nonlinear quotient.
+
 With one separate ordering scalar, the exact component identity is
 ``` math
 1+3\times3=(1+3)+(1+2+3)=4+6=10.
 ```
 It does not prove $`TM_{10}\simeq TY_4\oplus TX_6`$, choose Lorentzian signature, or select the q=79 global topology. Those require transition functions, metrics, connections, and a physical source law.
+
+<a id="sec:nonlinear-strain"></a>
+
+## The nonlinear spectral-strain replacement
+
+The local real comparison field must not be confused with the six real root directions in a Hermitian three-by-three spectral symbol. The quantum-mechanics owner shows that the proposed linear root-stack identification is excluded: its permutation character differs from the two permutation triples used for strain \[[12](#ref-OwnerQM),[18](#ref-ConsumerStrain)\]. The lawful replacement is nonlinear. It retains the three diagonal entries and the three squared edge magnitudes. Relative-phase reduction alone still leaves a triangle phase and a generically seven-dimensional quotient; passing to six strain coordinates forgets that phase. The shared central circle cannot remove it.
+
+For derivative $`J`$ of the strain map and positive reduced source Green operator $`G_Q`$, constrained minimization gives
+``` math
+H_{\rm strain}=(JG_QJ^*)^{-1}
+```
+on the regular image. Further reduction projects this covariance before inverting, rather than restricting a guessed Hessian. The statement requires the same source metric, reduced domain and background throughout. It does not identify the flag-dependent local matrix split with the physical global operator.
+
+The later owner refinement covers all edge-support strata \[[19](#ref-ConsumerSupportStrain)\]. An absent edge has zero first derivative and a nonnegative squared-amplitude second jet. Thus $`r=t^2`$ turns the positive source cost $`t^2/2`$ into $`r/2`$, not an ordinary quadratic boundary cost in $`r`$. Tangential shorting and the normal value function replace a full six-dimensional boundary Hessian. Rank-six surjectivity or the specified local quarter-turn lift forces the regular stratum; global regularity is therefore not an extra independent input once that stronger contract is met. The physical endpoint, Green operator and same-source symmetry lift are still not selected.
 
 ## Why the old no-global-chart theorem fails
 
@@ -437,13 +494,13 @@ over a declared base map, together with:
 
 <div class="proof">
 
-*Proof.* Equal-rank bundles can have different characteristic classes, holonomies, or connections and need not be isomorphic. Even isomorphic bundles can carry operators that are not conjugate. Each row in Definition <a href="#def:intertwiner" data-reference-type="ref" data-reference="def:intertwiner">12</a> is therefore independent of rank equality. ◻
+*Proof.* Equal-rank bundles can have different characteristic classes, holonomies, or connections and need not be isomorphic. Even isomorphic bundles can carry operators that are not conjugate. Each row in Definition [7.1](#def:intertwiner) is therefore independent of rank equality. ◻
 
 </div>
 
 Constructing this same-source map on the physical q=79 HYM complex is the current continuum geometry-to-operator blocker. It is not closed by the finite shared-line theorem.
 
-The local theorem and the global carrier are therefore two verified ends of a proposed bridge. The local side explains how six strain components arise after quotienting the three orientation directions of a $`3\times3`$ comparison field. The global side supplies a selected rank-six trace-split carrier with a shared line. Definition <a href="#def:intertwiner" data-reference-type="ref" data-reference="def:intertwiner">12</a> is the load-bearing middle: without it, equality of the two dimension lists remains a structural clue rather than a derivation of the global degrees of freedom from the local comparison field.
+The local theorem and the global carrier are therefore two verified ends of a proposed bridge. The local side supplies six symmetric components after the appropriate orientation-tangent identification for a $`3\times3`$ comparison field. The global side supplies a selected rank-six trace-split carrier with a shared line. Definition [7.1](#def:intertwiner) is the load-bearing middle: without it, equality of the two dimension lists remains a structural clue rather than a derivation of the global degrees of freedom from the local comparison field.
 
 # Bundles, Line Bundles, and Connections
 
@@ -479,9 +536,42 @@ on a common declared domain. Similar holonomy language alone does not give such 
 
 Nonzero curvature can produce infinitesimal loop holonomy, but flat connections can also have nontrivial global holonomy on a non-simply-connected base. Thus a circle or loop response may be represented by curvature, flat monodromy, or both. Version 1’s identification of circle obstruction with nonzero curvature is replaced by this connection-and-holonomy contract.
 
+<a id="sec:hidden-boundary"></a>
+
 ## Current physical bundle boundary
 
-Reference Fu–Yau and Hull–Strominger geometries establish relevant mathematical existence results. The selected MTT branch still requires an explicit visible $`U_{\eta=9}`$ bundle and a genuine hidden twisted-holomorphic locally free carrier in one positive Gauduchon/HYM chamber, with anomaly and Bianchi compatibility. Until those endpoints are constructed from the selected source, no reference geometry is the physical MTT compactification.
+Reference Fu–Yau and Hull–Strominger geometries establish relevant mathematical existence results. More specifically, the selected hidden projective rank-nine locally free bundle and an existential HYM connection are established; they are not missing inputs to be restarted \[[15](#ref-OwnerHull)\]. What remains is the selected visible $`U_{\eta=9}`$ bundle, the common positive chamber and anomaly/Bianchi compatibility, with the connection data needed for the physical operator. The physical residual has five source sectors and the corrected twenty-five-block coupling mask \[[29](#ref-ConsumerPhysicalResidual)\]. A nineteen-block mask would silently drop allowed couplings. Reference examples and hidden existence alone do not select the common MTT compactification.
+
+<a id="sec:projector-compiler"></a>
+
+## Compiling a supplied bundle into a projector
+
+The projective naturality and Cech compiler are owned by the quantum-mechanics paper, in its geometric-source interface \[[12](#ref-OwnerQM),[16](#ref-ConsumerNaturality),[17](#ref-ConsumerCech)\]. From supplied unitary transitions and Hermitian connection, a subordinate partition constructs an isometric module embedding $`U`$ with $`p=UU^*`$. The finite size of this smooth matrix over the base does not make its section space finite. Writing
+``` math
+A_0=U^*dU,\qquad
+ \Gamma=U(A-A_0)U^*,\qquad D_p=p\,d+\Gamma
+```
+preserves the actual supplied connection. Using $`p\,d`$ alone would instead substitute the Grassmann connection. The hidden twist cancels in its adjoint, giving an ordinary deformation complex, not an ordinary hidden fundamental. The modal lane flag is external to an irreducible stable gauge factor.
+
+This construction makes the dictionary executable once its inputs exist. It does not select them. A changed presentation must transport the intrinsic retained subspace, not reuse an unrelated Fourier window. Exact restriction of a self-adjoint $`H`$ requires $`(1-P)HP=0`$ on compatible domains; otherwise the complementary resolvent contributes a Feshbach term. Consequently an isometric chain embedding alone does not transport adjoints or a continuum Hessian.
+
+<a id="sec:geometric-consumers"></a>
+
+## Global support, local transport and candidate rejection
+
+The Cohesive owner supplies ordinary Fitting ideal sheaves for the twisted benchmark’s cohomology \[[13](#ref-OwnerCohesive),[21](#ref-ConsumerFitting)\]. Invertible line twists change minor generators by units, so support descends even when the source itself remains twisted. Its divisor class $`3H+3D_0`$ is auxiliary, not the physical $`9H+3D_0`$; generic corank three does not construct a spectral line. Neither support descent nor rank agreement trivializes the gerbe or supplies connection overlaps.
+
+The flux owner supplies the complementary transport distinctions \[[14](#ref-OwnerFlux)\]. The completed original-Jacobian campaign gives exact polynomial reduction identities for the selected source \[[22](#ref-ConsumerGateOne)\]. This finite algebraic completion does not produce the global path or its integral marking. The completed three-cycle subsystem is independent but its affine coefficients are rational coboundaries, so it is non-detecting for the global question \[[26](#ref-ConsumerThreeCycle)\]. Independence is therefore not the same as detecting a source obstruction, and rational coboundary membership is not integral membership.
+
+The positive-width local source chart and correlated lift are certified local progress, not a complete physical readout \[[27](#ref-ConsumerTube)\]. Conversely, the same-source B89 affine detector rejects that particular candidate from $`\beta_C=0`$, without selecting a replacement or proving that its integral obstruction has order two \[[28](#ref-ConsumerB89)\]. These examples belong in a typed dictionary because global support, local transport, detection and physical selection are different kinds of evidence.
+
+<a id="sec:cohesive-consumers"></a>
+
+## What cohesive and finite transfer add to the dictionary
+
+For a supplied twisted perfect complex the Cohesive owner constructs an ordinary endomorphism differential graded algebra and, after a Hermitian choice on a compact boundaryless base, its elliptic Hodge operator \[[13](#ref-OwnerCohesive),[20](#ref-ConsumerCohesive)\]. Compact resolvent belongs to this global operator; a fiberwise Green operator may still diverge at a rank jump. This is a realizable mathematical model, not a physical visible–hidden source selected by the abstract dictionary.
+
+The exact finite response contraction has nonzero transferred $`m_3,m_4`$, so its compressed product must be read together with its higher operations \[[23](#ref-ConsumerMThree),[24](#ref-ConsumerMFour)\]. A product-preserving source map commuting with inclusion, projection and homotopy transports the entire hierarchy by the transfer-tree argument \[[25](#ref-ConsumerAllArity)\]. Finite identities establish that conditional transport rule. They do not supply continuum domains, a selected physical action or interacting quantum vertices.
 
 # Realization Contracts and Physical Selection
 
@@ -551,13 +641,13 @@ Missing rows define the theorem boundary; they are not filled by analogy.
 @P0.14P0.33Y@ Framework & Realization data that MTT can organize & Data not supplied by the dictionary alone
 General relativity & Lorentzian base, frame/spin bundles, connection, curvature, local comparison field & Einstein–Hilbert or alternative action, stress tensor, field equations, hyperbolicity, normalization, and empirical solution.
 Gauge theory and SM & Principal and associated bundles, representations, connections, finite projectors, anomaly tables & Selected continuum action, couplings, masses, RG transport, quantum state, and no-knob source values.
-Quantum mechanics & Hilbert spaces, self-adjoint operators, spectral projectors, finite recorder models & General state preparation, Born source theorem, dynamics, detector model, and ontic-history rule.
+Quantum mechanics & Hilbert spaces, self-adjoint operators, spectral projectors, finite recorder models & State preparation and detector dynamics outside the closed canonical recorder domain; no universal apparatus extension is asserted.
 Quantum field theory & Field bundles, local operators, classical BV complexes, finite representations & Selected renormalized quantum measure, nonperturbative completion, positivity, RG matching, and scattering/observable comparison.
 String theory & Internal complex geometry, bundles, extended-carrier candidates, anomaly and duality contracts & Complete worldsheet action, GSO and analytic data, IR SCFT, selected physical bundle pair, and all-scale completion.
 
 </div>
 
-The current q=79 worldsheet contract is complete in five of twelve declared rows. A two-parameter sweep of a one-dimensional carrier is only a surface; it is not a quantum worldsheet until the missing target, action, gauge, boundary, anomaly, quantization, and observable data are supplied.
+The complete q=79 worldsheet contract remains open. A two-parameter sweep of a one-dimensional carrier is only a surface; it is not a quantum worldsheet until the missing target, action, gauge, boundary, anomaly, quantization, and observable data are supplied.
 
 # Quarantined and Retired Realizations
 
@@ -567,7 +657,7 @@ The Iwasawa manifold is a valid and useful complex non-Kahler manifold. What is 
 
 ## Literal Circle–Lens–Nil products
 
-The literal manifold $`S^1\times L(3,1)\times\mathrm{Nil}_3`$ is seven-dimensional. It is not the six-dimensional $`X_6`$ in Definition <a href="#def:product" data-reference-type="ref" data-reference="def:product">1</a>. The six-manifold $`L(3,1)\times\mathrm{Nil}_3`$ is also not the selected q=79 Fu–Yau topology; their global invariants differ. Circle–Lens–Nil remains useful as a filtration, operator profile, or parallel bundle schema, not as an automatic literal nesting of manifolds.
+The literal manifold $`S^1\times L(3,1)\times\mathrm{Nil}_3`$ is seven-dimensional. It is not the six-dimensional $`X_6`$ in Definition [3.1](#def:product). The six-manifold $`L(3,1)\times\mathrm{Nil}_3`$ is also not the selected q=79 Fu–Yau topology; their global invariants differ. Circle–Lens–Nil remains useful as a filtration, operator profile, or parallel bundle schema, not as an automatic literal nesting of manifolds.
 
 ## Claims withdrawn from version 1
 
@@ -601,12 +691,12 @@ Discrete vertical spectrum & Conditional theorem & Requires compact resolvent or
 Local spatial $`3+(1+2+3)`$ split & Exact & Flag-dependent component theorem; not global geometry.
 Selected q=79 rank-$`1+2+3`$ carrier & Exact on selected finite carrier & Does not identify the local strain bundle.
 Universal flat shared line and finite Hessian square & Exact finite theorem & Does not produce the physical nonzero-Chern HYM connection.
-Physical visible-hidden bundle pair & Open: B.HS.01 & Explicit common HYM chamber and anomaly/Bianchi certificate required.
+Physical visible-hidden bundle pair & Open: B.HS.01 & Hidden existence retained; selected visible bundle, common chamber and anomaly/Bianchi certificate required.
 Continuum local-to-q79 intertwiner & Open: B.GEO.01 & Transition, metric, connection, derivative, operator, and Hessian rows required.
-Selected rank-102 continuum execution & Open: B.OP.01 & Nineteen physical blocks, kernel removal, inverse and radii bounds required.
+Selected rank-102 continuum execution & Open: B.OP.01 & Twenty-five physical blocks, kernel removal, inverse and radii bounds required.
 Upper action and automorphism transfer & Open: B.ACTION.01 & One selected upper differential/action must reproduce the lower structures.
-General Born source theorem & Open: B.QM.01 & The restricted one-anchor result does not cover every apparatus context.
-Complete q=79 worldsheet contract & Open: B.QG.01 & Currently five of twelve declared rows.
+Canonical operational Born source & Closed on its declared domain & The one-anchor recorder result does not assert every apparatus context.
+Complete q=79 worldsheet contract & Open: B.QG.01 & Target, action, analytic and quantum consistency data still required.
 
 </div>
 
@@ -616,38 +706,128 @@ Program C now has one precise job: to prevent category mistakes while turning ab
 
 Several concrete advances survive this discipline. The local $`3+(1+2+3)`$ decomposition is exact. Joint projectors and discrete spectra follow under standard, explicit operator hypotheses. The selected q=79 carrier has an exact global $`1+2+3`$ rank profile, and one universal flat shared line controls several finite pullbacks with their connection and holonomy retained.
 
-The remaining difficulty is no longer hidden by notation. The same-source continuum intertwiner, physical HYM endpoints, executed continuum operator, upper action, general Born source, and complete worldsheet theory are independent obligations. Until a source law selects one full realization, nonuniqueness is a limit on physical predictivity, not evidence that every realization is physically equivalent.
+The remaining difficulty is no longer hidden by notation. The same-source continuum intertwiner, common physical HYM endpoint with its selected visible bundle, executed continuum operator, upper action and complete worldsheet theory are independent obligations. Hidden projective HYM existence and canonical operational Born closure remain established. Broader apparatus extensions must be stated separately. Until a source law selects one full realization, nonuniqueness is a limit on physical predictivity, not evidence that every realization is physically equivalent.
 
-<div class="thebibliography">
+# References
 
-99
+<a id="ref-A0"></a>
 
-P. Nero, *The Modal Triplet Theory Program A0: Typed Reduction and Structural Scope*, revised edition, 2026.
+\[1\] P. Nero, *The Modal Triplet Theory Program A0: Typed Reduction and Structural Scope*, revised edition, 2026.
 
-P. Nero, *The Modal Triplet Theory Program B4: Typed Encoding Intersections and Conditional Rigidity*, revised edition, 2026.
+<a id="ref-B4"></a>
 
-P. Nero, *The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations*, version 2, 2026.
+\[2\] P. Nero, *The Modal Triplet Theory Program B4: Typed Encoding Intersections and Conditional Rigidity*, revised edition, 2026.
 
-P. Nero, *Modal Triplet Theory: Foundations*, version 8, 2026.
+<a id="ref-B5"></a>
 
-P. Nero, *World-in-World Genesis: Local Comparison Geometry and a Globalization Program*, corrected fifth edition, 2026.
+\[3\] P. Nero, *The Modal Triplet Theory Program B5: Relative Saturation, Conditional Extended Carriers, and String-Like Realizations*, version 2, 2026.
 
-P. Nero, *Consolidated Exact $`\mathbb Z_{64}`$-to-$`q=79`$ Closure Theorem*, current exact authority packet, 2026.
+<a id="ref-Foundations"></a>
 
-T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1995.
+\[4\] P. Nero, *Modal Triplet Theory: Foundations*, version 8, 2026.
 
-M. Reed and B. Simon, *Methods of Modern Mathematical Physics IV: Analysis of Operators*, Academic Press, 1978.
+<a id="ref-WorldInWorld"></a>
 
-D. Husemoller, *Fibre Bundles*, Springer, third edition, 1994.
+\[5\] P. Nero, *World-in-World Genesis: Local Comparison Geometry and a Globalization Program*, corrected fifth edition, 2026.
 
-S. Kobayashi and K. Nomizu, *Foundations of Differential Geometry, Volume I*, Wiley, 1963.
+<a id="ref-Q79"></a>
 
-J.-X. Fu and S.-T. Yau, The theory of superstring with flux on non-Kahler manifolds and the complex Monge–Ampere equation, *Journal of Differential Geometry* 78 (2008), 369–428.
+\[6\] P. Nero, *Consolidated Exact $`\mathbb Z_{64}`$-to-$`q=79`$ Closure Theorem*, current exact authority packet, 2026.
 
-</div>
+<a id="ref-Kato"></a>
+
+\[7\] T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1995.
+
+<a id="ref-ReedSimon"></a>
+
+\[8\] M. Reed and B. Simon, *Methods of Modern Mathematical Physics IV: Analysis of Operators*, Academic Press, 1978.
+
+<a id="ref-Husemoller"></a>
+
+\[9\] D. Husemoller, *Fibre Bundles*, Springer, third edition, 1994.
+
+<a id="ref-KobayashiNomizu"></a>
+
+\[10\] S. Kobayashi and K. Nomizu, *Foundations of Differential Geometry, Volume I*, Wiley, 1963.
+
+<a id="ref-FuYau"></a>
+
+\[11\] J.-X. Fu and S.-T. Yau, The theory of superstring with flux on non-Kahler manifolds and the complex Monge–Ampere equation, *Journal of Differential Geometry* 78 (2008), 369–428.
+
+<a id="ref-OwnerQM"></a>
+
+\[12\] P. Nero, *Modal Triplet Theory and Nonrelativistic Quantum Mechanics: A Coherent-Sector Reconstruction and the Born-Source Boundary*, current corpus, geometric-source and canonical-recorder owner, 2026.
+
+<a id="ref-OwnerCohesive"></a>
+
+\[13\] P. Nero, *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary*, current corpus; structural identities retained from version 14, 2026.
+
+<a id="ref-OwnerFlux"></a>
+
+\[14\] P. Nero, *Auditing Heterotic Flux Compactifications on Iwasawa and Lens–Nil Geometries: Bundle Obstructions and a q=79 Fu–Yau Completion Contract*, current corpus, selected eta9 transport owner, 2026.
+
+<a id="ref-OwnerHull"></a>
+
+\[15\] P. Nero, *Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary*, version 3, 2026.
+
+<a id="ref-ConsumerNaturality"></a>
+
+\[16\] P. Nero, Projective-module HYM naturality, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_hym_naturality/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerCech"></a>
+
+\[17\] P. Nero, Cech projector and connection compiler, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cech_projector_compiler/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerStrain"></a>
+
+\[18\] P. Nero, Intrinsic nonlinear spectral strain and shorted Hessian, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_spectral_strain_hessian/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerSupportStrain"></a>
+
+\[19\] P. Nero, Support-stratified spectral strain and boundary cost, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_support_stratified_strain/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerCohesive"></a>
+
+\[20\] P. Nero, Twisted cohesive superconnection and stratified Hodge package, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cohesive_superconnection/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerFitting"></a>
+
+\[21\] P. Nero, Global Fitting-sheaf descent, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_global_fitting_descent/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerGateOne"></a>
+
+\[22\] P. Nero, Completed original-Jacobian Gate-1 campaign, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerMThree"></a>
+
+\[23\] P. Nero, Finite response retract and transferred cubic operation, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerMFour"></a>
+
+\[24\] P. Nero, Transferred quartic operation and arity-four identity, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerAllArity"></a>
+
+\[25\] P. Nero, All-arity source-map naturality, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerThreeCycle"></a>
+
+\[26\] P. Nero, Three-cycle independence and rational nondetection, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerTube"></a>
+
+\[27\] P. Nero, Certified local source tube: hash-bound consolidation, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_local_source_tube_consolidation/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerB89"></a>
+
+\[28\] P. Nero, Same-source B89 candidate rejection, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_b89_same_source_rejection/artifact.json), manifest f141a20e, 2026.
+
+<a id="ref-ConsumerPhysicalResidual"></a>
+
+\[29\] P. Nero, Physical residual and corrected twenty-five-block transfer mask, [frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_physical_residual_transfer/artifact.json), manifest f141a20e, 2026.
 
 <!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
-The finite arithmetic claim used by this paper is archived in the [curated results repository at commit `31247ebb5c22`](https://github.com/PeterNero/mtt-results-repro/tree/31247ebb5c22f3fbb5443024365433c6ee0bff4a). The mapped authority/result identifier is `A11/q79_exact_theorem`. It is exact on the selected finite arithmetic and charge branch. Matching its rank profile to the local $`1+2+3`$ decomposition does not construct the open connection-preserving intertwiner, physical HYM endpoints, continuum Hessian, or upper action.
+The finite arithmetic claim used by this paper is archived in the [curated results repository at commit `f141a20ea23c`](https://github.com/PeterNero/mtt-results-repro/tree/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7). The mapped authority/result identifier is `A11/q79_exact_theorem`. It is exact on the selected finite arithmetic and charge branch. Matching its rank profile to the local $`1+2+3`$ decomposition does not construct the open connection-preserving intertwiner, common physical HYM endpoint, continuum Hessian, or upper action. The contextual consumer citations above are bound to frozen artifacts in the same manifest, with their exact tiers and current manuscript owners. The associated review reads the source explanations and checks the frozen hashes; it does not independently replay the large symbolic, arithmetic or interval certificates. Older open labels are not current authority when a later scoped result has closed that question.
 <!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

@@ -14,11 +14,17 @@ CRT q=79 theorem on the selected exact branch.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_exact_theorem/artifact.md); SHA-256 `ccacd5227f91ab08fa3cb961c395d8abc07ff861a1fcbbd583095f6809bdcecc`.
+
+Reviewed 2026-09-12: Exact arithmetic branch retained under the K64 primitive-shift, commuting block-circulant and nil-survivor hypotheses. The lag 16 to 15 and separately selected Mukai sector give q64=15 and q7=2, hence q=79 mod 448. V7 explains why exact block commutation removes the Schur term in this regime, without claiming extraction from an arbitrary continuum Hessian or a visible HYM bundle.
+
+- `main.tex:765`: `sec:arithmetic-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_exact_audit
 
@@ -28,11 +34,17 @@ Executable q=79 exact-branch audit.
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=True, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_exact_audit/artifact.py); SHA-256 `5798fba33a9bbd6b5ea5e53cb98fc8affbbb4bd7ba0ca153de8b1eb0cc0da099`.
+
+Reviewed 2026-09-12: The audit is used as an arithmetic and source-presence audit, not an independent proof of the statements whose text it checks. V7 distinguishes its CRT and primitive-lag computations from the controlling A11 theorem and does not reopen the established finite branch. The local editorial suite independently checks only the small CRT identity.
+
+- `main.tex:765`: `sec:arithmetic-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_gate1_campaign
 
@@ -42,11 +54,17 @@ All 30 original-Jacobian groups and 225 selected support columns complete.
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json); SHA-256 `87d686496382266a21dcba5485d41c6d8ec081a42d9eac5c63f447e6c7a3d17f`.
+
+Reviewed 2026-09-12: The completed original-Jacobian campaign supplies all 30 groups and 225 support columns. V7 explains their role as reduction identities for the selected residue source. This supersedes earlier incomplete Gate-1 counts; it neither supplies the detecting global meridian nor the physical integral readout, analytic twist value or common HYM endpoint.
+
+- `main.tex:815`: `sec:chain-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_characteristic_zero_reduction
 
@@ -56,11 +74,17 @@ Characteristic-zero solve reduced to the declared H20, H11 and H02 kernels; dete
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_characteristic_zero_reduction/artifact.json); SHA-256 `ca409cc557d295b57f9c0e9e3ef59c0f02efb626aae98e67ba7a533346d0f4dc`.
+
+Reviewed 2026-09-12: Characteristic-zero reduction retains the H20 inverse, H11 kernels of dimensions 934 and 398, and the H02 Woodbury kernel of dimension 15158 with good-reduction anchors. V7 separates exact reduction from choosing an Archimedean embedding and from directed interval inversion. The later positive-width local source certificate refines the old numerical frontier without turning it into global transport.
+
+- `main.tex:1001`: `sec:root-numerics`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_gamma_chain_promotion
 
@@ -70,11 +94,17 @@ Selected pairing-one gamma product-chain promotion.
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gamma_chain_promotion/artifact.json); SHA-256 `5b8d522f1c5cdfa01bb31953ad8c8054ab1466fc0a65bed1a82d350af05fdd3e`.
+
+Reviewed 2026-09-12: The source's oriented pairing-one class is retained, including the fourth-thimble combination -T17+T26-T27+T28 and its product with the selected elliptic cycle. Divisor avoidance and homology-class preservation are explained. Existence of an admissible representative is not confused with execution of its ordered transport or delivery of its integral period coordinates.
+
+- `main.tex:815`: `sec:chain-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_execution_frontier
 
@@ -84,11 +114,17 @@ Frozen Eta9 meridian, period, Deligne and HYM execution frontier.
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_execution_frontier/artifact.md); SHA-256 `bea695b671d020d2015280039f34fce68e64a1d53621764112eb2c6ee0704ff6`.
+
+Reviewed 2026-09-12: The entire evolving frontier was read beyond its early incomplete Gate-1 header. Its filling and surgery arguments, ordinary divisor avoidance, equal-label opposite-sign crossing cancellation, and homology/pairing independence under admitted repairs remain substantive. Only the obsolete remaining-Gate-1 instruction is superseded. V7 explicitly distinguishes homological boundary cancellation from a chain-level ordered-root lift.
+
+- `main.tex:815`: `sec:chain-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## unified_source_eta9_theta_background
 
@@ -98,11 +134,17 @@ Selected m=1 eta9 theta orientation, nine-member smooth orbit, universal inciden
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_eta9_theta_background/artifact.json); SHA-256 `403190301e64824ffe681ede250b4937a829ad3b3ea93ca75bda77d42e10e8ca`.
+
+Reviewed 2026-09-12: The physical eta9 system is O_S(9H) external O_E(3[0]), with 249 sections and projective dimension 248, not the auxiliary 3H+3D0 system. The finite theta action transforms values and coefficients contragrediently, cancelling the incidence multiplier. V7 retains the smooth nine-member orbit while distinguishing finite theta descent from the analytic BHT obstruction and its unevaluated zero locus.
+
+- `main.tex:787`: `sec:theta-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_affine_extension_comparison
 
@@ -112,11 +154,17 @@ The physical eta9 normal-function class now defines a selected, nonzero, infinit
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_affine_extension_comparison/artifact.json); SHA-256 `a5926f6eb3764391bdca024290a8fac7d8d12d7a4e6abeaadeefbfd4ca6ac894`.
+
+Reviewed 2026-09-12: H4-T30's primitive infinite-order topological affine extension and rank 1510 are retained. The physical ambient quotient must be typed as L/A=Vdual, not canonically V. Applying the theorem to an integral presentation or physical compiler requires the corresponding marked integral and filtered comparison; equal ranks and rational identifications do not supply it. This consumer correction is reported separately, not treated as a blanket failure of T30.
+
+- `main.tex:843`: `sec:lattice-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_ambient_gluing_discriminant
 
@@ -126,11 +174,17 @@ For a primitive nondegenerate sublattice A of a unimodular lattice L with V=A^pe
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_ambient_gluing_discriminant/artifact.json); SHA-256 `2f5d73ce4ccb54dbdb592555e0d5b9a34e59e2460e1e6e779ea166c1fae2cad8`.
+
+Reviewed 2026-09-12: H4-T32 retains the 23-generator ambient Smith-residue recipe and primewise integral-generation criterion after a nonzero maximal minor. V7 explains that zero free relation defects alone do not remove discriminant residues. The physical pairing vector and its integral residues still have to be emitted. An ordinary Neron-model interpretation of the gerbe needs additional admissibility and specialization data.
+
+- `main.tex:843`: `sec:lattice-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_archimedean_selected_source_mixed_refinement
 
@@ -140,11 +194,17 @@ The selected q79 root source admits an exact 10668-square sparse Q(gamma) coeffi
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_archimedean_selected_source_mixed_refinement/artifact.json); SHA-256 `815cc743fd42689054a094163249fbdefeef86e9466021563c79441ab1f7f1e3`.
+
+Reviewed 2026-09-12: H4-T53 provides the exact sparse compiler and high-precision midpoint refinement at the selected embeddings. Its binary64 factor is a preconditioner and Arb midpoint corrections are not automatically directed enclosures. V7 preserves this computational reduction while distinguishing it from T54-T55 exact p-adic certificates and from the later local interval tube.
+
+- `main.tex:1001`: `sec:root-numerics`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_padic_selected_source_action_and_height_cutset
 
@@ -154,11 +214,17 @@ The frozen H4-T53 source action has a unique exact solution in the six split p-a
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_padic_selected_source_action_and_height_cutset/artifact.json); SHA-256 `c67892f2a2ad3ec1760469146c26bb02567e892db5ff6f9538f3aaa77bf6279b`.
+
+Reviewed 2026-09-12: H4-T54's selected split-prime action through 21817^512 and bounded rational-reconstruction exclusion remain exact in their stated arithmetic setting. The later T55 precision and gauge comparison supersede only the frontier depth. Failure to reconstruct within the tested height window is not failure of existence over Q(gamma), nor an Archimedean continuation theorem.
+
+- `main.tex:1001`: `sec:root-numerics`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_quotient_first_parity
 
@@ -168,11 +234,17 @@ For an integral tube lattice L with primitive source pairing h, period subgroup 
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_quotient_first_parity/artifact.json); SHA-256 `fac39ec2cc789b2edff91f852e81ff5f36f81fbf7fa3fc7b4ff2f55a618f8aca`.
+
+Reviewed 2026-09-12: H4-T33 supplies the quotient-first pairing test [R(z)]=h(z) beta_C for a period-compatible additive readout and primitive h. Nonzero pairing-four readout detects the class; zero only proves four-torsion. V7 gives the small odd-pairing example 2*4-7=1 and retains the requirement that any further operator preserve the period subgroup.
+
+- `main.tex:843`: `sec:lattice-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_quotient_gauss_manin_adapter
 
@@ -182,11 +254,17 @@ A connection on ambient representatives descends to a Jacobian or relative-de-Rh
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_quotient_gauss_manin_adapter/artifact.json); SHA-256 `26fb26b80e1c9d5f1675a0259f37769d8d374bc6776686898dad530785be42cc`.
+
+Reviewed 2026-09-12: H4-T47's quotient connection requires preservation of the relation subbundle and the inhomogeneous frame-change derivative. V7 explains why one frozen quotient matrix is not the full Gauss-Manin connection. Its raw arrays must be divided by six under the later H4-T50 normalization before use as the canonical source; raw linear identities themselves remain valid.
+
+- `main.tex:976`: `sec:root-action`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_relation_discriminant_comparison
 
@@ -196,11 +274,17 @@ For any integrally generating marked meridian presentation E:Z^N->V of a nondege
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_relation_discriminant_comparison/artifact.json); SHA-256 `9652ad61a562f7aca3ecb375933170d6b5de0c115138f81801a52b813d9723f4`.
+
+Reviewed 2026-09-12: H4-T31 separates the free relation obstruction from finite discriminant obstruction via 0 to D(V) to coker(E*Q) to (ker E)dual to 0 for an integrally onto E. V7 includes the negative-A2 example whose zero relation defect still requires a fractional gauge. This exact abstract statement is retained, with V versus the physical Vdual quotient kept explicit.
+
+- `main.tex:843`: `sec:lattice-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_same_source_period_adapter
 
@@ -210,11 +294,17 @@ The selected two-sparse integral root, the moving Rminus graph, the G3BI start c
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_same_source_period_adapter/artifact.json); SHA-256 `a52dc129ed18ea17895ca08418a9aa7f04c1c6f1f2cbc912837dc778c75cb892`.
+
+Reviewed 2026-09-12: H4-T46 identifies the root, moving graph and four-normal source, including R-minus-H=-delta and the fixed elliptic period Omega_B. V7 imports the normalized start source Omega_B[Nroot/6], not an arbitrary scale. The identification is a source adapter, not completed global period transport or physical coupling normalization.
+
+- `main.tex:976`: `sec:root-action`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_action_multiprime
 
@@ -224,11 +314,17 @@ At all 96 roots of sixteen preselected completely split primes, the selected q79
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_action_multiprime/artifact.json); SHA-256 `90bc7b51eb72a60a843bbd7afbbd83926ba116e302d4b959843c5814aa873c7c`.
+
+Reviewed 2026-09-12: H4-T49 retains the sixteen-split-prime replay and characteristic-zero H20 endpoint determinant. It does not reconstruct the entire action over Q(gamma). V7 applies H4-T50's common one-sixth correction to raw sources, preimages, right-hand sides and outputs; finite replay and canonical source normalization are distinct claims.
+
+- `main.tex:976`: `sec:root-action`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_cech_h11_edge_image
 
@@ -238,11 +334,17 @@ Filter the H4-T44 identity-sector Cech twisted-de-Rham complex by Cech degree. T
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_cech_h11_edge_image/artifact.json); SHA-256 `bae8ff27a90d31931124c88b77c907d40e06c0e2b5f7b8424ea198036fb34526`.
+
+Reviewed 2026-09-12: H4-T45E's nonnegative Cech filtration fixes the H11 edge image from the zero-Cech component. Positive-Cech terms complete the cocycle without altering that edge image. V7 does not claim that the full total character was explicitly expanded, and retains the normalized one-sixth root class supplied by the preceding saturated calculation.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_cech_localization
 
@@ -252,11 +354,17 @@ Over the locked good field, no relative rescaling of the three H4-T37 numerators
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_cech_localization/artifact.json); SHA-256 `5500826b6f7bf345d71d403bf7754f910bb1b2f2863b92f85adfeac4912a2bfb`.
+
+Reviewed 2026-09-12: H4-T41 proves localized agreement of the three fractions, with cross-differences first vanishing at denominator power four. That does not solve the earlier unsaturated common-scalar equation. The affine nonzero witness is outside the semistable locus. V7 retains localization while requiring the subsequent equivariant and stable-locus descent steps.
+
+- `main.tex:906`: `sec:root-charts`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_complete_action
 
@@ -266,11 +374,17 @@ At the completely split prime 21817, the selected q79 class [N_root/6] is combin
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_complete_action/artifact.json); SHA-256 `8665fcde7f736bfe6b96d300ae8504d40657ef8dbbbf237bcc4f0dfb3482d876`.
+
+Reviewed 2026-09-12: H4-T48 executes the full H02-to-H11-to-H20 recursive action at six roots of the split prime 21817, retaining the original-Jacobian preimages and divergence factors. V7 preserves the finite action and applies the later common one-sixth normalization rather than treating the raw numerator as the canonical class.
+
+- `main.tex:976`: `sec:root-action`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_coordinate_free_height_cutset
 
@@ -280,11 +394,17 @@ The normalized q79 root-start H11 source is an exact nonzero quotient class over
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_coordinate_free_height_cutset/artifact.json); SHA-256 `783ece97940e9e31a9e517fd0473b40b2065c12b4c33265d53785c3edf735e71`.
+
+Reviewed 2026-09-12: H4-T45F retains a nonzero characteristic-zero class represented compactly by [Nroot/6]. The failed large-coordinate reconstruction in one gauge is a bounded height obstruction, not nonexistence of that class. V7 explains coordinate-free existence separately from an emitted coordinate vector or executed global normal function.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_cycle_class
 
@@ -294,11 +414,17 @@ The selected G3BI root curve Rminus x [1:-1:0] is a complete intersection in the
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_cycle_class/artifact.json); SHA-256 `70414e181c50793e954881bc9c5d740f7f8d8c7ab373b5a13e45210b702a99eb`.
+
+Reviewed 2026-09-12: H4-T34's selected root curve is factored by a conic, one chosen double-cover sheet and two equations fixing the elliptic point. The resulting determinant has degree (10,2,1), but the defining degrees are split nef rather than ample. V7 retains the cycle construction and explains why an ample-cycle scalar formula requires an additional comparison.
+
+- `main.tex:906`: `sec:root-charts`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_embedding
 
@@ -308,11 +434,17 @@ At the selected smooth G3BI start, the toric root-cycle determinant numerator ad
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_embedding/artifact.json); SHA-256 `da22d1108312abdb1a3581706ba6525dd969624cb2243c9e00d4fd53aa71c382`.
+
+Reviewed 2026-09-12: H4-T35 supplies a quotient preimage through a specified 927-coordinate gauge, certified by a nonzero good-reduction minor and hence existence over Q(gamma). V7 does not mistake literal divisibility failure for nonexistence, or the algebraic preimage for an already established geometric cycle-class identification.
+
+- `main.tex:906`: `sec:root-charts`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_euler_descent
 
@@ -322,11 +454,17 @@ The selected Gale rays emit the 58-term Cox top form Omega0 of character beta0=(
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_euler_descent/artifact.json); SHA-256 `1436fb2edb27e729fc416b592cf9fc29441a75ae56d8904dbb0d3b70311b38ed`.
+
+Reviewed 2026-09-12: H4-T45B's Euler and Gale contractions force the desired H11 character (9,1,1) and chart orientation signs (+,-,+). V7 explains the geometric source of these signs. Later affine overlap agreement cannot select the orientation because the relevant sign-sensitive restrictions vanish there.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_factorial_normalization
 
@@ -336,11 +474,17 @@ H4-T45D fixes the canonical Euler-normalized root class as (1/6)P_root, while th
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_factorial_normalization/artifact.json); SHA-256 `7fc2823b0905d5adf6996aa8622be89f287630f9aad642624e78bccb18ebfe2b`.
+
+Reviewed 2026-09-12: H4-T50 is the explicit normalization correction to T47-T49: divide each raw numerator source, original-Jacobian preimage, right-hand side and action output by six. The GF11 conversion is multiplication by two. V7 preserves linear zero-residual identities, separates raw from canonical witnesses, and lists the consumer correction distinctly.
+
+- `main.tex:976`: `sec:root-action`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_full_pv_character
 
@@ -350,11 +494,17 @@ The full ten-derivative Clifford contraction of the H4-T39 rank-16 Koszul matrix
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_full_pv_character/artifact.json); SHA-256 `aeb64ba8595af9c345fd43af679e2ed28be61c3b68abeb9c1b779f4d377a9ce9`.
+
+Reviewed 2026-09-12: H4-T40's full ten-derivative character is a nonzero polynomial with zero ordinary H02 Jacobian image at the locked finite place. V7 explains that this is not vanishing of the full graded, localized Koszul source. The conclusion rules out one scalar shortcut, not the root cycle or every residue realization.
+
+- `main.tex:906`: `sec:root-charts`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_identity_cech_atyah
 
@@ -364,11 +514,17 @@ On the H4-T43 support open, the H4-T42 parity bundles, potential line and H11 li
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_identity_cech_atyah/artifact.json); SHA-256 `0a58debb5c0e5b73a8c0b1e20797fe77db6732fed0983649e9cee12a1332b294`.
+
+Reviewed 2026-09-12: H4-T44 supplies 27 unimodular support charts, their integral monomial frames and transition cycles, and the logarithmic-differential Atiyah data. V7 imports these as actual descent data, not an identification based on dimension. Subsequent R-charge, orientation and saturation steps are retained in order.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_koszul_character
 
@@ -378,11 +534,17 @@ The selected H4-T34 four-pair factorization canonically defines a rank-16 Koszul
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_koszul_character/artifact.json); SHA-256 `5e7956f81a487ab589624a0b4c7655f60b393012eb59525a1f7bdf039cbcd2e2`.
+
+Reviewed 2026-09-12: H4-T39 replaces the failed ordinary scalar representation by the full 45-component degree-eight determinant and rank-16 Koszul matrix factorization D^2=Phi I. V7 keeps its line-valued curvature explicit: it is not a differential squaring to zero on an ordinary cochain complex, nor a failure of the underlying root class.
+
+- `main.tex:906`: `sec:root-charts`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_multichart_gluing
 
@@ -392,11 +554,17 @@ The selected equations Q2, w+G3, t0+t1 and t2 form an ordered regular-embedding 
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_multichart_gluing/artifact.json); SHA-256 `9e7784415a683617bdd43e97fe4ee9aab058b58b8805051b77c55051688b07a5`.
+
+Reviewed 2026-09-12: H4-T36 retains the regular embedding and three-chart cover. Its proposed single-scalar globalization is refined negatively by T38A, not accepted from the early header. V7 explains the later rank obstruction while preserving the chart, Koszul and localized alternatives instead of classifying the whole source as historical.
+
+- `main.tex:906`: `sec:root-charts`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_multichart_numerators
 
@@ -406,11 +574,17 @@ The x*t0, y*t0 and z*t0 covering charts each emit a nonzero exact G3BI determina
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_multichart_numerators/artifact.json); SHA-256 `ca2451c59b485938fb7ec0fb1f38ee7482f8d3701fc882b29ea7e971bcf50d56`.
+
+Reviewed 2026-09-12: H4-T37 emits all three chart numerators, which remain inputs to the localization and oriented descent. V7 explains their role alongside T38A's incompatible common-scalar system. Three legitimate local numerators need not admit the single ordinary-Jacobian scalar demanded by that earlier representation.
+
+- `main.tex:906`: `sec:root-charts`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_multichart_obstruction
 
@@ -420,11 +594,17 @@ For the normalized H4-T37 x*t0, y*t0 and z*t0 numerators over GF(11), the comple
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_multichart_obstruction/artifact.json); SHA-256 `12ee12d78df7bf01241f230e16afbbcbb6c09d1783aa192501474fe07ce656f2`.
+
+Reviewed 2026-09-12: H4-T38A's coefficient rank 85 versus augmented rank 86 obstructs the proposed common scalar at the locked finite place; the stacked multiplier has rank 1012, not 1013. V7 retains the precise representation-level exclusion and the later Koszul/localized root source, without inferring a no-go for the geometric cycle.
+
+- `main.tex:906`: `sec:root-charts`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_oriented_cech_localization
 
@@ -434,11 +614,17 @@ At the locked good place, the canonical H4-T45B orientation (+,-,+) also gives a
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_oriented_cech_localization/artifact.json); SHA-256 `1d745810b62bb0346ca186bdb9fc88bae0a0fe2c3cf3ad05c1c90316305d6a06`.
+
+Reviewed 2026-09-12: H4-T45C shows that both oriented and unsigned fractions can glue on the tested affine overlaps because the sign-sensitive restrictions vanish. V7 explains why this does not license choosing signs from gluing alone. Orientation remains the Gale-form input, and the saturated oriented section is the later relevant object.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_rcharge_bridge
 
@@ -448,11 +634,17 @@ For beta=(0,0,1), the Cox group splits exactly as K times the residual R-charge 
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_rcharge_bridge/artifact.json); SHA-256 `c1bce2427a96c05ca41eefc0eae694d4d3e53af041fcb3ead186079272b0633b`.
+
+Reviewed 2026-09-12: H4-T45A passes to the potential-trivializing torsor so that a function-valued character formula applies on its eight-dimensional quotient. Residual R-charge must be retained. V7 distinguishes this typed move from erasing the line-valued potential in the earlier matrix-factorization construction.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_saturated_h11_lift
 
@@ -462,11 +654,17 @@ Over the locked B69 good fiber GF(11), the already-selected H4-T35 B103 H11 vect
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_saturated_h11_lift/artifact.json); SHA-256 `0e3a48942ab2b01859a3839b23a70a302cc9f5b6687953a4b7af5e1800715a77`.
+
+Reviewed 2026-09-12: H4-T45D identifies the saturated oriented finite-fiber H11 section and its compulsory factor one-sixth in 1013 coordinates. V7 keeps saturation and normalization separate from affine gluing, then connects them to the edge-class and characteristic-zero coordinate-free results. It does not infer the full global BHT class.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_stacky_inertia
 
@@ -476,11 +674,17 @@ The selected q79 eta9 Cox semistable stack has 735 support strata: 686 with triv
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_stacky_inertia/artifact.json); SHA-256 `4b0bed1a2dcf9a017101b886a015cb6058500441b54c3279b63d6f7c61c8ceb9`.
+
+Reviewed 2026-09-12: H4-T43's stable-stratum enumeration and explicit w-inverse contraction remove the two nonidentity mu3 inertia sectors. They do not erase the identity-sector character. V7 retains the 735-stratum context, age distinctions and support-specific contraction while continuing to the identity Cech-Atiyah and Euler descent.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_stacky_mf_typing
 
@@ -490,11 +694,17 @@ The H4-T39 rank-16 Koszul object canonically folds into explicit rank-eight Cox-
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_stacky_mf_typing/artifact.json); SHA-256 `3d09ce7e501bc77de9aabda855e99e49d1c95fcc1f57cdca7a568ddb137e1980`.
+
+Reviewed 2026-09-12: H4-T42 types the construction as two rank-eight Cox-equivariant bundles with a potential valued in O(0,0,1). V7 uses that line-valued typing before discussing stable strata and the potential-trivializing torsor. The curved Koszul object is not silently promoted to an ordinary dg complex.
+
+- `main.tex:944`: `sec:root-descent`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_root_start_woodbury_adapter
 
@@ -504,11 +714,17 @@ The H4-T50 canonical root-start state admits the exact UST.G3DE adapted coordina
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_root_start_woodbury_adapter/artifact.json); SHA-256 `e802ba5a4af8ac5f948d47405cfd8a31dd3de7f18a57f94b43922f82217aa96b`.
+
+Reviewed 2026-09-12: H4-T51 constructs the 6022-coordinate Woodbury adapter z=S^-1 W x with 34 balanced blocks. V7 explains its role as an exact computational reorganization of the selected canonical source. It does not select physical normalization or convert finite and height checks into pathwise interval transport.
+
+- `main.tex:1001`: `sec:root-numerics`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_selected_source_deep_height_and_gauge_cutset
 
@@ -518,11 +734,17 @@ The frozen H4-T53 source action lifts exactly at all six split roots of p=21817 
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_selected_source_deep_height_and_gauge_cutset/artifact.json); SHA-256 `a2548fc9b83eaabb4e68d4e08f3caaecf441c0042c697b9b08099dfca4ecf339`.
+
+Reviewed 2026-09-12: H4-T55 extends the selected exact p-adic action to 21817^2048 and compares fourteen admissible gauges. The 7746-dimensional core is minimal only within that tested family. V7 retains the bounded reconstruction exclusions and avoids both a global gauge-optimality claim and a false nonexistence conclusion.
+
+- `main.tex:1001`: `sec:root-numerics`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## preprojection_h4_q79_eta9_selected_source_woodbury_base_resolvent
 
@@ -532,11 +754,17 @@ For the H4-T50 canonical root-start endpoint x and H4-T51 coordinate z=S^-1 W x,
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_eta9_selected_source_woodbury_base_resolvent/artifact.json); SHA-256 `19d26d118b2b2639c2f7bc108adf8ad523d85843b3dec22aaa9121d623d4268a`.
+
+Reviewed 2026-09-12: H4-T52 evaluates Pz through one base-resolvent solve instead of materializing A0^-1 U, and replays the endpoint and reduced equation at all 96 selected roots. The reconstruction test finds no stable nonzero coordinate in its tested window. V7 distinguishes that bounded result from the existence of the exact quotient class.
+
+- `main.tex:1001`: `sec:root-numerics`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_three_cycle_full_coverage
 
@@ -546,11 +774,17 @@ The promoted characteristic-zero transport campaign covers all three selected A1
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_full_coverage/artifact.json); SHA-256 `f0a1376944fe518608e8556e4959feed5124b82e1cf3543eaf9b9c125563fc7f`.
+
+Reviewed 2026-09-12: The full-coverage artifact was read as an evolving coverage record with its earlier seven-eighths base preserved as provenance. V7 combines it with the subsequent three-face frontier merge and source-bound readiness, not with a claim that a complete cover by itself proves cycle intersections or detects the global affine class.
+
+- `main.tex:1035`: `sec:cycles-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_three_cycle_frontier_merge
 
@@ -560,11 +794,17 @@ The committed prefix-free frontier merge completes the selected three-cycle cove
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_frontier_merge/artifact.json); SHA-256 `05678591e13de691e11227241ed69c6a862d32ff252e79d9d15eb07be7037a4d`.
+
+Reviewed 2026-09-12: The full frontier payload was traversed: all 81 source records and all three frontier faces, with 496 terminal leaf codes. The editorial suite checked exact prefix-free dyadic coverage and empty residual lists for every face. V7 explains how this completes the 24-face cover; it does not claim to rerun interval transport or independently verify Boolean certificates.
+
+- `main.tex:1035`: `sec:cycles-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_three_cycle_intersection_readiness
 
@@ -574,11 +814,17 @@ Three verified eight-face characteristic-zero transport covers share one mathema
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_intersection_readiness/artifact.json); SHA-256 `cb3be7505e09c167c7eb5857167947c93f7804a03e683a1c669460d62d6f2cc3`.
+
+Reviewed 2026-09-12: The readiness artifact binds three complete eight-face covers to one mathematical source and the completed frontier. V7 treats readiness as the source and coverage precondition for endpoint projection and intersection analysis, not as the intersection calculation itself. Later separation and non-detection refine this stage.
+
+- `main.tex:1035`: `sec:cycles-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_three_cycle_endpoint_projection
 
@@ -588,11 +834,17 @@ All 4,251 selected transport cells are projected to ten exact Arb endpoint-compo
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_endpoint_projection/artifact.json); SHA-256 `febf0b2d9f360e28596187710e2240f8699b126a4271e08add2f75f8f25df175`.
+
+Reviewed 2026-09-12: Every one of the 4251 endpoint cell records was parsed, including all ten serialized component intervals per cell. V7 explains endpoint projection as distinct from coverage and intersection. The editorial check validates interval syntax, rational endpoints and source-hash structure, not the numerical integration or enclosure proof behind the packet.
+
+- `main.tex:1035`: `sec:cycles-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_three_cycle_common_fiber_separation
 
@@ -602,11 +854,17 @@ All 5,830,406 cross-cycle endpoint-box pairs are strictly separated, proving pai
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_common_fiber_separation/artifact.json); SHA-256 `b4e57c4725af084239254a50f410ae6f39679d372eb971c87ef7af75c01082aa`.
+
+Reviewed 2026-09-12: The common-fiber artifact's cross-cycle box-union separation is imported as the source's exhaustive separation certificate. Together with the retained self-intersections it feeds the B96 Gram calculation. V7 does not infer pairings merely from endpoint projection or claim that editorial JSON parsing independently replayed the separation computation.
+
+- `main.tex:1035`: `sec:cycles-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## eta9_three_cycle_b96_nondetection
 
@@ -616,11 +874,17 @@ The selected cycles have Gram matrix -2 I3, determinant -8 and rank three; B96 t
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json); SHA-256 `972e85eab2638fa011061e47681e9e7bd545e5de1be71b4e08423576ac08ac4f`.
+
+Reviewed 2026-09-12: B96 closes the chosen three-cycle subsystem: Gram matrix -2I3, determinant -8, independent cycles and vanishing detected rational affine relation defects. V7 retains the complete, non-detecting result without promoting rational coboundary status to integral coboundary membership or global twist triviality. Repeating this completed subsystem is not the missing detecting theorem.
+
+- `main.tex:1035`: `sec:cycles-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_eta9_local_source_tube_consolidation
 
@@ -636,11 +900,10 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_local_source_tube_consolidation/artifact.json); SHA-256 `6ee52b3e2f0566aae466d857c59c70c7a6f581474522613a8e97b83b5f0b7756`.
 
-Reviewed 2026-09-12: Despite absent literal packet IDs, the current TeX explicitly states the 164-dimensional source interval and the candidate-specific B89 conclusion, together with the frozen manifest citation. This is a scoped consumer summary, not a repeated proof; the detailed strand counts remain in the owning certificate.
+Reviewed 2026-09-12: The consolidation record is an evidence index for the positive-width full-source and correlated-lift certificates, not an additional numerical theorem. V7 retains the 164-dimensional local interval and explicitly separates local closure from useful-width global transport, the moving frame and integral readout. Its established local conclusion is not reopened by older source headers. The same-source B89 replay retains its genuine mod-two cokernel detector, annihilating M-I and pairing one with the translation. V7 correctly rejects that candidate from the zero locus, without asserting that the integral obstruction has exact order two or excluding every candidate. Local scalar readouts do not override this rejection.
 
-- `main.tex:613`: `source with a certified correlated lift`
-- `main.tex:615`: `Thus B89 is rejected from the zero locus`
-- `main.tex:647`: `All statements in this update are imported from the frozen`
+- `main.tex:1058`: `sec:tube-import`
+- `main.tex:1084`: `sec:readout-import`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -652,11 +915,17 @@ The complete selected 164x164 local source is reconstructed from all 3,348 inver
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_positive_width_full_source_tube/artifact.json); SHA-256 `bed418f8d95cc503af1e783af2f0a4da789662908edb0674ff80502b3b0eb923`.
+
+Reviewed 2026-09-12: The full 164-by-164 algebraic connection is certified on normalized 0<=u<=2^-96 with the stated inverse and lift margins. V7 explains that u is dimensionless, that the entries belong to one correlated source family, and that independent arbitrary interval-entry combinations are not certified. Global useful-width continuation remains a different task.
+
+- `main.tex:1058`: `sec:tube-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_eta9_correlated_local_lift_increment
 
@@ -666,11 +935,17 @@ The exact finite-increment identity propagates the same local source to correlat
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_correlated_local_lift_increment/artifact.json); SHA-256 `abc7336ab851356f98d71ec7b6a795e64c8a0a8cbb84ed6171663b4eb33525d0`.
+
+Reviewed 2026-09-12: The correlated local-lift increment uses Delta S=-S0 Delta J21 S and Delta R=-(Delta J11+R0 Delta J21)S. V7 explains why common initial data sharpen the increment without a new solve and without improving the separate uncertainty of R0. This does not itself certify path-wide global transport or physical time.
+
+- `main.tex:1058`: `sec:tube-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_eta9_b89_same_source_rejection
 
@@ -686,11 +961,10 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_b89_same_source_rejection/artifact.json); SHA-256 `8674e9bb0f870cde9cc11c7270308c5ac75cebd90798a8cfb034fa0ff3efacda`.
 
-Reviewed 2026-09-12: Despite absent literal packet IDs, the current TeX explicitly states the 164-dimensional source interval and the candidate-specific B89 conclusion, together with the frozen manifest citation. This is a scoped consumer summary, not a repeated proof; the detailed strand counts remain in the owning certificate.
+Reviewed 2026-09-12: The consolidation record is an evidence index for the positive-width full-source and correlated-lift certificates, not an additional numerical theorem. V7 retains the 164-dimensional local interval and explicitly separates local closure from useful-width global transport, the moving frame and integral readout. Its established local conclusion is not reopened by older source headers. The same-source B89 replay retains its genuine mod-two cokernel detector, annihilating M-I and pairing one with the translation. V7 correctly rejects that candidate from the zero locus, without asserting that the integral obstruction has exact order two or excluding every candidate. Local scalar readouts do not override this rejection.
 
-- `main.tex:613`: `source with a certified correlated lift`
-- `main.tex:615`: `Thus B89 is rejected from the zero locus`
-- `main.tex:647`: `All statements in this update are imported from the frozen`
+- `main.tex:1058`: `sec:tube-import`
+- `main.tex:1084`: `sec:readout-import`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -702,11 +976,17 @@ The proposed binary Cayley-Serre scale fails its row-gauge test; keep the canoni
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_directed_cayley_serre_scale/artifact.json); SHA-256 `c6db5506a469a667f3c08ba467d507d9b294e1ead909a5be8f88b549067c2671`.
+
+Reviewed 2026-09-12: CBF T65 shows why tiny residuals from frozen binary coefficient arrays do not validate a scale: three row gauges disagree on the proposed value. V7 retains the representation-specific exclusion and distinguishes it from T67's later characteristic-zero, correlated-adjoint result. No numerical precision claim is promoted to physical source selection.
+
+- `main.tex:1084`: `sec:readout-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_eta9_cayley_critical_correlated_readout
 
@@ -716,11 +996,17 @@ Correlated adjoint solving certifies a characteristic-zero scalar readout on the
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_cayley_critical_correlated_readout/artifact.json); SHA-256 `f8798baa711970b85b48026dd0339e2fb413d5d066dbe3166845a0d0c16240bc`.
+
+Reviewed 2026-09-12: CBF T67 supplies the characteristic-zero inverse and correlated-adjoint enclosure whose denominator excludes zero. The method-chart scalar 585/(2D) and its derivative are defined at the stated edge-2 midpoint. V7 imports this scoped readout on the declared B89 source, not a measured coupling, global analytic obstruction or valid physical endpoint.
+
+- `main.tex:1084`: `sec:readout-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_eta9_twisted_spectral_rank_divisibility
 
@@ -730,11 +1016,17 @@ A rank-r twisted spectral object requires r beta_C=0 for the actual global twist
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_twisted_spectral_rank_divisibility/artifact.json); SHA-256 `b31b80c6eca068abc864815b4c8d3ba3ff646946c655ee8e52b79bd17dbceca8`.
+
+Reviewed 2026-09-12: CBF T68's determinant rule r[alpha]=0 for a locally free alpha-twisted rank-r object is retained, as is the conditional degree-three transform rank 3r. B89's true mod-two detector excludes odd ranks, not all even-rank existence. Applying another candidate's local component sieve to the actual global gerbe requires a proved specialization map; an ordinary Neron model is not automatic. This consumer qualification is separately reported.
+
+- `main.tex:1084`: `sec:readout-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_eta9_framed_member_spectral_rank_exclusion
 
@@ -750,11 +1042,11 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_framed_member_spectral_rank_exclusion/artifact.json); SHA-256 `1649d0cae1c89a0ff32d87d65b288c3a5de761bff3fbe4feb754170f4441d2f8`.
 
-Reviewed 2026-09-12: The current section explains T69's retraction, T72's coefficient-rank boxes and T73's midpoint-only canonical-dual invertibility, and links the exact three frozen artifacts. It explicitly excludes identifying these ranks with the global Picard/BHT derivative.
+Reviewed 2026-09-12: CBF T69 retracts the global ranks-through-1449 exclusion based on the fixed-fiber Picard calculation. V7 preserves that finite fiber result and leaves the framed member's global rank-one and rank-two alternatives undecided. It does not substitute the local 82-dimensional fiber Picard datum for the 248-dimensional global BHT restriction. CBF T72 supplies characteristic-zero midpoint coefficient rank 122 and its positive-width three-panel coefficient certificate with Neumann defect below 0.199. V7 retains this result without treating it as path-wide canonical-bilinear invertibility or a derivative of the nonlinear global Picard/BHT map. T73's later branch inventory is also retained. CBF T73 supplies K3 adjunction and three invertible canonical bilinears at the physical midpoints, of total rank 246; postcomposition preserves coefficient rank 122. Its later artifact supplies all three local branch carriers, refining the earlier inventory. V7 keeps midpoint bilinear invertibility distinct from coefficient-rank boxes and from the still-uncomputed global BHT class.
 
-- `main.tex:609`: `September update: local observability and the global obstruction`
-- `main.tex:624`: `The fixed-fiber calculation survives`
-- `main.tex:642`: `invertibility is a midpoint result`
+- `main.tex:703`: `September update: local observability and the global obstruction`
+- `main.tex:1119`: `sec:response-import`
+- `main.tex:1084`: `sec:readout-import`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -766,11 +1058,17 @@ The 122-dimensional projective graph tangent has fixed-fiber image rank70 and ke
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_graph_tangent_single_fiber_rank/artifact.json); SHA-256 `003d415c836f1cb679681fbf8ef0bf387d555a721d3edddc4629c5f89d031484`.
+
+Reviewed 2026-09-12: CBF T70 retains the projective tangent dimension 122, single-evaluation rank 70, kernel 52 and cokernel 12. The packet's rank_calculation gives stacked rank 196, consistent with 196-126=70, but a Boolean key incorrectly says rank208. V7 explains the scoped coefficient map; the source-label defect is separately reported for shared errata, with no large matrix rerun.
+
+- `main.tex:1119`: `sec:response-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_eta9_graph_tangent_multifiber_observability
 
@@ -780,11 +1078,17 @@ Every tested pair of selected residue evaluation rows has rank111; a determinist
 
 Selected-source topology and transport; finite-fiber and global classes remain distinct.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
-Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
+Literal identifier scan: TeX=False, metadata=True. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_graph_tangent_multifiber_observability/artifact.json); SHA-256 `294b63ab412ed0cda97eabb49068da2ff4f7def7d5d43ea94091659068ed682a`.
+
+Reviewed 2026-09-12: CBF T71's pair evaluations have rank 111 and kernel 11; a dependent triple adds no rank, whereas the deterministic independent triple reaches 122, with its finite-field minor. V7 explains independence of coefficient rows, not a slogan that any three fibers suffice. T72 supplies the subsequent characteristic-zero and local box refinement.
+
+- `main.tex:1119`: `sec:response-import`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## q79_eta9_physical_midpoint_three_evaluation_frame
 
@@ -800,11 +1104,11 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_physical_midpoint_three_evaluation_frame/artifact.json); SHA-256 `a1a8085dcee7b0371c8636c802da395a40111999732b1fa3bd6f9a82f92b43b4`.
 
-Reviewed 2026-09-12: The current section explains T69's retraction, T72's coefficient-rank boxes and T73's midpoint-only canonical-dual invertibility, and links the exact three frozen artifacts. It explicitly excludes identifying these ranks with the global Picard/BHT derivative.
+Reviewed 2026-09-12: CBF T69 retracts the global ranks-through-1449 exclusion based on the fixed-fiber Picard calculation. V7 preserves that finite fiber result and leaves the framed member's global rank-one and rank-two alternatives undecided. It does not substitute the local 82-dimensional fiber Picard datum for the 248-dimensional global BHT restriction. CBF T72 supplies characteristic-zero midpoint coefficient rank 122 and its positive-width three-panel coefficient certificate with Neumann defect below 0.199. V7 retains this result without treating it as path-wide canonical-bilinear invertibility or a derivative of the nonlinear global Picard/BHT map. T73's later branch inventory is also retained. CBF T73 supplies K3 adjunction and three invertible canonical bilinears at the physical midpoints, of total rank 246; postcomposition preserves coefficient rank 122. Its later artifact supplies all three local branch carriers, refining the earlier inventory. V7 keeps midpoint bilinear invertibility distinct from coefficient-rank boxes and from the still-uncomputed global BHT class.
 
-- `main.tex:609`: `September update: local observability and the global obstruction`
-- `main.tex:624`: `The fixed-fiber calculation survives`
-- `main.tex:642`: `invertibility is a midpoint result`
+- `main.tex:703`: `September update: local observability and the global obstruction`
+- `main.tex:1119`: `sec:response-import`
+- `main.tex:1084`: `sec:readout-import`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -822,11 +1126,11 @@ Literal identifier scan: TeX=True, metadata=True. A missing identifier is not pr
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_physical_canonical_dual_response_observability/artifact.json); SHA-256 `5e7a4d37026be0154511d60cadb48a6e93a927d8c24309b2b970110910f4cd8a`.
 
-Reviewed 2026-09-12: The current section explains T69's retraction, T72's coefficient-rank boxes and T73's midpoint-only canonical-dual invertibility, and links the exact three frozen artifacts. It explicitly excludes identifying these ranks with the global Picard/BHT derivative.
+Reviewed 2026-09-12: CBF T69 retracts the global ranks-through-1449 exclusion based on the fixed-fiber Picard calculation. V7 preserves that finite fiber result and leaves the framed member's global rank-one and rank-two alternatives undecided. It does not substitute the local 82-dimensional fiber Picard datum for the 248-dimensional global BHT restriction. CBF T72 supplies characteristic-zero midpoint coefficient rank 122 and its positive-width three-panel coefficient certificate with Neumann defect below 0.199. V7 retains this result without treating it as path-wide canonical-bilinear invertibility or a derivative of the nonlinear global Picard/BHT map. T73's later branch inventory is also retained. CBF T73 supplies K3 adjunction and three invertible canonical bilinears at the physical midpoints, of total rank 246; postcomposition preserves coefficient rank 122. Its later artifact supplies all three local branch carriers, refining the earlier inventory. V7 keeps midpoint bilinear invertibility distinct from coefficient-rank boxes and from the still-uncomputed global BHT class.
 
-- `main.tex:609`: `September update: local observability and the global obstruction`
-- `main.tex:624`: `The fixed-fiber calculation survives`
-- `main.tex:642`: `invertibility is a midpoint result`
+- `main.tex:703`: `September update: local observability and the global obstruction`
+- `main.tex:1119`: `sec:response-import`
+- `main.tex:1084`: `sec:readout-import`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 

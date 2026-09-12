@@ -5,11 +5,11 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v2
-date: Version 2, July 2026
-generated_from_main_tex_sha256: 4501582a4a3483668d18eba74773813fc8d4e23e4863b271270f1454f2f9f4f6
+current_version: v3
+date: Version 3, September 2026
+generated_from_main_tex_sha256: db115e50f0022f61b5b745524753dd8e0b76ba90a5c77977a4172081c446da67
 paper_id: modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: |
   Modal Triplet Theory and Heterotic Vacuum Selection:
@@ -19,6 +19,20 @@ zenodo_doi: 10.5281/zenodo.21707551
 zenodo_record_id: 21707551
 zenodo_url: "https://zenodo.org/records/21707551"
 ---
+
+# Revision note: Version 3
+
+#### Reason and resolution.
+
+The selection ladder is unchanged, but its current-evidence discussion needed the later hidden-bundle, certified local-transport, candidate-rejection and global-descent results. They are imported with their distinct scopes, not used as a new proof of unique physical vacuum selection.
+
+#### Retained result.
+
+All local theorem bodies, counterexamples and earlier case-study corrections are preserved. No numerical source is recomputed and no owner proof is repeated.
+
+#### Remaining boundary.
+
+A common physical tuple, its global obstruction decision, attraction and preparation law are still needed. The already completed hidden-HYM existence tier is not reopened by that compound requirement.
 
 # Revision note: Version 2
 
@@ -306,6 +320,14 @@ The selected $`q=79`$ program contains nontrivial and reusable ingredients:
 
 These facts improve the search problem. They constrain which branch and which local analytic architecture should be used. They do not yet satisfy the same-carrier requirement of <a href="#eq:balanced,eq:hym,eq:bianchi" data-reference-type="ref+label" data-reference="eq:balanced,eq:hym,eq:bianchi">[eq:balanced,eq:hym,eq:bianchi]</a>.
 
+## Later source results sharpen, rather than replace, the ladder
+
+The current hidden rank-nine construction and its existential HYM result are stronger than the earlier rank-two support witness. They belong to the Hull–Strominger execution audit and remain closed at their declared tier. The outstanding requirement is the complete compatible visible–hidden tuple, common chamber, Bianchi representative and selected operator, not a demand to reconstruct every hidden ingredient again. The [Hull–Strominger owner paper](https://github.com/PeterNero/mtt-papers/tree/main/papers/modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83) explains that distinction.
+
+The later transport results give a concrete example of the ladder. The original-Jacobian Gate 1 is complete on its declared selected columns, and a certified local $`164`$-dimensional Gauss–Manin chart exists for $`0\leq u\leq2^{-96}`$. These are substantial exact/local analytic results, but neither proves transport along an arbitrary global path. The B89 affine obstruction is nonzero, so that particular candidate is rejected; it is not a rejection of every physical candidate. Conversely, complete computation of a three-cycle subsystem need not decide the global class: the B96 non-detection result explains why that subsystem cannot supply the missing decision. These results are interpreted in the [Flux owner paper](https://github.com/PeterNero/mtt-papers/tree/main/papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155). Their frozen sources are `eta9_gate1_campaign`, `q79_eta9_local_source_tube_consolidation`, `q79_eta9_b89_same_source_rejection` and `eta9_three_cycle_b96_nondetection` in the curated repository.
+
+Two other results prevent false shortcuts. Global Fitting-sheaf descent identifies a support object and its divisor class; generic corank three is not a rank-one spectral line. The BK3 rank-zero statement concerns the large-gauge period kernel. Its injective dense nonclosed two-real-parameter image is not a zero-dimensional moduli space or a zero-parameter vacuum. The [Cohesive owner paper](https://github.com/PeterNero/mtt-papers/tree/main/papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows) contains these scoped imports, with frozen `q79_global_fitting_descent` and `q79_bk3_rank_zero_kernel` certificates. Together these findings strengthen the available construction and reject specific invalid inferences without identifying consistency, attraction and physical realization.
+
 ## Physical compactification-selection certificate
 
 A future claim that MTT selects one heterotic compactification should provide at least the following certificate:
@@ -362,6 +384,25 @@ The corrected conclusion is precise. Componentwise left-invariant equations can 
 
 The former Iwasawa and Lens–Nil examples do not reach those levels: the Iwasawa physical bundle chain fails, and Lens–Nil is not a complex Hull–Strominger target. The exact $`q=79`$ finite branch and rank-two Cech/HYM results remain real progress at narrower tiers. The next physical advance is therefore not another reformulation of the component equations. It is the common rank-three visible–hidden Fu–Yau tuple, followed by the connection-preserving MTT bridge, its attraction domain, and its source rule.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The q79 theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate are direct evidence only for the finite branch, topological witness, and declared rank-two analytic tier. They do not establish global exhaustion, a physical rank-three visible-hidden Hull-Strominger tuple, dynamical attraction of that tuple, or a source measure selecting one realized compactification.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 #### Rows used directly in this paper.
 
 - (*numeric certified*).
@@ -381,22 +422,3 @@ The former Iwasawa and Lens–Nil examples do not reach those levels: the Iwasaw
   CRT q=79 theorem on the selected exact branch.
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
-
-The q79 theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate are direct evidence only for the finite branch, topological witness, and declared rank-two analytic tier. They do not establish global exhaustion, a physical rank-three visible-hidden Hull-Strominger tuple, dynamical attraction of that tuple, or a source measure selecting one realized compactification.
-
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
-
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
-
-## Rows used directly in this paper
-
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A07/literal_cech_witness` (**DERIVED_EXACT**): Literal 81-entry, 729-cocycle finite Cech witness.
-- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
-- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

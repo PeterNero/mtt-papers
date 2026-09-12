@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "September 2026, Version 4",
+  "current_version": "v5",
+  "date": "September 2026, Version 5",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16950516",
     "created": "2026-07-31T11:02:09.270932+00:00",
@@ -32,9 +32,9 @@
     "updated": "2026-07-31T11:02:09.656472+00:00",
     "version": "v3"
   },
-  "main_tex_sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+  "main_tex_sha256": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af",
   "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
-  "paper_md_sha256": "0ef71a10d27473aa5d42a02827b867b8036599820679380eb7bdfd5bf7399ac7",
+  "paper_md_sha256": "009d6a04cb8b9e9f47c60020f3598ed22fde79b1ab7c6eb5d2a213acb4c3591f",
   "release_state": "current_revised_tex",
   "result_refs": [
     "charged_yukawa_higgs_profile",
@@ -52,6 +52,7 @@
     "physical_df_96",
     "precision_15_source_transport",
     "precision_8x8_workspace",
+    "q79_family_source_cutset",
     "qutrit_weyl_27_matrix",
     "sm_axion_gs_reduction",
     "sm_axion_quality_bound",
@@ -70,16 +71,16 @@
   ],
   "revision": {
     "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "7f88a8687a883788063559456b7e5780c033dcecdd75ca280d0e9f5e8d974fed",
+    "revision_evidence_sha256": "dcd50fb15d1d719873436b563d4a3c2ba8cdffee7be07f8ccddf5bc0b8de63f2",
     "selected_revision": true,
     "superseded_source_path": "13 Standard Model & Topology-Only Constraints/_work/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 48443,
+      "bytes": 51539,
       "path": "main.tex",
-      "sha256": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550"
+      "sha256": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
     },
     {
       "bytes": 3723,
@@ -90,7 +91,7 @@
   "source_provenance": {
     "legacy_source_path": "13 Standard Model & Topology-Only Constraints/_work/Modal_Triplet_Theory__From_MTT_to_Standard_Model_v2"
   },
-  "source_tree_sha256": "87d22b9d35e414173bee3b1f1da853bc72d769093eab5358751611f4dcbc9c36",
+  "source_tree_sha256": "46257232adcdd4c27d37730d380e88272227eab865c1589d7f6c39e8ebd6ea29",
   "title": "From Modal Triplet Theory to a Standard-Model Sector Exact Finite Structure, Profile-Level Equivalence, and the No-Knob Boundary",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

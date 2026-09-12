@@ -1,12 +1,12 @@
 {
-  "abstract": "Feynman graphs are used in quantum field theory, classical statistical field theory, stochastic dynamics, and effective descriptions of gravity. Their recurrence has a precise but limited explanation. Once one specifies a nondegenerate quadratic kernel, interaction tensors, a grading, and a contraction rule, Wick expansion organizes perturbative coefficients by graphs. The graph grammar is therefore not uniquely quantum. It also does not, by itself, select a physical propagator, Bose or Fermi statistics, causal locality, gauge reduction, counterterms, positivity, or unitarity. This paper reformulates modal diagrammatics around that distinction. We prove a finite graded graph-expansion theorem and an exact projection theorem: if an even projector intertwines the quadratic operator, interaction tensors, grading, and declared identities, then every all-retained graph coefficient agrees with the coefficient computed in the projected theory. We also prove a nonselection theorem showing that the same graph combinatorics supports continuously many inequivalent weights and different statistics. Thus basin adjacency or coherence language alone cannot derive Feynman rules. For Modal Triplet Theory, the result supplies a rigorous transfer target. The selected q79 twisted-Dirac construction already composes with standard CAR/AQFT machinery to give a free even local net. The present theorem explains how a selected upper action could transfer its perturbative graph data to a lower effective sector. It does not manufacture that action. The geometry-selected upper action, fixed-coupling interacting gauge\u2013BRST C^*-completion, renormalization-group matching, and observable uncertainty packet remain open. The formulation retains the explanatory value of modal diagrammatics while making its mathematical and physical boundary explicit.",
+  "abstract": "Feynman graphs are used in quantum field theory, classical statistical field theory, stochastic dynamics, and effective descriptions of gravity. Their recurrence has a precise but limited explanation. Once one specifies a nondegenerate quadratic kernel, interaction tensors, a grading, and a contraction rule, Wick expansion organizes perturbative coefficients by graphs. The graph grammar is therefore not uniquely quantum. It also does not, by itself, select a physical propagator, Bose or Fermi statistics, causal locality, gauge reduction, counterterms, positivity, or unitarity. This paper reformulates modal diagrammatics around that distinction. We prove a finite graded graph-expansion theorem and an exact projection theorem: if an even projector intertwines the quadratic operator, interaction tensors, grading, and declared identities, then every all-retained graph coefficient agrees with the coefficient computed in the projected theory. We also prove a nonselection theorem showing that the same graph combinatorics supports continuously many inequivalent weights and different statistics. Thus basin adjacency or coherence language alone cannot derive Feynman rules. For Modal Triplet Theory, the result supplies a rigorous transfer target. The selected q79 twisted-Dirac construction already composes with standard CAR/AQFT machinery to give a free even local net. The present theorem explains how a selected upper action could transfer its perturbative graph data to a lower effective sector. It does not manufacture that action. The geometry-selected upper action, fixed-coupling interacting gauge\u2013BRST C^*-completion, renormalization-group matching, and observable uncertainty packet remain open. The formulation retains the explanatory value of modal diagrammatics while making its mathematical and physical boundary explicit. A finite residual-and-metric jet supplies the complete repair-action graph datum, with exact transport under a compatible change of variables; its identification with physical Feynman data remains a separate action and state problem.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "Version 2, July 2026",
+  "current_version": "v3",
+  "date": "Version 3, September 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18330803",
     "created": "2026-07-31T06:25:09.644940+00:00",
@@ -32,22 +32,48 @@
     "updated": "2026-07-31T06:25:10.309750+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "3e02bffabd34d5a711ba23c10a8d5a63d77d409de28fc75b62f5bc29cf88a2a6",
+  "main_tex_sha256": "68d7df7ac9702611b5cfc5d62f75d452d1d2a9c72215cb7240b53dcb49004e05",
   "paper_id": "modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8",
-  "paper_md_sha256": "d9f9c63d28aa10b26f60d18f70b7cb1652ad09d8618c90df8af280e512ab46c4",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "51ab13c5941d7024295ace38a45af9002a975007fbb97015069377ae0aff6364",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "causal_base_q79_all_arity_source_promotion_packet",
+    "causal_base_q79_seven_row_endpoint_factorization_packet",
+    "preprojection_repair_jet_graph_functor",
+    "q79_cohesive_superconnection",
+    "q79_maurer_cartan_repair"
+  ],
   "revision": {
     "revision_evidence_path": "papers/modal-diagrammatics-the-origin-of-feynman-rules-from-co-79b757d8/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "5d62ae9a0f266bbda5f8a2b0d9cb1e0070f4e3290b857a673872a9992b9d2cc1",
+    "revision_evidence_sha256": "65cd70aa70301b68d5ee36ae3818b43a86cfd110045622faffc4885ed8b449c2",
     "selected_revision": true
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 30187,
+      "bytes": 2228,
+      "path": "RESEARCH_INTEGRATION.md",
+      "sha256": "7a1a153009811c1d3b7910f2e0269f5323f9647a73c340f5c7d5173cc2a6e6e1"
+    },
+    {
+      "bytes": 4880,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "65cd70aa70301b68d5ee36ae3818b43a86cfd110045622faffc4885ed8b449c2"
+    },
+    {
+      "bytes": 5158,
+      "path": "main.bib",
+      "sha256": "3bf89a884ebc2b9d65c78a66ad4e3c597c76d9d51851c4f5a2a66e2cb732618e"
+    },
+    {
+      "bytes": 39078,
       "path": "main.tex",
-      "sha256": "3e02bffabd34d5a711ba23c10a8d5a63d77d409de28fc75b62f5bc29cf88a2a6"
+      "sha256": "68d7df7ac9702611b5cfc5d62f75d452d1d2a9c72215cb7240b53dcb49004e05"
+    },
+    {
+      "bytes": 4496,
+      "path": "paper-markdown.lua",
+      "sha256": "eda1aef847606bd8399a98fb3fc9facb577e19e5f4780fce518485aafd2e8157"
     },
     {
       "bytes": 3784,
@@ -58,9 +84,9 @@
   "source_provenance": {
     "legacy_source_path": "7 Quantum Field Theory/_work/Modal_Diagrammatics__The_Origin_of_Feynman_Rules_from_Coherent_Modal_Geometry"
   },
-  "source_tree_sha256": "da72d1f433f4df6de56759f92f139321a4505548f251a3563c77c6c4ab9d69c0",
+  "source_tree_sha256": "369189c3230ba671fb396ae9bec46fb74a1bb738b61823544abcd0b8df1102d0",
   "title": "Universal Perturbative Graph Structure: A Typed Modal Diagrammatics and Its Quantum Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18330803",

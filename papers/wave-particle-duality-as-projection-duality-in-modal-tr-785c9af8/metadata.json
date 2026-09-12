@@ -1,12 +1,12 @@
 {
-  "abstract": "This paper gives a conditional operator encoding of wave-particle duality. A positive filtered operator has local and spectral representations; an exhausting sharp-limit family yields a delta kernel, coherent phase transport yields interference, positive Schur multipliers yield valid dephasing channels, and POVMs completed by quantum instruments model outcome probabilities and state updates. These results are mathematically compatible with standard quantum mechanics but do not derive it, because the state, Hamiltonian, effects, instrument, and damping channel are supplied as inputs. A survivor-basin account is an additional MTT interpretation. It reproduces the Born rule only if a state-dependent basin measure satisfies the explicit basin-Born bridge criterion for every admitted state and outcome. A selected common MTT source for all these objects remains open.",
+  "abstract": "A conditional operator encoding gives local and spectral representations of a positive filtered operator, a boundary-correct sharp delta limit, Schur dephasing channels, POVMs and quantum instruments. A source-bound consumer comparison explains the exact finite q79 Weyl-Koszul Hodge calculus, the 144-to-48 nonminimal response retract, and all-arity transfer, with theorem ownership retained in the Cohesive paper. These finite constructions do not select the continuum operator, physical action, or arbitrary detector. The generic apparatus boundary is distinct from the established canonical operational q79 model; an additional survivor-basin interpretation still needs its state-dependent measure intertwiner.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v6",
-  "date": "September 2026, Version 6",
+  "current_version": "v7",
+  "date": "September 2026, Version 7",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.21704911",
     "created": "2026-07-30T14:02:29.297622+00:00",
@@ -24,7 +24,7 @@
     ],
     "id": "21704912",
     "match_kind": "published_draft_reconciliation",
-    "match_score": 1.0,
+    "match_score": 1,
     "publication_date": "2026-07-30",
     "record_url": "https://zenodo.org/records/21704912",
     "resource_type": "publication",
@@ -32,23 +32,39 @@
     "updated": "2026-07-30T14:02:29.640775+00:00",
     "version": "v5"
   },
-  "main_tex_sha256": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a",
+  "main_tex_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
   "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
-  "paper_md_sha256": "1a6518ce87789d5ed830d0b36d8863c7abf133bdb0444c72863b8367c8a9000d",
+  "paper_md_sha256": "c89c0e956e1aabb668bac88325dab8ffdeb1c98927a96f6d190f88dc16e14c24",
   "release_state": "current_revised_tex",
-  "result_refs": [],
+  "result_refs": [
+    "beq_q79_fmo_q79_selected_source_base",
+    "causal_base_q79_all_arity_source_promotion_packet",
+    "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+    "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+    "causal_base_q79_symmetric_response_transferred_m4_packet",
+    "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet",
+    "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+    "q79_continuum_recorder_compiler",
+    "q79_fock_output_measure",
+    "q79_ontology_nonentailment"
+  ],
   "revision": {
     "revision_evidence_path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "cda616ca17c3a832a0cb6da177c086bbe07022b0c6ea7fe524b1a9e9a1ab98f3",
+    "revision_evidence_sha256": "12477560abfdf42888ad44d53ddc74eb99c1e758815f3c2358360f50049ab39a",
     "selected_revision": true,
     "superseded_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 158669,
+      "bytes": 171165,
       "path": "main.tex",
-      "sha256": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a"
+      "sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3"
+    },
+    {
+      "bytes": 5988,
+      "path": "paper-markdown.lua",
+      "sha256": "05955d2f575e48fc2a604af2a344f518b55cd3f5959e005d1676eac222d9f6ee"
     },
     {
       "bytes": 3784,
@@ -64,7 +80,7 @@
   "source_provenance": {
     "legacy_source_path": "5 Dirac Delta/_work/Wave__Particle_Duality_as_Projection_Duality_in_Modal_Triplet_Theory_v4"
   },
-  "source_tree_sha256": "f922cf73d97b4bf4f69553b92ee6e268986e075fed1c9c6de431a10c00dcd549",
+  "source_tree_sha256": "254af9c2bda589da1fbd25843d9060ddc97aaa50147741b299029d55fd762314",
   "title": "A Conditional Operator Encoding of Wave-Particle Duality in MTT Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
@@ -85,7 +101,7 @@
       ],
       "id": "21704912",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-30",
       "record_url": "https://zenodo.org/records/21704912",
       "resource_type": "publication",

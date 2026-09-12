@@ -1,4 +1,44 @@
-# Indivisible stochastic-process paper v2 revision audit
+# Indivisible stochastic-process paper revision audit
+
+## 2026-09-12: v3 contextual revision
+
+- The local `paper-markdown.lua` filter follows the repository's existing
+  Pandoc pattern to retain all frozen-source citations, the built bibliography,
+  revision notes, source labels and theorem reference numbers. It also preserves
+  the managed computational-evidence markers and manifest filename; plain Pandoc
+  omitted those citation/path details. This does not alter the PDF source.
+- Supersedes v2, released as Zenodo record 21665996. The release identity and
+  all previous revision notes remain unchanged.
+- Integrates all 48 assigned BEQ frozen artifacts, including the full later
+  candidate-audit refinements, at manifest commit
+  `f141a20ea23c5c3ff19cc2161c0e226e29ade8a7`.
+- Explains coherent history versus endpoint populations, all-ADO propagation,
+  ideal dilation versus bounded bath-active readout, physical tangent domains,
+  the D1-to-D4 chronology, charged lines and connection/holonomy, conditional
+  scalar repair, metric-aware error transport, and held-out response tests.
+- Preserves canonical operational q79 closure, finite/local compatibility,
+  hidden projective and existential HYM conclusions, and ordinary measurement.
+- Distinguishes the evolving audit's diagnostic D4 tangents/Hessians from a
+  validated full-family numerical enclosure. No heavy calculation is rerun.
+- Consumer correction: `sec:metric-qualification` names the missing
+  common-norm contraction hypothesis in the BEQ semigroup estimate. General
+  Duhamel comparison retains metric-distortion factors. Exact transported
+  Hodge/cost identities and the source's diagonal example are retained.
+  This correction is also escalated in the review fragment.
+- Local lemma correction: `lem:action-kernel` now defines the Borel
+  finite-normalization domain and a measurable extension outside it.
+- `prop:sufficient` no longer calls an arbitrary standard Borel summary
+  finite; finite memory claims must specify the admitted summary class.
+- Kernel consumer/text queue C.FP.02 is addressed at
+  `sec:recurrence-boundary`: closed pure-point unitary recurrence is distinct
+  from mixing in a supplied finite Markov/Lindblad/bath model and from a
+  controlled irreversible limit. B.ACTION.01 remains open.
+- Verification records and exact source/manuscript/PDF hashes are in
+  `editorial-reviews/2026-09-12/stochastic.json`. PDF and Markdown are generated
+  locally; no global refresh, catalog change, publication or scientific replay
+  is performed by this revision.
+
+## Earlier v2 revision audit
 
 ## Release identity
 

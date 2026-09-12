@@ -3,6 +3,10 @@
 local handle = assert(io.open("main.tex", "r"))
 local source = handle:read("*a")
 handle:close()
+local descriptions, description_index = {}, 0
+for body in source:gmatch("\\begin{description}%b[](.-)\\end{description}") do
+  descriptions[#descriptions + 1] = body
+end
 local bibliography = assert(source:match(
   "\\begin{thebibliography}{%d+}(.-)\\end{thebibliography}"))
 local entries, numbers = {}, {}
@@ -30,7 +34,8 @@ end
 
 local function replace_bibliography(node)
   if node.classes:includes("description") then
-    local description = assert(source:match("\\begin{description}%b[](.-)\\end{description}"))
+    description_index = description_index + 1
+    local description = assert(descriptions[description_index])
     local blocks, offset = pandoc.Blocks({}), 1
     while true do
       local first, last, label = description:find("\\item%[([^%]]+)%]", offset)

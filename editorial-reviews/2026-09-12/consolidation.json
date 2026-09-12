@@ -1,0 +1,382 @@
+{
+  "schema": "mtt.editorial-consolidation.v1",
+  "reviewed_at": "2026-09-12",
+  "fragments": [
+    "editorial-reviews/2026-09-12/atlas.json",
+    "editorial-reviews/2026-09-12/parent-consumers.json",
+    "editorial-reviews/2026-09-12/flux.json",
+    "editorial-reviews/2026-09-12/hull.json",
+    "editorial-reviews/2026-09-12/spinor.json",
+    "editorial-reviews/2026-09-12/qm.json",
+    "editorial-reviews/2026-09-12/stochastic.json",
+    "editorial-reviews/2026-09-12/action_qg.json"
+  ],
+  "source_snapshot": "f141a20ea23c5c3ff19cc2161c0e226e29ade8a7",
+  "owner_results": 305,
+  "consumer_review_groups": 104,
+  "consumer_placements": 134,
+  "rebound_prior_reviews": [
+    {
+      "review_id": "SM-STRUCTURE-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "previous_hash": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "current_hash": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
+    },
+    {
+      "review_id": "SM-PROFILES-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "previous_hash": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "current_hash": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
+    },
+    {
+      "review_id": "SM-RECONSTRUCTION-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "previous_hash": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "current_hash": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
+    },
+    {
+      "review_id": "SM-STATUS-SNAPSHOT-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "previous_hash": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "current_hash": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
+    },
+    {
+      "review_id": "SM-ADJACENT-WITNESSES-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "previous_hash": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "current_hash": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
+    },
+    {
+      "review_id": "SM-GAUGE-LEDGER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "previous_hash": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "current_hash": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
+    },
+    {
+      "review_id": "SM-NEUTRAL-BRANCH-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "previous_hash": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "current_hash": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
+    },
+    {
+      "review_id": "SM-AXION-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1",
+      "previous_hash": "f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550",
+      "current_hash": "4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af"
+    },
+    {
+      "review_id": "COHESIVE-SOURCE-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COHESIVE-PHYSICAL-RESIDUAL-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COHESIVE-DESCENT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COHESIVE-LOCAL-WITNESSES-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COHESIVE-METRIC-IMPORT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COHESIVE-SYMMETRY-IMPORT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COHESIVE-ENDPOINT-IMPORT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COHESIVE-PROJECTOR-COMPLETENESS-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-COMPRESSION-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-FINITE-COVARIANCE-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-FIRST-JET-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-RESPONSE-TRANSFER-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-ALL-ARITY-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-CENTRAL-CHARACTER-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-SINGLE-CURVED-CHARGE-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-JORDAN-CENTER-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-ADMISSIBLE-RADIAL-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-NESTED-WITTEN-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-NIL-RESTRICTED-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-NONCENTRAL-POSITIVE-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-UNITAL-COEFFICIENT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-MORITA-DESCENT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-Q79-HIRSCH-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-BV-COTANGENT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-BV-ORIENTATION-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-BV-EULER-LIFTING-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-MATTER-COMPILER-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-INDEX-FIRST-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-BHT-LOCALIZATION-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-MATTER-THETA-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-STRING-CONSTRUCTOR-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-STRING-MC-LIFT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-CALABI-ROLES-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-G3GMS-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-G3GMT-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-G3GMU-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-G3GMV-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-G3GMW-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-G3GMX-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-G3GMY-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-G3GMZ-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-H4-T27-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-H4-T22-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-H4-T26-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-H4-T25-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-H4-T28-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-H4-T24-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-H4-T29-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-H4-T23-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-Q79-FITTING-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-Q79-PATHWISE-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    },
+    {
+      "review_id": "COH-Q79-BK3-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "previous_hash": "c678c44d0a4fa337e03a7372eff0ec1425cb8629681348404ead2754ceff65bc",
+      "current_hash": "9ee41091420551aa37b1d40ee05ba628b3d29b0219facb667a198680a98975a5"
+    }
+  ],
+  "release_authorized": false,
+  "research_promotion": false
+}

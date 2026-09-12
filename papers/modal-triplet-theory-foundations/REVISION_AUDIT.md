@@ -1,5 +1,21 @@
 # Foundation v9 Release and Expository Audit
 
+
+## September 12, 2026 Contextual Revision (v11)
+
+- Additional analytic correction SPINOR.RIESZ.FINITERANK.01: an isolated spectral cluster is not automatically finite rank. The Riesz-projector proposition now assumes finite rank at one point of a connected parameter neighborhood. The zero operator on an infinite-dimensional Hilbert space is the explicit counterexample to the unqualified claim.
+- Additional analytic correction SPINOR.FESHBACH.GRAPHNORM.01: the displayed estimate uses the norm of the inverse from the complementary Hilbert space into the declared graph domain. A Hilbert-to-Hilbert inverse norm alone cannot provide this factor. The retained block L_PP maps P H to P H; its previously mistyped Q H codomain is corrected. The exact Schur equation and its domain hypotheses are retained.
+
+- Supersedes: current v10, incremented once. Prior revision notes and all released Zenodo identities are preserved. This is unreleased authoring work.
+- Reason and resolution: Curved projective/Cech naturality and nonlinear, support-stratified spectral strain refine the geometry interface. Finite transfer and the GAS/SYN/BV4 endpoint factorization are consumers of owner results, not new Foundation proofs.
+- Current anchors: sec:consumer-geometry; sec:consumer-strain; sec:consumer-transfer; sec:consumer-endpoint; ass:joint; thm:foundation.
+- Shared correction SPINOR.POLAR.METRIC.01: skew/symmetric component orthogonality holds in identity-normalized coordinates, but polar variations at a general positive U are Omega U and delta U and need not be ambient-Frobenius-orthogonal. The concrete diag(2,1,1) witness has pairing 1. The local 3+6 count and the strain-coordinate 1+2+3 projectors survive.
+- Shared correction SPINOR.SCALAR.FIELD.01: a real rank-six strain carrier must be complexified, or a compatible real form chosen on the complex trace carrier, before asserting a linear isomorphism. This is not an added spacetime dimension.
+- Consumer correction: a linear root-space embedding is excluded; the six-coordinate nonlinear strain shadow forgets triangle phase from a generically seven-dimensional quotient. Its reduced Green covariance is shorted only where invertible. Zero-edge normal cost is degree one, not an ordinary boundary Hessian; a rank-six or local C4 contract forces the regular stratum.
+- Retained: established finite/profile SM and canonical operational QM, hidden projective/existential HYM, finite/local q79 results, and ordinary physical measurement. No physical status was promoted from packet flags.
+- Open: selected visible-hidden common-chamber endpoint and literal metrics, reduced Green and domains, physical symmetry/action/compactification, strict value sources and SI normalization where applicable. The fixed-point analytic hypotheses are not supplied by finite arithmetic.
+- Validation and source provenance: final source hashes, per-result assessments, full reading coverage, bounded checks, builds and page-by-page PDF inspection are recorded in editorial-reviews/2026-09-12/spinor.json. Local build logs and rendered QA are under this paper's tmp directory. Global catalog, Kernel and release integration are parent-owned.
+
 ## September 2026 Current-Version Delta (v10)
 
 - Supersedes: v9; no Zenodo record changed.

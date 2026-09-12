@@ -1,12 +1,12 @@
 {
-  "abstract": "We determine which parts of two proposed heterotic flux constructions survive the full Hull-Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and exterior derivative dH are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer-Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The Lens-Nil model is a balanced real SU(3)-structure comparison model, but its almost-complex structure is non-integrable and hence it is not a Hull-Strominger compactification. We finish by separating the exact q=79 finite and rank-two Hermitian-Yang-Mills evidence, and the existential projective rank-nine hidden connection, from the still-open common visible-hidden problem, and state a typed completion contract for a future Fu-Yau endpoint.",
+  "abstract": "We determine which parts of two proposed heterotic flux constructions survive the full Hull\u2013Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and exterior derivative of the torsion are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer\u2013Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The printed Lens\u2013Nil forms fail balancedness and positivity of the associated metric, and their almost-complex structure is non-integrable. We finish by separating the exact q=79 finite and rank-two Hermitian\u2013Yang\u2013Mills evidence, and the existential projective rank-nine hidden connection, from the still-open common visible\u2013hidden problem, and state a typed completion contract for a future Fu\u2013Yau endpoint. The selected eta9 source, integral comparison, localized residue construction, and certified local response are explained without identifying them with an unevaluated global Deligne obstruction.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v6",
-  "date": "September 2026, Version 6",
+  "current_version": "v7",
+  "date": "September 2026, Version 7",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17072372",
     "created": "2026-07-30T15:20:09.617485+00:00",
@@ -32,50 +32,103 @@
     "updated": "2026-07-30T15:20:10.331271+00:00",
     "version": "v4"
   },
-  "main_tex_sha256": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e",
+  "main_tex_sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4",
   "paper_id": "flux-compactifications-in-heterotic-string-theory-expli-08b38155",
-  "paper_md_sha256": "c186a806b78d58a46b262794e96473e7b5e489f63c0b711798f019d48c255cc9",
+  "paper_md_sha256": "4c85b693e7fb0ee5dce6d892216888256d88c70fc7ca619763b2e3455c906a37",
   "release_state": "current_revised_tex",
   "result_refs": [
+    "eta9_characteristic_zero_reduction",
+    "eta9_execution_frontier",
+    "eta9_gamma_chain_promotion",
+    "eta9_gate1_campaign",
+    "eta9_three_cycle_b96_nondetection",
+    "eta9_three_cycle_common_fiber_separation",
+    "eta9_three_cycle_endpoint_projection",
+    "eta9_three_cycle_frontier_merge",
+    "eta9_three_cycle_full_coverage",
+    "eta9_three_cycle_intersection_readiness",
     "hym_wiener_contraction",
     "literal_cech_witness",
+    "preprojection_h4_q79_eta9_affine_extension_comparison",
+    "preprojection_h4_q79_eta9_ambient_gluing_discriminant",
+    "preprojection_h4_q79_eta9_archimedean_selected_source_mixed_refinement",
+    "preprojection_h4_q79_eta9_padic_selected_source_action_and_height_cutset",
+    "preprojection_h4_q79_eta9_quotient_first_parity",
+    "preprojection_h4_q79_eta9_quotient_gauss_manin_adapter",
+    "preprojection_h4_q79_eta9_relation_discriminant_comparison",
+    "preprojection_h4_q79_eta9_root_same_source_period_adapter",
+    "preprojection_h4_q79_eta9_root_start_action_multiprime",
+    "preprojection_h4_q79_eta9_root_start_cech_h11_edge_image",
+    "preprojection_h4_q79_eta9_root_start_cech_localization",
+    "preprojection_h4_q79_eta9_root_start_complete_action",
+    "preprojection_h4_q79_eta9_root_start_coordinate_free_height_cutset",
+    "preprojection_h4_q79_eta9_root_start_cycle_class",
+    "preprojection_h4_q79_eta9_root_start_embedding",
+    "preprojection_h4_q79_eta9_root_start_euler_descent",
+    "preprojection_h4_q79_eta9_root_start_factorial_normalization",
+    "preprojection_h4_q79_eta9_root_start_full_pv_character",
+    "preprojection_h4_q79_eta9_root_start_identity_cech_atyah",
+    "preprojection_h4_q79_eta9_root_start_koszul_character",
+    "preprojection_h4_q79_eta9_root_start_multichart_gluing",
+    "preprojection_h4_q79_eta9_root_start_multichart_numerators",
+    "preprojection_h4_q79_eta9_root_start_multichart_obstruction",
+    "preprojection_h4_q79_eta9_root_start_oriented_cech_localization",
+    "preprojection_h4_q79_eta9_root_start_rcharge_bridge",
+    "preprojection_h4_q79_eta9_root_start_saturated_h11_lift",
+    "preprojection_h4_q79_eta9_root_start_stacky_inertia",
+    "preprojection_h4_q79_eta9_root_start_stacky_mf_typing",
+    "preprojection_h4_q79_eta9_root_start_woodbury_adapter",
+    "preprojection_h4_q79_eta9_selected_source_deep_height_and_gauge_cutset",
+    "preprojection_h4_q79_eta9_selected_source_woodbury_base_resolvent",
+    "q79_bk3_rank_zero_kernel",
+    "q79_cech_projector_compiler",
     "q79_eta9_b89_same_source_rejection",
+    "q79_eta9_cayley_critical_correlated_readout",
+    "q79_eta9_correlated_local_lift_increment",
+    "q79_eta9_directed_cayley_serre_scale",
     "q79_eta9_framed_member_spectral_rank_exclusion",
+    "q79_eta9_graph_tangent_multifiber_observability",
+    "q79_eta9_graph_tangent_single_fiber_rank",
     "q79_eta9_local_source_tube_consolidation",
     "q79_eta9_physical_canonical_dual_response_observability",
     "q79_eta9_physical_midpoint_three_evaluation_frame",
+    "q79_eta9_positive_width_full_source_tube",
+    "q79_eta9_twisted_spectral_rank_divisibility",
     "q79_exact_audit",
     "q79_exact_theorem",
+    "q79_global_fitting_descent",
+    "q79_projective_hym_naturality",
     "unified_source_balanced_holomorphic_p39",
+    "unified_source_eta9_theta_background",
     "unified_source_hidden_projective_hym"
   ],
   "revision": {
     "revision_evidence_path": "papers/flux-compactifications-in-heterotic-string-theory-expli-08b38155/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "6f96c4af6d585b95ac1961d2cf613fa158ef61b219718c3ff72d5c8fd85f7d8e",
+    "revision_evidence_sha256": "d06251d28bee70c48d1bc03428a0f1060a22c2206098a7d8e585350d5180b70b",
     "selected_revision": true,
     "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 39711,
+      "bytes": 67297,
       "path": "main.tex",
-      "sha256": "58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e"
+      "sha256": "fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4"
     },
     {
-      "bytes": 4282,
+      "bytes": 20561,
       "path": "references.bib",
-      "sha256": "fe87360c604b66e57a0065052ec68795e5070838b3b106aecbc17ef8e78e5589"
+      "sha256": "c5860f8751ba66f1112f118032901d14cdded75d28d58a4e0d3cd987d0c15bff"
     },
     {
-      "bytes": 394556,
+      "bytes": 501067,
       "path": "main.pdf",
-      "sha256": "4ff0598249125317c611caf4dae2f40602fde8d1bfd141fb0e98a4ffa1c5f011"
+      "sha256": "10ac98cfa616f58d3ee449b3269d9ff1fd3034f35d7f9b1c32ae0afa73983ae8"
     },
     {
-      "bytes": 4309,
+      "bytes": 8682,
       "path": "REVISION_AUDIT.md",
-      "sha256": "6f96c4af6d585b95ac1961d2cf613fa158ef61b219718c3ff72d5c8fd85f7d8e"
+      "sha256": "d06251d28bee70c48d1bc03428a0f1060a22c2206098a7d8e585350d5180b70b"
     },
     {
       "bytes": 7043,
@@ -86,12 +139,22 @@
       "bytes": 455,
       "path": "bundle_audit_report.json",
       "sha256": "2810d55b3943d6bfc4827a9e8aca60ae3179b835bdd5b7e7935855940e102bb2"
+    },
+    {
+      "bytes": 8083,
+      "path": "test_contextual_revision.py",
+      "sha256": "917a93d9b3dfdc725a8cb2819abbc43710484c504494cde3d3138d5f9cc11a2b"
+    },
+    {
+      "bytes": 7075,
+      "path": "editorial_artifacts.py",
+      "sha256": "a08cd9e4d585ba5017dd2f375e8f9afb241de7994ee45645c8d95333fe048ce2"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Flux_Compactifications_in_Heterotic_String_Theory_v3"
   },
-  "source_tree_sha256": "f278d1d5136d31eaf0beac6f6fd19c8fcb51a92f6b59d8cdaf1717e416dc4dff",
+  "source_tree_sha256": "1723ca0d4668e8086e431fa88317e6bff6abd6a0ee02e9b329f2551ab01638d6",
   "title": "Auditing Heterotic Flux Compactifications on Iwasawa and Lens\u2013Nil Geometries: Bundle Obstructions and a q=79 Fu\u2013Yau Completion Contract",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

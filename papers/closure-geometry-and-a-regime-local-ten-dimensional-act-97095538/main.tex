@@ -5,7 +5,7 @@
 \title{Closure Geometry and a Regime-Local\\
 Ten-Dimensional Action Ansatz}
 \author{Peter Nero}
-\date{Corrected fourth edition\\July 2026}
+\date{Version 5\\September 2026}
 
 \begin{document}
 \maketitle
@@ -17,7 +17,7 @@ field representations, and derivative expansion are declared realization
 inputs.  The action is an ansatz on a specified regime, not the most general
 action and not a derivation of gravity from projection.  We give the conditions
 under which a closure Hessian contributes to canonically normalized pole
-masses, a rank-one alignment projector yields one Higgs doublet, an internal
+masses, a rank-four real alignment projector yields one Higgs doublet, an internal
 operator has discrete spectrum, and a four-dimensional mode truncation is
 consistent.  Curvature is defined through explicit connections rather than
 inferred from nonuniform strain.  The selected q79 Fu--Yau branch is the
@@ -25,10 +25,29 @@ compactification candidate, while Lens--Nil remains auxiliary.  Existing
 finite-matrix and Standard-Model profile calculations are incorporated at
 their declared embedded-renormalized-SM tier; their profile inputs and imported
 BRST quantization are not reclassified as no-knob consequences of this action.
+Finite residual, cyclic-action, and cotangent constructions explain which
+action data follow from a supplied source and which physical identifications
+remain additional assumptions.
 \end{abstract}
 
-\section*{Revision note for this edition}
-\addcontentsline{toc}{section}{Revision note for this edition}
+\section*{Version 5 revision note}
+\begin{description}
+\item[Supersedes.] Version~4; its release identity and revision note are retained.
+\item[Reason.] The ansatz needs the subsequent residual-to-action results in
+context, and its reduction statement did not distinguish a Schur kernel from
+a local derivative expansion.
+\item[Resolution.] Explain curved repair germs, variational anchors, cyclic
+Maurer--Cartan descent, and the full-string cotangent boundary. State the
+additional nonlinear and locality estimates needed in dimensional reduction.
+\item[Retained result.] The regime-local ansatz and finite-SM/profile inputs,
+pole normalization, alignment, and compact-resolvent gates are retained.
+\item[Open boundary.] The physical signed action, trace normalization, real
+slice, same-source visible endpoint, and Lorentzian/BV compactification map
+remain distinct from the exact finite constructions.
+\end{description}
+
+\section*{Version 4 revision note}
+\addcontentsline{toc}{section}{Version 4 revision note}
 \begin{description}
 \item[Supersedes.] \emph{Closure Geometry and Unified Dynamics: A
 Ten-Dimensional Action for Mass, Scalar Relaxation, Quantization, and
@@ -184,13 +203,154 @@ of freedom or ghosts if treated nonperturbatively.  In an EFT treatment they
 are perturbative operators below the cutoff; any claimed fundamental
 completion requires a separate constraint/propagator analysis.
 
+\section{From a repair residual to an action}
+\label{sec:repair-action}
+
+\subsection{Curvature is not detected faithfully by every representation}
+
+The curved-repair germ of R1-T1 starts with a graded associative algebra,
+an odd charge $Q$, and a declared trace and real slice. Its curvature and
+adjoint differential are $F=Q^2$ and
+$d_Q X=QX-(-1)^{|X|}XQ$. The identities
+\[
+ d_Q^2X=[F,X],\qquad d_QF=0
+\]
+separate three regimes: $F=0$; nonzero central $F$; and noncentral $F$.
+Only the last necessarily curves the adjoint differential
+\cite{FrozenGerm}. For example, the odd matrix
+$Q=\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$
+has $Q^2=I$. Its adjoint differential squares to zero, but its defect is
+nonzero and the Jordan response $FX+XF=2X$ survives. Nilpotence in an
+adjoint representation is therefore not a test for exact physical closure.
+An algebraic differential also needs a positive metric and suitable domains
+before Hodge or dissipative language applies.
+
+For a smooth residual $\Phi:E\to F_{\rm res}$ with a positive residual
+metric $W(a)$, the repair cost is
+$S_{\rm rep}(a)=\frac12\langle\Phi(a),W(a)\Phi(a)\rangle$.
+At $\Phi(a_*)=0$ its Hessian is $J^\dagger W(a_*)J$, where
+$J=D\Phi(a_*)$. This measures sensitivity to defects. It is not yet the
+Euler--Lagrange operator of~\eqref{eq:action}.
+
+\subsection{Variational anchors and the information lost by squaring}
+\label{sec:anchor}
+
+H4-T9 supplies a direct test \cite{FrozenAnchor}. A chosen anchor
+$A:F_{\rm res}\to E^*$ turns the residual into a field-space one-form
+$\alpha_a(v)=(A\Phi(a))(v)$. On a star-shaped finite-dimensional domain,
+$dS_{\rm var}=\alpha$ exists exactly when $d\alpha=0$, or equivalently
+when $D(A\Phi)$ is symmetric. The reconstructed action is
+\[
+ S_{\rm var}(a)-S_{\rm var}(0)=\int_0^1\alpha_{ta}(a)\,dt.
+\]
+For fields, this becomes a graded formal-adjoint Helmholtz condition with
+boundary terms and operator domains. It is not implied by positivity of $W$.
+Indeed $(x,y)$ and $(-y,x)$ have identical repair cost
+$(x^2+y^2)/2$, but the latter is not a gradient for the standard anchor:
+its Jacobian has antisymmetric part
+$\left(\begin{smallmatrix}0&-2\\2&0\end{smallmatrix}\right)$.
+
+Every residual nevertheless has a multiplier action
+$S_{\rm mult}(a,\lambda)=\langle\lambda,\Phi(a)\rangle$.
+Its equations are $\Phi(a)=0$ and $D\Phi(a)^\dagger\lambda=0$.
+At $(a_*,0)$ the Hessian and its square are
+\[
+ D_J=\begin{pmatrix}0&J^\dagger\\J&0\end{pmatrix},\qquad
+ D_J^2=\begin{pmatrix}J^\dagger J&0\\0&JJ^\dagger\end{pmatrix}.
+\]
+Thus the repair operator is one normal block. The added multiplier is not
+automatically a particle or BV antifield, nor is $D_J$ automatically a
+Lorentzian Dirac operator.
+
+The distinction is visible without a large calculation. For
+$S_{\rm var}(x)=mx^2/2+gx^3/6$, squaring its derivative gives
+\[
+ S_{\rm rep}(x)=m^2x^2/2+mgx^3/2+g^2x^4/8.
+\]
+At zero, the quadratic, cubic, and quartic derivatives are $(m,g,0)$ for
+the action and $(m^2,3mg,3g^2)$ for the repair cost. At the second root
+$x=-2m/g$, with $g\ne0$, the signed Hessian is $-m$ but the repair
+Hessian is $m^2$. Repair stability has erased the sign and changed the
+vertices. A physical propagator or pole mass must use the correctly
+identified signed, gauge-fixed operator.
+
+\subsection{A cyclic integrability lane really does have an action}
+\label{sec:cyclic-action}
+
+H4-T10 is a positive construction, not just a warning \cite{FrozenMC}.
+Let $\mathcal A$ be a characteristic-zero dg algebra with a degree-three
+trace $\tau$ satisfying graded cyclicity and $\tau(dx)=0$. For
+$a\in\mathcal A^1$, define
+\[
+ F(a)=da+a^2,\qquad
+ S_{\rm MC}(a)=\tfrac12\tau(a\,da)+\tfrac13\tau(a^3).
+\]
+Then $DS_{\rm MC}(a)[u]=\tau(uF(a))$. Nondegeneracy of the pairing
+between degrees one and two is required to identify the critical locus
+with the full Maurer--Cartan zero set; otherwise only a weak variational
+identity follows. Stokes and the Bianchi identity give infinitesimal gauge
+invariance, not an automatic large-gauge quantization of the coefficient.
+
+For projective overlaps $G_{ij}G_{jk}G_{ki}=\alpha_{ijk}I$, scalar twists
+cancel in endomorphism conjugation. If the differentials and traces
+intertwine, the action descends through that same atlas. This does not
+assert that an arbitrary Fourier--Mukai equivalence preserves the trace.
+On a compact boundaryless complex threefold the candidate trace is
+$\tau(x)=\int_X\Omega_{\rm hol}\wedge\operatorname{Str}(x)$.
+The holomorphic volume form and its physical normalization are separate
+from a unit-normalized volume form used by a Hermitian metric.
+
+At an exact solution the signed Hessian is $C_\tau J$, with $C_\tau$
+the cyclic anchor, whereas the positive repair Hessian is $J^\dagger WJ$.
+The frozen rational exterior-algebra witness explicitly has a negative
+signed direction absent from the repair square. It supplies the
+integrability action, not the full ten-dimensional ansatz.
+
+\subsection{Why the full string complex needs more than that trace}
+\label{sec:string-cotangent}
+
+The full q79 string deformation complex also has form/anomaly lanes.
+H4-T14 identifies a precise obstruction \cite{FrozenCotangent}: using
+only wedge product, top-form integration, the invariant gauge pairing,
+and $\Omega_{\rm hol}$, those lanes lie in the pairing radical. Their
+degree-one types $(3,0),(2,1)$ and degree-two types $(3,1),(2,2)$ have
+wedges of holomorphic degree at least four on a threefold. Cross terms
+would require an invariant linear functional on
+$\mathfrak{sl}_3\oplus\mathfrak{sl}_3\oplus\mathfrak{sl}_9$, which
+vanishes because the algebra equals its commutator algebra. This excludes
+that local trace grammar, not every possible action.
+
+For a locally perfect dg Lie algebra $L$, its density-valued local dual
+$L^!$ gives the canonical cyclic completion
+\[
+ \widehat L=L\ltimes L^![-3],\qquad
+ S_{\rm cot}(a,p)=\langle p,da+\tfrac12[a,a]\rangle.
+\]
+The shift uses $(V[s])^k=V^{k+s}$; the familiar shifted-cotangent notation
+on a suspended field stack uses a different grading. Dual variation
+recovers the full residual, and every original solution lifts to $(a,0)$.
+The algebraic pairing is canonical, but its physical coefficient, real
+slice, charged fields, and identification with the accepted BV action
+are not supplied by this construction.
+
+The central shared line acts trivially on product-adjoint and ordinary-form
+lanes and hence on their cotangent duals. Relative charged
+$\operatorname{Hom}$ lanes are outside this neutrality claim. The fuller
+string-algebroid and Calabi moment-map reductions are explained by the
+companion Cohesive paper \cite{Cohesive14}: anomaly is part of integrability,
+and HYM/balance can be combined under their stated source hypotheses.
+They do not require a new independent action ansatz for every residual row.
+The remaining comparison is one physical source, trace, moment map, and
+BV-compatible compactification, with the Lorentzian coframe sector still
+separate.
+
 \section{Closure Hessian and physical masses}
 
 Let $\varphi=0$ be a stationary background for retained real fields and write
 the quadratic four-dimensional action after integrating the internal fiber as
 \[
  S_4^{(2)}
- =\frac12\int_{Y_4}\sqrt{|g_4|}\,dd^4x
+ =\frac12\int_{Y_4}\sqrt{|g_4|}\,\dd^4x
  \left(
  Z_{AB}\,\partial_\mu\varphi^A\partial^\mu\varphi^B
  -M^2_{AB}\varphi^A\varphi^B
@@ -343,25 +503,32 @@ Euler--Lagrange equations vanish on the retained ansatz:
 \]
 
 \begin{theorem}[Conditional coherent reduction]
-Assume the retained mode space is invariant under all nonlinear terms to the
-order considered, the discarded equations vanish on the retained ansatz, the
-discarded linear operator has gap $\lambda_{\rm gap}>0$, and the nonlinear
-source into discarded modes obeys $\|J_{\rm disc}\|\le\epsilon$.  Then the
-leading eliminated field obeys
+At a fixed truncation order, assume that the discarded linear operator is
+invertible on its declared domain with
+$\|L_{\rm disc}^{-1}\|\le C/\lambda_{\rm gap}$, and the source into
+discarded modes obeys $\|J_{\rm disc}\|\le\epsilon$. Then the leading
+linearized eliminated field obeys
 \[
  \|\eta\|\le
  \|L_{\rm disc}^{-1}\|\,\epsilon
  \le \frac{C\epsilon}{\lambda_{\rm gap}},
 \]
-and substituting it gives a controlled local four-dimensional effective action
-with the corresponding Schur--Feshbach correction.
+and substitution gives the quadratic Schur--Feshbach correction. For the
+nonlinear equation $L_{\rm disc}\eta+J_{\rm disc}+N(\eta)=0$, also
+require that $-L_{\rm disc}^{-1}(J_{\rm disc}+N(\eta))$ preserves a
+specified ball and has Lipschitz constant $q<1$ there, with $N(0)=0$.
+The solution then satisfies
+$\|\eta\|\le C\epsilon/((1-q)\lambda_{\rm gap})$.
+A local effective action additionally requires a controlled low-energy
+derivative expansion of the resulting generally nonlocal kernel.
 \end{theorem}
 
 \begin{proof}
-Solve the discarded equation by the inverse on the gapped complement and use
-the stated resolvent bound.  The effective correction follows by substitution
-or the Schur complement.  Exact consistency is the special case
-$J_{\rm disc}=0$.
+Apply the inverse bound for the leading term and the contraction estimate
+for the nonlinear equation. The Schur complement follows by substitution;
+its locality does not follow from invertibility. Exact consistency is the
+case in which the discarded equations vanish identically on the retained
+ansatz, so $J_{\rm disc}=0$ and $\eta=0$ solves them.
 \end{proof}
 
 A spectral gap alone does not prove nonlinear invariance or exact truncation.
@@ -416,7 +583,7 @@ Standard Model without the listed source and observable maps.
 
 \section{Conclusion}
 
-The corrected action is a useful synthesis ansatz, not a universal derivation.
+The action is a useful synthesis ansatz, not a universal derivation.
 Its value is that every physical promotion now has a recognizable mathematical
 gate: global geometry, connection, compact resolvent, scalar projector,
 canonical pole normalization, gauge consistency, and controlled reduction.
@@ -476,7 +643,23 @@ Tier labels are quoted verbatim from that manifest. A row used directly supports
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
+\bibitem{FrozenGerm} P.~Nero, \emph{Curved cyclic repair germ}, R1-T1,
+frozen result \path{preprojection_curved_cyclic_repair_germ}, 2026.
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_curved_cyclic_repair_germ/artifact.json}.
+\bibitem{FrozenAnchor} P.~Nero, \emph{Variational anchor, multiplier lift,
+and normal square}, H4-T9, 2026.
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_variational_anchor_multiplier_lift/artifact.json}.
+\bibitem{FrozenMC} P.~Nero, \emph{Cyclic Maurer--Cartan action and twisted
+descent}, H4-T10, 2026.
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_cyclic_mc_action_descent/artifact.json}.
+\bibitem{FrozenCotangent} P.~Nero, \emph{q79 shared-line neutrality and
+cyclic cotangent completion}, H4-T14, 2026.
+\url{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_string_cyclic_cotangent/artifact.json}.
+\bibitem{Cohesive14} P.~Nero, \emph{Cohesive Closure Repair and Its Hodge,
+Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups,
+with the Physical-Action Boundary}, version~14, string-algebroid and BV sections,
+MTT papers repository, 2026.
 \bibitem{WeinbergEFT}
 S.~Weinberg, \emph{The Quantum Theory of Fields, Vol. II}, Cambridge
 University Press, 1996.

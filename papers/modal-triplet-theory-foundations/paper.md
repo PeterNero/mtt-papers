@@ -1,11 +1,11 @@
 ---
 abstract: |
-  We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle $`M_{10}\to Y_4`$ with compact Riemannian fiber $`X_6`$; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur–Feshbach, projector-stability, and basin-robustness statements are given here with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat $`\mathbb Z_{64}`$ line pulls back coherently to the q79 SpinC determinant, the $`1+2+3`$ carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby–Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.
+  We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle $`M_{10}\to Y_4`$ with compact Riemannian fiber $`X_6`$; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur–Feshbach, projector-stability, and basin-robustness statements are given here with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat $`\mathbb Z_{64}`$ line pulls back coherently to the q79 SpinC determinant, the $`1+2+3`$ carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby–Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time. The curved connection compiler and nonlinear, support-stratified strain shadow now refine this interface without supplying a physical endpoint. Finite homotopy transfer is kept separate from the analytic fixed-point hypotheses and the selected physical action.
 author:
 - Peter Nero
-current_version: v10
-date: September 2026, Version 10
-generated_from_main_tex_sha256: 8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae
+current_version: v11
+date: September 2026, Version 11
+generated_from_main_tex_sha256: 3e4687594762c72391fcee2fc653b5e69e42c7330a7a6f8d4326f90f612a6a05
 paper_id: modal-triplet-theory-foundations
 release_state: current_revised_tex
 released_version: v9
@@ -14,6 +14,31 @@ zenodo_doi: 10.5281/zenodo.21655367
 zenodo_record_id: 21655367
 zenodo_url: "https://zenodo.org/records/21655367"
 ---
+
+# Modal Triplet Theory: Foundations
+
+Peter Nero. September 2026, Version 11
+
+## Abstract
+
+We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle $`M_{10}\to Y_4`$ with compact Riemannian fiber $`X_6`$; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur–Feshbach, projector-stability, and basin-robustness statements are given here with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat $`\mathbb Z_{64}`$ line pulls back coherently to the q79 SpinC determinant, the $`1+2+3`$ carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby–Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time. The curved connection compiler and nonlinear, support-stratified strain shadow now refine this interface without supplying a physical endpoint. Finite homotopy transfer is kept separate from the analytic fixed-point hypotheses and the selected physical action.
+
+# Version 11 Revision Note
+
+Supersedes
+Version 10; previous release records and revision notes are retained.
+
+Reason
+Later owner results replace a proposed linear spectral-strain route and clarify which continuum data the analytic spine consumes.
+
+Resolution
+Adds curved projective/Čech naturality, the nonlinear strain shadow and its support boundary, finite all-arity transfer, and the three-packet physical endpoint contract. Corrects the distinction between identity-coordinate orthogonality and general polar variations, and states the real/complex comparison convention. Makes finite-rank spectral selection and the graph-norm inverse estimate explicit in their analytic statements.
+
+Retained
+The scoped analytic theorems, mild-invariance correction and finite shared-line square; Fixed Points I–VI are not revised here.
+
+Open boundary
+The physical endpoint, action, synthesis and compactification remain separate source obligations. This is an unreleased authoring revision, not a new release or physical status promotion.
 
 # Version 10 Revision Note
 
@@ -134,7 +159,7 @@ The canonical realization adds the physical arena used by the rest of the MTT pr
 The canonical physical specialization is
 ``` math
 \pi:M_{10}\longrightarrow Y_4,
- \qquad X_x=\pi^{-1}(x),qquad\dim X_x=6,
+ \qquad X_x=\pi^{-1}(x),\qquad\dim X_x=6,
 ```
 where $`Y_4`$ is a four-dimensional globally hyperbolic Lorentzian base in the physical completion and each compact fiber $`X_x`$ is Riemannian. In a local trivialization, $`M_{10}\simeq Y_4\times X_6`$. Positive elliptic modal operators act vertically on $`X_6`$ and do not create additional causal directions.
 
@@ -152,13 +177,13 @@ Q_{\rm WW}\in\Gamma\!\left(\operatorname{Hom}(TP,TI)\right).
 ```
 After choosing local frames, $`Q_{\rm WW}`$ has nine matrix components. This is not dimension multiplication: the total space of a rank-three vector bundle over a three-dimensional base has dimension $`3+3=6`$.
 
-At a nonsingular comparison background, polar decomposition separates the infinitesimal orientation and strain directions,
+Polar decomposition gives three orientation coordinates and six strain coordinates. At the identity, their infinitesimal representatives have the orthogonal Frobenius split
 ``` math
 \operatorname{Mat}(3,\mathbb R)
  =\mathfrak{so}(3)\oplus\operatorname{Sym}(3,\mathbb R),
  \qquad 9=3+6.
 ```
-Relative to a selected orthonormal flag, the strain space has the orthogonal decomposition
+At a general positive polar factor $`U`$, the variations $`\Omega U`$ and $`\delta U`$ need not be Frobenius-orthogonal. The component identity survives, but a metric in polar coordinates must be pulled back explicitly. Relative to a selected orthonormal flag, the strain space has the orthogonal decomposition
 ``` math
 \operatorname{Sym}(3,\mathbb R)
  =\mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O,
@@ -182,7 +207,7 @@ where $`\mathcal A_0=\ker\operatorname{Tr}`$. The corresponding common carrier i
  =L_{\rm shared}\otimes(\mathcal O\oplus\mathcal A_0\oplus\mathcal A),
  \qquad \operatorname{rank}\mathcal H_{\rm CLN}=6.
 ```
-This proves the selected rank filtration, not its identification with the local strain decomposition. Such an identification requires a same-source bundle-and-connection intertwiner. The line bundle $`L_{\rm shared}`$ carries common $`U(1)`$ phase or holonomy data; it is neither an extra product dimension nor physical Lorentzian time.
+This proves the selected complex rank filtration, not its identification with the real strain decomposition. A complex-linear comparison first complexifies the latter; a real comparison instead needs a compatible real form of the former. A linear identification would then require a same-source bundle-and-connection intertwiner. The line bundle $`L_{\rm shared}`$ carries common $`U(1)`$ phase or holonomy data; it is neither an extra product dimension nor physical Lorentzian time.
 
 In plain terms, the local carrier says how a three-directional comparison can deform, while the q79 carrier says how three sheets split into common, trace-free, and full information. Both supply six organized directions. What is missing is a map showing that transporting, differentiating, and measuring one carrier is equivalent to doing the same with the other. Rank agreement alone cannot provide those dynamical statements.
 
@@ -262,7 +287,7 @@ with connection/contact form $`\alpha_k`$ satisfying, in the chosen normalizatio
 ``` math
 d\alpha_k=2\pi k\,\pi^*\omega.
 ```
-For $`B=\mathbb{CP}^1`$ this total space is the lens space $`L(k,1)`$; hence $`k=3`$ gives $`L(3,1)`$ exactly at bundle-topology level. For an integral area form on $`T^2`$, the total space is a quotient of the Heisenberg group by a lattice and is a three-dimensional contact nilmanifold .
+For $`B=\mathbb{CP}^1`$ this total space is the lens space $`L(k,1)`$; hence $`k=3`$ gives $`L(3,1)`$ exactly at bundle-topology level. For an integral area form on $`T^2`$, the total space is a quotient of the Heisenberg group by a lattice and is a three-dimensional contact nilmanifold \[[17](#ref-BoothbyWang),[18](#ref-ContactBlowup)\].
 
 Consequently Lens and Nil are parallel realizations of one prequantization schema over different bases and curvature classes. They are not literally nested manifolds. Nor are they one literal line bundle: the rigorous common target is the differential classifier $`BU(1)_\nabla`$ with separate maps
 ``` math
@@ -276,9 +301,20 @@ After a polarization, weight-$`m`$ equivariant functions on $`P_k`$ correspond t
 ``` math
 \mathcal H_m=H^0(B,L^m).
 ```
-This is a conditional geometric-quantization Hilbert space, not a Hilbert space selected by the abstract MTT axioms. The periodic Reeb flow is the vertical phase action and must not be identified with noncompact physical time .
+This is a conditional geometric-quantization Hilbert space, not a Hilbert space selected by the abstract MTT axioms. The periodic Reeb flow is the vertical phase action and must not be identified with noncompact physical time \[[19](#ref-Woodhouse)\].
 
 These two circle constructions therefore complement rather than replace one another. The flat q79 line provides an exact finite holonomy and Hessian intertwiner. The curved Boothby–Wang bundles explain how Lens and Nil geometries can arise from a common construction principle. A future continuum theorem must relate them on a declared correspondence space while preserving their different curvature data.
+
+## The current curved and nonlinear interface
+
+The QM owner makes the continuum side explicit \[[1](#ref-QMGeometry),[3](#ref-FrozenProjective),[4](#ref-FrozenCech)\]. Smooth finite matrix projectors describe bundles over a base with infinitely many possible modes; they do not flatten nonzero characteristic curvature. The Čech compiler represents a supplied connection by $`(p,\Gamma)`$, not by the Grassmann projector connection alone. Unitary naturality transports the metric, connection, operator domains and spectral windows together; raw fixed Fourier windows need not reduce the physical operator. CLN is local, auxiliary or filtrational structure, not the global q79 topology. In particular, this paper does not identify that topology with a literal $`S^1\times\mathrm{Lens}\times\mathrm{Nil}`$ product or put a parallel flag inside an irreducible physical HYM bundle.
+
+<span id="sec:consumer-strain" label="sec:consumer-strain"></span> The same owner excludes the old phase-stable linear rank-six root-space route by its incompatible $`S_3`$ character. The replacement is the nonlinear spectral-strain map
+``` math
+\Phi(X)=(d_0,d_1,d_2,|z_{12}|^2,|z_{20}|^2,|z_{01}|^2)
+ \quad (X\in\operatorname{Herm}(3)).
+```
+It forgets the triangle phase; the full generic relative-phase quotient is seven-dimensional. On the regular image, the derivative $`J=D\Phi`$ and a supplied positive source Hessian’s reduced Green $`G_Q`$ yield the shorted Hessian $`(JG_QJ^*)^{-1}`$ where the reduced covariance is invertible, by minimizing over the discarded directions, not by a bundle isometry \[[5](#ref-FrozenStrain)\]. For a TT-only observable, project $`J`$ before shorting. The later global map has eight edge-support strata: a zero edge has a quadratic normal jet and a degree-one normal strain cost, not an ordinary six-dimensional boundary Hessian \[[6](#ref-FrozenSupport)\]. Rank-six surjectivity, or the required local $`C_4`$ derivative $`J_{DE}`$, forces the regular stratum. This retires regularity as an independent input under that stronger contract without selecting the physical endpoint, Green operator or same-source $`S_3\times C_4`$ lift. The finite quarter-turn is a tangent operation, not a global automorphism of the strain orthant.
 
 # Three independent evolution parameters
 
@@ -410,7 +446,7 @@ A continuation or reset rule is supplied at admissibility exit.
 
 No gate in this list follows solely from the gate preceding it.
 
-For a mild equation with a commuting linear semigroup and a globally Hilbert-space-Lipschitz nonlinear term, tangency of that nonlinear term to $`P\mathcal H`$ is sufficient: the restricted mild solution stays in the subspace and uniqueness identifies it with the full solution. This is the mild-invariance criterion imported from Fixed Points I . In a different Sobolev phase space, a locally defined flow, or a weak realization, continuation, domain compatibility, and uniqueness must be proved there before the same inference is used.
+For a mild equation with a commuting linear semigroup and a globally Hilbert-space-Lipschitz nonlinear term, tangency of that nonlinear term to $`P\mathcal H`$ is sufficient: the restricted mild solution stays in the subspace and uniqueness identifies it with the full solution. This is the mild-invariance criterion imported from Fixed Points I \[[12](#ref-FixedPoints)\]. In a different Sobolev phase space, a locally defined flow, or a weak realization, continuation, domain compatibility, and uniqueness must be proved there before the same inference is used.
 
 A simple projected movie illustrates the distinction. Suppose the visible frame after one step looks exactly as it did before. The hidden part of the state may nevertheless have moved and then been erased by projection. That is a projected time-step fixed point, not an equilibrium of the full dynamics. Likewise, two different upper states may cast the same returning visible frame, so existence does not imply uniqueness.
 
@@ -423,7 +459,7 @@ Let $`K\subset P\mathcal H`$ be nonempty, closed, bounded, and convex and define
 T_\tau=P R_\tau|_K.
 ```
 
-Fixed Points I is the canonical theorem source for the following three gates . They are restated here, with all hypotheses and conclusions, so that the Foundation remains independently readable.
+Fixed Points I is the canonical theorem source for the following three gates \[[12](#ref-FixedPoints)\]. They are restated here, with all hypotheses and conclusions, so that the Foundation remains independently readable.
 
 #### Existence gate.
 
@@ -474,7 +510,7 @@ with domain $`P\mathcal H\oplus\mathcal D(L_{QQ})`$. Assume:
 
 1.  $`0\in\rho(L_{QQ})`$ and $`L_{QQ}^{-1}:Q\mathcal H\to\mathcal D(L_{QQ})`$ is bounded in the graph norm;
 
-2.  $`L_{PP}`$ and $`L_{QP}:P\mathcal H\to Q\mathcal H`$ are bounded; and
+2.  $`L_{PP}:P\mathcal H\to P\mathcal H`$ and $`L_{QP}:P\mathcal H\to Q\mathcal H`$ are bounded; and
 
 3.  $`L_{PQ}:\mathcal D(L_{QQ})\to P\mathcal H`$ is graph-norm bounded, so $`L_{PQ}L_{QQ}^{-1}`$ is bounded.
 
@@ -490,7 +526,12 @@ where
 ``` math
 S=L_{PP}-L_{PQ}L_{QQ}^{-1}L_{QP}.
 ```
-If $`\|L_{QQ}^{-1}\|\le C_Q/\omega_Q`$, then
+If the inverse satisfies the additional graph-norm bound
+``` math
+\|L_{QQ}^{-1}\|_{Q\mathcal H\to\mathcal D(L_{QQ})_{\rm gr}}
+ \le C_Q/\omega_Q,
+```
+then
 ``` math
 \|S-L_{PP}\|
  \le\|L_{PQ}L_{QQ}^{-1}\|\,\|L_{QP}\|
@@ -515,7 +556,7 @@ Two different notions of robustness are needed. Projector stability asks whether
 
 <div class="proposition">
 
-**Proposition 6** (Riesz-projector stability). *Let $`A(\epsilon)`$ be a norm-resolvent-continuous family and let a contour $`\Gamma`$ remain in the resolvent set while enclosing one isolated cluster. Then
+**Proposition 6** (Riesz-projector stability). *Let $`A(\epsilon)`$ be a norm-resolvent-continuous family on a connected parameter neighborhood, and let a contour $`\Gamma`$ remain in the resolvent set while enclosing one isolated cluster. Assume its Riesz projector has finite rank at one parameter value. Then
 ``` math
 P(\epsilon)=\frac{1}{2\pi i}\oint_\Gamma(z-A(\epsilon))^{-1}\,dz
 ```
@@ -523,7 +564,7 @@ is norm continuous and has constant finite rank. This proves projector stability
 
 </div>
 
-The contour in this proposition is the protective spectral boundary. As long as no eigenvalue or spectral cluster crosses it, the rank cannot jump. If the contour ceases to lie in the resolvent set, the selected sector may change dimension and the conclusion no longer applies.
+The contour in this proposition is the protective spectral boundary. As long as no eigenvalue or spectral cluster crosses it, the rank cannot jump. If the contour ceases to lie in the resolvent set, the selected sector may change dimension and the conclusion no longer applies. Finite rank is a separate hypothesis here: the zero operator on an infinite-dimensional Hilbert space has an isolated spectral point, but its enclosing Riesz projector is the identity and has infinite rank. A physical compact-resolvent realization can supply the finite-rank hypothesis; the abstract Hilbert-bundle notation alone cannot.
 
 <div id="thm:robust" class="theorem">
 
@@ -556,7 +597,7 @@ Let $`r:X\to Y_{\rm eff}`$ be a surjective reduction map on a microscopic state 
 
 #### Imported autonomous-descent criterion.
 
-The Projection–Admissibility paper is the canonical theorem source . There exists a unique reduced map $`\overline\Phi:Y_{\rm eff}\to Y_{\rm eff}`$ satisfying
+The Projection–Admissibility paper is the canonical theorem source \[[13](#ref-Projection)\]. There exists a unique reduced map $`\overline\Phi:Y_{\rm eff}\to Y_{\rm eff}`$ satisfying
 ``` math
 \overline\Phi\circ r=r\circ\Phi
 ```
@@ -651,6 +692,14 @@ In other words, the Foundation can prove that a selected internal sector is stab
 
 # Foundation synthesis theorem
 
+## What the later finite calculus supplies
+
+The Cohesive Closure Repair owner gives a useful downstream example, not a replacement for the analytic hypotheses \[[2](#ref-CohesiveCurrent),[7](#ref-FrozenMThree),[8](#ref-FrozenMFour),[9](#ref-FrozenHigher),[10](#ref-FrozenNaturality)\]. Its exact 144-dimensional symmetric Weyl DGA retracts to a 48-dimensional complex retaining the old 36-dimensional response and twelve higher-jet harmonic classes. This is not a minimal model: the differential is nonzero. Nonzero $`m_3`$ and $`m_4`$ accompany the nonassociative binary product, and a proved recurrence gives a nonzero operation at every higher arity on a selected input family. That is not a complete operation or residual table from $`m_5`$ onward. Exact contraction-preserving DGA maps transport all arities by the tree formula; approximate maps require defect and tail bounds.
+
+For a physical application, these identities still require a selected operator on a declared domain and the relevant invariant basin, derivative, gap and resolvent estimates. A finite transfer operation is not automatically a physical interaction, and a positive repair cost is not the signed physical action. The independent Fixed Points gates above remain unchanged.
+
+<span id="sec:consumer-endpoint" label="sec:consumer-endpoint"></span> The owner’s endpoint factorization makes the physical input ledger more precise \[[11](#ref-FrozenEndpoint)\]. Its seven operator/action/compactification rows depend on three same-source types: geometry-action data (GAS), spectral synthesis with domains and error control (SYN), and four-dimensional BV-compatible compactification (BV4). These are structured objects, not three scalar parameters. The action Hessian and synthesis determine the Galerkin residual and, when the complementary inverse exists, its Feshbach correction; that execution introduces no fourth source type. None of the three physical packets is supplied by the abstract Foundation. Established hidden projective existence and finite/profile results are retained; the selected common-chamber endpoint, literal metrics, physical action and compactification remain the concrete boundary.
+
 The synthesis theorem gathers the preceding gates without weakening their independence. It should be read as a conditional assembly instruction: when a realization supplies each named hypothesis, the corresponding control conclusion follows. It is not a shortcut by which the word “MTT” supplies all hypotheses at once.
 
 <div id="thm:foundation" class="theorem">
@@ -659,7 +708,7 @@ The synthesis theorem gathers the preceding gates without weakening their indepe
 
 </div>
 
-None of these conclusions supplies a physical probability law, Lorentzian field equation, quantum representation, particle spectrum, Standard Model matching, cosmology, or numerical prediction. Those are downstream obligations governed by the admissibility ledger. Nor does equality of the local $`1+2+3`$ strain dimensions and the q79 $`1+2+3`$ trace-split ranks prove the same-source intertwiner needed to identify their metrics, connections, and vertical operators. Theorem <a href="#thm:shared-line" data-reference-type="ref" data-reference="thm:shared-line">1</a> closes the common flat line and finite Hessian square inside the q79 carrier; it does not close that local-to-continuum identification.
+None of these conclusions supplies a physical probability law, Lorentzian field equation, quantum representation, particle spectrum, Standard Model matching, cosmology, or numerical prediction. Those are downstream obligations governed by the admissibility ledger. Nor does equality of the local $`1+2+3`$ strain dimensions and the q79 $`1+2+3`$ trace-split ranks prove the same-source intertwiner needed to identify their metrics, connections, and vertical operators. Theorem [3.1](#thm:shared-line) closes the common flat line and finite Hessian square inside the q79 carrier; it does not close that local-to-continuum identification.
 
 What a downstream paper may legitimately inherit is now explicit: a coherent spectral decomposition, conditional fixed-point and equilibrium gates, controlled linear elimination, local robustness, and an exact finite shared-line square, each on its declared hypotheses. What it may not inherit without new work is a physical state space, a gauge or particle representation, a value source, or a causal field equation. This is the operational meaning of calling the present paper a foundation.
 
@@ -667,34 +716,92 @@ What a downstream paper may legitimately inherit is now explicit: a coherent spe
 
 The corrected Foundation provides a typed and noncircular spine for the MTT corpus. It identifies what the triplet and projector mean, how complementary stability is proved, which fixed-point conclusion is available, how reduction is typed, and where physical assumptions enter. Its value is precisely this separation: later realizations can now be tested against explicit gates rather than inheriting conclusions from an undifferentiated appeal to coherence. The shared-circle sector now illustrates the intended discipline particularly well: a curved Boothby–Wang schema, an exact flat q79 differential line, and a conditional polarized Hilbert readout coexist without being conflated.
 
-The broader research direction is to replace the remaining compatibilities by commuting source maps. The highest-value next step is not another rank count or a restatement of the fixed-point gates. It is a continuum intertwiner from the local strain carrier to the physical q79 HYM complex that preserves the connection, Hessian, and normalized response data. With that map and a selected action, the abstract control spine could begin to explain why the successful lower theories arise from one source rather than merely fit together after selection.
+The broader research direction is to replace the remaining compatibilities by commuting source maps. The highest-value next step is not another rank count or a restatement of the fixed-point gates. It is a same-source continuum comparison using the nonlinear strain shadow, the physical q79 HYM complex, its connection, shorted Hessian and normalized response data. An excluded linear root-space embedding is not that comparison. With the required maps and a selected action, the abstract control spine could begin to explain why the successful lower theories arise from one source rather than merely fit together after selection.
 
-<div class="thebibliography">
+# References
 
-99
+<a id="ref-QMGeometry"></a>
 
-P. Nero, *Fixed Points I: Projected Fixed Points, Equilibria, and Noncompact Domains in Modal Triplet Theory*, revised edition, 2026.
+\[1\] P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, projective HYM, Čech compiler, spectral-strain and support-stratification sections, current owner manuscript, 2026.
 
-P. Nero, *The Projection–Admissibility Principle: Descent, Recovery, and Structural Constraints on Effective Description*, revised edition, 2026.
+<a id="ref-CohesiveCurrent"></a>
 
-T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1995.
+\[2\] P. Nero, *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows*, version 14, response-retract and all-arity source-map sections, 2026. The structural results are retained in the additive successor.
 
-K.-J. Engel and R. Nagel, *One-Parameter Semigroups for Linear Evolution Equations*, Springer, 2000.
+<a id="ref-FrozenProjective"></a>
 
-K. Deimling, *Nonlinear Functional Analysis*, Springer, 1985.
+\[3\] P. Nero, [Covariant projective-module HYM naturality](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_hym_naturality/artifact.json), frozen result, 2026.
 
-W. M. Boothby and H. C. Wang, On contact manifolds, *Annals of Mathematics* 68 (1958), 721–734.
+<a id="ref-FrozenCech"></a>
 
-R. Casals, D. M. Pancholi, and F. Presas, Contact blow-up, *Expositiones Mathematicae* 33 (2015), 97–123.
+\[4\] P. Nero, [Explicit curved connection compiler](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cech_projector_compiler/artifact.json), frozen result, 2026.
 
-N. M. J. Woodhouse, *Geometric Quantization*, second edition, Oxford University Press, 1992.
+<a id="ref-FrozenStrain"></a>
 
-P. Nero, *q79 Universal Shared Differential Line and Finite-Operator Intertwiner*, executable theorem packet, 2026.
+\[5\] P. Nero, [Intrinsic spectral-strain quotient and shorted Hessian](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_spectral_strain_hessian/artifact.json), frozen result, 2026.
 
-</div>
+<a id="ref-FrozenSupport"></a>
+
+\[6\] P. Nero, [Global support-stratified strain and boundary-Hessian exclusion](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_support_stratified_strain/artifact.json), frozen result, 2026.
+
+<a id="ref-FrozenMThree"></a>
+
+\[7\] P. Nero, [Symmetric response retract and transferred ternary operation](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-FrozenMFour"></a>
+
+\[8\] P. Nero, [Transferred quaternary operation and arity-four coherence](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-FrozenHigher"></a>
+
+\[9\] P. Nero, [Higher-jet support and all-arity nontruncation](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-FrozenNaturality"></a>
+
+\[10\] P. Nero, [All-arity contraction-morphism naturality](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-FrozenEndpoint"></a>
+
+\[11\] P. Nero, [Seven-row endpoint factorization through three source types](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-FixedPoints"></a>
+
+\[12\] P. Nero, *Fixed Points I: Projected Fixed Points, Equilibria, and Noncompact Domains in Modal Triplet Theory*, revised edition, 2026.
+
+<a id="ref-Projection"></a>
+
+\[13\] P. Nero, *The Projection–Admissibility Principle: Descent, Recovery, and Structural Constraints on Effective Description*, revised edition, 2026.
+
+<a id="ref-Kato"></a>
+
+\[14\] T. Kato, *Perturbation Theory for Linear Operators*, Springer, 1995.
+
+<a id="ref-EngelNagel"></a>
+
+\[15\] K.-J. Engel and R. Nagel, *One-Parameter Semigroups for Linear Evolution Equations*, Springer, 2000.
+
+<a id="ref-Deimling"></a>
+
+\[16\] K. Deimling, *Nonlinear Functional Analysis*, Springer, 1985.
+
+<a id="ref-BoothbyWang"></a>
+
+\[17\] W. M. Boothby and H. C. Wang, On contact manifolds, *Annals of Mathematics* 68 (1958), 721–734.
+
+<a id="ref-ContactBlowup"></a>
+
+\[18\] R. Casals, D. M. Pancholi, and F. Presas, Contact blow-up, *Expositiones Mathematicae* 33 (2015), 97–123.
+
+<a id="ref-Woodhouse"></a>
+
+\[19\] N. M. J. Woodhouse, *Geometric Quantization*, second edition, Oxford University Press, 1992.
+
+<a id="ref-SharedLinePacket"></a>
+
+\[20\] P. Nero, *q79 Universal Shared Differential Line and Finite-Operator Intertwiner*, executable theorem packet, 2026.
 
 <!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
-The numerical and machine-verifiable claims used by this paper are archived in the curated repository, `https://github.com/PeterNero/mtt-results-repro`. The mapped authority/result identifiers are `no result rows mapped`. Claim tiers in that capsule distinguish exact derivation, certified numerics, profile replay, conditional results, and open obligations.
+The newly imported results are cited individually in the bibliography at the immutable curated source state, with local result identifiers recorded in the metadata companion. The archive is <https://github.com/PeterNero/mtt-results-repro>. Exact finite calculus, conditional continuum implications and physical source obligations retain their distinct tiers; an archive citation is not an independent proof check.
 <!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->

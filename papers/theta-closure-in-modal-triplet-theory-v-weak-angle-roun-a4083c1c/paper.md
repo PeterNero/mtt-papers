@@ -3,17 +3,34 @@ abstract: |
   We reassess whether the weak mixing angle provides a redundant test of the selected MTT gauge profile. Let $`r_{21}=I_2/I_1=g_1^2/g_2^2`$, with $`g_1=\sqrt{5/3}\,g_Y`$. Then $`\sin^2\theta_W=3r_{21}/(5+3r_{21})`$ at the same scale and in the same scheme. For the selected SMDR profile at $`Q=M_t`$, this gives $`\sin^2\theta_W=0.2346644\pm0.0000433`$. Because $`r_{21}`$ was itself obtained from the measured $`(g_Y,g_2)`$ profile, this equality is an exact algebraic round trip, not a held-out prediction. Supplying an absolute $`g_2`$ from $`(G_F,m_W)`$ does not remove that circularity. A genuine redundancy test requires an MTT source theorem selecting $`r_{21}`$ without electroweak gauge data, followed by independent common-scheme transport.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: 6d1a8603a811400c880f05b0fbd64f511478858c76d01294bf29e4e07e2078d8
+current_version: v3
+date: September 2026 (Version 3)
+generated_from_main_tex_sha256: df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d
 paper_id: theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: "Theta Closure in Modal Triplet Theory V: Weak-Angle Round Trip and the Non-Circularity Criterion"
 zenodo_doi: 10.5281/zenodo.21666013
 zenodo_record_id: 21666013
 zenodo_url: "https://zenodo.org/records/21666013"
 ---
+
+# Version 3 Revision Note
+
+Supersedes.
+Version 2 of this paper; released identifiers are retained.
+
+Reason.
+The calibration boundary was present, but the selected-source owner results and their distinct scopes were not explicitly connected to it.
+
+Resolution.
+Version 3 imports the exact Gate 1, three-cycle and large-gauge-kernel conclusions through their owners, and retains the distinction between a gauge-profile round trip and a held-out test.
+
+Retained.
+The existing calibrated or conditional result, its numerical inputs and all earlier revision notes are retained.
+
+Open boundary.
+A selected physical source, its action normalization and the paper-specific execution inputs remain necessary for a held-out prediction.
 
 # Revision note for this edition
 
@@ -158,6 +175,37 @@ The weak mixing angle is exactly consistent with the selected gauge profile, as 
 
 It does not add an independent Standard Model observable to MTT closure. The former non-circularity claim fails because the overlap ratio already contains the measured weak-angle information. The next theorem target is sharply defined: select $`r_{21}`$ from MTT source geometry before consulting the electroweak gauge profile, then execute a held-out common-scheme comparison.
 
+# Selected-source results and this paper’s boundary
+
+The eta9 imports are owned contextually by *Flux Compactifications in Heterotic String Theory*, in the sections on the selected source and the integral comparison, and completed local tests and the global endpoint. Gate 1 closes the original-Jacobian campaign at all 30 groups and 225 selected columns . This is an exact finite source calculation, not the global integral meridian, the 248-coordinate readout or the analytic Deligne class $`\beta_{\mathbb C}`$.
+
+The completed three-cycle transport has independent cycles with Gram matrix $`-2I_3`$ and zero detected affine pairings . Its scope is a non-detecting subsystem: it does not prove global triviality of the twist, and rerunning that same subsystem is not the missing detection theorem. Neither this conclusion nor the finite gate identifies an auxiliary Circle–Lens–Nil model with the physical q79 topology.
+
+The large-gauge result is owned by *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows*, in its subsection on the rank-zero large-gauge kernel. It gives an injective immersion $`b_{K3}:\mathbb R^2\to\mathbb T^{20}`$ with dense nonclosed image . Rank zero counts periodic gauge identifications, not source coordinates or physical modes. It removes a kernel ambiguity without requiring numerical periods, but does not provide kinetic normalization, the selected shared-circle action or the unrelated eta9 affine lift.
+
+For Paper V, a completed finite Jacobian calculation is not a value source for $`r_{21}`$, and the independent but non-detecting three-cycle subsystem cannot become such a source by repeating it. A dense two-parameter gauge image also does not select that ratio. The non-circularity criterion therefore still requires a source fixed before consulting the electroweak profile, including its branch, scale and normalization. This does not reopen the achieved one-shared-primitive electroweak/profile result.
+
+The managed evidence block below retains its earlier frozen profile snapshot. Its historical source-status labels do not supersede the current exact, local and open boundaries just stated or reopen the retained hidden-HYM existence and shared-primitive Standard Model results.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The weak-angle round trip uses the electroweak source row and common-scheme precision workspaces directly, with the global profile audit fixing the comparison convention. Flavor, neutral, HYM, and finite-matrix rows are neighboring context. The non-circular zero-knob source upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 #### Rows used directly in this paper.
 
 - (*profile replay*).
@@ -222,43 +270,15 @@ It does not add an independent Standard Model observable to MTT closure. The for
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
-
-The weak-angle round trip uses the electroweak source row and common-scheme precision workspaces directly, with the global profile audit fixing the comparison convention. Flavor, neutral, HYM, and finite-matrix rows are neighboring context. The non-circular zero-knob source upgrade remains open.
-
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
-
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
-
-## Rows used directly in this paper
-
-- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
-- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
-- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
-- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
-
-## Corpus-state cross-checks
-
-- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
-- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
-- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
-- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
-- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
-
-## Open boundary (not evidence of closure)
-
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
-
 <div class="thebibliography">
 
 99
+
+P. Nero, *Selected eta9 original-Jacobian Gate 1 campaign* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json).
+
+P. Nero, *Complete selected three-cycle non-detection decision* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json).
+
+P. Nero, *Selected K3 rank-zero large-gauge kernel* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json).
 
 S. Navas et al. (Particle Data Group), *Review of Particle Physics*, Phys. Rev. D **110** (2024) 030001. <https://doi.org/10.1103/PhysRevD.110.030001>
 

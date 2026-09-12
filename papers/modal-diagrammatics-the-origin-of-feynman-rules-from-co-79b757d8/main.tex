@@ -18,7 +18,7 @@
 \title{\textbf{Universal Perturbative Graph Structure:}\\
 \large A Typed Modal Diagrammatics and Its Quantum Boundary}
 \author{Peter Nero}
-\date{Version 2, July 2026}
+\date{Version 3, September 2026}
 
 \begin{document}
 \maketitle
@@ -52,8 +52,27 @@ The geometry-selected upper action, fixed-coupling interacting
 gauge--BRST \(C^*\)-completion, renormalization-group matching, and
 observable uncertainty packet remain open.  The formulation
 retains the explanatory value of modal diagrammatics while making its
-mathematical and physical boundary explicit.
+mathematical and physical boundary explicit. A finite residual-and-metric
+jet supplies the complete repair-action graph datum, with exact transport
+under a compatible change of variables; its identification with physical
+Feynman data remains a separate action and state problem.
 \end{abstract}
+
+\section*{Version 3 revision note}
+\begin{description}
+\item[Supersedes.] Version~2; the earlier revision note and released identity
+are retained.
+\item[Reason.] The residual-to-graph construction now supplies an upstream
+input to the transfer theorem. The graph formula also needed an explicit
+interaction sign and correctly typed field/dual projection.
+\item[Resolution.] Explain the complete residual/metric jet, a polynomial
+example, and non-isometric coordinate transport. Distinguish cost pullback
+from reducing isometry and include the Euclidean vertex sign.
+\item[Retained result.] Finite Wick organization, all-retained graph
+transfer, no-mixed-vertex factorization, and graph nonselection remain exact.
+\item[Open boundary.] A positive repair cost does not select the physical
+signed action, causal inverse, statistics, state, or interacting completion.
+\end{description}
 
 \section*{Version 2 revision note}
 
@@ -163,7 +182,7 @@ The resulting scalar or external tensor is
 \begin{equation}
  W_\Gamma(K,V,G)
  =
- \frac{\epsilon(\Gamma)}{|\Aut\Gamma|}
+ \frac{(-1)^{|V(\Gamma)|}\epsilon(\Gamma)}{|\Aut\Gamma|}
  \operatorname{Contr}_\Gamma
  \left(
  \bigotimes_{v\in V(\Gamma)}V_{\deg(v)}
@@ -174,6 +193,12 @@ The resulting scalar or external tensor is
 \end{equation}
 This formula exposes all of the information that a bare graph drawing
 hides: numerical kernels, vertex tensors, symmetry factors, and grading.
+The displayed sign is for the Euclidean convention
+$\exp(-S_{\rm int})$ with $\hbar=1$; coupling powers are understood.
+Other exponential conventions replace that vertex factor explicitly.
+External insertions are labeled and graph automorphisms fix those labels.
+This formula first organizes unnormalized moments; division by the vacuum
+series gives normalized correlators and removes disconnected vacuum factors.
 
 \begin{definition}[Perturbative graph datum]
 A perturbative graph datum is the tuple
@@ -206,7 +231,8 @@ pairing identifies two tensor arguments and contracts them with \(G\).
 Grouping pairings that differ only by relabeling yields an isomorphism
 class of graphs and the orbit--stabilizer factor
 \(|\Aut\Gamma|^{-1}\).  Moving odd variables into the chosen pairing order
-produces the Koszul sign.  Conversely, every decorated graph determines
+produces the Koszul sign, while the interaction exponential contributes
+one minus sign per vertex. Conversely, every decorated graph determines
 such a pairing.  Thus the two finite sums agree coefficient by
 coefficient.
 \end{proof}
@@ -238,15 +264,19 @@ algebras, kernels, state conditions, and localization rules differ.
 \subsection{Compatible retained sector}
 
 Let \(P:E\to E\) be an even idempotent and write \(E_P=\im P\).
-Assume \(P\) is \(K\)-self-adjoint and
+Let $P^*:E^*\to E^*$ be its dual. Because $K:E\to E^*$ is a
+quadratic form, the correctly typed block-diagonality condition is
 \begin{equation}
- [P,K]=0.
+ KP=P^*K.
  \label{eq:PK}
 \end{equation}
 Then \(K\) is block diagonal on \(E_P\oplus\ker P\), and
 \[
- K_P=K|_{E_P},\qquad G_P=K_P^{-1}=PGP|_{E_P}.
+ K_P=K|_{E_P},\qquad G_P=K_P^{-1}=PGP^*|_{E_P^*}.
 \]
+Here $E_P^*$ is embedded by the splitting determined by $P$. If a field
+metric identifies $E$ with $E^*$ and $P$ is orthogonal for that metric,
+this condition becomes commutation of $P$ with the Riesz operator of $K$.
 Define the retained vertex
 \[
  V_n^P=V_n|_{E_P^{\otimes n}}.
@@ -267,7 +297,7 @@ The equality includes symmetry factors and graded signs.
 \begin{proof}
 At every retained vertex, \(V_n^P\) is exactly the restriction of \(V_n\).
 On every retained internal edge, commutation and block diagonality give
-\(G_P=PGP|_{E_P}\).  Since \(P\) is even, it preserves parity and hence
+\(G_P=PGP^*|_{E_P^*}\). Since \(P\) is even, it preserves parity and hence
 the Koszul sign.  The underlying graph and its automorphism group are
 unchanged.  Substitution into \eqref{eq:graph-weight} proves the equality.
 \end{proof}
@@ -454,6 +484,90 @@ perturbative graph datum.
 The graph theorem remains useful: it organizes which distribution must be
 extended.  It does not perform or uniquely select the extension.
 
+\section{Repair jets supply a finite graph datum}
+\label{sec:repair-jets}
+
+The frozen H4-T8 construction supplies an upstream arrow to this paper's
+graph theorem \cite{FrozenRepairJet}. Fix finite field and residual spaces,
+a background $a_*$, a smooth or formal residual $\Phi(a)$, and a positive
+residual metric field $W(a)$. Set
+\[
+ S_{\rm rep}(a)=\tfrac12\langle\Phi(a),W(a)\Phi(a)\rangle.
+\]
+Write $R_m=D^m\Phi(a_*)$ and $W_m=D^mW(a_*)$. Repeated Leibniz
+differentiation assigns each derivative to the left residual, metric, or
+right residual, so the entire vertex tensor is
+\[
+ V_n(v_1,\ldots,v_n)=\tfrac12
+ \sum_{[n]=A\sqcup B\sqcup C}
+ \langle R_{|A|}(v_A),W_{|B|}(v_B)R_{|C|}(v_C)\rangle.
+\]
+The blocks are ordered by their factor roles and indices retain their
+original order; graded models insert the corresponding Koszul signs.
+Thus vertices are outputs of the joint residual-and-metric jet, not extra
+source coefficients. A residual without its metric derivatives is insufficient.
+At $R_0=0$, the Hessian form is $K=R_1^\dagger W_0R_1$.
+At nonzero defect even constant $W$ adds
+$\langle R_0,W_0R_2(v,w)\rangle$, so the Gram formula is no longer complete.
+
+\subsection{A worked polynomial source}
+\label{sec:repair-example}
+
+For $\Phi(x,y)=(x,y+y^2)$ and $W=I$ at zero,
+\[
+ S_{\rm rep}=\tfrac12x^2+\tfrac12y^2+y^3+\tfrac12y^4,
+ \qquad K=I,\quad V_{3,yyy}=6,\quad V_{4,yyyy}=12.
+\]
+All higher vertices vanish. In general a residual of degree $r$ with
+constant metric has no vertices above degree $2r$. With the same scalar
+residual and $W(y)=1+y+y^2>0$, the cubic and quartic derivatives instead
+become $9$ and $48$, and the action has degree six. This is a metric-jet
+effect, not new independent interaction data.
+
+In the unit-covariance Gaussian, $\langle y^4\rangle=3$ and
+$\langle y^6\rangle=15$. The unnormalized vacuum coefficients from one
+quartic vertex and two cubic vertices are consequently
+$-(12/4!)3=-3/2$ and $(6/3!)^2 15/2=15/2$.
+These illustrate the exponential sign as well as the combinatorics.
+
+\subsection{Coordinate transport is not a physical isometry}
+\label{sec:repair-transport}
+
+If linear bijections $T,U$ satisfy
+$\Phi'(Ta)=U\Phi(a)$ and
+$\langle Ur,W'(Ta)Us\rangle=\langle r,W(a)s\rangle$,
+then $S'_{\rm rep}(Ta)=S_{\rm rep}(a)$ and every vertex pulls back.
+For $T=\operatorname{diag}(2,3)$ in the example, the target Hessian
+form is $\operatorname{diag}(1/4,1/9)$, its contravariant Gaussian
+covariance is $\operatorname{diag}(4,9)$, and its cubic/quartic entries
+are $2/9,4/27$. Edge and vertex factors cancel exactly in every contraction.
+Transporting the field metric also makes the Hessian Riesz operators and
+their functional calculi intertwine. With independently fixed physical
+metrics, a cost pullback alone does not prove that stronger statement.
+
+Nor is a lower-dimensional cost restriction a reducing embedding. For
+$K=\left(\begin{smallmatrix}1&1\\1&2\end{smallmatrix}\right)$ and
+$Tx=(x,0)$, the restricted Hessian is $T^*KT=1$, but
+$KT(1)=(1,1)\ne T(1)$. The retained line leaks into its complement.
+The all-retained theorem therefore still needs~\eqref{eq:PK}, and the
+full retained theory still needs the no-mixed-vertex condition or an
+effective-action calculation.
+
+\subsection{What the source reduction does not quantize}
+
+On a specified kernel complement, the repair Hessian yields a finite
+Euclidean reduced inverse, zero-mode projector, and heat semigroup.
+These are sufficient for formal repair graphs. The joint q79 residual can
+organize integrability, HYM, balance, anomaly, and normalization lanes,
+but its actual endpoint and metric jets are not evaluated by H4-T8.
+In particular the signed-action comparison in the action paper
+\cite{ClosureAction5} is still necessary: squaring an action gradient
+changes both its Hessian and its vertices. Neither a causal/Feynman
+prescription nor a physical gauge/BRST state is obtained by differentiating
+a positive norm. The selected free-CAR and operational-QM results remain
+at their established tiers; this construction does not reopen them or
+complete the interacting theory.
+
 \section{What MTT contributes now}
 
 \subsection{Fixed points and coherent sectors}
@@ -508,14 +622,59 @@ formal jet at zero coupling does not select a unique fixed-nonzero-coupling
 bridge or regulator/continuum limit, selected physical state, RG matching,
 uncertainty control, and observable comparison remain open.
 
+\subsection{Finite transferred operations and the physical endpoint}
+\label{sec:finite-transfer-consumer}
+
+The cohesive source is a twisted perfect-object benchmark with integrable
+superconnection \(\overline E\). Conjugation cancels its scalar overlap
+twist on endomorphisms, giving the ordinary differential
+\(d=[\overline E,-]\). A chosen Hermitian metric gives total-space Hodge
+theory; it does not give a uniformly bounded family of fiberwise Green
+operators through a cohomology-rank jump \cite{FrozenCohesive,Cohesive14}.
+Its Maurer--Cartan residual \(da+a^2\), together with the linear gauge row,
+has positive normal \(\Delta_1\) at the exact background. The resulting
+heat semigroup is the tangent repair evolution, not the full nonlinear flow
+or a signed physical action \cite{FrozenCohesiveMC}. A derived equivalence
+preserving formal deformations does not automatically preserve that metric,
+adjoint, or spectrum. This is why the repair-jet graph construction still
+requires its own declared metric and action interpretation.
+
+Cohesive's finite response hierarchy supplies a related but different
+structure from the scalar repair jets above. Its 144-dimensional Weyl DGA
+retracts onto a 48-dimensional response complex. A DGA morphism preserving
+the inclusion, projection, and homotopy transports every transferred
+\(m_n\); the proof moves that morphism through each decorated transfer tree.
+The finite translation and Fourier actions preserve those source identities,
+so their order-36 covariance acts at all arities
+\cite{Cohesive14,FrozenAllArity}. This is not an inference from checking a few
+vertices. Nor are the \(m_n\) already a signed physical action or measured
+couplings. An approximate or nonreducing comparison needs separate defect
+estimates and does not inherit exact Hodge or all-arity identities.
+
+The endpoint-factorization theorem explains what physical promotion would
+require \cite{FrozenEndpoint}. Geometry and signed action (GAS), spectral
+synthesis and its domain/contraction certificates (SYN), and a
+BV-compatible four-dimensional compactification (BV4) must share one source.
+Their symmetry and Galerkin/Feshbach rows are then derived from that source,
+not additional freely selected kernels. For example, fixing a retained
+quadratic block does not fix the complement contribution to its Schur
+complement. The frozen contract accepts zero of the three complete physical
+packets and zero of its seven endpoint rows. These are structured source
+obligations, not a three-parameter count. Their openness leaves both the
+finite graph theorem and the selected free CAR net intact.
+
 \section{Three illustrative cases}
 
 \subsection{Euclidean scalar model}
 
-For a positive matrix \(K\) and quartic tensor \(V_4\), the finite Gaussian
-integral is literal.  The graph expansion is a moment expansion of an
-ordinary probability measure.  It demonstrates that the graph grammar is
-not uniquely quantum.
+For a positive matrix \(K\), the finite Gaussian reference measure is
+literal. A quartic interaction defines a normalized probability measure only
+when its full Boltzmann weight is integrable; a nonnegative quartic form is
+one sufficient condition. For an arbitrary quartic tensor the Wick
+coefficients still make sense formally, but positivity of \(K\) alone does
+not make the interacting integral finite. This example shows that the graph
+grammar is not uniquely quantum without equating a formal series with a
+convergent integral.
 
 \subsection{Free fermions}
 
@@ -620,7 +779,7 @@ all continuous inputs by path and hash.
 gauge-fixed or reduced domain and specify the inverse prescription.
 \item \textbf{Vertex check:} compute every retained \(V_n\) from the same
 action, including overlap integrals and normalization conventions.
-\item \textbf{Projection check:} verify \([P,K]=0\), the vertex
+\item \textbf{Projection check:} verify \(KP=P^*K\), the vertex
 intertwiners, and whether mixed vertices vanish or are integrated out.
 \item \textbf{Statistics check:} preserve the \(\mathbb Z_2\) grading and
 Koszul signs.
@@ -659,8 +818,8 @@ quadratic operator, every interaction tensor, grading, and identity
 operator.  Equality of the retained graph coefficients then follows
 mechanically.
 
-The theorem also identifies failure modes.  If \(P\) does not commute with
-\(K\), the lower propagator is not simply \(PGP\).  If mixed vertices
+The theorem also identifies failure modes. If \(KP\ne P^*K\),
+the lower propagator is not simply \(PGP^*\). If mixed vertices
 survive, discarded modes generate effective interactions.  If BRST/BV
 operators fail to intertwine, gauge identities need not descend.  These
 are informative obstructions, not merely missing prose.

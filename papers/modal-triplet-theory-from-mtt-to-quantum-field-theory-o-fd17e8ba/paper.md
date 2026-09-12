@@ -3,11 +3,11 @@ abstract: |
   The current Modal Triplet Theory corpus supports a precise but limited curved-spacetime quantum-field-theory result. On the selected globally hyperbolic framed q79 representative, a global coframe and parallel rank-six carrier define a zero-order-free twisted massless Dirac operator. Standard algebraic QFT then yields an even CAR observable net with locality, covariance, the time-slice property, and a nonempty positive Hadamard state space, together with the exact finite coherent/complement component map. These conclusions use independent QFT theorems; they are not derived from projection alone. At nonzero interaction, the selected carrier has a classical BV master-action and formal perturbative QME/equicausal construction, while a physical nonperturbative gauge-BRST C-star net, selected state, renormalization-group matching, and observable uncertainty packet remain open. The paper also separates Hadamard regularity from unitary implementability, and treats the semiclassical Einstein equation and FRW particle production as conditional applications. This establishes a selected free local QFT source and a formal interacting bridge, not a first-principles derivation of full interacting QFT from finite projection.
 author:
 - Peter Nero
-current_version: v4
-date: July 2026 Version 4
-generated_from_main_tex_sha256: 03b7e07110f8ff1a980338f47ce88346aaa598cd6a9b149cbaa971234dcb6bb2
+current_version: v5
+date: September 2026 Version 5
+generated_from_main_tex_sha256: 30df1fbb764fe7df536dd7e69227683c3df6f66e814f35e14e349909d6dad6ce
 paper_id: modal-triplet-theory-from-mtt-to-quantum-field-theory-o-fd17e8ba
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v4
 title: |
   Modal Triplet Theory and Quantum Field Theory on Curved Spacetime:
@@ -17,25 +17,41 @@ zenodo_record_id: 21665998
 zenodo_url: "https://zenodo.org/records/21665998"
 ---
 
+# Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A Selected Free CAR Net and the Interacting Reconstruction Boundary
+
+Peter Nero. September 2026 Version 5
+
+## Abstract
+
+The current Modal Triplet Theory corpus supports a precise but limited curved-spacetime quantum-field-theory result. On the selected globally hyperbolic framed q79 representative, a global coframe and parallel rank-six carrier define a zero-order-free twisted massless Dirac operator. Standard algebraic QFT then yields an even CAR observable net with locality, covariance, the time-slice property, and a nonempty positive Hadamard state space, together with the exact finite coherent/complement component map. These conclusions use independent QFT theorems; they are not derived from projection alone. At nonzero interaction, the selected carrier has a classical BV master-action and formal perturbative QME/equicausal construction, while a physical nonperturbative gauge-BRST C-star net, selected state, renormalization-group matching, and observable uncertainty packet remain open. The paper also separates Hadamard regularity from unitary implementability, and treats the semiclassical Einstein equation and FRW particle production as conditional applications. This establishes a selected free local QFT source and a formal interacting bridge, not a first-principles derivation of full interacting QFT from finite projection.
+
+# Version 5 Revision Note
+
+**Supersedes** Current Version 4; released metadata and earlier revision history are retained.
+
+**Reason** The interacting interface needed its explicit source dependencies; the FRW example overstated finite-order adiabatic regularity.
+
+**Resolution** Explains the physical-family dependency and three-packet endpoint contract, and requires the full Hadamard condition in the example.
+
+**Retained** The selected free CAR net and formal interacting BV/QME tier remain established under their declared hypotheses.
+
+**Open boundary** Same-source interacting realization, global measure and state, continuum control, matching, and backreaction remain independent.
+
 # Version 4 Revision Note
 
-<div class="description">
+**Supersedes** Version 3, *Modal Triplet Theory: From MTT to Quantum Field Theory on Curved Spacetime*.
 
-Version 3, *Modal Triplet Theory: From MTT to Quantum Field Theory on Curved Spacetime*.
+**Reason** The earlier paper treated CCR/CAR quantization, Hadamard selection, local covariance, positivity, and unitary implementability as outputs of a projection map. It also blurred the internal six-dimensional geometry with four-dimensional curved spacetime.
 
-The earlier paper treated CCR/CAR quantization, Hadamard selection, local covariance, positivity, and unitary implementability as outputs of a projection map. It also blurred the internal six-dimensional geometry with four-dimensional curved spacetime.
+**Resolution** The geometry is typed as $`Y_4`$ plus the selected internal $`X_6`$. Standard AQFT inputs are named explicitly, the currently closed free CAR net is stated at its selected tier, and interacting, semiclassical, and FRG layers are separated.
 
-The geometry is typed as $`Y_4`$ plus the selected internal $`X_6`$. Standard AQFT inputs are named explicitly, the currently closed free CAR net is stated at its selected tier, and interacting, semiclassical, and FRG layers are separated.
+**Retained result** A selected twisted massless Dirac source composes with established CAR/AQFT machinery to give a local covariant free observable net and positive Hadamard states.
 
-A selected twisted massless Dirac source composes with established CAR/AQFT machinery to give a local covariant free observable net and positive Hadamard states.
-
-A geometry-selected nonperturbative interacting gauge-BRST C-star construction, full-branch state, RG/matching map, uncertainty budget, and observable comparison remain open.
-
-</div>
+**Remaining boundary** A geometry-selected nonperturbative interacting gauge-BRST C-star construction, full-branch state, RG/matching map, uncertainty budget, and observable comparison remain open.
 
 # What is being constructed
 
-Quantum field theory on curved spacetime is not one Hilbert space with a preferred vacuum. Its local formulation assigns algebras of observables to spacetime regions and controls states by microlocal singularity conditions .
+Quantum field theory on curved spacetime is not one Hilbert space with a preferred vacuum. Its local formulation assigns algebras of observables to spacetime regions and controls states by microlocal singularity conditions \[[7](#ref-Wald),[8](#ref-Radzikowski),[9](#ref-BFV)\].
 
 The MTT construction must therefore provide a typed chain:
 ``` math
@@ -79,19 +95,15 @@ For bosons, canonical commutation relations require a symplectic solution space.
 
 For each suitable open region $`O\subset Y_4`$, an algebraic QFT net assigns $`\mathcal A(O)`$. The principal properties used here are:
 
-<div class="description">
+**Isotony** $`O_1\subset O_2`$ implies $`\A(O_1)\subset\A(O_2)`$.
 
-$`O_1\subset O_2`$ implies $`\mathcal A(O_1)\subset\mathcal A(O_2)`$.
+**Einstein causality** Spacelike separated observable algebras commute (or graded-commute before taking the even observable subalgebra).
 
-Spacelike separated observable algebras commute (or graded-commute before taking the even observable subalgebra).
+**Time slice** A region containing a Cauchy surface generates the full algebra.
 
-A region containing a Cauchy surface generates the full algebra.
+**Local covariance** Causal isometric embeddings induce compatible algebra morphisms.
 
-Causal isometric embeddings induce compatible algebra morphisms.
-
-</div>
-
-These properties follow from the support and covariance structure of the chosen operator and quantization functor under standard hypotheses . They are not automatic for an arbitrary nonlocal filter.
+These properties follow from the support and covariance structure of the chosen operator and quantization functor under standard hypotheses \[[9](#ref-BFV),[12](#ref-BarGinouxPfaeffle)\]. They are not automatic for an arbitrary nonlocal filter.
 
 # The selected free MTT source
 
@@ -115,7 +127,7 @@ This result is imported from the selected QFT source certificate; the present pa
 
 <div class="proof">
 
-*Proof.* Green hyperbolicity provides the causal propagator and the Hermitian form on the quotient of compactly supported test sections. The CAR functor gives the graded net; support of the propagator gives graded locality and the Cauchy-surface exact sequence gives the time-slice property. The final statement is the standard Hadamard/microlocal renormalization theorem . ◻
+*Proof.* Green hyperbolicity provides the causal propagator and the Hermitian form on the quotient of compactly supported test sections. The CAR functor gives the graded net; support of the propagator gives graded locality and the Cauchy-surface exact sequence gives the time-slice property. The final statement is the standard Hadamard/microlocal renormalization theorem \[[11](#ref-Dimock),[8](#ref-Radzikowski),[10](#ref-HollandsWald)\]. ◻
 
 </div>
 
@@ -123,7 +135,7 @@ Applied to $`\mathcal D_{\mathrm{q79}}`$, the hypotheses have been certified at 
 
 # Hadamard states are not selected by phase transport alone
 
-A two-point distribution $`W`$ is Hadamard when its wavefront set has the universal positive-frequency null-geodesic structure . Locally matching the leading Minkowski singularity is not, by itself, a global state construction: positivity, the field equation, commutation relations, and global consistency must all hold.
+A two-point distribution $`W`$ is Hadamard when its wavefront set has the universal positive-frequency null-geodesic structure \[[8](#ref-Radzikowski)\]. Locally matching the leading Minkowski singularity is not, by itself, a global state construction: positivity, the field equation, commutation relations, and global consistency must all hold.
 
 The current free q79 certificate establishes a nonempty positive Hadamard state space. It does not yet choose a unique state from shared-circle phases. Selecting one state requires additional physical data such as a stationary KMS condition, an asymptotic prescription, a cosmological initial-state condition, or another same-source rule.
 
@@ -131,7 +143,7 @@ The current free q79 certificate establishes a nonempty positive Hadamard state 
 
 Hadamard regularity controls ultraviolet singularities and local renormalization. Unitary implementability of a classical evolution between two Fock representations is a separate global question.
 
-For bosons, the Shale criterion requires the antilinear Bogoliubov coefficient $`\beta`$ to be Hilbert–Schmidt. The CAR analogue imposes the corresponding restricted-unitary condition . Adiabatic regularity can improve high-frequency behavior, but it does not guarantee global Hilbert–Schmidt implementability on every noncompact spacetime or for every pair of states.
+For bosons, the Shale criterion requires the antilinear Bogoliubov coefficient $`\beta`$ to be Hilbert–Schmidt. The CAR analogue imposes the corresponding restricted-unitary condition \[[13](#ref-Shale)\]. Adiabatic regularity can improve high-frequency behavior, but it does not guarantee global Hilbert–Schmidt implementability on every noncompact spacetime or for every pair of states.
 
 # Interacting and gauge sectors
 
@@ -153,6 +165,26 @@ These are substantial structural results. The formal coupling expansion
 ```
 does not select a unique theory at a fixed nonzero $`\lambda`$. The current flat-deformation no-go result makes this precise: a formal jet can have multiple inequivalent nonperturbative completions. A physical interacting theory therefore still requires a selected gauge-BRST C-star bridge or a regulator/continuum limit.
 
+<a id="sec:physical-family"></a>
+
+## A physical family is not selected by its finite shadow
+
+The frozen family-source theorem supplies a precise dependency reduction \[[1](#ref-FrozenFamily)\]. A finite-rank projection on a smooth connection space has a kernel. Two connections differing in that kernel have the same retained source coefficients but can have different twisted Dirac operators and positive normals. Its rational eight-coordinate witness illustrates this loss of information; it is not a physical HYM solution. Finite projection therefore cannot replace a same-source HYM, Bianchi, and action selection.
+
+The positive result is conditional analytic completion. Given the physical HYM endpoint, its unitary operator intertwiner, and the selected action with smooth common domains and the required ellipticity, the internal family admits Riesz projectors on every common-gap chart, Kato transport, and the analytic determinant line. These are canonical after the source and chart are fixed. They do not extend a spectral projector through a gap closing or choose a transverse chiral-measure current. Full quotient-moduli locality, crossing and disconnected-sector gluing, and cutoff-uniform fixed-coupling norm control remain distinct requirements.
+
+This dependency statement is owned in the companion quantum-mechanics source account; here it specifies the interacting QFT input. The older packet’s hidden-source status does not override the later hidden projective and existential HYM theorem. The still-missing source is the common physical visible–hidden realization, not a proof that any hidden HYM bundle exists.
+
+<a id="sec:endpoint-consumer"></a>
+
+## Three same-source packets, not seven free choices
+
+The cohesive Maurer–Cartan repair result supplies a useful internal comparison \[[3](#ref-FrozenCohesiveMC),[4](#ref-Cohesive14)\]: after metric and gauge-row choice, its squared integrability residual has Hodge Hessian at the exact background, so its linearized repair flow is a heat semigroup. This is a tangent statement, not nonlinear interacting time evolution. Formal derived deformation equivalence does not alone identify Hilbert adjoints or spectra; those require compatible metrics and reducing operator domains. In particular, a positive repair normal is not the signed action Hessian used by the QFT construction.
+
+Cohesive’s endpoint discussion and the frozen CBF.T12 theorem organize seven physical acceptance rows through three structured inputs \[[2](#ref-FrozenEndpoint),[4](#ref-Cohesive14)\]: geometry and signed action (GAS), spectral synthesis with domains and contraction identities (SYN), and BV-compatible four-dimensional compactification (BV4). Symmetry transport and the Galerkin/Feshbach operator then use the same GAS and SYN objects; no fourth independent source is needed. Three packets are not three scalar parameters.
+
+The distinction has observable mathematical content. The two block Hessians $`K_a=\left(\begin{smallmatrix}2I&I\\I&aI\end{smallmatrix}\right)`$, with $`a=5`$ or $`6`$, have the same retained block $`2I`$, but eliminating the complement gives $`(2-1/a)I`$. A lower retained action therefore does not determine the missing upper dynamics. An internal cotangent action also vanishes on its zero section and cannot by itself select the charged four-dimensional field action. The frozen record accepts none of the three complete physical packets or seven endpoint rows. This is an exact dependency contract, not a downgrade of free CAR or a construction of the nonperturbative interacting net.
+
 # Standard-Model profile results
 
 The selected MTT Standard-Model program has closed its declared 12-of-12 embedded renormalized-SM equivalence at the adopted one-shared-physical- primitive/profile tier. This means that, once the accepted Standard-Model data and convention map are supplied, the finite carrier and transport pipeline reproduce the targeted perturbative observable profile.
@@ -170,7 +202,7 @@ Given a Hadamard state and a locally covariant renormalization prescription, poi
  \bigl(W(x,x')-H(x,x')\bigr)
  +C_{\mu\nu}(g),
 ```
-where $`H`$ is a Hadamard parametrix and $`C_{\mu\nu}`$ records the allowed local curvature counterterms. Conservation and trace anomaly statements depend on the field, state, and renormalization conditions .
+where $`H`$ is a Hadamard parametrix and $`C_{\mu\nu}`$ records the allowed local curvature counterterms. Conservation and trace anomaly statements depend on the field, state, and renormalization conditions \[[7](#ref-Wald),[10](#ref-HollandsWald)\].
 
 The semiclassical Einstein equation
 ``` math
@@ -197,7 +229,7 @@ a scalar benchmark with specified mass $`m`$ and curvature coupling $`\xi`$ has 
 \ddot u_{\mathbf k}
  +\Omega_{\mathbf k}(t)^2u_{\mathbf k}=0,
 ```
-where $`\Omega_{\mathbf k}`$ is determined by $`|\mathbf k|^2/a^2`$, $`m^2`$, $`\xi R`$, and the chosen rescaling. Adiabatic initial data of sufficiently high order can define Hadamard states under standard smoothness assumptions.
+where $`\Omega_{\mathbf k}`$ is determined by $`|\mathbf k|^2/a^2`$, $`m^2`$, $`\xi R`$, and the chosen rescaling. Finite adiabatic order controls only a corresponding finite regularity level; no fixed high order alone implies the full Hadamard condition. For this example, use an infinite-order adiabatic construction under its smoothness hypotheses, or independently verify the microlocal Hadamard condition \[[5](#ref-Pirk1993),[6](#ref-JunkerSchrohe)\]. This correction does not alter the separate existence theorem for the selected free CAR state space.
 
 This is a test bed for the QFT machinery, not a numerical MTT prediction. To promote it, one must derive $`a(t)`$, the state, masses, couplings, and matching scale from the same selected branch and compare renormalized observables with an uncertainty budget.
 
@@ -230,6 +262,25 @@ MTT now reaches QFT on curved spacetime at two distinct tiers. The free twisted-
 
 This is a meaningful bridge, not a derivation of quantum theory from projection. CCR/CAR quantization, Hadamard microlocal structure, local covariance, time-slice behavior, and positivity enter through independent QFT theorems whose hypotheses the selected source must satisfy. Keeping those roles explicit makes the remaining interacting and backreaction problems sharply testable.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The selected free CAR net and its curved-spacetime properties are established independently of the embedded Standard Model profile audit. That audit is contextual evidence for a lower effective target, while the open strict-upgrade row supplies no interacting QFT construction.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 #### Corpus-state cross-checks.
 
 - (*profile replay*).
@@ -246,48 +297,68 @@ This is a meaningful bridge, not a derivation of quantum theory from projection.
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
+# References
 
-The selected free CAR net and its curved-spacetime properties are established independently of the embedded Standard Model profile audit. That audit is contextual evidence for a lower effective target, while the open strict-upgrade row supplies no interacting QFT construction.
+<a id="ref-FrozenFamily"></a>
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+\[1\] P. Nero, *Physical-Family Source Dependency, Analytic Completion, and Finite-Projection Nonpromotion*, frozen source record, 2026. <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_family_source_cutset/artifact.json>. Contextual owner: *Modal Triplet Theory and Nonrelativistic Quantum Mechanics*, source-family discussion.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+<a id="ref-FrozenEndpoint"></a>
 
-## Corpus-state cross-checks
+\[2\] P. Nero, *Seven-Row Endpoint Factorization and Minimal-Source Theorem*, CBF.T12, frozen source record, 2026. <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json>.
 
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+<a id="ref-FrozenCohesiveMC"></a>
 
-## Open boundary (not evidence of closure)
+\[3\] P. Nero, *Cohesive Maurer–Cartan Repair and Derived-Transform Intertwiner*, frozen structural/conditional source record, 2026. <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_maurer_cartan_repair/artifact.json>.
 
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+<a id="ref-Cohesive14"></a>
 
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+\[4\] P. Nero, *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary*, version 14 structural identities, 2026.
 
-<div class="thebibliography">
+<a id="ref-Pirk1993"></a>
 
-99
+\[5\] K.-T. Pirk, “Hadamard states and adiabatic vacua,” *Physical Review D* **48** (1993), 3779. <https://doi.org/10.1103/PhysRevD.48.3779>.
 
-R. M. Wald, *Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics*, University of Chicago Press, 1994.
+<a id="ref-JunkerSchrohe"></a>
 
-M. J. Radzikowski, “Micro-local approach to the Hadamard condition in quantum field theory on curved space-time,” *Communications in Mathematical Physics* **179** (1996), 529–553.
+\[6\] W. Junker and E. Schrohe, “Adiabatic vacuum states on general spacetime manifolds: Definition, construction, and physical properties,” *Annales Henri Poincare* **3** (2002), 1113–1182. <https://arxiv.org/abs/math-ph/0109010>.
 
-R. Brunetti, K. Fredenhagen, and R. Verch, “The generally covariant locality principle: A new paradigm for local quantum field theory,” *Communications in Mathematical Physics* **237** (2003), 31–68.
+<a id="ref-Wald"></a>
 
-S. Hollands and R. M. Wald, “Local Wick polynomials and time ordered products of quantum fields in curved spacetime,” *Communications in Mathematical Physics* **223** (2001), 289–326.
+\[7\] R. M. Wald, *Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics*, University of Chicago Press, 1994.
 
-J. Dimock, “Dirac quantum fields on a manifold,” *Transactions of the American Mathematical Society* **269** (1982), 133–147.
+<a id="ref-Radzikowski"></a>
 
-C. Bär, N. Ginoux, and F. Pfäffle, *Wave Equations on Lorentzian Manifolds and Quantization*, European Mathematical Society, 2007.
+\[8\] M. J. Radzikowski, “Micro-local approach to the Hadamard condition in quantum field theory on curved space-time,” *Communications in Mathematical Physics* **179** (1996), 529–553.
 
-D. Shale, “Linear symmetries of free boson fields,” *Transactions of the American Mathematical Society* **103** (1962), 149–167.
+<a id="ref-BFV"></a>
 
-P. Nero, *Modal Triplet Theory: Foundations*, current revised MTT paper corpus, 2026.
+\[9\] R. Brunetti, K. Fredenhagen, and R. Verch, “The generally covariant locality principle: A new paradigm for local quantum field theory,” *Communications in Mathematical Physics* **237** (2003), 31–68.
 
-P. Nero, *Controlled Coherent Reduction to Four-Dimensional Einstein Gravity*, current revised MTT paper corpus, 2026.
+<a id="ref-HollandsWald"></a>
 
-P. Nero, *Modal Triplet Theory: Perturbative Coherent-Sector Quantum Gravity and the Heterotic UV-Completion Boundary*, current revised MTT paper corpus, 2026.
+\[10\] S. Hollands and R. M. Wald, “Local Wick polynomials and time ordered products of quantum fields in curved spacetime,” *Communications in Mathematical Physics* **223** (2001), 289–326.
 
-</div>
+<a id="ref-Dimock"></a>
+
+\[11\] J. Dimock, “Dirac quantum fields on a manifold,” *Transactions of the American Mathematical Society* **269** (1982), 133–147.
+
+<a id="ref-BarGinouxPfaeffle"></a>
+
+\[12\] C. Bär, N. Ginoux, and F. Pfäffle, *Wave Equations on Lorentzian Manifolds and Quantization*, European Mathematical Society, 2007.
+
+<a id="ref-Shale"></a>
+
+\[13\] D. Shale, “Linear symmetries of free boson fields,” *Transactions of the American Mathematical Society* **103** (1962), 149–167.
+
+<a id="ref-MTTFoundation"></a>
+
+\[14\] P. Nero, *Modal Triplet Theory: Foundations*, current revised MTT paper corpus, 2026.
+
+<a id="ref-MTTGR"></a>
+
+\[15\] P. Nero, *Controlled Coherent Reduction to Four-Dimensional Einstein Gravity*, current revised MTT paper corpus, 2026.
+
+<a id="ref-MTTQG"></a>
+
+\[16\] P. Nero, *Modal Triplet Theory: Perturbative Coherent-Sector Quantum Gravity and the Heterotic UV-Completion Boundary*, current revised MTT paper corpus, 2026.

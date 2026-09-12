@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026, Version 2",
+  "current_version": "v3",
+  "date": "12 September 2026, Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261841",
     "created": "2026-07-29T08:52:44.472829+00:00",
@@ -32,36 +32,48 @@
     "updated": "2026-07-29T08:52:44.734356+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "dcedc23f54f0a2c6faacd995b733e28ea5a39bd5d6cfbff2bdf470bcfe0d0526",
+  "main_tex_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
   "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
-  "paper_md_sha256": "45c6c8e893f97a318a243fcf8daf01936641f6a1899aac992d3467618ab52719",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "ed9ed16853d3f0bfbded5d1fc97e6b85a3cfce84b61263ac26e01bf383d7115e",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "q79_continuum_recorder_compiler",
+    "q79_fock_output_measure",
+    "q79_hessian_recorder_source",
+    "q79_minimal_recorder_action",
+    "q79_ontology_nonentailment",
+    "q79_projective_record_descent"
+  ],
   "revision": {
     "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "1dedb10a9661901b734b6ea6861c3709e9c63443024dfd50374b8e870583136c",
+    "revision_evidence_sha256": "0bd5fddc233d726922121cc5e156441625b9aec2922844c53c827cebb7e594a7",
     "selected_revision": true,
     "superseded_source_path": "6 Quantum Mechanics/_work/Why_the_Born_Rule_and_the_Classical_Limit_Are_the_Same_Problem__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 18954,
+      "bytes": 30867,
       "path": "main.tex",
-      "sha256": "dcedc23f54f0a2c6faacd995b733e28ea5a39bd5d6cfbff2bdf470bcfe0d0526"
+      "sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 4458,
+      "path": "paper-markdown.lua",
+      "sha256": "3d9060d49d0c0e448ff27b6c62d412c51c46448ce0c6dc20657421c2e684016b"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "6 Quantum Mechanics/_work/Why_the_Born_Rule_and_the_Classical_Limit_Are_the_Same_Problem__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "6c701f4df4f3a3af1bd5c56ef468344a0b7bc73eb40faafc37c704b6c7889c26",
+  "source_tree_sha256": "8cd4926fc5aa0f6c6bcd9b7a1e8c4f7ed1a741a223b8acde9eb421b23f039afc",
   "title": "Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18261841",

@@ -1,12 +1,12 @@
 {
-  "abstract": "Heterotic compactification papers often use the word selection for several different mathematical achievements: satisfying projected field equations, finding an isolated point in a finite ansatz, proving attraction under a specified flow, or assigning the realized vacuum. These implications are not equivalent. We formulate a selection ladder for Modal Triplet Theory (MTT) and the Hull–Strominger system. A finite invariant residual proves a full solution only when the tested residual is complete on the ansatz and every discarded equation vanishes. An isolated ansatz solution need not be unique in the full configuration space. Attraction requires an actual evolution and a basin estimate, while physical vacuum selection additionally requires a preparation law, branch rule, or equivalent source data. We apply this distinction to two former case studies. The diagonal Iwasawa geometry retains valid local balanced and torsion calculations, but the printed rank-three bundle, anomaly match, generation count, and normalized Yukawa do not survive the global bundle audit. The Lens–Nil model is non-integrable and therefore is not a Hull–Strominger compactification. The exact q=79 arithmetic branch, finite Cech data, and selected rank-two HYM certificates remain meaningful at their declared tiers, but they do not yet select a physical visible–hidden compactification. The result is a rigorous vocabulary and completion contract, not a claim that the heterotic landscape has already been uniquely selected.",
+  "abstract": "Heterotic compactification papers often use the word selection for several different mathematical achievements: satisfying projected field equations, finding an isolated point in a finite ansatz, proving attraction under a specified flow, or assigning the realized vacuum. These implications are not equivalent. We formulate a selection ladder for Modal Triplet Theory (MTT) and the Hull\u2013Strominger system. A finite invariant residual proves a full solution only when the tested residual is complete on the ansatz and every discarded equation vanishes. An isolated ansatz solution need not be unique in the full configuration space. Attraction requires an actual evolution and a basin estimate, while physical vacuum selection additionally requires a preparation law, branch rule, or equivalent source data. We apply this distinction to two former case studies. The diagonal Iwasawa geometry retains valid local balanced and torsion calculations, but the printed rank-three bundle, anomaly match, generation count, and normalized Yukawa do not survive the global bundle audit. The Lens\u2013Nil model is non-integrable and therefore is not a Hull\u2013Strominger compactification. The exact q=79 arithmetic branch, finite Cech data, and selected rank-two HYM certificates remain meaningful at their declared tiers, but they do not yet select a physical visible\u2013hidden compactification. The result is a rigorous vocabulary and completion contract, not a claim that the heterotic landscape has already been uniquely selected.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "Version 2, July 2026",
+  "current_version": "v3",
+  "date": "Version 3, September 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17072926",
     "created": "2026-07-30T16:50:26.821947+00:00",
@@ -32,19 +32,25 @@
     "updated": "2026-07-30T16:50:27.481737+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "4501582a4a3483668d18eba74773813fc8d4e23e4863b271270f1454f2f9f4f6",
+  "main_tex_sha256": "db115e50f0022f61b5b745524753dd8e0b76ba90a5c77977a4172081c446da67",
   "paper_id": "modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927",
-  "paper_md_sha256": "6300d69da7d0ccaed8bb3f2a8affe87e7fc8e87a6b65afc691000a17f04e8845",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "fadda7d2924755544ecfe6fffd5d2165b8cca4c0297f46d401bbad0e607cea69",
+  "release_state": "current_revised_tex",
   "result_refs": [
+    "eta9_gate1_campaign",
+    "eta9_three_cycle_b96_nondetection",
     "hym_wiener_contraction",
     "literal_cech_witness",
+    "q79_bk3_rank_zero_kernel",
+    "q79_eta9_b89_same_source_rejection",
+    "q79_eta9_local_source_tube_consolidation",
     "q79_exact_audit",
-    "q79_exact_theorem"
+    "q79_exact_theorem",
+    "q79_global_fitting_descent"
   ],
   "revision": {
     "revision_evidence_path": "papers/modal-triplet-theory-mtt-as-a-selection-principle-for-h-56b22927/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "36c3dbb8526fed76aef75512b06159d3f208be2c8bfddcb1b6f72c87662c4b42",
+    "revision_evidence_sha256": "770a558525006f556b6a8f3632d50b0beedf4a089b98b0ce6dcabb7c980da775",
     "selected_revision": true,
     "superseded_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications"
   },
@@ -56,27 +62,27 @@
       "sha256": "2a306c8476b85a5bb012a1e4a73a9657cff414affa056f013123b39426fb8cf4"
     },
     {
-      "bytes": 29079,
+      "bytes": 32512,
       "path": "main.tex",
-      "sha256": "4501582a4a3483668d18eba74773813fc8d4e23e4863b271270f1454f2f9f4f6"
+      "sha256": "db115e50f0022f61b5b745524753dd8e0b76ba90a5c77977a4172081c446da67"
     },
     {
-      "bytes": 349538,
+      "bytes": 357038,
       "path": "main.pdf",
-      "sha256": "2aeced97a05d6365f45ce828f22b7998613761016c515186eceb17fc388ba044"
+      "sha256": "e9731dbd70cf0b99315256e150af1eef81979b7f36a1543525371df09350ac0d"
     },
     {
-      "bytes": 2946,
+      "bytes": 4017,
       "path": "REVISION_AUDIT.md",
-      "sha256": "36c3dbb8526fed76aef75512b06159d3f208be2c8bfddcb1b6f72c87662c4b42"
+      "sha256": "770a558525006f556b6a8f3632d50b0beedf4a089b98b0ce6dcabb7c980da775"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "16 Strings, Flux, & M-Theory Encodings/_work/Modal_Triplet_Theory__MTT_as_a_Selection_Principle_for_Heterotic_Flux_Compactifications"
   },
-  "source_tree_sha256": "0fa961119004f39dcc7d337f1da0d8731eb0e6dfe58700c3140f26250cb87ac9",
+  "source_tree_sha256": "d50c9e9a482d09322ee926db3439f5dfb77597aac1fdc61fdc3ff4e8de5cf643",
   "title": "Modal Triplet Theory and Heterotic Vacuum Selection: What Finite Ansatz Calculations Prove, What Attraction Adds, and What Physical Selection Still Requires",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.17072926",

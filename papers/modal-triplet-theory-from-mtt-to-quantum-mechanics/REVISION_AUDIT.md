@@ -1,3 +1,21 @@
+# Contextual Revision v5: 2026-09-12
+
+Supersedes: v4 as current source. Released metadata identity and the prior audit below are preserved; this is an unpublished local revision, not release approval.
+
+Thirteen owner assignments were read in full and imported at their exact, conditional, formal, or excluded scopes. Canonical operational QM is not reopened. The projector/connection compiler is exact on module ranges and domains, not raw cutoffs; the nonlinear strain quotient, boundary value function, monodromy descent, shared-root C4 symbol, FM/HYM dependency chain, family/gap assumptions, free net, formal QME, and later regulator refinements are explained.
+
+Corrections requiring explicit consumer guidance: (1) bounded pullback of a closed semibounded form on the full preimage domain is closed; density and reducing-operator identification do not follow. The contrary Version 4 statement below is historical and superseded. (2) qm_current_status calls exp(-gamma*u)I a no-count propagator; that is the effect, while the amplitude is exp(-gamma*u/2)I. The underlying source proof is correct. (3) q79_free_dirac_car_net describes quasifree states as convex; mixtures need not be quasifree. Use a quasifree Hadamard class or its ordinary Hadamard convex hull. The valid recorder and free-net results remain unchanged. Each correction is separately recorded in editorial-reviews/2026-09-12/qm.json.
+
+The conditional continuum compiler and ontology non-entailment are additionally consumed via the Born/record and Locality companions. No proof-body ownership is transferred.
+
+Current authority: B.QM.01 and B.QM.02 are closed on the canonical operational domain; B.QM.03 carries universal apparatus and actualization obligations. B.QFT.01 is closed on the selected free-net domain; formal/local q79 results are retained, while B.QFT.02 does not certify an interacting fixed-coupling continuum theory. The initial Kernel model was bf2643bc78d2c723aa813bbae8d0a50848e1d226a58f0088262d564c751d6715. No Kernel/global catalog or scientific source files were edited.
+
+Frozen manifest commit: f141a20ea23c5c3ff19cc2161c0e226e29ade8a7. Full source-read coverage and frozen byte hashes are recorded in the editorial fragment. Packet booleans are not independent proof verification. The shared source-theorem owners retain ownership; no formal source proof block is duplicated.
+
+Verification: the scoped build_contextual_evidence_papers.py --paper-id modal-triplet-theory-from-mtt-to-quantum-mechanics --jobs 1 build passed, with logs redirected only to this paper's editorial-build directory. All 26 pages were rendered at 110 dpi and visually inspected; new content was also inspected in enlarged page views. Final source/PDF/Markdown hashes, exact source-read coverage, 17 bounded editorial-example checks and 31 existing Locality example checks are recorded in editorial-reviews/2026-09-12/qm.json. These checks are not independent verification of the frozen source theorems. The six-paper set totals 94 inspected pages; no global refresh, consolidation or scientific rerun was performed.
+
+## Historical Audit (Retained Verbatim)
+
 # Revision Audit: MTT and Nonrelativistic Quantum Mechanics
 
 Date: 2026-07-30

@@ -1,5 +1,18 @@
 # Editorial Integration Plan
 
+## Current Checkpoint: 2026-09-13
+
+The selected queue below is complete: 305 owner assignments reviewed,
+302 integrated and three historical; zero unreviewed, stale, unassigned,
+or confirmed missing imports. The 104 consumer groups cover 134 placements.
+Thirty current papers were revised and visually reviewed. Kernel reports
+zero pending contextual text or result-integration tasks. Scientific source,
+endpoint and interacting-theory obligations remain distinct and open.
+Read [the final summary](editorial-reviews/2026-09-12/SUMMARY.md) and
+[CONTINUE_HERE.md](CONTINUE_HERE.md) for continuation. No Zenodo release.
+
+## Historical Checkpoints
+
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
 cohesive v14 and SM v4. Fixed Points and the companion remain unchanged.
@@ -85,7 +98,7 @@ The 31-page PDF is rebuilt and visually reviewed, with zero build warnings.
 Five new small exact editorial checks pass; no large research computation
 was rerun. The registry identifies all eleven result IDs and source hashes.
 
-## Remaining Contextual Review
+## Historical Contextual Review Queue (Completed)
 
 V6 additionally integrates six charge/curvature/tangent records in section 5.
 These connect the operator architectures with explicit finite examples:
@@ -176,7 +189,7 @@ imports remain unchanged. All 72 pages inspected; eight new bounded tests
 pass. Cohesive is 67/68 integrated; only the full atlas remains.
 Corpus totals: 106 reviewed, 104 integrated, two historical, 199 unreviewed.
 
-Counts below come from the current source-bound ownership registry. Review
+Counts below record the historical pre-batch source-bound registry. Review
 source hypotheses, actual paper discussion and the latest superseding result;
 do not infer absence or completion from an identifier search.
 
@@ -197,7 +210,7 @@ do not infer absence or completion from an identifier search.
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
 | | Total | 199 | These are not 199 confirmed omissions. |
 
-The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
+At that checkpoint the broad `mathematical_language_atlas` was unreviewed. It is an evolving
 multi-thousand-line artifact with later appendices, not merely a July status
 snapshot. Review it by source family; do not relabel the entire artifact as
 historical after reading only its early inventory or newest tail.
@@ -217,7 +230,7 @@ historical after reading only its early inventory or newest tail.
   public results paper lock from committed manuscript state.
 - End the next handoff with exact completed result IDs and remaining counts.
 
-Current totals: 305 assigned, 106 reviewed (104 integrated, two historical),
+Historical pre-batch totals: 305 assigned, 106 reviewed (104 integrated, two historical),
 zero currently confirmed additions, 199 unreviewed, zero stale contextual
 reviews. The original 19 additions/details are now handled. Further reviews
 may legitimately identify new additions or corrections; these counts are not

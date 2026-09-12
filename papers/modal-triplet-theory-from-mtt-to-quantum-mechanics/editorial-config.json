@@ -1,0 +1,139 @@
+{
+  "modal-triplet-theory-from-mtt-to-quantum-mechanics": {
+    "previous_version": "v4",
+    "current_version": "v5",
+    "date": "Version 5, 12 September 2026",
+    "owned_result_ids": [
+      "qm_current_status",
+      "q79_canonical_quantum_model",
+      "q79_free_dirac_car_net",
+      "q79_local_qme",
+      "q79_free_cstar_nonpromotion",
+      "q79_projective_hym_naturality",
+      "q79_cech_projector_compiler",
+      "q79_spectral_strain_hessian",
+      "q79_support_stratified_strain",
+      "q79_monodromy_reynolds_descent",
+      "q79_shared_root_c4_promotion",
+      "q79_fm_hym_dependency_compression",
+      "q79_family_source_cutset"
+    ],
+    "result_refs": [
+      "q79_canonical_quantum_model",
+      "q79_cech_projector_compiler",
+      "q79_continuum_recorder_compiler",
+      "q79_family_source_cutset",
+      "q79_fm_hym_dependency_compression",
+      "q79_fock_output_measure",
+      "q79_free_cstar_nonpromotion",
+      "q79_free_dirac_car_net",
+      "q79_local_qme",
+      "q79_monodromy_reynolds_descent",
+      "q79_ontology_nonentailment",
+      "q79_projective_hym_naturality",
+      "q79_shared_root_c4_promotion",
+      "q79_spectral_strain_hessian",
+      "q79_support_stratified_strain",
+      "qm_current_status",
+      "strict_upgrade_ledger"
+    ],
+    "consumer_result_ids": [
+      "q79_fock_output_measure",
+      "q79_continuum_recorder_compiler",
+      "q79_ontology_nonentailment"
+    ]
+  },
+  "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872": {
+    "previous_version": "v2",
+    "current_version": "v3",
+    "date": "12 September 2026, Version 3",
+    "owned_result_ids": [
+      "q79_fock_output_measure",
+      "q79_minimal_recorder_action",
+      "q79_hessian_recorder_source",
+      "q79_continuum_recorder_compiler",
+      "q79_projective_record_descent"
+    ],
+    "result_refs": [
+      "q79_continuum_recorder_compiler",
+      "q79_fock_output_measure",
+      "q79_hessian_recorder_source",
+      "q79_minimal_recorder_action",
+      "q79_ontology_nonentailment",
+      "q79_projective_record_descent"
+    ],
+    "consumer_result_ids": [
+      "q79_fock_output_measure",
+      "q79_continuum_recorder_compiler",
+      "q79_ontology_nonentailment"
+    ]
+  },
+  "locality-coherent-alternatives-and-records-in-mtt": {
+    "previous_version": "v1",
+    "current_version": "v2",
+    "date": "Version 2, 12 September 2026 Unpublished interpretive manuscript",
+    "owned_result_ids": [
+      "q79_ontology_nonentailment"
+    ],
+    "result_refs": [
+      "causal_base_constraint_compression_leakage_packet",
+      "local_cech_hilbert_descent",
+      "local_closure_repair_descent",
+      "q79_continuum_recorder_compiler",
+      "q79_fock_output_measure",
+      "q79_free_dirac_car_net",
+      "q79_minimal_recorder_action",
+      "q79_ontology_nonentailment",
+      "q79_projective_record_descent"
+    ],
+    "consumer_result_ids": []
+  },
+  "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e": {
+    "previous_version": "v6",
+    "current_version": "v7",
+    "date": "12 September 2026, Version 7",
+    "owned_result_ids": [],
+    "result_refs": [
+      "q79_continuum_recorder_compiler",
+      "q79_fock_output_measure",
+      "q79_ontology_nonentailment"
+    ],
+    "consumer_result_ids": [
+      "q79_fock_output_measure",
+      "q79_continuum_recorder_compiler",
+      "q79_ontology_nonentailment"
+    ]
+  },
+  "black-hole-information-loss-and-quantum-measurement-col-7f29501b": {
+    "previous_version": "v2",
+    "current_version": "v3",
+    "date": "12 September 2026 Version 3",
+    "owned_result_ids": [],
+    "result_refs": [
+      "q79_continuum_recorder_compiler",
+      "q79_fock_output_measure",
+      "q79_ontology_nonentailment"
+    ],
+    "consumer_result_ids": [
+      "q79_fock_output_measure",
+      "q79_continuum_recorder_compiler",
+      "q79_ontology_nonentailment"
+    ]
+  },
+  "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2": {
+    "previous_version": "v2",
+    "current_version": "v3",
+    "date": "12 September 2026 Version 3",
+    "owned_result_ids": [],
+    "result_refs": [
+      "q79_continuum_recorder_compiler",
+      "q79_fock_output_measure",
+      "q79_ontology_nonentailment"
+    ],
+    "consumer_result_ids": [
+      "q79_fock_output_measure",
+      "q79_continuum_recorder_compiler",
+      "q79_ontology_nonentailment"
+    ]
+  }
+}

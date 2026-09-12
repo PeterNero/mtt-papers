@@ -1,12 +1,12 @@
 {
-  "abstract": "We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, the bundle from M10 to Y4, the compact fiber, field representations, and the derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-one alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu–Yau branch is the compactification candidate, while Lens–Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action.",
+  "abstract": "We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, bundle from the ten-dimensional total space to four-dimensional spacetime, compact fiber, field representations, and derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-four real alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu\u2013Yau branch is the compactification candidate, while Lens\u2013Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action. Finite residual, cyclic-action, and cotangent constructions explain which action data follow from a supplied source and which physical identifications remain additional assumptions.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "Corrected fourth edition July 2026",
+  "current_version": "v5",
+  "date": "Version 5 September 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.19535591",
     "created": "2026-07-29T08:50:07.007826+00:00",
@@ -32,23 +32,43 @@
     "updated": "2026-07-29T08:50:07.346698+00:00",
     "version": "v4"
   },
-  "main_tex_sha256": "691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d",
+  "main_tex_sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4",
   "paper_id": "closure-geometry-and-a-regime-local-ten-dimensional-act-97095538",
-  "paper_md_sha256": "48a26feb3f6680e346bc427285613233198347469a0815d35bca0399cdc7c3ad",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "bd4215ff07096946c7c211fc46681b7caa8e680207675071e395fc77d78dfe96",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "preprojection_curved_cyclic_repair_germ",
+    "preprojection_h4_cyclic_mc_action_descent",
+    "preprojection_h4_q79_string_cyclic_cotangent",
+    "preprojection_h4_variational_anchor_multiplier_lift"
+  ],
   "revision": {
-    "revision_evidence_path": "10 ProtoSpinor/PROTO_SPINOR_FOUNDATIONAL_GEOMETRY_REVISION_AUDIT_2026-07-15.md",
-    "revision_evidence_sha256": "9747b398d36b46bdcf19d67f905aeaa08cb6faeb317b103a57db249368427250",
+    "revision_evidence_path": "papers/closure-geometry-and-a-regime-local-ten-dimensional-act-97095538/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "8bbeb9b35b4393e5c8f97e78d77543f89556aba6b230369fec06e715a39d3fd8",
     "selected_revision": true,
     "superseded_source_path": "10 ProtoSpinor/_work/Closure_Geometry_and_Unified_Dynamics__A_Ten_Dimensional_Action_for_Mass__Scalar_Relaxation__Quantization__and_Curvature_v3"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 23164,
+      "bytes": 7321,
+      "path": "RESEARCH_INTEGRATION.md",
+      "sha256": "fb56b235545b106faa48cdaa5f6c421df2bade217f61e7f9ab1736a071173363"
+    },
+    {
+      "bytes": 14884,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "8bbeb9b35b4393e5c8f97e78d77543f89556aba6b230369fec06e715a39d3fd8"
+    },
+    {
+      "bytes": 33063,
       "path": "main.tex",
-      "sha256": "691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d"
+      "sha256": "fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4"
+    },
+    {
+      "bytes": 4496,
+      "path": "paper-markdown.lua",
+      "sha256": "eda1aef847606bd8399a98fb3fc9facb577e19e5f4780fce518485aafd2e8157"
     },
     {
       "bytes": 3819,
@@ -59,9 +79,9 @@
   "source_provenance": {
     "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/Closure_Geometry_and_a_Regime_Local_Ten_Dimensional_Action_Ansatz_v4"
   },
-  "source_tree_sha256": "8bb1ebbdad23e99c0a703f766f9ca80e7e523cc3a8b43f74cb27eed620f7c102",
+  "source_tree_sha256": "319925de3425b27473c96e74aec9c06cf43c286bdb71440230a43543a39fcc6c",
   "title": "Closure Geometry and a Regime-Local Ten-Dimensional Action Ansatz",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.19535591",

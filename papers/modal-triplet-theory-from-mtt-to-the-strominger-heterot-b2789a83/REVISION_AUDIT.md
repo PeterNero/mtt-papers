@@ -1,6 +1,80 @@
 # Revision Audit: MTT and the Hull-Strominger System
 
-## Current revision
+## Current revision: v3, September 2026
+
+- Supersedes the current v2 text, not its released DOI identity.
+- Reason: the evidence chronology stopped before the hidden projective
+  rank-nine construction and HYM existence; several equation and analytic
+  qualifications also required correction.
+- Resolution: contextual reading of all 37 assigned frozen sources, from
+  complete Qa and unified-source chronologies through G3AA and the later
+  G3GM correction. Excluded construction routes are explained as scoped
+  exclusions leading to the successful balanced hidden object.
+- Retained: finite SM/shared-primitive/Yukawa/EW conclusions, canonical
+  operational QM, finite/local q79 and rank-two Wiener results, and hidden
+  projective P(3,9)/existential HYM at their accepted tiers.
+- Open boundary: selected visible twisted Prym datum and beta_C zero,
+  common positive nontransverse solution, integral differential
+  Green-Schwarz trivialization, physical signed action and reducing
+  connection-preserving continuum intertwiner.
+
+### Concrete corrections and consumer guidance
+
+1. The degree error in d^c is corrected to
+   d^c = (i/2)(bar-partial - partial) and dd^c = i partial bar-partial.
+   The torsion convention H=d^c omega now has the required degree.
+2. Fixed-point descent uses times containing an interval at zero.
+   Approximate intertwining bounds the lower generator; bounding every
+   residual row additionally needs a controlled residual-to-generator map.
+   A sampled contraction needs a flow-invariant complete basin.
+3. Cost pullback is not adjoint transport. An isometric chain embedding
+   must have reducing range and compatible domains (or be a unitary
+   equivalence onto the target) before Hodge/Green identities transfer.
+4. G3GM's inherited-prime error is recorded explicitly: the mislabeled
+   4752/1270 branch is retracted, corrected finite rank/corank is
+   4748/1274, and the characteristic-zero bounds remain 4748 through 5102.
+   Unaffected component and fixed-minor claims are preserved.
+5. G3AA corrects the ordinary/equivariant string-class conflation. The
+   ordinary degree-three cohomology here is torsion-free; the projective
+   theta extension is a different equivariant object. Frozen bytes are
+   not edited; consumers must retain that distinction.
+6. The auxiliary spectral class is 3H+3D0, not physical 9H+3D0. CBF T69's
+   correction, local T70--T73 versus global Picard/BHT, the integral
+   ambient quotient in Vdual, and the nonautomatic ordinary Neron model
+   are retained in sec:source-frontier.
+7. The Fino--Grantcharov--Vezzoni reference uses the publisher DOI
+   10.1007/s00220-021-04223-7; the old DOI was incorrect.
+
+### Contextual consumer imports
+
+The anchors sec:consumer-compiler, sec:consumer-strain,
+sec:consumer-transfer and sec:consumer-global explain the relevant
+current QM, Cohesive and Flux owner interfaces without duplicating their
+formal proofs. The nonlinear strain replacement includes its later
+support-stratified boundary, not the obsolete claim that zero-edge
+regularity is wholly open. Already-integrated cohesive/MC groups are not
+assigned duplicate consumer completion reviews merely because they
+resurfaced in title suggestions.
+
+### Evidence and verification record
+
+The frozen manifest is f141a20ea23c5c3ff19cc2161c0e226e29ade8a7.
+All 37 owner artifacts and 16 consumer/refinement artifacts were read
+in full, including the entire evolving source-frontier and Qa chronology.
+Raw artifact SHA-256 values are checked against the ownership catalog.
+This is source reading plus small bounded explanatory checks, not
+independent replay of large certificates or verification inferred from
+JSON booleans.
+
+The parent-facing fragment editorial-reviews/2026-09-12/hull.json records
+per-result anchors, source hashes, corrections, source coverage, consumer
+dispositions, build results and actual page inspection. Builds use the
+prescribed contextual-evidence helper with --jobs 1; only its log root
+is redirected into this paper to avoid global writes. Current PDF,
+Markdown and metadata are generated locally. No released record, Kernel
+or global catalog is changed by this review.
+
+## Archived v2 revision audit
 
 - Version: v2
 - Date: July 2026

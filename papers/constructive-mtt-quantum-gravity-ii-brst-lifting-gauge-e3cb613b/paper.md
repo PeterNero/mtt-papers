@@ -3,11 +3,11 @@ abstract: |
   This paper gives a typed compatibility contract for BRST lifting, gauge independence, Borel summation, and reflection positivity in the Modal Triplet Theory quantum-gravity program. First, a common bounded functional calculus preserves a linear BRST complex when the kinetic Laplacians, spectral projections, domains, and boundary conditions intertwine the differential; independently chosen filters do not ensure this. Second, an exact finite-cutoff quantum BRST measure gives Ward identities and gauge-fixing independence by super-Stokes, while Borel summation preserves a linear Ward identity only under a common analytic domain and uniform Gevrey-one remainder bounds. Third, BRST cohomology yields a physical pre-Hilbert space only when reflection positivity is proved on the full BRST-closed positive-time observable algebra and exact classes lie in the reflection null radical. Positivity on the TT subspace alone is insufficient. We also prove that a nonzero positive Kallen–Lehmann measure cannot have permanent Gaussian decay in the same Euclidean spectral variable, so the old SPT positivity argument cannot be used. The result is a rigorous conditional theorem and an explicit exit certificate. Current MTT data provide useful finite classical and free-field inputs, but not yet the selected gravitational quantum measure, quantum master equation, constructive Borel theorem, or physical reflection-positivity theorem required by that certificate.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026 Version 2
-generated_from_main_tex_sha256: 06115993d23c51e9bec4637bf31ff208e2653c48fd138758288da0bfb31bdc40
+current_version: v3
+date: September 2026 Version 3
+generated_from_main_tex_sha256: 1a449fe49555681552f63d283e281502ac57477d95a4493a45a3637704ffafe5
 paper_id: constructive-mtt-quantum-gravity-ii-brst-lifting-gauge-e3cb613b
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: |
   Constructive MTT Quantum Gravity II:
@@ -16,6 +16,20 @@ zenodo_doi: 10.5281/zenodo.21665957
 zenodo_record_id: 21665957
 zenodo_url: "https://zenodo.org/records/21665957"
 ---
+
+# Version 3 Revision Note
+
+Reason:
+A stale paragraph still requested the correction already completed in QG I. The conditional physical-family construction also needed its proper place in the dependency chain.
+
+Resolution:
+Credit QG I’s trace-class Gaussian and stable finite-quartic results; distinguish the canonical analytic-family construction from selection of a physical gravity source.
+
+Retained result:
+The BRST chain, Ward, Borel-inheritance and conditional OS theorems are unchanged. No source proof is repeated.
+
+Remaining boundary:
+The gravitational QME, selected interaction, physical positivity and uniform removal limits remain open.
 
 # Version 2 Revision Note
 
@@ -265,7 +279,13 @@ Let $`W`$ be a continuous linear Ward operator on the correlator space.
 
 The theorem is an inheritance result, not a constructive existence theorem. It does not derive the loop-vertex expansion, stability, the common analytic domain, cutoff-uniform constants, or convergence as $`N\to\infty`$. A nonlinear QME additionally requires a Banach algebra in which products and Borel convolutions are controlled. The first edition supplied none of these uniform estimates for the full gravity/ghost interaction. The corresponding claim is therefore conditional.
 
-The antecedent QG-I paper also requires its own repair: Hilbert–Schmidt control alone is not a construction of a countably additive Gaussian measure on the same Hilbert space, and generic local analyticity plus a lower bound is not a complete mixed boson–ghost Borel theorem. QG-II cannot inherit a conclusion that its antecedent has not established.
+The revised QG-I paper has already repaired the Gaussian step: its positive proper-time gap gives a trace-class covariance on bounded volume, and its finite-dimensional nonnegative quartic class has the stated Borel theorem. Those completed results should be retained. They do not, however, constitute a mixed boson–ghost constructive theorem for the selected gravitational interaction, nor prove the required uniform cutoff-removal estimates. QG-II inherits exactly the corrected QG-I scope, not the stronger claim of its first edition.
+
+## The analytic-family construction is not another selection axiom
+
+The q79 family-source result separates one more interface . Once a smooth physical elliptic source, common domains and a regular gapped spectral chart are supplied, its Dirac/Hessian family, Riesz projectors, Kato transport and analytic determinant line follow by the canonical analytic constructions. The full physical source and operator intertwiner remain premises; a finite projection does not determine a unique smooth connection. This reduces an analytic construction task to its identified upstream inputs.
+
+For gravity, the distinction matters twice. A chiral matter determinant line does not supply the gravitational BV measure or prove its QME. Nor does a local gapped-chart construction handle crossing strata, disconnected sectors, or cutoff-uniform locality. The later hidden-HYM existence results are preserved at their declared tier, while the complete common source, gravity interaction and physical positivity assumptions used below still have to be supplied. No eight-of-eight conditional analytic tally is a claim that the interacting gravity theory has been constructed.
 
 # Physical cohomology and reflection positivity
 
@@ -395,6 +415,25 @@ SPT filtering, BRST cohomology, Borel summation, and OS reconstruction are compa
 
 The present MTT program has meaningful ingredients on both sides of this contract: finite q79 gravity data, a classical gravitational action at a declared branch tier, a free helicity sector, and exact classical finite gauge BRST data. What remains is sharply localized in F2–F5. Until those objects are constructed, this paper establishes a rigorous dependency theorem and research target, not a nonperturbative unitary theory of quantum gravity.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The BRST/BV compatibility statements are conditional contracts whose hypotheses are displayed in this paper. The mapped open ledger is not evidence of gauge-independent quantum gravity and is included solely as a current boundary on stronger MTT claims.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 #### Open boundary (not evidence of closure).
 
 - (*open*).
@@ -402,22 +441,6 @@ The present MTT program has meaningful ingredients on both sides of this contrac
   Current 2/9 strict no-knob upgrade ledger.
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
-
-The BRST/BV compatibility statements are conditional contracts whose hypotheses are displayed in this paper. The mapped open ledger is not evidence of gauge-independent quantum gravity and is included solely as a current boundary on stronger MTT claims.
-
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
-
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
-
-## Open boundary (not evidence of closure)
-
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 <div class="thebibliography">
 
@@ -460,5 +483,7 @@ P. Nero, *MTT Quantum-Gravity Research and Paper Status Audit*, research ledger
 P. Nero, *An SPT-Filtered Euclidean TT Model and Its Conditional Perturbative Properties*, corrected MTT quantum-gravity paper, 2026.
 
 P. Nero, *Globally Hyperbolic SM Gauge-Stack Obstruction and BRST Theorem*, executable theorem packet, 2026.
+
+P. Nero, *Modal Triplet Theory and Nonrelativistic Quantum Mechanics: A Coherent-Sector Reconstruction and the Born-Source Boundary*, current canonical owner paper in the [MTT papers repository](https://github.com/PeterNero/mtt-papers/tree/main/papers/modal-triplet-theory-from-mtt-to-quantum-mechanics); frozen `q79_family_source_cutset` certificate in the [curated results repository](https://github.com/PeterNero/mtt-results-repro/tree/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_family_source_cutset).
 
 </div>

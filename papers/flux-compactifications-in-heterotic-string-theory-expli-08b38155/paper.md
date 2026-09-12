@@ -1,13 +1,13 @@
 ---
 abstract: |
-  We determine which parts of two proposed heterotic flux constructions survive the full Hull–Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and $`\mathrm{d}H`$ are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer–Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The Lens–Nil model is a balanced real $`SU(3)`$-structure comparison model, but its almost-complex structure is non-integrable and hence it is not a Hull–Strominger compactification. We finish by separating the exact $`q=79`$ finite and rank-two Hermitian–Yang–Mills evidence, and the existential projective rank-nine hidden connection, from the still-open common visible–hidden problem, and state a typed completion contract for a future Fu–Yau endpoint.
+  We determine which parts of two proposed heterotic flux constructions survive the full Hull–Strominger proof obligations. The diagonal invariant Hermitian structure on the Iwasawa manifold is balanced, and its torsion and $`\mathrm{d}H`$ are computed exactly. The proposed bundle, however, does not exist as claimed. One of its alleged first-Chern forms is not closed; the monad maps were not constructed as global sections; the printed Dolbeault operator is not integrable; and a connection on the stated trivial smooth rank-three carrier cannot have third Chern number six. Within the declared one-entry repair ansatz, the Maurer–Cartan equation has a unique signed repair, but the repaired family is a single complex-gauge orbit with a non-scalar holomorphic commutant, so it cannot supply the claimed stable bundle. The old anomaly, three-generation, and normalized-Yukawa conclusions therefore do not follow. The printed Lens–Nil forms fail balancedness and positivity of the associated metric, and their almost-complex structure is non-integrable. We finish by separating the exact $`q=79`$ finite and rank-two Hermitian–Yang–Mills evidence, and the existential projective rank-nine hidden connection, from the still-open common visible–hidden problem, and state a typed completion contract for a future Fu–Yau endpoint. The selected eta9 source, integral comparison, localized residue construction, and certified local response are explained without identifying them with an unevaluated global Deligne obstruction.
 author:
 - Peter Nero
 bibliography:
 - references.bib
-current_version: v6
-date: September 2026, Version 6
-generated_from_main_tex_sha256: 58e27c4ffcd28f4470835365ac83448dd8f612f7ac5f047496eb6f9a40f3499e
+current_version: v7
+date: September 2026, Version 7
+generated_from_main_tex_sha256: fbbdd6d99251d02dd737df8008fd340b1f20e604dd53d8e34b9cea0c348b27f4
 paper_id: flux-compactifications-in-heterotic-string-theory-expli-08b38155
 release_state: current_revised_tex
 released_version: v4
@@ -18,6 +18,10 @@ zenodo_doi: 10.5281/zenodo.21705964
 zenodo_record_id: 21705964
 zenodo_url: "https://zenodo.org/records/21705964"
 ---
+
+# Version 7 Revision Note
+
+**Supersedes.** Unreleased Version 6; Version 4 remains the released edition. **Reason.** The frozen q79 source sequence required contextual integration, and rereading the invariant forms exposed local sign and prerequisite errors. **Resolution.** Adds the arithmetic, integral-lattice, Koszul–Cech, finite-action and local-response dependency chain; includes all three Maurer–Cartan conditions, corrects the sign of $`\mathrm{d}H`$, and evaluates the printed Lens–Nil forms directly. **Retained results.** Iwasawa balancedness, the failed-bundle audit, the signed repair obstruction, finite q79 and rank-two HYM results, hidden rank-nine existence, and the T69–T73 local/global distinctions survive. **Open boundary.** The selected visible bundle, global period-class decision, common HYM chamber and pointwise Bianchi data remain unsupplied.
 
 # Version 6 Revision Note
 
@@ -37,7 +41,7 @@ An earlier version of this paper presented explicit solutions on the Iwasawa man
 
 2.  the proposed Iwasawa rank-three bundle, anomaly match, generation count, and Yukawa normalization do not survive;
 
-3.  Lens–Nil survives as an auxiliary real $`SU(3)`$-structure model, but not as a Hull–Strominger background;
+3.  Lens and Nil remain auxiliary geometric labels, but the printed differential forms do not define the claimed balanced compactification;
 
 4.  the selected $`q=79`$ branch remains a plausible Fu–Yau-oriented research direction, with exact finite and separate rank-two HYM results, but its physical visible–hidden bundle endpoint is still open.
 
@@ -54,8 +58,8 @@ This is not a no-go theorem for all heterotic solutions on the Iwasawa manifold.
 | Old Dolbeault matrix | disproved | Its Maurer–Cartan residual is nonzero. |
 | Minimal signed repair | proved but rejected | Integrable, yet gauge-redundant and non-simple; not a stable visible bundle. |
 | Old Bianchi and Yukawa chain | withdrawn | It depends on the invalid bundle and on further unproved inputs. |
-| Lens–Nil model | auxiliary only | Balanced as a real $`SU(3)`$ structure, but non-integrable. |
-| $`q=79`$ Fu–Yau endpoint | open | Finite/topological and rank-two ingredients exist; the common physical rank-three Hull–Strominger tuple has not been constructed. |
+| Lens–Nil forms | rejected as printed | Not balanced or positive Hermitian; the displayed complex coframe is non-integrable. |
+| $`q=79`$ Fu–Yau endpoint | open | Finite, rank-two and hidden rank-nine results exist; the common physical visible–hidden Hull–Strominger tuple is not yet constructed. |
 
 </div>
 
@@ -127,7 +131,7 @@ H={}&\frac{r_3^2}{2}\left(
 \omega^3\wedge\bar\omega^1\wedge\bar\omega^2
 +\omega^1\wedge\omega^2\wedge\bar\omega^3\right),
 \label{eq:H}\\
-\mathrm{d}H={}&r_3^2\,
+\mathrm{d}H={}&-r_3^2\,
 \omega^1\wedge\bar\omega^1\wedge
 \omega^2\wedge\bar\omega^2.
 \label{eq:dH}
@@ -142,7 +146,7 @@ H={}&\frac{r_3^2}{2}\left(
 ``` math
 \partial\omega=\frac{\mathrm{i}r_3^2}{2}
 \omega^1\wedge\omega^2\wedge\bar\omega^3,\qquad
-\bar\partial\omega=\frac{\mathrm{i}r_3^2}{2}
+\bar\partial\omega=-\frac{\mathrm{i}r_3^2}{2}
 \omega^3\wedge\bar\omega^1\wedge\bar\omega^2,
 ```
 which yields Equations <a href="#eq:H" data-reference-type="eqref" data-reference="eq:H">[eq:H]</a> and <a href="#eq:dH" data-reference-type="eqref" data-reference="eq:dH">[eq:dH]</a>. ◻
@@ -161,7 +165,7 @@ c=\frac{\mathrm{i}}{2}\omega^3\wedge\bar\omega^3.
 Then Equation <a href="#eq:dH" data-reference-type="eqref" data-reference="eq:dH">[eq:dH]</a> is equivalently
 ``` math
 \begin{equation}
-\mathrm{d}H=-4r_3^2\,a\wedge b.
+\mathrm{d}H=4r_3^2\,a\wedge b.
 \label{eq:dHab}
 \end{equation}
 ```
@@ -224,7 +228,7 @@ Because $`\bar\partial\bar\omega^3=\bar\omega^1\wedge\bar\omega^2`$, the Maurer�
 \begin{equation}
 \bar\partial_E^2=0
 \quad\Longleftrightarrow\quad
-B_3+[B_1,B_2]=0.
+B_3+[B_1,B_2]=0,\qquad [B_1,B_3]=[B_2,B_3]=0.
 \label{eq:MC}
 \end{equation}
 ```
@@ -262,7 +266,7 @@ This family is one $`SL(3,\mathbb{C})`$ complex-gauge orbit. Its holomorphic com
 
 <div class="proof">
 
-*Proof.* Since $`E_{13}E_{32}=E_{12}`$ and $`E_{32}E_{13}=0`$, $`[B_1,B_2]=-\mu E_{12}`$, proving integrability. For
+*Proof.* Since $`E_{13}E_{32}=E_{12}`$ and $`E_{32}E_{13}=0`$, $`[B_1,B_2]=-\mu E_{12}`$. Also $`E_{12}`$ commutes with both $`E_{13}`$ and $`E_{32}`$, so all three curvature components vanish. This proves integrability, not just cancellation in the $`\bar\omega^1\wedge\bar\omega^2`$ component. For
 ``` math
 G_\mu=\operatorname{diag}(\sqrt{\mu},\mu^{-1/2},1)
 \in SL(3,\mathbb{C}),
@@ -328,17 +332,42 @@ Orthonormality of three representatives does not imply that their wedge product 
 
 A real six-manifold can carry an $`SU(3)`$ structure $`(\omega,\Omega)`$ even when its induced almost-complex structure is not integrable. Conditions such as $`\mathrm{d}(\omega^2)=0`$ still make sense in that setting. The Hull–Strominger system, however, uses a complex threefold, holomorphic bundles, and the Dolbeault operators $`\partial,\bar\partial`$ with $`\bar\partial^2=0`$.
 
-The former Lens–Nil section explicitly found $`\mathrm{d}\Omega\neq0`$ and described the structure as non-integrable. It then used $`H=\mathrm{i}(\bar\partial-\partial)\omega`$, holomorphic bundle language, and Hull–Strominger anomaly equations as if integrability had been established. Those steps are incompatible.
+Nonclosedness of a chosen smooth $`(3,0)`$-form alone does not prove non-integrability. For the printed ansatz the failure can instead be checked directly. Write $`e^1,e^2,e^3=\eta^1,\eta^2,\eta^3`$ and $`e^4,e^5,e^6=\sigma^4,\sigma^5,\sigma^6`$, with
+``` math
+\mathrm{d}e^1=e^{23},\quad \mathrm{d}e^2=e^{31},\quad \mathrm{d}e^3=e^{12},
+ \quad \mathrm{d}e^4=\mathrm{d}e^5=0,\quad \mathrm{d}e^6=e^{45}.
+```
+Here $`e^{ij}=e^i\wedge e^j`$. The earlier forms were
+``` math
+\omega_{\rm old}=a_L e^{12}+b_L e^{36}+c_L e^{45},\qquad
+ \Omega_{\rm old}=(e^1+\mathrm{i}e^2)\wedge(e^3+\mathrm{i}e^4)
+                     \wedge(e^6+\mathrm{i}e^5),
+```
+where $`a_L=R_1^2,b_L=R_2^2,c_L=R_3^2>0`$.
 
 <div class="proposition">
 
-**Proposition 6** (Correct status of the Lens–Nil construction). *The balanced Lens–Nil ansatz from the earlier paper is an auxiliary real $`SU(3)`$-structure model. It is not a solution of the Hull–Strominger system in the complex-geometric sense used in Section <a href="#sec:obligations" data-reference-type="ref" data-reference="sec:obligations">2</a>.*
+**Proposition 6** (Correct status of the Lens–Nil construction). *The printed Lens–Nil pair is not balanced or positive Hermitian. The almost-complex structure defined by $`\Omega_{\rm old}`$ is non-integrable. Thus this pair is neither the claimed compatible $`SU(3)`$ structure nor a Hull–Strominger solution.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Integrability is a prerequisite for the Dolbeault complex and for holomorphic gauge bundles. The ansatz fails that prerequisite by its own $`\mathrm{d}\Omega\neq0`$ calculation. Balancedness alone cannot restore it. ◻
+*Proof.* The structure equations give
+``` math
+\mathrm{d}(\omega_{\rm old}^2)
+   =2b_Lc_L e^{12456}-2a_Lb_L e^{12345}\neq0.
+```
+The two independent five-forms cannot cancel when $`R_2=R_3`$. Moreover,
+``` math
+\omega_{\rm old}\wedge\Omega_{\rm old}
+ =(c_L-b_L)(e^{13456}+\mathrm{i}e^{23456}).
+```
+The algebraic wedge condition does hold when $`b_L=c_L`$, but the associated bilinear form is not positive: if $`E_j`$ denotes the dual frame, then $`I E_3=E_4`$ and $`\omega_{\rm old}(E_3,I E_3)=0`$. Thus this condition cannot supply a positive Hermitian metric. For $`\theta^2=e^3+\mathrm{i}e^4`$, $`\theta^3=e^6+\mathrm{i}e^5`$,
+``` math
+(\mathrm{d}\theta^3)^{0,2}=-\tfrac14\bar\theta^2\wedge\bar\theta^3\neq0.
+```
+This is the direct Dolbeault obstruction. ◻
 
 </div>
 
@@ -365,6 +394,18 @@ The current research ledger contains the following separate results:
 The machine-readable packets and verifiers are curated in the MTT Results Reproduction repository . The topological rank-three/index statement is also discussed separately in Ref. .
 
 These are meaningful results, but their ranks and domains matter. The rank-two Cech/HYM witness is not the missing rank-three visible bundle. The smooth rank-three $`c_3=\pm6`$ candidate is not yet a holomorphic stable bundle with an HYM connection. Neither result by itself supplies a common visible–hidden pair, the differential Bianchi representative, or a worldsheet theory.
+
+## Geometry imports and their physical input boundary
+
+Two structural imports from *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows*, subsections on global support and the rank-zero large-gauge kernel, sharpen the comparison. First, the selected real K3 certificate gives an injective immersion $`b_{K3}:\mathbb R^2\to\mathbb T^{20}`$ with dense nonclosed image . Rank zero refers to the lattice of large-gauge identifications, not to the dimension of the source, the repair kernel, or a parameter-free physical theory. Numerical periods are unnecessary for that kernel decision, but the result does not supply kinetic normalization or the unrelated eta9 affine lift.
+
+Second, Fitting ideals of the twisted Hartshorne–Serre benchmark descend as ordinary ideal sheaves: local line twists multiply minor generators by units without changing their ideals . Its determinant divisor has class $`3H+3D_0`$, not the physical eta9 class $`9H+3D_0`$. Generic corank three does not produce a spectral line. Support descent neither trivializes the gerbe nor executes literal connection overlaps. The older packet’s open hidden-HYM labels are superseded by the retained hidden existence theorem discussed below; the common physical pair remains a separate obligation.
+
+The operator interface is owned by *Modal Triplet Theory: From MTT to Quantum Mechanics*, “From a geometric source to a retained operator.” For a supplied unitary connection, projective naturality preserves its curvature, differential and Hessian on the transported metric and domain . A smooth finite-matrix projector over the base is not a finite Fourier truncation. The lane flag acts on a separate factor, not inside an irreducible stable HYM gauge bundle. Its explicit Cech compiler uses the supplied transitions and metric to construct $`p=UU^*`$ and the correction
+``` math
+A_0=U^*dU,\qquad \Gamma=U(A-A_0)U^*,\qquad D_p=p\,d+\Gamma
+```
+so that the compiled connection, rather than the bare Grassmann connection, is the supplied one . The hidden central twist cancels in its rank-80 adjoint, giving the ordinary rank-102 deformation complex, not an ordinary hidden fundamental or a 27-mode continuum theorem. The intrinsic finite subspace must also be transported. Exact restriction requires $`(1-P)HP=0`$; otherwise the complementary resolvent contributes the Feshbach term. These are exact implications after inputs are supplied, not physical endpoint selection or a new fit. Thus the finite arithmetic, topological and compiler results can coexist with an unfinished common visible/hidden connection and Bianchi calculation.
 
 ## Why the Fu–Yau direction is different
 
@@ -410,6 +451,120 @@ The newer response certificates explain why comparing several fibers is useful. 
 CBF T73 supplies the canonical-dual response at those midpoints. K3 adjunction identifies the quotient $`H^0(\mathcal O(9H))/\langle F\rangle`$ with an $`82`$-dimensional canonical space. The three bilinear blocks are invertible and have total rank $`246`$; postcomposition preserves the coefficient rank $`122`$. This last bilinear invertibility is a midpoint result, not yet a certificate over the whole three-panel boxes. In particular, none of these coefficient ranks is silently identified with the derivative of the nonlinear global Picard/BHT restriction map.
 
 All statements in this update are imported from the frozen [curated result manifest at commit f141a20e](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/result_manifest.json), including the records [CBF T69 (corrected global-rank scope)](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_framed_member_spectral_rank_exclusion/artifact.json), [CBF T72 (three-evaluation frame)](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_physical_midpoint_three_evaluation_frame/artifact.json), and [CBF T73 (canonical-dual response)](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_physical_canonical_dual_response_observability/artifact.json). The certificates and their original proofs remain the theorem owners. The next bridge is to certify the finite-trace bilinear over all three panels, complete global transport and the integral readout, and evaluate the actual global obstruction. The common HYM/Hull–Strominger endpoint and its physical overlaps still require the remaining rows below.
+
+# The selected source and the integral comparison
+
+The source sequence is best read as a construction with several different outputs. Arithmetic fixes a branch. A smooth spectral surface carries an analytic twist. Integral topology identifies the lattice on which its normal function lives. Residue calculations provide coordinates and local transport. The final period-class test, followed by a common HYM solution, is a further step. These are imported constructions, not new existence proofs in this paper; the frozen bibliography identifies their owners.
+
+## What the number 79 selects
+
+The exact A11 theorem assumes the retained carrier $`K_{64}\simeq\mathbb{C}[\mathbb{Z}/64]`$, its primitive shift $`S`$, block-circulant operators in $`\mathbb{C}[S]`$, exact commutation with the coherent projector, and the selected nil-survivor kernel. The primitive lag $`16\mapsto15`$ gives $`q_{64}=15`$; the separately fixed Mukai charge sector gives $`q_7=2`$. Hence
+``` math
+q\equiv15\pmod{64},\qquad q\equiv2\pmod7
+ \quad\Longrightarrow\quad q\equiv79\pmod{448}.
+```
+Exact block commutation makes the off-block Schur correction zero in this regime. These assumptions matter: the conclusion is not an extraction theorem for every mixed continuum Hessian. Nor is a Mukai charge-sector identity already a single locally free visible HYM bundle. The companion audit checks the small CRT and primitive-lag arithmetic and the presence of specified source statements; its text-presence gates do not independently prove those statements. The established exact branch is retained without reopening its finite physics conclusions .
+
+## Theta incidence and two different twists
+
+On $`J=S\times E^*`$, with $`S`$ the selected K3 surface and $`H^2=2`$, the physical eta9 linear system is
+``` math
+\mathcal L_{\eta9}=\mathcal{O}_S(9H)\boxtimes\mathcal{O}_{E^*}(3[0]),
+ \qquad h^0(\mathcal L_{\eta9})=83\cdot3=249.
+```
+Its projectivization has dimension 248. This is not the auxiliary $`3H+3D_0`$ pencil: changing 9 to 3 changes the geometry and the relevant cohomology. In UST.G3AB the selected theta matrices obey $`XZ=\zeta_3ZX`$. Values transform by $`U_g`$, coefficients by $`U_g^{-T}`$, so their contraction is invariant. The inverse multipliers cancel in the universal incidence equation. The rank-three coefficient minor and projective faithfulness give the selected nine-member smooth orbit .
+
+This cancellation is finite equivariant descent, not analytic untwisting. The theta multiplier in $`H^2(E[3],U(1))`$ and the BHT universal-kernel obstruction in $`H^2(J,\mathcal{O}_J^*)`$ occupy different slots. Here BHT denotes the relative twisted Fourier–Mukai construction used by the source, and $`\beta_C`$ denotes the normalized analytic obstruction on a spectral member $`C`$. A smooth orbit and an honest incidence equation do not evaluate $`\beta_C`$, choose its zero locus, or produce a nonflat common visible–hidden connection. This is why the hidden existence result above can coexist with an open visible endpoint.
+
+## A pairing-one class is not yet its transported coordinates
+
+The Gate-1 campaign closes all 30 original-Jacobian groups and their 225 support columns. They provide polynomial identities with which to reduce the selected residue source, not an independently selected physical embedding. The older execution frontier begins with incomplete counts but continues through substantive filling and surgery results. Its remaining-Gate-1 instruction is superseded by the completed campaign; its mathematical distinctions must not be discarded with that instruction. In particular, an apparent chart pole need not be a critical value of the geometric pencil, and homological boundary cancellation is not itself a chain-level ordered-root lift .
+
+The later gamma promotion fixes the orientation of $`h_Z=\delta\otimes u_A`$ and $`z_Z=\gamma\otimes u_B`$, where $`u_A,u_B`$ are the selected elliptic cycles. The four-thimble representative $`-T_{17}+T_{26}-T_{27}+T_{28}`$ has pairing one. The ordinary divisor-avoidance argument preserves its integral homology class. The frontier also explains how equal-label opposite-sign crossings can be removed by tubes, and why admitted filling repairs have the same twisted homology and closed-cocycle pairings. This removes an artificial choice of fourteen local physical parameters. It does not supply the missing selected transport or the integral residue coordinates. Existence of a representative, a particular executed representative, and its period image are three different assertions .
+
+## Integral gluing cannot be replaced by rational rank
+
+For a primitive nondegenerate ambient sublattice $`A`$ in a unimodular surface lattice $`L`$, put $`V=A^\perp`$. The integral quotient is $`L/A\simeq V^\vee`$, not automatically $`V`$. The pairing embeds $`V`$ in its dual with discriminant quotient $`D(V)=V^\vee/V`$. In the physical eta9 surface the ranks of $`L,A,V`$ are respectively $`1532,23,1509`$, and
+``` math
+D(V)\simeq(\mathbb{Z}/3)^{22}\oplus\mathbb{Z}/54.
+```
+Rationalizing erases precisely this finite gluing information. Thus a rank-1510 affine extension retains its rank when the integral coefficient module is corrected, but identifying its integral translation lattice requires an explicit marking; a rank match cannot identify the physical normal function with a finite compiler .
+
+H4-T30 gives the integral comparison test. For an integrally generating presentation it retains the selected primitive, infinite-order topological affine extension, not merely an unconstructed candidate. When the physical coefficient module is the ambient quotient, use $`V^\vee`$ for that module; applying a theorem stated for $`V`$ requires the corresponding integral comparison. For the abstract meridian map $`E:\mathbb{Z}^N\to V`$, with $`K=\ker E`$, H4-T31 separates the pairing-map obstruction as
+``` math
+0\longrightarrow D(V)\longrightarrow\operatorname{coker}(E^*Q)
+   \longrightarrow K^*\longrightarrow0.
+```
+Zero relation defects remove the free obstruction; zero discriminant residues remove the finite obstruction. Both are needed. For example, in negative $`A_2`$, the roots $`e_1,e_2,e_1+e_2`$ have relation $`(1,1,-1)`$. The translation difference $`(1,0,1)`$ kills this relation but requires the fractional gauge $`(-2/3,-1/3)`$; it is not an integral coboundary. This small example explains the need for the integral test without reproducing the owning proof.
+
+H4-T32 computes the discriminant class from an integral lift in $`L`$: pair with the 23 ambient generators, apply the fixed left Smith transform, and reduce by the displayed invariant factors. It also supplies a finite generation criterion: after one nonzero maximal minor $`\Delta`$ is known, full rank modulo every prime dividing $`\Delta`$ certifies integral surjectivity. The physical pairing vector and its residues are not supplied by this recipe. Filtered Deligne comparison additionally needs compatible connection, transversality and normalization data. Nor does a degree-two gerbe obstruction automatically belong to an ordinary Neron model: such a comparison requires its own admissibility and integral specialization map.
+
+H4-T33 allows a smaller first decision than constructing the entire marking. If $`h`$ is a primitive integer pairing and $`R`$ an additive readout modulo the periods of $`\ker h`$, then $`[R(z)]=h(z)\beta_C`$. A pairing-four root with nonzero quotient readout proves $`\beta_C\neq0`$; zero proves only $`4\beta_C=0`$. An odd accessible pairing, for example 7, yields a pairing-one combination $`2\cdot4-7=1`$. This is a decision strategy, not an emitted physical readout. Equality in the period quotient also does not authorize applying an arbitrary normal operator: that operator must preserve the period subgroup .
+
+# From a root cycle to a residue source
+
+## Why the failed scalar representation is not a failed cycle
+
+H4-T34 factors the selected root curve $`R^-\times[1:-1:0]`$ using $`Q_2,w+G_3,t_0+t_1,t_2`$: a conic, a selected double-cover sheet, and two equations fixing the elliptic projective point. Here the $`t_i`$ are its homogeneous coordinates and the degree triples record Cox characters. The resulting Cayley determinant numerator has degree $`(10,2,1)`$, but the defining degrees are split nef, not ample. Therefore the ample-cycle closed formula cannot be imported without a comparison. Literal division by $`xt_0`$ fails. H4-T35 instead solves the equation modulo the Jacobian ideal in a specified 927-coordinate gauge; a nonzero good-reduction minor proves existence over $`\mathbb Q(\gamma)`$, not yet a geometric cycle-class identification .
+
+H4-T36 retains the regular embedding and the three-chart cover, and H4-T37 emits all three chart numerators. The next test matters: H4-T38A finds coefficient rank 85 and augmented rank 86 in the common-scalar correction system over $`\mathbb F_{11}`$. Its stacked multiplier has rank 1012, not 1013. Thus no single ordinary-Jacobian scalar realizes these three numerators at that place. Neither the root curve nor its Gysin class has been disproved. The rank-16 Koszul matrix factorization of H4-T39, $`D^2=\Phi I`$, retains the full degree-eight determinant form with 45 components before scalar projection. Its line-valued curvature is not a nilpotent differential that can be treated as an ordinary complex.
+
+H4-T40 checks a different possible shortcut: the full ten-derivative character is a nonzero polynomial but has zero ordinary $`H^{0,2}`$ Jacobian image at the locked finite place. That zero does not erase the degree-eight localized source. Indeed H4-T41 proves that the fractions $`N_x/(xt_0),N_y/(yt_0),N_z/(zt_0)`$ agree after localization: the cross-differences first vanish at denominator power four. All tested relative finite-field rescalings still fail the original global-scalar demand. Localization removes denominator torsion; it does not retroactively solve the unsaturated equations. The affine nonzero witness lies outside the toric semistable locus, so semistable descent remains a separate step.
+
+## Descent, orientation and the surviving edge class
+
+H4-T42 types the Koszul construction as two rank-eight Cox-equivariant bundles with a potential valued in $`\mathcal{O}(0,0,1)`$. H4-T43 enumerates the semistable strata and contracts the two nonidentity $`\mu_3`$ inertia sectors by an explicit $`w^{-1}`$ homotopy; this removes those sectors, not the identity-sector character. On its support, H4-T44 supplies 27 unimodular charts, integral monomial frames, their transition cocycles, and the logarithmic-differential Atiyah input. These are actual descent data rather than a guess from matching dimensions .
+
+To apply a function-valued character formula, H4-T45A passes to the potential-trivializing torsor. The potential becomes a function on the eight-dimensional quotient, but its residual $`R`$-charge must be kept. H4-T45B contracts by that Euler field and the Gale top form, forcing the $`(9,1,1)`$ character of the desired $`H^{1,1}`$ residue. It also fixes the chart signs $`(+,-,+)`$. H4-T45C shows that oriented and unsigned fractions can both agree on affine overlaps because the sign-sensitive restrictions there vanish. Agreement on those overlaps cannot select the orientation; the Gale form does.
+
+H4-T45D identifies the saturated, oriented finite-fiber section with the 1013-coordinate $`H^{1,1}`$ vector and its compulsory factor $`1/6`$. H4-T45E then uses the nonnegative Cech filtration of the total character: its zero-Cech component fixes the edge image. Positive-Cech terms complete the cocycle but do not change that edge image. This does not assert that the total cocycle has been explicitly expanded. H4-T45F defines the nonzero characteristic-zero class compactly as $`[N_{\rm root}/6]`$. The failure to reconstruct large coordinates in one frozen gauge is not nonexistence of this exact quotient class.
+
+## The action is normalized before it is transported
+
+H4-T46 identifies the root, the moving graph and the four-normal source, including the sign $`R^- - H=-\delta`$, and supplies the fixed elliptic period $`\Omega_B`$. The start source is $`\Omega_B[N_{\rm root}/6]`$, not a freely rescaled state. H4-T47 explains when the connection acts on this quotient: it must preserve the relation subbundle. A new quotient frame then has the usual inhomogeneous gauge law, including its derivative. A frozen quotient matrix alone is not the complete Gauss–Manin connection .
+
+H4-T48 executes the full $`H^{0,2}`$-to-$`H^{1,1}`$-to-$`H^{2,0}`$ recursive action at six roots of the split prime 21817, retaining the original-Jacobian preimages for the successive $`1/4`$ and $`1/3`$ divergences. H4-T49 repeats the action at sixteen split primes and proves the $`H^{2,0}`$ endpoint determinant over $`\mathbb Q(\gamma)`$. The full action is not thereby reconstructed over that field. Crucially, H4-T50 corrects the normalization of the stored T47–T49 arrays: they used the raw numerator. Every source, preimage, right-hand side and output must be divided by six before it represents the canonical class. Linearity preserves the zero-residual identities. Over $`\mathbb F_{11}`$ this means multiplying by 2. The raw arrays remain valid unnormalized witnesses, not canonical physical source values.
+
+## What computational reduction and precision establish
+
+The characteristic-zero reduction of the earlier Gate-2 chart separates the exact $`H^{2,0}`$ inverse, $`H^{1,1}`$ kernels of dimensions 934 and 398, and an $`H^{0,2}`$ Woodbury kernel of dimension 15158. Integral anchors with nonzero determinant modulo 11 justify the exact reduction. They do not select one of the six Archimedean embeddings or provide interval inverse values .
+
+For the canonical selected source, H4-T51 constructs the 6022-coordinate Woodbury adapter $`z=S^{-1}Wx`$, with 34 balanced blocks. H4-T52 evaluates $`Pz`$ by one base solve rather than materializing $`P=A_0^{-1}U`$; the endpoint and reduced equations replay at all 96 selected roots. Their reconstruction tests produce no stable nonzero coordinate in the tested window. Those conclusions concern a finite adapter and a bounded reconstruction attempt, not the nonexistence of a characteristic-zero solution .
+
+H4-T53 provides an exact sparse coefficient compiler and high-precision midpoint refinement at all independent embeddings. Its binary64 factor is only a preconditioner; a small correction computed at Arb midpoints is still not a directed enclosure. H4-T54 and H4-T55 instead certify exact split $`p`$-adic actions, first through $`21817^{512}`$, then through $`21817^{2048}`$, with specified rational-reconstruction exclusion windows. T55’s 7746-dimensional core is minimal among fourteen tested admissible gauges, not globally optimal among every gauge. None of these precision or height statements is an Archimedean path theorem. The later local source tube below is a genuine additional result, so the earlier “source enclosure open” wording is not current in that local scope.
+
+# Completed local tests and the global endpoint
+
+## A complete three-cycle calculation can be non-detecting
+
+The full-coverage packet retains the earlier seven-eighths base as provenance. Its later frontier merge adds the three missing faces, using 81 source records and exact prefix-free dyadic partitions. The readiness packet binds three complete eight-face covers to one mathematical source. The endpoint projection then supplies ten real component intervals for each of 4251 transported cells. Coverage, projection and intersection are separate assertions: projection alone proves no pairing .
+
+The common-fiber separation packet exhaustively separates the cross-cycle box unions. Thus the off-diagonal intersections vanish. Together with the retained self-intersections, the B96 Gram matrix is $`-2I_3`$, with determinant $`-8`$. The three cycles are independent, and their affine coefficients are rational coboundaries on this subsystem. The completed calculation is therefore non-detecting at the rational relation-defect tier. It neither proves integral coboundary membership nor trivializes the full global affine class. This source should not be rerun as though its cover were incomplete; a detecting subsystem must contain different information. In the converse direction, a singular Gram matrix alone would not prove an actual relation in the ambient lattice.
+
+## A positive-width source with correlated errors
+
+The positive-width packet reconstructs the complete $`164\times164`$ algebraic connection on the normalized marked interval $`0\leq u\leq2^{-96}`$, with a source inverse defect less than $`0.000149`$ and local lift contraction less than $`0.006231`$. The coordinate $`u`$ is dimensionless and is not physical time. This is a same-source correlated family, not a statement about arbitrary independent choices of every interval entry .
+
+For clarity, let $`\mathcal J`$ be the local real-structure matrix, $`S=\mathcal J_{21}^{-1}`$, and $`R=-\mathcal J_{11}S`$, with subscript 0 denoting the initial value. The correlated-increment certificate uses
+``` math
+\Delta S=-S_0\Delta\mathcal J_{21}S,\qquad
+ \Delta R=-(\Delta\mathcal J_{11}+R_0\Delta\mathcal J_{21})S.
+```
+Keeping the common initial data in these identities sharply improves the increment bound without a new source solve. It does not improve the precision of $`R_0`$ itself. The consolidation record indexes these two certificates; it is not an additional numerical acceptance theorem. Useful-width continuation, the normalized-to-global frame with its gauge derivative, ordered-path completion and integral readout remain separate.
+
+## A local scalar does not select a compactification
+
+CBF T65 is a useful warning about precision. Its three frozen-binary row gauges refine to tiny residuals but disagree on the proposed scale. The test rejects promotion from those binary coefficients, not the characteristic-zero geometric functional. T67 subsequently uses a certified characteristic-zero inverse and correlated adjoint readouts. For $`A^Tz=g`$, the error in a scalar can be bounded through the adjoint residual and the common source rather than by treating every solved coordinate independently. The certified denominator excludes zero, so the stated $`585/(2D)`$ scale and its derivative are defined at the declared edge-2 midpoint .
+
+This is a method-chart scalar on the already declared B89 source, not an observed physical coupling or a replacement for $`\beta_C`$. The same-source B89 affine replay has a mod-two cokernel detector annihilating $`M-I`$ and pairing one with the translation. It therefore rejects B89 from the zero locus, without proving that the integral class has exact order two .
+
+CBF T68 explains the rank consequence. Taking determinants in $`g_{ij}g_{jk}g_{ki}=\alpha_{ijk}I_r`$ gives the necessary condition $`r[\alpha]=0`$; for a twisted line it is the trivialization condition itself. In the declared degree-three transform, spectral rank $`r`$ would give inverse rank $`3r`$, subject to the transform’s local-freeness and cohomological hypotheses. Raising spectral rank to two therefore does not preserve the intended rank-three visible bundle. B89’s genuine mod-two detector excludes odd ranks but does not construct an even-rank object. A local component sieve on another candidate is usable only after its map from the actual global twist has been established; an ordinary Neron-model interpretation cannot be assumed. In particular, the T69 fixed-fiber calculation still does not decide the framed member’s global rank-one or rank-two alternatives.
+
+## What the three coefficient evaluations resolve
+
+The T70 and T71 residue calculations explain the later T72–T73 response result already summarized above. The graph-incidence kernel has affine dimension 123 and contains the radial member, leaving projective tangent dimension 122. One selected fiber sees only 70 directions, with kernel 52 and cokernel 12. The earlier principal 33-dimensional slice sees only 11. In T71 every tested pair sees 111 directions; a dependent triple adds none, while a deterministic independent triple reaches 122. Thus “three evaluations” means independent coefficient rows, not any three observations .
+
+T72 supplies the characteristic-zero midpoint minor and its positive-width coefficient-rank certificate. T73 uses K3 adjunction and the three invertible midpoint canonical bilinears to postcompose this map without changing its kernel. Its later source also supplies all three local branch carriers, refining T72’s earlier carrier inventory. None of that extends the canonical-bilinear nondegeneracy automatically over the whole product of panels. Nor does coefficient injectivity compute the nonlinear divisor-to-Picard derivative or the global BHT integral. It supplies an informative local readout, not a physical-source selector.
 
 # A typed completion theorem
 
@@ -482,7 +637,7 @@ The negative conclusions are deliberately local to the constructions audited her
 
 - they do prevent those separate results from being advertised as one completed physical compactification.
 
-The most direct research target is now the physical visible bundle gate V1. A successful construction should begin with an actual holomorphic rank-three bundle on the selected Fu–Yau carrier, prove its stability in the same balanced chamber used by the geometry, and only then solve the hidden and Bianchi rows. Reusing the rank-two Wiener-contraction architecture is reasonable; reusing its conclusion without a rank-three operator is not.
+The most direct research target is now the physical visible bundle gate V1. A successful construction should begin with an actual holomorphic rank-three bundle on the selected Fu–Yau carrier, prove its stability in the same balanced chamber used by the geometry, compare the already established hidden connection in that common chamber, and solve the pointwise Bianchi row. Reusing the rank-two Wiener-contraction architecture is reasonable; reusing its conclusion without a rank-three operator is not.
 
 # Reproducibility
 
@@ -497,6 +652,8 @@ The exact finite-dimensional statements behind Theorem <a href="#thm:repair" da
 4.  the two-dimensional commutant by exact rational row reduction.
 
 The wider q79, Cech, finite-HYM, and Wiener-contraction artifacts are provided with provenance hashes and their own verifiers in Ref. . Numerical execution does not alter the scope boundaries stated in Section <a href="#sec:q79" data-reference-type="ref" data-reference="sec:q79">7</a>.
+
+The accompanying `test_contextual_revision.py` performs bounded exact checks of the exterior-form signs, all three Maurer–Cartan components, CRT, the small integral-lattice example, factorial scaling, and the dyadic cover arithmetic. It also parses and hashes every assigned frozen artifact, including every endpoint-component interval. These checks do not rerun the large source calculations or turn packet Boolean fields into independent verification. The contextual review records that distinction and the source-specific qualifications.
 
 # Revision note: Version 4
 
@@ -516,14 +673,14 @@ The program still needs one common q79 rank-three visible–hidden Hull–Stromi
 
 # Conclusion
 
-The earlier paper did not construct the two claimed heterotic compactifications. What survives is a correct Iwasawa balanced-geometry calculation, an exact diagnosis of the failed bundle, and a sharper route forward. The selected $`q=79`$ program has nontrivial finite, topological, and rank-two analytic evidence, but a physical Hull–Strominger compactification still requires one common rank-three visible–hidden tuple satisfying every gate in Theorem <a href="#thm:contract" data-reference-type="ref" data-reference="thm:contract">7</a>. That is the precise frontier.
+The earlier paper did not construct the two claimed heterotic compactifications. What survives is a correct Iwasawa balanced-geometry calculation, an exact diagnosis of the failed bundle, and a sharper route forward. The selected $`q=79`$ program has nontrivial finite, topological, and rank-two analytic evidence, a projective rank-nine hidden existence theorem, and the source and local-response constructions described above. A physical Hull–Strominger compactification still requires one common tuple with a rank-three visible bundle and the compatible hidden connection, satisfying every gate in Theorem <a href="#thm:contract" data-reference-type="ref" data-reference="thm:contract">7</a>. That is the precise frontier.
 
 <!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Computational Evidence and Reproducibility
 
 The q79 arithmetic theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate are used directly at their declared finite, topological, or rank-two analytic tiers. They do not construct the missing physical rank-three visible-hidden bundle, differential Green-Schwarz representative, flux gerbe, or worldsheet theory. The paper’s SU3 repair obstruction is checked by its own exact local verifier and is not relabeled as a promoted q79 HYM endpoint.
 
-The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking. This older baseline evidence block retains its own immutable snapshot; the additional contextual imports in Sections <a href="#sec:source-integral" data-reference-type="ref" data-reference="sec:source-integral">8</a>–<a href="#sec:local-global-import" data-reference-type="ref" data-reference="sec:local-global-import">10</a> are cited separately at frozen commit f141a20e. Neither snapshot’s status fields replace the current authority distinctions explained in the text.
 
 > **Repository:** <https://github.com/PeterNero/mtt-results-repro>
 > **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`

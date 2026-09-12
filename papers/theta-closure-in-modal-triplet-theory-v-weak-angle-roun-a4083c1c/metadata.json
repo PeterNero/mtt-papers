@@ -1,12 +1,12 @@
 {
-  "abstract": "We assess whether the weak mixing angle provides a redundant test of the selected MTT gauge profile. At the same scale and in the same scheme, the weak angle is an exact rational function of the GUT-normalized weak-to-hypercharge overlap ratio. For the selected SMDR profile at the top-mass matching scale, this gives 0.2346644 with propagated uncertainty 0.0000433. Because the overlap ratio was itself obtained from the measured hypercharge and weak couplings, this equality is an algebraic round trip rather than a held-out prediction. Supplying an absolute weak coupling from the Fermi constant and W-boson mass does not remove that circularity. A genuine redundancy test requires an MTT source theorem selecting the ratio without electroweak gauge data, followed by independent common-scheme transport.",
+  "abstract": "We reassess whether the weak mixing angle provides a redundant test of the selected MTT gauge profile. In grand-unified hypercharge normalization, let r21 be the ratio I2/I1, equal to the squared U(1)-to-SU(2) gauge-coupling ratio. The squared sine of the weak mixing angle is then 3 r21 divided by 5 + 3 r21 at the same scale and in the same scheme. The selected SMDR profile at the top-mass scale gives 0.2346644 plus or minus 0.0000433. Because r21 itself comes from the measured electroweak gauge profile, this equality is an algebraic round trip, not a held-out prediction. Supplying an absolute SU(2) coupling from the Fermi constant and W mass does not remove that circularity. A genuine redundancy test requires an MTT source theorem selecting r21 without electroweak gauge data, followed by independent common-scheme transport.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026",
+  "current_version": "v3",
+  "date": "September 2026 (Version 3)",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262145",
     "created": "2026-07-29T08:52:24.748489+00:00",
@@ -32,36 +32,50 @@
     "updated": "2026-07-29T08:52:25.176135+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "6d1a8603a811400c880f05b0fbd64f511478858c76d01294bf29e4e07e2078d8",
+  "main_tex_sha256": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d",
   "paper_id": "theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c",
-  "paper_md_sha256": "4a2cf50a2dbc0853df097b9165fe72532c87046154a06c9843b5ce34071f2fa3",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "66698fca30358e7aecafb35055eb79b95ffe44e56d8da055cb509bae7b5be9c1",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "eta9_gate1_campaign",
+    "eta9_three_cycle_b96_nondetection",
+    "q79_bk3_rank_zero_kernel"
+  ],
   "revision": {
-    "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "b9eec5a4b2db15561cac75a3fee46d7e8e261466ad9853b74f252b84cd53995f",
+    "revision_evidence_path": "papers/theta-closure-in-modal-triplet-theory-v-weak-angle-roun-a4083c1c/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "0aa731b5e3ebe7e4158015be7853145a2da2551312da8bc4b3997ac804bda285",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 15259,
+      "bytes": 19537,
       "path": "main.tex",
-      "sha256": "6d1a8603a811400c880f05b0fbd64f511478858c76d01294bf29e4e07e2078d8"
+      "sha256": "df72c2521ec994ed56fffbfac4bc6e9055a0dfeaafb498b330db5ced110b796d"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 333084,
+      "path": "main.pdf",
+      "sha256": "c24763ae9a018a2da196e9e280a2eb36ec10d47b707b129510ede2aaa5e60fd3"
+    },
+    {
+      "bytes": 2810,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "0aa731b5e3ebe7e4158015be7853145a2da2551312da8bc4b3997ac804bda285"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_V__Redundant_Determination_from_Gauge_Couplings_and_the_Weak_Mixing_Angle_v2"
   },
-  "source_tree_sha256": "be9e5074f8e48880be08bcd270343e22a07685fdec038cbbf5d4ba2ff10a8be6",
+  "source_tree_sha256": "3a360fcb1807a31004538b09198c2580868117c5e49c142c5f9718b19b5adb8f",
   "title": "Theta Closure in Modal Triplet Theory V: Weak-Angle Round Trip and the Non-Circularity Criterion",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18262145",

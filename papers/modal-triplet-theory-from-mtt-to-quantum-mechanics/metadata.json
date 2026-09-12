@@ -1,12 +1,12 @@
 {
-  "abstract": "This paper asks what Modal Triplet Theory (MTT) presently establishes about nonrelativistic quantum mechanics. We separate four questions that are often conflated: whether MTT can encode a quantum model, whether a coherent sector reconstructs its Hilbert-space dynamics, whether one selected MTT source emits the required operators and instruments, and whether the probability law is derived for every apparatus. A complete quantum-mechanical record is defined, including the complex Hilbert space, state cone, operator algebra, self-adjoint Hamiltonian and domain, unitary evolution, clock convention, composition rule, effects, instruments, and source certificates. The main theorem is conditional: if one selected upper MTT state emits this record and the evaluation diagram commutes, then MTT reconstructs the corresponding quantum theory on the declared domain. Projection alone does not create a complex structure, noncommutative observable algebra, self-adjoint Hamiltonian, tensor product, or probability law. We give sufficient closed-form and reducing-subspace conditions for an exact coherent-sector Hamiltonian, and we show why reproducing an arbitrarily supplied Schrodinger potential is an expressiveness result rather than a prediction. Time is treated as an evolution or clock parameter; the valid Mandelstam–Tamm relation replaces the former unsupported universal self-adjoint time operator. Gleason- and Busch-type theorems characterize probability assignments after Hilbert/effect structure and additivity are assumed; they do not source those assignments. A stronger positive result is available on one selected domain: the canonical q=79 binary one-anchor recorder gives an exact stopped output measure and second-moment Born descent on its commuting Fock output algebra, with no fitted probability or additional classical noise. General apparatus contexts, finite-bandwidth and non-Markov control, pre-quantum probability semantics, and objective single-history selection remain open. The result is therefore a rigorous coherent-sector reconstruction with one exact selected measurement domain, not a complete first-principles derivation of all quantum mechanics.",
+  "abstract": "This paper asks what Modal Triplet Theory (MTT) presently establishes about nonrelativistic quantum mechanics. We separate four questions that are often conflated: whether MTT can encode a quantum model, whether a coherent sector reconstructs its Hilbert-space dynamics, whether one selected MTT source emits the required operators and instruments, and whether the probability law is derived for every apparatus. A complete quantum-mechanical record is defined, including the complex Hilbert space, state cone, operator algebra, self-adjoint Hamiltonian and domain, unitary evolution, clock convention, composition rule, effects, instruments, and source certificates. The main theorem is conditional: if one selected upper MTT state emits this record and the evaluation diagram commutes, then MTT reconstructs the corresponding quantum theory on the declared domain. Projection alone does not create a complex structure, noncommutative observable algebra, self-adjoint Hamiltonian, tensor product, or probability law. We give sufficient closed-form and reducing-subspace conditions for an exact coherent-sector Hamiltonian, and we show why reproducing an arbitrarily supplied Schrodinger potential is an expressiveness result rather than a prediction. Time is treated as an evolution or clock parameter; the valid Mandelstam\u2013Tamm relation replaces the former unsupported universal self-adjoint time operator. Gleason- and Busch-type theorems characterize probability assignments after Hilbert/effect structure and additivity are assumed; they do not source those assignments. A stronger positive result is available on one selected domain: the canonical q=79 finite-symbol Cauchy quantum model fixes its reduced semigroup and minimal dilation, and its binary one-anchor recorder gives an exact stopped output measure and second-moment Born descent on its commuting Fock output algebra, with no fitted probability or additional classical noise. General apparatus contexts, finite-bandwidth and non-Markov control, pre-quantum probability semantics, and objective single-history selection remain open. The result is therefore a rigorous coherent-sector reconstruction with one exact selected operational model, not a complete first-principles derivation of all quantum mechanics. Contextual imports explain the exact projector and strain compilers, conditional physical-Hessian interface, free local field net, and formal quantum master equation without promoting them to a selected interacting continuum theory.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "Version 4, July 2026",
+  "current_version": "v5",
+  "date": "Version 5, 12 September 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17074246",
     "created": "2026-07-30T18:56:27.085692+00:00",
@@ -32,16 +32,32 @@
     "updated": "2026-07-30T18:56:27.462272+00:00",
     "version": "v4"
   },
-  "main_tex_sha256": "582ba1b90adaf594fcf10271b41d0f0bfc2ab6f2c03490747e233b549d626cb2",
+  "main_tex_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
   "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
-  "paper_md_sha256": "0396ad7bcdb2362410cab7307cb1e762f1d97e60a52a33844f15c72b26e8e20d",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "e9a4b65c04e6146263c3e87dc9a81cc76e2b085244e7196cc0e74f6d31fe794a",
+  "release_state": "current_revised_tex",
   "result_refs": [
+    "q79_canonical_quantum_model",
+    "q79_cech_projector_compiler",
+    "q79_continuum_recorder_compiler",
+    "q79_family_source_cutset",
+    "q79_fm_hym_dependency_compression",
+    "q79_fock_output_measure",
+    "q79_free_cstar_nonpromotion",
+    "q79_free_dirac_car_net",
+    "q79_local_qme",
+    "q79_monodromy_reynolds_descent",
+    "q79_ontology_nonentailment",
+    "q79_projective_hym_naturality",
+    "q79_shared_root_c4_promotion",
+    "q79_spectral_strain_hessian",
+    "q79_support_stratified_strain",
+    "qm_current_status",
     "strict_upgrade_ledger"
   ],
   "revision": {
     "revision_evidence_path": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "3991e4c7640b5b6d9455e859bf93e327b8e76d78397e03143566dba86500294b",
+    "revision_evidence_sha256": "a61e77ab9728f633e98f74ff81597cb77d2f56e8c7eb6a31902a333d9573390e",
     "selected_revision": true,
     "superseded_source_path": "6 Quantum Mechanics/_work/Modal_Triplet_Theory__From_MTT_to_Quantum_Mechanics_v3"
   },
@@ -53,17 +69,47 @@
       "sha256": "f5a5fecd8636f70f03fa99978b52abdcd8d79d3ccc0c11d67015606a6384306d"
     },
     {
-      "bytes": 46258,
+      "bytes": 71078,
       "path": "main.tex",
-      "sha256": "582ba1b90adaf594fcf10271b41d0f0bfc2ab6f2c03490747e233b549d626cb2"
+      "sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1"
+    },
+    {
+      "bytes": 4496,
+      "path": "paper-markdown.lua",
+      "sha256": "eda1aef847606bd8399a98fb3fc9facb577e19e5f4780fce518485aafd2e8157"
+    },
+    {
+      "bytes": 4996,
+      "path": "frozen-qm.bib",
+      "sha256": "814c818908da543a6b30d0691cd24dbf2bb75cd25bf7ceff28cb638f3fbea931"
+    },
+    {
+      "bytes": 1170,
+      "path": "consumer-qm.bib",
+      "sha256": "4cff919b83d226bbc016f5f691760ba3a514d81a846d08af88e717351b434797"
+    },
+    {
+      "bytes": 4373,
+      "path": "editorial-config.json",
+      "sha256": "6a816844223f8ee43caedd1c2520227f7a7b43562d850b70b2239417609911ec"
+    },
+    {
+      "bytes": 6210,
+      "path": "editorial_artifacts.py",
+      "sha256": "6c5bded1fe68c9c7d202bd818be586b26ed8c8e9c78e42a43624ec64841e7802"
+    },
+    {
+      "bytes": 4111,
+      "path": "check_editorial_examples.py",
+      "sha256": "23eaaf1564c19df0c179a5d38bb1f844dd0c7794b371d57bc9fe001a57f7b2e6"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "6 Quantum Mechanics/_work/Modal_Triplet_Theory__From_MTT_to_Quantum_Mechanics_v3"
   },
-  "source_tree_sha256": "0e8425ba20399ce79fbc3b26f1a591aadd37dd6a1fb1eefb90fb60a5acba2bf9",
+  "source_tree_sha256": "69d81c0719476deb68156ea7f30fdb347a54e236f058e1f2af382cb710bf9141",
   "title": "Modal Triplet Theory and Nonrelativistic Quantum Mechanics: A Coherent-Sector Reconstruction and the Born-Source Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.17074246",

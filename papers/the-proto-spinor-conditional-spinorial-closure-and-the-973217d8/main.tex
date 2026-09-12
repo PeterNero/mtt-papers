@@ -4,7 +4,8 @@
 \title{The Proto-Spinor:\\
 Conditional Spinorial Closure and the q79 Interface}
 \author{Peter Nero}
-\date{July 2026\\Version 7}
+\date{September 2026\\Version 8}
+\newcommand{\frozenresult}[2]{\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/#1/artifact.json}{#2}}
 
 \begin{document}
 \maketitle
@@ -29,9 +30,39 @@ has exactly two conjugate $\pm i$ phase-root lifts for which
 $(\pm iJ_{\rm FM})^2=I$. Strict global Spin closure remains equivalent to a
 branch-relator obstruction calculation; the closed result is SpinC and finite
 symbolic. Circle, lens, and nil remain typed phase, finite-transport, and
-anchoring roles. Lorentzian spinors, masses, and particle assignments remain
-downstream realization problems.
+anchoring roles. The later trace-plane construction supplies a Clifford
+module, and the selected framed product source admits two equivalent binary-root
+factorizations of its complete free Dirac carrier and observable net. We explain
+the exact finite $864\to96$ reduction, conditional continuum and Deligne
+constructions, and selected finite family-response algebra without identifying
+dimensionless spectra with masses. A nonflat same-endpoint HYM comparison,
+interacting physical action, and strict source-selected magnitudes remain
+distinct downstream problems.
 \end{abstract}
+
+\section*{Revision note for version 8}
+\addcontentsline{toc}{section}{Revision note for version 8}
+\begin{description}
+\item[Supersedes.] Version~7; its revision notes remain below as an account
+of the earlier editions.
+\item[Reason.] The finite-superconnection and SpinC sources continued beyond
+the older local-lift boundary. A result list did not explain their successive
+refinements or their different physical assumptions.
+\item[Resolution.] Version~8 integrates finite branching and response
+operators, overlap and endpoint constructions, Deligne normalization,
+family-response results, and complete free-carrier root equivalence. The
+exploratory simulation is distinguished from a physical calculation.
+The curved connection compiler and nonlinear support-stratified strain
+shadow replace the excluded linear root-space route, with explicit scalar-field
+and polar-metric qualifications.
+\item[Retained.] The conditional loop-memory theorem, shared line, finite
+return, and established finite/profile SM results are unchanged. No result is
+promoted by a packet's success flag.
+\item[Open boundary.] Strict global q79 Spin, nonflat HYM spectral and
+Hessian comparison, the selected interacting action and physical source values
+remain open. The framed free carrier, hidden projective HYM existence, and
+canonical operational quantum mechanics are not reopened.
+\end{description}
 
 \section*{Revision note for version 7}
 \addcontentsline{toc}{section}{Revision note for version 7}
@@ -94,7 +125,10 @@ finite SpinC--Fourier return.
 statistics, interactions, observables, and a particle interpretation.
 \end{enumerate}
 The first three layers provide a mathematically controlled precursor to
-spinorial physics.  They do not silently supply the fourth.
+spinorial physics. They do not silently supply the fourth. Later sources do
+close a specified free part of that fourth layer on the framed product
+category; Section~\ref{sec:root-continuation} explains this without importing
+an interacting theory.
 
 \subsection{Object picture: why a double cover appears}
 
@@ -128,10 +162,11 @@ the observed branch and does not identify the compact phase with time.
 
 Sections~2--4 construct the local comparison carrier and its conditional spin
 lift.  Sections~5--8 build the selected q79 rank flag, shared line, binary
-sheet lift, and Clifford return.  Sections~9--12 then type the CLN roles and
-state the physical, continuum-intertwiner, and numerical-program boundaries.
-The conclusion should be read as a ledger of which square is closed at the
-finite level and which arrows still require continuum or Lorentzian data.
+sheet lift, and Clifford return. The CLN discussion then separates geometric
+roles from physical realizations. Sections~\ref{sec:finite-response}--\ref{sec:root-continuation}
+explain the later finite, endpoint, and free-carrier constructions. The
+physical-interface and numerical-program discussions distinguish their
+remaining hypotheses.
 
 \section{Status and dependencies}
 
@@ -179,12 +214,16 @@ Furthermore, $\operatorname{Hom}(\mathbb R^3,\mathbb R^3)$ has dimension nine.
 
 At an invertible, orientation-preserving background, polar decomposition gives
 $Q_{\rm WW}=RU$ with $R\in SO(3)$ and $U$ symmetric positive definite.  Its
-linearized carrier has the orthogonal Frobenius decomposition
+component space, normalized at the identity, has the orthogonal Frobenius decomposition
 \[
  \operatorname{Mat}(3,\mathbb R)
  =\mathfrak{so}(3)\oplus\operatorname{Sym}(3,\mathbb R),
  \qquad 9=3+6.
 \]
+This is not orthogonality of the two polar-coordinate variations in the
+ambient metric at every background: at $Q=U$, these are $\Omega U$ and
+$\delta U$, which can have nonzero Frobenius pairing. A metric on general
+polar coordinates must be pulled back explicitly; the component count survives.
 After a flag is selected, the symmetric part further decomposes as
 \[
  \operatorname{Sym}(3,\mathbb R)
@@ -510,6 +549,388 @@ not the flat q79 root-stack connection. All three may map to the universal
 classifier $BU(1)_\nabla$, but an MTT identification requires selected
 classifying maps and coherent comparison data.
 
+\section{Finite operators on the correctly typed carrier}
+\label{sec:finite-response}
+
+The local six-dimensional closure carrier, qutrit response space, and finite
+SM Hilbert space serve different purposes. The frozen superconnection sources
+make their relation explicit. Frozen citations added in this edition refer to
+commit \texttt{f141a20e}; full immutable addresses are in the bibliography.
+The older managed evidence snapshot below is retained as an earlier reference,
+not as the authority for present frontiers.
+
+\subsection{A neutral baseline is not the gauge group}
+\label{sec:fsba33}
+The A33 seed uses the cyclic shift $X^3=I$ and $Y=I+X$ in the odd
+self-adjoint block $D=\left(\begin{smallmatrix}0&Y\\Y^*&0\end{smallmatrix}\right)$.
+Its Gram is $YY^*=I+\mathbf1\mathbf1^T$: the common family line has
+eigenvalue $4$ and its orthogonal plane has eigenvalue $1$. The normalized
+radial curvature doubles these values. This is an exact dimensionless
+neutral transfer, not the profile neutrino mass matrix. Its grading-preserving
+unitary stabilizer is $U(1)\times U(2)$, reduced to $U(1)^3$ when the same
+shift must also be preserved. Neither group derives the SM gauge group from
+the size of a spinor block \cite{FSBA33}.
+
+\paragraph{The two-stage finite branching.}\label{sec:fsb02ab}
+The stronger result uses the already selected algebra
+$\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)\oplus\mathbb C_N$,
+its representation and real structure, not $D$ alone. The two independent
+abelian anomaly rows select the primitive direction $(3,-1,3)$ and charges
+$6Y=(1,-4,2,-3,6,0)$ in all-left-Weyl order
+$(Q,u^c,d^c,L,e^c,N^c)$. The faithful group is
+$(SU(3)\times SU(2)\times U(1)_Y)/\mathbb Z_6$; a nonzero neutral vector
+in the retained Higgs doublet leaves
+$(SU(3)\times U(1)_{\rm em})/\mathbb Z_3$, with $Q=T_3+Y$.
+The A33 block injects isometrically into the three-family $L_L$--$N_R$
+particle incidence channel of the $96$-dimensional KO6 carrier; its real
+structure supplies the antiparticle copy. Here $N_R$ and $N^c$ reflect
+different particle versus all-left-Weyl conventions. This compatibility does
+not identify the sparse injection with the complete profile-valued Dirac
+operator \cite{FSB02ab}.
+
+\subsection{Why the common space has dimension 864}
+\label{sec:fsb02c}
+The common space is
+\[
+ F_{\rm up}=\mathbb C^3_{\rm family}\otimes
+ \operatorname{HS}(\mathbb C^3_{\rm qutrit})\otimes H_{32}^{\rm SM}.
+\]
+The response factor has dimension $9$, and the preprojection dimension is
+$3\cdot9\cdot32=864$. It is not an identification of a $27$-dimensional
+response space with the $96$-dimensional SM space. With the selected metric
+$\langle A,B\rangle=\operatorname{Tr}(A^*B)/3$, the maps
+\[
+ E(\psi)=I_3\otimes\psi,\qquad T(A\otimes\psi)
+ =\tfrac13\operatorname{Tr}(A)\psi
+\]
+(with the family identity understood) satisfy $T=E^*$, $TE=I_{96}$ and
+$ET=P_{\rm center}$. The Weyl-conjugation Laplacian has spectrum
+$0^1,3^4,6^4$, so its kernel canonically selects the scalar matrix, while
+its reduced Green operator retains the eight nonidentity response modes.
+
+The selected phase and shift rows compress with coefficients $2/3$ and
+$1/3$, routed to $\{u,e\}$ and $\{d,\nu_D\}$ respectively. Their
+second-order Green Gram is
+$\frac1{27}\left(\begin{smallmatrix}7&1\\1&5\end{smallmatrix}\right)$,
+with determinant $34/729$. The two response directions survive even though
+bare nonidentity Weyl modes have zero first-order trace. The raw upper
+insertion is not Hermitian; closing its orbit under adjoint and the selected
+KO6 real structure gives the self-adjoint odd $D_{\rm fin}$ with the same
+compression and inherited first-order algebra relations. Its rank is $768$,
+its kernel dimension is $96$, and the nonzero squared gap is the root
+$\alpha$ satisfying
+\[
+ 16\alpha^3-32\alpha^2+12\alpha-1=0,
+ \qquad 59/500<\alpha<119/1000.
+\]
+The two occurrences of $96$ must not be conflated:
+$P_{\rm center}$ is not the kernel projector of $D_{\rm fin}$; its
+compressed operator is full rank. The finite heat operator describes repair
+on this declared carrier, not a particle mass scale \cite{FSB02c}.
+
+\section{What the continuum construction actually requires}
+\label{sec:continuum-compiler}
+
+\subsection{Overlap, metric, and the retained spectral window}
+\label{sec:fsb03a}
+At one selected endpoint, let the columns of $W:F_{\rm up}\to
+\operatorname{Dom}(H_{\rm cont})$ be geometrically supplied representatives.
+Injectivity fixes its polar isometry $U=W(W^*W)^{-1/2}$. Equal dimensions
+do not select $W$; the polar step normalizes the map already supplied. For
+a nonnegative self-adjoint dimensionless continuum Hessian on declared
+domains, $R_H=H_{\rm cont}U-UH_{\rm fin}$ controls its Galerkin compression.
+The sufficient bound $\|R_H\|<59/1000$ separates a retained cluster of
+$96$ modes from the other $768$. It does not call that cluster an exact
+continuum kernel \cite{FSB03a}.
+
+The residual budget includes the base operator, augmented coupling, adjoint
+leakage, transported metric, scale, and omitted tails. Nonnegative
+self-adjointness gives heat and positive-resolvent defects at most
+$t\|R_H\|$ and $\|R_H\|/s^2$ for $t\geq0$, $s>0$. Full ambient
+spectral coverage additionally requires a reducing range and complement
+exclusion, or a Feshbach--Schur comparison with a certified complement
+inverse. Even exact retained intertwining does not exclude unrepresented
+ambient zero modes. A quadratic-cost pullback alone supplies neither this
+domain statement nor a reducing isometry.
+
+\paragraph{Products need their own compatibility.}\label{sec:fsb03b}
+Writing $W=US$ exposes the positive distortion $S$. For an $r$-linear
+operation with separately typed inputs and output, the polar defect is
+\begin{align*}
+ E_{U,r}&=E_{W,r}(S_1^{-1}\otimes\cdots\otimes S_r^{-1})
+            +U_{\rm out}\Delta_{S,r},\\
+ \Delta_{S,r}&=S_{\rm out}m_r^{\rm fin}
+ (S_1^{-1}\otimes\cdots\otimes S_r^{-1})-m_r^{\rm fin}.
+\end{align*}
+Exact raw multiplication transport need not survive polar normalization.
+For connections the additional term is $-U(\nabla_{\rm fin}S)S^{-1}$.
+Integrating its norm together with the transported raw connection defect
+controls holonomy on selected paths; nonlinear expansions also require
+convergence and a certified omitted tail. Linear symmetry equivariance alone
+is insufficient \cite{FSB03b}.
+
+\paragraph{A nearby solution, when exact transport fails.}\label{sec:fsb03c}
+The optional fixed-point result starts with the transported finite solution
+$y_0$ and complete continuum residual $\Phi$. A bounded preconditioner $B$
+must be residual-faithful on the chosen ball: $B\Phi(y)=0$ must imply
+$\Phi(y)=0$. This matters for rectangular gauge-fixed systems. With residual
+bound $\epsilon$, $\|B\|\leq M$, linear defect $Z_0$ and derivative
+Lipschitz bound $L$, the gates
+\[
+ M\epsilon+Z_0r+\tfrac12Lr^2\leq r,\qquad Z_0+Lr<1
+\]
+give one zero in that ball. A source symmetry fixing the centre and preserving
+the ball fixes the corrected solution by uniqueness. This is local uniqueness,
+not uniqueness over all endpoints; no Newton correction is needed when
+nonlinear transport is already exact \cite{FSB03c}.
+
+\subsection{Selecting modes and resolving multiplicities}
+\label{sec:fsb03d}
+Intrinsic Riesz projectors of the native endpoint Hessian select spectral
+windows before the Cech embedding. An ambient Fourier cutoff does not replace
+them. After source-owned commuting operators resolve multiplicities, Schur's
+lemma makes each matching irreducible intertwiner one-dimensional. Polar
+normalization removes nonzero overlap magnitudes, but not phases. On the
+internal $E[3]$ blocks, product compatibility leaves nine character choices;
+the two selected generator anchors fix one. The rank-$102$ deformation
+bundle has fiber ranks $3+8+8+80+3$, not $864$ spectral modes. A full-$864$
+construction and a rank-$96$ construction with controlled Feshbach complement
+are different accepted routes \cite{FSB03d}.
+
+\paragraph{The hidden multiplicity alternative.}\label{sec:fsb03e}
+Qutrit symmetry on $\mathbb C^3\otimes\mathbb C^3$ alone has commutant
+$M_3(\mathbb C)\otimes I_3$ and cannot choose the hidden multiplicity frame.
+For two connection-preserving unital complex star-algebra identifications,
+their ratio is an inner automorphism. It is trivial if the chosen lifted
+holonomy has scalar centralizer with the lift preserved, or if the adjoint
+holonomy has trivial projective centralizer. These are distinct sufficient
+tests. Stability or simplicity alone need not exclude discrete projective
+self-twists. This alternative can replace simple-spectrum assumptions, but
+does not manufacture the physical holonomy data \cite{FSB03e}.
+
+\section{From a selected endpoint to literal bundle data}
+\label{sec:endpoint-descent}
+
+\subsection{An orbit is not yet a chosen endpoint}
+\label{sec:fsb03f}
+The endpoint atlas labels nine members of the selected free $E[3]$ graph-Prym
+orbit. Their physical cover class is $9H+3D_0$, not the auxiliary
+$3H+3D_0$ class. The ordinary Prym divisor and line give visible target rows
+$\operatorname{rk}V_3=3$, $(c_1,c_2,c_3)=(0,9u,6\Omega)$; those rows alone
+are not an $\alpha$-twisted line cocycle. The hidden rank-nine projective
+holomorphic object and existential projective HYM connection are established.
+What is absent is a common selected visible endpoint, explicit common chamber
+and literal local metrics and connections, not another hidden-existence proof.
+
+Once local transitions, metric, connection $A$ and normalized cover partition
+are supplied, the Cech isometry $U$ gives
+\[
+ p=UU^*,\quad A_0=U^*dU,\quad
+ \Gamma=U(A-A_0)U^*,\quad (p\,d+\Gamma)U=U(d+A).
+\]
+The Grassmann connection $A_0$ is not automatically the physical HYM
+connection. The correction records the missing difference. All inputs must
+descend from one immutable endpoint; rational witness arrays demonstrate the
+construction but cannot replace its physical inputs \cite{FSB03f}.
+
+\paragraph{The full root selects the member.}\label{sec:fsb03g}
+The later result combines member selection and the Deligne test. The
+$249$-coefficient source has incidence rank $126$, leaving $123$ affine
+directions; one is radial rescaling and the projective tangent has dimension
+$122$. The $248\times122$ response has a unit maximal minor in the selected
+$101$-adic residue class. Under the same-source analytic Hensel hypotheses,
+solving its pivot rows gives a unique local candidate. All $248$ coordinates
+of $\beta_C$ must vanish on that candidate before it is the physical root.
+The $126$ normal compatibility equations alone are not a nonlinear zero.
+The frozen Schur graph is not invariant under selected transport, so static
+linear back-substitution cannot replace the moving Gauss--Manin and
+connection terms. The certified very local eta9 transport is retained; it is
+not a useful-width continuation or an emitted physical root \cite{FSB03g}.
+
+\subsection{Class zero, trivialization, and twisted line}
+\label{sec:fsb03h}
+Vanishing of $\beta_C$ establishes existence of a differential
+null-homotopy, not a preferred one. In the source conventions let the gerbe
+be $(\alpha_{ijk},A_{ij},B_i)$, its chosen null-homotopy $(b_{ij},a_i)$,
+and the ordinary Prym line $(\ell_{ij},c_i)$. Then
+\[
+ \lambda_{ij}=b_{ij}\ell_{ij},\qquad q_i=c_i-a_i,
+ \qquad dq_i+B_i=dc_i
+\]
+give the twisted line and its corrected curvature. Norm neutrality preserves
+the selected ordinary Prym norm and topological rows. Different
+null-homotopies differ by a differential line, so period-coordinate membership
+does not emit a cocycle without literal chain lifts \cite{FSB03h}.
+
+\paragraph{Normalization within one integral branch.}\label{sec:fsb03i}
+Collecting Deligne, norm, framing and equivariance equations as $Ch=y$, a
+feasible system and selected positive cochain metric $M$ give the unique
+minimum-norm solution
+\[
+ h_*=M^{-1}C^*(CM^{-1}C^*)^{-1}y.
+\]
+The inverse is on independent constraint rows; redundant rows require the
+corresponding Moore--Penrose inverse, and the Hilbert version requires closed
+range. Every other solution is $h_*+z$, $z\in\ker C$, with squared norm
+$\|h_*\|_M^2+\|z\|_M^2$. This selects the continuous representative inside
+the supplied integral logarithm branch, not the branch or metric itself
+\cite{FSB03i}.
+
+\paragraph{Transport also determines the target metric.}\label{sec:fsb03j}
+For an exact invertible chain map $T$ on the selected subspace and source
+metric $G$, the target metric is $(T^{-1})^*GT^{-1}$ and the target
+constraint is $C_{\rm source}T^{-1}$. The two minimum-norm solutions obey
+$h_{\rm target}=Th_{\rm source}$. A fresh Euclidean metric in target
+coordinates would generally change the result. This removes a metric choice
+once source data are given; it does not prove global analytic invertibility
+of BHT \cite{FSB03j}.
+
+\paragraph{The discrete branch comes from a marked path.}\label{sec:fsb03k}
+On a selected smooth oriented interval, assume the Deligne quotient is the
+declared covering by its integral period local system. A starting lift and
+Gauss--Manin marking determine one continuous lift. If its endpoint class
+vanishes, the endpoint lift is an integral period in that marking. Literal
+period cochains then turn its integer coordinates into the normalization
+input above. Changing the path or starting frame can change that integer
+lift. The local A1 double-traversal logarithm is not a starting trivialization
+for the full eta9 path without a same-family comparison \cite{FSB03k}.
+
+These constructions consume, and do not reprove, the integral ambient quotient
+on $V^\vee$, not an unqualified quotient on $V$. Local T70--T73 data do not
+establish global Picard/BHT descent or an ordinary Neron model. The corrected
+CBF T69 boundary and structural identities of the Cohesive paper, version
+14, remain in force; neither a local chart nor a formal null-homotopy
+construction supplies the omitted global hypotheses.
+
+\section{The trace plane and the complete free carrier}
+\label{sec:root-continuation}
+
+\subsection{A Clifford module from multiplication, not rank alone}
+\label{sec:fsb04a}
+On the selected unbranched sheet system put $W=\ker\operatorname{Tr}$.
+Its determinant is the sheet-sign line because the unit line in
+$\mathcal A=\mathbb C\mathbf1\oplus W$ is fixed. Thus
+$\det W=L_{\rm sh}$ with exponent one, not a fitted square-root exponent.
+The oriented real sheet carrier is
+$E_{\rm orient}=\det(\mathcal A_{\mathbb R})\otimes\mathcal A_{\mathbb R}$,
+whose action is precisely $\operatorname{sgn}(g)P_g$.
+Compressed sheet multiplication on $W$, together with its metric and
+orientation, constructs an equivariant isometry
+$E_{\rm orient}\simeq\mathfrak{su}(W)$ satisfying the Clifford relation.
+For example the integral basis $(1,-1,0),(1,0,-1)$ has Gram matrix
+$\left(\begin{smallmatrix}2&1\\1&2\end{smallmatrix}\right)$; it is not an
+orthonormal pair of arbitrarily selected sheets. This identifies the
+operations as well as the representations. The flat connection, trace
+projector and finite repair Hessian are compatible with the construction
+\cite{FSB04a}.
+
+\paragraph{Ramification and the QWW symbol.}\label{sec:fsb04b}
+The full-monodromy root stack of local orders $2,3,2,1$ carries the extended
+trace plane and determinant line; the ordinary coarse trace-plane bundle
+cannot simply be continued across its rank drop. The orientation carrier is
+the same $\rho_+$ used in the q79 strain comparison. Composing with the
+inherited $A_{\rm QG}$ QWW spatial solder closes the representation-level
+Clifford symbol, rather than leaving a rank-only analogy. It does not make
+bundles on internal and physical bases literally equal. Nor does a flat
+root-stack connection become a nonzero-Chern HYM or curved Levi-Civita
+connection; a nonflat comparison or exact contorsion correction is still
+needed where those connections are used \cite{FSB04b}.
+
+\subsection{Different roots live on different bases}
+\label{sec:fsb04h}
+For the external transverse $U(1)$ representation, $2m=2$ in the integer
+character lattice fixes $m=1$. Restriction to the marked $\mathbb Z_{64}$
+fiber gives $\chi_1$, while $\chi_{33}$ is a finite alias solving only
+$2r=2\pmod{64}$. Orientation conjugation instead gives weight $-1$ and
+residue $63$. Globally the helicity-one and TT helicity-two lines over the
+momentum sphere have Chern numbers $-2$ and $-4$. They cannot be identified
+with the internal flat shared line. The latter's determinant comparison and
+the external bundle-valued helicity source map are separate questions
+\cite{FSB04h}.
+
+\paragraph{A spacetime-only comparison is extra structure.}\label{sec:fsb04i}
+For a declared correspondence $\mathcal C$ with maps $p$ to the oriented
+Cauchy support $\Sigma$ and $q$ to q79, a flat comparison requires
+$p^*c_{\rm phys}=q^*h_{q79}$ in $H^1(\mathcal C;\mathbb Z_{64})$.
+A SpinC determinant on this spin three-manifold also requires
+$c_1(L)\in2H^2(\Sigma;\mathbb Z)$. The specified lens-space countermodels
+separate the tests: the half-turn on $L(6,1)$ has Chern coordinate $3$ modulo
+$6$ and fails parity, whereas coordinate $2$ modulo $4$ on $L(4,1)$ passes.
+Adding a free cycle can leave unfixed flat characters. These are
+countermodels to inference from a Cauchy coframe alone, not proposed physical
+topologies \cite{FSB04i}.
+
+\paragraph{A sufficient associated-sheet route.}\label{sec:fsb04j}
+A literal physical $S_3$ cocycle, its same-source q79 comparison and a
+compatible tangent solder would construct $W_\Sigma$ as the associated
+trace plane. Its determinant, parity and normalized comparison two-cell then
+follow, rather than being four independent selectors. Calling the physical
+bundle ``associated'' does not provide those arrays. This route is valid but
+the later framed construction makes it unnecessary at the complete
+free-carrier tier \cite{FSB04j}.
+
+\paragraph{The weaker framed route.}\label{sec:fsb04k}
+Real symmetric QWW strain has globally ordered simple eigenvalues, so its
+eigenvalue cover has no full $S_3$ permutation monodromy. A circle also has
+only cyclic image in $S_3$. Neither observation obstructs the internal q79
+sheet system. Instead a chosen QWW spin bundle and a parallel differential
+root $M^2=L_{\rm sh}$ give $W_M=S_{\rm QWW}\otimes M$, with
+$\det W_M=L_{\rm sh}$ and $\mathfrak{su}(W_M)=\mathfrak{su}(S_{\rm QWW})$.
+The binary holonomy exponents $16,48$ square to $32$; they are not the
+weight-one aliases $1,33$. Their remaining comparison inputs are further
+reduced by the following complete-carrier result \cite{FSB04k}.
+
+\subsection{Why the two binary roots do not split the free theory}
+\label{sec:fsb04l}
+Work on the declared external product of the framed Cauchy support and the
+binary q79 root-stack factor, with all pullbacks specified. The selected
+finite bundle is $F_{q79}=L_{\rm sh}\otimes H_0$, $\dim H_0=6$.
+Since the restricted four-component spin representation is two copies of
+$S_{\rm QWW}$, the same rank-$24$ free carrier factors as
+\[
+ S_4|_\Sigma\otimes F_{q79}
+ \simeq (S_{\rm QWW}\otimes M)\otimes
+ (\mathbb C^2_{\rm mult}\otimes M\otimes H_0).
+\]
+The dimensions are $2\cdot12=4\cdot6$, and $\mathbb C^2_{\rm mult}$ is
+representation multiplicity, not another time coordinate. Both root factors
+use the same internal pullback; their parallel square recovers the old shared
+line and total connection. If $M_-=M_+\otimes\varepsilon$ with
+$\varepsilon^2=\mathbf1$, the two changes cancel on the complete product.
+No independent physical root/comparison selector is needed in this declared
+category. Internal equivariance has not become ordinary spacetime loop
+holonomy \cite{FSB04l}.
+
+\paragraph{Which interactions inherit root cancellation.}\label{sec:fsb04m}
+A typed tensor expression of signed root charge $q$ changes by
+$\varepsilon^q$, hence is root-blind precisely for even $q$ in this formal
+root-typing test. This includes complete-carrier expressions and the
+$\operatorname{Hom}$ and $\operatorname{End}$ bundles between the factors:
+an asymmetric $\operatorname{Hom}$ insertion is not automatically
+root-visible. For a supplied neutral action on transported domains, the
+parallel identification conjugates its Hessian and functional calculus.
+Odd unmatched terms need an additional root-charged source or compensator.
+Even root parity alone does not make an expression a Lorentz or gauge scalar,
+select an action, or supply a Majorana operator; Majorana-type contractions
+here describe only root typing. Positive repair is not the physical signed
+action, and this result does not establish $J_{\rm DE}$ invariance of the
+physical HYM endpoint \cite{FSB04m}.
+
+\paragraph{Free propagation and observables.}\label{sec:fsb04n}
+For the selected free operators on their declared domains the parallel unitary
+$\Phi$ obeys $D_-\Phi=\Phi D_+$. Its support preservation and uniqueness
+of advanced/retarded Green operators give
+$G_-^{\rm ret/adv}=\Phi G_+^{\rm ret/adv}\Phi^{-1}$. The induced
+one-particle unitary gives a natural graded star-isomorphism of the local CAR
+nets and their even observable nets. Smooth invertible transport preserves
+the Hadamard wavefront condition and gives a bijection of quasifree Hadamard
+states. GNS representations are unitarily equivalent for corresponding
+transported states, not arbitrary unrelated states or spin structures.
+The residual overall sign acts as fermion parity and fixes even observables.
+The two root presentations are therefore one free observable-net equivalence
+class at this tier; neither a preferred vacuum nor interacting renormalized
+QFT is selected \cite{FSB04n}.
+
 \section{Downstream physical gates}
 
 \begin{enumerate}
@@ -527,19 +948,25 @@ resolvent, confining boundary conditions, or another explicit spectral
 compactness theorem.  Nil language alone does not quantize a theory.
 \end{enumerate}
 
+The framed free Dirac, CAR and corresponding-state results just described
+already satisfy a specified part of this list. They are not reopened by the
+remaining same-endpoint HYM and interacting-action comparison.
 Weyl, Dirac, Majorana, and twistor descriptions may be built as conditional
 encodings once their respective chirality, pairing, real-structure, and
 conformal hypotheses are supplied.  They are not consequences of the
 rank-three comparison field alone.
 
 \section{The same-source interface theorem still required}
+\label{sec:consumer-geometry}
 
-The local strain carrier and the q79 trace-split carrier both have dimensions
-$1+2+3$.  Rank equality supplies only a fiberwise linear isomorphism.  The
-needed physical theorem must construct
+The local strain carrier is real, whereas the displayed q79 trace carrier is
+complex. Their rank profiles can be compared after complexifying the former,
+or after selecting a compatible real form of the latter. This choice does
+not add spacetime dimensions. A proposed \emph{linear identification} would
+have to construct
 \[
  \mathfrak I_{\rm WW\to q79}:
- \mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O
+ (\mathbb RI_3\oplus\mathcal D_0\oplus\mathcal O)\otimes_{\mathbb R}\mathbb C
  \longrightarrow
  L_{\rm shared}\otimes
  (\mathcal O\oplus\mathcal A_0\oplus\mathcal A)
@@ -558,6 +985,49 @@ dimension-matched conditional bridge, not an identity. The universal-line and
 finite SpinC/Fourier theorems above close important internal squares on the q79
 side; they do not supply this world-in-world-to-continuum map.
 
+The QM owner supplies a different, curved continuum language
+\cite{QMGeometry,FrozenProjective,FrozenCech}. A finite matrix projector
+$p(x)$ over $C^\infty(X)$ represents a bundle, not finitely many base modes.
+The explicit \v{C}ech compiler transports a supplied physical connection by
+the pair $(p,\Gamma)$: the Grassmann connection from $p$ alone need not be
+that connection. Covariant unitary changes preserve the supplied domains,
+curvature and Hodge calculus; a fixed raw Fourier window need not be preserved.
+The physical adjoint bundle is ordinary because the scalar twist cancels in
+endomorphisms, not because the hidden fundamental bundle is untwisted.
+CLN remains a local, auxiliary or filtrational carrier, not the global q79
+topology or an inserted parallel flag inside an irreducible HYM bundle.
+
+\paragraph{The viable spectral comparison is nonlinear.}
+\label{sec:consumer-strain}
+The old relative-phase-stable linear rank-six root-space route is excluded:
+its $S_3$ character $(6,0,0)$ differs from the two permutation copies'
+character $(6,2,0)$. The QM owner's replacement sends a Hermitian matrix with
+diagonal entries $d_i$ and cyclic off-diagonal entries $z_e$ to
+\[
+ \Phi(X)=(d_0,d_1,d_2,|z_{12}|^2,|z_{20}|^2,|z_{01}|^2).
+\]
+This six-coordinate strain shadow forgets the triangle phase of
+$z_{12}z_{20}z_{01}$. The full relative-phase quotient is generically
+seven-dimensional, not six; its extra coordinate is neither time nor the
+shared central phase. The earlier linear contract is therefore not a claim
+that such a root-space embedding still exists \cite{FrozenStrain}.
+
+For the derivative $J$ on the regular locus and the full reduced Green
+$G_Q$ of a supplied positive source Hessian, the effective strain Hessian is
+$(JG_QJ^*)^{-1}$ where the reduced covariance is invertible.
+This is minimization over discarded directions, not an
+isometric embedding. A TT-only observable must first replace $J$ by its TT
+projection and then perform the shorting. The later global result covers all
+eight edge-support strata: a missing edge has zero first derivative but a
+nonnegative quadratic normal jet. Its normal cost is degree one in strain,
+so no ordinary full six-dimensional boundary Hessian can replace it
+\cite{FrozenSupport}. A surjective six-dimensional derivative, or the required
+local $C_4$ lift with derivative $J_{DE}$, forces the regular stratum. Thus
+regularity is no longer an independent physical input under that stronger
+contract. The selected endpoint, Green operator, same-source $S_3\times C_4$
+action and action normalization remain physical obligations. The quarter-turn
+acts on tangents; it is not a global symmetry of the strain orthant.
+
 \section{Relation to the numerical SM program}
 
 The current calculation repositories close embedded renormalized-Standard-
@@ -569,19 +1039,107 @@ selects the measured profile, and they do not close the strict no-knob or
 unique-observed-branch upgrade.  This paper therefore uses the calculations as
 downstream realization evidence, not as a proof of its upstream premises.
 
+\subsection{The family plane is a coordinate split, not a mass prediction}
+\label{sec:fsb04c}
+The outer class factor is the retained family factor. Its common-line
+projector $P_0=\mathbf1\mathbf1^T/3$ splits the response space as $27=9+18$
+and the SM carrier as $96=32+64$, compatibly with the Weyl-center reduction.
+It is neither the CLN flag nor color. A Hermitian family operator in these
+coordinates has one scalar, four plane coordinates and four real cross-block
+coordinates: $9=1+4+4$, with no parameter reduction. The block-adjugate
+identity makes a cross-block spectral correction quadratic, but does not
+assign quarks to it. If both up and down Grams commute with $P_0$, their
+overlap has a common invariant line, hence only $1\oplus U(2)$ mixing. The
+A33 $4,1,1$ degeneracy and family-blind inner Weyl action are limitations of
+these mechanisms, not failures of the established profile construction
+\cite{FSB04c}.
+
+\paragraph{Static orientation and positive magnitudes.}\label{sec:fsb04d}
+The selected static retarded source supplies $U_{10}=I$ and
+$U_{\overline5}=F_3$. Its Fourier transform mixes the common line with the
+plane, supplying a family-active orientation. But $UU^*=I$ for any unitary
+$U$, so orientation alone gives no hierarchy. The exact compiler
+$H_s=U_s\operatorname{diag}(\rho_{s,0},\rho_{s,1},\rho_{s,2})U_s^*$
+preserves three supplied positive eigenvalues; it does not derive them. The
+source's positive witness is only an illustration. Its $F_3$ is not being
+renamed physical CKM \cite{FSB04d}.
+
+\paragraph{The later dynamic source is one orbit.}\label{sec:fsb04e}
+For the selected Weyl convention $F_3^*XF_3=Z$, so $I+X$ and $I+Z$ are
+Fourier conjugate. The common baseline involution is also preserved, making
+the first Hermitian response pair Fourier conjugate with spectrum
+$\{-4,-2,2\}$. The pair does not commute; its positive response densities
+instead have the degenerate spectrum $\{4,1,1\}$. This closes the finite
+same-source dynamic shape relation left open by the earlier static account.
+Routing remains phase to $u,e$ and shift to $d,\nu_D$, so it cannot imply
+a blanket ``quarks second order, leptons first order'' rule \cite{FSB04e}.
+
+\paragraph{Complete operator vocabulary, unspecified coefficients.}
+\label{sec:fsb04f}
+The actual post-response matrices $A,B$, not just primitive Weyl inputs,
+generate $M_3(\mathbb C)$. The nine Hermitian words
+$I,A,B,A^2,B^2,AB+BA,i(AB-BA),ABA,BAB$ form a real basis. Inverting their
+trace Gram gives a dual basis and exact coefficient extraction for any
+Hermitian family operator. This proves expressivity, not a source rule for
+those coefficients. Their simple-spectrum projectors have nontrivial,
+CP-sensitive overlaps; the finite quartet is not the observed CKM Jarlskog
+invariant without the physical harmonic and sector comparison \cite{FSB04f}.
+
+\paragraph{Why changing coordinates does not remove the nine rows.}
+\label{sec:fsb04g}
+For $p(H)=c_0I+c_1H+c_2H^2$ on eigenvalues $(-4,-2,2)$, the evaluation
+matrix with rows $(1,\lambda,\lambda^2)$ has determinant $48$ (or
+$48a^3$ for nonzero amplitude $a$). Polynomial coefficients and three
+spectral values are equivalent coordinates. Full invariance under both
+responses forces a scalar and destroys hierarchy; dependence on just the
+two routed lanes gives six values and forces the $u$ and $e$ rows to agree.
+Sector-resolved dependence retains nine charged values unless additional
+source relations are derived. This is minimality within that selected
+finite response class, not a universal lower bound on MTT or a revision of
+the adopted shared-primitive/profile ledger. Positivity constrains actual
+positive operators, not logarithmic response coordinates \cite{FSB04g}.
+
+\subsection{What the exploratory simulation illustrates}
+\label{sec:simulation}
+The frozen Vue simulation exposes phase, recurrence, closure-cost and
+anchoring variables and lets their modeled couplings evolve. It illustrates
+the difference between a continuous carrier and a chosen display or composite
+rule. Reading its implementation also fixes its evidential limit:
+\texttt{smKindForSeed} assigns species, \texttt{smGaugeState} supplies
+charges, and \texttt{enforceSmProjector} imposes particle/color behavior.
+Its overlap penalty is not a CAR derivation of Pauli exclusion; declared atom
+content, bond lengths and the water-angle target are inputs. The energy
+ledger is a toy diagnostic with damping and prescribed forces, not a
+calibrated conservation or binding-energy theorem \cite{ProtoSim}.
+
+The ``measurement'' display changes internal weights and rendering through
+explicit rules. It is not evidence for observer-dependent dynamics,
+superluminal signaling or a new measurement postulate. Physical measurement
+remains an ordinary physical interaction described by the established
+operational quantum theory. Neither visual stability nor a green diagnostic
+label supplies a physical source value. This import is explanatory source
+reading; no simulation run or new numerical prediction is claimed.
+
 \section{Conclusion}
 
 The corrected proto-spinor result is narrower and stronger.  Under explicit
 rank-three orientation and loop-memory premises, the double cover is indeed
 spinorial.  The selected q79 carrier has an exact $1+2+3$ trace split and an
 exact universal flat differential line, an exact $\operatorname{Dic}_3$ lift,
-and an exact SpinC--Fourier return on its finite carrier. What remains is
-sharply separated: the strict global Spin obstruction calculation, the
-physical nonflat FM/HYM lift, the same-source local-to-q79 continuum
-intertwiner, and the Lorentzian action/particle completion.
+and an exact SpinC--Fourier return on its finite carrier. The trace-plane
+Clifford construction and balanced binary roots further close the specified
+framed complete free carrier and its observable-net equivalence. The finite
+superconnection, family-response algebra and conditional endpoint constructions
+make the next hypotheses concrete. What remains is sharply separated: strict
+global Spin, physical nonflat FM/HYM and same-source Hessian comparison,
+selected interacting action, and strict physical source-value completion.
+The established finite and profile results remain at their own tiers.
 
 % BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
 \section*{Computational Evidence and Reproducibility}
+This earlier capsule retains its historical source labels, not current
+obligation counts. The contextual imports in Sections~10--16 are bound to
+the newer immutable citations in the bibliography and their stated scopes.
 The selected q=79, finite-matrix, anomaly, and HYM rows provide the concrete lower structures used at the proto-spinor interface. They do not prove the supplied Lorentzian, SpinC, worldsheet, or physical-bundle hypotheses. Other Standard Model rows are corpus context, and the strict source upgrade remains open.
 
 The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
@@ -633,7 +1191,13 @@ Tier labels are quoted verbatim from that manifest. A row used directly supports
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
+
+\bibitem{QMGeometry} P.~Nero, \emph{Modal Triplet Theory: From MTT to Quantum Mechanics}, sections on projective HYM naturality, the \v{C}ech compiler, spectral strain and support stratification, current owner manuscript, 2026.
+\bibitem{FrozenProjective} P.~Nero, \frozenresult{q79_projective_hym_naturality}{Covariant projective-module HYM naturality}, frozen result, 2026.
+\bibitem{FrozenCech} P.~Nero, \frozenresult{q79_cech_projector_compiler}{Explicit curved connection compiler}, frozen result, 2026.
+\bibitem{FrozenStrain} P.~Nero, \frozenresult{q79_spectral_strain_hessian}{Intrinsic spectral-strain quotient and shorted Hessian}, frozen result, 2026.
+\bibitem{FrozenSupport} P.~Nero, \frozenresult{q79_support_stratified_strain}{Global support-stratified strain and boundary-Hessian exclusion}, frozen result, 2026.
 \bibitem{LawsonMichelsohn}
 H.~B.~Lawson and M.-L.~Michelsohn,
 \emph{Spin Geometry}, Princeton University Press, 1989.
@@ -665,6 +1229,35 @@ Intertwiner}, executable theorem packet, 2026.
 P.~Nero,
 \emph{q79 Binary-Sheet FM Shared Root and SpinC Return}, executable theorem
 packet, 2026.
+\bibitem{FSBA33} P.~Nero, \frozenresult{q79_superconnection_a33_01}{Neutral finite Dirac, Gram and stabilizer baseline}, frozen result, 2026.
+\bibitem{FSB02ab} P.~Nero, \frozenresult{q79_superconnection_02a_b}{Two-stage finite branching and neutral embedding}, frozen result, 2026.
+\bibitem{FSB02c} P.~Nero, \frozenresult{q79_superconnection_02c1_c5}{Weyl-center reduction, real completion and finite spectrum}, frozen result, 2026.
+\bibitem{FSB03a} P.~Nero, \frozenresult{q79_superconnection_03a}{Overlap-polar continuum comparison}, frozen result, 2026.
+\bibitem{FSB03b} P.~Nero, \frozenresult{q79_superconnection_03b}{Nonlinear and connection polar transport}, frozen result, 2026.
+\bibitem{FSB03c} P.~Nero, \frozenresult{q79_superconnection_03c}{Local fixed-point promotion}, frozen result, 2026.
+\bibitem{FSB03d} P.~Nero, \frozenresult{q79_superconnection_03d}{Equivariant spectral synthesis}, frozen result, 2026.
+\bibitem{FSB03e} P.~Nero, \frozenresult{q79_superconnection_03e}{Hidden holonomy-product rigidity}, frozen result, 2026.
+\bibitem{FSB03f} P.~Nero, \frozenresult{q79_superconnection_03f}{Endpoint atlas and Cech execution}, frozen result, 2026.
+\bibitem{FSB03g} P.~Nero, \frozenresult{q79_superconnection_03g}{Graph-Prym full-root selection}, frozen result, 2026.
+\bibitem{FSB03h} P.~Nero, \frozenresult{q79_superconnection_03h}{Differential null-homotopy and twisted Prym line}, frozen result, 2026.
+\bibitem{FSB03i} P.~Nero, \frozenresult{q79_superconnection_03i}{Constrained Hodge normalization}, frozen result, 2026.
+\bibitem{FSB03j} P.~Nero, \frozenresult{q79_superconnection_03j}{Transported cochain metric}, frozen result, 2026.
+\bibitem{FSB03k} P.~Nero, \frozenresult{q79_superconnection_03k}{Selected path and integral branch}, frozen result, 2026.
+\bibitem{FSB04a} P.~Nero, \frozenresult{q79_superconnection_04a}{Trace-plane Clifford intertwiner}, frozen result, 2026.
+\bibitem{FSB04b} P.~Nero, \frozenresult{q79_superconnection_04b}{Root-stack and QWW continuation}, frozen result, 2026.
+\bibitem{FSB04c} P.~Nero, \frozenresult{q79_superconnection_04c}{Triadic family block compatibility}, frozen result, 2026.
+\bibitem{FSB04d} P.~Nero, \frozenresult{q79_superconnection_04d}{Static family orientation and positive compiler}, frozen result, 2026.
+\bibitem{FSB04e} P.~Nero, \frozenresult{q79_superconnection_04e}{Dynamic Weyl-orbit compatibility}, frozen result, 2026.
+\bibitem{FSB04f} P.~Nero, \frozenresult{q79_superconnection_04f}{Complete family-response algebra}, frozen result, 2026.
+\bibitem{FSB04g} P.~Nero, \frozenresult{q79_superconnection_04g}{Spectral-coordinate minimality}, frozen result, 2026.
+\bibitem{FSB04h} P.~Nero, \frozenresult{q79_superconnection_04h}{Helicity and determinant base separation}, frozen result, 2026.
+\bibitem{FSB04i} P.~Nero, \frozenresult{q79_superconnection_04i}{Physical SpinC correspondence and parity}, frozen result, 2026.
+\bibitem{FSB04j} P.~Nero, \frozenresult{q79_superconnection_04j}{Associated-sheet descent}, frozen result, 2026.
+\bibitem{FSB04k} P.~Nero, \frozenresult{q79_superconnection_04k}{Framed binary-root SpinC descent}, frozen result, 2026.
+\bibitem{FSB04l} P.~Nero, \frozenresult{q79_superconnection_04l}{Complete-carrier root factorization}, frozen result, 2026.
+\bibitem{FSB04m} P.~Nero, \frozenresult{q79_superconnection_04m}{Root-neutral interaction category}, frozen result, 2026.
+\bibitem{FSB04n} P.~Nero, \frozenresult{q79_superconnection_04n}{Free CAR-net and corresponding-GNS equivalence}, frozen result, 2026.
+\bibitem{ProtoSim} P.~Nero, \href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/protospinor_simulation_kernel/artifact.vue}{Proto-spinor simulation kernel}, frozen exploratory Vue source, 2026.
 \end{thebibliography}
 
 

@@ -1,12 +1,12 @@
 {
-  "abstract": "An admissibility-indexed precosheaf is a pregeometric covariant functor only after its algebras and extension morphisms are supplied; overlap or failure of joint representability does not create commutators or imply locality. A physical Haag–Kastler net instead requires a selected Lorentzian base, an upper local operator net, and a localization-preserving coherent reduction. For a decomposable orthogonal projector P, we prove that compression of the P-compatible upper subalgebras preserves isotony and spacelike commutation. This is the rigorous MTT-to-AQFT bridge currently available. We also show why absence of a global admissible chart does not forbid an abstract quasilocal algebra or categorical colimit. The current q79 source now also supplies a selected free twisted-Dirac construction whose even CAR observable net has locality, covariance, the time-slice property, and nonempty positive Hadamard state space through standard AQFT results. The chart-to-region natural equivalence and the nonperturbative interacting C-star completion remain open.",
+  "abstract": "An admissibility-indexed precosheaf is a pregeometric covariant functor only after its algebras and extension morphisms are supplied; overlap or failure of joint representability does not create commutators or imply locality. A physical Haag\u2013Kastler net instead requires a selected Lorentzian base, an upper local operator net, and a localization-preserving coherent reduction. For a decomposable orthogonal projector P, we prove that compression of the P-compatible upper subalgebras preserves isotony and spacelike commutation. This is the rigorous MTT-to-AQFT bridge currently available. We also show why absence of a global admissible chart does not forbid an abstract quasilocal algebra or categorical colimit. The current q79 source now also supplies a selected free twisted-Dirac construction whose even CAR observable net has locality, covariance, the time-slice property, and nonempty positive Hadamard state space through standard AQFT results. The chart-to-region natural equivalence and the nonperturbative interacting C-star completion remain open.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026 Version 2",
+  "current_version": "v3",
+  "date": "September 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18330769",
     "created": "2026-07-29T08:50:54.401184+00:00",
@@ -32,28 +32,40 @@
     "updated": "2026-07-29T08:50:54.725478+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc",
+  "main_tex_sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18",
   "paper_id": "from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7",
-  "paper_md_sha256": "ee20ddf48a373c40cc89df86ff5ad4088daa85cd323ce06b07ef55a3fde8ebc3",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "f000d37aa8b744e78b8a3d9b3fd2f7a6f5a58b655c3734ef3fe3078f28c051d4",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "q79_family_source_cutset"
+  ],
   "revision": {
     "revision_evidence_path": "papers/from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "3d60c4b3115a397c331f7596a089e6bfd75bc348c16fc778f3a7e9ef38553907",
+    "revision_evidence_sha256": "57eca65d42e75bfb4987634667b17d0ab8641a40f7b60c9e81ce0587b657241e",
     "selected_revision": true,
     "superseded_source_path": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 23912,
-      "path": "main.tex",
-      "sha256": "f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc"
+      "bytes": 635,
+      "path": "RESEARCH_INTEGRATION.md",
+      "sha256": "c446e182516c224d18150b5a157865bac863c4ab88e29a5f1f9ce117cb858bee"
     },
     {
-      "bytes": 7834,
+      "bytes": 9409,
       "path": "REVISION_AUDIT.md",
-      "sha256": "3d60c4b3115a397c331f7596a089e6bfd75bc348c16fc778f3a7e9ef38553907"
+      "sha256": "57eca65d42e75bfb4987634667b17d0ab8641a40f7b60c9e81ce0587b657241e"
+    },
+    {
+      "bytes": 26825,
+      "path": "main.tex",
+      "sha256": "5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18"
+    },
+    {
+      "bytes": 4496,
+      "path": "paper-markdown.lua",
+      "sha256": "eda1aef847606bd8399a98fb3fc9facb577e19e5f4780fce518485aafd2e8157"
     },
     {
       "bytes": 3784,
@@ -64,9 +76,9 @@
   "source_provenance": {
     "legacy_source_path": "7 Quantum Field Theory/_work/From_Modal_Triplet_Theory_to_Algebraic_Quantum_Field_Theory"
   },
-  "source_tree_sha256": "86d67065cc57908dcde4ffb1c2a64ba93961bdaac1b1285ec7d7e9dda1549e53",
+  "source_tree_sha256": "43dcbc9c77d453f86df1d61045bd13e069a85b71e3e9c655672f5dd9d90eb270",
   "title": "Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18330769",

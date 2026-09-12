@@ -10,7 +10,11 @@
 \title{A Conditional Operator Encoding of Wave--Particle Duality in MTT\\
 \large Local Kernels, Spectral Coherence, Instruments, and the Born-Bridge Boundary}
 \author{Peter Nero}
-\date{September 2026, Version 6}
+\date{September 2026, Version 7}
+\hypersetup{
+  pdftitle={A Conditional Operator Encoding of Wave-Particle Duality in MTT},
+  pdfauthor={Peter Nero}
+}
 
 % Paper-specific notation
 \newcommand{\Kadm}{K_{\mathrm{adm}}}
@@ -116,9 +120,29 @@ The rigorous result is an operator dual-representation theorem: one positive fil
 has local and spectral representations, while valid POVMs, instruments, and Schur channels
 model localization and coherence loss. This reproduces standard quantum predictions only
 because the quantum state, dynamics, effects, and instrument are supplied as inputs. The
-claim that all of them descend from one MTT source remains a conditional encoding theorem,
-and the Born rule requires an independent basin-measure intertwiner.
+claim that all of them descend from one MTT source for an arbitrary physical
+apparatus remains conditional. This does not reopen the separately established
+canonical operational q79 model. A proposed additional survivor-basin account
+requires its own state-dependent measure intertwiner.
 \end{abstract}
+
+\section*{Version 7 Revision Note}
+\begin{description}
+\item[Supersedes] Version 6. Published release metadata and the previous
+revision notes are retained.
+\item[Reason] The analytic assumptions needed a current, source-bound
+consumer reference to the finite q79 transfer hierarchy and its owner.
+\item[Resolution] Adds a contextual comparison of Hodge compression,
+nonminimal response transfer, and physical operator selection, citing the
+Cohesive owner and the successive frozen finite results. The generic
+apparatus boundary is separated from established canonical operational q79.
+\item[Retained] Kernel representations, the boundary-correct sharp limit,
+Schur channels, ordinary physical instruments, and the explicit basin
+criterion remain at their existing tiers. No owner proof is duplicated.
+\item[Open boundary] A selected continuum endpoint, domain-preserving
+intertwiner, physical normalization, and apparatus-specific source data
+are not supplied by the finite transfer hierarchy.
+\end{description}
 
 \section*{Version 6 Revision Note}
 \begin{description}
@@ -386,7 +410,7 @@ effects and basin weights.
 The measurement picture used here is the same one used throughout the MTT measurement
 sequence. A measuring device is not a passive reader of a pre-existing classical value. It is a
 localized disturbance coupled to a finite-capacity coherent sector. After the disturbance, the
-system undergoes re-coherence: high-frequency or inadmissible components are damped, the
+proposed basin realization assumes re-coherence: high-frequency or inadmissible components are damped, the
 coherent projector selects the retained content, and the resulting state stabilizes into one of
 the available survivor basins.
 
@@ -464,6 +488,101 @@ The intended result is a rigorous structural synthesis:
 This section fixes the analytic assumptions used in the structural theorems below. The goal is
 not to introduce a new quantum formalism, but to identify the minimal operator-theoretic data
 needed for the local and spectral shadows of a coherent MTT excitation to be well-defined.
+
+\subsection{The finite transfer hierarchy and its analytic owner}
+\label{subsec:finite-transfer-consumer}
+The analytic direction is one-way: the Fixed Points series supplies
+abstract existence, stability, and operator hypotheses; downstream MTT
+models must instantiate them. The sharp-limit statement below is imported
+from the canonical-kernel paper with its selected self-adjoint boundary
+realization and smooth domain. Cohesive repair and the finite q79 transfer
+hierarchy remain in their designated owner, \emph{Cohesive Closure Repair
+and Its Hodge, Kernel and Projection Shadows}, particularly its sections
+on finite Weyl completion, response retraction, and all-arity source maps
+\cite{MTTFPSpine,MTTKernel,MTTCohesiveTransfer}.
+
+The finite example clarifies what an operator kernel does not determine.
+The selected two-direction Weyl--Koszul differential graded algebra has
+harmonic dimensions \((1,2,1)\), and transfer to that harmonic exterior
+algebra has no higher products. Its constraint projector is not the
+zero-mode projector of the completed finite Dirac response; equal ranks
+do not identify their ranges \cite{FiniteWeylHodge}.
+The symmetric signed-direction completion instead has 144 cochain
+coordinates and twelve additional harmonic classes. The old complex is
+an isometric reducing cochain summand, but its off-harmonic image is not
+product closed. Thus preserving a Laplacian is weaker than preserving
+the nonlinear response algebra \cite{SymmetricWeyl}.
+
+The exact response retract retains 48 coordinates: the old 36-dimensional
+complex plus those twelve classes. It is not a minimal cohomology model.
+Its transferred \(m_3\) corrects the associator of the compressed binary
+product, and \(m_4\) is also nonzero. The later two-parity recurrence gives
+a nonzero family at every arity; this resolves the older packet's open
+nontruncation question without claiming exhaustive tables above arity
+four \cite{ResponseMthree,ResponseMfour,HigherTransfer}.
+A contraction-preserving differential graded algebra map transports all
+operations at once, by the owner theorem's tree argument. The finite
+order-36 covariance preserves that complete contraction, so all-arity
+equivariance is proved, not extrapolated from a few tests
+\cite{AllArityTransfer}.
+
+For the present paper these results are an exact finite compatibility
+example and a consumer contract. They do not select the continuum
+operator \(A\), its HYM endpoint, the detector instrument, or a physical
+action. A continuum application needs the actual source map, reducing
+operator domains, metric/product and homotopy compatibility, and error
+bounds for any approximate square. The finite 48-dimensional target is
+neither the physical rank-102 response bundle nor a spacetime dimension.
+None of these later MTT results is imported back into Fixed Points I--VI.
+
+\paragraph{Canonical quantum scope.}
+The generic encoding theorem here must not be read as denying the
+established canonical operational q79 source. That separate finite-symbol,
+binary, one-anchor construction has its selected noncommutative state and
+recorder structure, as recorded in the frozen source-base import
+\cite{CanonicalQ79Source}. Extending it to every apparatus class considered
+here, or identifying an additional survivor-basin measure, is a stronger
+physical task. Measurement remains ordinary physical interaction and
+recording, not a new principle supplied by a kernel limit.
+
+\paragraph{The output law is already supplied on its canonical domain.}
+\label{par:canonical-output-consumer}
+The current record-measure owner explains the stopped canonical Fock
+output law and its exact second-moment descent \cite{MTTRecordOwner,FockOutput}.
+For the declared binary recorder, restricting the normal joint state to
+its commuting nondemolition output algebra gives the classical history
+measure. Its first-count density for label \(a\) is
+\(\gamma e^{-\gamma s}\operatorname{tr}(\rho P_a)\,ds\), and the no-count
+effect is \(e^{-\gamma u}I\). Preparations with the same second moment
+therefore give the same stopped-output law. This uses accepted normal-state
+expectation semantics; it is not a pre-quantum derivation of probability.
+The basin criterion later in this paper tests an additional proposed
+realization and does not reopen this operational result.
+
+\paragraph{The continuum compiler has a specified input.}
+\label{par:continuum-recorder-consumer}
+The same owner imports the conditional continuum-to-recorder compiler
+\cite{MTTRecordOwner,ContinuumRecorder}. A selected invariant three-mode
+sector, kernel/support projectors of ranks one and two, an isometric
+projector intertwiner, a common clock rate, and a minimal nondemolition
+L\"uders context compile the jump coefficients and Fock instrument.
+The clock is not forced by a Hessian eigenvalue. Approximate projector
+intertwining has explicit error bounds; conditional states additionally
+need event probabilities bounded away from zero. The already closed
+Cauchy/Fock continuum must not be confused with the remaining internal
+physical HYM endpoint and dynamic finite-sector map. These are the
+source obligations behind the generic \(A\) and apparatus assumptions here.
+
+\paragraph{A record measure is not an ontology selector.}
+\label{par:ontology-consumer}
+The current locality/records account imports the operational non-entailment
+result \cite{MTTLocalityOwner,OntologyNonentailment}. The same canonical
+record law and conditional states admit a one-record-per-sample completion
+and a coactual-support completion. Their operational agreement entails
+neither interpretation. This is not a global context-independent value
+assignment to every projector, and it neither disproves many-worlds nor
+selects an objective single-history dynamics. It is why the instrument and
+the optional survivor-basin interpretation remain separate in this paper.
 
 \subsection{Base Hilbert space and fixed-point operator}
 \label{subsec:base-hilbert-space}
@@ -1583,10 +1702,12 @@ pointlike.
 
 The previous two sections described the two shadows of a coherent excitation: local
 delta-like localization and spectral phase coherence. Measurement connects them. A
-measurement context is a device-dependent disturbance followed by projection and
-stabilization. It does not convert a wave into a particle. It selects a downstream survivor
-basin and, depending on the device, may damp the off-diagonal coherences that made
-interference visible.
+measurement context is ordinary device-dependent physical interaction represented by an
+instrument. It may damp the off-diagonal coherences that made interference visible.
+Throughout this section and the experimental modules, references to a selected survivor
+basin assume the additional instrument--basin intertwiner and capture hypotheses of
+Assumption~\ref{ass:physical-reading} and Section~\ref{subsec:minimal-basin-capture}.
+They are not consequences of the channel axioms or of the canonical output law.
 
 This section gives the operator form of that statement.
 
@@ -1671,8 +1792,8 @@ statistics.
 \subsection{Exact records as stabilized survivor basins}
 \label{subsec:exact-records}
 
-A detector record is exact relative to its measurement context because the device stabilizes
-one branch of the basin partition. This does not mean the device reveals a context-free
+A detector record is operationally specified by its instrument. Under the proposed basin
+realization, the device stabilizes one branch of the basin partition. This does not mean it reveals a context-free
 pre-existing classical value. It means that, after disturbance and re-coherence, the downstream
 state lies in one basin \(B_i^{(\Meas)}\).
 
@@ -2970,7 +3091,9 @@ off-diagonal terms survive. The ordinary measurement picture is recovered when f
 effects are idealized by sharp projectors and survivor-basin selection has stabilized a record.
 
 Thus the supplied operator data can encode wave--particle duality without a primitive
-wave-to-particle conversion. Deriving those data from one MTT source remains open.
+wave-to-particle conversion. Deriving those data for the generic apparatus class remains
+open; the canonical operational source in Section~\ref{subsec:finite-transfer-consumer}
+is not reopened.
 \section{Relation to standard quantum mechanics and existing accounts}
 \label{sec:relation-existing-accounts}
 
@@ -3037,8 +3160,9 @@ coherent projection; this paper encodes but does not derive that proposal.
 
 The conditional encoding concerns the coexistence of wave-like interference and
 particle-like localization. It does not derive the Born rule. Operationally,
-\(\mathbb P(i)=\tr(\rho E_i)\). The MTT corpus proposes to reproduce this pairing with
-basin-measure structure.
+\(\mathbb P(i)=\tr(\rho E_i)\), with the canonical output realization already supplied
+as explained above. The additional basin-measure proposal seeks a realization of this
+pairing, not a replacement for the established operational law.
 
 Let \(\{B_i\}_{i\in I}\) be the proposed survivor-basin partition associated with a
 measurement context \(\Meas\), and let \(\mu_\rho\) be a state-dependent
@@ -3228,9 +3352,10 @@ The distinctive claim is the unified selection architecture:
   }
 \end{equation}
 The kernel is conditionally specified by declared fixed-point data and a certified
-damping/admissibility time. A first-principles MTT source theorem is still required. Branch damping is not an arbitrary
+damping/admissibility time. An apparatus-specific source theorem is still required. Branch damping is not an arbitrary
 visibility factor. It must define a valid quantum channel. Outcome probabilities are not
-identified with damping factors. They are basin-measure weights.
+identified with damping factors. They are instrument probabilities, equal to basin-measure
+weights only under the stated bridge criterion.
 
 This combination is the specific MTT contribution:
 \begin{center}
@@ -3468,8 +3593,9 @@ resolution scale.
 \subsection{What this paper adds}
 \label{subsec:what-this-paper-adds}
 
-The earlier measurement papers explain how outcomes stabilize and how probabilities arise
-from basins. The present paper adds a specific structural synthesis:
+The earlier measurement papers motivate basin stabilization and its proposed probability
+bridge. Their basin interpretation remains subject to the criterion above; it is distinct
+from the current canonical output theorem. The present paper adds a structural synthesis:
 \begin{center}
 \emph{The same finite coherent kernel has both a local delta-like representation and a
 spectral phase-coherent representation.}
@@ -3486,8 +3612,8 @@ interpretive multiplier.
 Thus the paper should be read as a bridge between three parts of MTT:
 \begin{enumerate}[label=(\roman*)]
   \item the delta-projection sequence, where pointlike objects are sharp limits of finite kernels;
-  \item the measurement sequence, where outcomes are disturbance-stabilized survivor basins;
-  \item the basin-measure sequence, where Born probabilities are basin weights.
+  \item the measurement sequence, with an optional disturbance-stabilized basin realization;
+  \item the basin-measure sequence, where the bridge criterion tests agreement with Born weights.
 \end{enumerate}
 
 \subsection{Compatibility summary}
@@ -3512,8 +3638,9 @@ The relationship can be summarized as:
   \text{Born frequencies}.
 \end{align}
 
-These are not competing explanations. They are different layers of one MTT measurement
-architecture.
+The last two arrows require the basin-capture and measure-intertwining assumptions.
+They are possible additional layers, not prerequisites for the canonical operational
+record law and not a selection of ontology.
 \section{Phenomenological consequences and testable scalings}
 \label{sec:phenomenological-consequences}
 
@@ -4152,7 +4279,9 @@ The ordinary quantum descriptions are recovered in the appropriate limits. Stand
 mechanics is recovered when coherent phases are retained. Pointlike detection is recovered
 when finite detector effects are idealized by sharp projectors. Incoherent mixtures are
 recovered when branch coherences are strongly damped. Thus the encoding is compatible with
-the standard formalism. It is not yet a derivation of that formalism from MTT.
+the standard formalism. This generic encoding does not itself derive that
+formalism; the established canonical q79 operational tier is a separate
+result, as explained in Section~\ref{subsec:finite-transfer-consumer}.
 
 The remaining execution tasks are sector-specific. To turn the scaling relations into numerical
 predictions, one must derive or constrain:
@@ -4287,6 +4416,68 @@ MTT Measurement sequence.
 P. Nero,
 \emph{Measurement Effects as Finite Survivor-Basin Kernels},
 MTT Delta--Projection sequence.
+
+\bibitem{MTTFPSpine}
+P. Nero, \emph{Fixed Points I--VI}, current analytic series.
+Used here as the upstream analytic foundation, not as a consumer of later
+MTT finite-response results.
+
+\bibitem{MTTCohesiveTransfer}
+P. Nero, \emph{Cohesive Closure Repair and Its Hodge, Kernel and Projection
+Shadows}, v14, 2026, sections ``Covariance completion changes the harmonic
+content,'' ``The response retract keeps the missing classes,'' and
+``One source map can transport the whole hierarchy.''
+Theorem owner for the following finite transfer comparison.
+
+\bibitem{FiniteWeylHodge}
+MTT causal-base research, \emph{Finite Weyl--Koszul Hodge calculus and interaction boundary}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{SymmetricWeyl}
+MTT causal-base research, \emph{Symmetric signed Weyl calculus and isometric retraction}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{ResponseMthree}
+MTT causal-base research, \emph{Response retraction and transferred ternary operation}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{ResponseMfour}
+MTT causal-base research, \emph{Transferred quaternary operation and its identity}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{HigherTransfer}
+MTT causal-base research, \emph{Higher-jet filtration and all-arity nontruncation}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{AllArityTransfer}
+MTT causal-base research, \emph{All-arity contraction naturality and finite covariance}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{CanonicalQ79Source}
+BEQ Research, \emph{Canonical q79 selected finite source base}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/beq_q79_fmo_q79_selected_source_base/artifact.json}{Frozen source-base import}, snapshot f141a20e.
+
+\bibitem{ContinuumRecorder}
+P. Nero, \emph{Continuum spectral recorder compiler and intertwiner error}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_continuum_recorder_compiler/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{OntologyNonentailment}
+P. Nero, \emph{Operational ontology non-entailment}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_ontology_nonentailment/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{FockOutput}
+P. Nero, \emph{Canonical q79 Fock output measure and second-moment descent}, 2026.
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_fock_output_measure/artifact.json}{Frozen source artifact}, snapshot f141a20e.
+
+\bibitem{MTTRecordOwner}
+P. Nero, \emph{Born-Compatible Record Measures and the Classical
+Concentration Limit: Separate Theorems and Their MTT Interface}, v3, 2026.
+Contextual owner of the canonical output and continuum recorder imports.
+
+\bibitem{MTTLocalityOwner}
+P. Nero, \emph{Locality, Coherent Alternatives, and Physical Records:
+An Interpretive Account of Quantum Experiments in Modal Triplet Theory},
+v2, 2026. Contextual owner of the operational non-entailment import.
 
 \end{thebibliography}
 

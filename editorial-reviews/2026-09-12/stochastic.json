@@ -1,0 +1,3445 @@
+{
+  "schema": "mtt.editorial-review-fragment.v1",
+  "reviewed_at": "2026-09-12",
+  "reviewer": "Codex stochastic editorial subagent",
+  "repository": "mtt-papers",
+  "scope": {
+    "exclusive_papers": [
+      "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8"
+    ],
+    "fragment_files": [
+      "editorial-reviews/2026-09-12/stochastic.json",
+      "editorial-reviews/2026-09-12/stochastic.md"
+    ],
+    "initial_unreviewed_owner_assignments": 48,
+    "current_assigned_owner_results": 48,
+    "owner_results_contextually_reviewed": 48,
+    "owner_results_remaining": 0,
+    "consumer_review_counts": {
+      "integrated": 4,
+      "not_applicable": 1,
+      "historical_suggestions_suppressed": 2
+    },
+    "kernel_bootstrap": "Completed first with repository mtt-papers; current A/B authority controls over historical packet headers.",
+    "no_global_catalog_or_kernel_writes": true,
+    "no_publication_or_commits": true
+  },
+  "frozen_authority": {
+    "root": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results",
+    "manifest_commit": "f141a20ea23c5c3ff19cc2161c0e226e29ade8a7",
+    "manifest_path": "release/result_manifest.json",
+    "manifest_sha256": "5715b0da6a54df29d43a53fe4b9ae932bf6d4cd9fc43e8c0ff2e225456df13e3",
+    "manifest_exact_bytes_match_pinned_commit": true,
+    "ownership_catalog": "catalog/research-ownership.json"
+  },
+  "reviews": [
+    {
+      "id": "STOCH-20260912-01",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_candidate_audit"
+      ],
+      "anchors": [
+        "\\label{sec:evolving-audit}"
+      ],
+      "assessment": "Explains the evolving audit beyond its early snapshot: source-restricted no-go statements, external Kij endpoints, two-parameter and cross-structure response identities, common-circle versus finite-phase anchoring, geometry covariance, calibration and later tangent/Hessian remainder work. D1 checks, executed D4 derivatives and exact analytic bounds are separated from missing D4 numerical-error enclosure and experimental covariance; old eligibility headers do not dispose of later refinements.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_candidate_audit": "b56093a700b62261a6a291de0bc86059953a2c52d53616f2b69ab25f6917764e"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 852,
+          "label": "sec:evolving-audit"
+        }
+      ],
+      "source_tier_retained": "EXTERNAL_VERSION_PINNED_PRIOR_SNAPSHOT_AUDIT"
+    },
+    {
+      "id": "STOCH-20260912-02",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_route_hodge_intertwiner"
+      ],
+      "anchors": [
+        "\\label{sec:route-witness}"
+      ],
+      "assessment": "Imports the exact oriented-route Hodge identity and distinguishes cycle projection from direct/indirect endpoint projection. Retains the dimension obstruction to an isometric full three-carrier image in a postselected binary space; the rate-to-amplitude lift is only a diagnostic.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_route_hodge_intertwiner": "830d300451b5ce4b2e34edbed3d766be37ef0ed1f961811249998075cd7ebfda"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 672,
+          "label": "sec:route-witness"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_FINITE_PHYSICAL_LIFT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-03",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_process_witness"
+      ],
+      "anchors": [
+        "\\label{sec:route-witness}"
+      ],
+      "assessment": "Explains the cycle, incoherent and all-plus witness probabilities, including identical coarse populations for different histories. Capture probability, conditional witness fidelity, trace-distance control and a coherent-history tester remain distinct requirements.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_process_witness": "5fef91ad54358b96b0cdf446b473907f3a24be1757ce43bea8e5c1f6cf781678"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 672,
+          "label": "sec:route-witness"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_IDEAL_WITNESS_PHYSICAL_TESTER_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-04",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_heom_reference"
+      ],
+      "anchors": [
+        "\\label{sec:heom-history}"
+      ],
+      "assessment": "Places the frozen seven-site 300 K finite HEOM reference at its supplied-model tier. One-time density matrices are not intervention-dependent process data, and the supplied bath calculation does not derive an irreversible driver from a recurrent closed phase model.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_heom_reference": "921d9b2c9dc8488f99312a7300e24abc8a1acc6fa988eeae1f454f95bfcc76b1"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 707,
+          "label": "sec:heom-history"
+        }
+      ],
+      "source_tier_retained": "MODEL_SUPPORTED_ACCEPTED_BASELINE"
+    },
+    {
+      "id": "STOCH-20260912-05",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_heom_history"
+      ],
+      "anchors": [
+        "\\label{sec:heom-history}"
+      ],
+      "assessment": "Imports the two-time coherent-history construction with exciton tags, locked gauge and action on every ADO before propagation. Explains the reported capture and conditioned witness as finite-rung predictions of a specified model, not experimental discrimination.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_heom_history": "0f75bbf7aab5f5c5106be3cd5fac97f6cf8f365d17066bdbec582bd395aa14d3"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 707,
+          "label": "sec:heom-history"
+        }
+      ],
+      "source_tier_retained": "MODEL_SUPPORTED_ACCEPTED_HISTORY_STATE"
+    },
+    {
+      "id": "STOCH-20260912-06",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_ado_process_response"
+      ],
+      "anchors": [
+        "\\label{sec:heom-history}"
+      ],
+      "assessment": "Explains the four-history process slice and fifteen CP settings, including reproduction of the earlier selected three-history block. This closes that slice of the earlier multi-time omission, not full process-tensor tomography or a selected laboratory response.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_ado_process_response": "f53eb35e7d945e86948121e0ae5e0cb368ddd79d21a50d1b0f8b158fe0454628"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 707,
+          "label": "sec:heom-history"
+        }
+      ],
+      "source_tier_retained": "MODEL_SUPPORTED_CONVERGED"
+    },
+    {
+      "id": "STOCH-20260912-07",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_optical_filter_dilation"
+      ],
+      "anchors": [
+        "\\label{sec:optical-existence}"
+      ],
+      "assessment": "Explains defect-rank dilation and why a seven-state system needs five extra shelving dimensions while ground plus single excitation alone is insufficient. Retains the determinant-corrected dilation, specified deferred-selection dynamics and the distinction between abstract CP realization and bounded bath-active control.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_optical_filter_dilation": "470e3d0016d6e0360c2292c31b590c489a97fa12352d3259f400ba0f81f959e4"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 740,
+          "label": "sec:optical-existence"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_IDEAL_KIJ0"
+    },
+    {
+      "id": "STOCH-20260912-08",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_physical_readout_design"
+      ],
+      "anchors": [
+        "\\label{sec:optical-existence}"
+      ],
+      "assessment": "Imports the four Hermitian root-observable spectral readout designs and their preparation/evolution/detection domain. Four seven-outcome basis settings describe this protocol, not a universal minimum for all generalized measurements.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_physical_readout_design": "e45a8c2551a6679af16175735b41b0c23a73b56affd8b4a8a99d383f0047e4ec"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 740,
+          "label": "sec:optical-existence"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_IDEAL_APPARATUS_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-09",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_su29_root_reachability"
+      ],
+      "anchors": [
+        "\\label{sec:optical-existence}"
+      ],
+      "assessment": "Imports the strong-regularity/connectivity argument for exact ideal SU(29) reachability on the locked zero-Kij rotating-wave fixture. It supplies unbounded piecewise control existence, not a finite-amplitude, bandwidth, duration or bath-error certificate.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_su29_root_reachability": "4ad699737f27509c13ee1be986a83111adb40a5357e8c2c640ffd5cb42b35909"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 740,
+          "label": "sec:optical-existence"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_IDEAL_KIJ0"
+    },
+    {
+      "id": "STOCH-20260912-10",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_bounded_projective_pulses"
+      ],
+      "anchors": [
+        "\\label{sec:optical-existence}"
+      ],
+      "assessment": "Retains the separately optimized one-picosecond bounded closed-system profile with only one target passing its strict gate. The iteration-capped search is not a global controllability no-go and does not inherit ideal unbounded reachability as a pass.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_bounded_projective_pulses": "e549b51a2552bb53d4b1de8e84c148b54f46953555d6e25ec71fc86f14c4007c"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 740,
+          "label": "sec:optical-existence"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_PARTIAL_ONE_OF_FOUR"
+    },
+    {
+      "id": "STOCH-20260912-11",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_weighted_pulse_search"
+      ],
+      "anchors": [
+        "\\label{sec:optical-existence}"
+      ],
+      "assessment": "Explains the weighted-observable objective and retains failure of the strict gate for all four returned candidates. Local optimization termination is not proof that the targets are unreachable.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_weighted_pulse_search": "1028d9a1e8a55dcc918c6c14392595f1aac87e6e6ea39ed1c62d5927d3855b0a"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 740,
+          "label": "sec:optical-existence"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_OPEN_ZERO_OF_FOUR"
+    },
+    {
+      "id": "STOCH-20260912-12",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_bath_projective_ladder"
+      ],
+      "anchors": [
+        "\\label{sec:bath-chronology}"
+      ],
+      "assessment": "Preserves the original canonical target-zero five-rung failure at its stated tolerance. The later D3,K1 stabilization is explained separately and does not retroactively convert the original ladder into a pass.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_bath_projective_ladder": "b57f15a1878ccb01d65c7b9f4daa85c5db372e67f00d7623b50ee6ba5aca5087"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 772,
+          "label": "sec:bath-chronology"
+        }
+      ],
+      "source_tier_retained": "MODEL_SUPPORTED_OPEN_NONCONVERGED"
+    },
+    {
+      "id": "STOCH-20260912-13",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_bath_weighted_rejection"
+      ],
+      "anchors": [
+        "\\label{sec:bath-chronology}"
+      ],
+      "assessment": "Imports the finite convergence-controlled rejection of the weighted waveform on its own bath ladder. It is a bounded selected-profile negative, not a proof against every physical optical realization.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_bath_weighted_rejection": "cb9e7779260f99e0f00d0148cae85f995550c352253e3ea8ff2cb482f937d233"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 772,
+          "label": "sec:bath-chronology"
+        }
+      ],
+      "source_tier_retained": "MODEL_SUPPORTED_REJECTED_CONVERGENCE_CONTROLLED"
+    },
+    {
+      "id": "STOCH-20260912-14",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_bath_aware_adjoint_gradient"
+      ],
+      "anchors": [
+        "\\label{sec:bath-chronology}"
+      ],
+      "assessment": "Explains the exact discrete-adjoint and block-exponential Frechet derivative for the chosen finite HEOM/control discretization. This supplies a correct local gradient, not a global minimum or an infinite-hierarchy error estimate.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_bath_aware_adjoint_gradient": "f38aac52ad039577bb55c06ef1c759e79c7a8b5ce80ae72f83d26b77fb6e1f74"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 772,
+          "label": "sec:bath-chronology"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_FINITE_HEOM_CONTROL_GRADIENT"
+    },
+    {
+      "id": "STOCH-20260912-15",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_canonical_d3k1_followup"
+      ],
+      "anchors": [
+        "\\label{sec:bath-chronology}"
+      ],
+      "assessment": "Explains the higher-order D3,K1 follow-up that stabilizes the previously tested canonical waveform and rejects its readout. The chronology retains both the earlier failed convergence comparison and the later controlled finite negative.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_canonical_d3k1_followup": "70773515884d54c9eea9e7fb08f62ba76da801aec8c0470355f4ae1ffade12d9"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 772,
+          "label": "sec:bath-chronology"
+        }
+      ],
+      "source_tier_retained": "MODEL_SUPPORTED_REJECTED_STABILIZED_HIGHER_CORNER"
+    },
+    {
+      "id": "STOCH-20260912-16",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_bath_aware_two_seed_replay"
+      ],
+      "anchors": [
+        "\\label{sec:bath-chronology}"
+      ],
+      "assessment": "Imports the two independently replayed bath-aware local seeds and their failure of the locked operator gate. No global optimization claim is inferred from either local seed.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_bath_aware_two_seed_replay": "8acf7c9dd7fdf4500d28a7a6e214a629ef4b89b7c5a10fae2cd6478bd05329ff"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 772,
+          "label": "sec:bath-chronology"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_OPEN_TWO_LOCAL_CANDIDATES_REJECTED"
+    },
+    {
+      "id": "STOCH-20260912-17",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_terminal_sector_rejection"
+      ],
+      "anchors": [
+        "\\label{sec:bath-chronology}"
+      ],
+      "assessment": "Explains convex terminal-population weighting for fixed pulses and the nested terminal-sector failures. Convexity applies only to the weights; terminal sectors are not the GSB/SE/ESA pathway decomposition.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_terminal_sector_rejection": "840f4bd9b2245ae5e3b8678d211f83e1881d96127f9ee568413347398abd76b9"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 772,
+          "label": "sec:bath-chronology"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_REJECTED_FIXED_PULSE_TERMINAL_SECTORS"
+    },
+    {
+      "id": "STOCH-20260912-18",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_normalized_300fs_control_rejection"
+      ],
+      "anchors": [
+        "\\label{sec:bath-chronology}"
+      ],
+      "assessment": "Retains the separately normalized 300 fs, twelve-segment failed control profile and its predeclared stopping rule. This stops the specified continuation family, not every possible control family.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_normalized_300fs_control_rejection": "272b0777fcbde7c25654bae16aa243fc7fc22feca6e8b6acd98c199ed0694e89"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 772,
+          "label": "sec:bath-chronology"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_REJECTED_PREDECLARED_CONTROL_EXIT"
+    },
+    {
+      "id": "STOCH-20260912-19",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_finite_probe_full_rank_unbounded"
+      ],
+      "anchors": [
+        "\\label{sec:bounded-probe}"
+      ],
+      "assessment": "Explains why numerical Hermitian rank 49 and unbounded span of the initial finite effect set do not imply a stable bounded estimator. The normalized coefficient budget is retained; all four targets fail that bounded gate.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_finite_probe_full_rank_unbounded": "b56aa6604b15cdd6843d3dc09e7b8b5fb48eeeb93975965cf3d12135ee2f54b4"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 798,
+          "label": "sec:bounded-probe"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_FULL_RANK_UNBOUNDED_SPAN_BOUNDED_REJECTED"
+    },
+    {
+      "id": "STOCH-20260912-20",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_full_carrier_three_of_four"
+      ],
+      "anchors": [
+        "\\label{sec:bounded-probe}"
+      ],
+      "assessment": "Retains the expanded full-carrier effect family and its three passing targets under the unchanged coefficient budget. The missing fourth target is a joint failure, not a reason to discard the three scoped positive results.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_full_carrier_three_of_four": "ff5d7d53ff9cb68a58e17f375a0ee1335feea45fe9f81cacf1f0528cf80985f5"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 798,
+          "label": "sec:bounded-probe"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_PARTIAL_THREE_OF_FOUR_BOUNDED"
+    },
+    {
+      "id": "STOCH-20260912-21",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_broad_probe_d1_four_of_four"
+      ],
+      "anchors": [
+        "\\label{sec:bounded-probe}"
+      ],
+      "assessment": "Explains the separately selected broad-probe temporal profile and its exploratory D1,K0 four-target pass. It is not pooled with other profiles, nor promoted past later depth/bath checks.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_broad_probe_d1_four_of_four": "0c304276a9a79f07ffb7c90ce30ba3ab9471c3b463ce7c50a9c25c5b3dd61d60"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 798,
+          "label": "sec:bounded-probe"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_EXPLORATORY_D1_FOUR_OF_FOUR_BOUNDED"
+    },
+    {
+      "id": "STOCH-20260912-22",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_broad_probe_two_axis_convergence_rejection"
+      ],
+      "anchors": [
+        "\\label{sec:bounded-probe}"
+      ],
+      "assessment": "Separates the rejected forward/adjoint-integrity profile from the subsequent broad profile whose bath-axis comparison passes but depth-axis comparison fails. A partial convergence success cannot certify both axes.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_broad_probe_two_axis_convergence_rejection": "d1b8d0e2dad7fb855fb199734b4779c9535460bd1d8611eeb503f24879998775"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 798,
+          "label": "sec:bounded-probe"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_FINITE_TWO_AXIS_CONVERGENCE_REJECTED"
+    },
+    {
+      "id": "STOCH-20260912-23",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_broad_probe_d3_depth_instability"
+      ],
+      "anchors": [
+        "\\label{sec:bounded-probe}"
+      ],
+      "assessment": "Retains the D3,K0 stacked-effect depth instability for the specified broad profile. Later corrected-accuracy D4 results are read as a refinement, not silently assigned to this earlier packet.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_broad_probe_d3_depth_instability": "7fd70fdcc7a47207761eb545f00faed8deba3966ce64083a3818fb2b3fba01dc"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 798,
+          "label": "sec:bounded-probe"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_HIERARCHY_DEPTH_UNSTABLE_THROUGH_D3"
+    },
+    {
+      "id": "STOCH-20260912-24",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_broad_probe_hierarchy_tail_diagnostic"
+      ],
+      "anchors": [
+        "\\label{sec:bounded-probe}"
+      ],
+      "assessment": "Explains contracting finite hierarchy increments and their forecast role. The tail diagnostic is not an infinite-hierarchy remainder certificate; it motivates the later actually executed D4 rung.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_broad_probe_hierarchy_tail_diagnostic": "c29702b6aa3ce78fd6873b68e1a2cee5e5004663b5f1ec75317c55691e36374e"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 798,
+          "label": "sec:bounded-probe"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_COSTED_D4_AUTHORIZATION_NOT_CONVERGENCE"
+    },
+    {
+      "id": "STOCH-20260912-25",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_broad_probe_d4_stable_negative"
+      ],
+      "anchors": [
+        "\\label{sec:bounded-probe}"
+      ],
+      "assessment": "Imports the corrected-accuracy D4 calculation with finite effect stability under both stated thresholds while all bounded target residuals still fail. This is a stable finite-depth negative, not infinite-HEOM convergence or a universal optical no-go.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_broad_probe_d4_stable_negative": "dc203c7333bb387e57bcfec1b9e5189d5397298f48f9a5608516fffdb216ce33"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 798,
+          "label": "sec:bounded-probe"
+        }
+      ],
+      "source_tier_retained": "NUMERICAL_STABLE_NEGATIVE_FINITE_D4_PROFILE"
+    },
+    {
+      "id": "STOCH-20260912-26",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_physical_ado_tangent"
+      ],
+      "anchors": [
+        "\\label{sec:physical-tangent}"
+      ],
+      "assessment": "Explains the trace-free Hermitian 48-real-dimensional root tangent for a factorized preparation, distinct from the larger Hermitian ambient hierarchy. Reported optical rank, four missing scalar directions and completion observables are numerical finite-fixture outputs, not independently certified here or an optical calibration.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_physical_ado_tangent": "92938aebe42e104c1933e191c8d2197da19ee3e96f5e0d80c9a14bc67c63feff"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 827,
+          "label": "sec:physical-tangent"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_TANGENT_PHYSICAL_OPTICS_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-27",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_fmo_basis_complete_nuisance"
+      ],
+      "anchors": [
+        "\\label{sec:physical-tangent}"
+      ],
+      "assessment": "Imports the basis-complete complex nuisance response and explains why six nuisance-free observation combinations can have zero selected response. It distinguishes annihilating one realized nuisance vector from quotienting the whole nuisance span, and prevents the ambient-complex obstruction being promoted to a physical-domain no-go.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_basis_complete_nuisance": "93db6e7c661c9479df03d91bb6267153f9fa50163c10eaa2acd5e345af1482ca"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 827,
+          "label": "sec:physical-tangent"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AMBIENT_COMPLEX_PHYSICAL_TANGENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-28",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_charged_hfcis_module"
+      ],
+      "anchors": [
+        "\\label{sec:charged-module}"
+      ],
+      "assessment": "Explains the exact deposited-decimal rank-two neutral HF-CIS charge rows and the weight-one molecular line, including half-turn and bilinear weights. This later charged carrier resolves the older missing-representation row without removing electronic-structure or geometry uncertainty.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_charged_hfcis_module": "2f59c98acb383ff3366e72636a770ac1fe3ae6bce4f6aa9a800b17eeed51f2ec"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 900,
+          "label": "sec:charged-module"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-29",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_configuration_line"
+      ],
+      "anchors": [
+        "\\label{sec:charged-module}"
+      ],
+      "assessment": "Distinguishes trivialization by oriented molecular frames from selecting a connection. The projected connection may be curved; a parallel comparison requires the relative Hom holonomy condition, not merely isomorphic underlying line bundles.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_configuration_line": "61b9fff7ed54773f9595e0ba2e7498075f3a31328dbd0953ceca77d320177736"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 900,
+          "label": "sec:charged-module"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-30",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_diagonal_phase_connection"
+      ],
+      "anchors": [
+        "\\label{sec:phase-geometry}"
+      ],
+      "assessment": "Imports the diagonal-circle quotient connection and six relative forms on seven frame phases. Its product-frame metric is explicit and is not automatically a nuclear Eckart construction.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_diagonal_phase_connection": "3144c240e884eb76ed4e1ea36432bf19b9be36923f156f584a5844722c0be291"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 922,
+          "label": "sec:phase-geometry"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-31",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_jk_relative_phase_path"
+      ],
+      "anchors": [
+        "\\label{sec:phase-geometry}"
+      ],
+      "assessment": "Explains the locked crystal-transfer shortest relative phase path and its declared half-turn convention. It supplies neither the external eighteen-degree anchor nor an exact Z64 step or physical trajectory.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_jk_relative_phase_path": "987e972e99366c0e495cf18d6a796f79a18e021021600f9ce99080d6d30b61b9"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 922,
+          "label": "sec:phase-geometry"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-32",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_axisymmetric_neumann_observable"
+      ],
+      "anchors": [
+        "\\label{sec:cap-observable}"
+      ],
+      "assessment": "Explains the axisymmetric reducing Neumann cap operator and mean-zero eigenmode response, with pole regularity and boundary condition. The constant flux mode does not fix the decay clock; the comparison metric and initial distribution require care.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_axisymmetric_neumann_observable": "07a2e2102dc6292fda5ed94bebb82de8f59833055e29cba40e6178ac51cb87c4"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1060,
+          "label": "sec:cap-observable"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-33",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_clock_identifiability"
+      ],
+      "anchors": [
+        "\\label{sec:response-identifiability}"
+      ],
+      "assessment": "Imports the one-point nonidentifiability, two-point rate calibration and held-out exponential relation. Relative/additive noise conditions and the independently selected clock are stated; an exponential fit is not an MTT prediction or a unique discriminator.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_clock_identifiability": "c09714d0469a8d3299acd1052707e6e25e681cab45d31b39a1ad828ff4395af9"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1092,
+          "label": "sec:response-identifiability"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-34",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_neumann_spectral_interval"
+      ],
+      "anchors": [
+        "\\label{sec:cap-observable}"
+      ],
+      "assessment": "Imports the source proof of the first-positive Neumann root using exclusion of earlier roots, pole-free Dirichlet-to-Neumann monotonicity and Arb enclosure. The displayed outward intervals are source results, not a new root-isolation run.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_neumann_spectral_interval": "48802f2414792f52165d4d12ecd62f59cc1c535bc36d590f446f197a93e9d63b"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1060,
+          "label": "sec:cap-observable"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-35",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_phase_fiber_holonomy"
+      ],
+      "anchors": [
+        "\\label{sec:phase-geometry}"
+      ],
+      "assessment": "Retains the exact fixed-configuration full phase-fiber holonomy obstruction: the seventh-root and sixty-fourth-root groups intersect trivially. Geometry-base cap loops have a different domain and do not contradict that no-go.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_phase_fiber_holonomy": "a3f859bcd8220deae2398fffa4420237c3ff56095c0e1d2e9706a1b6ef42f140"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 922,
+          "label": "sec:phase-geometry"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-36",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_positive_mixture_hankel"
+      ],
+      "anchors": [
+        "\\label{sec:response-identifiability}"
+      ],
+      "assessment": "Explains the positive-mixture Hankel defect and rank argument. Rank counts distinct modes in the declared mixture, not literally the three modes of an example; a noisy approximate rank-one test is not exact single-mode proof.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_positive_mixture_hankel": "0a039a8a4471967bc26e64e75483e7673e0c001d8080fd61406f60a6033625ea"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1092,
+          "label": "sec:response-identifiability"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-37",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_positive_time_smoothing_nogo"
+      ],
+      "anchors": [
+        "\\label{sec:metric-qualification}"
+      ],
+      "assessment": "Imports the compact positive-time heat smoothing obstruction to a bounded inverse in the infinite-dimensional compact-resolvent setting, with finite-cutoff inverse growth. This does not exclude unitary dynamics and requires pre-smoothing transport or a justified retained sector.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_positive_time_smoothing_nogo": "059e30294ce1e42b62f43b03152694e70e7ba01c8ab790572545ea593ebd4262"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1007,
+          "label": "sec:metric-qualification"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-38",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_relative_yang_mills_repair"
+      ],
+      "anchors": [
+        "\\label{sec:relative-repair}"
+      ],
+      "assessment": "Explains the relative current, zero tangential boundary value, fixed flux and smooth Neumann repair. The energy minimum and heat law are conditional on the declared cap metric; equal relative cohomology is not equality of differential characters or a physical connection selection.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_relative_yang_mills_repair": "238bd4181c9cdb1d3799e2dbccef96fa94d86a05f21565538cef23f754096f37"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 971,
+          "label": "sec:relative-repair"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-39",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_signed_oscillatory_prony"
+      ],
+      "anchors": [
+        "\\label{sec:response-identifiability}"
+      ],
+      "assessment": "Imports signed/oscillatory Prony discrimination with Vandermonde rank, recurrence and held-out sampling. Retains signed cancellation, frequency aliasing, finite perturbation norms and the remaining repeated-node/continuous-spectrum/noisy-root problems.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_signed_oscillatory_prony": "69886eae006582537d7fc112e7386d7d7cb4e9fcf5779a5c6d08fcc05b469578"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1092,
+          "label": "sec:response-identifiability"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-40",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_transported_metric_semigroup"
+      ],
+      "anchors": [
+        "\\label{sec:metric-qualification}"
+      ],
+      "assessment": "Imports the exact transported metric, chain-only scalar action contract and Hodge metric-chain defect formula. Explicitly corrects the coefficient-one semigroup estimate: common-norm contractivity is an extra hypothesis; otherwise the Duhamel integral or metric-distortion factor is retained. Exact identities and the commuting source witness remain valid; correction STOCH-CORR-01 is separately escalated.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_transported_metric_semigroup": "d8bc8f4a5e5f1d6a1619b8e145ea6e82ab043ee9334f6b54c0f97714f1055ff0"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1007,
+          "label": "sec:metric-qualification"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-41",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_upper_action_yang_mills_restriction"
+      ],
+      "anchors": [
+        "\\label{sec:relative-repair}"
+      ],
+      "assessment": "Explains why the abelian Maurer-Cartan bracket vanishes and the positive scalar repair reduces to fixed-flux Yang-Mills and Neumann heat. Initial isometry and scalar product preservation are distinguished from the full nonabelian contract; this is not the physical signed action or a physical HYM moment map.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_q79_upper_action_yang_mills_restriction": "df6fedd2cc84a033d5379c4c0076d6ae8066597f2e75347b074b8cbd52b5964c"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 971,
+          "label": "sec:relative-repair"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-42",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_fmo_synchronous_cap_q79_ramification"
+      ],
+      "anchors": [
+        "\\label{sec:phase-geometry}"
+      ],
+      "assessment": "Explains the synchronous round-cap half-turn boundary match while retaining the ordinary filled-disk connection obstruction and different global Chern data. A ramified/root-stack comparison is conditional and does not identify the ordinary smooth connections.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_fmo_synchronous_cap_q79_ramification": "0c87e5ede4480f93c0330f955cbbc3709327cbd1353cfa041d9ecf9bb10c67cd"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 922,
+          "label": "sec:phase-geometry"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-43",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_physical_gate"
+      ],
+      "anchors": [
+        "\\label{sec:physical-gate}"
+      ],
+      "assessment": "Retains the physical gate as four supplied rows of eighteen and explains its fourteen distinct source/connection/observable/clock/test requirements. Contextual integration is not raw gate promotion, and auxiliary-row counts cannot substitute for physical inputs.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_physical_gate": "e2f596bd8c94d20ba4878fba7ada6ead992776d59f2928c3eca512248837a498"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1129,
+          "label": "sec:physical-gate"
+        }
+      ],
+      "source_tier_retained": "OPEN_4_OF_18"
+    },
+    {
+      "id": "STOCH-20260912-44",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_q79_flat_family_fmo_open_path_pullback"
+      ],
+      "anchors": [
+        "\\label{sec:interval-descent}"
+      ],
+      "assessment": "Imports the flat q79 family map and contractible open-interval parallel comparison as an exact compatibility construction with an initial-fiber-map torsor. Universal interval existence is not selection of a physical nonflat endpoint or pairing.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_q79_flat_family_fmo_open_path_pullback": "c707973f1ad266ff5a4d1a1481db1a97f016e391f2705abe9d115be9e29f39b1"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 952,
+          "label": "sec:interval-descent"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-45",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_q79_fmo_selected_endpoint_interval_compiler"
+      ],
+      "anchors": [
+        "\\label{sec:interval-descent}"
+      ],
+      "assessment": "Explains the selected-endpoint compiler reducing four conditional line-comparison rows to a selected endpoint and prospectively fixed pairing. Hidden projective rank-nine and existential HYM authority are retained; missing visible data/common chamber are not a reopened existential no-go.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_q79_fmo_selected_endpoint_interval_compiler": "76959795c7eb41123bd363befa2f5914aa11d31859cc033cc20bd6aede327b81"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 952,
+          "label": "sec:interval-descent"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-46",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_q79_selected_source_base"
+      ],
+      "anchors": [
+        "\\label{sec:q79-source}"
+      ],
+      "assessment": "Imports the established finite-symbol, binary, one-anchor noncommutative q79 source, normal states, second-moment descent and ready Fock structure. It prevents the classical commutativity limitation from being misread as a missing canonical operational model; apparatus-specific molecular descent remains separate.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_q79_selected_source_base": "28821a3928f3d74487f795d3cc65b08df527836cd659613583a8c2105de16d14"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 601,
+          "label": "sec:q79-source"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-47",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_same_source_repair_descent"
+      ],
+      "anchors": [
+        "\\label{sec:q79-source}"
+      ],
+      "assessment": "Imports the exact nilpotent finite repair/Hodge/route compatibility square and keeps its non-uniqueness and natural-generator mismatch. The later charged-line result resolves its historical missing carrier, but a full physical FMO generator or same-source apparatus is not supplied.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_same_source_repair_descent": "dbcad67a6077ece70b80b9c5219b426a27394ce8289a77c48e5c7855941d1ce9"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 601,
+          "label": "sec:q79-source"
+        }
+      ],
+      "source_tier_retained": "DERIVED_EXACT_AUXILIARY_PHYSICAL_DESCENT_OPEN"
+    },
+    {
+      "id": "STOCH-20260912-48",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "beq_q79_fmo_frontier_consolidation_2026_08_26"
+      ],
+      "anchors": [
+        "\\label{sec:physical-gate}"
+      ],
+      "assessment": "Explains the consolidated exact auxiliary frontier by compatibility, connection/repair and observable discrimination rather than counting it as physical acceptance. Its 4/18 gate and remaining endpoint, chain-map, metric, calibration and clock requirements are retained.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_q79_fmo_frontier_consolidation_2026_08_26": "fa17fb8f1269d52ef30e4eadbcd24ab01306384832ef19f5b433c6085b1f5906"
+      },
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1129,
+          "label": "sec:physical-gate"
+        }
+      ],
+      "source_tier_retained": "EXACT_AUXILIARY_FRONTIER_CONSOLIDATED_PHYSICAL_DESCENT_OPEN_4_OF_18"
+    }
+  ],
+  "consumer_reviews": [
+    {
+      "id": "STOCH-WAVE-20260912-TRANSFER",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.CBF.FINITE_TRANSFER_HIERARCHY"
+      ],
+      "curated_result_ids": [
+        "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+        "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "anchors": [
+        "\\label{subsec:finite-transfer-consumer}"
+      ],
+      "assessment": "Imports six successive finite packets through the Cohesive v14 structural owner: the two-direction formal harmonic algebra, symmetric 144-coordinate completion, nonminimal 48-coordinate retract, nonzero transferred m3/m4, later all-arity nontruncation and contraction-preserving naturality/covariance. The hierarchy clarifies the distinction between Hodge compatibility and nonlinear product transport. This is exact finite structure, not selection of the continuum A, HYM endpoint, rank-102 response bundle, instrument or signed action. C.FP.01 is addressed without duplicating an owner proof or importing later MTT results into FP I-VI.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c",
+        "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet": "8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e",
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
+      },
+      "kernel_result_sources": {
+        "R.CBF.FINITE_TRANSFER_HIERARCHY": [
+          "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+          "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet",
+          "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+          "causal_base_q79_symmetric_response_transferred_m4_packet",
+          "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+          "causal_base_q79_all_arity_source_promotion_packet"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 493,
+          "label": "subsec:finite-transfer-consumer"
+        }
+      ],
+      "canonical_owners": [
+        "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      ]
+    },
+    {
+      "id": "STOCH-WAVE-20260912-ENDPOINT",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "not_applicable",
+      "result_ids": [
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION"
+      ],
+      "curated_result_ids": [
+        "causal_base_q79_seven_row_endpoint_factorization_packet"
+      ],
+      "anchors": [
+        "\\label{subsec:not-claimed}",
+        "\\label{ass:fixed-point-spectral-data}",
+        "\\label{subsec:finite-transfer-consumer}"
+      ],
+      "assessment": "Not applicable as a theorem import: the seven-row GAS/SYN/BV4 endpoint factorization is owned contextually by Cohesive and addresses selecting a physical compactification endpoint, whereas this paper assumes the analytic A/P/window and sector data. Its literal scope says \"Nor does this paper compute all sector-specific numerical parameters.\" The source remains an exact conditional factorization with physical acceptance not supplied; no unrelated numerical endpoint ledger is added merely because of title/domain overlap.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
+      },
+      "kernel_result_sources": {
+        "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION": [
+          "causal_base_q79_seven_row_endpoint_factorization_packet"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 304,
+          "label": "subsec:not-claimed"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 618,
+          "label": "ass:fixed-point-spectral-data"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 493,
+          "label": "subsec:finite-transfer-consumer"
+        }
+      ],
+      "canonical_owners": [
+        "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows"
+      ]
+    },
+    {
+      "id": "STOCH-WAVE-20260912-CONTINUUM",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "anchors": [
+        "\\label{par:continuum-recorder-consumer}",
+        "\\label{subsec:detector-sector-kernels}"
+      ],
+      "assessment": "Imports the current record-measure owner and explains the selected invariant three-mode sector, rank-one/rank-two projectors, isometric projector intertwiner, common clock and minimal nondemolition Luders context. Approximate projector transport and conditional-state probability floors are distinguished. Closed canonical Cauchy/Fock structure is not reopened; internal physical HYM/finite-sector selection and apparatus normalization remain inputs. Current curated ownership, not the older Kernel recommended-owner label, controls placement.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      },
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 563,
+          "label": "par:continuum-recorder-consumer"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 874,
+          "label": "subsec:detector-sector-kernels"
+        }
+      ],
+      "canonical_owners": [
+        "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872"
+      ]
+    },
+    {
+      "id": "STOCH-WAVE-20260912-ONTOLOGY",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "\\label{par:ontology-consumer}",
+        "\\label{sec:measurement-branch-damping}",
+        "\\label{subsec:exact-records}",
+        "\\label{subsec:what-this-paper-adds}",
+        "\\label{subsec:compatibility-summary}"
+      ],
+      "assessment": "Imports the current locality/records owner and explains two ontological completions of the same operational record law without selecting either. The full manuscript read found older unconditional basin-selection prose; v7 now makes the capture/instrument-basin hypotheses govern those experimental modules and replaces assertions that instrument probabilities are automatically basin weights. Measurement is ordinary physics. Neither a global context-independent value assignment nor an objective single-history law is inferred.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      },
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 577,
+          "label": "par:ontology-consumer"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 1701,
+          "label": "sec:measurement-branch-damping"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 1793,
+          "label": "subsec:exact-records"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 3594,
+          "label": "subsec:what-this-paper-adds"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 3620,
+          "label": "subsec:compatibility-summary"
+        }
+      ],
+      "canonical_owners": [
+        "locality-coherent-alternatives-and-records-in-mtt"
+      ]
+    },
+    {
+      "id": "STOCH-WAVE-20260912-OUTPUT",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CANONICAL_OUTPUT_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_fock_output_measure"
+      ],
+      "anchors": [
+        "\\label{par:canonical-output-consumer}",
+        "\\label{subsec:born-basin-weights}",
+        "\\label{subsec:projection-duality-interpretive-conclusion}",
+        "\\label{sec:conclusion}"
+      ],
+      "assessment": "A real paper-specific omission was found independently of the title suggestion: generic source/Born-boundary prose omitted the already established canonical stopped output law. V7 explains restriction of the normal joint state to the commuting nondemolition output algebra, first-count/no-count effects and exact second-moment descent through the current record-measure owner. Accepted normal-state probability semantics are explicit. This is not a duplicate owner completion and does not reopen canonical QM; only arbitrary-apparatus extension and an optional additional basin realization remain separate.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "result_hashes": {
+        "q79_fock_output_measure": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e"
+      },
+      "kernel_result_sources": {
+        "R.QM.CANONICAL_OUTPUT_DESCENT": [
+          "q79_fock_output_measure"
+        ]
+      },
+      "line_anchors": [
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 549,
+          "label": "par:canonical-output-consumer"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 3159,
+          "label": "subsec:born-basin-weights"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 3073,
+          "label": "subsec:projection-duality-interpretive-conclusion"
+        },
+        {
+          "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+          "line": 4158,
+          "label": "sec:conclusion"
+        }
+      ],
+      "canonical_owners": [
+        "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872"
+      ]
+    }
+  ],
+  "text_reviews": [
+    {
+      "id": "STOCH-TEXT-20260912-CFP02",
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "reconciliation_ids": [
+        "C.FP.02"
+      ],
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "change": "text_updated",
+      "anchors": [
+        "\\label{sec:recurrence-boundary}"
+      ],
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 282,
+          "label": "sec:recurrence-boundary"
+        }
+      ],
+      "assessment": "States almost-periodic finite/pure-point closed unitary recurrence and separates it from a supplied finite dissipative generator and from a controlled bath/continuum/thermodynamic stochastic limit. The cited finite HEOM calculations have supplied-model scope; physical driver construction stays B.ACTION.01. This is not a blanket finite-dimensional no-go.",
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "result_hashes": {
+        "beq_fmo_heom_reference": "921d9b2c9dc8488f99312a7300e24abc8a1acc6fa988eeae1f454f95bfcc76b1",
+        "beq_fmo_ado_process_response": "f53eb35e7d945e86948121e0ae5e0cb368ddd79d21a50d1b0f8b158fe0454628"
+      }
+    },
+    {
+      "id": "STOCH-TEXT-20260912-CFP01",
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "reconciliation_ids": [
+        "C.FP.01"
+      ],
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex stochastic editorial subagent",
+      "state": "integrated",
+      "change": "existing_analytic_boundary_retained_and_owner_reference_added",
+      "anchors": [
+        "\\label{subsec:finite-transfer-consumer}",
+        "\\label{ass:fixed-point-spectral-data}",
+        "\\label{thm:delta-limit}"
+      ],
+      "assessment": "The pre-existing analytic and boundary-domain hypotheses were already present, as the ledger text_status reports. The actual missing consumer placement is now explained with the six exact finite results and Cohesive owner, not by a repeated theorem.",
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3"
+    }
+  ],
+  "candidate_dispositions": [
+    {
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "result_id": "R.GEO.COHESIVE_SUPERCONNECTION",
+      "curated_result_ids": [
+        "q79_cohesive_superconnection"
+      ],
+      "disposition": "historical_completion_not_reopened",
+      "reason": "Latest parent instruction suppresses the old title-only suggestion; no actual missing superconnection-construction claim found in this analytic consumer. No duplicate consumer review added."
+    },
+    {
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "result_id": "R.ACTION.COHESIVE_MC_REPAIR",
+      "curated_result_ids": [
+        "q79_maurer_cartan_repair"
+      ],
+      "disposition": "historical_completion_not_reopened",
+      "reason": "Latest parent instruction suppresses the old title-only suggestion. The finite hierarchy citation retains the repair owner but does not purport to newly integrate this historical owner completion."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "STOCH-CORR-01",
+      "kind": "source_theorem_hypothesis_qualification",
+      "requires_shared_erratum_or_consumer_correction": true,
+      "status": "consumer_corrected_source_owner_notification_required",
+      "result_ids": [
+        "beq_q79_fmo_fmo_q79_transported_metric_semigroup"
+      ],
+      "source_theorem_owner": "BEQ.FMOQ79TransportedMetricSemigroupCertificate.v1",
+      "source_sha256": "d8bc8f4a5e5f1d6a1619b8e145ea6e82ab043ee9334f6b54c0f97714f1055ff0",
+      "source_path": "release/results/beq_q79_fmo_fmo_q79_transported_metric_semigroup/artifact.json",
+      "source_lines": [
+        71,
+        72,
+        73
+      ],
+      "source_json_pointers": [
+        "/observable_semigroup_compiler/operator_bound",
+        "/observable_semigroup_compiler/observable_bound"
+      ],
+      "issue": "The coefficient-one Duhamel bound omits a common operator norm and common-norm semigroup contractivity. Self-adjoint positivity for the physical metric and the transported metric separately does not supply this assumption in either one fixed norm.",
+      "retained_result": "Bounded chain transport, exact g_tr and Hodge/cost identities, metric-chain defect formula, zero-defect exact intertwining and the commuting diagonal source witness remain valid at their stated scopes.",
+      "correction": "On a retained bounded sector with ||Delta_phys-Delta_tr||_tr <= delta, retain kappa*delta*||T|| times the integral from 0 to s of ||exp(-kappa*(s-u)*Delta_phys)||_tr ||exp(-kappa*u*Delta_tr)||_tr du. The coefficient-one kappa*s bound is conditional on common-norm contractions. For uniformly bounded coercive E, a valid transported-norm bound is sqrt(||E||_tr ||E^-1||_tr)*kappa*s*delta*||T||. Multiply by observable and vector norms in the same comparison spaces.",
+      "consumer_guidance": "Specify all norms/domains and a bounded retained sector or justified generator perturbation domain; a delta initial current requires positive-time regularization or a separately justified distribution-space bound. Do not downgrade the entire source or attribute this missing BEQ consumer hypothesis to the upstream H4-T7 exact identities.",
+      "anchors": [
+        "\\label{sec:metric-qualification}",
+        "\\label{sec:cap-observable}"
+      ],
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1007,
+          "label": "sec:metric-qualification"
+        },
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 1060,
+          "label": "sec:cap-observable"
+        }
+      ],
+      "bounded_check": "The local 2x2 example is positive/self-adjoint in its physical metric but has transported Euclidean heat norm 1.200413951775129 > 1. It demonstrates the missing contraction inference, not a claim to independently refute every instance of the displayed source inequality."
+    },
+    {
+      "id": "STOCH-CORR-02",
+      "kind": "local_mathematical_domain_correction",
+      "requires_shared_erratum_or_consumer_correction": false,
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "anchors": [
+        "\\label{lem:action-kernel}"
+      ],
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 350,
+          "label": "lem:action-kernel"
+        }
+      ],
+      "issue": "Finite positive normalization stated only on reachable histories did not itself define a probability kernel on the whole Borel history domain.",
+      "resolution": "Define G_k={0<Z_k<infinity} and extend the normalized expression outside G_k by a fixed probability measure. The intended process is unchanged when its reachable histories lie in G_k."
+    },
+    {
+      "id": "STOCH-CORR-03",
+      "kind": "local_scope_qualification",
+      "requires_shared_erratum_or_consumer_correction": false,
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "anchors": [
+        "\\label{prop:sufficient}"
+      ],
+      "line_anchors": [
+        {
+          "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+          "line": 465,
+          "label": "prop:sufficient"
+        }
+      ],
+      "issue": "An arbitrary standard Borel sufficient-state encoding was previously called finite.",
+      "resolution": "Retitle as sufficient-state compression and explicitly require a chosen finite-state or finite-dimensional summary class for finite-memory claims; retain the exact compression proposition."
+    }
+  ],
+  "source_read_coverage": {
+    "unique_frozen_artifacts": 60,
+    "owner_artifacts": 48,
+    "additional_consumer_context_artifacts": 12,
+    "complete": true,
+    "all_raw_sha256_match_ownership": true,
+    "no_packet_boolean_used_as_independent_verification": true,
+    "artifacts": [
+      {
+        "result_id": "beq_q79_fmo_candidate_audit",
+        "path": "release/results/beq_q79_fmo_candidate_audit/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_candidate_audit/artifact.json",
+        "sha256": "b56093a700b62261a6a291de0bc86059953a2c52d53616f2b69ab25f6917764e",
+        "bytes": 408247,
+        "lines": 6283,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Full JSON read in lossless compact form: repeated identical subtrees referenced to their fully read contents; all unique fields and later refinements retained.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_route_hodge_intertwiner",
+        "path": "release/results/beq_q79_route_hodge_intertwiner/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_route_hodge_intertwiner/artifact.json",
+        "sha256": "830d300451b5ce4b2e34edbed3d766be37ef0ed1f961811249998075cd7ebfda",
+        "bytes": 21417,
+        "lines": 591,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_process_witness",
+        "path": "release/results/beq_q79_process_witness/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_process_witness/artifact.json",
+        "sha256": "5fef91ad54358b96b0cdf446b473907f3a24be1757ce43bea8e5c1f6cf781678",
+        "bytes": 5205,
+        "lines": 145,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_heom_reference",
+        "path": "release/results/beq_fmo_heom_reference/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_heom_reference/artifact.json",
+        "sha256": "921d9b2c9dc8488f99312a7300e24abc8a1acc6fa988eeae1f454f95bfcc76b1",
+        "bytes": 23838,
+        "lines": 801,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_heom_history",
+        "path": "release/results/beq_fmo_heom_history/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_heom_history/artifact.json",
+        "sha256": "0f75bbf7aab5f5c5106be3cd5fac97f6cf8f365d17066bdbec582bd395aa14d3",
+        "bytes": 14634,
+        "lines": 430,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_ado_process_response",
+        "path": "release/results/beq_fmo_ado_process_response/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_ado_process_response/artifact.json",
+        "sha256": "f53eb35e7d945e86948121e0ae5e0cb368ddd79d21a50d1b0f8b158fe0454628",
+        "bytes": 14279,
+        "lines": 446,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_optical_filter_dilation",
+        "path": "release/results/beq_fmo_optical_filter_dilation/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_optical_filter_dilation/artifact.json",
+        "sha256": "470e3d0016d6e0360c2292c31b590c489a97fa12352d3259f400ba0f81f959e4",
+        "bytes": 15768,
+        "lines": 417,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_physical_readout_design",
+        "path": "release/results/beq_fmo_physical_readout_design/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_physical_readout_design/artifact.json",
+        "sha256": "e45a8c2551a6679af16175735b41b0c23a73b56affd8b4a8a99d383f0047e4ec",
+        "bytes": 78789,
+        "lines": 3050,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Full JSON read in lossless compact form: repeated identical subtrees referenced to their fully read contents; all unique fields and later refinements retained.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_su29_root_reachability",
+        "path": "release/results/beq_fmo_su29_root_reachability/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_su29_root_reachability/artifact.json",
+        "sha256": "4ad699737f27509c13ee1be986a83111adb40a5357e8c2c640ffd5cb42b35909",
+        "bytes": 5537,
+        "lines": 109,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_bounded_projective_pulses",
+        "path": "release/results/beq_fmo_bounded_projective_pulses/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_bounded_projective_pulses/artifact.json",
+        "sha256": "e549b51a2552bb53d4b1de8e84c148b54f46953555d6e25ec71fc86f14c4007c",
+        "bytes": 16895,
+        "lines": 323,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_weighted_pulse_search",
+        "path": "release/results/beq_fmo_weighted_pulse_search/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_weighted_pulse_search/artifact.json",
+        "sha256": "1028d9a1e8a55dcc918c6c14392595f1aac87e6e6ea39ed1c62d5927d3855b0a",
+        "bytes": 54331,
+        "lines": 1931,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Full JSON read in lossless compact form: repeated identical subtrees referenced to their fully read contents; all unique fields and later refinements retained.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_bath_projective_ladder",
+        "path": "release/results/beq_fmo_bath_projective_ladder/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_bath_projective_ladder/artifact.json",
+        "sha256": "b57f15a1878ccb01d65c7b9f4daa85c5db372e67f00d7623b50ee6ba5aca5087",
+        "bytes": 9544,
+        "lines": 194,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_bath_weighted_rejection",
+        "path": "release/results/beq_fmo_bath_weighted_rejection/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_bath_weighted_rejection/artifact.json",
+        "sha256": "cb9e7779260f99e0f00d0148cae85f995550c352253e3ea8ff2cb482f937d233",
+        "bytes": 9657,
+        "lines": 194,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_bath_aware_adjoint_gradient",
+        "path": "release/results/beq_fmo_bath_aware_adjoint_gradient/artifact.md",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_bath_aware_adjoint_gradient/artifact.md",
+        "sha256": "f38aac52ad039577bb55c06ef1c759e79c7a8b5ce80ae72f83d26b77fb6e1f74",
+        "bytes": 2159,
+        "lines": 93,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_canonical_d3k1_followup",
+        "path": "release/results/beq_fmo_canonical_d3k1_followup/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_canonical_d3k1_followup/artifact.json",
+        "sha256": "70773515884d54c9eea9e7fb08f62ba76da801aec8c0470355f4ae1ffade12d9",
+        "bytes": 3185,
+        "lines": 62,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_bath_aware_two_seed_replay",
+        "path": "release/results/beq_fmo_bath_aware_two_seed_replay/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_bath_aware_two_seed_replay/artifact.json",
+        "sha256": "8acf7c9dd7fdf4500d28a7a6e214a629ef4b89b7c5a10fae2cd6478bd05329ff",
+        "bytes": 5120,
+        "lines": 103,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_terminal_sector_rejection",
+        "path": "release/results/beq_fmo_terminal_sector_rejection/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_terminal_sector_rejection/artifact.json",
+        "sha256": "840f4bd9b2245ae5e3b8678d211f83e1881d96127f9ee568413347398abd76b9",
+        "bytes": 3865,
+        "lines": 88,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_normalized_300fs_control_rejection",
+        "path": "release/results/beq_fmo_normalized_300fs_control_rejection/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_normalized_300fs_control_rejection/artifact.json",
+        "sha256": "272b0777fcbde7c25654bae16aa243fc7fc22feca6e8b6acd98c199ed0694e89",
+        "bytes": 2768,
+        "lines": 51,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_finite_probe_full_rank_unbounded",
+        "path": "release/results/beq_fmo_finite_probe_full_rank_unbounded/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_finite_probe_full_rank_unbounded/artifact.json",
+        "sha256": "b56aa6604b15cdd6843d3dc09e7b8b5fb48eeeb93975965cf3d12135ee2f54b4",
+        "bytes": 5204,
+        "lines": 109,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_full_carrier_three_of_four",
+        "path": "release/results/beq_fmo_full_carrier_three_of_four/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_full_carrier_three_of_four/artifact.json",
+        "sha256": "ff5d7d53ff9cb68a58e17f375a0ee1335feea45fe9f81cacf1f0528cf80985f5",
+        "bytes": 5261,
+        "lines": 109,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_broad_probe_d1_four_of_four",
+        "path": "release/results/beq_fmo_broad_probe_d1_four_of_four/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_broad_probe_d1_four_of_four/artifact.json",
+        "sha256": "0c304276a9a79f07ffb7c90ce30ba3ab9471c3b463ce7c50a9c25c5b3dd61d60",
+        "bytes": 8428,
+        "lines": 149,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_broad_probe_two_axis_convergence_rejection",
+        "path": "release/results/beq_fmo_broad_probe_two_axis_convergence_rejection/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_broad_probe_two_axis_convergence_rejection/artifact.json",
+        "sha256": "d1b8d0e2dad7fb855fb199734b4779c9535460bd1d8611eeb503f24879998775",
+        "bytes": 11221,
+        "lines": 220,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_broad_probe_d3_depth_instability",
+        "path": "release/results/beq_fmo_broad_probe_d3_depth_instability/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_broad_probe_d3_depth_instability/artifact.json",
+        "sha256": "7fd70fdcc7a47207761eb545f00faed8deba3966ce64083a3818fb2b3fba01dc",
+        "bytes": 6279,
+        "lines": 120,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_broad_probe_hierarchy_tail_diagnostic",
+        "path": "release/results/beq_fmo_broad_probe_hierarchy_tail_diagnostic/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_broad_probe_hierarchy_tail_diagnostic/artifact.json",
+        "sha256": "c29702b6aa3ce78fd6873b68e1a2cee5e5004663b5f1ec75317c55691e36374e",
+        "bytes": 7018,
+        "lines": 156,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_broad_probe_d4_stable_negative",
+        "path": "release/results/beq_fmo_broad_probe_d4_stable_negative/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_broad_probe_d4_stable_negative/artifact.json",
+        "sha256": "dc203c7333bb387e57bcfec1b9e5189d5397298f48f9a5608516fffdb216ce33",
+        "bytes": 6465,
+        "lines": 122,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_physical_ado_tangent",
+        "path": "release/results/beq_fmo_physical_ado_tangent/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_physical_ado_tangent/artifact.json",
+        "sha256": "92938aebe42e104c1933e191c8d2197da19ee3e96f5e0d80c9a14bc67c63feff",
+        "bytes": 41326,
+        "lines": 1578,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Full JSON read in lossless compact form: repeated identical subtrees referenced to their fully read contents; all unique fields and later refinements retained.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_fmo_basis_complete_nuisance",
+        "path": "release/results/beq_fmo_basis_complete_nuisance/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_fmo_basis_complete_nuisance/artifact.json",
+        "sha256": "93db6e7c661c9479df03d91bb6267153f9fa50163c10eaa2acd5e345af1482ca",
+        "bytes": 89907,
+        "lines": 2895,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Full JSON read in lossless compact form: repeated identical subtrees referenced to their fully read contents; all unique fields and later refinements retained.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_charged_hfcis_module",
+        "path": "release/results/beq_q79_fmo_charged_hfcis_module/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_charged_hfcis_module/artifact.json",
+        "sha256": "2f59c98acb383ff3366e72636a770ac1fe3ae6bce4f6aa9a800b17eeed51f2ec",
+        "bytes": 4886,
+        "lines": 100,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_configuration_line",
+        "path": "release/results/beq_q79_fmo_fmo_configuration_line/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_configuration_line/artifact.json",
+        "sha256": "61b9fff7ed54773f9595e0ba2e7498075f3a31328dbd0953ceca77d320177736",
+        "bytes": 8684,
+        "lines": 158,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_diagonal_phase_connection",
+        "path": "release/results/beq_q79_fmo_fmo_diagonal_phase_connection/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_diagonal_phase_connection/artifact.json",
+        "sha256": "3144c240e884eb76ed4e1ea36432bf19b9be36923f156f584a5844722c0be291",
+        "bytes": 6053,
+        "lines": 209,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_jk_relative_phase_path",
+        "path": "release/results/beq_q79_fmo_fmo_jk_relative_phase_path/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_jk_relative_phase_path/artifact.json",
+        "sha256": "987e972e99366c0e495cf18d6a796f79a18e021021600f9ce99080d6d30b61b9",
+        "bytes": 8277,
+        "lines": 125,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_axisymmetric_neumann_observable",
+        "path": "release/results/beq_q79_fmo_fmo_q79_axisymmetric_neumann_observable/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_axisymmetric_neumann_observable/artifact.json",
+        "sha256": "07a2e2102dc6292fda5ed94bebb82de8f59833055e29cba40e6178ac51cb87c4",
+        "bytes": 7238,
+        "lines": 138,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_clock_identifiability",
+        "path": "release/results/beq_q79_fmo_fmo_q79_clock_identifiability/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_clock_identifiability/artifact.json",
+        "sha256": "c09714d0469a8d3299acd1052707e6e25e681cab45d31b39a1ad828ff4395af9",
+        "bytes": 7048,
+        "lines": 159,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_neumann_spectral_interval",
+        "path": "release/results/beq_q79_fmo_fmo_q79_neumann_spectral_interval/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_neumann_spectral_interval/artifact.json",
+        "sha256": "48802f2414792f52165d4d12ecd62f59cc1c535bc36d590f446f197a93e9d63b",
+        "bytes": 6755,
+        "lines": 113,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_phase_fiber_holonomy",
+        "path": "release/results/beq_q79_fmo_fmo_q79_phase_fiber_holonomy/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_phase_fiber_holonomy/artifact.json",
+        "sha256": "a3f859bcd8220deae2398fffa4420237c3ff56095c0e1d2e9706a1b6ef42f140",
+        "bytes": 3517,
+        "lines": 62,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_positive_mixture_hankel",
+        "path": "release/results/beq_q79_fmo_fmo_q79_positive_mixture_hankel/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_positive_mixture_hankel/artifact.json",
+        "sha256": "0a039a8a4471967bc26e64e75483e7673e0c001d8080fd61406f60a6033625ea",
+        "bytes": 5448,
+        "lines": 118,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_positive_time_smoothing_nogo",
+        "path": "release/results/beq_q79_fmo_fmo_q79_positive_time_smoothing_nogo/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_positive_time_smoothing_nogo/artifact.json",
+        "sha256": "059e30294ce1e42b62f43b03152694e70e7ba01c8ab790572545ea593ebd4262",
+        "bytes": 6450,
+        "lines": 131,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_relative_yang_mills_repair",
+        "path": "release/results/beq_q79_fmo_fmo_q79_relative_yang_mills_repair/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_relative_yang_mills_repair/artifact.json",
+        "sha256": "238bd4181c9cdb1d3799e2dbccef96fa94d86a05f21565538cef23f754096f37",
+        "bytes": 5695,
+        "lines": 110,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_signed_oscillatory_prony",
+        "path": "release/results/beq_q79_fmo_fmo_q79_signed_oscillatory_prony/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_signed_oscillatory_prony/artifact.json",
+        "sha256": "69886eae006582537d7fc112e7386d7d7cb4e9fcf5779a5c6d08fcc05b469578",
+        "bytes": 6252,
+        "lines": 151,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_transported_metric_semigroup",
+        "path": "release/results/beq_q79_fmo_fmo_q79_transported_metric_semigroup/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_transported_metric_semigroup/artifact.json",
+        "sha256": "d8bc8f4a5e5f1d6a1619b8e145ea6e82ab043ee9334f6b54c0f97714f1055ff0",
+        "bytes": 6850,
+        "lines": 142,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_q79_upper_action_yang_mills_restriction",
+        "path": "release/results/beq_q79_fmo_fmo_q79_upper_action_yang_mills_restriction/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_q79_upper_action_yang_mills_restriction/artifact.json",
+        "sha256": "df6fedd2cc84a033d5379c4c0076d6ae8066597f2e75347b074b8cbd52b5964c",
+        "bytes": 6526,
+        "lines": 127,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_fmo_synchronous_cap_q79_ramification",
+        "path": "release/results/beq_q79_fmo_fmo_synchronous_cap_q79_ramification/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_fmo_synchronous_cap_q79_ramification/artifact.json",
+        "sha256": "0c87e5ede4480f93c0330f955cbbc3709327cbd1353cfa041d9ecf9bb10c67cd",
+        "bytes": 6472,
+        "lines": 109,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_physical_gate",
+        "path": "release/results/beq_q79_fmo_physical_gate/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_physical_gate/artifact.json",
+        "sha256": "e2f596bd8c94d20ba4878fba7ada6ead992776d59f2928c3eca512248837a498",
+        "bytes": 5249,
+        "lines": 103,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_q79_flat_family_fmo_open_path_pullback",
+        "path": "release/results/beq_q79_fmo_q79_flat_family_fmo_open_path_pullback/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_q79_flat_family_fmo_open_path_pullback/artifact.json",
+        "sha256": "c707973f1ad266ff5a4d1a1481db1a97f016e391f2705abe9d115be9e29f39b1",
+        "bytes": 5095,
+        "lines": 76,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_q79_fmo_selected_endpoint_interval_compiler",
+        "path": "release/results/beq_q79_fmo_q79_fmo_selected_endpoint_interval_compiler/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_q79_fmo_selected_endpoint_interval_compiler/artifact.json",
+        "sha256": "76959795c7eb41123bd363befa2f5914aa11d31859cc033cc20bd6aede327b81",
+        "bytes": 6443,
+        "lines": 104,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_q79_selected_source_base",
+        "path": "release/results/beq_q79_fmo_q79_selected_source_base/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_q79_selected_source_base/artifact.json",
+        "sha256": "28821a3928f3d74487f795d3cc65b08df527836cd659613583a8c2105de16d14",
+        "bytes": 3676,
+        "lines": 56,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_same_source_repair_descent",
+        "path": "release/results/beq_q79_fmo_same_source_repair_descent/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_same_source_repair_descent/artifact.json",
+        "sha256": "dbcad67a6077ece70b80b9c5219b426a27394ce8289a77c48e5c7855941d1ce9",
+        "bytes": 11026,
+        "lines": 300,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "beq_q79_fmo_frontier_consolidation_2026_08_26",
+        "path": "release/results/beq_q79_fmo_frontier_consolidation_2026_08_26/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/beq_q79_fmo_frontier_consolidation_2026_08_26/artifact.json",
+        "sha256": "fa17fb8f1269d52ef30e4eadbcd24ab01306384832ef19f5b433c6085b1f5906",
+        "bytes": 18750,
+        "lines": 330,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "assigned_owner_review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+        "path": "release/results/causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet/artifact.json",
+        "sha256": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c",
+        "bytes": 15150,
+        "lines": 520,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet",
+        "path": "release/results/causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet/artifact.json",
+        "sha256": "8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e",
+        "bytes": 11985,
+        "lines": 353,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "path": "release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json",
+        "sha256": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "bytes": 9310,
+        "lines": 289,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "path": "release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json",
+        "sha256": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "bytes": 7650,
+        "lines": 233,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+        "path": "release/results/causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet/artifact.json",
+        "sha256": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
+        "bytes": 16849,
+        "lines": 547,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "causal_base_q79_all_arity_source_promotion_packet",
+        "path": "release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json",
+        "sha256": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
+        "bytes": 9861,
+        "lines": 230,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "q79_cohesive_superconnection",
+        "path": "release/results/q79_cohesive_superconnection/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_cohesive_superconnection/artifact.json",
+        "sha256": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
+        "bytes": 18455,
+        "lines": 769,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "historical candidate contextual check; no duplicate consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "q79_maurer_cartan_repair",
+        "path": "release/results/q79_maurer_cartan_repair/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_maurer_cartan_repair/artifact.json",
+        "sha256": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
+        "bytes": 14558,
+        "lines": 370,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "historical candidate contextual check; no duplicate consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "causal_base_q79_seven_row_endpoint_factorization_packet",
+        "path": "release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json",
+        "sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
+        "bytes": 14943,
+        "lines": 666,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "q79_continuum_recorder_compiler",
+        "path": "release/results/q79_continuum_recorder_compiler/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_continuum_recorder_compiler/artifact.json",
+        "sha256": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "bytes": 15891,
+        "lines": 413,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "q79_ontology_nonentailment",
+        "path": "release/results/q79_ontology_nonentailment/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_ontology_nonentailment/artifact.json",
+        "sha256": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c",
+        "bytes": 13633,
+        "lines": 271,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      },
+      {
+        "result_id": "q79_fock_output_measure",
+        "path": "release/results/q79_fock_output_measure/artifact.json",
+        "absolute_path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_fock_output_measure/artifact.json",
+        "sha256": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e",
+        "bytes": 9068,
+        "lines": 152,
+        "full_contents_read": true,
+        "proof_explanations_read": true,
+        "presentation": "Whole frozen artifact read, including proof explanations, assumptions, status chronology and guards.",
+        "purpose": "contextual consumer review",
+        "independent_scientific_rerun": false
+      }
+    ],
+    "manuscripts": [
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+        "path": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/main.tex",
+        "lines": 1330,
+        "full_contents_read": true,
+        "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+        "context": "Whole original/current manuscript, bibliography, metadata and audit; revision and all rendered pages inspected."
+      },
+      {
+        "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+        "path": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/main.tex",
+        "lines": 4485,
+        "full_contents_read": true,
+        "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+        "context": "Entire manuscript read in bounded line chunks, including all experimental modules, proofs, later basin/ontology language, failure modes and bibliography; all revisions and every rendered page inspected."
+      }
+    ],
+    "other_context": [
+      {
+        "path": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+        "read_scope": "Relevant v14 source/morphism, finite transfer, response and all-arity owner passages read in context, approximately original lines 1279-1339 and 1361-1630; not a claim to have independently reread the parent full atlas."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/BrainOfEnterprise-MTT-Research-Environment/data/paper-completion-ledger.json",
+        "read_scope": "Both owned papers: all applicable coherence_reconciliations and all new_result_placements. The latest parent historical-candidate correction supersedes the stale raw candidate list."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/BrainOfEnterprise-MTT-Research-Environment/data/corpus-coherence-audit.json",
+        "read_scope": "Target integrated/missing placement groups and scope guards, cross-matched to curated ownership and complete frozen sources."
+      }
+    ]
+  },
+  "paper_changes": [
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+      "previous_current_version": "v2",
+      "current_version": "v3",
+      "version_increment_count": 1,
+      "main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "main_tex_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+      "paper_md_sha256": "a60e79e85c85b16693c86005074d1b47187ceedbfd84a677e25d4d5daa8183fa",
+      "pdf_sha256": "15a65ee024816ce1921f8bffb6f75aa104e09c788208f1e7ad5c1b2ba619e136",
+      "pdf_pages": 23,
+      "pdf_bytes": 511254,
+      "source_tree_sha256": "3b56aa7347267fe356fe4116831455135cd89b54a7650ee7d0d07f1f0ea767fc",
+      "revision_audit_sha256": "27d194f60cafd3ed1b81fa03eeac995e9c488ffd1f0dc27f3fc072e6e995a761",
+      "source_files": [
+        {
+          "path": "main.bib",
+          "sha256": "19d21a1c01e72ca884e86487e783e0ba6550aa20f11cc6b27b8d7cc6274233d8",
+          "bytes": 21316
+        },
+        {
+          "path": "main.tex",
+          "sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+          "bytes": 63675
+        },
+        {
+          "path": "paper-markdown.lua",
+          "sha256": "7a54c3f4ccbcc2fe2aa1efb80ca6bfbb9ae5bc3ec8bacc66abf4caee1101130d",
+          "bytes": 6512
+        },
+        {
+          "path": "series.sty",
+          "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d",
+          "bytes": 3784
+        }
+      ],
+      "released_identity_preserved": true,
+      "styles_unchanged": true,
+      "result_refs_count": 48,
+      "build_checks": {
+        "helper": "scripts/build_contextual_evidence_papers.py",
+        "arguments": [
+          "--paper-id",
+          "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+          "--jobs",
+          "1"
+        ],
+        "invocation": "Imported helper main() with these CLI arguments; only LOG_ROOT relocated to this owned paper/editorial-qa/build to avoid global writes.",
+        "status": "pass",
+        "warnings": [],
+        "log_root": "papers/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/editorial-qa/build",
+        "pdf_generated_by_helper": true,
+        "markdown_generated_by_helper": false,
+        "markdown_generation": "Existing migrate.build_markdown + Pandoc and scoped paper-markdown.lua; this writes local paper.md only.",
+        "markdown_warnings": [],
+        "visual_inspection": {
+          "state": "passed",
+          "reviewed_at": "2026-09-12",
+          "reviewer": "Codex stochastic editorial subagent",
+          "all_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "method": "All page PNGs visually inspected through every four-page contact sheet; listed changed pages also inspected individually at original PNG size.",
+          "zoomed_pages": [
+            1,
+            2,
+            6,
+            7,
+            8,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20,
+            21,
+            22,
+            23
+          ],
+          "findings": "No clipping, overlapping content, missing glyphs, blank pages or broken bibliography layout found. Existing common TeX styles retained."
+        },
+        "markdown_check": {
+          "frozen_artifact_urls": true,
+          "bibliography_entries": 55,
+          "main_tex_raw_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+          "paper_md_sha256": "a60e79e85c85b16693c86005074d1b47187ceedbfd84a677e25d4d5daa8183fa",
+          "conversion": "migrate.build_markdown with scoped paper-markdown.lua; no global refresh run"
+        }
+      },
+      "manually_changed_files": [
+        "main.tex",
+        "metadata.json",
+        "REVISION_AUDIT.md",
+        "paper-markdown.lua",
+        "main.bib",
+        "editorial_qa.py"
+      ],
+      "generated_deliverables": [
+        "main.pdf",
+        "paper.md"
+      ],
+      "generated_qa_files": [
+        "bounded-checks.json",
+        "build/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/bibtex.log",
+        "build/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/pdflatex-1.log",
+        "build/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/pdflatex-2.log",
+        "build/modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6/pdflatex-3.log",
+        "build/summary.json",
+        "contact-01.png",
+        "contact-02.png",
+        "contact-03.png",
+        "contact-04.png",
+        "contact-05.png",
+        "contact-06.png",
+        "pages/page-01.png",
+        "pages/page-02.png",
+        "pages/page-03.png",
+        "pages/page-04.png",
+        "pages/page-05.png",
+        "pages/page-06.png",
+        "pages/page-07.png",
+        "pages/page-08.png",
+        "pages/page-09.png",
+        "pages/page-10.png",
+        "pages/page-11.png",
+        "pages/page-12.png",
+        "pages/page-13.png",
+        "pages/page-14.png",
+        "pages/page-15.png",
+        "pages/page-16.png",
+        "pages/page-17.png",
+        "pages/page-18.png",
+        "pages/page-19.png",
+        "pages/page-20.png",
+        "pages/page-21.png",
+        "pages/page-22.png",
+        "pages/page-23.png",
+        "qa-report.json"
+      ],
+      "build_auxiliary_files": [
+        "main.aux",
+        "main.bbl",
+        "main.blg",
+        "main.log",
+        "main.out",
+        "main.toc"
+      ],
+      "auxiliary_files": [
+        {
+          "path": "editorial_qa.py",
+          "sha256": "8e1f3964408559741ca95c601efae387ce42158bd227870233b796fa74bf0ff4",
+          "bytes": 8041,
+          "role": "Portable bounded editorial checks and PDF rendering helper; not an input to the authored PDF or Markdown."
+        }
+      ]
+    },
+    {
+      "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+      "previous_current_version": "v6",
+      "current_version": "v7",
+      "version_increment_count": 1,
+      "main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "main_tex_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+      "paper_md_sha256": "c89c0e956e1aabb668bac88325dab8ffdeb1c98927a96f6d190f88dc16e14c24",
+      "pdf_sha256": "202962ea24be867d51a297b427692f1bf1758a55181cdc231e66881ae69808ed",
+      "pdf_pages": 60,
+      "pdf_bytes": 780918,
+      "source_tree_sha256": "254af9c2bda589da1fbd25843d9060ddc97aaa50147741b299029d55fd762314",
+      "revision_audit_sha256": "12477560abfdf42888ad44d53ddc74eb99c1e758815f3c2358360f50049ab39a",
+      "source_files": [
+        {
+          "path": "main.tex",
+          "sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+          "bytes": 171165
+        },
+        {
+          "path": "paper-markdown.lua",
+          "sha256": "05955d2f575e48fc2a604af2a344f518b55cd3f5959e005d1676eac222d9f6ee",
+          "bytes": 5988
+        },
+        {
+          "path": "series.sty",
+          "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d",
+          "bytes": 3784
+        },
+        {
+          "path": "wave_particle_projection_duality_mtt_rigorous_v3.tex",
+          "sha256": "26d05c01da9866913bb05f281120599a0641802b4e27686d7b5bf9e2976d3b15",
+          "bytes": 54737
+        }
+      ],
+      "released_identity_preserved": true,
+      "styles_unchanged": true,
+      "result_refs_count": 10,
+      "build_checks": {
+        "helper": "scripts/build_contextual_evidence_papers.py",
+        "arguments": [
+          "--paper-id",
+          "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+          "--jobs",
+          "1"
+        ],
+        "invocation": "Imported helper main() with these CLI arguments; only LOG_ROOT relocated to this owned paper/editorial-qa/build to avoid global writes.",
+        "status": "pass",
+        "warnings": [],
+        "log_root": "papers/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/editorial-qa/build",
+        "pdf_generated_by_helper": true,
+        "markdown_generated_by_helper": false,
+        "markdown_generation": "Existing migrate.build_markdown + Pandoc and scoped paper-markdown.lua; this writes local paper.md only.",
+        "markdown_warnings": [],
+        "visual_inspection": {
+          "state": "passed",
+          "reviewed_at": "2026-09-12",
+          "reviewer": "Codex stochastic editorial subagent",
+          "all_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60
+          ],
+          "method": "All page PNGs visually inspected through every four-page contact sheet; listed changed pages also inspected individually at original PNG size.",
+          "zoomed_pages": [
+            1,
+            2,
+            8,
+            10,
+            11,
+            24,
+            25,
+            26,
+            42,
+            43,
+            45,
+            49,
+            58,
+            59,
+            60
+          ],
+          "findings": "No clipping, overlapping content, missing glyphs, blank pages or broken bibliography layout found. Existing common TeX styles retained."
+        },
+        "markdown_check": {
+          "frozen_artifact_urls": true,
+          "bibliography_entries": 36,
+          "main_tex_raw_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+          "paper_md_sha256": "c89c0e956e1aabb668bac88325dab8ffdeb1c98927a96f6d190f88dc16e14c24",
+          "conversion": "migrate.build_markdown with scoped paper-markdown.lua; no global refresh run"
+        }
+      },
+      "manually_changed_files": [
+        "main.tex",
+        "metadata.json",
+        "REVISION_AUDIT.md",
+        "paper-markdown.lua"
+      ],
+      "generated_deliverables": [
+        "main.pdf",
+        "paper.md"
+      ],
+      "generated_qa_files": [
+        "build/summary.json",
+        "build/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/pdflatex-1.log",
+        "build/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/pdflatex-2.log",
+        "build/wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8/pdflatex-3.log",
+        "contact-01.png",
+        "contact-02.png",
+        "contact-03.png",
+        "contact-04.png",
+        "contact-05.png",
+        "contact-06.png",
+        "contact-07.png",
+        "contact-08.png",
+        "contact-09.png",
+        "contact-10.png",
+        "contact-11.png",
+        "contact-12.png",
+        "contact-13.png",
+        "contact-14.png",
+        "contact-15.png",
+        "pages/page-01.png",
+        "pages/page-02.png",
+        "pages/page-03.png",
+        "pages/page-04.png",
+        "pages/page-05.png",
+        "pages/page-06.png",
+        "pages/page-07.png",
+        "pages/page-08.png",
+        "pages/page-09.png",
+        "pages/page-10.png",
+        "pages/page-11.png",
+        "pages/page-12.png",
+        "pages/page-13.png",
+        "pages/page-14.png",
+        "pages/page-15.png",
+        "pages/page-16.png",
+        "pages/page-17.png",
+        "pages/page-18.png",
+        "pages/page-19.png",
+        "pages/page-20.png",
+        "pages/page-21.png",
+        "pages/page-22.png",
+        "pages/page-23.png",
+        "pages/page-24.png",
+        "pages/page-25.png",
+        "pages/page-26.png",
+        "pages/page-27.png",
+        "pages/page-28.png",
+        "pages/page-29.png",
+        "pages/page-30.png",
+        "pages/page-31.png",
+        "pages/page-32.png",
+        "pages/page-33.png",
+        "pages/page-34.png",
+        "pages/page-35.png",
+        "pages/page-36.png",
+        "pages/page-37.png",
+        "pages/page-38.png",
+        "pages/page-39.png",
+        "pages/page-40.png",
+        "pages/page-41.png",
+        "pages/page-42.png",
+        "pages/page-43.png",
+        "pages/page-44.png",
+        "pages/page-45.png",
+        "pages/page-46.png",
+        "pages/page-47.png",
+        "pages/page-48.png",
+        "pages/page-49.png",
+        "pages/page-50.png",
+        "pages/page-51.png",
+        "pages/page-52.png",
+        "pages/page-53.png",
+        "pages/page-54.png",
+        "pages/page-55.png",
+        "pages/page-56.png",
+        "pages/page-57.png",
+        "pages/page-58.png",
+        "pages/page-59.png",
+        "pages/page-60.png",
+        "qa-report.json"
+      ],
+      "build_auxiliary_files": [
+        "main.aux",
+        "main.log",
+        "main.out",
+        "main.toc"
+      ]
+    }
+  ],
+  "checks": {
+    "bounded_checks": {
+      "checks": {
+        "route_cycle_annihilated": true,
+        "route_projector_idempotent": true,
+        "normalized_route_hodge": true,
+        "cycle_witness_one": true,
+        "incoherent_witness_one_third": true,
+        "all_plus_witness_one_ninth": true,
+        "canonical_output_normalization": true,
+        "phase_holonomy_intersection": true,
+        "external_anchor_not_z64": true,
+        "signed_hankel_small_minor_zero": true,
+        "signed_hankel_rank_three_witness": true,
+        "different_metric_not_common_contraction": true,
+        "metric_distortion_bounds_heat": true
+      },
+      "count": 13,
+      "different_metric_heat_norm": 1.200413951775129,
+      "scope": "Small exact rational examples and one 2x2 norm check; no source scientific reruns."
+    },
+    "pdf_authoring_marker": {
+      "operation": "edit",
+      "expected_outputs": 2,
+      "successfully_run_once_before_first_source_edit": true
+    },
+    "pdfs_built": 2,
+    "pdf_pages_rendered_and_visually_inspected": 83,
+    "source_hashes_verified": 60,
+    "markdown_frozen_links_complete": true,
+    "global_tests_not_run": true,
+    "heavy_scientific_reruns_not_run": true,
+    "independent_source_certificate_verification_claimed": false,
+    "fragment_validation": {
+      "all_required_review_fields_present": true,
+      "unique_owner_results": 48,
+      "unique_source_coverage_entries": 60,
+      "all_literal_tex_anchors_present": true,
+      "all_result_hashes_match_frozen_bytes": true,
+      "all_review_tex_hashes_current": true,
+      "all_source_files_metadata_hashes_current": true,
+      "pdf_hashes_match_inspected_render_sources": true,
+      "all_markdown_citations_and_internal_links_resolve": true,
+      "scoped_git_diff_check": "pass",
+      "all_scoped_consumer_candidates_dispositioned": true,
+      "prior_review_rebinding_requirement_audited": true,
+      "all_268_original_labels_retained": true,
+      "all_27_original_proof_blocks_retained_verbatim": true
+    },
+    "helper_portability": {
+      "checked_at": "2026-09-12T22:03:15.673Z",
+      "state": "pass",
+      "check_count": 9,
+      "checks": [
+        "relative_defaults",
+        "sibling_results_and_path_discovery",
+        "environment_arguments",
+        "cli_overrides_environment",
+        "actionable_missing_papers_repo_error",
+        "actionable_missing_results_repo_error",
+        "actionable_missing_pdftoppm_error",
+        "actual_explicit_paths_and_poppler_executable",
+        "no_machine_specific_source_path"
+      ],
+      "configuration": {
+        "papers_repo": "--papers-repo / MTT_PAPERS_REPO; defaults to repository located from this helper",
+        "results_repo": "--results-repo / MTT_RESULTS_REPO; defaults to sibling ../mtt-results-repro relative to papers repository",
+        "pdftoppm": "--pdftoppm / PDFTOPPM; otherwise shutil.which on PATH"
+      },
+      "bounded_checks_repeated_and_passed": 13,
+      "pdf_rendering_repeated": false,
+      "pdf_rendering_reason": "Only helper path resolution changed. The final PDFs and inspected PNGs are byte-identical to the approved final render.",
+      "metadata_refresh_required": false,
+      "metadata_reason": "editorial_qa.py is an auxiliary QA helper, not a member of metadata source_files; its new hash is recorded in paper_changes. Canonical source-tree, manuscript, PDF, Markdown and frozen-source hashes remain unchanged."
+    }
+  },
+  "remaining_genuine_research": [
+    {
+      "scope": "stochastic / selected physical q79-FMO descent",
+      "requirements": [
+        "Prospectively selected molecular preparation/intervention and calibrated observation law, including GSB/SE/ESA and experiment-matched uncertainty where used.",
+        "Selected nonflat physical visible endpoint, common HYM chamber and actual line/connection pairing; current hidden projective and existential HYM conclusions remain closed.",
+        "Bounded pre-smoothing transport with domain, boundary, flux and physical metric defect control; a selected observable and independently normalized action/clock scale.",
+        "Controlled bath-active realization and numerical/error certification for any physical source-family tangent/Hessian extrapolation; finite negative profiles are not universal no-go results.",
+        "Controlled irreversible driver limit from the closed phase model, if claimed, and a specified admitted finite-memory summary class."
+      ]
+    },
+    {
+      "scope": "wave-particle / generic apparatus extension",
+      "requirements": [
+        "Actual sector A/P/window, physical finite-sector map, detector instrument and clock normalization for the proposed apparatus class.",
+        "Optional survivor-basin realization must satisfy capture and the state-dependent Born bridge; it is not required to reopen the canonical output measure.",
+        "Operational non-entailment leaves ontology and stronger objective actualization separate; no interpretation is selected by this revision."
+      ]
+    }
+  ],
+  "author_approval_questions": [
+    "Approval for any future release of stochastic v3 and wave-particle v7; no upload or release identity change was made.",
+    "Whether to pursue a stronger objective-actualization model is a separate scientific/interpretive decision, not an editorial prerequisite or an unresolved canonical operational theorem."
+  ],
+  "remaining_editorial_items_in_exclusive_scope": [],
+  "parent_integration_required": [
+    "Merge the 48 owner reviews and the source-bound consumer/text reviews into parent-owned global catalogs and Kernel reconciliation.",
+    "Regenerate parent-owned RESEARCH_INTEGRATION/catalog/Kernel views; local generated owner views still reflect the earlier global review snapshot and were not edited here.",
+    "Propagate STOCH-CORR-01 as a precise source-owner erratum/consumer qualification, preserving the scoped exact result.",
+    "Honor missing_result_placements OR explicit consumer_review_required and the latest historical exclusions; canonical output review here is justified by an actual manuscript omission."
+  ],
+  "finalized_at": "2026-09-12T22:03:15.673Z",
+  "completion_coverage": {
+    "checked_at": "2026-09-12T22:03:15.673Z",
+    "ownership_catalog": "catalog/research-ownership.json",
+    "current_owner_assignment_count": 48,
+    "reviewed_owner_result_ids": [
+      "beq_q79_fmo_candidate_audit",
+      "beq_q79_route_hodge_intertwiner",
+      "beq_q79_process_witness",
+      "beq_fmo_heom_reference",
+      "beq_fmo_heom_history",
+      "beq_fmo_ado_process_response",
+      "beq_fmo_optical_filter_dilation",
+      "beq_fmo_physical_readout_design",
+      "beq_fmo_su29_root_reachability",
+      "beq_fmo_bounded_projective_pulses",
+      "beq_fmo_weighted_pulse_search",
+      "beq_fmo_bath_projective_ladder",
+      "beq_fmo_bath_weighted_rejection",
+      "beq_fmo_bath_aware_adjoint_gradient",
+      "beq_fmo_canonical_d3k1_followup",
+      "beq_fmo_bath_aware_two_seed_replay",
+      "beq_fmo_terminal_sector_rejection",
+      "beq_fmo_normalized_300fs_control_rejection",
+      "beq_fmo_finite_probe_full_rank_unbounded",
+      "beq_fmo_full_carrier_three_of_four",
+      "beq_fmo_broad_probe_d1_four_of_four",
+      "beq_fmo_broad_probe_two_axis_convergence_rejection",
+      "beq_fmo_broad_probe_d3_depth_instability",
+      "beq_fmo_broad_probe_hierarchy_tail_diagnostic",
+      "beq_fmo_broad_probe_d4_stable_negative",
+      "beq_fmo_physical_ado_tangent",
+      "beq_fmo_basis_complete_nuisance",
+      "beq_q79_fmo_charged_hfcis_module",
+      "beq_q79_fmo_fmo_configuration_line",
+      "beq_q79_fmo_fmo_diagonal_phase_connection",
+      "beq_q79_fmo_fmo_jk_relative_phase_path",
+      "beq_q79_fmo_fmo_q79_axisymmetric_neumann_observable",
+      "beq_q79_fmo_fmo_q79_clock_identifiability",
+      "beq_q79_fmo_fmo_q79_neumann_spectral_interval",
+      "beq_q79_fmo_fmo_q79_phase_fiber_holonomy",
+      "beq_q79_fmo_fmo_q79_positive_mixture_hankel",
+      "beq_q79_fmo_fmo_q79_positive_time_smoothing_nogo",
+      "beq_q79_fmo_fmo_q79_relative_yang_mills_repair",
+      "beq_q79_fmo_fmo_q79_signed_oscillatory_prony",
+      "beq_q79_fmo_fmo_q79_transported_metric_semigroup",
+      "beq_q79_fmo_fmo_q79_upper_action_yang_mills_restriction",
+      "beq_q79_fmo_fmo_synchronous_cap_q79_ramification",
+      "beq_q79_fmo_physical_gate",
+      "beq_q79_fmo_q79_flat_family_fmo_open_path_pullback",
+      "beq_q79_fmo_q79_fmo_selected_endpoint_interval_compiler",
+      "beq_q79_fmo_q79_selected_source_base",
+      "beq_q79_fmo_same_source_repair_descent",
+      "beq_q79_fmo_frontier_consolidation_2026_08_26"
+    ],
+    "missing_owner_result_ids": [],
+    "scoped_consumer_queue": [
+      {
+        "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+        "coherence_reconciliations": [
+          {
+            "reconciliation_id": "C.FP.01",
+            "result_ids": [
+              "R.CBF.FINITE_TRANSFER_HIERARCHY"
+            ],
+            "review_id": "STOCH-TEXT-20260912-CFP01"
+          }
+        ],
+        "candidate_dispositions": [
+          {
+            "result_id": "R.GEO.COHESIVE_SUPERCONNECTION",
+            "disposition": "historical_completion_not_reopened",
+            "review_id": null,
+            "curated_result_ids": [
+              "q79_cohesive_superconnection"
+            ]
+          },
+          {
+            "result_id": "R.CBF.FINITE_TRANSFER_HIERARCHY",
+            "disposition": "integrated",
+            "review_id": "STOCH-WAVE-20260912-TRANSFER",
+            "curated_result_ids": [
+              "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+              "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet",
+              "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+              "causal_base_q79_symmetric_response_transferred_m4_packet",
+              "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+              "causal_base_q79_all_arity_source_promotion_packet"
+            ]
+          },
+          {
+            "result_id": "R.ACTION.COHESIVE_MC_REPAIR",
+            "disposition": "historical_completion_not_reopened",
+            "review_id": null,
+            "curated_result_ids": [
+              "q79_maurer_cartan_repair"
+            ]
+          },
+          {
+            "result_id": "R.CBF.ENDPOINT_THREE_PACKET_FACTORIZATION",
+            "disposition": "not_applicable",
+            "review_id": "STOCH-WAVE-20260912-ENDPOINT",
+            "curated_result_ids": [
+              "causal_base_q79_seven_row_endpoint_factorization_packet"
+            ]
+          },
+          {
+            "result_id": "R.QM.CONTINUUM_RECORDER_COMPILER",
+            "disposition": "integrated",
+            "review_id": "STOCH-WAVE-20260912-CONTINUUM",
+            "curated_result_ids": [
+              "q79_continuum_recorder_compiler"
+            ]
+          },
+          {
+            "result_id": "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+            "disposition": "integrated",
+            "review_id": "STOCH-WAVE-20260912-ONTOLOGY",
+            "curated_result_ids": [
+              "q79_ontology_nonentailment"
+            ]
+          },
+          {
+            "result_id": "R.QM.CANONICAL_OUTPUT_DESCENT",
+            "disposition": "integrated",
+            "review_id": "STOCH-WAVE-20260912-OUTPUT",
+            "curated_result_ids": [
+              "q79_fock_output_measure"
+            ]
+          }
+        ],
+        "missing_candidate_dispositions": []
+      },
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+        "coherence_reconciliations": [
+          {
+            "reconciliation_id": "C.FP.02",
+            "result_ids": [],
+            "review_id": "STOCH-TEXT-20260912-CFP02"
+          }
+        ],
+        "candidate_dispositions": [],
+        "missing_candidate_dispositions": []
+      }
+    ],
+    "scope_complete": true,
+    "blocking_gaps": []
+  },
+  "prior_review_preservation": {
+    "checked_at": "2026-09-12T22:03:15.673Z",
+    "catalog_path": "catalog/research-integration-reviews.json",
+    "catalog_snapshot_sha256": "b35ae19584d1e086da68e1de5c806932d2e0c3fe0877d3fb91d699a2e2c39ab0",
+    "catalog_review_count": 64,
+    "prior_integrated_or_historical_reviews_in_assigned_papers": 0,
+    "prior_review_rebindings": [],
+    "assessment": "The current prior catalog has no integrated or historical review whose paper_id is either edited paper. There are therefore no pre-existing scoped review records to rebind. This is distinct from historical result groups completed in other owner papers, which are not reopened here. New fragment reviews already carry the final manuscript hashes.",
+    "method": "Compared each pre-edit HEAD manuscript against final LF-normalized bytes; original HEAD hashes equal the pre-edit metadata source hashes. Literal-label and proof-block preservation is a bounded editorial comparison, not independent theorem verification.",
+    "papers": [
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-indivisible-stochastic-449ca9a6",
+        "old_main_tex_lf_sha256": "3209a96436978bb986571d595e4a36f50b2038352dfae838cf9d34c444f6e7bf",
+        "new_main_tex_lf_sha256": "7c0c28e644a84d251576c57ca52a0e62b38389c29d9a0b7db2670d95782f4be2",
+        "original_label_count": 13,
+        "missing_original_labels": [],
+        "original_revision_note": {
+          "found": true,
+          "unchanged": true,
+          "sha256": "f63da2bf8746f0ade3e3e0d5a4d3b877a60fcae06d51f4de6fd1a1010d4df349"
+        },
+        "original_formal_statement_blocks": 14,
+        "unchanged_formal_statement_blocks": 12,
+        "proof_blocks": [
+          {
+            "index": 1,
+            "old_line": 233,
+            "new_line": 266,
+            "lf_sha256": "33d10f97d19b96a866b64f5dd6c8bfd143ab2f5111faed92fe6e35189cedd4b7",
+            "retained_verbatim": true
+          },
+          {
+            "index": 2,
+            "old_line": 308,
+            "new_line": 362,
+            "lf_sha256": "c06498d166a377d1438d7ef772b40bdae6a68894c02eda6c21e83beffe4e3700",
+            "retained_verbatim": true
+          },
+          {
+            "index": 3,
+            "old_line": 330,
+            "new_line": 384,
+            "lf_sha256": "c2a1714c355c37a30566f5d8625e15cefd84a2a6d5bf0acabb602ffaa08f6d52",
+            "retained_verbatim": true
+          },
+          {
+            "index": 4,
+            "old_line": 378,
+            "new_line": 432,
+            "lf_sha256": "9bf0efb52a195713957ea2b956283dc16f46239939e41e2f90ee3f3ef83a3b1d",
+            "retained_verbatim": true
+          },
+          {
+            "index": 5,
+            "old_line": 398,
+            "new_line": 452,
+            "lf_sha256": "48be9ac6d10944e4891fd6986282757edcde856d419a69c1884c8adda4adcff4",
+            "retained_verbatim": true
+          },
+          {
+            "index": 6,
+            "old_line": 426,
+            "new_line": 480,
+            "lf_sha256": "8db6c41abf059a252148caec0bb728efffa533a03a738f2663a5cada793f18b8",
+            "retained_verbatim": true
+          },
+          {
+            "index": 7,
+            "old_line": 465,
+            "new_line": 523,
+            "lf_sha256": "e441fa02d05e5e1b6546d482a8b53aa4c5fe414afeb9d595bd01f1113e7cb90e",
+            "retained_verbatim": true
+          },
+          {
+            "index": 8,
+            "old_line": 512,
+            "new_line": 570,
+            "lf_sha256": "cbc64c623ca553720281a1d33ffd7cb63a32fb2cf5e1dd161919e9eef66fca1f",
+            "retained_verbatim": true
+          },
+          {
+            "index": 9,
+            "old_line": 607,
+            "new_line": 1176,
+            "lf_sha256": "2e694531eb9d66aa888faaae5d8e8d9c6192d7b3655e376efb1af0f11b69cc6d",
+            "retained_verbatim": true
+          }
+        ],
+        "semantic_preservation": "All nine original proof environments and thirteen labels survive unchanged. Twelve of fourteen formal statement blocks are unchanged. The action-kernel lemma now explicitly uses its Borel finite-normalization domain and fixed-probability extension; the sufficient-state proposition removes an unjustified finite adjective. Retain the existing proofs with these stated corrections, not the old overbroad headings. Legacy open-source/quantum prose is updated to respect current selected results without asserting an apparatus or universal source.",
+        "correction_ids": [
+          "STOCH-CORR-02",
+          "STOCH-CORR-03"
+        ],
+        "consumer_review_ids": []
+      },
+      {
+        "paper_id": "wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8",
+        "old_main_tex_lf_sha256": "76f0a8dd61c68e43e2e15da7634429b9d5365e979a69d2fa6f5705667b1dc58a",
+        "new_main_tex_lf_sha256": "036905006b12c38e61bb15e979f9d14566d94a6a1529d1ec40108ec022557ea3",
+        "original_label_count": 255,
+        "missing_original_labels": [],
+        "original_revision_note": {
+          "found": true,
+          "unchanged": true,
+          "sha256": "6d677a23ed0543f2bd41000f01dbbb9ac1485b2cd60b5be937d1dbd386878c80"
+        },
+        "original_formal_statement_blocks": 56,
+        "unchanged_formal_statement_blocks": 56,
+        "proof_blocks": [
+          {
+            "index": 1,
+            "old_line": 623,
+            "new_line": 742,
+            "lf_sha256": "49d6dd1f10870d74567843e0c7ae72be6a44d0a396c287da3007eb1b9a7f2d1a",
+            "retained_verbatim": true
+          },
+          {
+            "index": 2,
+            "old_line": 712,
+            "new_line": 831,
+            "lf_sha256": "4c386710c72e62bfe08f2d0da129eddb2d4d616fb55370cfaf4ff785d5eaa5ad",
+            "retained_verbatim": true
+          },
+          {
+            "index": 3,
+            "old_line": 1105,
+            "new_line": 1224,
+            "lf_sha256": "0b312ce67660d1b9657f1bd8644574db4e50d0a8d5b69f214f3cc013695875bc",
+            "retained_verbatim": true
+          },
+          {
+            "index": 4,
+            "old_line": 1180,
+            "new_line": 1299,
+            "lf_sha256": "b3253e93732f3e51401db3c30b318bcd7a545e9039d9a4ee8bac84127292db0e",
+            "retained_verbatim": true
+          },
+          {
+            "index": 5,
+            "old_line": 1397,
+            "new_line": 1516,
+            "lf_sha256": "60cf11728cca8a223a08c81973000da13952bcdcc4e1ea519be7ddb9c8a201f3",
+            "retained_verbatim": true
+          },
+          {
+            "index": 6,
+            "old_line": 1473,
+            "new_line": 1592,
+            "lf_sha256": "4ef4dbe6ed184a58418084da4ec6ea6263d2a0720b3d35ec6d12d6bcded80cc0",
+            "retained_verbatim": true
+          },
+          {
+            "index": 7,
+            "old_line": 1790,
+            "new_line": 1911,
+            "lf_sha256": "67de5ddf7d5e9a5bcb23afd03fa2365ad9554bf4ea38daaba4c0a012d06c3626",
+            "retained_verbatim": true
+          },
+          {
+            "index": 8,
+            "old_line": 1868,
+            "new_line": 1989,
+            "lf_sha256": "bfdf51c6febfbdbbaa470f9cdb15b4919ddd1945665b57555736d5c7ceaab5eb",
+            "retained_verbatim": true
+          },
+          {
+            "index": 9,
+            "old_line": 2257,
+            "new_line": 2378,
+            "lf_sha256": "3663eb49458420c26e923d744fdedfab0dc97db52d189ff3888267317b4d2727",
+            "retained_verbatim": true
+          },
+          {
+            "index": 10,
+            "old_line": 2443,
+            "new_line": 2564,
+            "lf_sha256": "dc854691d2440d41f2cb0e34042ee0a0f07faec9aacf7d78c24edfebf71a8a2c",
+            "retained_verbatim": true
+          },
+          {
+            "index": 11,
+            "old_line": 2553,
+            "new_line": 2674,
+            "lf_sha256": "82d819c8c49ef8e831f51f6537bc246bc6ad76dad6d982f394c8bd4f2e2b39c3",
+            "retained_verbatim": true
+          },
+          {
+            "index": 12,
+            "old_line": 2760,
+            "new_line": 2881,
+            "lf_sha256": "bdcaf993868e09d8dc1ad17b22d938f6f2d938535269c021c100591b1422bab2",
+            "retained_verbatim": true
+          },
+          {
+            "index": 13,
+            "old_line": 2833,
+            "new_line": 2954,
+            "lf_sha256": "f14fff838470060c273cdd226ae03cd41254d5dfc27fce320f94a058cc76ff37",
+            "retained_verbatim": true
+          },
+          {
+            "index": 14,
+            "old_line": 2883,
+            "new_line": 3004,
+            "lf_sha256": "41a95cd40dbaf236ede12fcfb641d0d0c6409706bfd5a13caf9bc48e469bed12",
+            "retained_verbatim": true
+          },
+          {
+            "index": 15,
+            "old_line": 2898,
+            "new_line": 3019,
+            "lf_sha256": "0a0f35735fb5fc9ebcc6bb6cf6866d7bbad610d925ceb2b77725fea54fd21a38",
+            "retained_verbatim": true
+          },
+          {
+            "index": 16,
+            "old_line": 2915,
+            "new_line": 3036,
+            "lf_sha256": "22185ca229d9707cd8b90c3ba9e73dc9db00acf75169582823c6e9da121b19b5",
+            "retained_verbatim": true
+          },
+          {
+            "index": 17,
+            "old_line": 3290,
+            "new_line": 3415,
+            "lf_sha256": "6e49882cf6b58b1ebe458329ed39c0d3d045bc1918c7031e95bb2b6c5aa3f830",
+            "retained_verbatim": true
+          },
+          {
+            "index": 18,
+            "old_line": 3332,
+            "new_line": 3457,
+            "lf_sha256": "c8c3f096119fc0d4cce966954e26e9e219e12c9afb6f043c08a41be6b5cc458e",
+            "retained_verbatim": true
+          }
+        ],
+        "semantic_preservation": "All eighteen original proof environments, fifty-six formal statement blocks and 255 labels survive unchanged. Older unconditional basin-stabilization prose is now explicitly a conditional encoding; it must not be reused as a theorem of actualization. Added canonical-output, continuum-recorder and ontology imports retain their current owner scopes.",
+        "correction_ids": [],
+        "consumer_review_ids": [
+          "STOCH-WAVE-20260912-TRANSFER",
+          "STOCH-WAVE-20260912-CONTINUUM",
+          "STOCH-WAVE-20260912-ONTOLOGY",
+          "STOCH-WAVE-20260912-OUTPUT"
+        ]
+      }
+    ]
+  }
+}

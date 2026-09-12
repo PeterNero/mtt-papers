@@ -1,12 +1,12 @@
 {
-  "abstract": "We re-execute the Route A geometric overlap ansatz against the selected multi-loop gauge-profile targets of Paper I. In its stated dimensionless normalization, a round two-sphere effective lens base and an isotropic compact Heisenberg nilmanifold can be retargeted analytically to reproduce the two target overlap ratios. The spectral lower bounds remain well above the assumed dimensionless admissibility floor. This establishes the existence of a calibrated representative in the declared auxiliary ansatz. It does not prove a full lens-space reduction, identify the auxiliary Lens-Nil representative with the selected q79/Fu-Yau compactification, select a geometry uniquely by MTT, or make the gauge couplings held-out predictions. The shared circle is common U(1) phase and holonomy data rather than an additional Cartesian factor.",
+  "abstract": "We re-execute the Route A geometric overlap ansatz against the selected multi-loop gauge-profile targets of Paper I. In its stated dimensionless normalization, the effective round-sphere lens base and isotropic compact Heisenberg nilmanifold can be retargeted analytically: the squared lens amplitude-radius product equals 0.2555137 times the circle coordinate R1, and the nil coefficient equals 0.9948493 times R1. The spectral lower bounds remain above the assumed dimensionless admissibility floor. This establishes a calibrated representative in the declared auxiliary ansatz. It does not prove that the full lens space reduces to the spherical model, identify that representative with the q79 Fu-Yau compactification, select a geometry uniquely by MTT, or predict the gauge couplings without their measured inputs. The shared circle is common phase and holonomy data, not an additional coordinate factor multiplying Lens and Nil.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026",
+  "current_version": "v3",
+  "date": "September 2026 (Version 3)",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262079",
     "created": "2026-07-29T08:52:21.155489+00:00",
@@ -32,36 +32,50 @@
     "updated": "2026-07-29T08:52:21.531301+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "82df865f0bc9b012cfccebec428cd333458ff5269ad87b043aeb90be95e15906",
+  "main_tex_sha256": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896",
   "paper_id": "theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca",
-  "paper_md_sha256": "15e5590dcaaa0b9523c3a1853f7eec16c5e9516aaf4e5ce35ddaad59bddb0d66",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "b6ffc18b6513f224c7153f3f1bc5d0628db4f33eabff02ee19789ee8ceb794f5",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "eta9_gate1_campaign",
+    "eta9_three_cycle_b96_nondetection",
+    "q79_bk3_rank_zero_kernel"
+  ],
   "revision": {
-    "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "aca7273fd674c4c44ef9bfe200c9568dae4653bafc773db01bb9092a8620ce07",
+    "revision_evidence_path": "papers/theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "2965d33b29afb5d89c2efd75b4ec7f5a20d9985b477aeea57bf58e349988b0d1",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 22668,
+      "bytes": 27260,
       "path": "main.tex",
-      "sha256": "82df865f0bc9b012cfccebec428cd333458ff5269ad87b043aeb90be95e15906"
+      "sha256": "2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 395452,
+      "path": "main.pdf",
+      "sha256": "6958bc3ea93a3ca3be2f1623d135bc4c3369c1a5b3f069763a4c4a96edeae878"
+    },
+    {
+      "bytes": 3245,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "2965d33b29afb5d89c2efd75b4ec7f5a20d9985b477aeea57bf58e349988b0d1"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_II__Direct_Geometric_Realization_of_Nonabelian_Overlaps_v2"
   },
-  "source_tree_sha256": "11382ec9e5311915956381b1a6a6384e032a0364eb381c81eed06f057e7e1b74",
+  "source_tree_sha256": "53b2f9425cdb27ef356e2329626fc8d29b4b6893a50fce3ab7a3fff4d9608d00",
   "title": "Theta Closure in Modal Triplet Theory II: Direct Geometric Realization of Selected Gauge-Profile Overlaps",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18262079",

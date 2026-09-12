@@ -1,13 +1,13 @@
 ---
 abstract: |
-  We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions $`1+2+3`$. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the q79-side finite bridge is sharpened: one universal flat differential line commutes with the $`1+2+3`$ lane projectors and lifts the normalized Reynolds Hessian exactly. This closes connection/holonomy and Hessian naturality at finite-symbol tier. The same-source continuum intertwiner from the local strain normal form to the nonzero-Chern physical HYM carrier remains isolated and open.
+  We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions $`1+2+3`$. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the q79-side finite bridge is sharpened: one universal flat differential line commutes with the $`1+2+3`$ lane projectors and lifts the normalized Reynolds Hessian exactly. This closes connection/holonomy and Hessian naturality at finite-symbol tier. The same-source continuum intertwiner from the local strain normal form to the nonzero-Chern physical HYM carrier remains isolated and open. The selected internal TT co-shape support is explained separately: its helicity-two carrier and normalized internal eigenvalue are exact, while the physical stress-energy map and SI normalization are not supplied by them. The curved connection compiler and nonlinear spectral-strain shorting now replace the excluded linear root-space route, including the later support-stratified boundary law. Finite higher transfer is distinguished from both an analytic fixed-point theorem and a physical strain action.
 author:
 - Peter Nero
-current_version: v7
-date: Corrected seventh edition July 2026
-generated_from_main_tex_sha256: 364847103297b529053639ed1975998b3758cf55226eda53dc63da3f4f126bba
+current_version: v8
+date: September 2026, Version 8
+generated_from_main_tex_sha256: cb0f09b611bd68de2e44dd8e312a2984b51befb157f4218c8e4ebb0f2612d975
 paper_id: closure-strain-geometry-local-normal-forms-and-conditio-b62ade60
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v7
 title: |
   Closure-Strain Geometry:
@@ -16,6 +16,31 @@ zenodo_doi: 10.5281/zenodo.21654884
 zenodo_record_id: 21654884
 zenodo_url: "https://zenodo.org/records/21654884"
 ---
+
+# Closure-Strain Geometry: Local Normal Forms and Conditional Matter Encodings
+
+Peter Nero. September 2026, Version 8
+
+## Abstract
+
+We extract the exact geometry of closure strain from earlier Standard-Model interpretations. For an invertible rank-three comparison field, polar or Iwasawa reduction removes three orientation directions and leaves six strain directions. With a selected orthonormal flag these split orthogonally into scalar, traceless-diagonal, and shear sectors of dimensions $`1+2+3`$. We give explicit projectors and a norm identity, explain the relation and distinction between symmetric shear and the Heisenberg nil algebra, and state precisely what a closure Hessian proves. In particular, Hessian positivity does not select a unique Higgs, three families, Standard Model charges, confinement, mixing, or CP violation. Those identifications require representation, connection, action, and source theorems. Current q79 and finite-algebra calculations are incorporated at their declared profile-equivalence tier, and the q79-side finite bridge is sharpened: one universal flat differential line commutes with the $`1+2+3`$ lane projectors and lifts the normalized Reynolds Hessian exactly. This closes connection/holonomy and Hessian naturality at finite-symbol tier. The same-source continuum intertwiner from the local strain normal form to the nonzero-Chern physical HYM carrier remains isolated and open. The selected internal TT co-shape support is explained separately: its helicity-two carrier and normalized internal eigenvalue are exact, while the physical stress-energy map and SI normalization are not supplied by them. The curved connection compiler and nonlinear spectral-strain shorting now replace the excluded linear root-space route, including the later support-stratified boundary law. Finite higher transfer is distinguished from both an analytic fixed-point theorem and a physical strain action.
+
+# Revision note for version 8
+
+Supersedes.
+Version 7; the preceding edition’s revision note is retained below.
+
+Reason.
+The frozen TT support result appeared only in the evidence list, leaving its relation to strain, helicity, and physical normalization unexplained.
+
+Resolution.
+Version 8 imports the scoped support argument and explains the distinction between internal support, physical stress-energy response, cost pullback, and reducing operator transport. It also explains the curved connection compiler, nonlinear strain shadow, support-stratified boundary, finite transfer hierarchy, and real/complex and polar-metric qualifications.
+
+Retained.
+The local normal form, finite shared-line/Hessian square, established internal TT support, and finite/profile SM conclusions retain their original tiers.
+
+Open boundary.
+Physical nonflat comparison, stress-energy response and SI normalization remain open. Established support and finite/profile results are retained.
 
 # Revision note for this edition
 
@@ -112,7 +137,7 @@ The nine local comparison components split as
  =\mathfrak{so}(3)\oplus\operatorname{Sym}(3,\mathbb R),
  \qquad 9=3+6.
 ```
-This is a local field-component decomposition, not a product decomposition of a manifold.
+This is a local field-component decomposition, not a product decomposition of a manifold. Its orthogonality is the skew/symmetric split at the identity, not a claim that polar variations $`\Omega U`$ and $`\delta U`$ are orthogonal in the ambient Frobenius metric at an arbitrary $`U`$. The logarithmic strain has its own declared metric; transporting a cost to these coordinates requires its pullback, including the background-dependent derivative.
 
 # Exact $`1+2+3`$ normal form
 
@@ -308,18 +333,18 @@ This theorem closes the target-side finite square, not the physical bridge. The 
 
 What has been gained is a fixed codomain for the missing map. The target projectors, line action, and normalized finite Hessian no longer have to be guessed while constructing the intertwiner. The remaining task is to show that the physical continuum geometry emits those already fixed objects, not merely another rank-six model with a similar spectrum.
 
-The local strain bundle has the same rank profile. The needed map is
+The local strain bundle has the same rank profile over a different scalar field. For a complex-linear identification, complexify the real strain bundle; alternatively supply a compatible real form of the q79 carrier. The candidate map in the first convention is
 ``` math
 \mathfrak I:
- \operatorname{im}P_{\rm sc}\oplus
+ (\operatorname{im}P_{\rm sc}\oplus
  \operatorname{im}P_{\rm sh}\oplus
- \operatorname{im}P_{\rm nil}
+ \operatorname{im}P_{\rm nil})\otimes_{\mathbb R}\mathbb C
  \longrightarrow \mathcal H_{\rm q79}.
 ```
 
 <div class="theorem">
 
-**Theorem 6** (Requirements for physical promotion). *Rank matching promotes to a same-source physical identification only if $`\mathfrak I`$ is a global bundle isomorphism and, on the selected domains,
+**Theorem 6** (Requirements for a linear physical identification). *Within the proposed bundle-isomorphism route, rank matching promotes to a same-source linear identification only if $`\mathfrak I`$ is a global bundle isomorphism and, on the selected domains,
 ``` math
 \mathfrak I^*G_{\rm HYM}=G_{\rm strain},
  \qquad
@@ -333,13 +358,58 @@ with analogous identities for the retarded and overlap kernels used to emit the 
 
 <div class="proof">
 
-*Proof.* A physical identification must be independent of local trivialization and must preserve the structures used to define the action and observables. Bundle, metric, connection, and operator intertwining are therefore necessary. They are also sufficient to transport the declared quadratic and overlap calculations between the two descriptions. ◻
+*Proof.* A linear identification must be independent of local trivialization and must preserve the structures used to define the action and observables. Bundle, metric, connection, and operator intertwining are therefore necessary. They are also sufficient to transport the declared quadratic and overlap calculations between the two descriptions. ◻
 
 </div>
 
-Constructing this map is the decisive remaining foundation theorem for using the local closure-strain geometry as the source of the q79 numerical carrier. It is no longer necessary to reconstruct the q79 finite target square while doing so; that square is the closed codomain of the required intertwiner.
+These conditions specify the strong linear route, not every possible effective reduction. In particular, the viable spectral-strain construction below is nonlinear and shorted. The closed finite target square survives; an excluded linear realization must not be revived merely to match it.
+
+## Curved geometry and the nonlinear strain shadow
+
+The QM owner describes the physical continuum target using a covariant projective module, retaining its connection and domain data \[[1](#ref-QMGeometry),[4](#ref-FrozenProjective),[5](#ref-FrozenCech)\]. A smooth finite matrix projector $`p(x)`$ still has infinitely many possible base modes. Its explicit Čech realization carries a correction $`\Gamma`$ to the Grassmann connection; forgetting $`\Gamma`$ generally changes the supplied physical connection. Naturality transports the actual connection, curvature, metric and spectral windows together. It does not make a chosen raw Fourier window reducing. The CLN ranks describe a local, auxiliary or filtrational carrier, not $`S^1\times\mathrm{Lens}\times\mathrm{Nil}`$ as the global q79 topology. An external flag is not a parallel subbundle inserted into an irreducible physical HYM connection.
+
+<span id="sec:consumer-strain" label="sec:consumer-strain"></span> The physical relative-phase action on $`\operatorname{Herm}(3)`$ excludes the old stable linear rank-six root-space identification: its $`S_3`$ character is $`(6,0,0)`$, whereas the diagonal/edge carrier has character $`(6,2,0)`$. The replacement is the nonlinear map
+``` math
+\Phi(X)=(d_0,d_1,d_2,|z_{12}|^2,|z_{20}|^2,|z_{01}|^2),
+```
+where $`d_i`$ are the diagonal entries and $`z_e`$ the cyclic off-diagonal entries. The full relative-phase quotient also retains $`t=z_{12}z_{20}z_{01}`$, with $`|t|^2=\prod_e|z_e|^2`$; it is generically seven-dimensional. Thus the six displayed coordinates are a strain shadow that discards the triangle phase, not the entire quotient \[[6](#ref-FrozenStrain)\].
+
+If $`J=D\Phi`$ and $`G_Q`$ is the reduced Green of a positive source Hessian on its harmonic complement, minimizing source cost at fixed strain gives $`H_{\rm eff}=(JG_QJ^*)^{-1}`$ where the reduced covariance is invertible. For example, observing only TT strain means using $`J_{\rm TT}=P_{\rm TT}J`$ in this formula. Inverting the full covariance and then projecting generally gives a different operator. Under a supplied same-source $`S_3\times C_4`$ action preserving domains and $`G_Q`$, fixing or transporting the background, and intertwining $`J`$ with $`J_{DE}`$, the two equivalent TT copies acquire the scalar Reynolds shape. The symmetry lift and overall action scale are not selected by this conditional implication.
+
+The later support-stratified theorem covers the global cone $`\mathbb R^3\times[0,\infty)^3`$ \[[7](#ref-FrozenSupport)\]. With support $`S`$, $`\operatorname{rank}D\Phi=3+|S|`$. A zero edge first appears as $`|\delta z_e|^2`$, so its source quadratic cost is degree one in the normal strain coordinate. Tangential shorting remains valid, but no ordinary full six-dimensional boundary Hessian exists; a pseudoinverse does not invent those missing normal directions. Rank-six surjectivity or the required local $`C_4`$ derivative forces the regular all-nonzero-edge stratum. Global regularity therefore is not an additional independent physical input once that contract holds. The selected endpoint, reduced Green and physical symmetry lift remain separate obligations. $`J_{DE}`$ is a tangent operation, not an automorphism of the entire orthant.
+
+## Finite transfer is not a physical strain action
+
+Cohesive Closure Repair owns the exact symmetric Weyl transfer \[[2](#ref-CohesiveCurrent),[8](#ref-FrozenMThree),[9](#ref-FrozenMFour),[10](#ref-FrozenHigher),[11](#ref-FrozenNaturality)\]. Its 144-dimensional DGA retracts to the old 36-dimensional complex together with a twelve-dimensional higher-jet harmonic ideal. The resulting 48-dimensional target is not a minimal model: its differential is nonzero, and its nonassociative binary product is accompanied by nonzero higher operations. The complete $`m_3`$ and $`m_4`$ results are refined by a proved nonzero family at every arity, not by a complete table from $`m_5`$ onward. Contraction-preserving source maps transport all arities by the tree formula; finite probes alone would not prove that conclusion. None of these operations is a physical interaction vertex without the selected action and continuum comparison. Fixed Points I remains the owner of the analytic existence and contraction gates: applying them here still requires a selected operator, invariant complete domain, and the relevant gap, derivative and resolvent bounds \[[3](#ref-FixedPointsCurrent)\]. The finite transfer supplies none of those physical inputs by itself.
+
+## Cost pullback does not imply operator transport
+
+The preceding conditions are stronger than agreement of a restricted quadratic cost. For an elementary example take
+``` math
+Ux=(x,0),\qquad
+ H_c=\begin{pmatrix}1&1\\1&2\end{pmatrix},\qquad H_f=(1).
+```
+Here $`H_c`$ is positive definite and $`U^*H_cU=H_f`$, so the cost pulls back exactly. Nevertheless $`H_cUx=(x,x)`$ whereas $`UH_fx=(x,0)`$: the selected range is not invariant. Even exact intertwining on one invariant subspace does not exclude additional zero modes in an unrepresented orthogonal subspace. These are bounded linear-algebra illustrations of the interface, not new physical models.
+
+The Proto-Spinor paper, version 8, explains the source-owned overlap-polar construction and its domain, scale, leakage and complement conditions \[[17](#ref-ProtoSpinorCurrent)\]. Those conditions are what allow finite Hessian information to be transported; agreement of dimensions or positive repair cost is insufficient. A positive repair functional also must not be substituted for a physical signed action.
+
+## What the exact internal TT support supplies
+
+The frozen GR/QG source addresses a different but compatible question: which internal directions can couple to the physical transverse-traceless (TT) quotient on the selected exact branch? That quotient is the real two-plane of plus and cross polarizations. A rotation of the transverse frame acts with twice its angle. In the central-circle regular carrier $`\mathbb C[\mathbb Z_{64}]`$, the corresponding real plane is spanned by the cosine and sine modes $`c_2,s_2`$, equivalently the conjugate characters $`k=2,62`$. Selecting the exact $`d_*`$ branch fixes the internal carrier; it does not select an SI length or an arbitrary direction inside the strain flag \[[16](#ref-FrozenTT)\].
+
+The source’s proof chain first accepts the selected core co-shape as $`B_0^*P_{\rm TT}=U_{\rm TT}C`$, where $`C`$ is an invertible change of TT basis and inner-product normalization. Its canonical value is $`I_2`$, not a physical fit parameter. The finite support calculation supplies rank two, zero leakage and same-angle central-shift intertwining. The selected proper-time factorization then transports this core support to the dressed map. With these premises the exact conclusion is
+``` math
+\Pi_{\rm exact64}B^*P_{\rm TT}=B^*P_{\rm TT},\qquad
+ \operatorname{supp}(J_{\rm TT})
+ =|d_*\rangle\otimes\operatorname{span}_{\mathbb R}\{c_2,s_2\}.
+```
+The branch tower supplies $`\lambda_{{\rm GR},{\rm TT}}=15`$ in normalized internal units. This is the accepted scoped source theorem, not an independent verification inferred from boolean certificate fields.
+
+There are two important type distinctions. First, this helicity-two support is not the whole six-dimensional closure-strain space or its selected three-dimensional shear sector. A relation requires the physical source map, not matching ranks. Second, the value $`15`$ is not automatically the $`\kappa`$ in the finite q79 repair Hessian, a graviton mass, Newton’s constant, or a Planck scale. The full physical stress-energy response and dimensionful normalization remain separate. Globally the external helicity bundle over momentum directions must also remain distinct from the internal flat shared line. The internal support result is retained exactly; these qualifications identify its consumers rather than downgrading it.
 
 # Status ledger
+
+<div class="center">
 
 | Object | Status | Meaning |
 |:---|:---|:---|
@@ -348,15 +418,35 @@ Constructing this map is the decisive remaining foundation theorem for using the
 | Iwasawa $`SO(3)AN`$ dimensions | proved | local/group normal form |
 | q79 trace-split rank carrier | selected theorem | global rank $`1+2+3`$ carrier |
 | q79 shared line and finite Hessian | proved at finite-symbol tier | connection, holonomy, projector, and Hessian square |
+| Internal TT co-shape support | exact on selected branch | helicity-two support; internal eigenvalue $`15`$, not SI normalization |
 | Finite SM algebra and profile operator | closed at declared profile tier | embedded renormalized-SM equivalence |
 | Unique Higgs from Hessian | not a theorem | requires representation and alignment source |
 | Three families from three lanes | not a theorem | requires index/monodromy source |
-| Local strain–q79 identification | open | requires same-source intertwiner |
+| Local strain–q79 identification | conditional/open | nonlinear shadow exact; physical endpoint, Green and symmetry lift required |
 | Strict no-knob value selection | stronger upgrade | not claimed here |
+
+</div>
 
 # Conclusion
 
 Closure-strain geometry supplies a useful and exact six-dimensional local normal form. Its real achievement is the explicit $`1+2+3`$ decomposition and its compatibility target with the selected q79 carrier. The target is now stronger than a rank match: its common flat differential line and normalized finite Hessian square are exact. Standard Model organization becomes credible only when the finite representation and source packets are cited at their actual tier. The paper therefore replaces broad inevitability claims with one concrete bridge theorem capable of promoting the local geometry into the already executed numerical branch.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The following earlier capsule is retained as provenance, not as a current count of open obligations. New contextual imports use the immutable frozen citations in the bibliography and the boundaries stated in this revision. The local closure-strain decomposition is proved in the paper. The selected q=79, finite-matrix, anomaly, HYM, and internal TT rows provide concrete realizations or compatibility checks; they do not turn the conditional matter interpretation into a source theorem. The remaining Standard Model packets are corpus-state context.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 #### Rows used directly in this paper.
 
@@ -383,8 +473,6 @@ Closure-strain geometry supplies a useful and exact six-dimensional local normal
 - (*derived exact*).
 
   Sparse 27x27 qutrit-Weyl left-action realization.
-
-= by -
 
 #### Corpus-state cross-checks.
 
@@ -424,8 +512,6 @@ Closure-strain geometry supplies a useful and exact six-dimensional local normal
 
   Promoted P_EW source row at the declared one-shared-primitive standard.
 
-= by -
-
 #### Open boundary (not evidence of closure).
 
 - (*open*).
@@ -434,51 +520,72 @@ Closure-strain geometry supplies a useful and exact six-dimensional local normal
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
+# References
 
-The local closure-strain decomposition is proved in the paper. The selected q=79, finite-matrix, anomaly, HYM, and internal TT rows provide concrete realizations or compatibility checks; they do not turn the conditional matter interpretation into a source theorem. The remaining Standard Model packets are corpus-state context.
+<a id="ref-QMGeometry"></a>
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+\[1\] P. Nero, *Modal Triplet Theory: From MTT to Quantum Mechanics*, projective HYM, Čech compiler, spectral-strain and support-stratification sections, current owner manuscript, 2026.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+<a id="ref-CohesiveCurrent"></a>
 
-## Rows used directly in this paper
+\[2\] P. Nero, *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows*, version 14, response-retract and all-arity source-map sections, 2026. The structural results are retained in the additive successor.
 
-- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
-- `A13/gr_tt_support` (**DERIVED_EXACT**): Exact-branch internal TT support certificate; physical normalization remains open.
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
-- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
-- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+<a id="ref-FixedPointsCurrent"></a>
 
-## Corpus-state cross-checks
+\[3\] P. Nero, *Fixed Points I: Projected Fixed Points, Equilibria, and Noncompact Domains in Modal Triplet Theory*, current analytic owner manuscript, 2026.
 
-- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
-- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
-- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
-- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
-- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
-- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
-- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
-- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+<a id="ref-FrozenProjective"></a>
 
-## Open boundary (not evidence of closure)
+\[4\] P. Nero, [Covariant projective-module HYM naturality](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_hym_naturality/artifact.json), frozen result, 2026.
 
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+<a id="ref-FrozenCech"></a>
 
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+\[5\] P. Nero, [Explicit curved connection compiler](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cech_projector_compiler/artifact.json), frozen result, 2026.
 
-<div class="thebibliography">
+<a id="ref-FrozenStrain"></a>
 
-9 S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978.
+\[6\] P. Nero, [Intrinsic spectral-strain quotient and shorted Hessian](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_spectral_strain_hessian/artifact.json), frozen result, 2026.
 
-A. Connes, *Noncommutative Geometry*, Academic Press, 1994.
+<a id="ref-FrozenSupport"></a>
 
-P. Nero, *MTT Current True SM Closure Consolidated Ledger*, internal theorem and verification packet, 2026.
+\[7\] P. Nero, [Global support-stratified strain and boundary-Hessian exclusion](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_support_stratified_strain/artifact.json), frozen result, 2026.
 
-P. Nero, *q79 Universal Shared Differential Line and Finite-Operator Intertwiner*, executable theorem packet, 2026.
+<a id="ref-FrozenMThree"></a>
 
-</div>
+\[8\] P. Nero, [Symmetric response retract and transferred ternary operation](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-FrozenMFour"></a>
+
+\[9\] P. Nero, [Transferred quaternary operation and arity-four coherence](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-FrozenHigher"></a>
+
+\[10\] P. Nero, [Higher-jet support and all-arity nontruncation](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-FrozenNaturality"></a>
+
+\[11\] P. Nero, [All-arity contraction-morphism naturality](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json), frozen result, 2026.
+
+<a id="ref-Helgason"></a>
+
+\[12\] S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978.
+
+<a id="ref-Connes"></a>
+
+\[13\] A. Connes, *Noncommutative Geometry*, Academic Press, 1994.
+
+<a id="ref-MTTSM"></a>
+
+\[14\] P. Nero, *MTT Current True SM Closure Consolidated Ledger*, internal theorem and verification packet, 2026.
+
+<a id="ref-SharedLine"></a>
+
+\[15\] P. Nero, *q79 Universal Shared Differential Line and Finite-Operator Intertwiner*, executable theorem packet, 2026.
+
+<a id="ref-FrozenTT"></a>
+
+\[16\] P. Nero, [GR TT Support Final Theorem](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/gr_tt_support/artifact.json), frozen exact-branch result, 2026. The version 8 contextual import uses this immutable snapshot; the older managed evidence snapshot above remains an earlier reference.
+
+<a id="ref-ProtoSpinorCurrent"></a>
+
+\[17\] P. Nero, *The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface*, version 8, 2026, sections on finite operators and the continuum construction. Owner exposition of the frozen FSB.03a–e results.

@@ -10,6 +10,10 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage[nameinlink,capitalise]{cleveref}
+\hypersetup{
+  pdftitle={Modal Triplet Theory and the Hull-Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary},
+  pdfauthor={Peter Nero}
+}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -47,7 +51,7 @@ Modal Triplet Theory and the Hull--Strominger System:\\[0.25em]
 \large A Conditional Fixed-Point Correspondence and the \(q=79\)
 Completion Boundary}
 \author{Peter Nero}
-\date{Version 2, July 2026}
+\date{Version 3, September 2026}
 
 \begin{document}
 \maketitle
@@ -62,15 +66,49 @@ bridge from an upstairs MTT configuration space to Hull--Strominger data and
 prove exact and residual fixed-point descent theorems.  Exact descent requires
 the bridge to intertwine the selected MTT flow with a lower geometric flow,
 such as the Anomaly flow together with the required bundle evolutions.
-Approximate intertwining yields only a quantified equation residual.  These
-results establish a conditional correspondence, not compactification
-selection.  The former selection-potential, global-convexity, and automatic
-Fu--Yau claims are withdrawn.  Established Fu--Yau and Anomaly-flow results
-provide a mathematically appropriate lower target, while the selected
-\(q=79\) program still lacks one common rank-three visible--hidden
-Hull--Strominger tuple and a connection-preserving intertwiner from the MTT
-carrier.
+Approximate intertwining bounds the lower generator; a full equation bound
+additionally requires control of the residual-to-generator map.  A contextual
+analysis of the selected \(q=79\) constructions separates the established
+hidden projective rank-nine bundle and existential Hermitian--Yang--Mills
+connection from the unconstructed physical visible rank-three bundle and
+common endpoint.  Full Bott--Chern injectivity supplies an anomaly potential
+once the same-source curvature pair exists, but does not supply positivity
+or integral differential flux data.  A transverse Fu--Yau shortcut is excluded
+for the required nonzero visible third Chern class; a full nontransverse
+residual compiler is available conditionally.  These results establish a
+typed completion contract, not compactification selection or a physical
+action.  The connection-preserving continuum intertwiner remains open.
 \end{abstract}
+
+\section*{Revision note: Version 3}
+\addcontentsline{toc}{section}{Revision note: Version 3}
+\begin{description}[leftmargin=2.4cm,style=nextline]
+\item[Supersedes]
+The current Version 2 manuscript.  Its released DOI and the earlier revision
+note below remain unchanged; this revision is not a new public release.
+\item[Reason]
+The evidence section stopped at rank-two analysis and did not distinguish
+later hidden projective HYM existence from the still-open common physical
+endpoint.  Its torsion convention also identified a degree-one operator with
+a degree-two operator.
+\item[Resolution]
+The convention is corrected to \(\dd\dd^c=\ii\partial\bar\partial\).
+Thirty-seven frozen source assignments are reviewed in context: source
+typing, full-residual transfer, the successful hidden construction and its
+excluded predecessors, Bott--Chern reduction, the nontransverse compiler,
+and the integral visible-source boundary.  A fresh-prime arithmetic
+correction is retained without discarding unaffected finite results.
+Scoped consumer summaries identify the current Cohesive, quantum-mechanics,
+and flux-paper owners of the geometric and operator interfaces.
+\item[Retained]
+Conditional fixed-point descent, the rejection of the former selection
+potential, finite \(q=79\) and rank-two analytic results, and the established
+hidden rank-nine object and existential HYM theorem at their declared tiers.
+\item[Open boundary]
+The selected visible twisted Prym datum, common visible--hidden chamber,
+positive nontransverse solution, integral differential Green--Schwarz
+trivialization, and same-source continuum intertwiner remain to be supplied.
+\end{description}
 
 \section*{Revision note: Version 2}
 \addcontentsline{toc}{section}{Revision note: Version 2}
@@ -139,8 +177,8 @@ until its rows are derived from one source.
 The paper owns three limited results.
 \begin{enumerate}[leftmargin=1.7em]
 \item Exact flow intertwining sends an MTT fixed point to a lower fixed point.
-\item A bounded intertwining defect sends an MTT fixed point only to a lower
-      approximate solution, with the same explicit defect bound.
+\item A bounded intertwining defect bounds the lower generator, and bounds
+      all equations only under a declared norm comparison.
 \item Local uniqueness or selection requires an invariant contraction basin
       and cannot be inferred from fixed-point correspondence alone.
 \end{enumerate}
@@ -172,14 +210,20 @@ Sections~\ref{sec:audit}--\ref{sec:frontier} state what survives physically.
 Fix a compact complex threefold \(X\) with nowhere-vanishing holomorphic
 \((3,0)\)-form \(\Omega\).  Let \(\omega\) be a positive Hermitian form,
 \(\Phi\) a dilaton, and \(V_{\mathrm{vis}},V_{\mathrm{hid}}\) holomorphic
-Hermitian bundles with unitary connections
+Hermitian gauge objects with unitary connections
 \(A_{\mathrm{vis}},A_{\mathrm{hid}}\).  Fix also a metric connection
 \(\nabla\) on \(TX\).  Its choice is part of the data, not a notation that may
 be changed between equations.
+For a twisted or projective object, its cocycle, determinant reduction, and
+trace-free curvature convention are part of the datum.  The adjoint curvature
+is globally defined although the vector transition maps may be projective.
+An arbitrary coherent sheaf is not an instanton: local freeness, or an
+explicitly different singular analytic problem, must be specified.
 
 We use
 \[
-\dd^c=\ii\partial\bar\partial,\qquad
+\dd^c=\frac{\ii}{2}(\bar\partial-\partial),\qquad
+\dd\dd^c=\ii\partial\bar\partial,\qquad
 H=\dd^c\omega
 \]
 as a convention for the torsion equation.  Numerical factors in \(\dd^c\)
@@ -229,10 +273,15 @@ datum.  Gauge-equivalent tuples represent the same point.
 
 \begin{definition}[Hull--Strominger residual]
 \label{def:residual}
+Fix the differential-topological class and its admissible patching first.
 After gauge fixing and choosing Sobolev completions, let
 \(\cR_{\mathrm{HS}}(y)\) be the vector consisting of the left-hand sides of
 \cref{eq:balanced,eq:gauge-hym,eq:tangent-instanton,eq:bianchi}, together
-with the global patching defect.  Thus
+with the continuous patching equations in this class.  Discrete obstruction
+classes are admission conditions, not extra coordinates in a Sobolev vector
+space.  The torsion and dilaton identifications are imposed in the domain
+(in particular, \(e^{-2\Phi}\) is proportional to \(\|\Omega\|_\omega\)
+with the chosen normalization).  Thus
 \[
 \cR_{\mathrm{HS}}(y)=0
 \]
@@ -359,7 +408,7 @@ Row & Required image under \(\mathfrak B\)\\
 Carrier & one complex threefold \(X\), complex structure, and \(\Omega\)\\
 Metric & positive \(\omega\) and dilaton \(\Phi\)\\
 Visible sector & rank-three physical holomorphic bundle and connection\\
-Hidden sector & compatible hidden bundle or sheaf and connection\\
+Hidden sector & locally free projective rank-nine object, twist, and connection\\
 Tangent sector & one declared connection \(\nabla\) and curvature\\
 Flux & \(H\), trace convention, gerbe patching, and quantization\\
 Dynamics & tangent map carrying the upper vector field to the lower one\\
@@ -373,11 +422,47 @@ holonomy data, counted once.  That role does not identify it with Lorentzian
 time and does not by itself construct \(X\), \(V_{\mathrm{vis}}\), or the
 Green--Schwarz class.
 
+\subsection{One source, two presentations}
+\label{sec:source-presentations}
+
+The frozen source-classification and embedding analyses
+\cite{FRG1,FRG1E} distinguish two presentations of this program: an augmented
+physical bundle deformation germ, and a derived-cohesive germ with a
+physical realization map.  This is a classification relative to the stated
+routes, not a theorem excluding every conceivable source.  In either
+presentation one must preserve provenance, augmentation, nonlinear
+operations, metric pairing, gauge action, and all downstream maps.  An
+equivalence of tangent dimensions alone preserves none of these six rows.
+
+The elementary embedding \(E\mapsto(E[0],\bar\partial_E)\) preserves the
+endomorphism differential graded algebra, its Maurer--Cartan equation, and
+gauge transformations.  It preserves adjoints and Hodge operators only after
+the same Hermitian structure is carried along.  Conversely, a complex becomes
+a physical bundle only after its cohomology is concentrated in degree zero,
+is locally free with the required ranks and topology, and carries the correct
+twist, augmentation, residual, and readout maps.  For example, the benchmark
+\(\kappa_{\mathrm{hol}}\) has \(c_1=-H,c_2=3u\), whereas the physical visible
+target has \(c_1=0,c_2=9u,c_3=\pm6\).  Here \(H\) is a divisor class and
+\(u\) the normalized base four-class, not the torsion three-form.  The
+benchmark is a valid structural source, not that visible bundle.  The
+structural repair and Hodge identities are owned by the Cohesive paper
+\cite{NeroCohesive2026}; they are not reproved here.
+
+The anti-splicing audit \cite{FRG3A} makes the practical consequence precise.
+Metric, bundle, and operator certificates carrying different source-orbit
+identifiers cannot be joined without a structure-preserving transport bound
+to those sources.  The four candidates examined in that snapshot supplied
+no complete physical source.  That is a result about those candidates at
+that stage, not a nonexistence theorem for the endpoint.  In particular, its
+old missing-hidden-bundle row is superseded by the construction in
+Section~\ref{sec:hidden-hym}.
+
 \subsection{Exact intertwining}
 
 \begin{definition}[Flow intertwiner]
 \label{def:intertwiner}
-The bridge \(\mathfrak B\) intertwines the flows on a common interval \(I\) if
+The bridge \(\mathfrak B\) intertwines the flows on a common interval \(I\)
+containing \([0,\epsilon)\), for some \(\epsilon>0\), if
 \begin{equation}
 \mathfrak B\circ R_\tau=S_\tau\circ\mathfrak B,
 \qquad \tau\in I,
@@ -419,6 +504,9 @@ S_\tau(\mathfrak B(u_\ast))
 =\mathfrak B(u_\ast).
 \]
 The residual conclusion is exactly Assumption~\ref{ass:stationary}.
+Here being fixed for a nontrivial interval from zero means stationary for the
+well-posed autonomous local semiflow, and hence fixed throughout its
+continuation.  Being fixed at just one isolated time would not suffice.
 \end{proof}
 
 \begin{remark}[One-way character]
@@ -454,11 +542,197 @@ If \(\cF_{\mathrm{MTT}}(u_\ast)=0\), then
 Insert \(\cF_{\mathrm{MTT}}(u_\ast)=0\) into the defect inequality.
 \end{proof}
 
-This proposition is deliberately modest.  A small flow residual is not an
-exact background.  To infer a nearby exact solution one needs a separate
+This proposition is deliberately modest.  In particular, stationary-point
+identification equates zero sets, not norms.  If
+\(\cF_{\mathrm{HS}}=-P_y\cR_{\mathrm{HS}}\), an equation estimate requires,
+for example,
+\[
+\|r\|_{\mathrm{res}}\le C_P\|P_y r\|_{\cY}
+\quad\text{on the admitted residual range};\qquad
+\|\cR_{\mathrm{HS}}(\mathfrak B(u_*))\|_{\mathrm{res}}
+\le C_P\varepsilon.
+\]
+A metric flow that omits bundle rows has no such estimate for those rows.
+A small flow residual is not an exact background.  To infer a nearby exact
+solution one needs a separate
 inverse-function, Newton--Kantorovich, or a posteriori theorem with a
 gauge-fixed derivative, inverse bound, nonlinear remainder estimate, and a
 verified radius.
+
+\subsection{The full repair operator and the reducing-map requirement}
+\label{sec:full-repair}
+
+The residual-Hodge analysis \cite{FRG2} starts at a \emph{zero} of the full
+defect.  Write its linearization as \((J,K)\), with \(J\) the cohesive
+deformation row and \(K\) the additional geometric rows.  For an orthogonal
+unit residual metric, the Hessian of the positive repair cost is
+\begin{equation}
+ H_{\mathrm{full}}=J^\dagger J+K^\dagger K
+ =\Delta_{\cY}+K^\dagger K,\qquad
+ \ker H_{\mathrm{full}}=\ker\Delta_{\cY}\cap\ker K.
+ \label{eq:full-repair}
+\end{equation}
+Thus adding equations can remove zero modes.  A bare cohesive compression is
+not automatically this full Hessian: the benchmark rank-102 compression
+already contains a \(\tfrac14 A_0A_0^\dagger\) contribution beyond its
+displayed \(\Delta_Q\) block.  At a nonzero-defect critical point the
+residual-weighted second derivative must also be included.
+
+The physical-residual transfer packet \cite{FRG2P} lists six additional rows:
+tangent, visible, and hidden moment maps; conformal balance; anomaly/Bianchi;
+and \(SU(3)\) normalization.  Together with the base deformation row these
+give the seven-row repair problem, after its holomorphic and topological
+domain is fixed.  Their cross-couplings matter.  With residual metric
+\(W=\left(\begin{smallmatrix}W_0&C\\C^\dagger&W_R\end{smallmatrix}\right)\),
+the zero-defect Hessian is instead
+\[
+J^\dagger W_0J+J^\dagger CK+K^\dagger C^\dagger J+K^\dagger W_RK.
+\]
+The unit, orthogonal choice in the structural lane is a declared repair
+metric, not a derivation of the physical action metric.  Likewise the
+rank-102 partition \(3+8+8+80+3\) permits all 25 ordered blocks of a full
+matrix, or \(102^2=10404\) positions.  The earlier 19-block mask omitted
+2688 permitted positions.  Restoring permission is not computing any of
+those matrix entries.
+
+Even an exact residual square does not necessarily transport its Gram
+operator.  Let \(T\) and \(S\) be isometric maps on configurations and
+residuals, with \(SK_c=K_fT\).  The small example in the same packet is
+\[
+K_c=[1],\quad K_f=[1\ \tfrac12],\quad
+T=\begin{pmatrix}1\\0\end{pmatrix},\quad S=[1].
+\]
+It gives \(K_f^\dagger K_fT=(1,\tfrac12)^\mathsf{T}\), but
+\(TK_c^\dagger K_c=(1,0)^\mathsf{T}\).  Thus the pulled-back cost is exact
+while the fine gradient leaves \(\Ran T\).  A reducing or adjoint-compatible
+condition, such as \(K_f^\dagger S=TK_c^\dagger\), closes this gap.  For
+bounded operators the packet separates residual error and adjoint leakage:
+\[
+\varepsilon_H\le\varepsilon_0+
+(\|K_f\|+\|K_c\|)\varepsilon_K+
+\varepsilon_\perp\|K_c\|.
+\]
+For unbounded continuum operators, a common core and the corresponding
+domain estimates are additional requirements.  Cost pullback alone is not
+the connection-preserving intertwiner of this paper.
+
+\subsection{What a compiled connection actually transports}
+\label{sec:consumer-compiler}
+
+The quantum-mechanics paper owns the projective-module naturality and
+Cech compiler used at this interface, in its section \emph{From a geometric
+source to a retained operator} \cite{NeroQM2026,ConsumerNaturality,ConsumerCech}.
+Given unitary transition functions, a Hermitian metric and a connection,
+a partition with \(\sum_i\chi_i^2=1\) constructs an isometric module
+embedding \(U\) and the smooth finite-matrix projector \(p=UU^*\).
+Its section space is still infinite-dimensional. To preserve the supplied
+connection, rather than substitute the Grassmann connection, one uses
+\[
+ A_0=U^*\dd U,\qquad
+ \Gamma=U(A-A_0)U^*,\qquad D_p=p\,\dd+\Gamma .
+\]
+This is an exact compiler after the geometric inputs are supplied. It
+does not choose a physical metric or connection. The external modal flag
+also cannot be installed inside the scalar commutant of an irreducible
+stable HYM bundle. Cancellation of the hidden central twist in the
+rank-80 adjoint explains the ordinary rank-102 deformation complex, not
+an ordinary hidden fundamental bundle.
+
+Changing the presentation must transport the intrinsic retained subspace
+as well. A fixed Fourier window need not survive a winding change of
+frame. For a self-adjoint operator \(H\), exact restriction to \(P\)
+requires \((1-P)HP=0\), with compatible domains; otherwise the complementary
+resolvent enters through the Feshbach correction. Neither this compiler
+nor the abstract Fixed Points analytic spine supplies that reducing
+condition for the selected physical operator.
+
+\subsection{A nonlinear strain symbol is not a linear root stack}
+\label{sec:consumer-strain}
+
+The same owner supplies the relevant replacement for the excluded linear
+root-stack route \cite{NeroQM2026,ConsumerStrain}. The six real root
+directions have a different permutation character from two copies of the
+three-dimensional permutation representation. They therefore cannot be
+identified by an equivariant linear isomorphism. For a Hermitian
+three-by-three symbol, the intrinsic strain coordinates instead retain its
+three diagonal entries and the three squared edge magnitudes. The complete
+relative-phase quotient also retains the triangle phase: its generic
+dimension is seven, whereas strain forgets that phase and has six
+coordinates. A central shared line does not remove a relative triangle
+phase.
+
+On the regular stratum, let \(J\) be the derivative of this nonlinear map
+and \(G_Q\) the positive reduced Green operator on the declared source
+domain. Minimizing the source quadratic cost at fixed strain gives
+\[
+ H_{\rm strain}=(JG_QJ^*)^{-1}
+\]
+on the image, not the restriction of the original Hessian to a guessed
+six-dimensional subspace. Any further projection must be applied to the
+covariance before inversion. The later support-stratified refinement
+settles the zero-edge boundary as well \cite{ConsumerSupportStrain}:
+when an edge vanishes, its first derivative vanishes and its squared
+magnitude appears at second order. For example, \(r=t^2\) and a source cost
+\(t^2/2\) give the normal cost \(r/2\), not a quadratic cost in \(r\).
+Tangential shorting remains valid on each support stratum; an ordinary full
+six-dimensional boundary Hessian is excluded. A rank-six or the stated
+local quarter-turn contract forces the regular stratum. These exact
+implications do not supply the physical background, reduced Green operator
+or same-source symmetry lift.
+
+\subsection{Finite transfer and the physical source contract}
+\label{sec:consumer-transfer}
+
+The Cohesive owner explains why a twisted perfect complex has an ordinary
+endomorphism differential graded algebra: the central twist cancels in
+endomorphisms and the commutator with its integrable superconnection
+squares to zero \cite{NeroCohesive2026,ConsumerCohesive}. On a compact
+boundaryless base with chosen Hermitian data, the associated elliptic
+Hodge operator has compact resolvent. This global statement does not make
+a fiberwise reduced Green operator bounded across a rank-jump locus.
+Its Maurer--Cartan residual and gauge row give a positive repair cost
+whose exact-zero tangent is the Hodge Laplacian
+\cite{ConsumerMC}. Formal Ext/Yoneda transport does not by itself
+transport adjoints or identify this cost with the physical signed action;
+the reducing-map qualification in \cref{sec:full-repair} remains essential.
+
+The same owner retains the exact finite response contraction and its
+nonzero transferred \(m_3,m_4\); it cannot be truncated after the cubic
+operation \cite{ConsumerMThree,ConsumerMFour}. All-arity naturality follows
+from a product-preserving source map that commutes with the inclusion,
+projection and contracting homotopy: it can be moved through every
+decorated transfer tree \cite{ConsumerAllArity}. This is an exact
+source-map theorem, not an extrapolation from a few tested arities or a
+construction of continuum interaction vertices.
+
+Finally, the endpoint-factorization result organizes seven physical
+acceptance rows through three structured sources: geometry plus signed
+action, spectral synthesis with compatible contraction, and BV-compatible
+four-dimensional compactification \cite{ConsumerEndpoint}. Shared-line
+functional calculus and Galerkin/Feshbach execution are derived arrows
+when those sources agree. Three source packages are not three numerical
+parameters, and none is selected by this dependency organization.
+
+\subsection{Scale freedom is not a chosen physical metric}
+\label{sec:metric-scale}
+
+The scale-orbit calculation \cite{FRG3B} keeps the source fixed while
+multiplying its repair cost by \(\lambda>0\).  The Hessian and its positive
+eigenvalues scale by \(\lambda\); the Green operator on the kernel complement
+scales by \(\lambda^{-1}\); heat evolution is reparametrized in time.
+The kernel and scale-free spectral ratios survive.  Consequently those
+ratios cannot select an absolute energy or time normalization.  Independent
+relative weights of residual rows are different: they can change the shape
+of the operator, not merely its clock.
+
+The metric-commutant packet \cite{FRG3C} illustrates how symmetry can restrict
+a \emph{reference} choice.  Sign changes on \(\mathbb R^3\) kill the
+off-diagonal entries of an invariant symmetric metric, and permutations make
+the three diagonal entries equal.  The invariant positive metrics are
+therefore \(\lambda I\).  This finite demonstration does not establish that
+the selected physical residual space has this action, or that its metric is
+the same reference metric.  Neither calculation turns a positive repair
+square into a signed physical action.
 
 \section{What selection would additionally require}
 \label{sec:selection}
@@ -484,6 +758,10 @@ The content lies in proving the invariant complete basin and the number
 of the form \(C_\Pi M(\tau)e^{L\tau}\) proves contraction only after one
 establishes that it is strictly below one for a specified \(\tau\) on a
 specified domain.
+If \(\cB\) is invariant for the whole semiflow, the unique fixed point of
+\(S_{\tau_0}\) is stationary: commutation makes each \(S_s y_*\) another
+fixed point in \(\cB\), so uniqueness gives \(S_s y_*=y_*\).  Invariance
+under only the sampled time map would not justify this extra conclusion.
 
 \begin{proposition}[Correspondence does not imply selection]
 \label{prop:no-selection}
@@ -503,6 +781,39 @@ than \cref{thm:descent}.  It requires a selected upper initial condition or
 branch, a complete invariant basin, uniqueness within the physically relevant
 quotient, and a proof that no other admissible basin realizes the same
 observables.
+
+\subsection{A conditional nontransverse endpoint compiler}
+\label{sec:endpoint-compiler}
+
+The nontransverse compiler \cite{FRG3Z} supplies a usable a posteriori contract
+for the \emph{full} seven-row residual \(\Psi\).  Work in a fixed gauge slice
+on one source, with moduli removed or separately parametrized and the adjoint
+obstruction space absent.  At an approximate datum \(s_0\), require
+\(A=D\Psi(s_0)\) to be bijective, \(\|A^{-1}\|\le\Gamma\), a derivative
+Lipschitz bound \(L>0\), and \(\|\Psi(s_0)\|\le\eta\).  These bounds must
+hold on the stated ball of radius \(R\), with a positivity radius
+\(r_{\mathrm{pos}}\) and elliptic regularity.  Set
+\[
+h=\Gamma^2L\eta<\tfrac12,\qquad
+r_-={1-\sqrt{1-2h}\over\Gamma L},\qquad
+q=\Gamma Lr_-<1.
+\]
+If \(r_-\le R\) and \(r_-<r_{\mathrm{pos}}\), the frozen-inverse iteration
+\(s\mapsto s-A^{-1}\Psi(s)\) contracts the admitted ball and yields a unique
+zero there.  The radius equation
+\(\Gamma\eta+\tfrac12\Gamma Lr_-^2=r_-\) explains both self-mapping and the
+need for a full derivative estimate.  For \(L=0\), the corresponding linear
+radius is \(\Gamma\eta\), without division by \(L\).
+
+For scale, the packet's \emph{reference example}, not a \(q=79\)
+certificate, uses \(\Gamma=2,L=1/2,\eta=3/16\).  Then
+\(h=3/8,r_-=1/2,q=1/2\), fitting inside \(R=1\) and
+\(r_{\mathrm{pos}}=3/4\).  This is a bounded arithmetic check of the compiler,
+not a computed chamber or connection.  The actual source must supply every
+input, preserve its twists and integral classes, and show that gauge
+identifications respect the slice.  A zero of this repair residual is an
+endpoint under its admitted data; its construction does not identify a
+Lorentzian or BV action, choose a global basin, or select the physical source.
 
 \section{Audit of the former selection argument}
 \label{sec:audit}
@@ -568,48 +879,461 @@ These results prove that the lower target is mathematically inhabited.  They
 do not show that the selected MTT \(q=79\) carrier is one of those solutions,
 nor that its upper flow descends to the Anomaly flow.
 
-\subsection{The q79 rows must not be merged}
+\subsection{The retained finite and rank-two results}
+\label{sec:retained-q79}
 
-The current MTT corpus contains several nontrivial but separate results:
-\begin{enumerate}[leftmargin=1.7em]
-\item exact finite arithmetic selecting the \(q=79\) branch;
-\item smooth rank-three topological candidates with index \(\pm3\);
-\item an exact finite rank-two Cech witness;
-\item a certified finite rank-two HYM approximation; and
-\item a rank-two Wiener-algebra existence and local-uniqueness certificate.
-\end{enumerate}
-The packets and verifiers are curated in
-Ref.~\cite{MTTResultsRepro}.  The rank-two analytic theorem does not change
-its bundle rank, Chern classes, or carrier.  The topological rank-three
-candidate is not yet a stable holomorphic visible bundle with an HYM
-connection.
+Exact arithmetic selects the declared \(q=79\) branch; smooth rank-three
+topological candidates have index \(\pm3\); the literal rank-two Cech
+witness and finite HYM approximation have a later rank-two Wiener-algebra
+existence and local-uniqueness certificate \cite{MTTResultsRepro}.
+The analytic certificate is not merely a finite approximation, but it does
+not change its bundle rank or carrier.  Similarly, the rank-three topological
+candidate does not by itself acquire a holomorphic stable structure.  These
+are retained results, not calculations to restart.  The later hidden
+rank-nine analysis below changes the evidence table substantially without
+closing the physical visible row.
 
-The physical completion therefore still needs, on one \(X_{79}\):
+\subsection{Auxiliary spectral data and the first stable source}
+\label{sec:aux-spectral}
+
+Let \(S\) be the declared K3 base with classes
+\(H^2=2,H\delta=0,\delta^2=-4\), and let \(D_0\) denote the zero section
+of its relative elliptic model.  The auxiliary spectral-cutset calculation
+\cite{FRSpectral} starts with
+\(\operatorname{ch}(\kappa^\sharp)=3-H-3u\).  Its transform has effective
+support class \(3H+3D_0\), with smooth finite-flat degree-three members
+available by the stated generation and transversality argument.  This is
+not the physical visible class \(9H+3D_0\), and it is not a rank-nine hidden
+bundle.  The coefficient of \(H\) in a spectral class must not be read as
+the bundle rank.  Existence of members also does not choose a particular
+member or its twisted line.
+
+The opposite-complex-structure calculation \cite{FRG3E} fixes a genuine sign
+issue in the relative transform.  With complex one-forms
+\(\eta=\theta-\ii t\) and \(\zeta=s+\ii a\), the Poincare curvature
+\[
+F_{\mathcal P}=\frac{\ii}{2}
+(\bar\eta\wedge\zeta-\eta\wedge\bar\zeta)
+\]
+has type \((1,1)\); the same-sign choice does not.  The accompanying
+\(B\)-shifts are local gerbe curvings, not global ordinary line bundles.
+In the declared fiber convention the rank-degree sequence is
+\[
+(3,0)\longmapsto(3,9)\longmapsto(9,-3)\longmapsto(9,0).
+\]
+Generically the support splits into ranks and degrees \((1,6)+(2,3)\),
+but two exceptional fibers contain a degree-zero piece with shifted
+skyscraper transform.  A generic-fiber calculation therefore does not yet
+prove local freeness everywhere.
+
+The Hartshorne--Serre source examined in \cite{FRG3F} is an extension
+\[
+0\longrightarrow\mathcal O^{\oplus2}\longrightarrow F
+\longrightarrow\mathcal I_\Gamma(H)\longrightarrow0.
+\]
+Its two extension images occupy independent character lines.  The locked
+divisor-degree restriction excludes positive degree one, while
+\(\operatorname{Hom}(F,\mathcal O)=0\) excludes the relevant quotient.
+These inputs bound proper rank-one and rank-two slopes by zero, below
+\(\mu(F)=2/3\), on the declared balanced ray.  This proves stability of
+that source.  Its dual \(\kappa=F^\vee\) is a projective Hermitian--Einstein
+\(U(3)\) object with \(c_1=-H\), not the physical visible \(SU(3)\) bundle.
+
+\subsection{What recombination and the qutrit line repair}
+\label{sec:recombination}
+
+The two-fiber recombination \cite{FRG3G} replaces a degree-zero summand
+\(P=L^{-1}N\) and a degree-three summand \(N\) by the non-split stable
+rank-two, degree-three extension represented by the evaluation syzygy
+\(Q^\vee\otimes N\).  It introduces no adjustable extension parameter
+once the projective class is fixed.  The remaining determinant is a section
+of degree two, so its zeros cannot be removed by declaring it an invertible
+scalar.  Global twisting and exceptional fibers still require a construction.
+
+The determinantal qutrit packet \cite{FRG3H} supplies a concrete torsion
+line.  For \(XZ=\omega ZX\), with \(\omega^3=1\ne\omega\), its pencil
+\(M_\omega=uI+vX+wZ\) satisfies
+\(\det M_\omega=u^3+v^3+w^3\).  It has corank one on the smooth Fermat
+cubic.  The cokernel resolution
+\(\mathcal O(-2)^3\to\mathcal O(-1)^3\) identifies a nontrivial
+degree-zero order-three line
+\(P_\omega=\mathcal O(p_1-p_0)\), where
+\(p_0=[-1:0:1]\) and \(p_1=[-\omega:0:1]\), and takes
+\(N=L\otimes P_\omega\).  The generator relations explain its finite
+projective multiplier.  They do not identify that multiplier with the
+analytic gerbe class on a different space.
+
+The forward and reverse Ext computations \cite{FRG3I,FRG3J} illustrate why
+orientation of an extension matters.  The forward extension space is
+one-dimensional and has a nonzero stable middle term.  The reverse space
+has dimension nine, with three copies of each of the three characters.
+Nevertheless a reverse extension by a locally free rank-one quotient
+splits at the singular stalk into \(\mathcal I\oplus\mathcal O^2\), which
+is not locally free along the codimension-two locus.  A larger Ext space
+therefore does not imply an acceptable gauge bundle.  This obstruction
+excludes the reversed presentation, not the successful forward extension.
+
+\subsection{The derived repairs that do not remove the obstruction}
+\label{sec:yoneda}
+
+The derived Yoneda reduction \cite{FRG3K} explains why ordinary scalar and
+finite-phase repairs of the locked extension fail.  The required inverse
+coefficient line has negative degree and no global section; a Weyl
+determinant is instead a positive-degree section and retains rank-drop
+zeros.  An odd off-diagonal derived differential using a forward class
+\(f\) and reverse class \(\rho\) must also kill its Yoneda products.
+The trace relation reduces the two composites to the one relevant
+obstruction map.  Finite projective phases cannot bypass that equation.
+
+The monad rank calculation \cite{FRG3L} takes a rank-four quotient of the
+nine-dimensional reverse space, leaving a five-dimensional normal space
+with character decomposition \(1+2\chi+2\chi^2\).  The clock-fixed
+calculation \cite{FRG3M} then isolates a one-dimensional invariant column;
+the simultaneous-translation direction maps to zero and is not that
+candidate.  The next calculation \cite{FRG3N} evaluates the actual Serre
+pairing: the fixed-coordinate normal row is \([1\ 1]\), its boundary is
+\((1,-1)\), and the surviving quotient maps nontrivially to the forward
+obstruction class.  All three translated columns remain obstructed.  This
+closes the proposed locked bidirectional repair, not every derived or
+six-by-six presentation of the physical source.
+
+An independent Atiyah/qutrit tensor shortcut \cite{FRG3O} fails at the Chern
+sign: after determinant normalization its inverse transform gives
+\(c_2=+9u\), rather than the hidden target \(-9u\).  An ambient line does
+not fix the locked mixed-class sign.  This is a topological exclusion of
+that shortcut, not a negative existence theorem for the hidden bundle.
+
+\subsection{From a perfect complex to a balanced rank-nine bundle}
+\label{sec:hidden-object}
+
+The hidden perfect-complex construction \cite{FRG3P} already realizes the
+required inverse Chern character \(9+9u\), hence
+\((r,c_1,c_2,c_3)=(9,0,-9u,0)\), in a projective derived object involving
+a shifted induced term and a zero-section contribution.  It preserves the
+categorical and finite multiplier data, but is not a locally free sheaf.
+The direct zero-section monad \cite{FRG3Q} cannot repair this: the relevant
+fiber \(\operatorname{Hom}\) from a degree-three line to \(\mathcal O\)
+vanishes, forcing kernel rank at least three in the proposed map from rank
+nine.  Its maximum rank is six.  This excludes that buffer, while preserving
+the perfect-complex class.
+
+The global WIT-zero construction \cite{FRG3R} repairs the two exceptional
+fibers by stable reduction and determinant-zero-sum clutching weights
+\(-1,0,1\).  ``WIT zero'' means that the relative transform is concentrated
+in degree zero on \emph{every} fiber; with the verified constant rank and
+base-change conditions this gives a locally free projective rank-nine
+object on its declared target \(Y=P_{3\delta}\times S^1\).  The analytic
+gerbe \(\alpha\), finite qutrit multiplier \(\sigma\), and transported
+target twist \(\tau\) have different jobs and cannot be identified merely
+because they have order three.  Comparison with a visible bundle on another
+presentation of the carrier requires an explicit common-base map.
+
+Local freeness alone did not finish the construction.  The target-slope
+audit \cite{FRG3S} finds transformed blocks \((6,+1)+(3,-1)\) before the
+support-wide repair.  Their total degree is zero, but the rank-six subobject
+has positive slope \(1/6\), excluding that presentation in the declared
+adiabatic chamber.  This is not an exclusion for all possible metrics.
+The subsequent support-wide balance \cite{FRG3T} uses
+\(N\otimes\mathbb C^3_\sigma\): three source factors of rank one and degree
+three transform to three \((3,-1)\) factors, then the declared \(B\)-shift
+corrects each to \((3,0)\).  Boundary clutching and the Chern class are
+preserved.  The resulting holomorphic \(P(3,9)\) object has the
+determinant-one reduction specified by that source and is relatively
+polystable.  Thus the earlier ``hidden object missing'' headers cannot be
+used as its current status.
+
+\subsection{Existential hidden HYM is established}
+\label{sec:hidden-hym}
+
+The common-chamber analysis \cite{FRG3D} writes a balanced ray schematically
+as
+\[
+\omega_t=\sqrt t\,\pi^*\omega_H+
+t^{-1/2}\ii\zeta\wedge\bar\zeta,\qquad
+\deg_t G=tA(G)+B(G).
+\]
+A strictly negative fiber coefficient and a finite upper slope bound at
+\(t=1\) then force negative degree for sufficiently large \(t\).
+The comparison is conditional on the actual sheaves, their topology, and
+strictness.  For example, a rank bound \(r-1\), negative gap \(a>0\),
+and upper slope bound \(M\ge0\) give the sufficient threshold
+\(t>1+(r-1)M/a\).  A finite list of factors has a common threshold by taking
+the maximum; a visible factor not yet constructed cannot be inserted into
+that list.
+
+The direct stable-factor refinement \cite{FRG3U} does not require a reduced
+irreducible spectral support.  Each transformed hidden factor has coprime
+fiber rank and degree \((3,-1)\), and its corrected proper-subsheaf gap is
+\(2/3\).  The packet's provisional numerical slope and chamber slots are
+explicit placeholders, not certified values.  The later existential
+argument \cite{FRG3V} uses a smooth twisted reference metric and the
+compact Chern--Weil projection bound, equivalently the relevant twisted
+Harder--Narasimhan upper bound, to obtain a \emph{finite} common \(M\).
+For every proper saturated subobject \(G\) of a factor, of rank at most two,
+\[
+\deg_tG\le2M-\frac23(t-1)<0\qquad(t>1+3M).
+\]
+The qutrit orbit gives equal total factor degrees, all zero, so one such
+\(t\) makes all three factors stable and their rank-nine sum polystable.
+The twisted Kobayashi--Hitchin correspondence on the admitted compact
+Gauduchon target then supplies a projective HYM connection
+\cite{LiYau1987,Perego2019}.
+
+This is an existential HYM result, not an unperformed numerical test.
+The absence of a printed numerical \(M\), chamber value, or connection matrix
+does not reopen existence.  Equivariant metrics are obtained by transport
+around the holomorphic unitary qutrit orbit.  What is still absent is the
+same-source visible object, an explicit chamber common to both sectors and
+the chosen tangent data, and the coupled Bianchi solution.
+
+\subsection{Two symmetry actions and the anomaly potential}
+\label{sec:symmetry-bc}
+
+The hidden adjoint calculation \cite{FRAdjoint} concerns an internal
+fiberwise action covering the identity on the base.  Locally
+\(W_9=U_3\otimes Q_3\); the projective scalar cancels in
+\(\operatorname{End}W_9\).  The honest \(E[3]\) action decomposes the
+81-dimensional endomorphism fiber into nine character sectors of rank nine.
+Removing the scalar leaves one neutral sector of rank eight and eight
+nontrivial sectors of rank nine: \(8+8\cdot9=80\).  Finite Fourier
+projectors and an invariant trace pairing are thereby defined.  They do not
+compute the physical Hessian on these sectors.
+
+The relative translation result \cite{FRG3W} is different: it moves the
+elliptic base point.  Choices of a third root of a translation differ by
+three-torsion and line ambiguity, which disappears after projectivization;
+the theta-group law supplies coherence.  The finite etale choice torsor
+glues over the simply connected K3 base.  This yields a projective action,
+not a strict action on vector fibers.  Uniqueness of the stable-factor HYM
+connection, with the invariant metric data, makes its quadratic Chern--Weil
+form invariant up to gauge.  This does not provide explicit curvature
+coefficients.
+
+For the Bianchi cohomology row, the full Bott--Chern argument \cite{FRG3X}
+is stronger than an invariant-form computation alone.  On the free
+holomorphic principal elliptic action, let \(X_0,Y_0=JX_0\) be the real
+generators and \(Z=(X_0-\ii Y_0)/2\).  For a nonzero Fourier character
+\((m,n)\), set
+\[
+\lambda_{mn}=(\ii m+n)/2,\quad
+\mu_{mn}=(\ii m-n)/2,\quad
+\lambda_{mn}\mu_{mn}=-(m^2+n^2)/4.
+\]
+Cartan homotopy expresses a Bott--Chern cocycle mode \(\xi_{mn}\) as
+\[
+\xi_{mn}=(\lambda_{mn}\mu_{mn})^{-1}
+\partial\bar\partial\,\iota_{\bar Z}\iota_Z\xi_{mn}.
+\]
+The inverse quadratic multiplier preserves smooth Fourier summability.
+Averaging handles the zero mode using the separately established invariant
+injectivity.  Therefore
+\(H^{2,2}_{BC}(Y,\mathbb R)\to H^4_{dR}(Y,\mathbb R)\) is injective
+on this carrier, not just on its invariant subcomplex.
+
+Once an actual same-source visible--hidden--tangent connection tuple exists,
+its real, closed \((2,2)\) anomaly difference with vanishing de Rham class
+thus has a \(\dd\dd^c\) potential.  Visible gauge equivariance is no longer
+an independent premise for this conclusion, and a separate Aeppli
+obstruction is not left over at this linear cohomological stage.  The
+potential need not be a positive Hermitian form or satisfy conformal
+balance, and it supplies no integral differential trivialization.  Those
+nonlinear and integral requirements remain in the endpoint problem.
+
+\subsection{Why the physical endpoint must be nontransverse}
+\label{sec:transverse-nogo}
+
+The transverse Fu--Yau exclusion \cite{FRG3Y} concerns the stronger
+condition \(F\wedge\omega_B=0\), where \(\omega_B\) is the horizontal
+K3 form.  Decompose a two-form into horizontal, mixed, and vertical parts.
+On a horizontal space of complex dimension two, wedging a horizontal
+one-form with \(\omega_B\) is an isomorphism to horizontal three-forms;
+the mixed part is therefore zero.  The vertical part is zero separately.
+The remaining curvature is horizontal, so \(F^3=0\).  For the physical
+visible \(SU(3)\) bundle this forces \(c_3=0\), contrary to its required
+\(c_3=\pm6\).
+
+The excluded condition is not the full six-dimensional HYM equation
+\(F\wedge\omega^2=0\).  Established pullback Fu--Yau solutions remain
+valid lower-space examples, but cannot be substituted for this visible
+bundle.  The nontransverse compiler of
+Section~\ref{sec:endpoint-compiler} keeps the mixed and vertical unknowns
+and all equations; it is the appropriate conditional analytic contract.
+
+\subsection{Shared-line and integral typing}
+\label{sec:shared-line}
+
+The shared-line theta calculation \cite{FRG3AA} works with
+\(C_{64}\times E[3]\), of order 576.  Since \(\gcd(64,3)=1\), the mixed
+tensor term vanishes; the projective class comes from the \(E[3]\) factor.
+For \(W_{\mathrm{sh}}=L_{\mathrm{shared}}\otimes W_9\), an ordinary line
+cannot cancel the nontrivial multiplier \(\sigma\).  An inverse-multiplier
+module has minimum rank three.  The determinant identity is
+\[
+\det W_{\mathrm{sh}}
+=L_{\mathrm{shared}}^9\otimes\det W_9.
+\]
+Only on the selected order-two sheet, whose \(C_{64}\) image is
+\(\{0,32\}\), does \(L^9=L\).  It is false as an unrestricted identity
+of \(C_{64}\) characters.  The resulting flat Spin\(^{c}\) determinant
+comparison does not identify nonflat HYM connections.
+
+There is also a substantive correction to earlier ``order-three string
+class'' shorthand.  The declared ordinary carrier
+\(X=P_\delta\times S^1_{\mathrm{shared}}\) has
+\(H^3(X,\mathbb Z)\cong\mathbb Z^{42}\), with no order-three torsion.
+The theta class lives in \(H^3(BE[3],\mathbb Z)\) and its pullback to the
+quotient stack \([X/E[3]]\), restricting trivially to the ordinary atlas.
+The ordinary anomaly cocycle has degree four; its differential
+trivializations form a degree-three torsor.  These are distinct from the
+equivariant theta class.  A vanishing ambient Brauer value likewise does
+not imply that the rank-248 primitive \(\eta_9\) normal function vanishes.
+Consumers must use the corrected equivariant statement, not ask for an
+impossible ordinary nonzero order-three class on \(X\).
+
+\subsection{The evolving visible-source and transport boundary}
+\label{sec:source-frontier}
+
+The long source-frontier chronology \cite{FRFrontier} records mathematical
+progress, not merely historical status.  Its later graph/Prym incidence
+arguments establish available smooth finite-flat supports and formal local
+lifts, while excluding a particular fixed-graph shortcut.  They do not yet
+choose the twisted line with the required primitive Deligne zero.  The
+locked tangent rank \(122=33+89\) in an ambient rank-248 problem leaves
+126 normal directions; finite rank checks and a nonzero integral minor can
+control a local response without evaluating the nonlinear primitive normal
+function.  A zero modular obstruction is not an exact zero.  A nonzero
+modular obstruction excludes an exact zero only for the same integral
+model, field presentation, and declared specialization.
+
+The integral period analysis in the same source distinguishes the image
+\(4\mathbb Z\) detected by algebraic product tubes from the full integral
+pairing image \(\mathbb Z\).  Thus a root readout \(4\beta\) vanishing
+can leave four-torsion in \(\beta\).  A direct Deligne zero requires
+integral period membership, while a nonzero certificate requires a dual
+character integral on the full relevant lattice, or a proved saturated
+detector.  Rational span alone is insufficient.  In the primitive setting,
+the integral ambient quotient is the dual lattice \(V^\vee\), not
+automatically the vanishing lattice \(V\); their finite discriminant
+quotient must be retained.  The Cohesive discussion \cite{NeroCohesive2026}
+also retains the corrected CBF restriction at T69, the local nature of
+T70--T73 as distinct from global Picard/BHT identification, and the fact
+that an ordinary intermediate-Jacobian Neron model requires its own
+weight and admissibility hypotheses.  None of these distinctions is
+removed by a shared theta multiplier.
+
+The chronology's exact smooth starting family and discriminant-avoiding
+path construction provide geometric inputs for transport, not an enclosed
+global period integral.  Its static Schur reduction from 1510 coordinates
+to 249 failed the later tangency/Riccati tests as a differential subsystem.
+A moving basis would require the connection term \(B^{-1}\dd B/\dd a\).
+Matrix-free sector evaluation, finite jet ranks, and a small static solve
+therefore cannot stand in for the full transported source.  Later finite
+and certified local \(q=79\) results remain established at their current
+authority; the still-open target is a useful global path with the joint
+primitive readout, not a repetition of those local calculations.
+
+The chronology also retains a source-exact Cox presentation and finite
+component calculations while rejecting specific scalar/apolar and
+derivative-closure intertwiners.  The 48-place fiber results are exact over
+their stated finite fields, not an equality of characteristic-zero
+primitive source planes.  The later rank-18 source injection is a
+same-field statement, not an identification of every target plane.  In
+particular, substituting \(\mathbb F_{11}\) coordinates into an
+\(\mathbb F_{21817}\) calculation is not transport.
+
+The separate arithmetic correction \cite{FRG3GM} retracts one concrete
+fresh-prime rank jump.  Calls labelled 79903, 81359, and 82963 inherited
+the old modulus 33863.  The reported rank/nullity \(4752/1270\) and the
+associated component-23/24 changes are therefore not new-prime results.
+Corrected replay at the archived \(p=21817\) chart and an actual
+\(p=79903\) chart restores the scoped finite rank/nullity \(4748/1274\).
+The valid characteristic-zero conclusion remains the bound
+\[
+4748\le\operatorname{rank}_{\mathbb Q(\gamma)}Q\le5102,
+\]
+not equality with the finite rank.  Unaffected fixed-minor and separate
+finite-component results are retained at their own tiers.  This is a
+specific arithmetic/provenance correction, not a blanket downgrade of the
+evolving source.
+
+\subsection{Global support and the selected transport certificates}
+\label{sec:consumer-global}
+
+The Cohesive owner's Fitting-descent statement supplies ordinary ideal
+sheaves for the cohomology of the twisted benchmark: invertible transition
+lines change local minor generators by units, not their ideals
+\cite{NeroCohesive2026,ConsumerFitting}. Its leading divisor is
+\(3H+3D_0\), agreeing with the auxiliary spectral class in
+\cref{sec:aux-spectral}, not the physical \(9H+3D_0\). Generic corank three
+does not produce a spectral line, trivialize the gerbe, or execute the
+literal connection overlaps. This is useful global support information
+without any of those promotions.
+
+The same owner's large-gauge result concerns a different question
+\cite{ConsumerBK3}. The selected real K3 period plane has zero
+large-gauge kernel; its two-real-parameter image is nevertheless dense
+and nonclosed in a twenty-dimensional torus. Rank zero counts
+identifications, not remaining parameters. Numerical periods and physical
+normalization are not recovered from this injectivity theorem, and it
+does not trivialize the unrelated visible obstruction \(\beta_C\).
+
+The flux paper owns the selected eta9 transport calculations
+\cite{NeroFlux2026}. The completed original-Jacobian campaign supplies
+all 30 groups and 225 support columns as exact polynomial reduction
+identities \cite{ConsumerGateOne}. This closes that finite algebraic
+task, not the global source path. The three-cycle calculation has
+Gram matrix \(-2I_3\): it proves independence, but its affine coefficients
+are rational coboundaries on the tested subsystem
+\cite{ConsumerThreeCycle}. Thus this complete subsystem is
+non-detecting; it neither proves integral coboundary membership nor
+trivializes the global affine class.
+
+There is also a certified positive-width local Gauss--Manin source chart,
+with its correlated lift, rather than merely a single-fiber calculation
+\cite{ConsumerTube}. The consolidation is a hash-bound record of those
+certificates, not an independent interval replay. A useful global path,
+integral marking and physical readout remain separate. Conversely, the
+same-source B89 detector pairs nontrivially with the affine return modulo
+two and therefore rejects that candidate from the \(\beta_C=0\) locus
+\cite{ConsumerB89}. It does not show that the integral class has exact
+order two, or supply a replacement visible bundle. These distinctions
+explain how completed local work and hidden HYM existence coexist with
+the open common endpoint.
+
+\subsection{Current completion gates}
+\label{sec:current-gates}
+
+The current authority distinguishes these rows.  ``Established'' below
+means established at the named source tier, not independent verification by
+this editorial review.
 \begin{center}
 \small
-\begin{tabular}{@{}p{0.12\textwidth}p{0.59\textwidth}p{0.17\textwidth}@{}}
+\begin{tabular}{@{}p{0.10\textwidth}p{0.55\textwidth}p{0.25\textwidth}@{}}
 \toprule
-Gate & Required object & Current state\\
+Gate & Object or implication & Current scope\\
 \midrule
-G1 & complex \(X_{79}\), \(\Omega\), and positive balanced Fu--Yau metric
-   & candidate/partial\\
-V1 & rank-three visible holomorphic stable bundle with index \(\pm3\)
+V1 & selected visible rank-three twisted Prym bundle, index \(\pm3\)
    & open\\
-V2 & compatible hidden holomorphic data
+V2 & locally free holomorphic hidden \(P(3,9)\) object
+   & established\\
+H2 & projective hidden HYM connection on its declared target
+   & existentially established\\
+H1 & visible, hidden, and tangent instantons on one common metric/base
    & open\\
-H1 & visible, hidden, and tangent instantons in one chamber
-   & rank-two evidence\\
-A1 & differential Green--Schwarz identity with fixed traces
+A0 & exact real anomaly source implies a \(\dd\dd^c\) potential
+   & conditional on the source pair\\
+A1 & positive conformally balanced nontransverse endpoint
+   & open; compiler conditional\\
+Q1 & ordinary differential Green--Schwarz trivialization and equivariant lift
    & open\\
-Q1 & global gerbe and flux quantization
-   & open\\
-B1 & connection-preserving MTT bridge and flow intertwiner
+B1 & same-source connection/domain-preserving continuum intertwiner
    & open\\
 \bottomrule
 \end{tabular}
 \end{center}
-This is the physical content of the open blockers \(B.\mathrm{HS}.01\) and
-\(B.\mathrm{GEO}.01\).
+The open \(B.\mathrm{HS}.01\) and \(B.\mathrm{GEO}.01\) obligations are
+therefore narrower than ``no hidden bundle or HYM result.''  They cannot be
+closed by assembling established rows from different source orbits.
 
 \subsection{The corrected role of Iwasawa and Lens--Nil}
 
@@ -619,6 +1343,33 @@ The Iwasawa manifold remains a useful source of explicit balanced
 bundle, Bianchi match, and selected-background conclusion do not survive.
 Other valid Iwasawa Hull--Strominger solutions exist in the literature; their
 existence does not repair that specific MTT construction.
+
+The full Qa/SU3 support chronology \cite{FRQa} must be read past its early
+failed connection and stale status headings.  Its corrected Maurer--Cartan
+representative, and the later finding that the displayed family is a single
+complex gauge orbit with a noncentral commutant, do not supply a stable
+physical color source.  A branch-specific closed-curvature representative
+does not replace the generic \(\dd H\ne0\) anomaly bookkeeping of
+Lemma~\ref{lem:twisted}.  Those are exclusions of particular proposals,
+not of every Iwasawa calculation.
+
+The later finite internal computation is retained.  For instance its
+declared quotient gives the charge Gram matrix
+\[
+H_{\mathrm{sel}}=
+\begin{pmatrix}26&-3&0\\-3&10&0\\0&0&8\end{pmatrix},
+\qquad \det H_{\mathrm{sel}}=2008.
+\]
+This explains its internal logarithmic finite part after the stated zero-mode
+quotient.  It is not the smooth physical color Laplacian.  Similarly, a
+phase-preserving injection into a 27-dimensional label space need not
+intertwine a positive operator or its determinant.  The later oriented
+functional driver with normalized value \(N_{\alpha_1}(h_{\mathrm{ext}})=1\)
+is a source-scoped tangent result, not a physical action amplitude.  Its
+stationary and derivative conclusions require the declared driver and
+gauge transport.  The chronology's old ``SM open'' summaries do not
+override the current established finite SM, shared-primitive, Yukawa, and
+electroweak results.  None of those finite results is reopened here.
 
 Likewise,
 \[
@@ -656,12 +1407,18 @@ The fixed-point bridge therefore has a precise interpretation:
 
 The revised bridge suggests an efficient order of work.
 \begin{enumerate}[leftmargin=1.7em]
-\item Construct the physical rank-three visible bundle on the selected
-      Fu--Yau-oriented \(q=79\) carrier and prove stability.
-\item Construct compatible hidden and tangent instantons in the same metric
-      chamber.
-\item Solve the differential Green--Schwarz equation with fixed traces and
-      provide global gerbe data.
+\item Supply the selected visible twisted Prym datum, including its primitive
+      Deligne-zero condition, and construct the physical rank-three bundle
+      with the required topology and stability.
+\item Retain the established hidden projective rank-nine object and
+      existential HYM connection.  Place the visible, hidden, and tangent
+      instantons on one declared common base and prove a common chamber.
+\item Use the full Bott--Chern reduction for the actual anomaly source and
+      establish a positive conformally balanced nontransverse solution,
+      for example by supplying the full compiler's analytic bounds.
+\item Construct the ordinary integral differential Green--Schwarz
+      trivialization and the correctly typed equivariant theta comparison;
+      do not replace either with a flat determinant identity.
 \item Define the MTT configuration space and its selected continuum vector
       field on that same tuple.
 \item Define every row of \(\mathfrak B\), including connection and domain
@@ -672,10 +1429,13 @@ The revised bridge suggests an efficient order of work.
       \cref{prop:contraction}.
 \end{enumerate}
 
-This program is stricter than the previous selection-potential route, but it
-also uses more of the mathematics that already exists.  In particular, the
-Anomaly flow supplies the correct lower fixed-point language instead of
-inventing a second unverified flow.
+The Anomaly flow supplies an established lower fixed-point language under
+its analytic hypotheses.  The full residual compiler gives another
+conditional local route once all same-source data and bounds are supplied.
+Neither route requires reopening established finite SM, operational quantum
+mechanics, hidden HYM, or local \(q=79\) conclusions.  Measurement in any
+eventual physical model remains ordinary physics; this geometric completion
+contract does not introduce a separate actualization law.
 
 \section{Conclusion}
 
@@ -687,11 +1447,15 @@ fixed-point descent is exact.  If only a defect estimate is supplied, the
 result is an approximate lower solution until an a posteriori theorem closes
 the residual.
 
-Fu--Yau geometry and the Anomaly flow make this route mathematically
-credible.  The current \(q=79\) finite, topological, and rank-two results make
-it nonempty as an MTT research program.  They do not yet provide the common
-rank-three visible--hidden background or the intertwiner.  Those two objects,
-not another reformulation of the old potential, are the present frontier.
+The source now includes a holomorphic hidden \(P(3,9)\) object, an
+existential projective HYM connection, and a full Bott--Chern anomaly-potential
+reduction on the declared \(q=79\) target.  These coexist with the retained
+finite, topological, and rank-two results.  The physical visible rank-three
+bundle and its integral normal-function condition, a common positive
+nontransverse endpoint, and the connection-preserving intertwiner remain
+distinct obligations.  Preserving those distinctions uses the successful
+construction without reviving its excluded predecessors or overstating
+physical selection.
 
 
 
@@ -699,19 +1463,37 @@ not another reformulation of the old potential, are the present frontier.
 
 % BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
 \section*{Computational Evidence and Reproducibility}
-The q79 arithmetic theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate provide direct evidence only at their declared finite, topological, or rank-two analytic tiers. They do not construct the common physical rank-three visible-hidden Hull-Strominger background, differential Green-Schwarz representative, flux gerbe, worldsheet endpoint, or the typed MTT-to-Anomaly-flow intertwiner required by the conditional fixed-point theorem.
+\label{sec:reproducibility}
+The retained arithmetic, literal rank-two Cech, and rank-two Wiener results
+remain at their stated tiers.  The new contextual citations bind all 37
+assigned frozen sources, including the two evolving chronologies, to the
+curated manifest commit below.  Their explained imports in
+Sections~\ref{sec:source-presentations}--\ref{sec:source-frontier} do not
+duplicate their proof bodies or promote a physical endpoint.
 
 The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
 \begin{quote}\small
 \textbf{Repository:} \url{https://github.com/PeterNero/mtt-results-repro}\\
-\textbf{Commit:} \texttt{31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a}\\
-\textbf{Manifest:} \path{release/result_manifest.json}\\
-\textbf{Manifest SHA-256:}\\
-\texttt{fb399689 60b00584 631dbf53 1a708e18}\\
-\texttt{ef928d6b 6d935119 c185d7f6 32b1e7cd}
+\textbf{Commit:} \texttt{f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7}\\
+\textbf{Manifest:} \path{release/result_manifest.json}
 \end{quote}
 
 Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+The upstream hash lock \cite{FRLock} is retained as historical provenance:
+it identifies the source inputs available to that snapshot, not an extra
+theorem or current authority.  Its entire map was reviewed, not dismissed
+from an early status heading.  Current A/B authority and later scoped
+refinements govern present conclusions.  By contrast the Qa/SU3 and unified
+frontier chronologies contain substantive later results and exclusions;
+their contextual imports are not classified wholesale as historical.
+
+The local research-integration record and the source-bound editorial review
+fragment give exact artifact paths, SHA-256 hashes, and manuscript anchors
+for each assignment.  Full source reading and small checks of the displayed
+matrix, slope, and compiler examples are editorial validation, not
+independent verification of a boolean packet status.  No scientific source
+calculation was rerun in this revision.
 
 \par\begingroup\dimen0=\pagegoal\advance\dimen0 by -\pagetotal\ifdim\dimen0<7\baselineskip\newpage\fi\endgroup
 \paragraph{Rows used directly in this paper.}

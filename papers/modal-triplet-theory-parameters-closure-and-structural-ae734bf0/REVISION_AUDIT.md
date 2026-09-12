@@ -1,5 +1,23 @@
 # Revision Audit: Parameters, Source Provenance, and Structural Falsifiability
 
+## Current Editorial Revision: v3 (2026-09-12)
+
+**Supersedes:** Current v2, retaining released identity and earlier revision evidence.
+
+**Reason:** The original execution ledger needed the later effective and adopted neutrino ledgers. The evolving non-SM program could not be classified from an early status header.
+
+**Resolution:** `sec:effective-ledger` separates the original one-plus-fifteen construction record from the later thirteen non-neutrino/nineteen with-neutrino count, with strong theta excluded. Adopted U5/U9 closure is distinguished from strict source closure. `sec:constants-programs`, `sec:scale-example`, and `sec:source-chronology` explain downstream-only data use, conditional scale selection, the surviving radius/source input, noise conventions, and tangent normalization. Later finite positive source results are retained without being converted into measured constants. The Hopf example now distinguishes absence of a continuous section from existence of a Borel section.
+
+**Retained:** Finite SM, shared-primitive, Yukawa, electroweak and profile closure; typed identifiability and held-out-test rules; strict two-of-nine boundary.
+
+**Open boundary:** Zero-primitive physical source selection, absolute units/normalizations, complete uncertainty and matching, and genuine held-out values. Subtracting incommensurable ledger counts does not count predictions.
+
+**Verification:** Scoped one-job build passed with no reported warnings. All 16 PDF pages were rendered and visually inspected, with full-size checks of the new ledger and examples. The elementary scale-stationarity example was checked symbolically; the long program was read completely but not computationally rerun.
+
+**Review record:** Two owner reviews and the already-satisfied C.SM.01 text boundary are recorded in `editorial-reviews/2026-09-12/action_qg.json`. No new Kernel result candidate applies to this paper.
+
+## Earlier Audit (Preserved)
+
 ## Scope
 
 This audit governs Version 2 of:

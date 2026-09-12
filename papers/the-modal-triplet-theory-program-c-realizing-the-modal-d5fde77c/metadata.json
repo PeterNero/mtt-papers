@@ -1,12 +1,12 @@
 {
-  "abstract": "This paper gives a typed realization dictionary for the Modal Triplet Theory (MTT) program. In the canonical physical specialization, the ten-dimensional space is a four-dimensional Lorentzian spacetime times a compact six-dimensional Riemannian internal space. Coordinate factors of the internal space, vector bundles over it, Hermitian line bundles, vertical operators, and spectral projectors are distinct objects and cannot be interchanged by notation. A modal lane is therefore represented by a bundle, an operator, and a projector, not by an additional coordinate manifold. We prove the conditional operator statements needed by this dictionary. Strongly commuting self-adjoint vertical operators have a well-defined joint spectral projector, while compact resolvent, not the mere presence of discrete labels, is what gives a discrete spectrum. We also record the exact local decomposition of a real three-by-three comparison matrix into three rotation and six strain components, with the strain split as one plus two plus three. This is a component decomposition after a flag is chosen; it is not a multiplication of manifold dimensions. On the selected q=79 degree-three carrier, the same global rank profile is realized by the shared line tensored with the scalar, diagonal, and shear lanes. The shared circle is line-bundle phase and holonomy data, counted once and not identified with physical time. Equality of the local and global rank profiles does not construct their connection-preserving intertwiner. The physical visible-hidden HYM endpoints, the continuum geometry-to-operator intertwiner, the selected continuum Hessian, the upper action, the general Born source theorem, and the complete worldsheet contract remain open. Realizations can establish mathematical existence and compatibility, but nonuniqueness prevents physical prediction until a source law selects one realization and supplies its dynamics and observable map.",
+  "abstract": "This paper gives a typed realization dictionary for the Modal Triplet Theory (MTT) program. In the canonical physical specialization, a ten-dimensional product has a four-dimensional Lorentzian spacetime and a compact six-dimensional Riemannian internal space. Coordinate factors, vector bundles, Hermitian lines, vertical operators, and spectral projectors are distinct objects and cannot be interchanged by notation. A modal lane is represented by a bundle, an operator, and a projector, not an additional coordinate manifold. We prove the conditional operator statements needed by this dictionary. Strongly commuting self-adjoint vertical operators have a well-defined joint spectral projector, while compact resolvent, not discrete labels alone, gives a discrete spectrum. A comparison field between oriented rank-three tangent bundles has nine local components: three rotation directions and strain directions of ranks one, two, and three. This decomposition after a flag is chosen is not a multiplication of manifold dimensions. The selected q79 degree-three carrier realizes the same rank profile by tensoring one shared line with the scalar, trace-zero, and full cover-algebra lanes. The shared circle is phase and holonomy data, counted once and not identified with physical time. Equal rank profiles do not construct a connection-preserving intertwiner. The hidden projective rank-nine bundle and existential HYM connection are established; the selected visible bundle and common physical endpoint remain open. Projective-module compilers preserve a supplied connection, and the nonlinear spectral-strain map has a shorted Hessian on its regular stratum with a precise support-stratified boundary. These results do not supply the continuum geometry-to-operator intertwiner, selected continuum Hessian, upper action or complete worldsheet contract. The canonical operational Born-source result is retained on its declared recorder domain, without an extension to every apparatus. Realizations establish mathematical existence and compatibility, but physical prediction requires a source law selecting a realization, its dynamics, and its observable map.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v4",
-  "date": "July 2026 Version 4",
+  "current_version": "v5",
+  "date": "September 2026 Version 5",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18355142",
     "created": "2026-07-31T09:23:12.265009+00:00",
@@ -24,7 +24,7 @@
     ],
     "id": "21718498",
     "match_kind": "published_draft_reconciliation",
-    "match_score": 1.0,
+    "match_score": 1,
     "publication_date": "2026-07-31",
     "record_url": "https://zenodo.org/records/21718498",
     "resource_type": "publication",
@@ -32,40 +32,59 @@
     "updated": "2026-07-31T09:23:12.575499+00:00",
     "version": "v4"
   },
-  "main_tex_sha256": "d180d1c4e425f46d2976b9f04f1312e8a6631b8b51ac7a5c889038b50ed51dec",
+  "main_tex_sha256": "5885d707c939d1e0a8040c14f311e5ccd92cb008f5b3c03482dfd5c2accda246",
   "paper_id": "the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c",
-  "paper_md_sha256": "6848dc2d84f502e23168735cedc3676ebf3fd67c4ff2a0aea907fb3a188962d1",
-  "release_state": "zenodo_released",
+  "paper_md_sha256": "714340fa7ec673a2e06530731f095a1003bdaaa2a888d53dde029c2720dc3fd8",
+  "release_state": "current_revised_tex",
   "result_refs": [
-    "q79_exact_theorem"
+    "causal_base_q79_all_arity_source_promotion_packet",
+    "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+    "causal_base_q79_symmetric_response_transferred_m4_packet",
+    "eta9_gate1_campaign",
+    "eta9_three_cycle_b96_nondetection",
+    "q79_cech_projector_compiler",
+    "q79_cohesive_superconnection",
+    "q79_eta9_b89_same_source_rejection",
+    "q79_eta9_local_source_tube_consolidation",
+    "q79_exact_theorem",
+    "q79_global_fitting_descent",
+    "q79_projective_hym_naturality",
+    "q79_spectral_strain_hessian",
+    "q79_support_stratified_strain",
+    "unified_source_physical_residual_transfer"
   ],
   "revision": {
     "revision_evidence_path": "papers/the-modal-triplet-theory-program-c-realizing-the-modal-d5fde77c/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "20f20c162f534de2d6cc9e33fbc30fca4f71ef59b27f16592f0886cc3aa2fb57",
+    "revision_evidence_sha256": "a20e5dd44aa412cbd1c352a393f86bf560b3b8e81f0ba2fcdf0b980c0e64178a",
     "selected_revision": true,
     "superseded_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_C__Realizing_the_Modal_Triplet_Core"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
+      "bytes": 15782,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "a20e5dd44aa412cbd1c352a393f86bf560b3b8e81f0ba2fcdf0b980c0e64178a"
+    },
+    {
       "bytes": 33326,
       "path": "main.bib",
       "sha256": "5ea216ce507207ecedcb9a7367d6351dd98f454dcb7bd35a7813fc58700e0795"
     },
     {
-      "bytes": 447707,
+      "bytes": 483576,
       "path": "main.pdf",
-      "sha256": "faf9248c706980e0e6b63dcfa1d084558b1468ff2e33f35a320bcdfe274e516b"
+      "sha256": "b9a8100cbb92a06df86d3e41b46cdbe596547df3d33fc6587c953e562963e214"
     },
     {
-      "bytes": 38226,
+      "bytes": 53674,
       "path": "main.tex",
-      "sha256": "d180d1c4e425f46d2976b9f04f1312e8a6631b8b51ac7a5c889038b50ed51dec"
+      "sha256": "5885d707c939d1e0a8040c14f311e5ccd92cb008f5b3c03482dfd5c2accda246"
     },
     {
-      "bytes": 12911,
-      "path": "REVISION_AUDIT.md",
-      "sha256": "20f20c162f534de2d6cc9e33fbc30fca4f71ef59b27f16592f0886cc3aa2fb57"
+      "bytes": 4793,
+      "path": "paper-markdown.lua",
+      "sha256": "87f75625937572500559131217561f47781fc9059d5815305f0dd94c4eaf708c"
     },
     {
       "bytes": 3784,
@@ -76,9 +95,9 @@
   "source_provenance": {
     "legacy_source_path": "1 Core & Encodings/_work/The_Modal_Triplet_Theory_Program_C__Realizing_the_Modal_Triplet_Core"
   },
-  "source_tree_sha256": "67a1b310ab3960996ffa4aea7aff58b4fb50e6ccb71721bc89a53c614abcd34e",
+  "source_tree_sha256": "b4f1dc80fa9190b6b879cf4d1ffca227b55fd15b32241a6fc88977d246e9b5ea",
   "title": "The Modal Triplet Theory Program C: A Typed Dictionary for Geometric, Bundle, and Operator Realizations",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18355142",
@@ -97,7 +116,7 @@
       ],
       "id": "21718498",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-31",
       "record_url": "https://zenodo.org/records/21718498",
       "resource_type": "publication",
@@ -122,7 +141,7 @@
       ],
       "id": "21655387",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-29",
       "record_url": "https://zenodo.org/records/21655387",
       "resource_type": "publication",
@@ -147,7 +166,7 @@
       ],
       "id": "21650901",
       "match_kind": "published_draft_reconciliation",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-07-28",
       "record_url": "https://zenodo.org/records/21650901",
       "resource_type": "publication",
@@ -172,7 +191,7 @@
       ],
       "id": "18355143",
       "match_kind": "title_or_file",
-      "match_score": 1.0,
+      "match_score": 1,
       "publication_date": "2026-01-23",
       "record_url": "https://zenodo.org/records/18355143",
       "resource_type": "publication",

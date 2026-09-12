@@ -1,12 +1,12 @@
 {
-  "abstract": "We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle over a four-dimensional base with compact six-dimensional Riemannian fiber; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur\u2013Feshbach, projector-stability, and basin-robustness statements are given with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface; their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat cyclic line of order 64 pulls back coherently to the q79 SpinC determinant, the 1+2+3 carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby\u2013Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time.",
+  "abstract": "We develop a functional-analytic foundation for Modal Triplet Theory (MTT). The abstract architecture is a Hilbert bundle with three compatible vertical structures, a joint coherent spectral projector, a stabilization flow, and explicitly separate hypotheses for gap, invariance, existence, contraction, truncation, and admissibility. The canonical physical realization is a ten-dimensional bundle M\u2081\u2080 \u2192 Y\u2084 with compact Riemannian fiber X\u2086; the central circle is bundle data and is not counted as an additional product dimension. Strong commutation or a single total internal operator is assumed rather than inferred from notation. Complementary-mode stability uses a stable-semigroup estimate that remains valid for nonnormal generators. Projected time-step fixed points are distinguished from equilibria, and the existence, Lyapunov-promotion, and Banach gates are stated in self-contained form but imported from Fixed Points I, their canonical theorem source. Schur\u2013Feshbach, projector-stability, and basin-robustness statements are given here with their required domains. Stabilization time, physical time, and renormalization scale are separated. Selection by reset is identified as a hybrid law unless derived from continuous upper dynamics. Lorentzian signature belongs to a hyperbolic principal symbol in a physical completion, not to a positive Hilbert-space Gram form. A complete admissibility ledger records the independent obligations inherited by every downstream MTT realization. A rank-three world-in-world comparison field and the selected q79 trace-split carrier are included as a typed geometry interface: their matching component counts do not by themselves derive a ten-dimensional manifold, Lorentzian spacetime, or a global intertwiner. The shared-circle claim is upgraded from fiberwise analogy to an exact finite differential-line theorem: one universal flat \u2124\u2086\u2084 line pulls back coherently to the q79 SpinC determinant, the 1 + 2 + 3 carrier, the root-plane complex structure, and the finite Reynolds Hessian. Boothby\u2013Wang geometry independently identifies lens and Heisenberg nil manifolds as parallel curved prequantum circle bundles over different bases. These results are compatible but not identical, and neither compact circle flow is physical Lorentzian time. The curved connection compiler and nonlinear, support-stratified strain shadow now refine this interface without supplying a physical endpoint. Finite homotopy transfer is kept separate from the analytic fixed-point hypotheses and the selected physical action.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v10",
-  "date": "September 2026, Version 10",
+  "current_version": "v11",
+  "date": "September 2026, Version 11",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.16949762",
     "created": "2026-07-29T08:51:20.203508+00:00",
@@ -32,39 +32,55 @@
     "updated": "2026-07-29T08:51:20.648443+00:00",
     "version": "v9"
   },
-  "main_tex_sha256": "8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae",
+  "main_tex_sha256": "3e4687594762c72391fcee2fc653b5e69e42c7330a7a6f8d4326f90f612a6a05",
   "paper_id": "modal-triplet-theory-foundations",
-  "paper_md_sha256": "11d886069ed567bb124edde4d0e4f60607b8197e894a2a7067a398223df33577",
+  "paper_md_sha256": "6ffc755e1bc7f5bc2ff08cf06302d2b13ad6e292ac87ed17d7a605565ea04806",
   "release_state": "current_revised_tex",
-  "result_refs": [],
+  "result_refs": [
+    "causal_base_q79_all_arity_source_promotion_packet",
+    "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet",
+    "causal_base_q79_seven_row_endpoint_factorization_packet",
+    "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+    "causal_base_q79_symmetric_response_transferred_m4_packet",
+    "q79_cech_projector_compiler",
+    "q79_projective_hym_naturality",
+    "q79_spectral_strain_hessian",
+    "q79_support_stratified_strain"
+  ],
   "revision": {
-    "revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V8_SHARED_LINE_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "d437e04a894cbf3a283973ce5be5ec4f260b52402b659ed7c1d6a04e0ff3a34a",
+    "previous_revision_evidence_path": "3 Core Foundations/revised_tex_vnext/FOUNDATION_V8_SHARED_LINE_REVISION_AUDIT.md",
+    "revision_evidence_path": "papers/modal-triplet-theory-foundations/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "64bccf7ce3c337364702494e288d9113d7c44a61b77819e9f30a3ea1e9e5788c",
     "selected_revision": true,
     "superseded_source_path": "3 Core Foundations/_work/Modal_Triplet_Theory__Foundation_v6 (1)"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 441603,
+      "bytes": 460705,
       "path": "main.pdf",
-      "sha256": "2b5af97fd9121c2c209793ad481b56356f41255bbdce718fe02c075950ebc55a"
+      "sha256": "e4a28abd9e02f6d71d6af8aecaac041f4eb34995b3c46dd37661c3ca273d8e03"
     },
     {
-      "bytes": 51681,
+      "bytes": 60604,
       "path": "main.tex",
-      "sha256": "8fa740c7a0777ef191aeb0302b43d62e2a43b5aa291fe888ffc6f912e4f57fae"
+      "sha256": "3e4687594762c72391fcee2fc653b5e69e42c7330a7a6f8d4326f90f612a6a05"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 3850,
+      "path": "paper-markdown.lua",
+      "sha256": "e2d9dc1bb98f171ad4cc84a13c02f19fa01600036e9332679bf0382413810c3b"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "3 Core Foundations/revised_tex_vnext/Modal_Triplet_Theory__Foundation_v8"
   },
-  "source_tree_sha256": "a00789d4973ab75f48ad6da5591ae6b0a846b2c5e3d8aba759c4562dfb965bca",
+  "source_tree_sha256": "62ee734a15e0f8e6c8cdbd14b5b2e308a33c3e1fdff265c3b744e89fb1522e38",
   "title": "Modal Triplet Theory: Foundations",
   "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [

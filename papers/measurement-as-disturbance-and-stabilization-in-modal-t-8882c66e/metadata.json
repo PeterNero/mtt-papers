@@ -1,12 +1,12 @@
 {
-  "abstract": "Measurement is an ordinary physical interaction, but an adequate mathematical description must distinguish three stages: apparatus coupling, completion into an outcome-resolved transition, and stabilization of the resulting record. This paper formulates that distinction for Modal Triplet Theory (MTT). A localized coupling may displace a state from a quiet coherent regime, and contractive dynamics inside a selected record basin may then stabilize a repeatable record. Neither fact chooses a basin. We therefore introduce the missing transition-completion object: a normalized kernel, or in quantum language an instrument, that assigns both an outcome probability and a post-outcome state. We prove that one global contraction cannot support multiple stable outcomes, derive the exact normalization and conditional-state laws of a completion kernel, and distinguish failure of unique decoding from the possible existence of a representative section. Decoherence suppresses interference within an outcome algebra but does not select one instrument element. The Born rule requires a selected preparation law and a basin–trace or instrument–trace equality. The current q79 binary one-anchor recorder supplies such an exact stopped-output law on its declared domain; arbitrary apparatus contexts and objective one-history selection remain open. An Ornstein–Uhlenbeck variance is retained only as a conditional linear-response model and is not identified with the Heisenberg uncertainty principle.",
+  "abstract": "Measurement is an ordinary physical interaction, but an adequate mathematical description must distinguish three stages: apparatus coupling, completion into an outcome-resolved transition, and stabilization of the resulting record. This paper formulates that distinction for Modal Triplet Theory (MTT). A localized coupling may displace a state from a quiet coherent regime, and contractive dynamics inside a selected record basin may then stabilize a repeatable record. Neither fact chooses a basin. We therefore introduce the missing transition-completion object: a normalized kernel, or in quantum language an instrument, that assigns both an outcome probability and a post-outcome state. We prove that one global contraction cannot support multiple stable outcomes, derive the exact normalization and conditional-state laws of a completion kernel, and distinguish failure of unique decoding from the possible existence of a representative section. Decoherence suppresses interference within an outcome algebra but does not select one instrument element. The Born rule requires a selected preparation law and a basin\u2013trace or instrument\u2013trace equality. The current q79 binary one-anchor recorder supplies such an exact stopped-output law on its declared domain; arbitrary apparatus contexts and objective one-history selection remain open. An Ornstein\u2013Uhlenbeck variance is retained only as a conditional linear-response model and is not identified with the Heisenberg uncertainty principle.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v6",
-  "date": "July 2026, Version 6",
+  "current_version": "v7",
+  "date": "12 September 2026, Version 7",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.17177404",
     "created": "2026-07-29T08:51:12.544713+00:00",
@@ -32,31 +32,40 @@
     "updated": "2026-07-29T08:51:13.357713+00:00",
     "version": "v6"
   },
-  "main_tex_sha256": "2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686",
+  "main_tex_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
   "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
-  "paper_md_sha256": "a660c8ac63aa546fc2041ba4074240f31de15396344ff464323c72972551fec3",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "71c022bcda1e02a019287d42778b8024f6e10b77604aede8f81f5f4ba70c1552",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "q79_continuum_recorder_compiler",
+    "q79_fock_output_measure",
+    "q79_ontology_nonentailment"
+  ],
   "revision": {
     "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "7dbfe4d18d2204a34de11bc6b996da970f1043ede246faedcf365e0fe8171179",
+    "revision_evidence_sha256": "1ab401ff3b659fec5b079ae249a6d2828e55e8fea93ee717ed8e5725dea9713e",
     "selected_revision": true,
     "superseded_source_path": "8 Measurement, Selection & Computation/_work/Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 24950,
+      "bytes": 28418,
       "path": "main.tex",
-      "sha256": "2a2d82a2e44e62005fef0d8295285975cf6c2fdbe3e911a727f52d78c1587686"
+      "sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8"
+    },
+    {
+      "bytes": 4458,
+      "path": "paper-markdown.lua",
+      "sha256": "3d9060d49d0c0e448ff27b6c62d412c51c46448ce0c6dc20657421c2e684016b"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Measurement_as_Disturbance_and_Stabilization_in_Modal_Triplet_Theory_v5"
   },
-  "source_tree_sha256": "a05cb0eb8d453555372c62dd4e344ec709673051ea6e204a5d2c3e8fcde9149d",
+  "source_tree_sha256": "a63d60fd8499f2fa7707dc902593a95cc4bce606545da372b709a0b0befe968e",
   "title": "Measurement as Physical Disturbance, Outcome Completion, and Record Stabilization in Modal Triplet Theory",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.17177404",

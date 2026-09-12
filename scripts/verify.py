@@ -13,6 +13,7 @@ from verify_paper_release_requirements import verify_local as verify_paper_relea
 from verify_theorem_ownership import verify as verify_theorem_ownership
 from verify_fp_foundational_dependencies import verify as verify_fp_foundational_dependencies
 from consolidate_research_ownership import reviewed_results
+from research_consumer_reviews import reviewed_consumers
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -130,6 +131,7 @@ def verify() -> dict[str, int]:
     result_rows = [{"id": r["result_id"], "repo_id": r["source_repository"], "sha256": r["sha256"]}
                    for r in ownership["results"]]
     decisions = reviewed_results(reviews, result_rows, ROOT)
+    consumers = reviewed_consumers(ROOT, ownership)
     for row in ownership["results"]:
         review = decisions.get(row["result_id"])
         assert row.get("contextual_review") == review, f"regenerate ownership: {row['result_id']}"
@@ -321,6 +323,7 @@ def verify() -> dict[str, int]:
 
     return {
         "papers": expected,
+        "contextual_consumer_reviews": len(consumers),
         "selected_revisions": len(selected_revision_ids),
         "tex_files": tex_files,
         "markdown_bytes": markdown_bytes,

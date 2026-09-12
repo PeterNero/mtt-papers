@@ -1,5 +1,18 @@
 # Closure-Strain v7 Shared-Line Revision Audit
 
+
+## September 12, 2026 Contextual Revision (v8)
+
+- Supersedes: current v7, incremented once. Prior revision notes and all released Zenodo identities are preserved. This is unreleased authoring work.
+- Reason and resolution: The frozen internal TT support argument is integrated as an internal support/eigenvalue theorem, not a physical stress-energy or SI normalization theorem. Curved geometry, nonlinear shorting and finite all-arity transfer are explained as scoped consumer results.
+- Current anchors: sec:gr-tt-support; sec:cost-versus-intertwiner; sec:consumer-geometry; sec:consumer-strain; sec:consumer-transfer.
+- Shared correction SPINOR.POLAR.METRIC.01: skew/symmetric component orthogonality holds in identity-normalized coordinates, but polar variations at a general positive U are Omega U and delta U and need not be ambient-Frobenius-orthogonal. The concrete diag(2,1,1) witness has pairing 1. The local 3+6 count and the strain-coordinate 1+2+3 projectors survive.
+- Shared correction SPINOR.SCALAR.FIELD.01: a real rank-six strain carrier must be complexified, or a compatible real form chosen on the complex trace carrier, before asserting a linear isomorphism. This is not an added spacetime dimension.
+- Consumer correction: a linear root-space embedding is excluded; the six-coordinate nonlinear strain shadow forgets triangle phase from a generically seven-dimensional quotient. Its reduced Green covariance is shorted only where invertible. Zero-edge normal cost is degree one, not an ordinary boundary Hessian; a rank-six or local C4 contract forces the regular stratum.
+- Retained: established finite/profile SM and canonical operational QM, hidden projective/existential HYM, finite/local q79 results, and ordinary physical measurement. No physical status was promoted from packet flags.
+- Open: selected visible-hidden common-chamber endpoint and literal metrics, reduced Green and domains, physical symmetry/action/compactification, strict value sources and SI normalization where applicable. The fixed-point analytic hypotheses are not supplied by finite arithmetic.
+- Validation and source provenance: final source hashes, per-result assessments, full reading coverage, bounded checks, builds and page-by-page PDF inspection are recorded in editorial-reviews/2026-09-12/spinor.json. Local build logs and rendered QA are under this paper's tmp directory. Global catalog, Kernel and release integration are parent-owned.
+
 **Date:** 2026-07-22  
 **Selected source:** `Closure_Strain_Geometry__Local_Normal_Forms_and_Conditional_Matter_Encodings_v7/main.tex`  
 **Supersedes:** Closure-Strain v6

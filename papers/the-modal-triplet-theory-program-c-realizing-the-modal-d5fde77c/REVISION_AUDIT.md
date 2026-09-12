@@ -1,4 +1,55 @@
-# Program C v4 Release Audit
+# Program C v5 Contextual Revision Audit
+
+## v5 consumer and coherence delta
+
+- Supersedes: current v4 text; the released DOI and all release records
+  retain their existing identity.
+- Reason: the old ledger reopened hidden HYM existence and canonical
+  Born-source closure, retained a nineteen-block mask, and did not explain
+  the later nonlinear strain and supplied-connection compilers.
+- Resolution: concise owner-bound explanations in sec:projector-compiler,
+  sec:nonlinear-strain, sec:geometric-consumers and sec:cohesive-consumers.
+- Retained: the exact local algebraic matrix split, global rank profile,
+  typed bundle/operator dictionary and conditional spectral statements.
+  The local algebraic split is not by itself a nonlinear orientation
+  quotient; that interpretation requires the appropriate tangent
+  identification at the background.
+- Open boundary: selected visible bundle and common positive HYM endpoint,
+  integral anomaly data, physical continuum operator and symmetry lift,
+  signed action and worldsheet completion. General apparatus extensions
+  are separate from the closed canonical operational recorder.
+
+The physical residual uses five sectors and twenty-five ordered coupling
+blocks, not nineteen. Hidden projective rank-nine existence and existential
+HYM are retained through the Hull owner; a selected common visible-hidden
+solution is still not supplied. Measurement is ordinary physical
+interaction, with no new foundational primitive or mandatory ontic-history
+postulate.
+
+The spectral-strain import retires the linear root-stack identification,
+distinguishes the seven-dimensional relative-phase quotient from its six
+strain coordinates, and explains covariance shorting before inversion.
+The support-stratified refinement supplies boundary second jets and the
+normal degree-one cost; an ordinary full six-dimensional boundary Hessian
+is not recovered by a pseudoinverse. Physical source and symmetry remain
+independent obligations.
+
+All consumer sources used in this revision were read in full and matched
+to frozen raw-byte hashes under manifest
+f141a20ea23c5c3ff19cc2161c0e226e29ade8a7. Source reading and small bounded
+checks do not independently verify the large archived calculations.
+The parent fragment editorial-reviews/2026-09-12/hull.json records each
+actual consumer disposition and source mapping, text corrections, build
+and page inspection. Already-integrated historical groups receive no
+duplicate completion review solely from title/domain suggestions.
+
+The prescribed contextual-evidence helper builds this paper alone with
+--jobs 1, redirecting only its log root into this paper's temporary
+directory. The shared TeX style is unchanged. This manuscript overrides
+its inherited unrelated PDF title locally. Current PDF, Markdown and
+metadata are generated locally; released metadata identities remain intact.
+
+## Archived v4 Release Audit
 
 ## v4 reproducibility delta
 

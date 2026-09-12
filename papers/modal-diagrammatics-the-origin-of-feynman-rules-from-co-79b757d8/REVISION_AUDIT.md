@@ -1,5 +1,25 @@
 # Revision Audit: Universal Perturbative Graph Structure
 
+## Current Editorial Revision: v3 (2026-09-12)
+
+**Supersedes:** Current v2, retaining its published identity and revision note.
+
+**Reason:** The frozen repair-jet result supplies a genuine upstream perturbative datum. The graph formula needed its Euclidean interaction sign; projection compatibility needed the correct field/dual typing.
+
+**Resolution:** `sec:repair-jets`, `sec:repair-example`, and `sec:repair-transport` explain the joint residual/metric jet, the polynomial example, Wick coefficients, and coordinate transport. The graph weight includes one minus sign per Euclidean interaction vertex. For a bilinear Hessian `K:E -> E*`, compatibility is `KP=P*K`, not an untyped commutator. The scalar probability example requires integrability of the full Boltzmann weight; an arbitrary quartic remains only a formal expansion. `sec:finite-transfer-consumer` explains Cohesive's all-arity contraction transport and the three-packet physical endpoint contract without copying their proofs.
+
+**Retained:** Exact finite graph expansion, all-retained transfer, no-mixed-vertex factorization, and nonselection. A repair cost pullback does not automatically preserve independently fixed physical metrics or define a reducing subspace.
+
+**Open boundary:** Selected signed action, causal inverse, state/statistics, and interacting fixed-coupling continuum completion. Free CAR and canonical operational QM remain established.
+
+**Shared source qualification:** The general adjoint consequence in the older cohesive MC transform wording needs an onto unitary map or a reducing image with compatible closed domains. Its square orthogonal witness is valid. A finite isometric cochain counterexample and the later CBF.T11 reducing-map condition are recorded distinctly in the review fragment; this is not a blanket downgrade of the source.
+
+**Verification:** Scoped helper build passed, with one job and no reported warnings. All 15 PDF pages were rendered and visually inspected; new and corrected pages were checked at full render size. Exact small checks reproduce the displayed jets and Wick coefficients. They do not independently replay scientific source certificates.
+
+**Review record:** One owner review and two consumer placements are recorded in `editorial-reviews/2026-09-12/action_qg.json`. Historically integrated GEO/ACTION suggestions are not counted again.
+
+## Earlier Audit (Preserved)
+
 ## Release delta
 
 - Previous release: v1.0, DOI `10.5281/zenodo.18330804`.

@@ -16,7 +16,7 @@
 \title{\textbf{Parameters, Source Provenance, and Structural Falsifiability in Modal Triplet Theory}\\
 \large An Auditable Identifiability Ledger}
 \author{Peter Nero}
-\date{Version 2, July 2026}
+\date{Version 3, September 2026}
 
 \begin{document}
 \maketitle
@@ -33,19 +33,40 @@ counts are not invariant under reparameterization or gauge redundancy, that
 replay of data used in construction is not a held-out prediction, that loss
 of a global right inverse is not by itself a falsifier, and that a scalar
 coherence-capacity diagnostic cannot eliminate the full source ledger.
-At the current profile-standard Standard Model tier, the auditable ledger
+At the original profile-standard Standard Model execution, the auditable ledger
 contains one shared electroweak construction primitive and fifteen measured
 common-scheme source coordinates. The transported couplings, charged Yukawa
 rows, Higgs row, covariance workspace, and finite operators are outputs of
 that declared construction and are not counted again. This is a coherent
 embedding and reuse result, not a strict reduction of the Standard Model
 parameter set. The stronger no-knob program remains two of nine upgrades
-closed. We give valid falsification capsules for exact algebraic results,
+closed. A later effective ledger counts thirteen non-neutrino inputs, or
+nineteen with the adopted six-coordinate neutrino sector, excluding strong
+theta; this is a different accounting question from the original execution
+record. We also explain what the evolving constants program establishes
+about conditional scale selection and what source and unit anchors it does
+not select. We give valid falsification capsules for exact algebraic results,
 numerical certificates, source provenance, and held-out empirical
 predictions. The result is an honest parameter-identifiability framework:
 MTT has substantial structural economy, but strict numerical economy must be
 demonstrated rather than inferred from notation.
 \end{abstract}
+
+\section*{Version 3 revision note}
+\begin{description}[style=nextline]
+\item[Supersedes.] Current Version 2; its released identity and revision
+history are retained.
+\item[Reason.] The execution-input ledger needed the later effective and
+neutrino ledgers alongside it, and the constants-source chronology needed
+context rather than a single historical status label.
+\item[Resolution.] We separate execution inputs from effective coordinates,
+explain conditional scale selection and data-use discipline, and distinguish
+continuous from measurable right inverses.
+\item[Retained.] Finite SM and shared-primitive profile closure, the typed
+identifiability ledger, and the strict two-of-nine boundary are unchanged.
+\item[Open boundary.] A selected zero-primitive physical source, absolute
+normalizations, and genuinely held-out values remain separate obligations.
+\end{description}
 
 \section*{Version 2 revision note}
 
@@ -309,9 +330,9 @@ not identify their sources. Nor does \(-\nabla C\) become a force, \(C\)
 become a conserved charge, or a reparameterization \(f(C)\) become physically
 equivalent merely because it preserves the zero set.
 
-\section{The current MTT parameter ledger}
+\section{Execution inputs and the current effective ledger}
 
-\subsection{Declared profile-standard closure}
+\subsection{The original declared profile execution}
 
 Current MTT closes embedded renormalized-Standard-Model equivalence at a
 declared profile standard. The accepted calculation has twelve of twelve
@@ -349,8 +370,8 @@ Only observables excluded from construction can support predictive-economy
 claims. \\
 \bottomrule
 \end{tabularx}
-\caption{The current input/output ledger. Counts are meaningful only at the
-declared profile tier.}
+\caption{The original execution input/output ledger, not the later effective
+coordinate count. Counts are meaningful only at the declared profile tier.}
 \label{tab:current-ledger}
 \end{table}
 
@@ -385,6 +406,39 @@ These are compatibility, reuse, and representation-economy results. They
 constrain how inputs can be assembled. They do not yet replace the measured
 profile by a selected physical source.
 
+\subsection{The effective and neutrino ledgers}
+\label{sec:effective-ledger}
+
+The later minimal-parameter ledger asks which effective inputs remain after
+the accepted reductions, rather than which coordinates entered the original
+profile execution. Its non-neutrino count is
+\[
+N_{\mathrm{eff,non\nu}}=1+9+1+1+1=13:
+\]
+one gauge normalization anchor, nine charged-fermion coordinates, one CKM
+phase, one electroweak scale, and one shared \(\PEW\) primitive. Strong
+theta is excluded from this declared count. Adding the adopted six neutrino
+coordinates gives nineteen \cite{FrozenEffectiveLedger}. Subtracting thirteen
+from the original sixteen would not measure three new predictions: the
+ledgers have different domains, conventions, and input/output roles.
+
+The adopted U5 neutrino decision uses a selected holonomy shape and one
+absolute mass scale. Its effective coordinates remain three mixing angles,
+one Dirac phase, one holonomy-shape coordinate, and one mass scale. The
+non-self-conjugate holonomy branch retains its Dirac interpretation; the
+nil-minimal trace boundary is a declared assumption, not a proof that every
+neutrino realization has been selected \cite{FrozenU5}. This is an adopted
+profile closure, not strict source emission of six measured quantities.
+
+Likewise, the U9 branch-measure construction gives equal weights to the two
+members of its finite orbit and, after conditioning, unit weight to the
+retarded member. This is exact for that finite conditioning problem, not a
+measure on all physical histories. With the adopted U5 and U9 decisions, the
+upgrade ledger is four closed, four partial, and one blocked; at the strict
+source standard it remains two closed, six partial, and one blocked
+\cite{FrozenU9}. Keeping both ledgers visible prevents adopted branch choices
+from being silently advertised as strict predictions.
+
 \subsection{The strict tier}
 
 The stronger program asks for the source geometry and action to emit the
@@ -395,7 +449,8 @@ and true held-out Standard Model value packet remain open.
 
 \begin{theorem}[Current-ledger statement]
 \label{thm:current-ledger}
-At the adopted profile standard, the declared one-plus-fifteen continuous
+At the original adopted profile execution standard, the declared
+one-plus-fifteen continuous
 source ledger is sufficient to execute the accepted embedded-SM forward map.
 Removing the measured profile leaves no current theorem that emits all of its
 coordinates from the selected MTT geometry and action. Therefore:
@@ -415,6 +470,81 @@ they are outputs rather than additional inputs. By \cref{prop:replay}, rows
 whose source values entered construction cannot be reclassified as held-out
 predictions.
 \end{proof}
+
+\section{What the constants programs actually contribute}
+\label{sec:constants-programs}
+
+The short individual-constants policy fixes a useful provenance rule:
+measured values may test a construction downstream, but may not select its
+branch, source, kernel, or purported universal constant upstream. Shared
+global source parameters are not forbidden; undisclosed per-observable fits
+are. A calculation that uses an observed value to choose among sources must
+record that use in \(\Data_{\mathrm{build}}\), even when the final formula
+contains no fit symbol \cite{FrozenIndividual}.
+
+The longer non-SM program is an evolving research record, not one theorem
+with one status. It distinguishes closed, conditional, structural, and open
+claims, and explicitly forbids interpreting a unit convention as a derived
+constant. In particular, internal choices such as \(\alpha=G_{10}=1\) do not
+predict a measured electromagnetic coupling or Newton constant
+\cite{FrozenNonSM}. Its later finite selected-character, gap, and operator
+first-variation results must not be discarded because an earlier paragraph
+describes their route as open. Conversely, those finite advances do not erase
+the source obligations left in later branches.
+
+\subsection{A conditional scale-selection example}
+\label{sec:scale-example}
+
+For declared positive coefficients \(A,B,p\), consider
+\[
+E(s)=A s^{-p}+B s^2,\qquad s>0.
+\]
+It diverges at both ends, has
+\(E''(s)=p(p+1)A s^{-p-2}+2B>0\), and therefore has the unique minimizer
+\[
+s_\ast=\left(\frac{pA}{2B}\right)^{1/(p+2)}.
+\]
+This is a genuine conditional scale-selection mechanism. It does not select
+the physical coefficients or the conversion from \(s\) to an external unit.
+For the program's \(p=4\) branch, \(A=C_{\rm uv}^2\) and
+\(B=\delta/(30\kappa)\), so at \(\kappa=1\),
+\(s_\ast=(60\rho)^{1/6}\), where
+\(\rho=C_{\rm uv}^2/\delta\). Here \(\delta>0\) is the declared disturbance
+coefficient, not an unrelated signed threshold correction bearing a similar
+symbol \cite{FrozenNonSM}.
+
+One later unit-selected-character branch records
+\[
+\rho(R)=\left(\frac{64(2\pi)^2}{16R^4+8}\right)^2,
+\qquad s_\ast(R)=(60\rho(R))^{1/6}.
+\]
+The displayed dependence is informative: it exposes the radius/source
+obligation instead of hiding it inside a numerical constant. The source's
+retarded-shift phase and character normalization specify a finite branch;
+they do not alone supply an absolute physical radius or metrology anchor.
+
+\subsection{Noise, tangent normalization, and chronology}
+\label{sec:source-chronology}
+
+A unit Brownian covariance specifies a mathematical noise convention. To
+claim a physical disturbance power after propagation requires the source
+covariance and the actual maps, schematically
+\[
+\int_0^\infty P K Q_\tau K^\ast P^\ast\,\dd\tau,
+\]
+with convergence and domains declared. A Green--Kubo identification also
+requires a selected measure and autocovariance. Neither follows from naming
+the driving noise Brownian. Similarly, the program's normalized
+\(\alpha_1\) tangent, expressed as \(N(h)=1\), fixes a tangent convention;
+it is not by itself a physical coupling coefficient \cite{FrozenNonSM}.
+
+These distinctions preserve the later finite positive results while keeping
+their consumer contract explicit. A source-specific gap and first variation
+can justify a local operator or scale response once the source is fixed.
+They do not reopen established finite SM, Yukawa, or electroweak closure, nor
+do they close an absolute-normalization problem in a different sector. The
+right editorial unit is the scoped result with its assumptions, not the
+first or last status word in an evolving notebook.
 
 \section{What can legitimately falsify a claim}
 
@@ -499,6 +629,13 @@ the bundle, contradicting its nonzero first Chern class
 projection can lack a global section.
 \end{proof}
 
+The regularity category matters here. The Hopf example excludes continuous
+sections, not measurable ones: a Borel section can be assembled from local
+trivializations over a Borel partition of a finite trivializing cover.
+Thus the example cannot establish the nonexistence of a measurable decoder.
+Any no-section claim must name its continuity, measurability, or other
+regularity requirement before it can be tested.
+
 The correct falsifier is conditional. If an MTT claim requires a section,
 decoder, or inverse on a named domain, then a proof that no such object exists
 falsifies that claim. If the model instead represents intentional information
@@ -573,10 +710,11 @@ At present, MTT should make two separate statements.
 supports a faithful gauge group, chiral carrier, anomaly cancellation,
 finite operator organization, one-Higgs projection, and exact finite
 gauge/ghost spectra at their declared tiers.
-\item \textbf{Numerical statement.} The accepted profile-standard execution
+\item \textbf{Numerical statement.} The original accepted profile execution
 uses one shared construction primitive and fifteen measured source
-coordinates. No strict global reduction of the measured Standard Model
-profile is presently proved.
+coordinates. The later effective ledger is thirteen non-neutrino inputs or
+nineteen with the adopted neutrino sector, excluding strong theta. These
+counts do not establish strict source emission of the measured profile.
 \end{enumerate}
 
 This is not a negligible result. Structural sharing can expose consistency
@@ -679,9 +817,12 @@ The honest current picture is sharper than either ``MTT has no parameters''
 or ``MTT is merely another fit.'' MTT has exact structural results and a
 profile-standard construction in which one architecture and one source
 ledger feed many sectors. That reuse is a real achievement. The present
-execution nevertheless uses one shared continuous construction primitive and
+original execution nevertheless uses one shared continuous construction primitive and
 fifteen measured source coordinates, plus separately declared conventions,
-metrology, and uncertainty data.
+metrology, and uncertainty data. The later thirteen/nineteen effective ledger
+and the adopted/strict upgrade split refine this account without relabeling
+construction data as predictions. Conditional scale minimization is likewise
+kept separate from physical source and unit selection.
 
 Falsifiability begins when a claim is made precise. Exact matrix and descent
 claims can fail exactly. Numerical certificates can fail under independent

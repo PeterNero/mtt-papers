@@ -1,5 +1,25 @@
 # Revision Audit
 
+## Current Editorial Revision: v7 (2026-09-12)
+
+**Supersedes:** Current v6. Preserve the published identity and all previous revision notes.
+
+**Reason:** The six assigned frozen results and the Kernel consumer queue needed physical interpretation and chronology, including later Bott-Chern and hidden-HYM refinements.
+
+**Resolution:** The new source discussion explains the finite normalized Reynolds Hessian and declared branch/coframe input, physical support `9H+3D0`, norm/Prym requirements, object-level Poincare intertwiners, invariant and full Bott-Chern exactness, ordered visible/hidden Fermi completion, and the finite-field mirror classification. Later hidden projective existence and existential HYM are retained. Consumer paragraphs cover all-arity transfer, the physical family, endpoint factorization, auxiliary Fitting descent, the rank-zero large-gauge kernel, Gate 1, B96, the positive-width local tube, and B89 rejection.
+
+**Retained:** Finite TT carrier, conditional Einstein reduction, fixed-order EFT parity, selected q79 route, and conditional fixed-genus inheritance. All local/finite q79 conclusions remain at their established scopes.
+
+**Open boundary:** Common physical visible-hidden realization and connections, positive balanced/integral Bianchi endpoint, exact worldsheet and BV realization, global Picard/BHT transport, all-genus control, and nonperturbative completion. These are not inferred from local exactness or finite-field exclusions.
+
+**Correction handling:** The T69 fixed-fiber-to-global rank inference remains retracted; T70--T73 concern local observability. Auxiliary `3H+3D0` is not physical `9H+3D0`. Rank-zero kernel leaves a real two-dimensional source. B89 rejects one candidate without determining the exact integral order. The isometric-chain adjoint qualification is recorded as shared consumer guidance, not silently buried in prose.
+
+**Verification:** Scoped one-job build passed with no reported warnings. All 16 PDF pages were rendered and visually inspected, with full-size inspection of the changed material. Small matrix/count checks are explicitly limited and are not independent replay of Groebner, Macaulay, or analytic certificates.
+
+**Review record:** Six owner reviews and nine distinct consumer placements appear in `editorial-reviews/2026-09-12/action_qg.json`. Historical branch/coframe, superconnection, and MC-repair completions are not duplicated.
+
+## Earlier Audit (Preserved)
+
 ## Supersedes
 
 `Modal Triplet Theory: Perturbative Coherent-Sector Quantum Gravity and the

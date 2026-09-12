@@ -1,6 +1,26 @@
 # Revision Audit: MTT and Heterotic Vacuum Selection
 
-## Current revision
+## Version 3 Current-Evidence Delta
+
+Date: 2026-09-12. Unreleased local successor to v2.
+
+The selection ladder and its proofs are retained. The new subsection
+sec:later-selection-imports brings in the current hidden-HYM existence tier,
+original-Jacobian Gate 1, certified local source tube, exact B89 rejection,
+B96 non-detection, global Fitting descent and BK3 period-kernel boundary.
+These are scoped owner-paper imports, not duplicated proofs or new fits.
+The six newly referenced frozen result artifacts retain their hashes.
+
+The resolved ambiguity is whether an open compound endpoint invalidates
+already completed ingredients. It does not. Hidden-HYM existence is
+preserved; a local chart is not global transport; one rejected candidate
+does not exclude the whole branch; a non-detecting cycle computation is
+not a gerbe decision; a descended support is not a spectral line; and
+rank zero for the period kernel is not zero physical parameters.
+Attraction, exhaustion and a physical preparation law remain independent.
+No Zenodo release is authorized.
+
+## Historical Version 2 Revision
 
 - Version: v2
 - Date: July 2026

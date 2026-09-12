@@ -1,12 +1,12 @@
 {
-  "abstract": "This paper separates three levels of the current Modal Triplet Theory (MTT) quantum-gravity program. First, an exact finite-carrier result supplies internal transverse-traceless support, while a separate controlled reduction recovers the four-dimensional Einstein action only under declared higher-dimensional action, truncation, gap, and normalization hypotheses. Second, once the resulting local Einstein\u2013matter effective action, Wilson coefficients, state, gauge fixing, and scheme are supplied, standard background-field and BV/BRST methods give fixed-order perturbative quantum-GR equivalence. This is an imported parity construction, not a derivation of the quantum measure or Wilson coefficients from MTT. The two-derivative theory is not ultraviolet complete: its counterterm order grows with loop number and the two-loop pure-gravity divergence is nonzero. Third, the selected compatible ultraviolet route is the q79 Fu\u2013Yau heterotic branch. A conditional inheritance theorem gives absence of local ultraviolet divergences at each fixed genus and multiplicity if an exact modular, anomaly-free heterotic worldsheet theory with factorization, GSO projection, and BV vertices is supplied. The current q79 worldsheet contract has five of twelve rows available, two partial, and five open. The physical nonpullback holomorphic/HYM bundles, complete Green\u2013Schwarz representative, exact worldsheet SCFT, string-field realization, infrared completion, all-genus control, and nonperturbative definition remain open. The resulting claim is therefore low-energy quantum-gravity parity plus a sharply specified heterotic completion program, not completed ultraviolet quantum gravity.",
+  "abstract": "This paper separates three levels of the current Modal Triplet Theory (MTT) quantum-gravity program. First, an exact finite-carrier result supplies internal transverse-traceless support, while a separate controlled reduction recovers the four-dimensional Einstein action only under declared higher-dimensional action, truncation, gap, and normalization hypotheses. Second, once the resulting local Einstein\u2013matter effective action, Wilson coefficients, state, gauge fixing, and scheme are supplied, standard background-field and BV/BRST methods give fixed-order perturbative quantum-GR equivalence. This is an imported parity construction, not a derivation of the quantum measure or Wilson coefficients from MTT. The two-derivative theory is not ultraviolet complete: its counterterm order grows with loop number and the two-loop pure-gravity divergence is nonzero. Third, the selected compatible ultraviolet route is the q79 Fu\u2013Yau heterotic branch. A conditional inheritance theorem gives absence of local ultraviolet divergences at each fixed genus and multiplicity if an exact modular, anomaly-free heterotic worldsheet theory with factorization, GSO projection, and BV vertices is supplied. The current q79 worldsheet contract has five of twelve rows available, two partial, and five open. Hidden projective holomorphic existence and existential HYM are established at their declared scope. The selected visible bundle, explicit common chamber and connections, complete Green\u2013Schwarz representative, exact worldsheet SCFT, string-field realization, infrared completion, all-genus control, and nonperturbative definition remain open. The resulting claim is therefore low-energy quantum-gravity parity plus a sharply specified heterotic completion program, not completed ultraviolet quantum gravity.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v6",
-  "date": "Sixth edition July 2026",
+  "current_version": "v7",
+  "date": "Version 7 September 2026",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.21665999",
     "created": "2026-07-29T08:51:38.283371+00:00",
@@ -32,33 +32,69 @@
     "updated": "2026-07-29T08:51:38.902604+00:00",
     "version": "v6"
   },
-  "main_tex_sha256": "b5306c19857e56517685d64be04d196570780d6f315cf8987b54aeb3c68afe19",
+  "main_tex_sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093",
   "paper_id": "modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d",
-  "paper_md_sha256": "78fca74b55ac43cb87fdac6106134502e30e92f428c1ee7e53b5014a185b9e5c",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "b0ffdc425ba02c11f65506b90da7dded377677318932e1bace6817d908208bb0",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "causal_base_q79_all_arity_source_promotion_packet",
+    "causal_base_q79_seven_row_endpoint_factorization_packet",
+    "eta9_gate1_campaign",
+    "eta9_three_cycle_b96_nondetection",
+    "q79_bk3_rank_zero_kernel",
+    "q79_bott_chern_reduction",
+    "q79_cohesive_superconnection",
+    "q79_eta9_b89_same_source_rejection",
+    "q79_eta9_framed_member_spectral_rank_exclusion",
+    "q79_eta9_local_source_tube_consolidation",
+    "q79_family_source_cutset",
+    "q79_global_fitting_descent",
+    "q79_maurer_cartan_repair",
+    "q79_minimal_fermi_completion",
+    "q79_mirror_zero_zero_final_classification",
+    "q79_poincare_heisenberg_intertwiner",
+    "q79_visible_spectral_cutset",
+    "qg_current_status",
+    "unified_source_bott_chern_injectivity",
+    "unified_source_hidden_projective_hym"
+  ],
   "revision": {
-    "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "4a833fe7acf0b18b34caf4734895d9b18ac24938be59e16eed01f18a8043c71f",
+    "revision_evidence_path": "papers/modal-triplet-theory-perturbative-coherent-sector-quant-eb63e01d/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "051caab1a6cdf7be894653cdbbd353844bf7697bd2c6dce5e56318ffa0819bc2",
     "selected_revision": true,
     "superseded_source_path": "12 Quantum Gravity/_work/Modal_Triplet_Theory__Perturbative_Coherent_Sector_QG_and_the_Heterotic_UV_Completion_Boundary_v5"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 10957,
+      "bytes": 8973,
+      "path": "RESEARCH_INTEGRATION.md",
+      "sha256": "8a1edf51212976e54c7a8ef8ac4ec75aac3222af86268a8e0080ee3a87d5976d"
+    },
+    {
+      "bytes": 4948,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "051caab1a6cdf7be894653cdbbd353844bf7697bd2c6dce5e56318ffa0819bc2"
+    },
+    {
+      "bytes": 19485,
       "path": "main.bib",
-      "sha256": "5e01519525e0a82a040368921d1c32ad7f6e162722a945481f20ad40137b505c"
+      "sha256": "2ee9112051816b4663acbfe3c0e69458b40e44ac137dae7b92952e7a2e675c26"
     },
     {
-      "bytes": 286854,
+      "bytes": 395553,
       "path": "main.pdf",
-      "sha256": "614c64c9cb46a8dad7d3e9e617ceef8df204b8485d4b83a4f6c8d4f8be5caa95"
+      "sha256": "a62e8a1e898f7d59c99e3988cf08d5c6e960edc68b03f0a0e355afcab5707add"
     },
     {
-      "bytes": 21498,
+      "bytes": 37760,
       "path": "main.tex",
-      "sha256": "b5306c19857e56517685d64be04d196570780d6f315cf8987b54aeb3c68afe19"
+      "sha256": "b205b91081589f7de2c5120c5320904f23f11fc8382fb05d1add4470f670e093"
+    },
+    {
+      "bytes": 4496,
+      "path": "paper-markdown.lua",
+      "sha256": "eda1aef847606bd8399a98fb3fc9facb577e19e5f4780fce518485aafd2e8157"
     },
     {
       "bytes": 3786,
@@ -69,9 +105,9 @@
   "source_provenance": {
     "legacy_source_path": "12 Quantum Gravity/_work/Modal_Triplet_Theory__Perturbative_Coherent_Sector_QG_and_the_Heterotic_UV_Completion_Boundary_v5"
   },
-  "source_tree_sha256": "63fdb8ca34fdb53b02337a3323f3f8b1950fa03f96fa878e250c7937045ea0f2",
+  "source_tree_sha256": "2d9d21336ee8096976dcf1f3a968cce1066defd71b43a87592a8927bb92b04c5",
   "title": "Modal Triplet Theory: Perturbative Coherent-Sector Quantum Gravity and the Heterotic UV-Completion Boundary",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.21665999",

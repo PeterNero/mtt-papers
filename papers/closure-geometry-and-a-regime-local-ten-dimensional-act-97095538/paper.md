@@ -1,13 +1,13 @@
 ---
 abstract: |
-  We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, bundle $`M_{10}\to Y_4`$, compact fiber, field representations, and derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-one alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu–Yau branch is the compactification candidate, while Lens–Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action.
+  We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, bundle $`M_{10}\to Y_4`$, compact fiber, field representations, and derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-four real alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu–Yau branch is the compactification candidate, while Lens–Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action. Finite residual, cyclic-action, and cotangent constructions explain which action data follow from a supplied source and which physical identifications remain additional assumptions.
 author:
 - Peter Nero
-current_version: v4
-date: Corrected fourth edition July 2026
-generated_from_main_tex_sha256: 691de4188702b9f5ffda4a517d5200e23a2c89832b63b67992cf68d04ba1507d
+current_version: v5
+date: Version 5 September 2026
+generated_from_main_tex_sha256: fba3db2514715a045a6194f19cc75ed6088c96975a34d4926976dfa33bf706a4
 paper_id: closure-geometry-and-a-regime-local-ten-dimensional-act-97095538
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v4
 title: |
   Closure Geometry and a Regime-Local
@@ -17,7 +17,32 @@ zenodo_record_id: 21654885
 zenodo_url: "https://zenodo.org/records/21654885"
 ---
 
-# Revision note for this edition
+# Closure Geometry and a Regime-Local Ten-Dimensional Action Ansatz
+
+Peter Nero. Version 5 September 2026
+
+## Abstract
+
+We formulate a ten-dimensional effective action compatible with closure-strain and q79 carrier data. The metric, bundle $`M_{10}\to Y_4`$, compact fiber, field representations, and derivative expansion are declared realization inputs. The action is an ansatz on a specified regime, not the most general action and not a derivation of gravity from projection. We give the conditions under which a closure Hessian contributes to canonically normalized pole masses, a rank-four real alignment projector yields one Higgs doublet, an internal operator has discrete spectrum, and a four-dimensional mode truncation is consistent. Curvature is defined through explicit connections rather than inferred from nonuniform strain. The selected q79 Fu–Yau branch is the compactification candidate, while Lens–Nil remains auxiliary. Existing finite-matrix and Standard-Model profile calculations are incorporated at their declared embedded-renormalized-SM tier; their profile inputs and imported BRST quantization are not reclassified as no-knob consequences of this action. Finite residual, cyclic-action, and cotangent constructions explain which action data follow from a supplied source and which physical identifications remain additional assumptions.
+
+# Version 5 revision note
+
+Supersedes.
+Version 4; its release identity and revision note are retained.
+
+Reason.
+The ansatz needs the subsequent residual-to-action results in context, and its reduction statement did not distinguish a Schur kernel from a local derivative expansion.
+
+Resolution.
+Explain curved repair germs, variational anchors, cyclic Maurer–Cartan descent, and the full-string cotangent boundary. State the additional nonlinear and locality estimates needed in dimensional reduction.
+
+Retained result.
+The regime-local ansatz and finite-SM/profile inputs, pole normalization, alignment, and compact-resolvent gates are retained.
+
+Open boundary.
+The physical signed action, trace normalization, real slice, same-source visible endpoint, and Lorentzian/BV compactification map remain distinct from the exact finite constructions.
+
+# Version 4 revision note
 
 Supersedes.
 *Closure Geometry and Unified Dynamics: A Ten-Dimensional Action for Mass, Scalar Relaxation, Quantization, and Curvature*, version 3.
@@ -91,7 +116,7 @@ Let $`\phi^A`$ denote real scalar coordinates on the retained field manifold, $`
 
 # Regime-local action ansatz
 
-One two-derivative ansatz is
+One two-derivative ansatz is <a id="eq:action"></a>
 ``` math
 \begin{align}
 S_{10}=\int_{M_{10}}\!\sqrt{|g_{10}|}\,\mathrm{d}^{10}x\,
@@ -104,12 +129,12 @@ S_{10}=\int_{M_{10}}\!\sqrt{|g_{10}|}\,\mathrm{d}^{10}x\,
 +\mathcal L_{H,B,\Phi}
 \Big]
 +S_{\rm gf}+S_{\rm gh}+S_{\rm bdy}.
-\label{eq:action}
+
 \end{align}
 ```
 Here $`k_{ab}`$ and $`G_{AB}`$ must be positive on physical directions, $`\mathcal L_{H,B,\Phi}`$ records the selected flux/torsion/dilaton sector, and the gauge-fixing, ghost, and boundary terms are part of the definition of a quantized perturbative calculation.
 
-Equation <a href="#eq:action" data-reference-type="eqref" data-reference="eq:action">[eq:action]</a> imports the Einstein–Hilbert term and a Lorentzian metric. It therefore realizes gravity; it does not derive gravity from strain or projection.
+Equation [(3.1)](#eq:action) imports the Einstein–Hilbert term and a Lorentzian metric. It therefore realizes gravity; it does not derive gravity from strain or projection.
 
 Each displayed term has a distinct job. The $`R_{10}`$ term determines the metric response, $`F^2`$ supplies gauge propagation, $`G_{AB}D\phi^A D\phi^B`$ defines the scalar normalization, $`V`$ and $`\mathcal M`$ supply quadratic and interaction coefficients, and $`\mathcal L_{H,B,\Phi}`$ carries the flux–torsion sector. Varying these fields gives, schematically,
 ``` math
@@ -135,12 +160,79 @@ torsion and Chern–Simons terms, higher fermion operators, and higher derivativ
 
 Higher-curvature or higher-time-derivative terms can introduce extra degrees of freedom or ghosts if treated nonperturbatively. In an EFT treatment they are perturbative operators below the cutoff; any claimed fundamental completion requires a separate constraint/propagator analysis.
 
+<a id="sec:repair-action"></a>
+
+# From a repair residual to an action
+
+## Curvature is not detected faithfully by every representation
+
+The curved-repair germ of R1-T1 starts with a graded associative algebra, an odd charge $`Q`$, and a declared trace and real slice. Its curvature and adjoint differential are $`F=Q^2`$ and $`d_Q X=QX-(-1)^{|X|}XQ`$. The identities
+``` math
+d_Q^2X=[F,X],\qquad d_QF=0
+```
+separate three regimes: $`F=0`$; nonzero central $`F`$; and noncentral $`F`$. Only the last necessarily curves the adjoint differential \[[1](#ref-FrozenGerm)\]. For example, the odd matrix $`Q=\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)`$ has $`Q^2=I`$. Its adjoint differential squares to zero, but its defect is nonzero and the Jordan response $`FX+XF=2X`$ survives. Nilpotence in an adjoint representation is therefore not a test for exact physical closure. An algebraic differential also needs a positive metric and suitable domains before Hodge or dissipative language applies.
+
+For a smooth residual $`\Phi:E\to F_{\rm res}`$ with a positive residual metric $`W(a)`$, the repair cost is $`S_{\rm rep}(a)=\frac12\langle\Phi(a),W(a)\Phi(a)\rangle`$. At $`\Phi(a_*)=0`$ its Hessian is $`J^\dagger W(a_*)J`$, where $`J=D\Phi(a_*)`$. This measures sensitivity to defects. It is not yet the Euler–Lagrange operator of [(3.1)](#eq:action).
+
+<a id="sec:anchor"></a>
+
+## Variational anchors and the information lost by squaring
+
+H4-T9 supplies a direct test \[[2](#ref-FrozenAnchor)\]. A chosen anchor $`A:F_{\rm res}\to E^*`$ turns the residual into a field-space one-form $`\alpha_a(v)=(A\Phi(a))(v)`$. On a star-shaped finite-dimensional domain, $`dS_{\rm var}=\alpha`$ exists exactly when $`d\alpha=0`$, or equivalently when $`D(A\Phi)`$ is symmetric. The reconstructed action is
+``` math
+S_{\rm var}(a)-S_{\rm var}(0)=\int_0^1\alpha_{ta}(a)\,dt.
+```
+For fields, this becomes a graded formal-adjoint Helmholtz condition with boundary terms and operator domains. It is not implied by positivity of $`W`$. Indeed $`(x,y)`$ and $`(-y,x)`$ have identical repair cost $`(x^2+y^2)/2`$, but the latter is not a gradient for the standard anchor: its Jacobian has antisymmetric part $`\left(\begin{smallmatrix}0&-2\\2&0\end{smallmatrix}\right)`$.
+
+Every residual nevertheless has a multiplier action $`S_{\rm mult}(a,\lambda)=\langle\lambda,\Phi(a)\rangle`$. Its equations are $`\Phi(a)=0`$ and $`D\Phi(a)^\dagger\lambda=0`$. At $`(a_*,0)`$ the Hessian and its square are
+``` math
+D_J=\begin{pmatrix}0&J^\dagger\\J&0\end{pmatrix},\qquad
+ D_J^2=\begin{pmatrix}J^\dagger J&0\\0&JJ^\dagger\end{pmatrix}.
+```
+Thus the repair operator is one normal block. The added multiplier is not automatically a particle or BV antifield, nor is $`D_J`$ automatically a Lorentzian Dirac operator.
+
+The distinction is visible without a large calculation. For $`S_{\rm var}(x)=mx^2/2+gx^3/6`$, squaring its derivative gives
+``` math
+S_{\rm rep}(x)=m^2x^2/2+mgx^3/2+g^2x^4/8.
+```
+At zero, the quadratic, cubic, and quartic derivatives are $`(m,g,0)`$ for the action and $`(m^2,3mg,3g^2)`$ for the repair cost. At the second root $`x=-2m/g`$, with $`g\ne0`$, the signed Hessian is $`-m`$ but the repair Hessian is $`m^2`$. Repair stability has erased the sign and changed the vertices. A physical propagator or pole mass must use the correctly identified signed, gauge-fixed operator.
+
+<a id="sec:cyclic-action"></a>
+
+## A cyclic integrability lane really does have an action
+
+H4-T10 is a positive construction, not just a warning \[[3](#ref-FrozenMC)\]. Let $`\mathcal A`$ be a characteristic-zero dg algebra with a degree-three trace $`\tau`$ satisfying graded cyclicity and $`\tau(dx)=0`$. For $`a\in\mathcal A^1`$, define
+``` math
+F(a)=da+a^2,\qquad
+ S_{\rm MC}(a)=\tfrac12\tau(a\,da)+\tfrac13\tau(a^3).
+```
+Then $`DS_{\rm MC}(a)[u]=\tau(uF(a))`$. Nondegeneracy of the pairing between degrees one and two is required to identify the critical locus with the full Maurer–Cartan zero set; otherwise only a weak variational identity follows. Stokes and the Bianchi identity give infinitesimal gauge invariance, not an automatic large-gauge quantization of the coefficient.
+
+For projective overlaps $`G_{ij}G_{jk}G_{ki}=\alpha_{ijk}I`$, scalar twists cancel in endomorphism conjugation. If the differentials and traces intertwine, the action descends through that same atlas. This does not assert that an arbitrary Fourier–Mukai equivalence preserves the trace. On a compact boundaryless complex threefold the candidate trace is $`\tau(x)=\int_X\Omega_{\rm hol}\wedge\operatorname{Str}(x)`$. The holomorphic volume form and its physical normalization are separate from a unit-normalized volume form used by a Hermitian metric.
+
+At an exact solution the signed Hessian is $`C_\tau J`$, with $`C_\tau`$ the cyclic anchor, whereas the positive repair Hessian is $`J^\dagger WJ`$. The frozen rational exterior-algebra witness explicitly has a negative signed direction absent from the repair square. It supplies the integrability action, not the full ten-dimensional ansatz.
+
+<a id="sec:string-cotangent"></a>
+
+## Why the full string complex needs more than that trace
+
+The full q79 string deformation complex also has form/anomaly lanes. H4-T14 identifies a precise obstruction \[[4](#ref-FrozenCotangent)\]: using only wedge product, top-form integration, the invariant gauge pairing, and $`\Omega_{\rm hol}`$, those lanes lie in the pairing radical. Their degree-one types $`(3,0),(2,1)`$ and degree-two types $`(3,1),(2,2)`$ have wedges of holomorphic degree at least four on a threefold. Cross terms would require an invariant linear functional on $`\mathfrak{sl}_3\oplus\mathfrak{sl}_3\oplus\mathfrak{sl}_9`$, which vanishes because the algebra equals its commutator algebra. This excludes that local trace grammar, not every possible action.
+
+For a locally perfect dg Lie algebra $`L`$, its density-valued local dual $`L^!`$ gives the canonical cyclic completion
+``` math
+\widehat L=L\ltimes L^![-3],\qquad
+ S_{\rm cot}(a,p)=\langle p,da+\tfrac12[a,a]\rangle.
+```
+The shift uses $`(V[s])^k=V^{k+s}`$; the familiar shifted-cotangent notation on a suspended field stack uses a different grading. Dual variation recovers the full residual, and every original solution lifts to $`(a,0)`$. The algebraic pairing is canonical, but its physical coefficient, real slice, charged fields, and identification with the accepted BV action are not supplied by this construction.
+
+The central shared line acts trivially on product-adjoint and ordinary-form lanes and hence on their cotangent duals. Relative charged $`\operatorname{Hom}`$ lanes are outside this neutrality claim. The fuller string-algebroid and Calabi moment-map reductions are explained by the companion Cohesive paper \[[5](#ref-Cohesive14)\]: anomaly is part of integrability, and HYM/balance can be combined under their stated source hypotheses. They do not require a new independent action ansatz for every residual row. The remaining comparison is one physical source, trace, moment map, and BV-compatible compactification, with the Lorentzian coframe sector still separate.
+
 # Closure Hessian and physical masses
 
 Let $`\varphi=0`$ be a stationary background for retained real fields and write the quadratic four-dimensional action after integrating the internal fiber as
 ``` math
 S_4^{(2)}
- =\frac12\int_{Y_4}\sqrt{|g_4|}\,dd^4x
+ =\frac12\int_{Y_4}\sqrt{|g_4|}\,\mathrm{d}^4x
  \left(
  Z_{AB}\,\partial_\mu\varphi^A\partial^\mu\varphi^B
  -M^2_{AB}\varphi^A\varphi^B
@@ -219,7 +311,7 @@ F_\nabla=\nabla^2,
 ```
 or locally $`F=\mathrm{d}A+A\wedge A`$. Frobenius failure of a distribution is tested by the vertical part of $`[X,Y]`$ for horizontal vector fields $`X,Y`$.
 
-The condition $`\nabla S\ne0`$ says only that strain is nonparallel. It does not by itself imply nonintegrability, Riemann curvature, or the Einstein equations. Any curvature–strain coupling in <a href="#eq:action" data-reference-type="eqref" data-reference="eq:action">[eq:action]</a> must be written with an explicit connection and varied to obtain its field equations.
+The condition $`\nabla S\ne0`$ says only that strain is nonparallel. It does not by itself imply nonintegrability, Riemann curvature, or the Einstein equations. Any curvature–strain coupling in [(3.1)](#eq:action) must be written with an explicit connection and varied to obtain its field equations.
 
 # q79 Fu–Yau specialization
 
@@ -244,19 +336,19 @@ Setting all $`\eta_r`$ to zero is a consistent truncation only if their exact Eu
 
 <div class="theorem">
 
-**Theorem 4** (Conditional coherent reduction). *Assume the retained mode space is invariant under all nonlinear terms to the order considered, the discarded equations vanish on the retained ansatz, the discarded linear operator has gap $`\lambda_{\rm gap}>0`$, and the nonlinear source into discarded modes obeys $`\|J_{\rm disc}\|\le\epsilon`$. Then the leading eliminated field obeys
+**Theorem 4** (Conditional coherent reduction). *At a fixed truncation order, assume that the discarded linear operator is invertible on its declared domain with $`\|L_{\rm disc}^{-1}\|\le C/\lambda_{\rm gap}`$, and the source into discarded modes obeys $`\|J_{\rm disc}\|\le\epsilon`$. Then the leading linearized eliminated field obeys
 ``` math
 \|\eta\|\le
  \|L_{\rm disc}^{-1}\|\,\epsilon
  \le \frac{C\epsilon}{\lambda_{\rm gap}},
 ```
-and substituting it gives a controlled local four-dimensional effective action with the corresponding Schur–Feshbach correction.*
+and substitution gives the quadratic Schur–Feshbach correction. For the nonlinear equation $`L_{\rm disc}\eta+J_{\rm disc}+N(\eta)=0`$, also require that $`-L_{\rm disc}^{-1}(J_{\rm disc}+N(\eta))`$ preserves a specified ball and has Lipschitz constant $`q<1`$ there, with $`N(0)=0`$. The solution then satisfies $`\|\eta\|\le C\epsilon/((1-q)\lambda_{\rm gap})`$. A local effective action additionally requires a controlled low-energy derivative expansion of the resulting generally nonlocal kernel.*
 
 </div>
 
 <div class="proof">
 
-*Proof.* Solve the discarded equation by the inverse on the gapped complement and use the stated resolvent bound. The effective correction follows by substitution or the Schur complement. Exact consistency is the special case $`J_{\rm disc}=0`$. ◻
+*Proof.* Apply the inverse bound for the leading term and the contraction estimate for the nonlinear equation. The Schur complement follows by substitution; its locality does not follow from invertibility. Exact consistency is the case in which the discarded equations vanish identically on the retained ansatz, so $`J_{\rm disc}=0`$ and $`\eta=0`$ solves them. ◻
 
 </div>
 
@@ -264,7 +356,7 @@ A spectral gap alone does not prove nonlinear invariance or exact truncation.
 
 # Gauge fixing, anomalies, and observables
 
-A perturbative gauge theory built from <a href="#eq:action" data-reference-type="eqref" data-reference="eq:action">[eq:action]</a> must include a common gauge-fixing, ghost, zero-mode, regulator, scale, and renormalization-scheme policy. BRST nilpotency and anomaly cancellation are equations to verify. Physical predictions require a functor from action parameters to renormalized local or scattering observables.
+A perturbative gauge theory built from [(3.1)](#eq:action) must include a common gauge-fixing, ghost, zero-mode, regulator, scale, and renormalization-scheme policy. BRST nilpotency and anomaly cancellation are equations to verify. Physical predictions require a functor from action parameters to renormalized local or scattering observables.
 
 The current embedded-renormalized-SM closure imports standard BRST/Faddeev–Popov quantization at its declared profile tier. This is a valid reconstruction standard, but it is not a derivation of the BRST/path-integral or Born-record rules from MTT.
 
@@ -288,7 +380,7 @@ This action paper neither demotes nor strengthens those certificates. It records
 
 <div class="theorem">
 
-**Theorem 5** (Regime-local action statement). *Given the geometric, representation, metric, gauge-fixing, and EFT inputs of this paper, action <a href="#eq:action" data-reference-type="eqref" data-reference="eq:action">[eq:action]</a> defines a local covariant realization on the declared domain. Under compact-resolvent, alignment-projector, pole-normalization, and consistent-reduction hypotheses, it yields a discrete internal mode expansion, a selected one-doublet scalar sector, canonically defined tree-level masses, and a controlled four-dimensional effective action.*
+**Theorem 5** (Regime-local action statement). *Given the geometric, representation, metric, gauge-fixing, and EFT inputs of this paper, action [(3.1)](#eq:action) defines a local covariant realization on the declared domain. Under compact-resolvent, alignment-projector, pole-normalization, and consistent-reduction hypotheses, it yields a discrete internal mode expansion, a selected one-doublet scalar sector, canonically defined tree-level masses, and a controlled four-dimensional effective action.*
 
 </div>
 
@@ -296,7 +388,26 @@ The theorem is conditional. It does not establish uniqueness of the action, deri
 
 # Conclusion
 
-The corrected action is a useful synthesis ansatz, not a universal derivation. Its value is that every physical promotion now has a recognizable mathematical gate: global geometry, connection, compact resolvent, scalar projector, canonical pole normalization, gauge consistency, and controlled reduction. The next decisive construction is the same-source q79 intertwiner followed by evaluation of the action’s normalized internal rows.
+The action is a useful synthesis ansatz, not a universal derivation. Its value is that every physical promotion now has a recognizable mathematical gate: global geometry, connection, compact resolvent, scalar projector, canonical pole normalization, gauge consistency, and controlled reduction. The next decisive construction is the same-source q79 intertwiner followed by evaluation of the action’s normalized internal rows.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The action written here remains a regime-local ansatz. The exact q=79, finite-action, anomaly, HYM, and internal TT packets constrain or instantiate ingredients used by the ansatz, but they do not derive its continuum action, physical normalization, or ultraviolet completion. Profile rows are retained only as cross-checks on the lower effective target.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 #### Rows used directly in this paper.
 
@@ -374,49 +485,36 @@ The corrected action is a useful synthesis ansatz, not a universal derivation. I
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
+# References
 
-The action written here remains a regime-local ansatz. The exact q=79, finite-action, anomaly, HYM, and internal TT packets constrain or instantiate ingredients used by the ansatz, but they do not derive its continuum action, physical normalization, or ultraviolet completion. Profile rows are retained only as cross-checks on the lower effective target.
+<a id="ref-FrozenGerm"></a>
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+\[1\] P. Nero, *Curved cyclic repair germ*, R1-T1, frozen result , 2026. <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_curved_cyclic_repair_germ/artifact.json>.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+<a id="ref-FrozenAnchor"></a>
 
-## Rows used directly in this paper
+\[2\] P. Nero, *Variational anchor, multiplier lift, and normal square*, H4-T9, 2026. <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_variational_anchor_multiplier_lift/artifact.json>.
 
-- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
-- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
-- `A13/gr_tt_support` (**DERIVED_EXACT**): Exact-branch internal TT support certificate; physical normalization remains open.
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
-- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
-- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
+<a id="ref-FrozenMC"></a>
 
-## Corpus-state cross-checks
+\[3\] P. Nero, *Cyclic Maurer–Cartan action and twisted descent*, H4-T10, 2026. <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_cyclic_mc_action_descent/artifact.json>.
 
-- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
-- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
-- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
-- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
-- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
-- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
-- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
+<a id="ref-FrozenCotangent"></a>
 
-## Open boundary (not evidence of closure)
+\[4\] P. Nero, *q79 shared-line neutrality and cyclic cotangent completion*, H4-T14, 2026. <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/preprojection_h4_q79_string_cyclic_cotangent/artifact.json>.
 
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+<a id="ref-Cohesive14"></a>
 
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+\[5\] P. Nero, *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary*, version 14, string-algebroid and BV sections, MTT papers repository, 2026.
 
-<div class="thebibliography">
+<a id="ref-WeinbergEFT"></a>
 
-9 S. Weinberg, *The Quantum Theory of Fields, Vol. II*, Cambridge University Press, 1996.
+\[6\] S. Weinberg, *The Quantum Theory of Fields, Vol. II*, Cambridge University Press, 1996.
 
-J.-X. Fu and S.-T. Yau, *The theory of superstring with flux on non-Kahler manifolds and the complex Monge–Ampere equation*, J. Differential Geom. 78 (2008).
+<a id="ref-FuYau"></a>
 
-P. Nero, *MTT Current True SM Closure Consolidated Ledger*, internal theorem and verification packet, 2026.
+\[7\] J.-X. Fu and S.-T. Yau, *The theory of superstring with flux on non-Kahler manifolds and the complex Monge–Ampere equation*, J. Differential Geom. 78 (2008).
 
-</div>
+<a id="ref-MTTSM"></a>
+
+\[8\] P. Nero, *MTT Current True SM Closure Consolidated Ledger*, internal theorem and verification packet, 2026.

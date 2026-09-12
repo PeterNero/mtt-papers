@@ -1,12 +1,12 @@
 {
-  "abstract": "We isolate the part of the proto-spinor construction that is mathematically forced after its geometric premises are stated. A world-in-world field compares two oriented rank-three bundles; its nine local components do not multiply manifold dimensions. If closure data must retain the nontrivial loop class in the three-dimensional rotation group, the faithful continuous double-cover carrier is spinorial and is represented by the corresponding two-dimensional unitary group. This is a conditional lifting theorem, not a derivation of internal dimension three or of physical fermions from admissibility alone. For the selected q79 degree-three spectral cover we record the exact trace split of ranks 1+2, the common 1+2+3 carrier, and the local binary-dihedral lift of signed sheet monodromy. The shared circle is a specified pullback of one universal flat cyclic differential line of order 64, not merely an isomorphic fiber. Its determinant, CLN, root-plane, and finite-Hessian actions intertwine exactly. The BHT and Hori fiber transforms share one orthogonal complex structure, and the binary sheet group has exactly two conjugate phase-root lifts. Strict global Spin closure remains equivalent to a branch-relator obstruction calculation; the closed result is SpinC and finite symbolic. Circle, lens, and nil remain typed phase, finite-transport, and anchoring roles. Lorentzian spinors, masses, and particle assignments remain downstream realization problems.",
+  "abstract": "We isolate the part of the proto-spinor construction that is mathematically forced after its geometric premises are stated. A world-in-world field is a section of Hom (TP, TI) for oriented rank-three bundles; its nine local components do not multiply manifold dimensions. If closure data must retain the nontrivial loop class in SO(3), the faithful continuous double-cover carrier is spinorial and is represented through Spin (3) \u2245 SU(2). This is a conditional lifting theorem, not a derivation of internal dimension three or of physical fermions from admissibility alone. For the selected q79 degree-three spectral cover we record the exact trace split of ranks 1 + 2, the common 1 + 2 + 3 carrier, and the local binary-dihedral lift of signed sheet monodromy. The shared circle is now a specified pullback of one universal flat \u2124\u2086\u2084 differential line, not merely an isomorphic fiber. Its determinant, CLN, root-plane, and finite-Hessian actions intertwine exactly. The BHT and Hori fiber transforms share one orthogonal complex structure J_FM, and the binary sheet group has exactly two conjugate \u00b1i phase-root lifts for which the square of either signed i times J_FM is the identity. Strict global Spin closure remains equivalent to a branch-relator obstruction calculation; the closed result is SpinC and finite symbolic. Circle, lens, and nil remain typed phase, finite-transport, and anchoring roles. The later trace-plane construction supplies a Clifford module, and the selected framed product source admits two equivalent binary-root factorizations of its complete free Dirac carrier and observable net. We explain the exact finite 864 \u2192 96 reduction, conditional continuum and Deligne constructions, and selected finite family-response algebra without identifying dimensionless spectra with masses. A nonflat same-endpoint HYM comparison, interacting physical action, and strict source-selected magnitudes remain distinct downstream problems.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v7",
-  "date": "July 2026 Version 7",
+  "current_version": "v8",
+  "date": "September 2026, Version 8",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.19534665",
     "created": "2026-07-29T08:52:17.612304+00:00",
@@ -32,41 +32,81 @@
     "updated": "2026-07-29T08:52:17.861295+00:00",
     "version": "v7"
   },
-  "main_tex_sha256": "7c68851cd2e7e3e17fccc3865ad0135bcb7d9790960ed66d9f7dae6b7ab69ff9",
+  "main_tex_sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb",
   "paper_id": "the-proto-spinor-conditional-spinorial-closure-and-the-973217d8",
-  "paper_md_sha256": "9837128008013deb30a5bfccc1a3c82bc826150141d0a8e31ef06385663e9372",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "0418e69113bf16cb8d4a070fa6d6164bde6f2b3f3a4e3373b85b9bd299166268",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "protospinor_simulation_kernel",
+    "q79_cech_projector_compiler",
+    "q79_projective_hym_naturality",
+    "q79_spectral_strain_hessian",
+    "q79_superconnection_02a_b",
+    "q79_superconnection_02c1_c5",
+    "q79_superconnection_03a",
+    "q79_superconnection_03b",
+    "q79_superconnection_03c",
+    "q79_superconnection_03d",
+    "q79_superconnection_03e",
+    "q79_superconnection_03f",
+    "q79_superconnection_03g",
+    "q79_superconnection_03h",
+    "q79_superconnection_03i",
+    "q79_superconnection_03j",
+    "q79_superconnection_03k",
+    "q79_superconnection_04a",
+    "q79_superconnection_04b",
+    "q79_superconnection_04c",
+    "q79_superconnection_04d",
+    "q79_superconnection_04e",
+    "q79_superconnection_04f",
+    "q79_superconnection_04g",
+    "q79_superconnection_04h",
+    "q79_superconnection_04i",
+    "q79_superconnection_04j",
+    "q79_superconnection_04k",
+    "q79_superconnection_04l",
+    "q79_superconnection_04m",
+    "q79_superconnection_04n",
+    "q79_superconnection_a33_01",
+    "q79_support_stratified_strain"
+  ],
   "revision": {
-    "revision_evidence_path": "10 ProtoSpinor/revised_tex_vnext/PROTO_SPINOR_V6_SHARED_LINE_REVISION_AUDIT.md",
-    "revision_evidence_sha256": "429113520e3e370bc6e22e44bd82b01072ba498ce64caaf78972b202d5d20875",
+    "previous_revision_evidence_path": "10 ProtoSpinor/revised_tex_vnext/PROTO_SPINOR_V6_SHARED_LINE_REVISION_AUDIT.md",
+    "revision_evidence_path": "papers/the-proto-spinor-conditional-spinorial-closure-and-the-973217d8/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "c423bc34dc8355b8f164d55a3ca17f8c3132595d85c5cb611558a945bb6e4692",
     "selected_revision": true,
     "superseded_source_path": "10 ProtoSpinor/_work/The_Proto_Spinor__Triadic_Closure_from_Pointwise_Internal_Embedding_v4"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 391561,
+      "bytes": 499920,
       "path": "main.pdf",
-      "sha256": "c6e9bbf3b391b112a62a1680093fc27b9e04f9bb8f32776aac7660ef3c3b3308"
+      "sha256": "e1fdbb97b737a035b332edef7fd61e064ada7bc3e019333f14baefcf1a84e979"
     },
     {
-      "bytes": 30371,
+      "bytes": 67701,
       "path": "main.tex",
-      "sha256": "7c68851cd2e7e3e17fccc3865ad0135bcb7d9790960ed66d9f7dae6b7ab69ff9"
+      "sha256": "da3d52bb8077cfebaf1806a3e311565d62d0bad85c506cf1017a81b192cbb8eb"
     },
     {
       "bytes": 3819,
       "path": "series.sty",
       "sha256": "11cfb5b6b4161f1e60935127c22c0619bfc67286dbc229d044ca2f4641bf8fbd"
+    },
+    {
+      "bytes": 3850,
+      "path": "paper-markdown.lua",
+      "sha256": "e2d9dc1bb98f171ad4cc84a13c02f19fa01600036e9332679bf0382413810c3b"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "10 ProtoSpinor/revised_tex_vnext/The_Proto_Spinor__Conditional_Spinorial_Closure_and_q79_Interface_v6"
   },
-  "source_tree_sha256": "962f7066ff056f3b87a7da3ead5d6a028eea100e6ab46cfd9982f0506f680e96",
+  "source_tree_sha256": "017b1aad88f645256c66f381346bf7353639b5e05cc60439bf624eaefab8391c",
   "title": "The Proto-Spinor: Conditional Spinorial Closure and the q79 Interface",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.19534665",

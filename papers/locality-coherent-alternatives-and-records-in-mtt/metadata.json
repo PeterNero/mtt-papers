@@ -6,13 +6,13 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v1",
-  "date": "Version 1.0, 6 September 2026 Unpublished interpretive manuscript",
+  "current_version": "v2",
+  "date": "Version 2, 12 September 2026 Unpublished interpretive manuscript",
   "latest_zenodo_release": null,
-  "main_tex_sha256": "3b4b684061ccc70355858af985bf1a58bd952f0f9897955f30733b59ec0d2f7d",
+  "main_tex_sha256": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac",
   "manuscript_status": "unpublished_interpretive_manuscript",
   "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
-  "paper_md_sha256": "72e01d56c79b73e7fd812795c7da9ebeb441fbbc7ea4929abd06f5cb8971e16a",
+  "paper_md_sha256": "9aed627666017b78b44fe4ba6b1fda1948eb35e03da3bffe7b98d12a8e05f4b3",
   "release_state": "not_matched_to_zenodo",
   "result_refs": [
     "causal_base_constraint_compression_leakage_packet",
@@ -27,7 +27,7 @@
   ],
   "revision": {
     "revision_evidence_path": "papers/locality-coherent-alternatives-and-records-in-mtt/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "b17150019d1f6a781661b15b1c8db422145584311586dee0cd179290e5de080b",
+    "revision_evidence_sha256": "93183312678488ed8073c26d796067089f56d06ae08e8e80580841f436e8266c",
     "selected_revision": false
   },
   "schema": "mtt.paper.v1",
@@ -38,24 +38,24 @@
       "sha256": "5c0b82bcc6043f780fe99e6cfaa99fd30c5d4626f528e6e6e3ec6617a1300fa4"
     },
     {
-      "bytes": 5763,
+      "bytes": 5948,
       "path": "paper-markdown.lua",
-      "sha256": "14554c99a7fe92b63a8cd29c6ea1238288075fd88072796b5da41ea9ef896f6b"
+      "sha256": "6844811fc33e9c01e54821dcab5e61e435edafa3b4e7970a6d1b8a078ec738b4"
     },
     {
-      "bytes": 3854,
+      "bytes": 3912,
       "path": "examples/check_publication_artifacts.py",
-      "sha256": "b58df09df4844f38935741c8e4f7b4578ada97f9cccbdc2fbc80ccd7060df53d"
+      "sha256": "c1ded3d7708ec734016b80cbc55c11c25ea8d9fa105d1c972c2b7b969331de21"
     },
     {
-      "bytes": 66582,
+      "bytes": 69854,
       "path": "main.tex",
-      "sha256": "3b4b684061ccc70355858af985bf1a58bd952f0f9897955f30733b59ec0d2f7d"
+      "sha256": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac"
     },
     {
-      "bytes": 457508,
+      "bytes": 462386,
       "path": "main.pdf",
-      "sha256": "6f234eeebbf74ad78c331b06a056a05c00a5d6e78934891bac1a2a2107072135"
+      "sha256": "71a6c095083455b0848c47828da0f1564e8fbfe7146af46291425b1b12503d4a"
     },
     {
       "bytes": 20512,
@@ -83,7 +83,7 @@
     "repository_native_path": "papers/locality-coherent-alternatives-and-records-in-mtt",
     "results_snapshot": "db79bcebec12da558eef22f11ae7bbe8171fb595"
   },
-  "source_tree_sha256": "70a64bc2a9279d944fa78b51bd75add1d84f6423d668e46f3b69549099c257fc",
+  "source_tree_sha256": "b406f106d92a3f681a659c1009dc8df93174b00472ed846ccba0ba06830f22f9",
   "title": "Locality, Coherent Alternatives, and Physical Records: An Interpretive Account of Quantum Experiments in Modal Triplet Theory",
   "version_relation": "unknown",
   "zenodo_releases": []

@@ -1,15 +1,15 @@
 ---
 abstract: |
-  The Hull–Strominger system couples a conformally balanced Hermitian metric, holomorphic gauge bundles, Hermitian–Yang–Mills connections, torsion, and the differential Green–Schwarz identity on one compact complex threefold. This paper asks a precise question: when does a fixed point of a Modal Triplet Theory evolution determine a solution of that system? We define a typed bridge from an upstairs MTT configuration space to Hull–Strominger data and prove exact and residual fixed-point descent theorems. Exact descent requires the bridge to intertwine the selected MTT flow with a lower geometric flow, such as the Anomaly flow together with the required bundle evolutions. Approximate intertwining yields only a quantified equation residual. These results establish a conditional correspondence, not compactification selection. The former selection-potential, global-convexity, and automatic Fu–Yau claims are withdrawn. Established Fu–Yau and Anomaly-flow results provide a mathematically appropriate lower target, while the selected $`q=79`$ program still lacks one common rank-three visible–hidden Hull–Strominger tuple and a connection-preserving intertwiner from the MTT carrier.
+  The Hull–Strominger system couples a conformally balanced Hermitian metric, holomorphic gauge bundles, Hermitian–Yang–Mills connections, torsion, and the differential Green–Schwarz identity on one compact complex threefold. This paper asks a precise question: when does a fixed point of a Modal Triplet Theory evolution determine a solution of that system? We define a typed bridge from an upstairs MTT configuration space to Hull–Strominger data and prove exact and residual fixed-point descent theorems. Exact descent requires the bridge to intertwine the selected MTT flow with a lower geometric flow, such as the Anomaly flow together with the required bundle evolutions. Approximate intertwining bounds the lower generator; a full equation bound additionally requires control of the residual-to-generator map. A contextual analysis of the selected $`q=79`$ constructions separates the established hidden projective rank-nine bundle and existential Hermitian–Yang–Mills connection from the unconstructed physical visible rank-three bundle and common endpoint. Full Bott–Chern injectivity supplies an anomaly potential once the same-source curvature pair exists, but does not supply positivity or integral differential flux data. A transverse Fu–Yau shortcut is excluded for the required nonzero visible third Chern class; a full nontransverse residual compiler is available conditionally. These results establish a typed completion contract, not compactification selection or a physical action. The connection-preserving continuum intertwiner remains open.
 author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v2
-date: Version 2, July 2026
-generated_from_main_tex_sha256: c7cbe4cc0ebe987609ae16a2520b6df9bf18aff70c503657b6a356a7ba2cba2d
+current_version: v3
+date: Version 3, September 2026
+generated_from_main_tex_sha256: ffae3c2f615ccef12a392e6573c9ac5f042c552c7ac99167a46abaf206416635
 paper_id: modal-triplet-theory-from-mtt-to-the-strominger-heterot-b2789a83
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: |
   Modal Triplet Theory and the Hull–Strominger System:
@@ -19,21 +19,39 @@ zenodo_record_id: 21707236
 zenodo_url: "https://zenodo.org/records/21707236"
 ---
 
+#  Modal Triplet Theory and the Hull–Strominger System: A Conditional Fixed-Point Correspondence and the q=79 Completion Boundary
+
+Peter Nero. Version 3, September 2026
+
+## Abstract
+
+The Hull–Strominger system couples a conformally balanced Hermitian metric, holomorphic gauge bundles, Hermitian–Yang–Mills connections, torsion, and the differential Green–Schwarz identity on one compact complex threefold. This paper asks a precise question: when does a fixed point of a Modal Triplet Theory evolution determine a solution of that system? We define a typed bridge from an upstairs MTT configuration space to Hull–Strominger data and prove exact and residual fixed-point descent theorems. Exact descent requires the bridge to intertwine the selected MTT flow with a lower geometric flow, such as the Anomaly flow together with the required bundle evolutions. Approximate intertwining bounds the lower generator; a full equation bound additionally requires control of the residual-to-generator map. A contextual analysis of the selected $`q=79`$ constructions separates the established hidden projective rank-nine bundle and existential Hermitian–Yang–Mills connection from the unconstructed physical visible rank-three bundle and common endpoint. Full Bott–Chern injectivity supplies an anomaly potential once the same-source curvature pair exists, but does not supply positivity or integral differential flux data. A transverse Fu–Yau shortcut is excluded for the required nonzero visible third Chern class; a full nontransverse residual compiler is available conditionally. These results establish a typed completion contract, not compactification selection or a physical action. The connection-preserving continuum intertwiner remains open.
+
+# Revision note: Version 3
+
+**Supersedes** The current Version 2 manuscript. Its released DOI and the earlier revision note below remain unchanged; this revision is not a new public release.
+
+**Reason** The evidence section stopped at rank-two analysis and did not distinguish later hidden projective HYM existence from the still-open common physical endpoint. Its torsion convention also identified a degree-one operator with a degree-two operator.
+
+**Resolution** The convention is corrected to $`\dd\dd^c=\ii\partial\bar\partial`$. Thirty-seven frozen source assignments are reviewed in context: source typing, full-residual transfer, the successful hidden construction and its excluded predecessors, Bott–Chern reduction, the nontransverse compiler, and the integral visible-source boundary. A fresh-prime arithmetic correction is retained without discarding unaffected finite results. Scoped consumer summaries identify the current Cohesive, quantum-mechanics, and flux-paper owners of the geometric and operator interfaces.
+
+**Retained** Conditional fixed-point descent, the rejection of the former selection potential, finite $`q=79`$ and rank-two analytic results, and the established hidden rank-nine object and existential HYM theorem at their declared tiers.
+
+**Open boundary** The selected visible twisted Prym datum, common visible–hidden chamber, positive nontransverse solution, integral differential Green–Schwarz trivialization, and same-source continuum intertwiner remain to be supplied.
+
 # Revision note: Version 2
 
-<div class="description">
+**Supersedes** Version 2 supersedes Version 1 and its claim that MTT had uniquely selected a non-Kähler heterotic compactification.
 
-Version 2 supersedes Version 1 and its claim that MTT had uniquely selected a non-Kähler heterotic compactification.
+**Reason** The earlier argument used a “twisted differential” even though the anomaly equation generally gives $`\dd H\ne0`$, inferred a contraction without a verified contraction constant, and treated an indefinite constrained functional as a coercive strictly convex selection potential. It also assembled Fu–Yau, Iwasawa, bundle, and MTT ingredients that had not been constructed on one common carrier.
 
-The earlier argument used a “twisted differential” even though the anomaly equation generally gives $`\mathrm dH\ne0`$, inferred a contraction without a verified contraction constant, and treated an indefinite constrained functional as a coercive strictly convex selection potential. It also assembled Fu–Yau, Iwasawa, bundle, and MTT ingredients that had not been constructed on one common carrier.
+**Resolution** This version removes the invalid selection functional and replaces it with a typed flow-intertwining contract. It proves exactly what follows from an intertwiner, gives the corresponding residual estimate, and separates lower Hull–Strominger existence from MTT source selection.
 
-This version removes the invalid selection functional and replaces it with a typed flow-intertwining contract. It proves exactly what follows from an intertwiner, gives the corresponding residual estimate, and separates lower Hull–Strominger existence from MTT source selection.
+**Retained content** The Hull–Strominger equations, the use of conformally balanced geometry and Hermitian–Yang–Mills data, fixed-point methods as a possible bridge, and Fu–Yau geometry as the strongest established lower-space target are retained.
 
-The Hull–Strominger equations, the use of conformally balanced geometry and Hermitian–Yang–Mills data, fixed-point methods as a possible bridge, and Fu–Yau geometry as the strongest established lower-space target are retained.
+**Remaining boundary** MTT must still construct one selected $`q=79`$ physical visible–hidden background and prove that its upper evolution descends to the required geometric and bundle flows with the same connections, traces, and global flux data.
 
-MTT must still construct one selected $`q=79`$ physical visible–hidden background and prove that its upper evolution descends to the required geometric and bundle flows with the same connections, traces, and global flux data.
-
-</div>
+<a id="sec:intro"></a>
 
 # The question and the answer
 
@@ -57,7 +75,7 @@ The paper owns three limited results.
 
 1.  Exact flow intertwining sends an MTT fixed point to a lower fixed point.
 
-2.  A bounded intertwining defect sends an MTT fixed point only to a lower approximate solution, with the same explicit defect bound.
+2.  A bounded intertwining defect bounds the lower generator, and bounds all equations only under a declared norm comparison.
 
 3.  Local uniqueness or selection requires an invariant contraction basin and cannot be inferred from fixed-point correspondence alone.
 
@@ -76,43 +94,46 @@ The argument has five layers:
 &\longrightarrow \text{physical completion tests}.
 \end{split}
 ```
-Sections <a href="#sec:hs" data-reference-type="ref" data-reference="sec:hs">2</a> and <a href="#sec:flow" data-reference-type="ref" data-reference="sec:flow">3</a> explain the first two layers. Sections <a href="#sec:bridge" data-reference-type="ref" data-reference="sec:bridge">4</a>–<a href="#sec:selection" data-reference-type="ref" data-reference="sec:selection">6</a> prove the bridge results. Sections <a href="#sec:audit" data-reference-type="ref" data-reference="sec:audit">7</a>–<a href="#sec:frontier" data-reference-type="ref" data-reference="sec:frontier">10</a> state what survives physically.
+Sections [2](#sec:hs) and [3](#sec:flow) explain the first two layers. Sections [4](#sec:bridge)–[6](#sec:selection) prove the bridge results. Sections [7](#sec:audit)–[10](#sec:frontier) state what survives physically.
+
+<a id="sec:hs"></a>
 
 # One Hull–Strominger object
 
 ## Fields and convention
 
-Fix a compact complex threefold $`X`$ with nowhere-vanishing holomorphic $`(3,0)`$-form $`\Omega`$. Let $`\omega`$ be a positive Hermitian form, $`\Phi`$ a dilaton, and $`V_{\mathrm{vis}},V_{\mathrm{hid}}`$ holomorphic Hermitian bundles with unitary connections $`A_{\mathrm{vis}},A_{\mathrm{hid}}`$. Fix also a metric connection $`\nabla`$ on $`TX`$. Its choice is part of the data, not a notation that may be changed between equations.
+Fix a compact complex threefold $`X`$ with nowhere-vanishing holomorphic $`(3,0)`$-form $`\Omega`$. Let $`\omega`$ be a positive Hermitian form, $`\Phi`$ a dilaton, and $`V_{\mathrm{vis}},V_{\mathrm{hid}}`$ holomorphic Hermitian gauge objects with unitary connections $`A_{\mathrm{vis}},A_{\mathrm{hid}}`$. Fix also a metric connection $`\nabla`$ on $`TX`$. Its choice is part of the data, not a notation that may be changed between equations. For a twisted or projective object, its cocycle, determinant reduction, and trace-free curvature convention are part of the datum. The adjoint curvature is globally defined although the vector transition maps may be projective. An arbitrary coherent sheaf is not an instanton: local freeness, or an explicitly different singular analytic problem, must be specified.
 
 We use
 ``` math
-\mathrm d^c=\mathrm i\partial\bar\partial,\qquad
+\mathrm d^c=\frac{\mathrm i}{2}(\bar\partial-\partial),\qquad
+\mathrm d\mathrm d^c=\mathrm i\partial\bar\partial,\qquad
 H=\mathrm d^c\omega
 ```
 as a convention for the torsion equation. Numerical factors in $`\mathrm d^c`$ and trace normalizations vary in the literature; every comparison below presupposes one convention fixed throughout.
 
-In this convention the first-order equations include
+In this convention the first-order equations include <a id="eq:balanced"></a><a id="eq:gauge-hym"></a><a id="eq:tangent-instanton"></a><a id="eq:bianchi"></a>
 ``` math
 \begin{align}
 \mathrm d\!\left(\|\Omega\|_\omega\omega^2\right)&=0,
-\label{eq:balanced}\\
+\\
 F_a^{0,2}=0,\qquad F_a\wedge\omega^2&=0,
 \quad a\in\{\mathrm{vis},\mathrm{hid}\},
-\label{eq:gauge-hym}\\
+\\
 R_\nabla^{0,2}=0,\qquad R_\nabla\wedge\omega^2&=0,
-\label{eq:tangent-instanton}\\
+\\
 \mathrm dH&=\frac{\alpha'}4\left(
 \operatorname{tr}R_\nabla\wedge R_\nabla
 -\operatorname{tr}F_{\mathrm{vis}}\wedge F_{\mathrm{vis}}
 -\operatorname{tr}F_{\mathrm{hid}}\wedge F_{\mathrm{hid}}\right).
-\label{eq:bianchi}
+
 \end{align}
 ```
-The tangent-instanton row is included when required by the chosen first-order equations-of-motion convention .
+The tangent-instanton row is included when required by the chosen first-order equations-of-motion convention \[[69](#ref-Strominger1986),[6](#ref-Hull1986),[2](#ref-DelaOssaSvanes2014)\].
 
 ## Global data are a separate row
 
-Writing $`H=\mathrm dB+`$ Chern–Simons terms is local notation. Globally, the $`B`$-field is gerbe data and the Green–Schwarz condition is differential cohomological. A topological equality of second Chern classes is necessary in common settings but does not identify the differential four-form representatives in <a href="#eq:bianchi" data-reference-type="ref+label" data-reference="eq:bianchi">[eq:bianchi]</a>. Likewise, a smooth vector bundle with the desired Chern classes is not yet a holomorphic stable bundle with an HYM connection.
+Writing $`H=\mathrm dB+`$ Chern–Simons terms is local notation. Globally, the $`B`$-field is gerbe data and the Green–Schwarz condition is differential cohomological. A topological equality of second Chern classes is necessary in common settings but does not identify the differential four-form representatives in [(4)](#eq:bianchi). Likewise, a smooth vector bundle with the desired Chern classes is not yet a holomorphic stable bundle with an HYM connection.
 
 <div id="def:lower" class="definition">
 
@@ -127,7 +148,7 @@ in which all objects live on the same $`X`$, use one trace convention, and $`\ma
 
 <div id="def:residual" class="definition">
 
-**Definition 2** (Hull–Strominger residual). After gauge fixing and choosing Sobolev completions, let $`\mathcal R_{\mathrm{HS}}(y)`$ be the vector consisting of the left-hand sides of <a href="#eq:balanced,eq:gauge-hym,eq:tangent-instanton,eq:bianchi" data-reference-type="ref+label" data-reference="eq:balanced,eq:gauge-hym,eq:tangent-instanton,eq:bianchi">[eq:balanced,eq:gauge-hym,eq:tangent-instanton,eq:bianchi]</a>, together with the global patching defect. Thus
+**Definition 2** (Hull–Strominger residual). Fix the differential-topological class and its admissible patching first. After gauge fixing and choosing Sobolev completions, let $`\mathcal R_{\mathrm{HS}}(y)`$ be the vector consisting of the left-hand sides of [(1)](#eq:balanced), [(2)](#eq:gauge-hym), [(3)](#eq:tangent-instanton), [(4)](#eq:bianchi), together with the continuous patching equations in this class. Discrete obstruction classes are admission conditions, not extra coordinates in a Sobolev vector space. The torsion and dilaton identifications are imposed in the domain (in particular, $`e^{-2\Phi}`$ is proportional to $`\|\Omega\|_\omega`$ with the chosen normalization). Thus
 ``` math
 \mathcal R_{\mathrm{HS}}(y)=0
 ```
@@ -137,11 +158,13 @@ means that every declared lower row is satisfied on one common tuple.
 
 The residual formulation is intentionally unforgiving. It prevents a metric from one construction, a bundle from another, and a topological identity from a third from being advertised as one solution.
 
+<a id="sec:flow"></a>
+
 # The appropriate lower flow
 
 ## Anomaly flow
 
-There is an established geometric flow designed for this setting. In a fixed holomorphic and bundle ansatz, the Anomaly flow evolves the positive $`(2,2)`$-form $`\|\Omega\|_\omega\omega^2`$ by an equation of the form
+There is an established geometric flow designed for this setting. In a fixed holomorphic and bundle ansatz, the Anomaly flow evolves the positive $`(2,2)`$-form $`\|\Omega\|_\omega\omega^2`$ by an equation of the form <a id="eq:anomaly-flow"></a>
 ``` math
 \begin{equation}
 \partial_\tau\!\left(\|\Omega\|_\omega\omega^2\right)
@@ -150,12 +173,12 @@ There is an established geometric flow designed for this setting. In a fixed hol
 \operatorname{tr}R_\nabla\wedge R_\nabla
 -\operatorname{tr}F_{\mathrm{vis}}\wedge F_{\mathrm{vis}}
 -\operatorname{tr}F_{\mathrm{hid}}\wedge F_{\mathrm{hid}}\right).
-\label{eq:anomaly-flow}
+
 \end{equation}
 ```
-The exact analytic formulation depends on the selected tangent connection and on whether bundle metrics are fixed or evolved. The flow preserves the conformally balanced condition under its hypotheses, and its stationary points solve the anomaly equation. Short-time existence is known in the original setting, and convergence is known in important Fu–Yau ansatz classes .
+The exact analytic formulation depends on the selected tangent connection and on whether bundle metrics are fixed or evolved. The flow preserves the conformally balanced condition under its hypotheses, and its stationary points solve the anomaly equation. Short-time existence is known in the original setting, and convergence is known in important Fu–Yau ansatz classes \[[68](#ref-PhongPicardZhang2017),[67](#ref-PhongPicardZhang2018)\].
 
-The existence of <a href="#eq:anomaly-flow" data-reference-type="ref+label" data-reference="eq:anomaly-flow">[eq:anomaly-flow]</a> is important for MTT because it gives a genuine lower repair dynamics. It does not prove that an MTT flow equals it. Nor does the metric flow by itself construct the holomorphic bundles or their HYM metrics. Those rows must be fixed consistently or coupled to appropriate bundle heat flows.
+The existence of [(5)](#eq:anomaly-flow) is important for MTT because it gives a genuine lower repair dynamics. It does not prove that an MTT flow equals it. Nor does the metric flow by itself construct the holomorphic bundles or their HYM metrics. Those rows must be fixed consistently or coupled to appropriate bundle heat flows.
 
 ## A lower semigroup is local to its domain
 
@@ -202,6 +225,8 @@ Because $`H`$ has odd degree, $`H\wedge H=0`$. The stated identity follows. ◻
 
 Thus the earlier “twisted harmonic projector” cannot be justified by twisted de Rham cohomology unless $`\mathrm dH=0`$. A corrected operator must instead come from a specified Bismut/Hull covariant Laplacian, an elliptic deformation complex, or the gauge-fixed Hessian of a selected action. Its domain, kernel removal, and spectral gap must be proved for that operator.
 
+<a id="sec:bridge"></a>
+
 # The typed MTT bridge
 
 ## Upper data
@@ -216,7 +241,7 @@ This notation does not assume that such a physical continuum flow has already be
 ``` math
 \mathfrak B:\mathcal D_{\mathrm{MTT}}\longrightarrow\mathcal D_0
 ```
-whose output is a complete lower datum in the sense of Definition <a href="#def:lower" data-reference-type="ref" data-reference="def:lower">1</a>. It must provide the following rows without changing carrier or source:
+whose output is a complete lower datum in the sense of Definition [2.1](#def:lower). It must provide the following rows without changing carrier or source:
 
 <div class="center">
 
@@ -225,7 +250,7 @@ whose output is a complete lower datum in the sense of Definition <a href="#def
 | Carrier | one complex threefold $`X`$, complex structure, and $`\Omega`$ |
 | Metric | positive $`\omega`$ and dilaton $`\Phi`$ |
 | Visible sector | rank-three physical holomorphic bundle and connection |
-| Hidden sector | compatible hidden bundle or sheaf and connection |
+| Hidden sector | locally free projective rank-nine object, twist, and connection |
 | Tangent sector | one declared connection $`\nabla`$ and curvature |
 | Flux | $`H`$, trace convention, gerbe patching, and quantization |
 | Dynamics | tangent map carrying the upper vector field to the lower one |
@@ -236,37 +261,49 @@ whose output is a complete lower datum in the sense of Definition <a href="#def
 
 The shared circle can enter this bridge as common line-bundle phase or holonomy data, counted once. That role does not identify it with Lorentzian time and does not by itself construct $`X`$, $`V_{\mathrm{vis}}`$, or the Green–Schwarz class.
 
+<a id="sec:source-presentations"></a>
+
+## One source, two presentations
+
+The frozen source-classification and embedding analyses \[[34](#ref-FRG1),[35](#ref-FRG1E)\] distinguish two presentations of this program: an augmented physical bundle deformation germ, and a derived-cohesive germ with a physical realization map. This is a classification relative to the stated routes, not a theorem excluding every conceivable source. In either presentation one must preserve provenance, augmentation, nonlinear operations, metric pairing, gauge action, and all downstream maps. An equivalence of tangent dimensions alone preserves none of these six rows.
+
+The elementary embedding $`E\mapsto(E[0],\bar\partial_E)`$ preserves the endomorphism differential graded algebra, its Maurer–Cartan equation, and gauge transformations. It preserves adjoints and Hodge operators only after the same Hermitian structure is carried along. Conversely, a complex becomes a physical bundle only after its cohomology is concentrated in degree zero, is locally free with the required ranks and topology, and carries the correct twist, augmentation, residual, and readout maps. For example, the benchmark $`\kappa_{\mathrm{hol}}`$ has $`c_1=-H,c_2=3u`$, whereas the physical visible target has $`c_1=0,c_2=9u,c_3=\pm6`$. Here $`H`$ is a divisor class and $`u`$ the normalized base four-class, not the torsion three-form. The benchmark is a valid structural source, not that visible bundle. The structural repair and Hodge identities are owned by the Cohesive paper \[[14](#ref-NeroCohesive2026)\]; they are not reproved here.
+
+The anti-splicing audit \[[38](#ref-FRG3A)\] makes the practical consequence precise. Metric, bundle, and operator certificates carrying different source-orbit identifiers cannot be joined without a structure-preserving transport bound to those sources. The four candidates examined in that snapshot supplied no complete physical source. That is a result about those candidates at that stage, not a nonexistence theorem for the endpoint. In particular, its old missing-hidden-bundle row is superseded by the construction in Section [8.7](#sec:hidden-hym).
+
 ## Exact intertwining
 
 <div id="def:intertwiner" class="definition">
 
-**Definition 6** (Flow intertwiner). The bridge $`\mathfrak B`$ intertwines the flows on a common interval $`I`$ if
+**Definition 6** (Flow intertwiner). The bridge $`\mathfrak B`$ intertwines the flows on a common interval $`I`$ containing $`[0,\epsilon)`$, for some $`\epsilon>0`$, if <a id="eq:intertwine"></a>
 ``` math
 \begin{equation}
 \mathfrak B\circ R_\tau=S_\tau\circ\mathfrak B,
 \qquad \tau\in I,
-\label{eq:intertwine}
+
 \end{equation}
 ```
 where both sides are defined.
 
 </div>
 
-Infinitesimally, if the two flows have differentiable vector fields $`\mathcal F_{\mathrm{MTT}}`$ and $`\mathcal F_{\mathrm{HS}}`$, exact intertwining requires
+Infinitesimally, if the two flows have differentiable vector fields $`\mathcal F_{\mathrm{MTT}}`$ and $`\mathcal F_{\mathrm{HS}}`$, exact intertwining requires <a id="eq:generator-intertwine"></a>
 ``` math
 \begin{equation}
 D\mathfrak B_u\,\mathcal F_{\mathrm{MTT}}(u)
 =\mathcal F_{\mathrm{HS}}(\mathfrak B(u)).
-\label{eq:generator-intertwine}
+
 \end{equation}
 ```
-Equation <a href="#eq:generator-intertwine" data-reference-type="eqref" data-reference="eq:generator-intertwine">[eq:generator-intertwine]</a> is the continuum operator source obligation. Matching only fixed-point labels or dimensions does not prove it.
+Equation [(7)](#eq:generator-intertwine) is the continuum operator source obligation. Matching only fixed-point labels or dimensions does not prove it.
+
+<a id="sec:descent"></a>
 
 # Fixed-point descent
 
 <div id="thm:descent" class="theorem">
 
-**Theorem 7** (Conditional fixed-point descent). *Let $`R_\tau`$, $`S_\tau`$, and $`\mathfrak B`$ be as above. Suppose $`\mathfrak B`$ satisfies <a href="#eq:intertwine" data-reference-type="ref+label" data-reference="eq:intertwine">[eq:intertwine]</a> and $`u_\ast\in\mathcal D_{\mathrm{MTT}}`$ is fixed by $`R_\tau`$ for every $`\tau\in I`$. Then $`\mathfrak B(u_\ast)`$ is fixed by $`S_\tau`$ for every $`\tau\in I`$. If Assumption <a href="#ass:stationary" data-reference-type="ref" data-reference="ass:stationary">3</a> holds, then
+**Theorem 7** (Conditional fixed-point descent). *Let $`R_\tau`$, $`S_\tau`$, and $`\mathfrak B`$ be as above. Suppose $`\mathfrak B`$ satisfies [(6)](#eq:intertwine) and $`u_\ast\in\mathcal D_{\mathrm{MTT}}`$ is fixed by $`R_\tau`$ for every $`\tau\in I`$. Then $`\mathfrak B(u_\ast)`$ is fixed by $`S_\tau`$ for every $`\tau\in I`$. If Assumption [3.1](#ass:stationary) holds, then
 ``` math
 \mathcal R_{\mathrm{HS}}(\mathfrak B(u_\ast))=0.
 ```*
@@ -281,7 +318,7 @@ S_\tau(\mathfrak B(u_\ast))
 =\mathfrak B(R_\tau u_\ast)
 =\mathfrak B(u_\ast).
 ```
-The residual conclusion is exactly Assumption <a href="#ass:stationary" data-reference-type="ref" data-reference="ass:stationary">3</a>. ◻
+The residual conclusion is exactly Assumption [3.1](#ass:stationary). Here being fixed for a nontrivial interval from zero means stationary for the well-posed autonomous local semiflow, and hence fixed throughout its continuation. Being fixed at just one isolated time would not suffice. ◻
 
 </div>
 
@@ -319,7 +356,93 @@ If $`\mathcal F_{\mathrm{MTT}}(u_\ast)=0`$, then
 
 </div>
 
-This proposition is deliberately modest. A small flow residual is not an exact background. To infer a nearby exact solution one needs a separate inverse-function, Newton–Kantorovich, or a posteriori theorem with a gauge-fixed derivative, inverse bound, nonlinear remainder estimate, and a verified radius.
+This proposition is deliberately modest. In particular, stationary-point identification equates zero sets, not norms. If $`\mathcal F_{\mathrm{HS}}=-P_y\mathcal R_{\mathrm{HS}}`$, an equation estimate requires, for example,
+``` math
+\|r\|_{\mathrm{res}}\le C_P\|P_y r\|_{\mathcal Y}
+\quad\text{on the admitted residual range};\qquad
+\|\mathcal R_{\mathrm{HS}}(\mathfrak B(u_*))\|_{\mathrm{res}}
+\le C_P\varepsilon.
+```
+A metric flow that omits bundle rows has no such estimate for those rows. A small flow residual is not an exact background. To infer a nearby exact solution one needs a separate inverse-function, Newton–Kantorovich, or a posteriori theorem with a gauge-fixed derivative, inverse bound, nonlinear remainder estimate, and a verified radius.
+
+<a id="sec:full-repair"></a>
+
+## The full repair operator and the reducing-map requirement
+
+The residual-Hodge analysis \[[36](#ref-FRG2)\] starts at a *zero* of the full defect. Write its linearization as $`(J,K)`$, with $`J`$ the cohesive deformation row and $`K`$ the additional geometric rows. For an orthogonal unit residual metric, the Hessian of the positive repair cost is <a id="eq:full-repair"></a>
+``` math
+\begin{equation}
+ H_{\mathrm{full}}=J^\dagger J+K^\dagger K
+ =\Delta_{\mathcal Y}+K^\dagger K,\qquad
+ \ker H_{\mathrm{full}}=\ker\Delta_{\mathcal Y}\cap\ker K.
+
+\end{equation}
+```
+Thus adding equations can remove zero modes. A bare cohesive compression is not automatically this full Hessian: the benchmark rank-102 compression already contains a $`\tfrac14 A_0A_0^\dagger`$ contribution beyond its displayed $`\Delta_Q`$ block. At a nonzero-defect critical point the residual-weighted second derivative must also be included.
+
+The physical-residual transfer packet \[[37](#ref-FRG2P)\] lists six additional rows: tangent, visible, and hidden moment maps; conformal balance; anomaly/Bianchi; and $`SU(3)`$ normalization. Together with the base deformation row these give the seven-row repair problem, after its holomorphic and topological domain is fixed. Their cross-couplings matter. With residual metric $`W=\left(\begin{smallmatrix}W_0&C\\C^\dagger&W_R\end{smallmatrix}\right)`$, the zero-defect Hessian is instead
+``` math
+J^\dagger W_0J+J^\dagger CK+K^\dagger C^\dagger J+K^\dagger W_RK.
+```
+The unit, orthogonal choice in the structural lane is a declared repair metric, not a derivation of the physical action metric. Likewise the rank-102 partition $`3+8+8+80+3`$ permits all 25 ordered blocks of a full matrix, or $`102^2=10404`$ positions. The earlier 19-block mask omitted 2688 permitted positions. Restoring permission is not computing any of those matrix entries.
+
+Even an exact residual square does not necessarily transport its Gram operator. Let $`T`$ and $`S`$ be isometric maps on configurations and residuals, with $`SK_c=K_fT`$. The small example in the same packet is
+``` math
+K_c=[1],\quad K_f=[1\ \tfrac12],\quad
+T=\begin{pmatrix}1\\0\end{pmatrix},\quad S=[1].
+```
+It gives $`K_f^\dagger K_fT=(1,\tfrac12)^\mathsf{T}`$, but $`TK_c^\dagger K_c=(1,0)^\mathsf{T}`$. Thus the pulled-back cost is exact while the fine gradient leaves $`\operatorname{Ran}T`$. A reducing or adjoint-compatible condition, such as $`K_f^\dagger S=TK_c^\dagger`$, closes this gap. For bounded operators the packet separates residual error and adjoint leakage:
+``` math
+\varepsilon_H\le\varepsilon_0+
+(\|K_f\|+\|K_c\|)\varepsilon_K+
+\varepsilon_\perp\|K_c\|.
+```
+For unbounded continuum operators, a common core and the corresponding domain estimates are additional requirements. Cost pullback alone is not the connection-preserving intertwiner of this paper.
+
+<a id="sec:consumer-compiler"></a>
+
+## What a compiled connection actually transports
+
+The quantum-mechanics paper owns the projective-module naturality and Cech compiler used at this interface, in its section *From a geometric source to a retained operator* \[[21](#ref-NeroQM2026),[23](#ref-ConsumerNaturality),[12](#ref-ConsumerCech)\]. Given unitary transition functions, a Hermitian metric and a connection, a partition with $`\sum_i\chi_i^2=1`$ constructs an isometric module embedding $`U`$ and the smooth finite-matrix projector $`p=UU^*`$. Its section space is still infinite-dimensional. To preserve the supplied connection, rather than substitute the Grassmann connection, one uses
+``` math
+A_0=U^*\mathrm dU,\qquad
+ \Gamma=U(A-A_0)U^*,\qquad D_p=p\,\mathrm d+\Gamma .
+```
+This is an exact compiler after the geometric inputs are supplied. It does not choose a physical metric or connection. The external modal flag also cannot be installed inside the scalar commutant of an irreducible stable HYM bundle. Cancellation of the hidden central twist in the rank-80 adjoint explains the ordinary rank-102 deformation complex, not an ordinary hidden fundamental bundle.
+
+Changing the presentation must transport the intrinsic retained subspace as well. A fixed Fourier window need not survive a winding change of frame. For a self-adjoint operator $`H`$, exact restriction to $`P`$ requires $`(1-P)HP=0`$, with compatible domains; otherwise the complementary resolvent enters through the Feshbach correction. Neither this compiler nor the abstract Fixed Points analytic spine supplies that reducing condition for the selected physical operator.
+
+<a id="sec:consumer-strain"></a>
+
+## A nonlinear strain symbol is not a linear root stack
+
+The same owner supplies the relevant replacement for the excluded linear root-stack route \[[21](#ref-NeroQM2026),[19](#ref-ConsumerStrain)\]. The six real root directions have a different permutation character from two copies of the three-dimensional permutation representation. They therefore cannot be identified by an equivariant linear isomorphism. For a Hermitian three-by-three symbol, the intrinsic strain coordinates instead retain its three diagonal entries and the three squared edge magnitudes. The complete relative-phase quotient also retains the triangle phase: its generic dimension is seven, whereas strain forgets that phase and has six coordinates. A central shared line does not remove a relative triangle phase.
+
+On the regular stratum, let $`J`$ be the derivative of this nonlinear map and $`G_Q`$ the positive reduced Green operator on the declared source domain. Minimizing the source quadratic cost at fixed strain gives
+``` math
+H_{\rm strain}=(JG_QJ^*)^{-1}
+```
+on the image, not the restriction of the original Hessian to a guessed six-dimensional subspace. Any further projection must be applied to the covariance before inversion. The later support-stratified refinement settles the zero-edge boundary as well \[[27](#ref-ConsumerSupportStrain)\]: when an edge vanishes, its first derivative vanishes and its squared magnitude appears at second order. For example, $`r=t^2`$ and a source cost $`t^2/2`$ give the normal cost $`r/2`$, not a quadratic cost in $`r`$. Tangential shorting remains valid on each support stratum; an ordinary full six-dimensional boundary Hessian is excluded. A rank-six or the stated local quarter-turn contract forces the regular stratum. These exact implications do not supply the physical background, reduced Green operator or same-source symmetry lift.
+
+<a id="sec:consumer-transfer"></a>
+
+## Finite transfer and the physical source contract
+
+The Cohesive owner explains why a twisted perfect complex has an ordinary endomorphism differential graded algebra: the central twist cancels in endomorphisms and the commutator with its integrable superconnection squares to zero \[[14](#ref-NeroCohesive2026),[31](#ref-ConsumerCohesive)\]. On a compact boundaryless base with chosen Hermitian data, the associated elliptic Hodge operator has compact resolvent. This global statement does not make a fiberwise reduced Green operator bounded across a rank-jump locus. Its Maurer–Cartan residual and gauge row give a positive repair cost whose exact-zero tangent is the Hodge Laplacian \[[20](#ref-ConsumerMC)\]. Formal Ext/Yoneda transport does not by itself transport adjoints or identify this cost with the physical signed action; the reducing-map qualification in [5.2](#sec:full-repair) remains essential.
+
+The same owner retains the exact finite response contraction and its nonzero transferred $`m_3,m_4`$; it cannot be truncated after the cubic operation \[[16](#ref-ConsumerMThree),[30](#ref-ConsumerMFour)\]. All-arity naturality follows from a product-preserving source map that commutes with the inclusion, projection and contracting homotopy: it can be moved through every decorated transfer tree \[[8](#ref-ConsumerAllArity)\]. This is an exact source-map theorem, not an extrapolation from a few tested arities or a construction of continuum interaction vertices.
+
+Finally, the endpoint-factorization result organizes seven physical acceptance rows through three structured sources: geometry plus signed action, spectral synthesis with compatible contraction, and BV-compatible four-dimensional compactification \[[29](#ref-ConsumerEndpoint)\]. Shared-line functional calculus and Galerkin/Feshbach execution are derived arrows when those sources agree. Three source packages are not three numerical parameters, and none is selected by this dependency organization.
+
+<a id="sec:metric-scale"></a>
+
+## Scale freedom is not a chosen physical metric
+
+The scale-orbit calculation \[[40](#ref-FRG3B)\] keeps the source fixed while multiplying its repair cost by $`\lambda>0`$. The Hessian and its positive eigenvalues scale by $`\lambda`$; the Green operator on the kernel complement scales by $`\lambda^{-1}`$; heat evolution is reparametrized in time. The kernel and scale-free spectral ratios survive. Consequently those ratios cannot select an absolute energy or time normalization. Independent relative weights of residual rows are different: they can change the shape of the operator, not merely its clock.
+
+The metric-commutant packet \[[41](#ref-FRG3C)\] illustrates how symmetry can restrict a *reference* choice. Sign changes on $`\mathbb R^3`$ kill the off-diagonal entries of an invariant symmetric metric, and permutations make the three diagonal entries equal. The invariant positive metrics are therefore $`\lambda I`$. This finite demonstration does not establish that the selected physical residual space has this action, or that its metric is the same reference metric. Neither calculation turns a positive repair square into a signed physical action.
+
+<a id="sec:selection"></a>
 
 # What selection would additionally require
 
@@ -340,7 +463,7 @@ then $`S_{\tau_0}`$ has exactly one fixed point in $`\mathcal B`$, and its Picar
 
 </div>
 
-The content lies in proving the invariant complete basin and the number $`q<1`$. Parabolic smoothing alone does not do this. A schematic estimate of the form $`C_\Pi M(\tau)e^{L\tau}`$ proves contraction only after one establishes that it is strictly below one for a specified $`\tau`$ on a specified domain.
+The content lies in proving the invariant complete basin and the number $`q<1`$. Parabolic smoothing alone does not do this. A schematic estimate of the form $`C_\Pi M(\tau)e^{L\tau}`$ proves contraction only after one establishes that it is strictly below one for a specified $`\tau`$ on a specified domain. If $`\mathcal B`$ is invariant for the whole semiflow, the unique fixed point of $`S_{\tau_0}`$ is stationary: commutation makes each $`S_s y_*`$ another fixed point in $`\mathcal B`$, so uniqueness gives $`S_s y_*=y_*`$. Invariance under only the sampled time map would not justify this extra conclusion.
 
 <div id="prop:no-selection" class="proposition">
 
@@ -354,7 +477,23 @@ The content lies in proving the invariant complete basin and the number $`q<1`$.
 
 </div>
 
-Consequently the phrase “MTT selects the compactification” requires more than <a href="#thm:descent" data-reference-type="ref+label" data-reference="thm:descent">7</a>. It requires a selected upper initial condition or branch, a complete invariant basin, uniqueness within the physically relevant quotient, and a proof that no other admissible basin realizes the same observables.
+Consequently the phrase “MTT selects the compactification” requires more than [5.1](#thm:descent). It requires a selected upper initial condition or branch, a complete invariant basin, uniqueness within the physically relevant quotient, and a proof that no other admissible basin realizes the same observables.
+
+<a id="sec:endpoint-compiler"></a>
+
+## A conditional nontransverse endpoint compiler
+
+The nontransverse compiler \[[65](#ref-FRG3Z)\] supplies a usable a posteriori contract for the *full* seven-row residual $`\Psi`$. Work in a fixed gauge slice on one source, with moduli removed or separately parametrized and the adjoint obstruction space absent. At an approximate datum $`s_0`$, require $`A=D\Psi(s_0)`$ to be bijective, $`\|A^{-1}\|\le\Gamma`$, a derivative Lipschitz bound $`L>0`$, and $`\|\Psi(s_0)\|\le\eta`$. These bounds must hold on the stated ball of radius $`R`$, with a positivity radius $`r_{\mathrm{pos}}`$ and elliptic regularity. Set
+``` math
+h=\Gamma^2L\eta<\tfrac12,\qquad
+r_-={1-\sqrt{1-2h}\over\Gamma L},\qquad
+q=\Gamma Lr_-<1.
+```
+If $`r_-\le R`$ and $`r_-<r_{\mathrm{pos}}`$, the frozen-inverse iteration $`s\mapsto s-A^{-1}\Psi(s)`$ contracts the admitted ball and yields a unique zero there. The radius equation $`\Gamma\eta+\tfrac12\Gamma Lr_-^2=r_-`$ explains both self-mapping and the need for a full derivative estimate. For $`L=0`$, the corresponding linear radius is $`\Gamma\eta`$, without division by $`L`$.
+
+For scale, the packet’s *reference example*, not a $`q=79`$ certificate, uses $`\Gamma=2,L=1/2,\eta=3/16`$. Then $`h=3/8,r_-=1/2,q=1/2`$, fitting inside $`R=1`$ and $`r_{\mathrm{pos}}=3/4`$. This is a bounded arithmetic check of the compiler, not a computed chamber or connection. The actual source must supply every input, preserve its twists and integral classes, and show that gauge identifications respect the slice. A zero of this repair residual is an endpoint under its admitted data; its construction does not identify a Lorentzian or BV action, choose a global basin, or select the physical source.
+
+<a id="sec:audit"></a>
 
 # Audit of the former selection argument
 
@@ -370,7 +509,7 @@ D^2\Xi>0.
 ```
 Neither implication was established.
 
-First-order supersymmetry equations are not generally identical to the Euler–Lagrange equations of the ten-dimensional action. Under additional instanton and perturbative assumptions, solutions of the supersymmetry and Bianchi equations can imply the equations of motion, but that is not a variational equivalence . Second, scalar curvature and multiplier terms do not give an evidently bounded-below functional. Third, positivity of a principal elliptic block does not control all lower-order couplings or moduli. Finally, a spectral scalar cannot be asserted to lift every geometric and bundle modulus without its actual second variation.
+First-order supersymmetry equations are not generally identical to the Euler–Lagrange equations of the ten-dimensional action. Under additional instanton and perturbative assumptions, solutions of the supersymmetry and Bianchi equations can imply the equations of motion, but that is not a variational equivalence \[[2](#ref-DelaOssaSvanes2014),[1](#ref-AndreasGarciaFernandez2012)\]. Second, scalar curvature and multiplier terms do not give an evidently bounded-below functional. Third, positivity of a principal elliptic block does not control all lower-order couplings or moduli. Finally, a spectral scalar cannot be asserted to lift every geometric and bundle modulus without its actual second variation.
 
 Accordingly, this version does not use $`\Xi`$, does not claim global attraction, and does not identify an MTT fixed point with a unique minimizer. An action-derived repair flow remains a valuable future target, but it must be constructed before its Hessian or Lyapunov properties are quoted.
 
@@ -378,53 +517,208 @@ Accordingly, this version does not use $`\Xi`$, does not claim global attraction
 
 The gauge-invariant three-form should satisfy both the local Chern–Simons description and the global differential-cohomological patching law. Once $`H`$ is used for that gauge-invariant object, the supersymmetry torsion equation is $`H=\mathrm d^c\omega`$ in the chosen convention. Subtracting the Chern–Simons terms a second time from the torsion equation double counts them.
 
-The tangent connection $`\nabla`$ also cannot be changed silently between the torsion equation, Bianchi identity, anomaly flow, and equations-of-motion claim. Different choices may define different Hull–Strominger systems .
+The tangent connection $`\nabla`$ also cannot be changed silently between the torsion equation, Bianchi identity, anomaly flow, and equations-of-motion claim. Different choices may define different Hull–Strominger systems \[[5](#ref-GarciaFernandez2019)\].
+
+<a id="sec:evidence"></a>
 
 # Fu–Yau, Iwasawa, and the current MTT evidence
 
 ## What established mathematics supplies
 
-Fu and Yau constructed solutions on non-Kähler torus bundles over K3 under specific topological, bundle, and analytic hypotheses . Later work extended and reorganized these constructions, including solutions with torus symmetry and tangent HYM connections . The Anomaly flow is known to converge in a Fu–Yau ansatz for controlled initial data .
+Fu and Yau constructed solutions on non-Kähler torus bundles over K3 under specific topological, bundle, and analytic hypotheses \[[4](#ref-FuYau2008)\]. Later work extended and reorganized these constructions, including solutions with torus symmetry and tangent HYM connections \[[3](#ref-FinoGrantcharovVezzoni2021),[5](#ref-GarciaFernandez2019)\]. The Anomaly flow is known to converge in a Fu–Yau ansatz for controlled initial data \[[67](#ref-PhongPicardZhang2018)\].
 
 These results prove that the lower target is mathematically inhabited. They do not show that the selected MTT $`q=79`$ carrier is one of those solutions, nor that its upper flow descends to the Anomaly flow.
 
-## The q79 rows must not be merged
+<a id="sec:retained-q79"></a>
 
-The current MTT corpus contains several nontrivial but separate results:
+## The retained finite and rank-two results
 
-1.  exact finite arithmetic selecting the $`q=79`$ branch;
+Exact arithmetic selects the declared $`q=79`$ branch; smooth rank-three topological candidates have index $`\pm3`$; the literal rank-two Cech witness and finite HYM approximation have a later rank-two Wiener-algebra existence and local-uniqueness certificate \[[22](#ref-MTTResultsRepro)\]. The analytic certificate is not merely a finite approximation, but it does not change its bundle rank or carrier. Similarly, the rank-three topological candidate does not by itself acquire a holomorphic stable structure. These are retained results, not calculations to restart. The later hidden rank-nine analysis below changes the evidence table substantially without closing the physical visible row.
 
-2.  smooth rank-three topological candidates with index $`\pm3`$;
+<a id="sec:aux-spectral"></a>
 
-3.  an exact finite rank-two Cech witness;
+## Auxiliary spectral data and the first stable source
 
-4.  a certified finite rank-two HYM approximation; and
+Let $`S`$ be the declared K3 base with classes $`H^2=2,H\delta=0,\delta^2=-4`$, and let $`D_0`$ denote the zero section of its relative elliptic model. The auxiliary spectral-cutset calculation \[[11](#ref-FRSpectral)\] starts with $`\operatorname{ch}(\kappa^\sharp)=3-H-3u`$. Its transform has effective support class $`3H+3D_0`$, with smooth finite-flat degree-three members available by the stated generation and transversality argument. This is not the physical visible class $`9H+3D_0`$, and it is not a rank-nine hidden bundle. The coefficient of $`H`$ in a spectral class must not be read as the bundle rank. Existence of members also does not choose a particular member or its twisted line.
 
-5.  a rank-two Wiener-algebra existence and local-uniqueness certificate.
+The opposite-complex-structure calculation \[[43](#ref-FRG3E)\] fixes a genuine sign issue in the relative transform. With complex one-forms $`\eta=\theta-\mathrm it`$ and $`\zeta=s+\mathrm ia`$, the Poincare curvature
+``` math
+F_{\mathcal P}=\frac{\mathrm i}{2}
+(\bar\eta\wedge\zeta-\eta\wedge\bar\zeta)
+```
+has type $`(1,1)`$; the same-sign choice does not. The accompanying $`B`$-shifts are local gerbe curvings, not global ordinary line bundles. In the declared fiber convention the rank-degree sequence is
+``` math
+(3,0)\longmapsto(3,9)\longmapsto(9,-3)\longmapsto(9,0).
+```
+Generically the support splits into ranks and degrees $`(1,6)+(2,3)`$, but two exceptional fibers contain a degree-zero piece with shifted skyscraper transform. A generic-fiber calculation therefore does not yet prove local freeness everywhere.
 
-The packets and verifiers are curated in Ref. . The rank-two analytic theorem does not change its bundle rank, Chern classes, or carrier. The topological rank-three candidate is not yet a stable holomorphic visible bundle with an HYM connection.
+The Hartshorne–Serre source examined in \[[44](#ref-FRG3F)\] is an extension
+``` math
+0\longrightarrow\mathcal O^{\oplus2}\longrightarrow F
+\longrightarrow\mathcal I_\Gamma(H)\longrightarrow0.
+```
+Its two extension images occupy independent character lines. The locked divisor-degree restriction excludes positive degree one, while $`\operatorname{Hom}(F,\mathcal O)=0`$ excludes the relevant quotient. These inputs bound proper rank-one and rank-two slopes by zero, below $`\mu(F)=2/3`$, on the declared balanced ray. This proves stability of that source. Its dual $`\kappa=F^\vee`$ is a projective Hermitian–Einstein $`U(3)`$ object with $`c_1=-H`$, not the physical visible $`SU(3)`$ bundle.
 
-The physical completion therefore still needs, on one $`X_{79}`$:
+<a id="sec:recombination"></a>
+
+## What recombination and the qutrit line repair
+
+The two-fiber recombination \[[45](#ref-FRG3G)\] replaces a degree-zero summand $`P=L^{-1}N`$ and a degree-three summand $`N`$ by the non-split stable rank-two, degree-three extension represented by the evaluation syzygy $`Q^\vee\otimes N`$. It introduces no adjustable extension parameter once the projective class is fixed. The remaining determinant is a section of degree two, so its zeros cannot be removed by declaring it an invertible scalar. Global twisting and exceptional fibers still require a construction.
+
+The determinantal qutrit packet \[[47](#ref-FRG3H)\] supplies a concrete torsion line. For $`XZ=\omega ZX`$, with $`\omega^3=1\ne\omega`$, its pencil $`M_\omega=uI+vX+wZ`$ satisfies $`\det M_\omega=u^3+v^3+w^3`$. It has corank one on the smooth Fermat cubic. The cokernel resolution $`\mathcal O(-2)^3\to\mathcal O(-1)^3`$ identifies a nontrivial degree-zero order-three line $`P_\omega=\mathcal O(p_1-p_0)`$, where $`p_0=[-1:0:1]`$ and $`p_1=[-\omega:0:1]`$, and takes $`N=L\otimes P_\omega`$. The generator relations explain its finite projective multiplier. They do not identify that multiplier with the analytic gerbe class on a different space.
+
+The forward and reverse Ext computations \[[48](#ref-FRG3I),[49](#ref-FRG3J)\] illustrate why orientation of an extension matters. The forward extension space is one-dimensional and has a nonzero stable middle term. The reverse space has dimension nine, with three copies of each of the three characters. Nevertheless a reverse extension by a locally free rank-one quotient splits at the singular stalk into $`\mathcal I\oplus\mathcal O^2`$, which is not locally free along the codimension-two locus. A larger Ext space therefore does not imply an acceptable gauge bundle. This obstruction excludes the reversed presentation, not the successful forward extension.
+
+<a id="sec:yoneda"></a>
+
+## The derived repairs that do not remove the obstruction
+
+The derived Yoneda reduction \[[50](#ref-FRG3K)\] explains why ordinary scalar and finite-phase repairs of the locked extension fail. The required inverse coefficient line has negative degree and no global section; a Weyl determinant is instead a positive-degree section and retains rank-drop zeros. An odd off-diagonal derived differential using a forward class $`f`$ and reverse class $`\rho`$ must also kill its Yoneda products. The trace relation reduces the two composites to the one relevant obstruction map. Finite projective phases cannot bypass that equation.
+
+The monad rank calculation \[[51](#ref-FRG3L)\] takes a rank-four quotient of the nine-dimensional reverse space, leaving a five-dimensional normal space with character decomposition $`1+2\chi+2\chi^2`$. The clock-fixed calculation \[[52](#ref-FRG3M)\] then isolates a one-dimensional invariant column; the simultaneous-translation direction maps to zero and is not that candidate. The next calculation \[[53](#ref-FRG3N)\] evaluates the actual Serre pairing: the fixed-coordinate normal row is $`[1\ 1]`$, its boundary is $`(1,-1)`$, and the surviving quotient maps nontrivially to the forward obstruction class. All three translated columns remain obstructed. This closes the proposed locked bidirectional repair, not every derived or six-by-six presentation of the physical source.
+
+An independent Atiyah/qutrit tensor shortcut \[[54](#ref-FRG3O)\] fails at the Chern sign: after determinant normalization its inverse transform gives $`c_2=+9u`$, rather than the hidden target $`-9u`$. An ambient line does not fix the locked mixed-class sign. This is a topological exclusion of that shortcut, not a negative existence theorem for the hidden bundle.
+
+<a id="sec:hidden-object"></a>
+
+## From a perfect complex to a balanced rank-nine bundle
+
+The hidden perfect-complex construction \[[55](#ref-FRG3P)\] already realizes the required inverse Chern character $`9+9u`$, hence $`(r,c_1,c_2,c_3)=(9,0,-9u,0)`$, in a projective derived object involving a shifted induced term and a zero-section contribution. It preserves the categorical and finite multiplier data, but is not a locally free sheaf. The direct zero-section monad \[[56](#ref-FRG3Q)\] cannot repair this: the relevant fiber $`\operatorname{Hom}`$ from a degree-three line to $`\mathcal O`$ vanishes, forcing kernel rank at least three in the proposed map from rank nine. Its maximum rank is six. This excludes that buffer, while preserving the perfect-complex class.
+
+The global WIT-zero construction \[[57](#ref-FRG3R)\] repairs the two exceptional fibers by stable reduction and determinant-zero-sum clutching weights $`-1,0,1`$. “WIT zero” means that the relative transform is concentrated in degree zero on *every* fiber; with the verified constant rank and base-change conditions this gives a locally free projective rank-nine object on its declared target $`Y=P_{3\delta}\times S^1`$. The analytic gerbe $`\alpha`$, finite qutrit multiplier $`\sigma`$, and transported target twist $`\tau`$ have different jobs and cannot be identified merely because they have order three. Comparison with a visible bundle on another presentation of the carrier requires an explicit common-base map.
+
+Local freeness alone did not finish the construction. The target-slope audit \[[58](#ref-FRG3S)\] finds transformed blocks $`(6,+1)+(3,-1)`$ before the support-wide repair. Their total degree is zero, but the rank-six subobject has positive slope $`1/6`$, excluding that presentation in the declared adiabatic chamber. This is not an exclusion for all possible metrics. The subsequent support-wide balance \[[59](#ref-FRG3T)\] uses $`N\otimes\mathbb C^3_\sigma`$: three source factors of rank one and degree three transform to three $`(3,-1)`$ factors, then the declared $`B`$-shift corrects each to $`(3,0)`$. Boundary clutching and the Chern class are preserved. The resulting holomorphic $`P(3,9)`$ object has the determinant-one reduction specified by that source and is relatively polystable. Thus the earlier “hidden object missing” headers cannot be used as its current status.
+
+<a id="sec:hidden-hym"></a>
+
+## Existential hidden HYM is established
+
+The common-chamber analysis \[[42](#ref-FRG3D)\] writes a balanced ray schematically as
+``` math
+\omega_t=\sqrt t\,\pi^*\omega_H+
+t^{-1/2}\mathrm i\zeta\wedge\bar\zeta,\qquad
+\deg_t G=tA(G)+B(G).
+```
+A strictly negative fiber coefficient and a finite upper slope bound at $`t=1`$ then force negative degree for sufficiently large $`t`$. The comparison is conditional on the actual sheaves, their topology, and strictness. For example, a rank bound $`r-1`$, negative gap $`a>0`$, and upper slope bound $`M\ge0`$ give the sufficient threshold $`t>1+(r-1)M/a`$. A finite list of factors has a common threshold by taking the maximum; a visible factor not yet constructed cannot be inserted into that list.
+
+The direct stable-factor refinement \[[60](#ref-FRG3U)\] does not require a reduced irreducible spectral support. Each transformed hidden factor has coprime fiber rank and degree $`(3,-1)`$, and its corrected proper-subsheaf gap is $`2/3`$. The packet’s provisional numerical slope and chamber slots are explicit placeholders, not certified values. The later existential argument \[[61](#ref-FRG3V)\] uses a smooth twisted reference metric and the compact Chern–Weil projection bound, equivalently the relevant twisted Harder–Narasimhan upper bound, to obtain a *finite* common $`M`$. For every proper saturated subobject $`G`$ of a factor, of rank at most two,
+``` math
+\deg_tG\le2M-\frac23(t-1)<0\qquad(t>1+3M).
+```
+The qutrit orbit gives equal total factor degrees, all zero, so one such $`t`$ makes all three factors stable and their rank-nine sum polystable. The twisted Kobayashi–Hitchin correspondence on the admitted compact Gauduchon target then supplies a projective HYM connection \[[7](#ref-LiYau1987),[66](#ref-Perego2019)\].
+
+This is an existential HYM result, not an unperformed numerical test. The absence of a printed numerical $`M`$, chamber value, or connection matrix does not reopen existence. Equivariant metrics are obtained by transport around the holomorphic unitary qutrit orbit. What is still absent is the same-source visible object, an explicit chamber common to both sectors and the chosen tangent data, and the coupled Bianchi solution.
+
+<a id="sec:symmetry-bc"></a>
+
+## Two symmetry actions and the anomaly potential
+
+The hidden adjoint calculation \[[18](#ref-FRAdjoint)\] concerns an internal fiberwise action covering the identity on the base. Locally $`W_9=U_3\otimes Q_3`$; the projective scalar cancels in $`\operatorname{End}W_9`$. The honest $`E[3]`$ action decomposes the 81-dimensional endomorphism fiber into nine character sectors of rank nine. Removing the scalar leaves one neutral sector of rank eight and eight nontrivial sectors of rank nine: $`8+8\cdot9=80`$. Finite Fourier projectors and an invariant trace pairing are thereby defined. They do not compute the physical Hessian on these sectors.
+
+The relative translation result \[[62](#ref-FRG3W)\] is different: it moves the elliptic base point. Choices of a third root of a translation differ by three-torsion and line ambiguity, which disappears after projectivization; the theta-group law supplies coherence. The finite etale choice torsor glues over the simply connected K3 base. This yields a projective action, not a strict action on vector fibers. Uniqueness of the stable-factor HYM connection, with the invariant metric data, makes its quadratic Chern–Weil form invariant up to gauge. This does not provide explicit curvature coefficients.
+
+For the Bianchi cohomology row, the full Bott–Chern argument \[[63](#ref-FRG3X)\] is stronger than an invariant-form computation alone. On the free holomorphic principal elliptic action, let $`X_0,Y_0=JX_0`$ be the real generators and $`Z=(X_0-\mathrm iY_0)/2`$. For a nonzero Fourier character $`(m,n)`$, set
+``` math
+\lambda_{mn}=(\mathrm im+n)/2,\quad
+\mu_{mn}=(\mathrm im-n)/2,\quad
+\lambda_{mn}\mu_{mn}=-(m^2+n^2)/4.
+```
+Cartan homotopy expresses a Bott–Chern cocycle mode $`\xi_{mn}`$ as
+``` math
+\xi_{mn}=(\lambda_{mn}\mu_{mn})^{-1}
+\partial\bar\partial\,\iota_{\bar Z}\iota_Z\xi_{mn}.
+```
+The inverse quadratic multiplier preserves smooth Fourier summability. Averaging handles the zero mode using the separately established invariant injectivity. Therefore $`H^{2,2}_{BC}(Y,\mathbb R)\to H^4_{dR}(Y,\mathbb R)`$ is injective on this carrier, not just on its invariant subcomplex.
+
+Once an actual same-source visible–hidden–tangent connection tuple exists, its real, closed $`(2,2)`$ anomaly difference with vanishing de Rham class thus has a $`\mathrm d\mathrm d^c`$ potential. Visible gauge equivariance is no longer an independent premise for this conclusion, and a separate Aeppli obstruction is not left over at this linear cohomological stage. The potential need not be a positive Hermitian form or satisfy conformal balance, and it supplies no integral differential trivialization. Those nonlinear and integral requirements remain in the endpoint problem.
+
+<a id="sec:transverse-nogo"></a>
+
+## Why the physical endpoint must be nontransverse
+
+The transverse Fu–Yau exclusion \[[64](#ref-FRG3Y)\] concerns the stronger condition $`F\wedge\omega_B=0`$, where $`\omega_B`$ is the horizontal K3 form. Decompose a two-form into horizontal, mixed, and vertical parts. On a horizontal space of complex dimension two, wedging a horizontal one-form with $`\omega_B`$ is an isomorphism to horizontal three-forms; the mixed part is therefore zero. The vertical part is zero separately. The remaining curvature is horizontal, so $`F^3=0`$. For the physical visible $`SU(3)`$ bundle this forces $`c_3=0`$, contrary to its required $`c_3=\pm6`$.
+
+The excluded condition is not the full six-dimensional HYM equation $`F\wedge\omega^2=0`$. Established pullback Fu–Yau solutions remain valid lower-space examples, but cannot be substituted for this visible bundle. The nontransverse compiler of Section [6.1](#sec:endpoint-compiler) keeps the mixed and vertical unknowns and all equations; it is the appropriate conditional analytic contract.
+
+<a id="sec:shared-line"></a>
+
+## Shared-line and integral typing
+
+The shared-line theta calculation \[[39](#ref-FRG3AA)\] works with $`C_{64}\times E[3]`$, of order 576. Since $`\gcd(64,3)=1`$, the mixed tensor term vanishes; the projective class comes from the $`E[3]`$ factor. For $`W_{\mathrm{sh}}=L_{\mathrm{shared}}\otimes W_9`$, an ordinary line cannot cancel the nontrivial multiplier $`\sigma`$. An inverse-multiplier module has minimum rank three. The determinant identity is
+``` math
+\det W_{\mathrm{sh}}
+=L_{\mathrm{shared}}^9\otimes\det W_9.
+```
+Only on the selected order-two sheet, whose $`C_{64}`$ image is $`\{0,32\}`$, does $`L^9=L`$. It is false as an unrestricted identity of $`C_{64}`$ characters. The resulting flat Spin$`^{c}`$ determinant comparison does not identify nonflat HYM connections.
+
+There is also a substantive correction to earlier “order-three string class” shorthand. The declared ordinary carrier $`X=P_\delta\times S^1_{\mathrm{shared}}`$ has $`H^3(X,\mathbb Z)\cong\mathbb Z^{42}`$, with no order-three torsion. The theta class lives in $`H^3(BE[3],\mathbb Z)`$ and its pullback to the quotient stack $`[X/E[3]]`$, restricting trivially to the ordinary atlas. The ordinary anomaly cocycle has degree four; its differential trivializations form a degree-three torsor. These are distinct from the equivariant theta class. A vanishing ambient Brauer value likewise does not imply that the rank-248 primitive $`\eta_9`$ normal function vanishes. Consumers must use the corrected equivariant statement, not ask for an impossible ordinary nonzero order-three class on $`X`$.
+
+<a id="sec:source-frontier"></a>
+
+## The evolving visible-source and transport boundary
+
+The long source-frontier chronology \[[32](#ref-FRFrontier)\] records mathematical progress, not merely historical status. Its later graph/Prym incidence arguments establish available smooth finite-flat supports and formal local lifts, while excluding a particular fixed-graph shortcut. They do not yet choose the twisted line with the required primitive Deligne zero. The locked tangent rank $`122=33+89`$ in an ambient rank-248 problem leaves 126 normal directions; finite rank checks and a nonzero integral minor can control a local response without evaluating the nonlinear primitive normal function. A zero modular obstruction is not an exact zero. A nonzero modular obstruction excludes an exact zero only for the same integral model, field presentation, and declared specialization.
+
+The integral period analysis in the same source distinguishes the image $`4\mathbb Z`$ detected by algebraic product tubes from the full integral pairing image $`\mathbb Z`$. Thus a root readout $`4\beta`$ vanishing can leave four-torsion in $`\beta`$. A direct Deligne zero requires integral period membership, while a nonzero certificate requires a dual character integral on the full relevant lattice, or a proved saturated detector. Rational span alone is insufficient. In the primitive setting, the integral ambient quotient is the dual lattice $`V^\vee`$, not automatically the vanishing lattice $`V`$; their finite discriminant quotient must be retained. The Cohesive discussion \[[14](#ref-NeroCohesive2026)\] also retains the corrected CBF restriction at T69, the local nature of T70–T73 as distinct from global Picard/BHT identification, and the fact that an ordinary intermediate-Jacobian Neron model requires its own weight and admissibility hypotheses. None of these distinctions is removed by a shared theta multiplier.
+
+The chronology’s exact smooth starting family and discriminant-avoiding path construction provide geometric inputs for transport, not an enclosed global period integral. Its static Schur reduction from 1510 coordinates to 249 failed the later tangency/Riccati tests as a differential subsystem. A moving basis would require the connection term $`B^{-1}\mathrm dB/\mathrm da`$. Matrix-free sector evaluation, finite jet ranks, and a small static solve therefore cannot stand in for the full transported source. Later finite and certified local $`q=79`$ results remain established at their current authority; the still-open target is a useful global path with the joint primitive readout, not a repetition of those local calculations.
+
+The chronology also retains a source-exact Cox presentation and finite component calculations while rejecting specific scalar/apolar and derivative-closure intertwiners. The 48-place fiber results are exact over their stated finite fields, not an equality of characteristic-zero primitive source planes. The later rank-18 source injection is a same-field statement, not an identification of every target plane. In particular, substituting $`\mathbb F_{11}`$ coordinates into an $`\mathbb F_{21817}`$ calculation is not transport.
+
+The separate arithmetic correction \[[46](#ref-FRG3GM)\] retracts one concrete fresh-prime rank jump. Calls labelled 79903, 81359, and 82963 inherited the old modulus 33863. The reported rank/nullity $`4752/1270`$ and the associated component-23/24 changes are therefore not new-prime results. Corrected replay at the archived $`p=21817`$ chart and an actual $`p=79903`$ chart restores the scoped finite rank/nullity $`4748/1274`$. The valid characteristic-zero conclusion remains the bound
+``` math
+4748\le\operatorname{rank}_{\mathbb Q(\gamma)}Q\le5102,
+```
+not equality with the finite rank. Unaffected fixed-minor and separate finite-component results are retained at their own tiers. This is a specific arithmetic/provenance correction, not a blanket downgrade of the evolving source.
+
+<a id="sec:consumer-global"></a>
+
+## Global support and the selected transport certificates
+
+The Cohesive owner’s Fitting-descent statement supplies ordinary ideal sheaves for the cohomology of the twisted benchmark: invertible transition lines change local minor generators by units, not their ideals \[[14](#ref-NeroCohesive2026),[17](#ref-ConsumerFitting)\]. Its leading divisor is $`3H+3D_0`$, agreeing with the auxiliary spectral class in [8.3](#sec:aux-spectral), not the physical $`9H+3D_0`$. Generic corank three does not produce a spectral line, trivialize the gerbe, or execute the literal connection overlaps. This is useful global support information without any of those promotions.
+
+The same owner’s large-gauge result concerns a different question \[[25](#ref-ConsumerBK3)\]. The selected real K3 period plane has zero large-gauge kernel; its two-real-parameter image is nevertheless dense and nonclosed in a twenty-dimensional torus. Rank zero counts identifications, not remaining parameters. Numerical periods and physical normalization are not recovered from this injectivity theorem, and it does not trivialize the unrelated visible obstruction $`\beta_C`$.
+
+The flux paper owns the selected eta9 transport calculations \[[9](#ref-NeroFlux2026)\]. The completed original-Jacobian campaign supplies all 30 groups and 225 support columns as exact polynomial reduction identities \[[15](#ref-ConsumerGateOne)\]. This closes that finite algebraic task, not the global source path. The three-cycle calculation has Gram matrix $`-2I_3`$: it proves independence, but its affine coefficients are rational coboundaries on the tested subsystem \[[28](#ref-ConsumerThreeCycle)\]. Thus this complete subsystem is non-detecting; it neither proves integral coboundary membership nor trivializes the global affine class.
+
+There is also a certified positive-width local Gauss–Manin source chart, with its correlated lift, rather than merely a single-fiber calculation \[[13](#ref-ConsumerTube)\]. The consolidation is a hash-bound record of those certificates, not an independent interval replay. A useful global path, integral marking and physical readout remain separate. Conversely, the same-source B89 detector pairs nontrivially with the affine return modulo two and therefore rejects that candidate from the $`\beta_C=0`$ locus \[[26](#ref-ConsumerB89)\]. It does not show that the integral class has exact order two, or supply a replacement visible bundle. These distinctions explain how completed local work and hidden HYM existence coexist with the open common endpoint.
+
+<a id="sec:current-gates"></a>
+
+## Current completion gates
+
+The current authority distinguishes these rows. “Established” below means established at the named source tier, not independent verification by this editorial review.
 
 <div class="center">
 
-| Gate | Required object | Current state |
+| Gate | Object or implication | Current scope |
 |:---|:---|:---|
-| G1 | complex $`X_{79}`$, $`\Omega`$, and positive balanced Fu–Yau metric | candidate/partial |
-| V1 | rank-three visible holomorphic stable bundle with index $`\pm3`$ | open |
-| V2 | compatible hidden holomorphic data | open |
-| H1 | visible, hidden, and tangent instantons in one chamber | rank-two evidence |
-| A1 | differential Green–Schwarz identity with fixed traces | open |
-| Q1 | global gerbe and flux quantization | open |
-| B1 | connection-preserving MTT bridge and flow intertwiner | open |
+| V1 | selected visible rank-three twisted Prym bundle, index $`\pm3`$ | open |
+| V2 | locally free holomorphic hidden $`P(3,9)`$ object | established |
+| H2 | projective hidden HYM connection on its declared target | existentially established |
+| H1 | visible, hidden, and tangent instantons on one common metric/base | open |
+| A0 | exact real anomaly source implies a $`\mathrm d\mathrm d^c`$ potential | conditional on the source pair |
+| A1 | positive conformally balanced nontransverse endpoint | open; compiler conditional |
+| Q1 | ordinary differential Green–Schwarz trivialization and equivariant lift | open |
+| B1 | same-source connection/domain-preserving continuum intertwiner | open |
 
 </div>
 
-This is the physical content of the open blockers $`B.\mathrm{HS}.01`$ and $`B.\mathrm{GEO}.01`$.
+The open $`B.\mathrm{HS}.01`$ and $`B.\mathrm{GEO}.01`$ obligations are therefore narrower than “no hidden bundle or HYM result.” They cannot be closed by assembling established rows from different source orbits.
 
 ## The corrected role of Iwasawa and Lens–Nil
 
-The Iwasawa manifold remains a useful source of explicit balanced $`SU(3)`$-structure calculations. The companion bundle audit shows, however, that the earlier printed rank-three bundle, Bianchi match, and selected-background conclusion do not survive. Other valid Iwasawa Hull–Strominger solutions exist in the literature; their existence does not repair that specific MTT construction.
+The Iwasawa manifold remains a useful source of explicit balanced $`SU(3)`$-structure calculations. The companion bundle audit \[[10](#ref-NeroFluxAudit2026)\] shows, however, that the earlier printed rank-three bundle, Bianchi match, and selected-background conclusion do not survive. Other valid Iwasawa Hull–Strominger solutions exist in the literature; their existence does not repair that specific MTT construction.
+
+The full Qa/SU3 support chronology \[[24](#ref-FRQa)\] must be read past its early failed connection and stale status headings. Its corrected Maurer–Cartan representative, and the later finding that the displayed family is a single complex gauge orbit with a noncentral commutant, do not supply a stable physical color source. A branch-specific closed-curvature representative does not replace the generic $`\mathrm dH\ne0`$ anomaly bookkeeping of Lemma [3.2](#lem:twisted). Those are exclusions of particular proposals, not of every Iwasawa calculation.
+
+The later finite internal computation is retained. For instance its declared quotient gives the charge Gram matrix
+``` math
+H_{\mathrm{sel}}=
+\begin{pmatrix}26&-3&0\\-3&10&0\\0&0&8\end{pmatrix},
+\qquad \det H_{\mathrm{sel}}=2008.
+```
+This explains its internal logarithmic finite part after the stated zero-mode quotient. It is not the smooth physical color Laplacian. Similarly, a phase-preserving injection into a 27-dimensional label space need not intertwine a positive operator or its determinant. The later oriented functional driver with normalized value $`N_{\alpha_1}(h_{\mathrm{ext}})=1`$ is a source-scoped tangent result, not a physical action amplitude. Its stationary and derivative conclusions require the declared driver and gauge transport. The chronology’s old “SM open” summaries do not override the current established finite SM, shared-primitive, Yukawa, and electroweak results. None of those finite results is reopened here.
 
 Likewise,
 ``` math
@@ -432,7 +726,9 @@ Likewise,
 \not\equiv L(3,1)\times\mathrm{Nil}_3
 \not\equiv X_{79}.
 ```
-Lens and Nil may remain auxiliary finite, spectral, or transport labels. They are not a substitute for the integrable complex geometry and global bundle data in Definition <a href="#def:lower" data-reference-type="ref" data-reference="def:lower">1</a>.
+Lens and Nil may remain auxiliary finite, spectral, or transport labels. They are not a substitute for the integrable complex geometry and global bundle data in Definition [2.1](#def:lower).
+
+<a id="sec:physical"></a>
 
 # Worldsheet and physical interpretation
 
@@ -450,31 +746,57 @@ The fixed-point bridge therefore has a precise interpretation:
 
 - it does not derive low-energy masses or couplings without additional normalized overlap and transport maps.
 
+<a id="sec:frontier"></a>
+
 # A concrete completion program
 
 The revised bridge suggests an efficient order of work.
 
-1.  Construct the physical rank-three visible bundle on the selected Fu–Yau-oriented $`q=79`$ carrier and prove stability.
+1.  Supply the selected visible twisted Prym datum, including its primitive Deligne-zero condition, and construct the physical rank-three bundle with the required topology and stability.
 
-2.  Construct compatible hidden and tangent instantons in the same metric chamber.
+2.  Retain the established hidden projective rank-nine object and existential HYM connection. Place the visible, hidden, and tangent instantons on one declared common base and prove a common chamber.
 
-3.  Solve the differential Green–Schwarz equation with fixed traces and provide global gerbe data.
+3.  Use the full Bott–Chern reduction for the actual anomaly source and establish a positive conformally balanced nontransverse solution, for example by supplying the full compiler’s analytic bounds.
 
-4.  Define the MTT configuration space and its selected continuum vector field on that same tuple.
+4.  Construct the ordinary integral differential Green–Schwarz trivialization and the correctly typed equivariant theta comparison; do not replace either with a flat determinant identity.
 
-5.  Define every row of $`\mathfrak B`$, including connection and domain maps.
+5.  Define the MTT configuration space and its selected continuum vector field on that same tuple.
 
-6.  Prove <a href="#eq:generator-intertwine" data-reference-type="ref+label" data-reference="eq:generator-intertwine">[eq:generator-intertwine]</a>, or emit a certified defect bound.
+6.  Define every row of $`\mathfrak B`$, including connection and domain maps.
 
-7.  Use <a href="#thm:descent" data-reference-type="ref+label" data-reference="thm:descent">7</a> or <a href="#prop:defect" data-reference-type="ref+label" data-reference="prop:defect">9</a>; if selection is claimed, independently prove the contraction-basin hypotheses of <a href="#prop:contraction" data-reference-type="ref+label" data-reference="prop:contraction">10</a>.
+7.  Prove [(7)](#eq:generator-intertwine), or emit a certified defect bound.
 
-This program is stricter than the previous selection-potential route, but it also uses more of the mathematics that already exists. In particular, the Anomaly flow supplies the correct lower fixed-point language instead of inventing a second unverified flow.
+8.  Use [5.1](#thm:descent) or [5.3](#prop:defect); if selection is claimed, independently prove the contraction-basin hypotheses of [6.1](#prop:contraction).
+
+The Anomaly flow supplies an established lower fixed-point language under its analytic hypotheses. The full residual compiler gives another conditional local route once all same-source data and bounds are supplied. Neither route requires reopening established finite SM, operational quantum mechanics, hidden HYM, or local $`q=79`$ conclusions. Measurement in any eventual physical model remains ordinary physics; this geometric completion contract does not introduce a separate actualization law.
 
 # Conclusion
 
 The viable relationship between MTT and the Hull–Strominger system is a conditional fixed-point correspondence. Its central object is not an assumed selection potential but a typed, connection-preserving flow intertwiner. If that intertwiner and one upper fixed point are supplied, fixed-point descent is exact. If only a defect estimate is supplied, the result is an approximate lower solution until an a posteriori theorem closes the residual.
 
-Fu–Yau geometry and the Anomaly flow make this route mathematically credible. The current $`q=79`$ finite, topological, and rank-two results make it nonempty as an MTT research program. They do not yet provide the common rank-three visible–hidden background or the intertwiner. Those two objects, not another reformulation of the old potential, are the present frontier.
+The source now includes a holomorphic hidden $`P(3,9)`$ object, an existential projective HYM connection, and a full Bott–Chern anomaly-potential reduction on the declared $`q=79`$ target. These coexist with the retained finite, topological, and rank-two results. The physical visible rank-three bundle and its integral normal-function condition, a common positive nontransverse endpoint, and the connection-preserving intertwiner remain distinct obligations. Preserving those distinctions uses the successful construction without reviving its excluded predecessors or overstating physical selection.
+
+<a id="sec:reproducibility"></a>
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The retained arithmetic, literal rank-two Cech, and rank-two Wiener results remain at their stated tiers. The new contextual citations bind all 37 assigned frozen sources, including the two evolving chronologies, to the curated manifest commit below. Their explained imports in Sections [4.2](#sec:source-presentations)–[8.11](#sec:source-frontier) do not duplicate their proof bodies or promote a physical endpoint.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`
+> **Manifest:**
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+The upstream hash lock \[[33](#ref-FRLock)\] is retained as historical provenance: it identifies the source inputs available to that snapshot, not an extra theorem or current authority. Its entire map was reviewed, not dismissed from an early status heading. Current A/B authority and later scoped refinements govern present conclusions. By contrast the Qa/SU3 and unified frontier chronologies contain substantive later results and exclusions; their contextual imports are not classified wholesale as historical.
+
+The local research-integration record and the source-bound editorial review fragment give exact artifact paths, SHA-256 hashes, and manuscript anchors for each assignment. Full source reading and small checks of the displayed matrix, slope, and compiler examples are editorial validation, not independent verification of a boolean packet status. No scientific source calculation was rerun in this revision.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 #### Rows used directly in this paper.
 
@@ -496,21 +818,388 @@ Fu–Yau geometry and the Anomaly flow make this route mathematically credible. 
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
+# References
 
-The q79 arithmetic theorem and audit, literal finite rank-two Cech witness, and rank-two Wiener-contraction certificate provide direct evidence only at their declared finite, topological, or rank-two analytic tiers. They do not construct the common physical rank-three visible-hidden Hull-Strominger background, differential Green-Schwarz representative, flux gerbe, worldsheet endpoint, or the typed MTT-to-Anomaly-flow intertwiner required by the conditional fixed-point theorem.
+<a id="ref-AndreasGarciaFernandez2012"></a>
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+\[1\] Björn Andreas and Mario Garcia-Fernandez. Solutions of the strominger system via stable bundles on calabi–yau threefolds. *Communications in Mathematical Physics*, 315:153–168, 2012.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+<a id="ref-DelaOssaSvanes2014"></a>
 
-## Rows used directly in this paper
+\[2\] Xenia de la Ossa and Eirik Eik Svanes. Connections, field redefinitions and heterotic supergravity. *Journal of High Energy Physics*, 2014(12):008, 2014.
 
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A07/literal_cech_witness` (**DERIVED_EXACT**): Literal 81-entry, 729-cocycle finite Cech witness.
-- `A11/q79_exact_audit` (**DERIVED_EXACT**): Executable q=79 exact-branch audit.
-- `A11/q79_exact_theorem` (**DERIVED_EXACT**): CRT q=79 theorem on the selected exact branch.
+<a id="ref-FinoGrantcharovVezzoni2021"></a>
 
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+\[3\] Anna Fino, Gueo Grantcharov, and Luigi Vezzoni. Solutions to the hull–strominger system with torus symmetry. *Communications in Mathematical Physics*, 388:947–967, 2021.
+
+<a id="ref-FuYau2008"></a>
+
+\[4\] Ji-Xiang Fu and Shing-Tung Yau. The theory of superstring with flux on non-kähler manifolds and the complex monge–ampère equation. *Journal of Differential Geometry*, 78(3):369–428, 2008.
+
+<a id="ref-GarciaFernandez2019"></a>
+
+\[5\] Mario Garcia-Fernandez. T-dual solutions of the hull–strominger system on non-kähler threefolds. *Journal für die reine und angewandte Mathematik*, 2021(778):1–24, 2021.
+
+<a id="ref-Hull1986"></a>
+
+\[6\] C. M. Hull. Compactifications of the heterotic superstring. *Physics Letters B*, 178:357–364, 1986.
+
+<a id="ref-LiYau1987"></a>
+
+\[7\] Jun Li and Shing-Tung Yau. Hermitian–yang–mills connections on non-kähler manifolds. In *Mathematical Aspects of String Theory*, pages 560–573. World Scientific, 1987.
+
+<a id="ref-ConsumerAllArity"></a>
+
+\[8\] Peter Nero. All-arity source-map naturality.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-NeroFlux2026"></a>
+
+\[9\] Peter Nero. Auditing Heterotic Flux Compactifications on Iwasawa and Lens–Nil Geometries: Bundle Obstructions and a q=79 Fu–Yau Completion Contract, 2026. Current corpus; selected eta9 transport owner.
+
+<a id="ref-NeroFluxAudit2026"></a>
+
+\[10\] Peter Nero. Auditing heterotic flux compactifications on iwasawa and lens–nil geometries: Bundle obstructions and a $`q=79`$ fu–yau completion contract, 2026.
+
+<a id="ref-FRSpectral"></a>
+
+\[11\] Peter Nero. Auxiliary hidden spectral class and effectivity.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_hidden_spectral_cutset/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-ConsumerCech"></a>
+
+\[12\] Peter Nero. Cech projector and connection compiler.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cech_projector_compiler/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerTube"></a>
+
+\[13\] Peter Nero. Certified local source tube: hash-bound consolidation.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_local_source_tube_consolidation/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-NeroCohesive2026"></a>
+
+\[14\] Peter Nero. Cohesive closure repair and its hodge, kernel, and projection shadows, 2026. Current corpus manuscript, Version 14 structural identities; source selection and physical-action boundaries retained.
+
+<a id="ref-ConsumerGateOne"></a>
+
+\[15\] Peter Nero. Completed original-Jacobian Gate-1 campaign.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerMThree"></a>
+
+\[16\] Peter Nero. Finite response retract and transferred cubic operation.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerFitting"></a>
+
+\[17\] Peter Nero. Global Fitting-sheaf descent.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_global_fitting_descent/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-FRAdjoint"></a>
+
+\[18\] Peter Nero. Hidden qutrit adjoint decomposition.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_hidden_qutrit_adjoint/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-ConsumerStrain"></a>
+
+\[19\] Peter Nero. Intrinsic nonlinear spectral strain and shorted Hessian.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_spectral_strain_hessian/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerMC"></a>
+
+\[20\] Peter Nero. Maurer–Cartan repair and conditional transfer.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_maurer_cartan_repair/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-NeroQM2026"></a>
+
+\[21\] Peter Nero. Modal Triplet Theory and Nonrelativistic Quantum Mechanics: A Coherent-Sector Reconstruction and the Born-Source Boundary, 2026. Current corpus; geometric-source interface and spectral-strain owner.
+
+<a id="ref-MTTResultsRepro"></a>
+
+\[22\] Peter Nero. Mtt results reproduction.
+
+[Curated results, manifest commit f141a20e](https://github.com/PeterNero/mtt-results-repro/tree/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7), 2026. Frozen evidence; individual artifacts are cited separately.
+
+<a id="ref-ConsumerNaturality"></a>
+
+\[23\] Peter Nero. Projective-module HYM naturality.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_projective_hym_naturality/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-FRQa"></a>
+
+\[24\] Peter Nero. Qa/SU3 support chronology.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/qa_su3_support_program/artifact.md), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-ConsumerBK3"></a>
+
+\[25\] Peter Nero. Rank-zero large-gauge kernel.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerB89"></a>
+
+\[26\] Peter Nero. Same-source B89 candidate rejection.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_eta9_b89_same_source_rejection/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerSupportStrain"></a>
+
+\[27\] Peter Nero. Support-stratified spectral strain and boundary cost.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_support_stratified_strain/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerThreeCycle"></a>
+
+\[28\] Peter Nero. Three-cycle independence and rational nondetection.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerEndpoint"></a>
+
+\[29\] Peter Nero. Three-source endpoint factorization.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_seven_row_endpoint_factorization_packet/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerMFour"></a>
+
+\[30\] Peter Nero. Transferred quartic operation and arity-four identity.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-ConsumerCohesive"></a>
+
+\[31\] Peter Nero. Twisted cohesive superconnection and stratified Hodge package.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_cohesive_superconnection/artifact.json), 2026. Curated manifest f141a20e; original owner and source scope retained.
+
+<a id="ref-FRFrontier"></a>
+
+\[32\] Peter Nero. Unified-source frontier through the corrected arithmetic boundary.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_frontier/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRLock"></a>
+
+\[33\] Peter Nero. Unified-source upstream hash lock.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_upstream_lock/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG1"></a>
+
+\[34\] Peter Nero. UST.G1: Two-presentation source adjudication.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_candidate_adjudication/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG1E"></a>
+
+\[35\] Peter Nero. UST.G1E: Bundle-to-cohesive embedding and reverse boundary.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_bundle_cohesive_embedding/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG2"></a>
+
+\[36\] Peter Nero. UST.G2: Full-residual Hodge decomposition.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_full_residual_hodge/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG2P"></a>
+
+\[37\] Peter Nero. UST.G2P/G5A: Physical residual and corrected transfer criterion.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_physical_residual_transfer/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3A"></a>
+
+\[38\] Peter Nero. UST.G3A: Source-orbit anti-splicing audit.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_anti_splicing_audit/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3AA"></a>
+
+\[39\] Peter Nero. UST.G3AA: Shared-line theta and integral typing.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_shared_line_theta_typing/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3B"></a>
+
+\[40\] Peter Nero. UST.G3B: Common positive scale orbit.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_scale_orbit/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3C"></a>
+
+\[41\] Peter Nero. UST.G3C: Reference metric commutant.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_metric_commutant/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3D"></a>
+
+\[42\] Peter Nero. UST.G3D: Common Gauduchon chamber criterion.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_common_hym_chamber/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3E"></a>
+
+\[43\] Peter Nero. UST.G3E: Opposite complex structure and relative transform.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_opposite_complex_bfield_wit/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3F"></a>
+
+\[44\] Peter Nero. UST.G3F: Hartshorne–Serre source stability.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hs_global_stability/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3G"></a>
+
+\[45\] Peter Nero. UST.G3G: Two-fiber stable recombination.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_two_fiber_recombination/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3GM"></a>
+
+\[46\] Peter Nero. UST.G3GM: Fresh-prime arithmetic correction.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_g3gm_arithmetic_correction/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3H"></a>
+
+\[47\] Peter Nero. UST.G3H: Qutrit determinantal torsion line.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_qutrit_determinantal_torsion/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3I"></a>
+
+\[48\] Peter Nero. UST.G3I: Forward and reverse extension spaces.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_bidirectional_ext/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3J"></a>
+
+\[49\] Peter Nero. UST.G3J: Reverse extension local-freeness obstruction.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_reverse_ext_nogo/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3K"></a>
+
+\[50\] Peter Nero. UST.G3K: Derived Yoneda obstruction reduction.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_derived_yoneda_reduction/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3L"></a>
+
+\[51\] Peter Nero. UST.G3L: Monad Yoneda rank-four quotient.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_monad_yoneda_rank4/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3M"></a>
+
+\[52\] Peter Nero. UST.G3M: Clock-fixed Yoneda column.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_clock_fixed_yoneda_column/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3N"></a>
+
+\[53\] Peter Nero. UST.G3N: Locked Yoneda column exclusion.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_yoneda_column_nogo/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3O"></a>
+
+\[54\] Peter Nero. UST.G3O: Atiyah/qutrit Chern-sign exclusion.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_atiyah_qutrit_chern_nogo/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3P"></a>
+
+\[55\] Peter Nero. UST.G3P: Hidden projective perfect complex.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hidden_perfect_complex/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3Q"></a>
+
+\[56\] Peter Nero. UST.G3Q: Zero-section monad rank obstruction.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_zero_section_monad_nogo/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3R"></a>
+
+\[57\] Peter Nero. UST.G3R: Global WIT-zero locally free rank-nine object.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_global_wit0_rank9/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3S"></a>
+
+\[58\] Peter Nero. UST.G3S: Unbalanced target-slope exclusion.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_target_slope_nogo/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3T"></a>
+
+\[59\] Peter Nero. UST.G3T: Balanced holomorphic P(3,9) construction.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_balanced_holomorphic_p39/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3U"></a>
+
+\[60\] Peter Nero. UST.G3U: Direct hidden stable-factor criterion.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hidden_direct_stability/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3V"></a>
+
+\[61\] Peter Nero. UST.G3V: Existential projective hidden HYM connection.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_hidden_projective_hym/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3W"></a>
+
+\[62\] Peter Nero. UST.G3W: Projective translations and Chern–Weil invariance.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_projective_translation_chern_weil/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3X"></a>
+
+\[63\] Peter Nero. UST.G3X: Full Bott–Chern injectivity.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_bott_chern_injectivity/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3Y"></a>
+
+\[64\] Peter Nero. UST.G3Y: Transverse Fu–Yau visible-Chern exclusion.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_transverse_fuyau_nogo/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-FRG3Z"></a>
+
+\[65\] Peter Nero. UST.G3Z: Nontransverse endpoint compiler.
+
+[Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/unified_source_nontransverse_endpoint_compiler/artifact.json), 2026. Curated manifest f141a20e; source scope retained.
+
+<a id="ref-Perego2019"></a>
+
+\[66\] Arvid Perego. Kobayashi–hitchin correspondence for twisted vector bundles. [arXiv:1910.01867](https://arxiv.org/abs/1910.01867), 2019.
+
+<a id="ref-PhongPicardZhang2018"></a>
+
+\[67\] Duong H. Phong, Sébastien Picard, and Xiangwen Zhang. The anomaly flow and the fu–yau equation. *Annals of PDE*, 4(2):13, 2018.
+
+<a id="ref-PhongPicardZhang2017"></a>
+
+\[68\] Duong H. Phong, Sébastien Picard, and Xiangwen Zhang. Geometric flows and strominger systems. *Mathematische Zeitschrift*, 288:101–113, 2018.
+
+<a id="ref-Strominger1986"></a>
+
+\[69\] Andrew Strominger. Superstrings with torsion. *Nuclear Physics B*, 274:253–284, 1986.

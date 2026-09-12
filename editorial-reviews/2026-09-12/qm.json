@@ -1,0 +1,2849 @@
+{
+  "schema": "mtt.editorial-review-fragment.v1",
+  "reviewed_at": "2026-09-12",
+  "reviewer": "Codex QM contextual editorial subagent",
+  "scope": {
+    "repository_root": "C:/Users/nero_/Downloads/mtt-papers",
+    "exclusive_paper_ids": [
+      "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "locality-coherent-alternatives-and-records-in-mtt",
+      "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+      "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2"
+    ],
+    "fragment_paths": [
+      "editorial-reviews/2026-09-12/qm.json",
+      "editorial-reviews/2026-09-12/qm.md"
+    ],
+    "no_writes_outside_assigned_scope": true,
+    "parent_owns": "Kernel, global catalogs, Cohesive, public results and final integration; no commits, pushes, releases, scientific-worker edits, automation or heavy reruns."
+  },
+  "counts": {
+    "unreviewed_owner_assignments_at_read": 19,
+    "owner_reviews": 19,
+    "owner_integrated": 19,
+    "owner_historical_context": 0,
+    "required_consumer_paper_result_pairs": 10,
+    "additional_genuine_historical_omission_reviews": 1,
+    "consumer_review_entries": 11,
+    "papers_revised": 6,
+    "pdf_pages_inspected": 94,
+    "frozen_source_lines_read": 11738,
+    "frozen_source_bytes_read": 455865,
+    "local_example_tests_passed": 48,
+    "local_publication_tests_passed": 6
+  },
+  "reviews": [
+    {
+      "id": "QM-OWNER-QM-CURRENT-STATUS-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "qm_current_status"
+      ],
+      "anchors": [
+        "sec:canonical-model",
+        "sec:no-count-correction",
+        "sec:local-qme",
+        "sec:status-refinements",
+        "sec:free-cstar"
+      ],
+      "assessment": "Read all 973 lines, including later refinements rather than treating the early status header as the source's final word. The manuscript explains the selected Cauchy model and binary law, equicausal local QME, bounded-chart quartet/formal-positivity assumptions, parent-state restriction versus arbitrary marginal gluing, compact Hilbert-BV Hodge and finite-shell regulators, Kato common-boundary/gap transport, collar and auxiliary sign-flip limits, the first-order Yang-Mills complex, and direct Lorentzian smoothing with modified Ward identities and a formal causal-renormalization bridge. Older route counts are historical, not current completion counts. Canonical operational and free/local results are retained; a selected interacting fixed-coupling continuum and universal apparatus/actualization law are not inferred. The no-count 'propagator' wording at lines 577-579 is corrected as an effect/amplitude distinction, with separate erratum guidance, not a downgrade of the output theorem.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "qm_current_status": "27e71d1a3e99233b8ad9789ddeeb6923dd92d0a62137d1034743c1d2be03ad3c"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-CANONICAL-QUANTUM-MODEL-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_canonical_quantum_model"
+      ],
+      "anchors": [
+        "sec:canonical-model",
+        "sec:q79",
+        "sec:field-interface"
+      ],
+      "assessment": "Explained as an established operational model on the declared geometric/causal background: the complex six-dimensional finite fiber has P/Q ranks two/four, while the Cauchy Hilbert space is generally infinite dimensional. The finite symbol fixes the bounded internal reduced semigroup, minimal Fock dilation, and comparison of instruments. The one-anchor rate log(448) and physical clock calibration are separated. Normal-state/effect/instrument data are explicit; equality of unread channels does not identify the apparatus. The general reconstruction remains conditional without reopening this canonical model.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_canonical_quantum_model": "3a9b2caa8e7db273f05c8310b430521ca13ca9c4ea352af01a03cfd31a3263c0"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-FREE-DIRAC-CAR-NET-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_free_dirac_car_net"
+      ],
+      "anchors": [
+        "sec:free-dirac"
+      ],
+      "assessment": "Explained the selected framed globally hyperbolic spin-preserving category, massless rank-24 Dirac carrier, P/Q ranks 8/16 and chiral ranks 4/8, causal CAR construction, graded locality/even observable locality, time-slice property and Hadamard state existence. Omitted mass and gauge zero-order terms define this free tier and do not predict that physical masses vanish. No preferred vacuum or identification of inequivalent global spin structures is claimed. The packet's assertion that quasifree states form a convex set is false in general; a two-mode occupation-mixture example explains the correction to a quasifree Hadamard class or ordinary Hadamard convex hull. Net, locality and positivity statements remain intact; shared erratum required for that wording only.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_free_dirac_car_net": "a08510eb3ac77607094bf9e5469523b6c0e4841680ff2e729f592fbbeb66e36d"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-LOCAL-QME-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_local_qme"
+      ],
+      "anchors": [
+        "sec:local-qme",
+        "sec:status-refinements"
+      ],
+      "assessment": "Imported the local all-orders formal perturbative QME at the accepted finite SM content and profile-dependent coefficients. The text states on-shell globally hyperbolic chart, compact-support interaction, equicausal functional domain, causal time-ordering, local BRST and Adler-Bardeen hypotheses; the five perturbative anomaly coefficients and faithful Z6 bordism obstruction vanish in the stated model. Nilpotent quantum BV differential, degree-zero physical algebra and gauge-fixing independence are kept at formal/local scope. Later source-status refinements explain formal state positivity under the H1/quartet assumptions and restriction from a common parent. This neither repeats finite Yukawa/EW derivations nor supplies arbitrary overlapping state gluing or a fixed-coupling continuum theory.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_local_qme": "2eda00330756193f6a19361c4154f378621f445ed5ad399d0d953cc042617f35"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-FREE-CSTAR-NONPROMOTION-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_free_cstar_nonpromotion"
+      ],
+      "anchors": [
+        "sec:free-cstar"
+      ],
+      "assessment": "Explained the physical gauge Weyl, four-real-component Higgs Weyl and rank-48 chiral CAR minimal tensor product, with compact-gauge/even restriction, free positive states, GNS and local von Neumann objects. Higgs/fermion quasifree local quasi-equivalence and the gauge constraint-preserving implementable Hilbert-Schmidt orbit are distinguished. Later finite interacting regulators and norm-Duhamel first-tangent comparisons retain observable transport by the renormalization map; first jets do not determine higher composite-observable jets. Normalized determinants remove an absolute phase but not transverse currents, crossings or disconnected gluing. The smooth flat-coupling example explains noninjectivity of formal jets without excluding future analytic or genuinely nonperturbative completion theorems.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_free_cstar_nonpromotion": "7e4e198365fe2929df8722749a5e0443cff0c3cf59cf9f16ba8259b4d0ad3c7e"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-PROJECTIVE-HYM-NATURALITY-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_projective_hym_naturality"
+      ],
+      "anchors": [
+        "sec:projective-hym",
+        "sec:cech-compiler"
+      ],
+      "assessment": "Imported the exact realization of a supplied unitary bundle/connection as a finite-matrix projector module and the differential/Hessian intertwining on its range with transported metrics and domains. Finite matrix size is not a finite Fourier cutoff; ambient vectors outside the projector range are not new physical modes. The shared flat line and external flag are separated from parallel subbundles of an irreducible stable HYM bundle with scalar commutant. A winding-isometry cutoff example and Schur-Feshbach example explain why raw cutoffs or closed cost pullbacks are not automatically reducing operator isometries. This is a universal compiler for supplied data, not selection of the physical nonzero-Chern HYM endpoint.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_projective_hym_naturality": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-CECH-PROJECTOR-COMPILER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_cech_projector_compiler"
+      ],
+      "anchors": [
+        "sec:cech-compiler",
+        "sec:projective-hym"
+      ],
+      "assessment": "Explained metric-unitarized transition functions, partition-of-unity projector blocks and the connection correction Gamma = U(A-A0)U*. The Grassmann connection alone need not equal the input connection; the correction supplies exact differential naturality. Cover/partition changes give partial-unitary equivalent presentations, not additional physical sources. Central phase cancellation on the adjoint does not trivialize a twisted fundamental bundle; the ordinary rank-102 deformation complex is not the finite 27-dimensional carrier. The range/domain and cutoff qualifications are part of the contextual use, not an extra unproved physical-naturalness claim.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_cech_projector_compiler": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-SPECTRAL-STRAIN-HESSIAN-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_spectral_strain_hessian"
+      ],
+      "anchors": [
+        "sec:spectral-strain"
+      ],
+      "assessment": "Explained the nonlinear Hermitian-three-by-three strain coordinates (d,r), the omitted triangle-phase invariant and seven-dimensional generic invariant quotient, and the character obstruction to replacing them by a linear equivariant root-plane identification. On the regular all-edge-nonzero stratum, with a positive gapped physical Hessian on the declared harmonic complement and invertible retained covariance, the shorted Hessian is (J G_perp J*) inverse. It is a constrained minimum, not an arbitrary slice Hessian; TT reduction must occur before inversion. The later support-stratified result supplies the boundary qualification. No physical Hessian or spectral gap is selected by the coordinate theorem.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_spectral_strain_hessian": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-SUPPORT-STRATIFIED-STRAIN-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_support_stratified_strain"
+      ],
+      "anchors": [
+        "sec:support-strain"
+      ],
+      "assessment": "Imported all eight edge-support strata, derivative ranks 3+|S| with multiplicities 1,3,3,1, and the target orthant. At absent edges the first derivative of squared modulus vanishes; the normal second-order constraint produces a degree-one constrained value function in outward strain, not an ordinary quadratic Hessian on six unrestricted boundary coordinates. The elementary r=t^2, cost=t^2/2 example makes the distinction readable. Tangential Green shorting stays valid on its proper image. Full six-dimensional derivative rank or the proposed full local complex symmetry already forces the top stratum, so no independent regularity obligation is reintroduced under those stronger inputs. This is the source's existing boundary correction, not a newly discovered theorem defect.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_support_stratified_strain": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-MONODROMY-REYNOLDS-DESCENT-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_monodromy_reynolds_descent"
+      ],
+      "anchors": [
+        "sec:monodromy-strain"
+      ],
+      "assessment": "Explained that a connected three-sheet cover with full S3 monodromy has trivial deck centralizer, rather than a global deck-S3 action. The correct strain object is the associated local system with R3 plus R3 fiber; Reynolds averaging gives parallel rank-two/rank-four projectors. The central sign of the nonsplit binary lift acts trivially on the quadratic strain representation, so its twelve-term average agrees with the six-term S3 average, without settling spinor Spin/Spin-c data. Naturality of a reduced Green operator follows only when the operator, domains and harmonic complement are themselves monodromy-natural. The later shared-root C4 refinement is discussed additively, not as reopening the retired deck requirement.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_monodromy_reynolds_descent": "ade778235cad2f3500afc6eae6547906d9f1b9603310ac6b546ba33060e0845b"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-SHARED-ROOT-C4-PROMOTION-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_shared_root_c4_promotion"
+      ],
+      "anchors": [
+        "sec:shared-root-c4"
+      ],
+      "assessment": "Explained the restriction of shared Z64 characters 1 and 33 to the same C4 character and the determinant-twisted sheet/edge identification producing J_DE squared = -I. On two real standard TT copies, S3-invariant covariance has a symmetric two-by-two multiplicity block; commuting with J_DE forces zero mixing and equal diagonal entries. Thus no additional TT-shape inputs remain once physical invariance is actually established. That physical nonzero-Chern HYM/Hessian invariance or direct TT-block computation remains open. Orthant, marked Fu-Yau and direct-unital-adjoint exclusions are stated precisely and do not revoke the canonical complex structure or the exact symbol-level order-four map.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_shared_root_c4_promotion": "84085ed97f583699ea7ca71ec65d1f8c0899b0e5128e0010eefd37ee1f1bff9d"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-FM-HYM-DEPENDENCY-COMPRESSION-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_fm_hym_dependency_compression"
+      ],
+      "anchors": [
+        "sec:fm-hym"
+      ],
+      "assessment": "Preserved the literal source-route two-of-eleven count while explaining that its nine uninstantiated rows factor through three sequential packages: visible same-member spectral/flat-Deligne data, common physical HYM endpoint, and physical order-four invariance or direct TT block. WIT, locally free rank-three transform, determinant and Chern-character outputs are conditional consequences, not nine independent source searches; full FM autoequivalence is only an optional stronger route. The hidden rank-nine projective construction and existential HYM result remain established. The text keeps physical 9H+3D0 distinct from auxiliary 3H+3D0, integral DD triviality distinct from flat/holomorphic triviality, V-dual quotient conventions intact, and an ordinary Neron model nonautomatic.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_fm_hym_dependency_compression": "7b8950ec0f0f5cce7a84fe8a7907e355876910488d901911eb49395657d26dbc"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-FAMILY-SOURCE-CUTSET-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_family_source_cutset"
+      ],
+      "anchors": [
+        "sec:family-cutset",
+        "sec:free-cstar"
+      ],
+      "assessment": "Explained the conditional analytic export from one selected physical HYM/upper-action family with common Sobolev domains and uniform spectral gap: closed operators, contour Riesz projectors, Kato transport, and determinant-line connection/parallel transport. Gap crossings, transverse fermion-measure currents and disconnected phase gluing remain separate. The rank-four projection on eight coordinates illustrates why finite projected coefficients cannot uniquely select a smooth infinite-dimensional connection or operator. This is a source-nonuniqueness witness, not a new physical HYM solution or a reopening of existential HYM. Later free-C-star refinements are cross-read to preserve positive free and finite-regulator results while keeping fixed-coupling interacting completion open.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_family_source_cutset": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-FOCK-OUTPUT-MEASURE-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_fock_output_measure"
+      ],
+      "anchors": [
+        "sec:frozen-output",
+        "sec:ontology-consumer"
+      ],
+      "assessment": "Explained the two-channel vacuum Fock source, commuting nondemolition output algebra, correct no-count amplitude/effect, stopped first-count law, and state-valued ready/P/Q instrument. The one-anchor weights (1,149,298)/448 and conditional 1/3,2/3 follow from the stated preparation and clock, not fitting. Equal second moments give identical stopped and conditional-state outputs; the equal basis versus plus/minus ensemble shows why a fourth-moment basin statistic need not descend and is not the recorder event. Normalization and nonselective dephasing are explicit. The exact canonical operational source is retained, without asserting pre-quantum probability semantics, universal apparatus control or objective actualization.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_fock_output_measure": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-MINIMAL-RECORDER-ACTION-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_minimal_recorder_action"
+      ],
+      "anchors": [
+        "sec:minimal-recorder"
+      ],
+      "assessment": "Explained the different two-state defect-meter and ready-plus-two-label Kraus constructions. Fresh three-state pointers reproduce the discrete stopped law; the singular Delta^(-1/2) repeated-interaction/Fock limit supplies the continuous recorder. A fixed finite meter with bounded Hamiltonian has only Hamiltonian first derivative for a product preparation, so it cannot realize an exact positive-rate Markov dephasing semigroup from time zero. This is a scoped obstruction, not a denial of the Fock limit. The same unread channel admits informative and state-independent phase-flip instruments. Apparatus coupling, fresh meter and clock remain explicit source data, and finite-bandwidth corrections remain outside the exact limit.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_minimal_recorder_action": "84a48214fc273434ebc88be0436b6ff7f31743a8e3910e826157bd34a3578a3c"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-HESSIAN-RECORDER-SOURCE-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_hessian_recorder_source"
+      ],
+      "anchors": [
+        "sec:hessian-recorder",
+        "sec:minimal-recorder"
+      ],
+      "assessment": "Explained the finite defect normalization D_fin*D_fin=Q, repair cost kappa/2 times squared defect norm, and positive Hessian square root sqrt(kappa)Q. The kernel/support split selects the binary pair; minimal disturbance, preparation-blind clock and apparatus context supply the remaining recorder inputs. Unequal channel rates give preparation-dependent hazard, showing that equal rates follow from a stated clock condition, not the projector alone. Repair stiffness kappa is not automatically a predicted physical detector rate. Pure nonnegative repair cost and its pullback are not the physical signed action or an ontic record selector. The corresponding full source proof was also read as clarification.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_hessian_recorder_source": "298f7f7abc5d2c00b1f9e6875c461cd7f061f4e53d850d77dcc3ac07eee71c15"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "anchors": [
+        "sec:continuum-recorder"
+      ],
+      "assessment": "Explained the conditional transport from a supplied positive self-adjoint augmented Hessian, invariant rank-three sector with one-plus-two kernel/support split, and a selected projector-intertwining isometry. With the same clock, minimal Luders coupling and no added Hamiltonian, jump/drift intertwining lifts to the Fock cocycle, stopped measure and state-valued instrument. The finite Fourier-conjugated three-mode example is a compiler witness, not physical HYM selection. Projector-defect epsilon gives weight error epsilon, finite-horizon label error (1-exp(-gamma*u))*epsilon, unnormalized state error 2epsilon+epsilon^2 and a conservative normalized bound 2(2epsilon+epsilon^2)/m when both weights are at least m>0. The physical endpoint, metric/Hessian, finite map, tails and clock remain unselected; canonical Cauchy QM is not reopened.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-PROJECTIVE-RECORD-DESCENT-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_projective_record_descent"
+      ],
+      "anchors": [
+        "sec:projective-records"
+      ],
+      "assessment": "Explained transport of states, projectors, probabilities and conditional states on projective overlaps: conjugation intertwines the instrument and central phases cancel. A global vector-phase choice is unnecessary for these record laws. The statement holds on the specified open constant-rank stratum, not automatically through the example's harmonic rank change three to seven. Long-time nonselective eigenvalues 1/3,2/3 and purity 5/9 show exact dephasing without concentration into a single record. This connects to, but does not duplicate, the paper's unchanged concentration and persistence theorems; projective consistency is not actualization.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_projective_record_descent": "66442357dc4396773b88e8525b7a874d98cec1b40321b14ed7f3fd92405d41d3"
+      }
+    },
+    {
+      "id": "QM-OWNER-Q79-ONTOLOGY-NONENTAILMENT-20260912",
+      "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "anchors": [
+        "sec:ontology-nonentailment"
+      ],
+      "assessment": "Explained the complete retained operational signature, including channel, dilation and instrument, and the absence of an actuality predicate. The 448-atom checkpoint is extended by ordinary conditional output states, so the single-record countermodel preserves the instrument rather than merely three probabilities; a coactual completion preserves the same data. Basis-dependent coefficient counts and alternative ensembles of one density operator make the underdetermination explicit. This is a context-specific existence/non-entailment theorem, not a selected global hidden-variable dynamics, simultaneous assignment to incompatible projectors, evasion of Bell/contextuality constraints, or refutation of many-worlds. The conditional marked-Poisson construction adds hazard and clock hypotheses, not an MTT-selected universal actualization source. The Locality account stays interpretive and author-review required.",
+      "main_tex_lf_sha256": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    }
+  ],
+  "consumer_reviews": [
+    {
+      "id": "QM-CONSUMER-QM-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-consumer"
+      ],
+      "assessment": "The conditional compiler is explained in context of the broader complete quantum record, with a direct frozen citation and the Born/record companion reference. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-QM-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-consumer"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. A complete quantum record still lacks an actuality predicate. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BORN-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:continuum-recorder"
+      ],
+      "assessment": "The conditional compiler is explained directly in the Born/record source chain, its current contextual owner, with a frozen source citation. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BORN-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:ontology-consumer"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. This preserves the separation of record weights, classical concentration/persistence and actualization. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-MEASUREMENT-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The conditional compiler is explained in context of the completion instrument between physical coupling and record stabilization, with a direct frozen citation and the Born/record companion reference. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM.",
+      "main_tex_lf_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-MEASUREMENT-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. Post-record stabilization cannot choose among ontological completions that already agree operationally. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BH-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The conditional compiler is explained in context of comparison with exterior restriction and recovery on a black-hole code, with a direct frozen citation and the Born/record companion reference. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM and does not identify a detector algebra with an evaporating black hole's exterior/code algebra.",
+      "main_tex_lf_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BH-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. Recoverability on a code is not a criterion selecting one ontic history. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-DECOHERENCE-CONTINUUM-RECORDER-COMPILER-20260912",
+      "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CONTINUUM_RECORDER_COMPILER"
+      ],
+      "curated_result_ids": [
+        "q79_continuum_recorder_compiler"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CONTINUUM_RECORDER_COMPILER": [
+          "q79_continuum_recorder_compiler"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The conditional compiler is explained in context of the distinction between a nonselective channel and an outcome-resolved instrument, with a direct frozen citation and the Born/record companion reference. Its supplied positive self-adjoint Hessian, invariant rank-three sector with kernel/support ranks one/two, projector-intertwining isometry, common clock and minimal coupling are named. It transports the stopped instrument and conditional states; approximation requires finite-horizon error hypotheses and a positive probability floor for normalized rare events. Physical endpoint, finite map/tails and clock selection remain open. Current contextual ownership stays with why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872; original mathematical source ownership stays MATH/math_closure. This conditional result does not reopen canonical operational QM.",
+      "main_tex_lf_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
+      "result_hashes": {
+        "q79_continuum_recorder_compiler": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-DECOHERENCE-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+      "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET"
+      ],
+      "curated_result_ids": [
+        "q79_ontology_nonentailment"
+      ],
+      "kernel_result_sources": {
+        "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+          "q79_ontology_nonentailment"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The Locality companion and the exact frozen non-entailment source are cited and explained, with contextual ownership retained at locality-coherent-alternatives-and-records-in-mtt and source theorem ownership MATH/math_closure. The canonical finite checkpoint admits a single-record completion with attached conditional output states and a coactual completion with the same operational instrument. Even fixing an instrument leaves this underdetermination, which is stronger data than the earlier unread-channel counterexample. The existence witness is context-specific, not a selected global hidden-variable dynamics, a refutation of many-worlds or a universal physical actualization law. Measurement remains ordinary physics. This is actual scoped use of the result, not a blanket completion based on a title match or one unrelated citation.",
+      "main_tex_lf_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
+      "result_hashes": {
+        "q79_ontology_nonentailment": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+      }
+    },
+    {
+      "id": "QM-CONSUMER-BH-CANONICAL-OUTPUT-DESCENT-20260912",
+      "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "integrated",
+      "result_ids": [
+        "R.QM.CANONICAL_OUTPUT_DESCENT"
+      ],
+      "curated_result_ids": [
+        "q79_fock_output_measure"
+      ],
+      "kernel_result_sources": {
+        "R.QM.CANONICAL_OUTPUT_DESCENT": [
+          "q79_fock_output_measure"
+        ]
+      },
+      "anchors": [
+        "sec:recorder-source-interface",
+        "The canonical measurement construction is already available"
+      ],
+      "assessment": "Genuine contextual stale-text correction, not a new review solely from the historical title suggestion. The prior completion target asked for one concrete MTT measurement instrument despite the established canonical recorder. Section 4.2 now explains the existing stopped measure and state-valued instrument, cites its frozen source and Born/record owner, and restricts the remaining target to a common-source paired measurement/black-hole construction with explicit exterior/recovery maps. Its checkpoint is not a radiation entropy or Hawking-temperature prediction. Canonical binary closure is retained; no exterior code, shared Born/Hawking source or objective actualization law is inferred.",
+      "main_tex_lf_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "result_hashes": {
+        "q79_fock_output_measure": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e"
+      }
+    }
+  ],
+  "result_source_map": {
+    "R.QM.CONTINUUM_RECORDER_COMPILER": [
+      "q79_continuum_recorder_compiler"
+    ],
+    "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": [
+      "q79_ontology_nonentailment"
+    ],
+    "R.QM.CANONICAL_OUTPUT_DESCENT": [
+      "q79_fock_output_measure"
+    ]
+  },
+  "kernel_source_details": {
+    "R.QM.CONTINUUM_RECORDER_COMPILER": {
+      "curated_result_id": "q79_continuum_recorder_compiler",
+      "integration_owner": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "source_theorem_owner": "MATH",
+      "source_repository": "math_closure",
+      "tier": "CONDITIONAL_ERROR_CONTROLLED",
+      "frozen_artifact_sha256": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb"
+    },
+    "R.QM.OPERATIONAL_ONTOLOGY_CUTSET": {
+      "curated_result_id": "q79_ontology_nonentailment",
+      "integration_owner": "locality-coherent-alternatives-and-records-in-mtt",
+      "source_theorem_owner": "MATH",
+      "source_repository": "math_closure",
+      "tier": "DERIVED_EXACT",
+      "frozen_artifact_sha256": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c"
+    },
+    "R.QM.CANONICAL_OUTPUT_DESCENT": {
+      "curated_result_id": "q79_fock_output_measure",
+      "integration_owner": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "source_theorem_owner": "QM",
+      "source_repository": "qm_source",
+      "tier": "DERIVED_EXACT",
+      "frozen_artifact_sha256": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e"
+    }
+  },
+  "kernel_queue_review": {
+    "source_path": "C:/Users/nero_/Downloads/BrainOfEnterprise-MTT-Research-Environment/data/paper-completion-ledger.json",
+    "snapshot_at": "2026-09-11T22:45:00+02:00",
+    "sha256_at_review": "c4f5a282f3c4351cbcfa52c0dfb7626102e0460a5135225a215e7401e3f03afb",
+    "mapping_audit_path": "C:/Users/nero_/Downloads/BrainOfEnterprise-MTT-Research-Environment/data/corpus-coherence-audit.json",
+    "mapping_audit_sha256_at_review": "6bb574df1f493b55d4851bdde9e3521651339d8edc9f37a967731c7479782c58",
+    "mapping_basis": "Matched Kernel descriptions/guards and integrated/missing placements against frozen source schemas, ownership records and the full source content. Current catalog ownership (Born/record for compiler; Locality for ontology) controls over older broad recommended-owner descriptions. Original theorem ownership is unchanged.",
+    "candidate_dispositions": [
+      {
+        "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+        "original_new_result_placements": [
+          "R.QM.CONTINUUM_RECORDER_COMPILER",
+          "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+          "R.QM.CANONICAL_OUTPUT_DESCENT"
+        ],
+        "dispositions": [
+          {
+            "result_id": "R.QM.CONTINUUM_RECORDER_COMPILER",
+            "curated_result_ids": [
+              "q79_continuum_recorder_compiler"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-BORN-CONTINUUM-RECORDER-COMPILER-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+            "curated_result_ids": [
+              "q79_ontology_nonentailment"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-BORN-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.CANONICAL_OUTPUT_DESCENT",
+            "state": "historical_completion_exempt_no_new_review",
+            "curated_result_ids": [
+              "q79_fock_output_measure"
+            ],
+            "basis": "User/parent correction exempts already-integrated canonical output placements absent a real omission. Existing canonical law is retained; no duplicate historical completion is submitted."
+          }
+        ],
+        "remaining_candidates": [],
+        "policy_note": "Title/domain suggestions are discovery candidates, not proof of omissions; current explicit historical exemptions were honored."
+      },
+      {
+        "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+        "original_new_result_placements": [],
+        "dispositions": [],
+        "remaining_candidates": [],
+        "policy_note": "Title/domain suggestions are discovery candidates, not proof of omissions; current explicit historical exemptions were honored."
+      },
+      {
+        "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+        "original_new_result_placements": [
+          "R.QM.CONTINUUM_RECORDER_COMPILER",
+          "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+          "R.QM.CANONICAL_OUTPUT_DESCENT"
+        ],
+        "dispositions": [
+          {
+            "result_id": "R.QM.CONTINUUM_RECORDER_COMPILER",
+            "curated_result_ids": [
+              "q79_continuum_recorder_compiler"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-MEASUREMENT-CONTINUUM-RECORDER-COMPILER-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+            "curated_result_ids": [
+              "q79_ontology_nonentailment"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-MEASUREMENT-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.CANONICAL_OUTPUT_DESCENT",
+            "state": "historical_completion_exempt_no_new_review",
+            "curated_result_ids": [
+              "q79_fock_output_measure"
+            ],
+            "basis": "User/parent correction exempts already-integrated canonical output placements absent a real omission. Existing canonical law is retained; no duplicate historical completion is submitted."
+          }
+        ],
+        "remaining_candidates": [],
+        "policy_note": "Title/domain suggestions are discovery candidates, not proof of omissions; current explicit historical exemptions were honored."
+      },
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "original_new_result_placements": [
+          "R.QM.CONTINUUM_RECORDER_COMPILER",
+          "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+          "R.QM.CANONICAL_OUTPUT_DESCENT"
+        ],
+        "dispositions": [
+          {
+            "result_id": "R.QM.CONTINUUM_RECORDER_COMPILER",
+            "curated_result_ids": [
+              "q79_continuum_recorder_compiler"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-QM-CONTINUUM-RECORDER-COMPILER-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+            "curated_result_ids": [
+              "q79_ontology_nonentailment"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-QM-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.CANONICAL_OUTPUT_DESCENT",
+            "state": "historical_completion_exempt_no_new_review",
+            "curated_result_ids": [
+              "q79_fock_output_measure"
+            ],
+            "basis": "User/parent correction exempts already-integrated canonical output placements absent a real omission. Existing canonical law is retained; no duplicate historical completion is submitted."
+          }
+        ],
+        "remaining_candidates": [],
+        "policy_note": "Title/domain suggestions are discovery candidates, not proof of omissions; current explicit historical exemptions were honored."
+      },
+      {
+        "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+        "original_new_result_placements": [
+          "R.QM.CONTINUUM_RECORDER_COMPILER",
+          "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+          "R.QM.CANONICAL_OUTPUT_DESCENT"
+        ],
+        "dispositions": [
+          {
+            "result_id": "R.QM.CONTINUUM_RECORDER_COMPILER",
+            "curated_result_ids": [
+              "q79_continuum_recorder_compiler"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-BH-CONTINUUM-RECORDER-COMPILER-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+            "curated_result_ids": [
+              "q79_ontology_nonentailment"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-BH-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.CANONICAL_OUTPUT_DESCENT",
+            "curated_result_ids": [
+              "q79_fock_output_measure"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-BH-CANONICAL-OUTPUT-DESCENT-20260912",
+            "basis": "Genuine stale-text omission found in context; not a title-only re-review."
+          }
+        ],
+        "remaining_candidates": [],
+        "policy_note": "Title/domain suggestions are discovery candidates, not proof of omissions; current explicit historical exemptions were honored."
+      },
+      {
+        "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+        "original_new_result_placements": [
+          "R.QM.CONTINUUM_RECORDER_COMPILER",
+          "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+          "R.QM.CANONICAL_OUTPUT_DESCENT"
+        ],
+        "dispositions": [
+          {
+            "result_id": "R.QM.CONTINUUM_RECORDER_COMPILER",
+            "curated_result_ids": [
+              "q79_continuum_recorder_compiler"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-DECOHERENCE-CONTINUUM-RECORDER-COMPILER-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.OPERATIONAL_ONTOLOGY_CUTSET",
+            "curated_result_ids": [
+              "q79_ontology_nonentailment"
+            ],
+            "state": "integrated",
+            "review_id": "QM-CONSUMER-DECOHERENCE-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+            "basis": "Applicable source-consumer use explained in manuscript."
+          },
+          {
+            "result_id": "R.QM.CANONICAL_OUTPUT_DESCENT",
+            "state": "historical_completion_exempt_no_new_review",
+            "curated_result_ids": [
+              "q79_fock_output_measure"
+            ],
+            "basis": "User/parent correction exempts already-integrated canonical output placements absent a real omission. Existing canonical law is retained; no duplicate historical completion is submitted."
+          }
+        ],
+        "remaining_candidates": [],
+        "policy_note": "Title/domain suggestions are discovery candidates, not proof of omissions; current explicit historical exemptions were honored."
+      }
+    ],
+    "historical_exemption_ids": [
+      "R.QM.CANONICAL_OUTPUT_DESCENT",
+      "R.QG.BRANCH_AND_COFRAME",
+      "R.GEO.COHESIVE_SUPERCONNECTION",
+      "R.ACTION.COHESIVE_MC_REPAIR"
+    ],
+    "false_positive_pattern_observations": "Four of this scope's canonical-output title candidates need no new consumer completion. The black-hole paper alone had a genuine stale-text omission. No new mathematical detail was added only to satisfy a title regex. Locality has no consumer queue rows."
+  },
+  "paper_changes": [
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "version": "v5",
+      "main_tex_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+      "source_tree_sha256": "69d81c0719476deb68156ea7f30fdb347a54e236f058e1f2af382cb710bf9141",
+      "paper_md_sha256": "4bdbd8507192c6a5b3d33a05328ea18cc33321d1dc5baa3c20c2f80af217e2f0",
+      "pdf_sha256": "031d8f7f5ff811e96dc1cbc4f982c29eef57f81f7a0687ae519b82adb75d6969",
+      "pdf_pages": 26,
+      "source_files": [
+        {
+          "path": "main.bib",
+          "bytes": 5138,
+          "sha256": "f5a5fecd8636f70f03fa99978b52abdcd8d79d3ccc0c11d67015606a6384306d"
+        },
+        {
+          "path": "main.tex",
+          "bytes": 71078,
+          "sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1"
+        },
+        {
+          "path": "paper-markdown.lua",
+          "bytes": 4496,
+          "sha256": "eda1aef847606bd8399a98fb3fc9facb577e19e5f4780fce518485aafd2e8157"
+        },
+        {
+          "path": "frozen-qm.bib",
+          "bytes": 4996,
+          "sha256": "814c818908da543a6b30d0691cd24dbf2bb75cd25bf7ceff28cb638f3fbea931"
+        },
+        {
+          "path": "consumer-qm.bib",
+          "bytes": 1170,
+          "sha256": "4cff919b83d226bbc016f5f691760ba3a514d81a846d08af88e717351b434797"
+        },
+        {
+          "path": "editorial-config.json",
+          "bytes": 4373,
+          "sha256": "6a816844223f8ee43caedd1c2520227f7a7b43562d850b70b2239417609911ec"
+        },
+        {
+          "path": "editorial_artifacts.py",
+          "bytes": 6210,
+          "sha256": "6c5bded1fe68c9c7d202bd818be586b26ed8c8e9c78e42a43624ec64841e7802"
+        },
+        {
+          "path": "check_editorial_examples.py",
+          "bytes": 4111,
+          "sha256": "23eaaf1564c19df0c179a5d38bb1f844dd0c7794b371d57bc9fe001a57f7b2e6"
+        }
+      ],
+      "previous_version": "v4",
+      "current_version": "v5",
+      "version_increment_count": 1,
+      "released_identity_preserved": true,
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.17074246",
+        "created": "2026-07-30T20:56:27.085692+02:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21708961",
+        "files": [
+          {
+            "checksum": "md5:c3d8f2859ca4a0e81adb7fd28d9fe2fe",
+            "content_url": "https://zenodo.org/api/records/21708961/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 439310
+          }
+        ],
+        "id": "21708961",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1,
+        "publication_date": "2026-07-30",
+        "record_url": "https://zenodo.org/records/21708961",
+        "resource_type": "publication",
+        "title": "Modal Triplet Theory and Nonrelativistic Quantum Mechanics: A Coherent-Sector Reconstruction and the Born-Source Boundary",
+        "updated": "2026-07-30T20:56:27.462272+02:00",
+        "version": "v4"
+      },
+      "author_review_required": false,
+      "current_release_state": "current_revised_tex",
+      "version_relation": "current_source_newer_than_release",
+      "revision_audit_sha256": "a61e77ab9728f633e98f74ff81597cb77d2f56e8c7eb6a31902a333d9573390e",
+      "research_integration_sha256": "c17715215ffc05045367cf0dd8b72958d2a1ea9631f28799552494ddad1f0ba6",
+      "changed_files": [
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/metadata.json",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/REVISION_AUDIT.md",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/RESEARCH_INTEGRATION.md",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/paper.md",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.pdf",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/paper-markdown.lua",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/frozen-qm.bib",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/consumer-qm.bib",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial-config.json",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial_artifacts.py",
+        "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/check_editorial_examples.py"
+      ],
+      "owner_review_ids": [
+        "QM-OWNER-QM-CURRENT-STATUS-20260912",
+        "QM-OWNER-Q79-CANONICAL-QUANTUM-MODEL-20260912",
+        "QM-OWNER-Q79-FREE-DIRAC-CAR-NET-20260912",
+        "QM-OWNER-Q79-LOCAL-QME-20260912",
+        "QM-OWNER-Q79-FREE-CSTAR-NONPROMOTION-20260912",
+        "QM-OWNER-Q79-PROJECTIVE-HYM-NATURALITY-20260912",
+        "QM-OWNER-Q79-CECH-PROJECTOR-COMPILER-20260912",
+        "QM-OWNER-Q79-SPECTRAL-STRAIN-HESSIAN-20260912",
+        "QM-OWNER-Q79-SUPPORT-STRATIFIED-STRAIN-20260912",
+        "QM-OWNER-Q79-MONODROMY-REYNOLDS-DESCENT-20260912",
+        "QM-OWNER-Q79-SHARED-ROOT-C4-PROMOTION-20260912",
+        "QM-OWNER-Q79-FM-HYM-DEPENDENCY-COMPRESSION-20260912",
+        "QM-OWNER-Q79-FAMILY-SOURCE-CUTSET-20260912"
+      ],
+      "consumer_review_ids": [
+        "QM-CONSUMER-QM-CONTINUUM-RECORDER-COMPILER-20260912",
+        "QM-CONSUMER-QM-OPERATIONAL-ONTOLOGY-CUTSET-20260912"
+      ],
+      "anchors": [
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 679,
+          "anchor": "sec:canonical-model"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 749,
+          "anchor": "sec:no-count-correction"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1185,
+          "anchor": "sec:local-qme"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1215,
+          "anchor": "sec:status-refinements"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1236,
+          "anchor": "sec:free-cstar"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 666,
+          "anchor": "sec:q79"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 214,
+          "anchor": "sec:field-interface"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1162,
+          "anchor": "sec:free-dirac"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 979,
+          "anchor": "sec:projective-hym"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1006,
+          "anchor": "sec:cech-compiler"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1025,
+          "anchor": "sec:spectral-strain"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1057,
+          "anchor": "sec:support-strain"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1079,
+          "anchor": "sec:monodromy-strain"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1095,
+          "anchor": "sec:shared-root-c4"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1121,
+          "anchor": "sec:fm-hym"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1143,
+          "anchor": "sec:family-cutset"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 822,
+          "anchor": "sec:recorder-consumer"
+        }
+      ],
+      "build_checks": {
+        "state": "pass",
+        "command": "python -B scripts/build_contextual_evidence_papers.py --paper-id modal-triplet-theory-from-mtt-to-quantum-mechanics --jobs 1",
+        "invocation_detail": "Called the existing helper's main() with these CLI arguments and LOG_ROOT redirected only to this paper's editorial-build directory. No global builder/refresh/consolidation was run.",
+        "log_root": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial-build",
+        "summary": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial-build/summary.json",
+        "pdflatex_passes": 3,
+        "overfull_boxes": 0,
+        "underfull_boxes": 0,
+        "undefined_references_or_citations": 0,
+        "missing_glyph_or_fatal_errors": 0
+      },
+      "pdf_inspection": {
+        "state": "passed",
+        "reviewer": "Codex QM contextual editorial subagent",
+        "reviewed_at": "2026-09-12",
+        "all_pages_inspected": true,
+        "enlarged_page_views": [
+          1,
+          2,
+          5,
+          7,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "inspection_method": "All pages inspected in 2x2 contact sheets. After final layout refinements, every changed page was reinspected; byte-identical page PNGs retained their prior completed visual inspection. New mathematical passages and revision notes additionally inspected as individual full-page images.",
+        "final_changed_pages_reinspected": [
+          "page-06.png",
+          "page-07.png",
+          "page-09.png",
+          "page-15.png",
+          "page-16.png",
+          "page-20.png",
+          "page-22.png",
+          "page-24.png"
+        ],
+        "checks": [
+          "no clipping or overlap",
+          "readable mathematical displays",
+          "revision notes and historical notes retained",
+          "page numbers and section transitions coherent",
+          "bibliography legible"
+        ],
+        "independent_theorem_verification": false
+      },
+      "publication_checks": {
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "source_file_hashes": "pass",
+        "source_tree_hash": "pass",
+        "bibliography_entries": 35,
+        "cited_keys": 35,
+        "markdown_citations": "pass",
+        "historical_revision_notes_preserved": 1,
+        "formal_blocks_before": 7,
+        "formal_blocks_after": 7,
+        "formal_blocks_unchanged": false,
+        "pdf_pages": 26,
+        "pdf_title": "None",
+        "no_blank_pages": true
+      },
+      "generated_outputs": {
+        "pdf": "main.pdf compiled by scripts/build_contextual_evidence_papers.py",
+        "markdown": "paper.md regenerated separately by migrate.build_markdown through the allowlisted local editorial_artifacts.py wrapper and paper-local Lua filter",
+        "local_metadata": "Current main/source-tree/Markdown/revision-audit hashes refreshed by the paper-local allowlisted artifact helper; released Zenodo records untouched",
+        "intermediates": "Paper-local TeX auxiliary/bibliography/log files, editorial-build summaries, 110-dpi page PNGs and contact sheets. No global output was generated."
+      }
+    },
+    {
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "version": "v3",
+      "main_tex_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+      "source_tree_sha256": "8cd4926fc5aa0f6c6bcd9b7a1e8c4f7ed1a741a223b8acde9eb421b23f039afc",
+      "paper_md_sha256": "d2bdd90c08447c0027a894ef1fe037568685e2d6b3962bd5942fc97cc8d36b9e",
+      "pdf_sha256": "b17ba4ebb75fe6baaf2ff8fb3cc6fe854f4fbddc4fb7e175c0e4c4f9f421dba9",
+      "pdf_pages": 12,
+      "source_files": [
+        {
+          "path": "main.tex",
+          "bytes": 30867,
+          "sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2"
+        },
+        {
+          "path": "series.sty",
+          "bytes": 3784,
+          "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+        },
+        {
+          "path": "paper-markdown.lua",
+          "bytes": 4458,
+          "sha256": "3d9060d49d0c0e448ff27b6c62d412c51c46448ce0c6dc20657421c2e684016b"
+        }
+      ],
+      "previous_version": "v2",
+      "current_version": "v3",
+      "version_increment_count": 1,
+      "released_identity_preserved": true,
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18261841",
+        "created": "2026-07-29T10:52:44.472829+02:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21666025",
+        "files": [
+          {
+            "checksum": "md5:0ab4f72d2c187b5701abd7680e001cc5",
+            "content_url": "https://zenodo.org/api/records/21666025/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 314713
+          }
+        ],
+        "id": "21666025",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1,
+        "publication_date": "2026-07-29",
+        "record_url": "https://zenodo.org/records/21666025",
+        "resource_type": "publication",
+        "title": "Born-Compatible Record Measures and the Classical Concentration Limit: Separate Theorems and Their MTT Interface",
+        "updated": "2026-07-29T10:52:44.734356+02:00",
+        "version": "v2"
+      },
+      "author_review_required": false,
+      "current_release_state": "current_revised_tex",
+      "version_relation": "current_source_newer_than_release",
+      "revision_audit_sha256": "0bd5fddc233d726922121cc5e156441625b9aec2922844c53c827cebb7e594a7",
+      "research_integration_sha256": "cd25941dd032d273e4f98d9918c38214da10a4b69c847021be264d7341772ad0",
+      "changed_files": [
+        "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex",
+        "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/metadata.json",
+        "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/REVISION_AUDIT.md",
+        "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/RESEARCH_INTEGRATION.md",
+        "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/paper.md",
+        "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.pdf",
+        "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/paper-markdown.lua"
+      ],
+      "owner_review_ids": [
+        "QM-OWNER-Q79-FOCK-OUTPUT-MEASURE-20260912",
+        "QM-OWNER-Q79-MINIMAL-RECORDER-ACTION-20260912",
+        "QM-OWNER-Q79-HESSIAN-RECORDER-SOURCE-20260912",
+        "QM-OWNER-Q79-CONTINUUM-RECORDER-COMPILER-20260912",
+        "QM-OWNER-Q79-PROJECTIVE-RECORD-DESCENT-20260912"
+      ],
+      "consumer_review_ids": [
+        "QM-CONSUMER-BORN-CONTINUUM-RECORDER-COMPILER-20260912",
+        "QM-CONSUMER-BORN-OPERATIONAL-ONTOLOGY-CUTSET-20260912"
+      ],
+      "anchors": [
+        {
+          "source_ref": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex",
+          "line_start": 217,
+          "anchor": "sec:frozen-output"
+        },
+        {
+          "source_ref": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex",
+          "line_start": 353,
+          "anchor": "sec:ontology-consumer"
+        },
+        {
+          "source_ref": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex",
+          "line_start": 255,
+          "anchor": "sec:minimal-recorder"
+        },
+        {
+          "source_ref": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex",
+          "line_start": 274,
+          "anchor": "sec:hessian-recorder"
+        },
+        {
+          "source_ref": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex",
+          "line_start": 300,
+          "anchor": "sec:continuum-recorder"
+        },
+        {
+          "source_ref": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex",
+          "line_start": 333,
+          "anchor": "sec:projective-records"
+        }
+      ],
+      "build_checks": {
+        "state": "pass",
+        "command": "python -B scripts/build_contextual_evidence_papers.py --paper-id why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872 --jobs 1",
+        "invocation_detail": "Called the existing helper's main() with these CLI arguments and LOG_ROOT redirected only to this paper's editorial-build directory. No global builder/refresh/consolidation was run.",
+        "log_root": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/editorial-build",
+        "summary": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/editorial-build/summary.json",
+        "pdflatex_passes": 3,
+        "overfull_boxes": 0,
+        "underfull_boxes": 0,
+        "undefined_references_or_citations": 0,
+        "missing_glyph_or_fatal_errors": 0
+      },
+      "pdf_inspection": {
+        "state": "passed",
+        "reviewer": "Codex QM contextual editorial subagent",
+        "reviewed_at": "2026-09-12",
+        "all_pages_inspected": true,
+        "enlarged_page_views": [
+          1,
+          4,
+          5,
+          6,
+          7
+        ],
+        "inspection_method": "All pages inspected in 2x2 contact sheets. After final layout refinements, every changed page was reinspected; byte-identical page PNGs retained their prior completed visual inspection. New mathematical passages and revision notes additionally inspected as individual full-page images.",
+        "final_changed_pages_reinspected": [
+          "page-11.png",
+          "page-12.png"
+        ],
+        "checks": [
+          "no clipping or overlap",
+          "readable mathematical displays",
+          "revision notes and historical notes retained",
+          "page numbers and section transitions coherent",
+          "bibliography legible"
+        ],
+        "independent_theorem_verification": false
+      },
+      "publication_checks": {
+        "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+        "source_file_hashes": "pass",
+        "source_tree_hash": "pass",
+        "bibliography_entries": 10,
+        "cited_keys": 10,
+        "markdown_citations": "pass",
+        "historical_revision_notes_preserved": 1,
+        "formal_blocks_before": 4,
+        "formal_blocks_after": 4,
+        "formal_blocks_unchanged": true,
+        "pdf_pages": 12,
+        "pdf_title": "Born-Compatible Record Measures and the Classical Concentration Limit",
+        "no_blank_pages": true
+      },
+      "generated_outputs": {
+        "pdf": "main.pdf compiled by scripts/build_contextual_evidence_papers.py",
+        "markdown": "paper.md regenerated separately by migrate.build_markdown through the allowlisted local editorial_artifacts.py wrapper and paper-local Lua filter",
+        "local_metadata": "Current main/source-tree/Markdown/revision-audit hashes refreshed by the paper-local allowlisted artifact helper; released Zenodo records untouched",
+        "intermediates": "Paper-local TeX auxiliary/bibliography/log files, editorial-build summaries, 110-dpi page PNGs and contact sheets. No global output was generated."
+      }
+    },
+    {
+      "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+      "version": "v2",
+      "main_tex_sha256": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac",
+      "main_tex_lf_sha256": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac",
+      "source_tree_sha256": "b406f106d92a3f681a659c1009dc8df93174b00472ed846ccba0ba06830f22f9",
+      "paper_md_sha256": "2b9b0a4dadd6332e38d6d85d51d2e5e02a812b432ebd17c70e80cb191e5b8ce8",
+      "pdf_sha256": "71a6c095083455b0848c47828da0f1564e8fbfe7146af46291425b1b12503d4a",
+      "pdf_pages": 23,
+      "source_files": [
+        {
+          "path": ".gitattributes",
+          "bytes": 18,
+          "sha256": "5c0b82bcc6043f780fe99e6cfaa99fd30c5d4626f528e6e6e3ec6617a1300fa4"
+        },
+        {
+          "path": "paper-markdown.lua",
+          "bytes": 5948,
+          "sha256": "6844811fc33e9c01e54821dcab5e61e435edafa3b4e7970a6d1b8a078ec738b4"
+        },
+        {
+          "path": "examples/check_publication_artifacts.py",
+          "bytes": 3912,
+          "sha256": "c1ded3d7708ec734016b80cbc55c11c25ea8d9fa105d1c972c2b7b969331de21"
+        },
+        {
+          "path": "main.tex",
+          "bytes": 69854,
+          "sha256": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac"
+        },
+        {
+          "path": "main.pdf",
+          "bytes": 462386,
+          "sha256": "71a6c095083455b0848c47828da0f1564e8fbfe7146af46291425b1b12503d4a"
+        },
+        {
+          "path": "evidence-manifest.json",
+          "bytes": 20512,
+          "sha256": "36b944eb785917db890c5ac60ec64e02847548b67f4c8c68bcad4a6a3d7a087e"
+        },
+        {
+          "path": "examples/check_explanatory_examples_v2.py",
+          "bytes": 10230,
+          "sha256": "9c3e62348edd764843ad4f4f21199d9927e6d14d2e8dbbac4bd11804e85b4b91"
+        },
+        {
+          "path": "examples/check_ontology_examples_v1.py",
+          "bytes": 7053,
+          "sha256": "5a3de9ad0215ea8e921a3224a4729757a55ce61035156651c5fd78f7c37a5590"
+        }
+      ],
+      "previous_version": "v1",
+      "current_version": "v2",
+      "version_increment_count": 1,
+      "released_identity_preserved": true,
+      "latest_zenodo_release": null,
+      "author_review_required": true,
+      "current_release_state": "not_matched_to_zenodo",
+      "version_relation": "unknown",
+      "revision_audit_sha256": "93183312678488ed8073c26d796067089f56d06ae08e8e80580841f436e8266c",
+      "research_integration_sha256": "346e66e4b6e584ce6d0ec3436b53c176b0f0d3d52dc43acec94c53a91a5058a1",
+      "changed_files": [
+        "papers/locality-coherent-alternatives-and-records-in-mtt/main.tex",
+        "papers/locality-coherent-alternatives-and-records-in-mtt/metadata.json",
+        "papers/locality-coherent-alternatives-and-records-in-mtt/REVISION_AUDIT.md",
+        "papers/locality-coherent-alternatives-and-records-in-mtt/RESEARCH_INTEGRATION.md",
+        "papers/locality-coherent-alternatives-and-records-in-mtt/paper.md",
+        "papers/locality-coherent-alternatives-and-records-in-mtt/main.pdf",
+        "papers/locality-coherent-alternatives-and-records-in-mtt/paper-markdown.lua",
+        "papers/locality-coherent-alternatives-and-records-in-mtt/examples/check_publication_artifacts.py"
+      ],
+      "owner_review_ids": [
+        "QM-OWNER-Q79-ONTOLOGY-NONENTAILMENT-20260912"
+      ],
+      "consumer_review_ids": [],
+      "anchors": [
+        {
+          "source_ref": "papers/locality-coherent-alternatives-and-records-in-mtt/main.tex",
+          "line_start": 392,
+          "anchor": "sec:ontology-nonentailment"
+        }
+      ],
+      "build_checks": {
+        "state": "pass",
+        "command": "python -B scripts/build_contextual_evidence_papers.py --paper-id locality-coherent-alternatives-and-records-in-mtt --jobs 1",
+        "invocation_detail": "Called the existing helper's main() with these CLI arguments and LOG_ROOT redirected only to this paper's editorial-build directory. No global builder/refresh/consolidation was run.",
+        "log_root": "papers/locality-coherent-alternatives-and-records-in-mtt/editorial-build",
+        "summary": "papers/locality-coherent-alternatives-and-records-in-mtt/editorial-build/summary.json",
+        "pdflatex_passes": 3,
+        "overfull_boxes": 0,
+        "underfull_boxes": 0,
+        "undefined_references_or_citations": 0,
+        "missing_glyph_or_fatal_errors": 0
+      },
+      "pdf_inspection": {
+        "state": "passed",
+        "reviewer": "Codex QM contextual editorial subagent",
+        "reviewed_at": "2026-09-12",
+        "all_pages_inspected": true,
+        "enlarged_page_views": [
+          1,
+          2,
+          14,
+          15
+        ],
+        "inspection_method": "All pages inspected in 2x2 contact sheets. After final layout refinements, every changed page was reinspected; byte-identical page PNGs retained their prior completed visual inspection. New mathematical passages and revision notes additionally inspected as individual full-page images.",
+        "final_changed_pages_reinspected": [],
+        "checks": [
+          "no clipping or overlap",
+          "readable mathematical displays",
+          "revision notes and historical notes retained",
+          "page numbers and section transitions coherent",
+          "bibliography legible"
+        ],
+        "independent_theorem_verification": false
+      },
+      "publication_checks": {
+        "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+        "source_file_hashes": "pass",
+        "source_tree_hash": "pass",
+        "bibliography_entries": 29,
+        "cited_keys": 29,
+        "markdown_citations": "pass",
+        "historical_revision_notes_preserved": 1,
+        "formal_blocks_before": 0,
+        "formal_blocks_after": 0,
+        "formal_blocks_unchanged": true,
+        "pdf_pages": 23,
+        "pdf_title": "None",
+        "no_blank_pages": true
+      },
+      "generated_outputs": {
+        "pdf": "main.pdf compiled by scripts/build_contextual_evidence_papers.py",
+        "markdown": "paper.md regenerated separately by migrate.build_markdown through the allowlisted local editorial_artifacts.py wrapper and paper-local Lua filter",
+        "local_metadata": "Current main/source-tree/Markdown/revision-audit hashes refreshed by the paper-local allowlisted artifact helper; released Zenodo records untouched",
+        "intermediates": "Paper-local TeX auxiliary/bibliography/log files, editorial-build summaries, 110-dpi page PNGs and contact sheets. No global output was generated."
+      }
+    },
+    {
+      "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+      "version": "v7",
+      "main_tex_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
+      "main_tex_lf_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
+      "source_tree_sha256": "a63d60fd8499f2fa7707dc902593a95cc4bce606545da372b709a0b0befe968e",
+      "paper_md_sha256": "b9c750e8debfd71fff9706c6690ec10316baad00e55d276600f8e04c734f5b20",
+      "pdf_sha256": "c665f970ae0b7d8b5f0bd5ec96269819e8d2eb0c623f6aa18061d6f836740bb9",
+      "pdf_pages": 12,
+      "source_files": [
+        {
+          "path": "main.tex",
+          "bytes": 28418,
+          "sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8"
+        },
+        {
+          "path": "paper-markdown.lua",
+          "bytes": 4458,
+          "sha256": "3d9060d49d0c0e448ff27b6c62d412c51c46448ce0c6dc20657421c2e684016b"
+        }
+      ],
+      "previous_version": "v6",
+      "current_version": "v7",
+      "version_increment_count": 1,
+      "released_identity_preserved": true,
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.17177404",
+        "created": "2026-07-29T10:51:12.544713+02:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21665982",
+        "files": [
+          {
+            "checksum": "md5:5324f1b1c8b3dbd4735654f981c4ae2a",
+            "content_url": "https://zenodo.org/api/records/21665982/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 266049
+          }
+        ],
+        "id": "21665982",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1,
+        "publication_date": "2026-07-29",
+        "record_url": "https://zenodo.org/records/21665982",
+        "resource_type": "publication",
+        "title": "Measurement as Physical Disturbance, Outcome Completion, and Record Stabilization in Modal Triplet Theory",
+        "updated": "2026-07-29T10:51:13.357713+02:00",
+        "version": "v6"
+      },
+      "author_review_required": false,
+      "current_release_state": "current_revised_tex",
+      "version_relation": "current_source_newer_than_release",
+      "revision_audit_sha256": "1ab401ff3b659fec5b079ae249a6d2828e55e8fea93ee717ed8e5725dea9713e",
+      "research_integration_sha256": "25f5208d5d8f34bc9135e35e0aae13e703208d229b7286efb04d897963e9b8f2",
+      "changed_files": [
+        "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/main.tex",
+        "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/metadata.json",
+        "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/REVISION_AUDIT.md",
+        "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/RESEARCH_INTEGRATION.md",
+        "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/paper.md",
+        "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/main.pdf",
+        "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/paper-markdown.lua"
+      ],
+      "owner_review_ids": [],
+      "consumer_review_ids": [
+        "QM-CONSUMER-MEASUREMENT-CONTINUUM-RECORDER-COMPILER-20260912",
+        "QM-CONSUMER-MEASUREMENT-OPERATIONAL-ONTOLOGY-CUTSET-20260912"
+      ],
+      "anchors": [
+        {
+          "source_ref": "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/main.tex",
+          "line_start": 443,
+          "anchor": "sec:recorder-source-interface"
+        }
+      ],
+      "build_checks": {
+        "state": "pass",
+        "command": "python -B scripts/build_contextual_evidence_papers.py --paper-id measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e --jobs 1",
+        "invocation_detail": "Called the existing helper's main() with these CLI arguments and LOG_ROOT redirected only to this paper's editorial-build directory. No global builder/refresh/consolidation was run.",
+        "log_root": "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/editorial-build",
+        "summary": "papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/editorial-build/summary.json",
+        "pdflatex_passes": 3,
+        "overfull_boxes": 0,
+        "underfull_boxes": 0,
+        "undefined_references_or_citations": 0,
+        "missing_glyph_or_fatal_errors": 0
+      },
+      "pdf_inspection": {
+        "state": "passed",
+        "reviewer": "Codex QM contextual editorial subagent",
+        "reviewed_at": "2026-09-12",
+        "all_pages_inspected": true,
+        "enlarged_page_views": [
+          1,
+          8
+        ],
+        "inspection_method": "All pages inspected in 2x2 contact sheets. After final layout refinements, every changed page was reinspected; byte-identical page PNGs retained their prior completed visual inspection. New mathematical passages and revision notes additionally inspected as individual full-page images.",
+        "final_changed_pages_reinspected": [
+          "page-11.png",
+          "page-12.png"
+        ],
+        "checks": [
+          "no clipping or overlap",
+          "readable mathematical displays",
+          "revision notes and historical notes retained",
+          "page numbers and section transitions coherent",
+          "bibliography legible"
+        ],
+        "independent_theorem_verification": false
+      },
+      "publication_checks": {
+        "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+        "source_file_hashes": "pass",
+        "source_tree_hash": "pass",
+        "bibliography_entries": 9,
+        "cited_keys": 7,
+        "markdown_citations": "pass",
+        "historical_revision_notes_preserved": 1,
+        "formal_blocks_before": 12,
+        "formal_blocks_after": 12,
+        "formal_blocks_unchanged": true,
+        "pdf_pages": 12,
+        "pdf_title": "None",
+        "no_blank_pages": true
+      },
+      "generated_outputs": {
+        "pdf": "main.pdf compiled by scripts/build_contextual_evidence_papers.py",
+        "markdown": "paper.md regenerated separately by migrate.build_markdown through the allowlisted local editorial_artifacts.py wrapper and paper-local Lua filter",
+        "local_metadata": "Current main/source-tree/Markdown/revision-audit hashes refreshed by the paper-local allowlisted artifact helper; released Zenodo records untouched",
+        "intermediates": "Paper-local TeX auxiliary/bibliography/log files, editorial-build summaries, 110-dpi page PNGs and contact sheets. No global output was generated."
+      }
+    },
+    {
+      "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "version": "v3",
+      "main_tex_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "main_tex_lf_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+      "source_tree_sha256": "08875e74f751b197ebbcc9932194cb44012e4fa3f3bb8443089fb9006266be5c",
+      "paper_md_sha256": "e41eb5ab854620191bea7294d1eb1fd46955e0bbe3b7c28690e48a3b147f5b92",
+      "pdf_sha256": "960047e44dd3fd79f38601f70ff2ebdf6a5f2f8067deb3187058eec0195c8458",
+      "pdf_pages": 10,
+      "source_files": [
+        {
+          "path": "main.tex",
+          "bytes": 25067,
+          "sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992"
+        },
+        {
+          "path": "series.sty",
+          "bytes": 3784,
+          "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+        },
+        {
+          "path": "paper-markdown.lua",
+          "bytes": 4458,
+          "sha256": "3d9060d49d0c0e448ff27b6c62d412c51c46448ce0c6dc20657421c2e684016b"
+        }
+      ],
+      "previous_version": "v2",
+      "current_version": "v3",
+      "version_increment_count": 1,
+      "released_identity_preserved": true,
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18261429",
+        "created": "2026-07-29T10:49:51.796214+02:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21665948",
+        "files": [
+          {
+            "checksum": "md5:b7114fd85b8da018b2f679a901b33cd1",
+            "content_url": "https://zenodo.org/api/records/21665948/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 321199
+          }
+        ],
+        "id": "21665948",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1,
+        "publication_date": "2026-07-29",
+        "record_url": "https://zenodo.org/records/21665948",
+        "resource_type": "publication",
+        "title": "Projected Information Loss in Modal Triplet Theory: Fiber Dynamics, Measurement Channels, and the Black-Hole Recovery Boundary",
+        "updated": "2026-07-29T10:49:52.175496+02:00",
+        "version": "v2"
+      },
+      "author_review_required": false,
+      "current_release_state": "current_revised_tex",
+      "version_relation": "current_source_newer_than_release",
+      "revision_audit_sha256": "ade0baa7e4757e650c2ef784df3455d23e6b918e161add231a77d2585ab8eb2a",
+      "research_integration_sha256": "ab7d55cdc973b83a0714eafc276d2fbbb4baf38648a0b62ff1c6aeb5aaa41e12",
+      "changed_files": [
+        "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.tex",
+        "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/metadata.json",
+        "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/REVISION_AUDIT.md",
+        "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/RESEARCH_INTEGRATION.md",
+        "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/paper.md",
+        "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.pdf",
+        "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/paper-markdown.lua"
+      ],
+      "owner_review_ids": [],
+      "consumer_review_ids": [
+        "QM-CONSUMER-BH-CONTINUUM-RECORDER-COMPILER-20260912",
+        "QM-CONSUMER-BH-OPERATIONAL-ONTOLOGY-CUTSET-20260912",
+        "QM-CONSUMER-BH-CANONICAL-OUTPUT-DESCENT-20260912"
+      ],
+      "anchors": [
+        {
+          "source_ref": "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.tex",
+          "line_start": 294,
+          "anchor": "sec:recorder-source-interface"
+        },
+        {
+          "source_ref": "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.tex",
+          "line_start": 49,
+          "anchor": "The canonical measurement construction is already available"
+        }
+      ],
+      "build_checks": {
+        "state": "pass",
+        "command": "python -B scripts/build_contextual_evidence_papers.py --paper-id black-hole-information-loss-and-quantum-measurement-col-7f29501b --jobs 1",
+        "invocation_detail": "Called the existing helper's main() with these CLI arguments and LOG_ROOT redirected only to this paper's editorial-build directory. No global builder/refresh/consolidation was run.",
+        "log_root": "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/editorial-build",
+        "summary": "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/editorial-build/summary.json",
+        "pdflatex_passes": 3,
+        "overfull_boxes": 0,
+        "underfull_boxes": 0,
+        "undefined_references_or_citations": 0,
+        "missing_glyph_or_fatal_errors": 0
+      },
+      "pdf_inspection": {
+        "state": "passed",
+        "reviewer": "Codex QM contextual editorial subagent",
+        "reviewed_at": "2026-09-12",
+        "all_pages_inspected": true,
+        "enlarged_page_views": [
+          1,
+          5,
+          6
+        ],
+        "inspection_method": "All pages inspected in 2x2 contact sheets. After final layout refinements, every changed page was reinspected; byte-identical page PNGs retained their prior completed visual inspection. New mathematical passages and revision notes additionally inspected as individual full-page images.",
+        "final_changed_pages_reinspected": [
+          "page-09.png",
+          "page-10.png"
+        ],
+        "checks": [
+          "no clipping or overlap",
+          "readable mathematical displays",
+          "revision notes and historical notes retained",
+          "page numbers and section transitions coherent",
+          "bibliography legible"
+        ],
+        "independent_theorem_verification": false
+      },
+      "publication_checks": {
+        "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+        "source_file_hashes": "pass",
+        "source_tree_hash": "pass",
+        "bibliography_entries": 12,
+        "cited_keys": 12,
+        "markdown_citations": "pass",
+        "historical_revision_notes_preserved": 1,
+        "formal_blocks_before": 9,
+        "formal_blocks_after": 9,
+        "formal_blocks_unchanged": true,
+        "pdf_pages": 10,
+        "pdf_title": "Projected Information Loss in Modal Triplet Theory: Fiber Dynamics, Measurement Channels, and the Black-Hole Recovery Boundary",
+        "no_blank_pages": true
+      },
+      "generated_outputs": {
+        "pdf": "main.pdf compiled by scripts/build_contextual_evidence_papers.py",
+        "markdown": "paper.md regenerated separately by migrate.build_markdown through the allowlisted local editorial_artifacts.py wrapper and paper-local Lua filter",
+        "local_metadata": "Current main/source-tree/Markdown/revision-audit hashes refreshed by the paper-local allowlisted artifact helper; released Zenodo records untouched",
+        "intermediates": "Paper-local TeX auxiliary/bibliography/log files, editorial-build summaries, 110-dpi page PNGs and contact sheets. No global output was generated."
+      }
+    },
+    {
+      "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+      "version": "v3",
+      "main_tex_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
+      "main_tex_lf_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
+      "source_tree_sha256": "af74f44db2cf483716d3afbd1577ae64414b6a66f3746851bb7edde8a97a901f",
+      "paper_md_sha256": "7eabe2427c95fdc0c07941bb1a84315b9c1b3133fda6bfc85d5aa001c544a3b1",
+      "pdf_sha256": "20fb159886bdc8516b8cde5b94bd3316f1848197fc9da7cc20c97434e1e98525",
+      "pdf_pages": 11,
+      "source_files": [
+        {
+          "path": "main.pdf",
+          "bytes": 362723,
+          "sha256": "20fb159886bdc8516b8cde5b94bd3316f1848197fc9da7cc20c97434e1e98525"
+        },
+        {
+          "path": "main.tex",
+          "bytes": 30511,
+          "sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5"
+        },
+        {
+          "path": "REVISION_AUDIT.md",
+          "bytes": 8021,
+          "sha256": "04a6a04d88959e64b9ec34c8496527626d29d3219845ff8750dd415af9bb7ba4"
+        },
+        {
+          "path": "series.sty",
+          "bytes": 3784,
+          "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+        },
+        {
+          "path": "paper-markdown.lua",
+          "bytes": 4458,
+          "sha256": "3d9060d49d0c0e448ff27b6c62d412c51c46448ce0c6dc20657421c2e684016b"
+        }
+      ],
+      "previous_version": "v2",
+      "current_version": "v3",
+      "version_increment_count": 1,
+      "released_identity_preserved": true,
+      "latest_zenodo_release": {
+        "concept_doi": "10.5281/zenodo.18261892",
+        "created": "2026-07-29T10:52:39.632808+02:00",
+        "creators": [
+          "Nero, Peter"
+        ],
+        "doi": "10.5281/zenodo.21666019",
+        "files": [
+          {
+            "checksum": "md5:487d2d318606bd379e07720de8c8207d",
+            "content_url": "https://zenodo.org/api/records/21666019/files/main.pdf/content",
+            "key": "main.pdf",
+            "size": 353854
+          }
+        ],
+        "id": "21666019",
+        "match_kind": "published_draft_reconciliation",
+        "match_score": 1,
+        "publication_date": "2026-07-29",
+        "record_url": "https://zenodo.org/records/21666019",
+        "resource_type": "publication",
+        "title": "Why Decoherence Cannot Replace Measurement Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
+        "updated": "2026-07-29T10:52:40.095115+02:00",
+        "version": "v2"
+      },
+      "author_review_required": false,
+      "current_release_state": "current_revised_tex",
+      "version_relation": "current_source_newer_than_release",
+      "revision_audit_sha256": "04a6a04d88959e64b9ec34c8496527626d29d3219845ff8750dd415af9bb7ba4",
+      "research_integration_sha256": "f93b7aaf133527e285e996d60e6118f13d74b022bdb881d209ded3decd527b24",
+      "changed_files": [
+        "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.tex",
+        "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/metadata.json",
+        "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/REVISION_AUDIT.md",
+        "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/RESEARCH_INTEGRATION.md",
+        "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/paper.md",
+        "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.pdf",
+        "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/paper-markdown.lua"
+      ],
+      "owner_review_ids": [],
+      "consumer_review_ids": [
+        "QM-CONSUMER-DECOHERENCE-CONTINUUM-RECORDER-COMPILER-20260912",
+        "QM-CONSUMER-DECOHERENCE-OPERATIONAL-ONTOLOGY-CUTSET-20260912"
+      ],
+      "anchors": [
+        {
+          "source_ref": "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.tex",
+          "line_start": 407,
+          "anchor": "sec:recorder-source-interface"
+        }
+      ],
+      "build_checks": {
+        "state": "pass",
+        "command": "python -B scripts/build_contextual_evidence_papers.py --paper-id why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2 --jobs 1",
+        "invocation_detail": "Called the existing helper's main() with these CLI arguments and LOG_ROOT redirected only to this paper's editorial-build directory. No global builder/refresh/consolidation was run.",
+        "log_root": "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/editorial-build",
+        "summary": "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/editorial-build/summary.json",
+        "pdflatex_passes": 3,
+        "overfull_boxes": 0,
+        "underfull_boxes": 0,
+        "undefined_references_or_citations": 0,
+        "missing_glyph_or_fatal_errors": 0
+      },
+      "pdf_inspection": {
+        "state": "passed",
+        "reviewer": "Codex QM contextual editorial subagent",
+        "reviewed_at": "2026-09-12",
+        "all_pages_inspected": true,
+        "enlarged_page_views": [
+          1,
+          7
+        ],
+        "inspection_method": "All pages inspected in 2x2 contact sheets. After final layout refinements, every changed page was reinspected; byte-identical page PNGs retained their prior completed visual inspection. New mathematical passages and revision notes additionally inspected as individual full-page images.",
+        "final_changed_pages_reinspected": [
+          "page-10.png",
+          "page-11.png"
+        ],
+        "checks": [
+          "no clipping or overlap",
+          "readable mathematical displays",
+          "revision notes and historical notes retained",
+          "page numbers and section transitions coherent",
+          "bibliography legible"
+        ],
+        "independent_theorem_verification": false
+      },
+      "publication_checks": {
+        "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+        "source_file_hashes": "pass",
+        "source_tree_hash": "pass",
+        "bibliography_entries": 12,
+        "cited_keys": 11,
+        "markdown_citations": "pass",
+        "historical_revision_notes_preserved": 1,
+        "formal_blocks_before": 13,
+        "formal_blocks_after": 13,
+        "formal_blocks_unchanged": true,
+        "pdf_pages": 11,
+        "pdf_title": "Why Decoherence Cannot Replace Measurement",
+        "no_blank_pages": true
+      },
+      "generated_outputs": {
+        "pdf": "main.pdf compiled by scripts/build_contextual_evidence_papers.py",
+        "markdown": "paper.md regenerated separately by migrate.build_markdown through the allowlisted local editorial_artifacts.py wrapper and paper-local Lua filter",
+        "local_metadata": "Current main/source-tree/Markdown/revision-audit hashes refreshed by the paper-local allowlisted artifact helper; released Zenodo records untouched",
+        "intermediates": "Paper-local TeX auxiliary/bibliography/log files, editorial-build summaries, 110-dpi page PNGs and contact sheets. No global output was generated."
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "id": "QM-CORR-PULLBACK-CLOSEDNESS-20260912",
+      "kind": "manuscript_mathematical_correction",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "state": "corrected_locally_consumer_guidance_pending_parent",
+      "shared_source_erratum_required": false,
+      "consumer_correction_required": true,
+      "source": {
+        "path": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+        "version": "v4",
+        "base_commit": "838a0860ed8cdca474d1c11ef2fa063f2a5f908d",
+        "old_line_start": 369,
+        "old_line_end": 371,
+        "exact_text": "The old paper used a bounded pullback as if it automatically preserved\nclosedness.  That is false without additional control."
+      },
+      "defect": "This incorrectly denies closedness of bounded pullback on the full preimage domain.",
+      "correction": "For bounded I and closed semibounded q, q(Ix,Iy) on I^{-1}D(q) is closed and semibounded. A sufficiently shifted pullback norm is equivalent to ||x||^2+q_beta(Ix); its Cauchy sequences converge downstairs and in the upstairs form norm, with limits identified by boundedness. Domain density and reducing-operator identification remain separate.",
+      "bounded_explanation": "On l2, q(v)=sum n^2|v_n|^2 and I:C->l2, Ic=(c/n), give preimage domain {0}. The existing closed reducing-isometry proposition is retained.",
+      "consumer_guidance": "Do not repeat the v4 objection to closedness. State full-preimage domain, density and operator/domain reduction explicitly. This correction is not a claim that a cost pullback or arbitrary cutoff is a physical reducing isometry. The old revision note/audit remain visibly historical.",
+      "current_locations": [
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 411,
+          "anchor": "sec:pullback-correction"
+        },
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 414,
+          "anchor": "prop:closed-pullback"
+        }
+      ],
+      "frozen_sources_modified": false
+    },
+    {
+      "id": "QM-CORR-NO-COUNT-EFFECT-20260912",
+      "kind": "frozen_source_wording_erratum",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "state": "corrected_in_consumer_shared_erratum_requested",
+      "shared_source_erratum_required": true,
+      "consumer_correction_required": true,
+      "result_ids": [
+        "qm_current_status"
+      ],
+      "source": {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/qm_current_status/artifact.md",
+        "sha256": "27e71d1a3e99233b8ad9789ddeeb6923dd92d0a62137d1034743c1d2be03ad3c",
+        "line_start": 577,
+        "line_end": 579,
+        "exact_text": "Its no-count propagator and first-count effects\nare\n`exp(-gamma u)I` and `gamma exp(-gamma s)P_a ds`."
+      },
+      "defect": "The first displayed object is the no-count effect, not its propagator/Kraus amplitude.",
+      "correction": "Replace 'no-count propagator' by 'no-count effect', or replace that formula by K0(u)=exp(-gamma*u/2)I and separately state F_u(ready)=K0* K0=exp(-gamma*u)I. First-count effects remain gamma*exp(-gamma*s)*P_a ds.",
+      "retained_scope": "Exact selected binary stopped probabilities, instrument normalization and second-moment descent are unchanged. The underlying Fock-output source proof already has the correct half-exponent amplitude.",
+      "support": {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-qm-source-proof/proof_corpus/Canonical_q79_Fock_Output_Measure_and_Second_Moment_Capture_Descent_Theorem_v1.md",
+        "sha256": "3d22a3be695cffa9f1366dd173b1cd544a9d0e3764722a2a3187919364175978",
+        "line_start": 162,
+        "line_end": 184
+      },
+      "bounded_check": "test_no_count_amplitude_effect checks the one-anchor numerical distinction only; the underlying source proof was read, not independently reproved.",
+      "current_locations": [
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 749,
+          "anchor": "sec:no-count-correction"
+        },
+        {
+          "source_ref": "papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex",
+          "line_start": 217,
+          "anchor": "sec:frozen-output"
+        }
+      ],
+      "frozen_sources_modified": false
+    },
+    {
+      "id": "QM-CORR-QUASIFREE-CONVEXITY-20260912",
+      "kind": "frozen_source_mathematical_wording_erratum",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "state": "corrected_in_consumer_shared_erratum_requested",
+      "shared_source_erratum_required": true,
+      "consumer_correction_required": true,
+      "result_ids": [
+        "q79_free_dirac_car_net"
+      ],
+      "source": {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_free_dirac_car_net/artifact.json",
+        "sha256": "a08510eb3ac77607094bf9e5469523b6c0e4841680ff2e729f592fbbeb66e36d",
+        "line_start": 384,
+        "line_end": 384,
+        "json_pointer": "/state_space/assignment",
+        "exact_text": "S_Had(O) is the nonempty convex set of positive normalized quasifree states whose two-point distribution has the Dirac Hadamard wavefront set"
+      },
+      "defect": "Quasifree states are not generally closed under convex mixtures.",
+      "correction": "Use a nonempty quasifree Hadamard class without asserting convexity, or use its convex hull inside ordinary positive normalized Hadamard states without calling all elements quasifree.",
+      "bounded_explanation": "For two CAR modes, the half-vacuum/half-double-occupation mixture has <n1>=<n2>=1/2, <n1 n2>=1/2 and vanishing cross/anomalous two-point correlations. Wick factorization of a quasifree state with those two-point data would give 1/4. Convexity does not restore quasifreeness.",
+      "retained_scope": "The selected free CAR/even net, locality, time-slice construction, existence of quasifree Hadamard states, ordinary positivity and free GNS scope remain intact. This is not a blanket downgrade of the free-field theorem.",
+      "bounded_check": "test_quasifree_mixture_counterexample checks the finite occupation arithmetic; no full curved-spacetime source theorem was independently verified.",
+      "current_locations": [
+        {
+          "source_ref": "papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex",
+          "line_start": 1162,
+          "anchor": "sec:free-dirac"
+        }
+      ],
+      "frozen_sources_modified": false
+    }
+  ],
+  "text_reviews": [
+    {
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "existing_boundary_retained_with_contextual_imports",
+      "coherence_reconciliations_reviewed": [
+        {
+          "id": "C.QM.01",
+          "prior_text_status": "already_satisfied",
+          "prior_integration_status": "needs_result_integration",
+          "missing_evidence_groups": []
+        },
+        {
+          "id": "C.MEASURE.01",
+          "prior_text_status": "already_satisfied",
+          "prior_integration_status": "needs_result_integration",
+          "missing_evidence_groups": []
+        }
+      ],
+      "anchors": [
+        "sec:recorder-consumer",
+        "sec:probability"
+      ],
+      "assessment": "The actual manuscript already separated ordinary physical measurement, operational record law and stronger universal/actualization claims. Those statements were read in context, not accepted from regex evidence. Added scoped continuum/ontology explanation supplies the missing source-consumer relation without duplicating formal proofs."
+    },
+    {
+      "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "existing_boundary_retained_with_contextual_imports",
+      "coherence_reconciliations_reviewed": [
+        {
+          "id": "C.QM.01",
+          "prior_text_status": "already_satisfied",
+          "prior_integration_status": "needs_result_integration",
+          "missing_evidence_groups": []
+        }
+      ],
+      "anchors": [
+        "sec:continuum-recorder",
+        "sec:ontology-consumer"
+      ],
+      "assessment": "The actual manuscript already separated ordinary physical measurement, operational record law and stronger universal/actualization claims. Those statements were read in context, not accepted from regex evidence. Added scoped continuum/ontology explanation supplies the missing source-consumer relation without duplicating formal proofs."
+    },
+    {
+      "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "existing_boundary_retained_with_contextual_imports",
+      "coherence_reconciliations_reviewed": [],
+      "anchors": [
+        "sec:ontology-nonentailment"
+      ],
+      "assessment": "The current queue has no applicable coherence reconciliation or title placement for this paper. Its separate ontology owner assignment was read and integrated. The local-first account remains an unpublished interpretive proposal, not a source-selected actualization theorem."
+    },
+    {
+      "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "existing_boundary_retained_with_contextual_imports",
+      "coherence_reconciliations_reviewed": [
+        {
+          "id": "C.MEASURE.01",
+          "prior_text_status": "already_satisfied",
+          "prior_integration_status": "needs_result_integration",
+          "missing_evidence_groups": []
+        }
+      ],
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The actual manuscript already separated ordinary physical measurement, operational record law and stronger universal/actualization claims. Those statements were read in context, not accepted from regex evidence. Added scoped continuum/ontology explanation supplies the missing source-consumer relation without duplicating formal proofs."
+    },
+    {
+      "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "applied_text_correction",
+      "coherence_reconciliations_reviewed": [
+        {
+          "id": "C.MEASURE.01",
+          "prior_text_status": "already_satisfied",
+          "prior_integration_status": "needs_result_integration",
+          "missing_evidence_groups": []
+        }
+      ],
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The previous selected exit/conclusion asked for a concrete measurement instrument as if none existed. The existing canonical instrument is now acknowledged, with the genuinely missing common measurement/black-hole source, exterior/recovery maps and both Born/Hawking pushforwards stated. Ordinary measurement, selected conditioning and recovery-on-code were already present and are retained.",
+      "text_review": {
+        "prior_scope": "v2 selected MTT exit contract and conclusion",
+        "resolution": "Canonical recorder already supplies one concrete instrument on its domain; the open target is the common-source paired measurement/black-hole construction.",
+        "locations": [
+          {
+            "source_ref": "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.tex",
+            "line_start": 49,
+            "anchor": "The canonical measurement construction is already available"
+          },
+          {
+            "source_ref": "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.tex",
+            "line_start": 435,
+            "anchor": "canonical recorder already supplies a concrete instance"
+          },
+          {
+            "source_ref": "papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.tex",
+            "line_start": 469,
+            "anchor": "to connect an already selected measurement instrument"
+          }
+        ]
+      }
+    },
+    {
+      "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex QM contextual editorial subagent",
+      "state": "existing_boundary_retained_with_contextual_imports",
+      "coherence_reconciliations_reviewed": [
+        {
+          "id": "C.MEASURE.01",
+          "prior_text_status": "already_satisfied",
+          "prior_integration_status": "needs_result_integration",
+          "missing_evidence_groups": []
+        }
+      ],
+      "anchors": [
+        "sec:recorder-source-interface"
+      ],
+      "assessment": "The actual manuscript already separated ordinary physical measurement, operational record law and stronger universal/actualization claims. Those statements were read in context, not accepted from regex evidence. Added scoped continuum/ontology explanation supplies the missing source-consumer relation without duplicating formal proofs."
+    }
+  ],
+  "source_read_coverage": {
+    "statement": "Each of the nineteen assigned frozen artifacts was read in full, including its mathematical explanations, qualifications and later sections, before final disposition. The whole initial manuscripts and current added passages were read in context. Source hash equality and small illustrative checks are not independent source-theorem verification.",
+    "frozen_manifest_commit": "f141a20ea23c5c3ff19cc2161c0e226e29ade8a7",
+    "frozen_artifact_count": 19,
+    "total_frozen_lines": 11738,
+    "total_frozen_bytes": 455865,
+    "frozen_artifacts": [
+      {
+        "bytes": 55994,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/qm_current_status/artifact.md",
+        "sha256": "27e71d1a3e99233b8ad9789ddeeb6923dd92d0a62137d1034743c1d2be03ad3c",
+        "expected_sha256": "27e71d1a3e99233b8ad9789ddeeb6923dd92d0a62137d1034743c1d2be03ad3c",
+        "lines": 973,
+        "result_id": "qm_current_status",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            973
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full Markdown source reading in bounded line chunks",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-QM-CURRENT-STATUS-20260912"
+      },
+      {
+        "bytes": 7329,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_canonical_quantum_model/artifact.json",
+        "sha256": "3a9b2caa8e7db273f05c8310b430521ca13ca9c4ea352af01a03cfd31a3263c0",
+        "expected_sha256": "3a9b2caa8e7db273f05c8310b430521ca13ca9c4ea352af01a03cfd31a3263c0",
+        "lines": 134,
+        "result_id": "q79_canonical_quantum_model",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            134
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-CANONICAL-QUANTUM-MODEL-20260912"
+      },
+      {
+        "bytes": 9068,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_fock_output_measure/artifact.json",
+        "sha256": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e",
+        "expected_sha256": "483404470854e6a888f890ad129160b52d3ca38c6a471b73947da5e78d34496e",
+        "lines": 151,
+        "result_id": "q79_fock_output_measure",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            151
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-FOCK-OUTPUT-MEASURE-20260912"
+      },
+      {
+        "bytes": 7462,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_minimal_recorder_action/artifact.json",
+        "sha256": "84a48214fc273434ebc88be0436b6ff7f31743a8e3910e826157bd34a3578a3c",
+        "expected_sha256": "84a48214fc273434ebc88be0436b6ff7f31743a8e3910e826157bd34a3578a3c",
+        "lines": 136,
+        "result_id": "q79_minimal_recorder_action",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            136
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-MINIMAL-RECORDER-ACTION-20260912"
+      },
+      {
+        "bytes": 8330,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_hessian_recorder_source/artifact.json",
+        "sha256": "298f7f7abc5d2c00b1f9e6875c461cd7f061f4e53d850d77dcc3ac07eee71c15",
+        "expected_sha256": "298f7f7abc5d2c00b1f9e6875c461cd7f061f4e53d850d77dcc3ac07eee71c15",
+        "lines": 239,
+        "result_id": "q79_hessian_recorder_source",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            239
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-HESSIAN-RECORDER-SOURCE-20260912"
+      },
+      {
+        "bytes": 13525,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_free_dirac_car_net/artifact.json",
+        "sha256": "a08510eb3ac77607094bf9e5469523b6c0e4841680ff2e729f592fbbeb66e36d",
+        "expected_sha256": "a08510eb3ac77607094bf9e5469523b6c0e4841680ff2e729f592fbbeb66e36d",
+        "lines": 403,
+        "result_id": "q79_free_dirac_car_net",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            403
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-FREE-DIRAC-CAR-NET-20260912"
+      },
+      {
+        "bytes": 21160,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_local_qme/artifact.json",
+        "sha256": "2eda00330756193f6a19361c4154f378621f445ed5ad399d0d953cc042617f35",
+        "expected_sha256": "2eda00330756193f6a19361c4154f378621f445ed5ad399d0d953cc042617f35",
+        "lines": 473,
+        "result_id": "q79_local_qme",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            473
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-LOCAL-QME-20260912"
+      },
+      {
+        "bytes": 29150,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_free_cstar_nonpromotion/artifact.json",
+        "sha256": "7e4e198365fe2929df8722749a5e0443cff0c3cf59cf9f16ba8259b4d0ad3c7e",
+        "expected_sha256": "7e4e198365fe2929df8722749a5e0443cff0c3cf59cf9f16ba8259b4d0ad3c7e",
+        "lines": 936,
+        "result_id": "q79_free_cstar_nonpromotion",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            936
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-FREE-CSTAR-NONPROMOTION-20260912"
+      },
+      {
+        "bytes": 35279,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_projective_hym_naturality/artifact.json",
+        "sha256": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+        "expected_sha256": "adf45796350129aec27462c52d14409211310826741f774792e81b7098015899",
+        "lines": 1043,
+        "result_id": "q79_projective_hym_naturality",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            1043
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-PROJECTIVE-HYM-NATURALITY-20260912"
+      },
+      {
+        "bytes": 28189,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_cech_projector_compiler/artifact.json",
+        "sha256": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "expected_sha256": "9943a7c611fa859b998fafced8aa2b9c489038fc8295aa13f686e2c082409af7",
+        "lines": 650,
+        "result_id": "q79_cech_projector_compiler",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            650
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-CECH-PROJECTOR-COMPILER-20260912"
+      },
+      {
+        "bytes": 44633,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_spectral_strain_hessian/artifact.json",
+        "sha256": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "expected_sha256": "fff5af44b5ccebe95f5045d95218a98a55fd5610b9142d8e4da8d6f1a6912d23",
+        "lines": 1469,
+        "result_id": "q79_spectral_strain_hessian",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            1469
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-SPECTRAL-STRAIN-HESSIAN-20260912"
+      },
+      {
+        "bytes": 47734,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_support_stratified_strain/artifact.json",
+        "sha256": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8",
+        "expected_sha256": "839119f6b4d68894a16fdc1752beee6fec4c60e49606ef6f6231319e2c2c5ea8",
+        "lines": 1014,
+        "result_id": "q79_support_stratified_strain",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            1014
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-SUPPORT-STRATIFIED-STRAIN-20260912"
+      },
+      {
+        "bytes": 21088,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_monodromy_reynolds_descent/artifact.json",
+        "sha256": "ade778235cad2f3500afc6eae6547906d9f1b9603310ac6b546ba33060e0845b",
+        "expected_sha256": "ade778235cad2f3500afc6eae6547906d9f1b9603310ac6b546ba33060e0845b",
+        "lines": 561,
+        "result_id": "q79_monodromy_reynolds_descent",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            561
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-MONODROMY-REYNOLDS-DESCENT-20260912"
+      },
+      {
+        "bytes": 26190,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_shared_root_c4_promotion/artifact.json",
+        "sha256": "84085ed97f583699ea7ca71ec65d1f8c0899b0e5128e0010eefd37ee1f1bff9d",
+        "expected_sha256": "84085ed97f583699ea7ca71ec65d1f8c0899b0e5128e0010eefd37ee1f1bff9d",
+        "lines": 879,
+        "result_id": "q79_shared_root_c4_promotion",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            879
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-SHARED-ROOT-C4-PROMOTION-20260912"
+      },
+      {
+        "bytes": 21129,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_fm_hym_dependency_compression/artifact.json",
+        "sha256": "7b8950ec0f0f5cce7a84fe8a7907e355876910488d901911eb49395657d26dbc",
+        "expected_sha256": "7b8950ec0f0f5cce7a84fe8a7907e355876910488d901911eb49395657d26dbc",
+        "lines": 411,
+        "result_id": "q79_fm_hym_dependency_compression",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            411
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-FM-HYM-DEPENDENCY-COMPRESSION-20260912"
+      },
+      {
+        "bytes": 35300,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_family_source_cutset/artifact.json",
+        "sha256": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e",
+        "expected_sha256": "503dff7603b0167e696c7ac01725978791280492d3d04ade685d9668532ce71e",
+        "lines": 1166,
+        "result_id": "q79_family_source_cutset",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            1166
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-FAMILY-SOURCE-CUTSET-20260912"
+      },
+      {
+        "bytes": 15891,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_continuum_recorder_compiler/artifact.json",
+        "sha256": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "expected_sha256": "3d7e3bda73e1270271699ba9c2ef5572efca14b74c3ae3d3375d5fb68c2210eb",
+        "lines": 412,
+        "result_id": "q79_continuum_recorder_compiler",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            412
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-CONTINUUM-RECORDER-COMPILER-20260912"
+      },
+      {
+        "bytes": 13633,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_ontology_nonentailment/artifact.json",
+        "sha256": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c",
+        "expected_sha256": "4319a35f1fa6afa28a84ab9b279133d486d62828aa0a1f34212852d8ac7fa25c",
+        "lines": 270,
+        "result_id": "q79_ontology_nonentailment",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            270
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-ONTOLOGY-NONENTAILMENT-20260912"
+      },
+      {
+        "bytes": 14781,
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-results-repro/release/results/q79_projective_record_descent/artifact.json",
+        "sha256": "66442357dc4396773b88e8525b7a874d98cec1b40321b14ed7f3fd92405d41d3",
+        "expected_sha256": "66442357dc4396773b88e8525b7a874d98cec1b40321b14ed7f3fd92405d41d3",
+        "lines": 418,
+        "result_id": "q79_projective_record_descent",
+        "hash_match": true,
+        "read_line_ranges": [
+          [
+            1,
+            418
+          ]
+        ],
+        "read_scope": "entire frozen artifact, including theorem/proof explanations, examples, assumptions, exclusions, status qualifications and source bindings",
+        "method": "Full JSON artifact reading in bounded line chunks; structured fields and embedded mathematical explanations, not merely the check booleans",
+        "independent_source_theorem_verification": false,
+        "review_id": "QM-OWNER-Q79-PROJECTIVE-RECORD-DESCENT-20260912"
+      }
+    ],
+    "special_refinement_handling": [
+      {
+        "result_id": "qm_current_status",
+        "assessment": "All 973 lines read, including the later formal-positive-state, regulator, Lorentzian-bridge and physical-source refinements. Only obsolete per-route status counts are historical. The source as a whole is integrated, not disposed of from its early header."
+      },
+      {
+        "result_ids": [
+          "q79_spectral_strain_hessian",
+          "q79_support_stratified_strain",
+          "q79_monodromy_reynolds_descent",
+          "q79_shared_root_c4_promotion"
+        ],
+        "assessment": "Read sequential refinements together: regular-stratum shorting, support-boundary value function, monodromy versus deck symmetry, and the additive shared-root C4 symbol. Corrected boundaries are retained without reopening established symbol/operational results."
+      },
+      {
+        "result_ids": [
+          "q79_projective_hym_naturality",
+          "q79_cech_projector_compiler",
+          "q79_fm_hym_dependency_compression",
+          "q79_family_source_cutset",
+          "q79_free_cstar_nonpromotion"
+        ],
+        "assessment": "Read geometric realization, explicit connection correction, dependency compression and analytic family/free-field refinements together. Compiler existence and finite coefficient witnesses are not promoted to physical source selection."
+      }
+    ],
+    "supporting_proofs": [
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-qm-source-proof/proof_corpus/Canonical_q79_Fock_Output_Measure_and_Second_Moment_Capture_Descent_Theorem_v1.md",
+        "sha256": "3d22a3be695cffa9f1366dd173b1cd544a9d0e3764722a2a3187919364175978",
+        "bytes": 12854,
+        "lines": 552,
+        "read_line_ranges": [
+          [
+            1,
+            552
+          ]
+        ],
+        "role": "Read-only full source-proof clarification; the amplitude/effect derivation at lines 162-184 corrects the later status-file wording. Not a substitute for the frozen artifact hash."
+      },
+      {
+        "path": "C:/Users/nero_/Downloads/TEXPAPERS/mtt-qm-source-proof/proof_corpus/Canonical_q79_Hessian_SquareRoot_to_Minimal_Recorder_Source_Theorem_v1.md",
+        "sha256": "33f382eb69f1d8e2817aff3eed7b19da43ee85deff54949b82f4282127c97447",
+        "bytes": 9965,
+        "lines": 329,
+        "read_line_ranges": [
+          [
+            1,
+            329
+          ]
+        ],
+        "role": "Read-only full source-proof clarification of defect normalization, square-root support, recorder minimality and rate/source separation."
+      }
+    ],
+    "manuscripts": [
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "previous_version": "v4",
+        "current_version": "v5",
+        "main_tex_lf_sha256": "ab4bb268ca213deaa12bfde656a1edb05c5c80b4a58266847b21677c31cb50e1",
+        "current_lines": 1516,
+        "read_scope": "Whole pre-edit manuscript; contextual reading of every revision and complete final PDF visual review",
+        "pdf_pages": 26,
+        "all_pdf_pages_visually_inspected": true
+      },
+      {
+        "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+        "previous_version": "v2",
+        "current_version": "v3",
+        "main_tex_lf_sha256": "d145ee5207be27cfacc93edf6157bafd6b6b9294b28ed7a1904ec170a87b67c2",
+        "current_lines": 739,
+        "read_scope": "Whole pre-edit manuscript; contextual reading of every revision and complete final PDF visual review",
+        "pdf_pages": 12,
+        "all_pdf_pages_visually_inspected": true
+      },
+      {
+        "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+        "previous_version": "v1",
+        "current_version": "v2",
+        "main_tex_lf_sha256": "2e3add5531a1a585b2797f524abe9513664bd28ad46bc798c2977ef9ec4609ac",
+        "current_lines": 792,
+        "read_scope": "Whole pre-edit manuscript; contextual reading of every revision and complete final PDF visual review",
+        "pdf_pages": 23,
+        "all_pdf_pages_visually_inspected": true
+      },
+      {
+        "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+        "previous_version": "v6",
+        "current_version": "v7",
+        "main_tex_lf_sha256": "c9379807cef8584ef8330f5fef8c4682a7677da928d81dc11d1e4608078ab5b8",
+        "current_lines": 727,
+        "read_scope": "Whole pre-edit manuscript; contextual reading of every revision and complete final PDF visual review",
+        "pdf_pages": 12,
+        "all_pdf_pages_visually_inspected": true
+      },
+      {
+        "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+        "previous_version": "v2",
+        "current_version": "v3",
+        "main_tex_lf_sha256": "6097e1f03f19229d192d6402fdd8d888844793ea3a6656fc7358d312f00fd992",
+        "current_lines": 575,
+        "read_scope": "Whole pre-edit manuscript; contextual reading of every revision and complete final PDF visual review",
+        "pdf_pages": 10,
+        "all_pdf_pages_visually_inspected": true
+      },
+      {
+        "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+        "previous_version": "v2",
+        "current_version": "v3",
+        "main_tex_lf_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
+        "current_lines": 673,
+        "read_scope": "Whole pre-edit manuscript; contextual reading of every revision and complete final PDF visual review",
+        "pdf_pages": 11,
+        "all_pdf_pages_visually_inspected": true
+      }
+    ],
+    "governance_read": [
+      "AGENTS.md",
+      "PAPER_RELEASE_REQUIREMENTS.md",
+      "THEOREM_OWNERSHIP_AND_STANDALONE_POLICY.md",
+      "CONTINUE_HERE.md",
+      "PDF SKILL.md"
+    ],
+    "authority_read": {
+      "bootstrap_repository": "mtt-papers",
+      "initial_kernel_model_sha256": "bf2643bc78d2c723aa813bbae8d0a50848e1d226a58f0088262d564c751d6715",
+      "scope_rule": "Current A/B authority outranks old source status headers. B.QM.01/B.QM.02 and selected B.QFT.01 closure are retained; B.QM.03, physical HYM/operator-naturalness and fixed-coupling interacting extensions remain separate."
+    }
+  },
+  "prior_review_validity": {
+    "catalog_path": "catalog/research-integration-reviews.json",
+    "catalog_sha256_at_check": "b35ae19584d1e086da68e1de5c806932d2e0c3fe0877d3fb91d699a2e2c39ab0",
+    "total_catalog_entries_at_check": 64,
+    "prior_integrated_or_historical_entries_for_edited_papers": 0,
+    "entries": [],
+    "disposition": "No prior owner-review entry in the inspected 64-entry catalog names any of these six paper IDs. Thus there is no prior owner-review anchor to restamp in this scope. This is separate from the historically integrated Kernel canonical-output placement, whose source statement remains present.",
+    "historical_kernel_placement": {
+      "result_id": "R.QM.CANONICAL_OUTPUT_DESCENT",
+      "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+      "anchors": [
+        "sec:q79",
+        "sec:canonical-model",
+        "sec:no-count-correction"
+      ],
+      "assessment": "The exact selected binary output law and second-moment descent remain present in Section 9. The effect/amplitude wording correction preserves that law. This historical completion is not reopened or duplicated solely because it surfaced as a title suggestion."
+    },
+    "retained_proof_paragraphs": [
+      {
+        "paper_id": "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "formal_blocks_before": 7,
+        "formal_blocks_after": 7,
+        "mathematical_bodies_preserved": true,
+        "comparison": "All seven formal blocks match the baseline after normalizing only reference type names and whitespace. The bounded-pullback correction is outside the retained formal blocks."
+      },
+      {
+        "paper_id": "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+        "formal_blocks_before": 4,
+        "formal_blocks_after": 4,
+        "mathematical_bodies_preserved": true,
+        "comparison": "Formal blocks are byte-identical to the pre-edit baseline; no source theorem/proof bodies added."
+      },
+      {
+        "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+        "formal_blocks_before": 0,
+        "formal_blocks_after": 0,
+        "mathematical_bodies_preserved": true,
+        "comparison": "Formal blocks are byte-identical to the pre-edit baseline; no source theorem/proof bodies added."
+      },
+      {
+        "paper_id": "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+        "formal_blocks_before": 12,
+        "formal_blocks_after": 12,
+        "mathematical_bodies_preserved": true,
+        "comparison": "Formal blocks are byte-identical to the pre-edit baseline; no source theorem/proof bodies added."
+      },
+      {
+        "paper_id": "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+        "formal_blocks_before": 9,
+        "formal_blocks_after": 9,
+        "mathematical_bodies_preserved": true,
+        "comparison": "Formal blocks are byte-identical to the pre-edit baseline; no source theorem/proof bodies added."
+      },
+      {
+        "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
+        "formal_blocks_before": 13,
+        "formal_blocks_after": 13,
+        "mathematical_bodies_preserved": true,
+        "comparison": "Formal blocks are byte-identical to the pre-edit baseline; no source theorem/proof bodies added."
+      }
+    ],
+    "prior_revision_notes": "All six old revision-note blocks and old audits are preserved verbatim. The QM v4 bounded-pullback statement remains only as explicitly superseded historical provenance; parent must not treat it as current mathematics.",
+    "rebind_guidance": "Use the final paper_changes hashes for genuine retained reviews elsewhere in parent integration. Do not turn the retained historical v4 pullback wording into a current assessment. The 19 new owner reviews and 11 consumer reviews here already bind the final manuscripts."
+  },
+  "checks": {
+    "scoped_builds": "6/6 passed using the required single-paper helper and jobs=1",
+    "pdf_visual_review": "94/94 pages rendered and visually inspected; individual enlarged views of new passages/revision notes; final changed pages reinspected and byte-identical pages retain their completed inspection",
+    "source_hashes": "All 19 frozen byte hashes match ownership catalog and fragment",
+    "metadata": "Current TeX/Markdown/source-tree/audit hashes validated; released identities, source provenance and historical revision notes preserved",
+    "bibliography": "All cited keys resolve in local TeX bibliography and generated Markdown",
+    "formal_proof_blocks": "No imported formal theorem/proof blocks added. Born, Locality, Measurement, BH and Decoherence formal blocks are byte-identical to baseline; QM retains seven blocks with reference-label wording fixes only. The bounded-pullback correction is explanatory prose.",
+    "bounded_example_tests": [
+      {
+        "command": "python -B papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/check_editorial_examples.py",
+        "exit_code": 0,
+        "output": "test_boundary_linear_cost (__main__.EditorialExamples.test_boundary_linear_cost) ... ok\r\ntest_c4_covariance_condition (__main__.EditorialExamples.test_c4_covariance_condition) ... ok\r\ntest_checkpoint_normalization (__main__.EditorialExamples.test_checkpoint_normalization) ... ok\r\ntest_equal_clock_condition (__main__.EditorialExamples.test_equal_clock_condition) ... ok\r\ntest_feshbach_coefficient (__main__.EditorialExamples.test_feshbach_coefficient) ... ok\r\ntest_flat_completion_at_one (__main__.EditorialExamples.test_flat_completion_at_one) ... ok\r\ntest_fourier_cutoff_loss (__main__.EditorialExamples.test_fourier_cutoff_loss) ... ok\r\ntest_fourth_moment_is_not_output_effect (__main__.EditorialExamples.test_fourth_moment_is_not_output_effect) ... ok\r\ntest_grid_semigroup (__main__.EditorialExamples.test_grid_semigroup) ... ok\r\ntest_hessian_projector_square_root (__main__.EditorialExamples.test_hessian_projector_square_root) ... ok\r\ntest_no_count_amplitude_effect (__main__.EditorialExamples.test_no_count_amplitude_effect) ... ok\r\ntest_nonselective_purity (__main__.EditorialExamples.test_nonselective_purity) ... ok\r\ntest_projector_ranks (__main__.EditorialExamples.test_projector_ranks) ... ok\r\ntest_quasifree_mixture_counterexample (__main__.EditorialExamples.test_quasifree_mixture_counterexample) ... ok\r\ntest_s3_deck_centralizer (__main__.EditorialExamples.test_s3_deck_centralizer) ... ok\r\ntest_shared_root_restriction (__main__.EditorialExamples.test_shared_root_restriction) ... ok\r\ntest_support_ranks (__main__.EditorialExamples.test_support_ranks) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 17 tests in 0.001s\r\n\r\nOK\r\n"
+      },
+      {
+        "command": "python -B papers/locality-coherent-alternatives-and-records-in-mtt/examples/check_explanatory_examples_v2.py",
+        "exit_code": 0,
+        "output": "test_01_monitor_completeness (__main__.ExplanatoryExamples.test_01_monitor_completeness) ... ok\r\ntest_02_populations_preserved_coherence_reduced (__main__.ExplanatoryExamples.test_02_populations_preserved_coherence_reduced) ... ok\r\ntest_03_right_only_state_unchanged (__main__.ExplanatoryExamples.test_03_right_only_state_unchanged) ... ok\r\ntest_04_balanced_output_table (__main__.ExplanatoryExamples.test_04_balanced_output_table) ... ok\r\ntest_05_partial_and_perfect_null_records (__main__.ExplanatoryExamples.test_05_partial_and_perfect_null_records) ... ok\r\ntest_06_absorption_and_qnd_differ (__main__.ExplanatoryExamples.test_06_absorption_and_qnd_differ) ... ok\r\ntest_07_eraser_subsets_sum_to_mixture (__main__.ExplanatoryExamples.test_07_eraser_subsets_sum_to_mixture) ... ok\r\ntest_08_complex_marker_overlap_convention (__main__.ExplanatoryExamples.test_08_complex_marker_overlap_convention) ... ok\r\ntest_09_independent_system_conditioning (__main__.ExplanatoryExamples.test_09_independent_system_conditioning) ... ok\r\ntest_10_entangled_remote_marginal (__main__.ExplanatoryExamples.test_10_entangled_remote_marginal) ... ok\r\ntest_11_forward_x_disturbance (__main__.ExplanatoryExamples.test_11_forward_x_disturbance) ... ok\r\ntest_12_future_instrument_does_not_change_past_marginal (__main__.ExplanatoryExamples.test_12_future_instrument_does_not_change_past_marginal) ... ok\r\ntest_13_lg_common_joint_bound (__main__.ExplanatoryExamples.test_13_lg_common_joint_bound) ... ok\r\ntest_14_lg_pair_and_triple_protocols (__main__.ExplanatoryExamples.test_14_lg_pair_and_triple_protocols) ... ok\r\ntest_15_independent_bin_count (__main__.ExplanatoryExamples.test_15_independent_bin_count) ... ok\r\ntest_16_number_state_second_order_correlation (__main__.ExplanatoryExamples.test_16_number_state_second_order_correlation) ... ok\r\ntest_17_zeno_example (__main__.ExplanatoryExamples.test_17_zeno_example) ... ok\r\ntest_18_classical_chsh_bound (__main__.ExplanatoryExamples.test_18_classical_chsh_bound) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 18 tests in 0.007s\r\n\r\nOK\r\n"
+      },
+      {
+        "command": "python -B papers/locality-coherent-alternatives-and-records-in-mtt/examples/check_ontology_examples_v1.py",
+        "exit_code": 0,
+        "output": "test_01_reversible_memory_coupling (__main__.OntologyExamples.test_01_reversible_memory_coupling) ... ok\r\ntest_02_identical_pointer_marginals_not_identical_states (__main__.OntologyExamples.test_02_identical_pointer_marginals_not_identical_states) ... ok\r\ntest_03_wigner_coherence_distinguishes_mixture (__main__.OntologyExamples.test_03_wigner_coherence_distinguishes_mixture) ... ok\r\ntest_04_readout_and_coherence_projectors_incompatible (__main__.OntologyExamples.test_04_readout_and_coherence_projectors_incompatible) ... ok\r\ntest_05_undo_without_external_copy (__main__.OntologyExamples.test_05_undo_without_external_copy) ... ok\r\ntest_06_external_record_removes_reduced_coherence (__main__.OntologyExamples.test_06_external_record_removes_reduced_coherence) ... ok\r\ntest_07_undo_sf_alone_does_not_erase_external_record (__main__.OntologyExamples.test_07_undo_sf_alone_does_not_erase_external_record) ... ok\r\ntest_08_reversing_all_copies_restores_interference (__main__.OntologyExamples.test_08_reversing_all_copies_restores_interference) ... ok\r\ntest_09_partial_record_overlap_visibility (__main__.OntologyExamples.test_09_partial_record_overlap_visibility) ... ok\r\ntest_10_canonical_checkpoint_single_label_partition (__main__.OntologyExamples.test_10_canonical_checkpoint_single_label_partition) ... ok\r\ntest_11_world_count_from_coefficients_is_basis_dependent (__main__.OntologyExamples.test_11_world_count_from_coefficients_is_basis_dependent) ... ok\r\ntest_12_same_density_has_different_ensemble_descriptions (__main__.OntologyExamples.test_12_same_density_has_different_ensemble_descriptions) ... ok\r\ntest_13_poisson_race_normalization_given_primitive (__main__.OntologyExamples.test_13_poisson_race_normalization_given_primitive) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 13 tests in 0.011s\r\n\r\nOK\r\n"
+      }
+    ],
+    "local_publication_tests": {
+      "command": "python -B papers/locality-coherent-alternatives-and-records-in-mtt/examples/check_publication_artifacts.py",
+      "passed": 6,
+      "exit_code": 0
+    },
+    "scoped_git_diff_check": "passed",
+    "independent_source_theorem_verification": false,
+    "not_run": [
+      "heavy scientific calculations",
+      "global tests",
+      "refresh_paper_artifacts.py",
+      "freeze_reviewed_artifacts.py",
+      "global consolidation",
+      "Mesh refresh",
+      "Kernel edits"
+    ]
+  },
+  "retained_qualifications": [
+    "Established finite SM/shared-primitive/Yukawa/EW, canonical operational QM, hidden projective rank-nine/existential HYM and finite/local q79 conclusions are not reopened.",
+    "Pure nonnegative repair cost is not the physical signed action; cost pullback is not automatic reducing-operator isometry.",
+    "Physical 9H+3D0 is distinct from auxiliary 3H+3D0; integral ambient quotient uses V-dual; ordinary Neron model is not automatic.",
+    "CBF T69 correction and local T70--T73 versus global Picard/BHT remain parent/owner territory and are not rewritten or downgraded here.",
+    "FP I--VI untouched; measurement remains ordinary physics; Locality is interpretive and author-review required."
+  ],
+  "remaining_genuine_research": [
+    {
+      "scope": "Universal apparatus and source law",
+      "boundary": "General physical preparations/apparatuses, finite bandwidth, detector memory and non-Markov corrections are not covered by the exact canonical binary recorder.",
+      "authority": "B.QM.03"
+    },
+    {
+      "scope": "Physical internal source selection",
+      "boundary": "A common visible/hidden physical HYM/upper-action endpoint, domains/gaps, selected finite comparison map/tails and physical order-four invariance or direct TT block remain distinct inputs. Existential HYM and exact symbol compilers stay closed.",
+      "authority": "B.GEO.01 and B.ACTION.01 physical-source boundaries"
+    },
+    {
+      "scope": "Interacting continuum",
+      "boundary": "Formal local QME, free positive C-star/GNS constructions and finite interacting regulators do not yet supply a positive fixed-coupling interacting continuum theory or complete chiral measure with crossing/transverse/gluing control.",
+      "authority": "B.QFT.02"
+    },
+    {
+      "scope": "Actualization and interpretation",
+      "boundary": "Operational record/instrument data do not entail one-history or coactual ontology. A physical actualization law or explicit interpretive choice is separate, not part of ordinary measurement.",
+      "authority": "B.QM.03"
+    },
+    {
+      "scope": "Black-hole comparison",
+      "boundary": "One common source must connect the selected measurement instrument to a physical exterior/radiation channel, declared recovery code and certified recovery map; a shared Born/Hawking claim also needs both actual pushforwards. No such connection is inferred from the canonical checkpoint."
+    }
+  ],
+  "author_approval_questions": [
+    {
+      "paper_id": "locality-coherent-alternatives-and-records-in-mtt",
+      "question": "The local-first single-world account remains an unpublished interpretive proposal requiring author approval; operational non-entailment does not select that ontology."
+    },
+    {
+      "paper_ids": [
+        "modal-triplet-theory-from-mtt-to-quantum-mechanics",
+        "why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872",
+        "locality-coherent-alternatives-and-records-in-mtt",
+        "measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e",
+        "black-hole-information-loss-and-quantum-measurement-col-7f29501b",
+        "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2"
+      ],
+      "question": "The revised current manuscripts are local editorial revisions, not release approval. Parent/author retains the release decision and review of the three explicit corrections."
+    }
+  ],
+  "remaining_editorial_items_for_parent": [
+    "Integrate the 19 owner entries, rebind global owner hashes only after all assigned authors finish, then integrate the 11 consumer entries with result_source_map.",
+    "Register the two frozen-source errata and the separate bounded-pullback consumer correction; do not silently edit or blanket-downgrade frozen results.",
+    "Apply the parent-owned historical candidate-selection correction, regenerate central catalogs/Kernel ledgers and validate after integration.",
+    "No remaining unreviewed assigned source, unanswered consumer candidate, failed local build or uninspected PDF page remains in this subagent's scope."
+  ],
+  "changed_files_status": " M papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/RESEARCH_INTEGRATION.md\n M papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/REVISION_AUDIT.md\n M papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.pdf\n M papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/main.tex\n M papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/metadata.json\n M papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/paper.md\n M papers/locality-coherent-alternatives-and-records-in-mtt/RESEARCH_INTEGRATION.md\n M papers/locality-coherent-alternatives-and-records-in-mtt/REVISION_AUDIT.md\n M papers/locality-coherent-alternatives-and-records-in-mtt/examples/check_publication_artifacts.py\n M papers/locality-coherent-alternatives-and-records-in-mtt/main.pdf\n M papers/locality-coherent-alternatives-and-records-in-mtt/main.tex\n M papers/locality-coherent-alternatives-and-records-in-mtt/metadata.json\n M papers/locality-coherent-alternatives-and-records-in-mtt/paper-markdown.lua\n M papers/locality-coherent-alternatives-and-records-in-mtt/paper.md\n M papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/RESEARCH_INTEGRATION.md\n M papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/REVISION_AUDIT.md\n M papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/main.pdf\n M papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/main.tex\n M papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/metadata.json\n M papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/paper.md\n M papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/RESEARCH_INTEGRATION.md\n M papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/REVISION_AUDIT.md\n M papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.pdf\n M papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/main.tex\n M papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/metadata.json\n M papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/paper.md\n M papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/RESEARCH_INTEGRATION.md\n M papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/REVISION_AUDIT.md\n M papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.pdf\n M papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/main.tex\n M papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/metadata.json\n M papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/paper.md\n M papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/RESEARCH_INTEGRATION.md\n M papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/REVISION_AUDIT.md\n M papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.pdf\n M papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/main.tex\n M papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/metadata.json\n M papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/paper.md\n?? papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/editorial-build/\n?? papers/black-hole-information-loss-and-quantum-measurement-col-7f29501b/paper-markdown.lua\n?? papers/locality-coherent-alternatives-and-records-in-mtt/editorial-build/\n?? papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/editorial-build/\n?? papers/measurement-as-disturbance-and-stabilization-in-modal-t-8882c66e/paper-markdown.lua\n?? papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/check_editorial_examples.py\n?? papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/consumer-qm.bib\n?? papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial-build/\n?? papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial-config.json\n?? papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/editorial_artifacts.py\n?? papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/frozen-qm.bib\n?? papers/modal-triplet-theory-from-mtt-to-quantum-mechanics/paper-markdown.lua\n?? papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/editorial-build/\n?? papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/paper-markdown.lua\n?? papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/editorial-build/\n?? papers/why-the-born-rule-and-the-classical-limit-are-the-same-a68ca872/paper-markdown.lua\n"
+}

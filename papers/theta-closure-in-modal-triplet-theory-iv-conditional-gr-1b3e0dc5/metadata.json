@@ -1,12 +1,12 @@
 {
-  "abstract": "We re-evaluate how gauge-profile geometry can enter gravity and cosmology. Within a declared auxiliary six-dimensional product ansatz, the dimensionless internal-volume coefficient is 20.07064 times the cube of the dimensionless circle radius. Restoring a common internal length gives the corresponding conditional Newton-scaling relation if that auxiliary manifold is adopted as the compactification. It is not the selected q79/Fu-Yau space, so the coefficient is an ansatz diagnostic rather than the current MTT internal volume. Even within the ansatz, the gauge profile does not determine Newton's constant without an absolute scale and a fundamental gravity normalization. A gauge matching point also does not select a physical coherence cutoff. The paper derives the correctly normalized conditional primordial-tensor inequality under a separately assumed cutoff and cosmological state. It supplies scaling laws and an assumption audit, not cross-sector numerical closure.",
+  "abstract": "We re-evaluate the propagation of gauge-profile geometry into gravity and cosmology. Within the auxiliary six-dimensional product of a circle, a two-sphere, and a three-dimensional nilmanifold introduced here from the supports of Papers I-III, the dimensionless internal-volume coefficient is 20.07064 times R1 cubed. Restoring the common internal length gives the inverse four-dimensional Newton constant as this coefficient times the sixth power of that length, divided by the ten-dimensional gravity constant, if the auxiliary manifold is adopted as the compactification. It is not the selected q79 Fu-Yau space, so the coefficient is an ansatz diagnostic rather than the current MTT internal volume. Even within this ansatz, the gauge profile does not determine Newton's constant without an absolute scale and fundamental gravity normalization. A gauge matching point does not select a physical cutoff. We give the correctly normalized conditional tensor-to-scalar bound when the Hubble scale lies below a declared fraction of that cutoff. The paper supplies conditional scaling laws and an assumption audit, not cross-sector numerical closure.",
   "authors": [
     "Peter Nero"
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026",
+  "current_version": "v3",
+  "date": "September 2026 (Version 3)",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18262121",
     "created": "2026-07-29T08:52:23.462379+00:00",
@@ -32,36 +32,50 @@
     "updated": "2026-07-29T08:52:23.865390+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "fcc5f36857314f9df2a8c2dd37dc7e098cf74a14ccee3065808846be317b3d4d",
+  "main_tex_sha256": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6",
   "paper_id": "theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5",
-  "paper_md_sha256": "104370526b2f1690a9f254bb38298afc2e4473cc9b0512fb4369088ce06ea86a",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "f428fc562c04082102219ee39f05656abe9203741aacd72a5b2390fa8c8a69bf",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "eta9_gate1_campaign",
+    "eta9_three_cycle_b96_nondetection",
+    "q79_bk3_rank_zero_kernel"
+  ],
   "revision": {
-    "revision_evidence_path": "REVISION_AUDIT.md",
-    "revision_evidence_sha256": "036e280e2bb8d01a0c48ed68f2cd2c77b563e593857a7137649ccecd01c52ef0",
+    "revision_evidence_path": "papers/theta-closure-in-modal-triplet-theory-iv-conditional-gr-1b3e0dc5/REVISION_AUDIT.md",
+    "revision_evidence_sha256": "994f186d8899d98b02e64cf93d45f86bf8c737b68aba2d2e98d9730914566c8c",
     "selected_revision": true,
     "superseded_source_path": "18 Theta-Closure & Execution Program/_work/Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 19083,
+      "bytes": 23338,
       "path": "main.tex",
-      "sha256": "fcc5f36857314f9df2a8c2dd37dc7e098cf74a14ccee3065808846be317b3d4d"
+      "sha256": "9b3936b512fb7a65f28744618dda412191b19c3b841c7376eff437f07937b9d6"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 358210,
+      "path": "main.pdf",
+      "sha256": "a5aeda317f09c32830b7d92b98e823e419567dadf58de300bf0399e628e5e4be"
+    },
+    {
+      "bytes": 3027,
+      "path": "REVISION_AUDIT.md",
+      "sha256": "994f186d8899d98b02e64cf93d45f86bf8c737b68aba2d2e98d9730914566c8c"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "18 Theta-Closure & Execution Program/revised_tex_vnext/Theta_Closure_in_Modal_Triplet_Theory_IV__Gravity_and_Cosmology_from_the_Closure_Scale_v2"
   },
-  "source_tree_sha256": "effe41c0205cba33149ade9fd07cef9021778f47627afb6bf66f2d4961ac2bb0",
+  "source_tree_sha256": "50897d545662dcc6c44ef6656e872271e5f3f460cbf8a2bdb1bcef42b279cd1e",
   "title": "Theta Closure in Modal Triplet Theory IV: Conditional Gravity Scaling and Cosmological Cutoff Audit",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18262121",

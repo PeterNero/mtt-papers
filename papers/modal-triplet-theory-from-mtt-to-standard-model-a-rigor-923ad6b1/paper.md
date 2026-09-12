@@ -5,9 +5,9 @@ abstract: |
   This is not a zero-parameter derivation of the measured SM. The adopted closure standard allows one shared electroweak primitive and measured renormalized profile coordinates downstream. In particular, the finite carrier and gauge representation do not by themselves select Yukawa singular values, mixing matrices, absolute neutrino data, the strong-CP mechanism, or a unique observed branch. We state the exact reconstruction theorem, prove a family-intertwiner nonselection result, explain the distinct roles of the $`27\times27`$ and $`96\times96`$ matrices, give a parameter and provenance ledger, and isolate the remaining source theorems needed for strict no-knob Standard-Model closure. Later same-source imports reduce the effective non-neutrino profile to thirteen coordinates, excluding QCD theta, and the minimal neutral extension to nineteen. These counts include empirical inputs and are not prospectively validated parameter predictions. Conditional neutral-holonomy, branch-measure and axion-quality results specify more precisely which selections are still required.
 author:
 - Peter Nero
-current_version: v4
-date: September 2026, Version 4
-generated_from_main_tex_sha256: f1b7a1d066062c138dd4aa13bda756bef62e6a6b004ec2097c6d3086487c3550
+current_version: v5
+date: September 2026, Version 5
+generated_from_main_tex_sha256: 4b66c1482bfe0657ac45807d8beef051cd19c90e46162b187bf5ad9d9ce241af
 paper_id: modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1
 release_state: current_revised_tex
 released_version: v3
@@ -18,6 +18,23 @@ zenodo_doi: 10.5281/zenodo.21720135
 zenodo_record_id: 21720135
 zenodo_url: "https://zenodo.org/records/21720135"
 ---
+
+# Version 5 Revision Note
+
+Supersedes.
+Local version 4; published editions remain unchanged.
+
+Reason.
+The interacting-QFT frontier did not distinguish the completed conditional analytic-family construction from selection of its physical source.
+
+Resolution.
+Import that distinction from the quantum-mechanics owner paper and its frozen family-source certificate, with no repeated proof.
+
+Retained result.
+All finite structures, profile values, parameter counts, and the declared embedded-equivalence theorem remain unchanged.
+
+Open boundary.
+The common source, full-domain measure, gluing and uniform continuum control remain open; finite matrices and determinant lines do not supply them.
 
 # Version 4 Revision Note
 
@@ -514,6 +531,12 @@ The reconstruction also uses scoped tests of the mathematical machinery. The fin
 
 These are genuine finite-cocycle and rank-two analytic witnesses. They do not evaluate the full analytic Deligne obstruction of a varying q79 spectral cover, prove global uniqueness outside the Wiener ball, or supply the physical rank-three visible bundle and its same-source rank-nine partner. Their construction details belong to the geometry/Flux source; here they explain why a successful support calculation and an open physical endpoint can coexist without contradiction.
 
+## From finite matrices to an analytic physical family
+
+There is a positive result between the finite reconstruction and the remaining interacting-QFT problem. Given a smooth physical elliptic family on a common Sobolev domain, a self-adjoint Hessian realization, and an isolated spectral window on a regular chart, the Dirac/Hessian family, its Riesz projector, Kato transport and analytic determinant line are canonical constructions. They add no further physical parameter once those data have been selected. The conditional construction and its finite nonselection witness are treated in the quantum-mechanics owner paper ; the frozen certificate is `q79_family_source_cutset` in Ref. . This is a useful dependency reduction, not a new assumption that every finite matrix has a unique physical continuum realization.
+
+The reason for the distinction is simple. A finite projection forgets directions of a smooth connection. Changing a forgotten direction can change the full Dirac operator without changing any retained source row. HYM, Bianchi, action and naturality conditions must therefore select the common lift; they cannot be recovered from the $`27`$- or $`96`$-dimensional matrices alone. The later hidden-bundle existence results remain valid at their own tier, but do not by themselves supply this whole common family. Once it is supplied, three separate full-domain tasks still remain: a local chiral-measure current, gluing across crossings and disconnected sectors, and cutoff-uniform locality and fixed-coupling control. A determinant line is not that measure, and a gapped-chart projector is not an extension through a spectral crossing. Thus the analytic construction need not be reinvented, while the physical source and interacting-continuum obligations must not be silently discarded.
+
 <!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
 # Reproducibility and Result Ownership
 
@@ -608,5 +631,7 @@ P. Nero, neutral U5 tier decision and conditional U9 measure, frozen in Ref. ,
 P. Nero, $`E_6`$ current audit and conditional Green–Schwarz axion/quality reductions, frozen in Ref. , entries `e6_qpsi_qcd_anomaly`, `sm_axion_gs_reduction`, `sm_axion_quality_bound`, and `sm_multiaxion_superset`.
 
 P. Nero, finite Cech witness and certified rank-two HYM contraction, frozen in Ref. , entries `literal_cech_witness` and `hym_wiener_contraction`; interpreted in the Flux compactification audit.
+
+P. Nero, *Modal Triplet Theory and Nonrelativistic Quantum Mechanics: A Coherent-Sector Reconstruction and the Born-Source Boundary*, current canonical manuscript, [MTT papers repository](https://github.com/PeterNero/mtt-papers/tree/main/papers/modal-triplet-theory-from-mtt-to-quantum-mechanics); release family [doi:10.5281/zenodo.17074246](https://doi.org/10.5281/zenodo.17074246).
 
 </div>

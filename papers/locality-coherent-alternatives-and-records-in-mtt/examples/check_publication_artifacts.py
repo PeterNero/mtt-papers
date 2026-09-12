@@ -20,7 +20,7 @@ class PublicationArtifacts(unittest.TestCase):
 
     def test_citation_markers_and_bibliography_survive(self):
         keys = re.findall(r"\\bibitem\{([^}]+)\}", self.tex)
-        self.assertEqual(len(keys), 28)
+        self.assertEqual(len(keys), 29)
         cited = [key.strip() for group in re.findall(r"\\cite\{([^}]+)\}", self.tex)
                  for key in group.split(",")]
         for number, key in enumerate(keys, 1):
@@ -50,6 +50,7 @@ class PublicationArtifacts(unittest.TestCase):
         self.assertIn("## Abstract", self.md)
         self.assertIn("# References", self.md)
         self.assertIn("Version 1.0 Revision Note", self.md)
+        self.assertIn("Version 2 Revision Note", self.md)
         self.assertIn("<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->", self.md)
         self.assertTrue(re.search(r"(?m)^```\s*text\s*$", self.md), "Reproduction commands lack a fenced block")
         for label in ("Supersedes:", "Reason:", "Resolution:", "Retained content:", "Remaining boundary:"):

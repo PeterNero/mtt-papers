@@ -8,17 +8,34 @@ abstract: |
   The associated spectral lower bounds remain above the assumed dimensionless admissibility floor. This proves existence of a calibrated representative in the declared auxiliary ansatz. It does not prove that the full lens space reduces to this $`S^2`$ model, identify the Lens–Nil representative with the selected q79/Fu–Yau compactification, select a geometry uniquely by MTT, or make the gauge couplings held-out predictions. The shared circle is common $`U(1)`$ phase/holonomy data, not an additional factor in a $`S^1\times L(3,1)\times\mathrm{Nil}_3`$ manifold.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026
-generated_from_main_tex_sha256: 82df865f0bc9b012cfccebec428cd333458ff5269ad87b043aeb90be95e15906
+current_version: v3
+date: September 2026 (Version 3)
+generated_from_main_tex_sha256: 2b599efd41a4f28b7bf2f39b478cbca32b0492fd7704d82ef61281401c444896
 paper_id: theta-closure-in-modal-triplet-theory-ii-direct-geometr-303cc1ca
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: "Theta Closure in Modal Triplet Theory II: Direct Geometric Realization of Selected Gauge-Profile Overlaps"
 zenodo_doi: 10.5281/zenodo.21666008
 zenodo_record_id: 21666008
 zenodo_url: "https://zenodo.org/records/21666008"
 ---
+
+# Version 3 Revision Note
+
+Supersedes.
+Version 2 of this paper; released identifiers are retained.
+
+Reason.
+The calibration boundary was present, but the selected-source owner results and their distinct scopes were not explicitly connected to it.
+
+Resolution.
+Version 3 imports the exact Gate 1, three-cycle and large-gauge-kernel conclusions through their owners, and also keeps both scalar spectral branches in the uniform lower bound.
+
+Retained.
+The existing calibrated or conditional result, its numerical inputs and all earlier revision notes are retained.
+
+Open boundary.
+A selected physical source, its action normalization and the paper-specific execution inputs remain necessary for a held-out prediction.
 
 # Revision note for this edition
 
@@ -55,7 +72,7 @@ The dependency chain is
 \text{spectral-floor check}.
 \end{gathered}
 ```
-Sections 3 and 4 execute the two overlap equations separately. Section 5 states exactly what the construction establishes, and the appendix derives the nilmanifold bound used in the final admissibility check.
+The overlap sections execute the two equations separately. The interpretation section states exactly what the construction establishes, and the appendix derives the nilmanifold bound used in the final admissibility check.
 
 # Relation to the revised $`\Theta`$-closure core paper
 
@@ -343,7 +360,7 @@ Hence the smallest nonzero eigenvalue in this sector satisfies
 
 ## The $`p\neq 0`$ sector (Landau/oscillator lower bound)
 
-For $`p\neq 0`$, the operator <a href="#eq:nil_laplacian_p" data-reference-type="eqref" data-reference="eq:nil_laplacian_p">[eq:nil_laplacian_p]</a> is the magnetic Laplacian on a 2-torus with constant magnetic field proportional to $`p`$, plus a strictly positive shift $`(2\pi p)^2/c^2`$. A conservative lower bound follows by dropping the nonnegative $`x`$-dependence and using the lowest Landau-level scale:
+For $`p\neq 0`$, the operator <a href="#eq:nil_laplacian_p" data-reference-type="eqref" data-reference="eq:nil_laplacian_p">[eq:nil_laplacian_p]</a> is the magnetic Laplacian on a 2-torus with constant magnetic field proportional to $`p`$, plus a strictly positive shift $`(2\pi p)^2/c^2`$. A lower bound follows from the magnetic covariant-derivative commutator: the nonnegative square of the corresponding raising or lowering combination bounds the two-dimensional magnetic energy below by $`2\pi|p|/(ab)`$. Thus one must retain, not discard, the magnetic term:
 ``` math
 \begin{equation}
 \lambda_{\min}^{(p)} \;\ge\; \frac{2\pi |p|}{ab} + \frac{(2\pi p)^2}{c^2},
@@ -380,11 +397,12 @@ Combining <a href="#eq:lambda_p0" data-reference-type="eqref" data-reference="eq
 
 In particular, for $`a=b=1`$ and any $`c\le 1.989699`$, one has
 ``` math
-\lambda_1 \ge 2\pi + \frac{4\pi^2}{c^2}
-\ge 2\pi + \frac{4\pi^2}{(1.989699)^2}
-\approx 6.2832 + 9.9721 \approx 16.2553,
+\lambda_1 \ge
+\min\left\{4\pi^2,2\pi+\frac{4\pi^2}{c^2}\right\}
+\ge\min\left\{4\pi^2,2\pi+\frac{4\pi^2}{(1.989699)^2}\right\}
+\approx16.2553,
 ```
-which is much larger than the admissibility floor $`0.25`$ used in Paper I.
+which is much larger than the admissibility floor $`0.25`$ used in Paper I. The minimum is essential: at $`c=1`$ the torus branch supplies an eigenvalue $`4\pi^2`$, so the larger Landau expression alone cannot bound the full gap from below. The uniform admissibility conclusion is unchanged.
 
 <div class="remark">
 
@@ -402,6 +420,37 @@ The Route A formulas have been evaluated in the same normalization and scheme a
 with uncertainties inherited from the two profile ratios. The nil spectral estimate and lens lower bound continue to exceed the assumed dimensionless floor for the stated parameter range.
 
 The earlier numbers $`0.280R_1`$ and $`1.439R_1`$ belonged to the withdrawn $`5~\mathrm{TeV}`$ profile and are not retained. The present construction is a calibrated existence result: the target gauge rows were used to determine the geometry. Selection of this geometry before empirical comparison, literal lens-space reduction, and a global HYM representative remain separate proof obligations.
+
+# Selected-source results and this paper’s boundary
+
+The eta9 imports are owned contextually by *Flux Compactifications in Heterotic String Theory*, in the sections on the selected source and the integral comparison, and completed local tests and the global endpoint. Gate 1 closes the original-Jacobian campaign at all 30 groups and 225 selected columns . This is an exact finite source calculation, not the global integral meridian, the 248-coordinate readout or the analytic Deligne class $`\beta_{\mathbb C}`$.
+
+The completed three-cycle transport has independent cycles with Gram matrix $`-2I_3`$ and zero detected affine pairings . Its scope is a non-detecting subsystem: it does not prove global triviality of the twist, and rerunning that same subsystem is not the missing detection theorem. Neither this conclusion nor the finite gate identifies an auxiliary Circle–Lens–Nil model with the physical q79 topology.
+
+The large-gauge result is owned by *Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows*, in its subsection on the rank-zero large-gauge kernel. It gives an injective immersion $`b_{K3}:\mathbb R^2\to\mathbb T^{20}`$ with dense nonclosed image . Rank zero counts periodic gauge identifications, not source coordinates or physical modes. It removes a kernel ambiguity without requiring numerical periods, but does not provide kinetic normalization, the selected shared-circle action or the unrelated eta9 affine lift.
+
+For Route A, these imports do not identify the auxiliary round-$`S^2`$/nil supports with the global q79/Fu–Yau space or derive their radii from it. The calibrated representative and its dimensionless spectral margin survive. The hidden projective rank-nine carrier and existential HYM connection are already established; the visible bundle, a common metric chamber and executable physical overlap data remain distinct obligations.
+
+The managed evidence block below retains its earlier frozen profile snapshot. Its historical source-status labels do not supersede the current exact, local and open boundaries just stated or reopen the retained hidden-HYM existence and shared-primitive Standard Model results.
+
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The HYM contraction, finite-matrix realization, precision transport, and electroweak row are used directly to assess the selected overlap realization. The remaining profile packets locate that realization within the broader closure program but do not prove its geometry. The strict source upgrade remains open.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
 
 #### Rows used directly in this paper.
 
@@ -467,43 +516,15 @@ The earlier numbers $`0.280R_1`$ and $`1.439R_1`$ belonged to the withdrawn $`5~
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
-
-The HYM contraction, finite-matrix realization, precision transport, and electroweak row are used directly to assess the selected overlap realization. The remaining profile packets locate that realization within the broader closure program but do not prove its geometry. The strict source upgrade remains open.
-
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
-
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
-
-## Rows used directly in this paper
-
-- `A19/hym_wiener_contraction` (**NUMERIC_CERTIFIED**): Weighted-theta Fourier-tail and Wiener contraction certificate.
-- `A02/precision_15_source_transport` (**PROFILE_REPLAY**): Fifteen measured source coordinates, Jacobian and covariance transport.
-- `A02/precision_8x8_workspace` (**PROFILE_REPLAY**): Eight-coordinate SMDR output with positive-definite 8x8 covariance.
-- `A01/qutrit_weyl_27_matrix` (**DERIVED_EXACT**): Sparse 27x27 qutrit-Weyl left-action realization.
-- `A01/strict_pew_row` (**DERIVED_EXACT**): Promoted P_EW source row at the declared one-shared-primitive standard.
-
-## Corpus-state cross-checks
-
-- `A01/charged_yukawa_higgs_profile` (**PROFILE_REPLAY**): Versioned Yu, Yd, Ye and lambda_H profile packet.
-- `A14/ckm_prediction_profile` (**NUMERIC_CERTIFIED**): Three selected CKM profile rows and uncertainty comparison.
-- `A01/current_global_lock` (**PROFILE_REPLAY**): Current non-looping global status and source-certificate map.
-- `A01/direct_k_higgs_row` (**DERIVED_EXACT**): Promoted direct K_threshold.Omega_H.lambda row.
-- `A22/e6_qpsi_qcd_anomaly` (**DERIVED_EXACT**): E6 Qpsi matter/exotic QCD anomaly cancellation audit.
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
-- `A40/neutral_two_primitive_profile` (**PROFILE_REPLAY**): Measured two-splitting neutrino profile, masses and Dirac Yukawa rows.
-
-## Open boundary (not evidence of closure)
-
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
-
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
-
 <div class="thebibliography">
 
 99
+
+P. Nero, *Selected eta9 original-Jacobian Gate 1 campaign* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json).
+
+P. Nero, *Complete selected three-cycle non-detection decision* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json).
+
+P. Nero, *Selected K3 rank-zero large-gauge kernel* (2026). Frozen source at curated manifest commit `f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7`: [source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json).
 
 D. Andriot and D. Tsimpis, *Laplacian spectrum on a nilmanifold, truncations and effective theories*, JHEP **09** (2018) 096. <https://doi.org/10.1007/JHEP09(2018)096>
 

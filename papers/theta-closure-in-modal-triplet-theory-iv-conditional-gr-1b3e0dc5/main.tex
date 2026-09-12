@@ -20,7 +20,7 @@
 \title{Theta Closure in Modal Triplet Theory IV:
 Conditional Gravity Scaling and Cosmological Cutoff Audit}
 \author{Peter Nero}
-\date{July 2026}
+\date{September 2026 (Version 3)}
 
 \begin{document}
 \maketitle
@@ -28,7 +28,8 @@ Conditional Gravity Scaling and Cosmological Cutoff Audit}
 \begin{abstract}
 We re-evaluate the propagation of the gauge-profile geometry into gravity and
 cosmology. Within the auxiliary six-dimensional
-$S^1\times S^2\times\mathrm{Nil}_3$ product ansatz of Papers~I--III, the
+$S^1\times S^2\times\mathrm{Nil}_3$ product ansatz introduced here from
+the auxiliary supports of Papers~I--III, the
 updated dimensionless internal-volume coefficient is
 $\widehat V_{\mathrm{int}}=20.07064R_1^3$. Restoring the common internal length
 $\ell_{\mathrm{int}}$ gives
@@ -44,6 +45,21 @@ $r\leq 2\epsilon^2(\Lambda_\Theta/M_{\mathrm{Pl}})^2/(\pi^2A_s)$ when
 $H\leq\epsilon\Lambda_\Theta$. The paper therefore supplies conditional
 scaling laws and an assumption audit, not cross-sector numerical closure.
 \end{abstract}
+
+\section*{Version 3 Revision Note}
+\label{sec:revision-v3}
+\begin{description}
+\item[Supersedes.] Version~2 of this paper; released identifiers are retained.
+\item[Reason.] The calibration boundary was present, but the selected-source
+owner results and their distinct scopes were not explicitly connected to it.
+\item[Resolution.] Version~3 imports the exact Gate~1, three-cycle and
+large-gauge-kernel conclusions through their owners, and retains the independent absolute-scale and cosmological inputs.
+\item[Retained.] The existing calibrated or conditional result, its numerical
+inputs and all earlier revision notes are retained.
+\item[Open boundary.] A selected physical source, its action normalization and
+the paper-specific execution inputs remain necessary for a held-out prediction.
+\end{description}
+
 
 \section*{Revision note for this edition}
 \addcontentsline{toc}{section}{Revision note for this edition}
@@ -308,6 +324,46 @@ cosmological state before Equation~\eqref{eq:r_bound_general} becomes a
 numerical prediction. Paper~IV therefore documents cross-sector dependencies
 and correct formulas; it does not establish gravity or cosmology closure.
 
+\section{Selected-source results and this paper's boundary}
+\label{sec:theta-source-consumers}
+
+The eta9 imports are owned contextually by \emph{Flux Compactifications in
+Heterotic String Theory}, in the sections on the selected source and the
+integral comparison, and completed local tests and the global endpoint.
+Gate~1 closes the original-Jacobian campaign at all 30 groups and 225 selected
+columns \cite{ThetaGate1}. This is an exact finite source calculation, not
+the global integral meridian, the 248-coordinate readout or the analytic
+Deligne class $\beta_{\mathbb C}$.
+
+The completed three-cycle transport has independent cycles with Gram matrix
+$-2I_3$ and zero detected affine pairings \cite{ThetaCycles}. Its scope is
+a non-detecting subsystem: it does not prove global triviality of the twist,
+and rerunning that same subsystem is not the missing detection theorem.
+Neither this conclusion nor the finite gate identifies an auxiliary
+Circle--Lens--Nil model with the physical q79 topology.
+
+The large-gauge result is owned by \emph{Cohesive Closure Repair and Its
+Hodge, Kernel, and Projection Shadows}, in its subsection on the rank-zero
+large-gauge kernel. It gives an injective immersion
+$b_{K3}:\mathbb R^2\to\mathbb T^{20}$ with dense nonclosed image
+\cite{ThetaBK3}. Rank zero counts periodic gauge identifications, not source
+coordinates or physical modes. It removes a kernel ambiguity without
+requiring numerical periods, but does not provide kinetic normalization,
+the selected shared-circle action or the unrelated eta9 affine lift.
+
+For Paper~IV, these theorems neither supply the q79 volume nor determine
+$\ell_{\mathrm{int}}$, $G_{10}$ or a cosmological state. The auxiliary product
+used here is an additional diagnostic ansatz, not a consequence of the
+operator supports in Papers~I--III. No rank, kernel or transport certificate
+turns the matching convention $Q=M_t$ into a physical cutoff. The conditional
+Newton scaling and tensor inequality keep their stated independent inputs.
+
+
+The managed evidence block below retains its earlier frozen profile snapshot.
+Its historical source-status labels do not supersede the current exact,
+local and open boundaries just stated or reopen the retained hidden-HYM
+existence and shared-primitive Standard Model results.
+
 % BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE
 \section*{Computational Evidence and Reproducibility}
 This paper audits possible gravity and cosmology scaling from gauge-profile geometry. None of the mapped Standard Model packets derives a physical gravitational normalization or cosmological cutoff, so all closed rows below are corpus-state cross-checks rather than direct proof. The strict upgrade remains open.
@@ -353,6 +409,24 @@ No imported row changes theorem ownership or promotes a neighboring claim: all l
 % END MTT MANAGED COMPUTATIONAL EVIDENCE
 
 \begin{thebibliography}{99}
+
+\bibitem{ThetaGate1}
+P.~Nero, \emph{Selected eta9 original-Jacobian Gate 1 campaign} (2026).
+Frozen source at curated manifest commit
+\texttt{f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7}:
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_gate1_campaign/artifact.json}{source artifact}.
+
+\bibitem{ThetaCycles}
+P.~Nero, \emph{Complete selected three-cycle non-detection decision} (2026).
+Frozen source at curated manifest commit
+\texttt{f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7}:
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/eta9_three_cycle_b96_nondetection/artifact.json}{source artifact}.
+
+\bibitem{ThetaBK3}
+P.~Nero, \emph{Selected K3 rank-zero large-gauge kernel} (2026).
+Frozen source at curated manifest commit
+\texttt{f141a20e a23c5c3f f19cc216 1c0e226e 29ade8a7}:
+\href{https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_bk3_rank_zero_kernel/artifact.json}{source artifact}.
 
 \bibitem{DuffNilssonPope}
 M.~J. Duff, B.~E.~W. Nilsson, and C.~N. Pope,

@@ -3,11 +3,11 @@ abstract: |
   An admissibility-indexed precosheaf is a pregeometric covariant functor only after its algebras and extension morphisms are supplied; overlap or failure of joint representability does not create commutators or imply locality. A physical Haag–Kastler net instead requires a selected Lorentzian base, an upper local operator net, and a localization-preserving coherent reduction. For a decomposable orthogonal projector $`P`$, we prove that compression of the $`P`$-compatible upper subalgebras preserves isotony and spacelike commutation. This is the rigorous MTT-to-AQFT bridge currently available. We also show why absence of a global admissible chart does not forbid an abstract quasilocal algebra or categorical colimit. The current q79 source now also supplies a selected free twisted-Dirac construction whose even CAR observable net has locality, covariance, the time-slice property, and nonempty positive Hadamard state space through standard AQFT results. The chart-to-region natural equivalence and the nonperturbative interacting C-star completion remain open.
 author:
 - Peter Nero
-current_version: v2
-date: July 2026 Version 2
-generated_from_main_tex_sha256: f885ff123d5a3ded5f81f9eb272ca9a02ad6105e9c74f3a20b29d6a945fdcbcc
+current_version: v3
+date: September 2026 Version 3
+generated_from_main_tex_sha256: 5a4ad3924ae6644511a5ea302a1ce9abe2345603c85cd543c6b6b27e9c8f6b18
 paper_id: from-modal-triplet-theory-to-algebraic-quantum-field-th-19e8dde7
-release_state: zenodo_released
+release_state: current_revised_tex
 released_version: v2
 title: |
   Admissibility Precosheaves and Conditional AQFT Nets
@@ -16,6 +16,31 @@ zenodo_doi: 10.5281/zenodo.21665973
 zenodo_record_id: 21665973
 zenodo_url: "https://zenodo.org/records/21665973"
 ---
+
+# Admissibility Precosheaves and Conditional AQFT Nets in Modal Triplet Theory
+
+Peter Nero. September 2026 Version 3
+
+## Abstract
+
+An admissibility-indexed precosheaf is a pregeometric covariant functor only after its algebras and extension morphisms are supplied; overlap or failure of joint representability does not create commutators or imply locality. A physical Haag–Kastler net instead requires a selected Lorentzian base, an upper local operator net, and a localization-preserving coherent reduction. For a decomposable orthogonal projector $`P`$, we prove that compression of the $`P`$-compatible upper subalgebras preserves isotony and spacelike commutation. This is the rigorous MTT-to-AQFT bridge currently available. We also show why absence of a global admissible chart does not forbid an abstract quasilocal algebra or categorical colimit. The current q79 source now also supplies a selected free twisted-Dirac construction whose even CAR observable net has locality, covariance, the time-slice property, and nonempty positive Hadamard state space through standard AQFT results. The chart-to-region natural equivalence and the nonperturbative interacting C-star completion remain open.
+
+# Version 3 Revision Note
+
+Supersedes
+Current Version 2, with its released identity retained.
+
+Reason
+The interacting boundary needed its precise physical-family source dependency, not only a generic list of open constructions.
+
+Resolution
+Adds the finite-projection nonselection argument and the conditional elliptic-family interface, with a frozen source citation.
+
+Retained
+Conditional locality descent, the chart-to-region naturality gate, and the selected free CAR realization remain unchanged.
+
+Open boundary
+Smooth same-source interacting data, measure and crossing gluing, and the physical fixed-coupling continuum net remain open.
 
 # Version 2 Revision Note
 
@@ -36,7 +61,7 @@ The selected free CAR sector is now available, but the chart-to-region natural e
 
 # Scope and correction of the chart-only argument
 
-AQFT assigns algebras to causally localized spacetime regions and relates them by injective algebra morphisms . Locally covariant QFT packages analogous data as a covariant functor on globally hyperbolic spacetimes and causal embeddings . Neither framework obtains Einstein causality merely from the absence of a common coordinate chart.
+AQFT assigns algebras to causally localized spacetime regions and relates them by injective algebra morphisms \[[2](#ref-HaagKastler1964)\]. Locally covariant QFT packages analogous data as a covariant functor on globally hyperbolic spacetimes and causal embeddings \[[3](#ref-BFV2003)\]. Neither framework obtains Einstein causality merely from the absence of a common coordinate chart.
 
 The former edition tried to derive three conclusions directly from MTT admissible charts:
 
@@ -87,7 +112,7 @@ inside a declared common ambient algebra. For a graded field net, the ordinary c
 
 </div>
 
-These two conditions are only part of a physical AQFT. Depending on the target, one must also address covariance, a state space, spectrum or microlocal-spectrum conditions, additivity, the time-slice axiom, duality, superselection structure, and a suitable continuum dynamics. The time-slice property is a dynamical theorem even in established perturbative constructions, rather than a consequence of isotony alone .
+These two conditions are only part of a physical AQFT. Depending on the target, one must also address covariance, a state space, spectrum or microlocal-spectrum conditions, additivity, the time-slice axiom, duality, superselection structure, and a suitable continuum dynamics. The time-slice property is a dynamical theorem even in established perturbative constructions, rather than a consequence of isotony alone \[[4](#ref-ChilianFredenhagen2008)\].
 
 If the region system is directed and the morphisms are injective, its $`C^*`$-inductive limit gives a quasilocal algebra
 ``` math
@@ -175,17 +200,17 @@ Physical observables are taken from the subalgebra that preserves the coherent s
 ```
 For a graded net, $`P`$ is also required to be even.
 
-FP VI does not construct these data from the fixed-point spine alone. It proves that an instantaneous spatially bilocal kernel is insufficient for causality and identifies a local hyperbolic mediator theory as the consistent completion route . A selected completion must still supply the upper local net. The corrected Projection–Admissibility paper then supplies the compression theorem .
+FP VI does not construct these data from the fixed-point spine alone. It proves that an instantaneous spatially bilocal kernel is insufficient for causality and identifies a local hyperbolic mediator theory as the consistent completion route \[[6](#ref-FPVIv4)\]. A selected completion must still supply the upper local net. The corrected Projection–Admissibility paper then supplies the compression theorem \[[5](#ref-Projectionv2)\].
 
 # Coherent locality descent
 
-For $`O\in\mathcal K(Y)`$ define
+For $`O\in\mathcal K(Y)`$ define <a id="eq:compressed-net"></a>
 ``` math
 \begin{equation}
  \mathfrak A_P(O)
  :=\{PAP|_{P\mathcal H_U}:A\in\mathfrak A_U^P(O)\}
  \subseteq\mathcal B(P\mathcal H_U).
- \label{eq:compressed-net}
+
 \end{equation}
 ```
 
@@ -229,12 +254,12 @@ assign an admissible context to each physical region. Suppose there are $`*`$-ho
 
 <div id="prop:naturality" class="proposition">
 
-**Proposition 7** (Naturality gate). *The admissibility precosheaf represents the physical net only if, for every $`O_1\subseteq O_2`$, the naturality equation
+**Proposition 7** (Naturality gate). *The admissibility precosheaf represents the physical net only if, for every $`O_1\subseteq O_2`$, the naturality equation <a id="eq:naturality"></a>
 ``` math
 \begin{equation}
  \rho_{O_2}\circ j_{12}
  =\iota_{12}\circ\rho_{O_1}
- \label{eq:naturality}
+
 \end{equation}
 ```
 holds. If every $`\rho_O`$ is an isomorphism, the two nets are naturally isomorphic. If they are merely homomorphisms, the interface is a reduction or representation, not an equivalence.*
@@ -247,7 +272,7 @@ holds. If every $`\rho_O`$ is an isomorphism, the two nets are naturally isomorp
 
 </div>
 
-Equation <a href="#eq:naturality" data-reference-type="eqref" data-reference="eq:naturality">[eq:naturality]</a>, together with a selected $`L`$, is the precise replacement for the former assertion that chart overlap automatically becomes physical localization.
+Equation [(6.1)](#eq:naturality), together with a selected $`L`$, is the precise replacement for the former assertion that chart overlap automatically becomes physical localization.
 
 # Global algebras, states, and representations
 
@@ -288,19 +313,29 @@ Physical Lorentzian base.
 The selected q79 branch currently supplies a conditional global Lorentzian coframe and causal representative after the discrete $`A_{\mathrm{QG}}`$ realization declaration and one binary $`A_{\mathrm{causal}}`$ boundary mark. This does not itself construct a QFT net.
 
 Selected free local theory.
-A globally hyperbolic framed q79 representative and selected twisted massless Dirac source now compose with standard CAR/AQFT machinery to give an even observable net with locality, covariance, the time-slice property, and a nonempty positive Hadamard state space . The CAR, microlocal, and time-slice theorems are imported standard results whose hypotheses the selected source satisfies.
+A globally hyperbolic framed q79 representative and selected twisted massless Dirac source now compose with standard CAR/AQFT machinery to give an even observable net with locality, covariance, the time-slice property, and a nonempty positive Hadamard state space \[[9](#ref-SelectedQFT2026)\]. The CAR, microlocal, and time-slice theorems are imported standard results whose hypotheses the selected source satisfies.
 
 Locality descent.
-Theorem <a href="#thm:descent" data-reference-type="ref" data-reference="thm:descent">6</a> is exact under its stated upper-net and projector hypotheses. This is the currently rigorous AQFT-style bridge.
+Theorem [5.1](#thm:descent) is exact under its stated upper-net and projector hypotheses. This is the currently rigorous AQFT-style bridge.
 
 Perturbative observable branch.
 A current selected-SM result gives a conditional perturbative observable functor, while importing standard BRST/Faddeev–Popov quantization rather than deriving it from MTT.
 
 Constructive finite-domain QFT.
-Current SPT-filtered TT/BRST functional integrals provide conditional finite-domain Borel and Ward-identity results. Infinite volume, the full chiral Standard Model, Lorentzian reconstruction, and a complete nonperturbative BRST Hilbert space remain open .
+Current SPT-filtered TT/BRST functional integrals provide conditional finite-domain Borel and Ward-identity results. Infinite volume, the full chiral Standard Model, Lorentzian reconstruction, and a complete nonperturbative BRST Hilbert space remain open \[[8](#ref-QFTAudit2026)\].
 
 Full interacting AQFT equivalence.
-Open. The free CAR net does not supply the naturality interface <a href="#eq:naturality" data-reference-type="eqref" data-reference="eq:naturality">[eq:naturality]</a>, a selected interacting state, a fixed-coupling physical interacting C-star algebra, the nonperturbative continuum completion, or a target-equivalence certificate.
+Open. The free CAR net does not supply the naturality interface [(6.1)](#eq:naturality), a selected interacting state, a fixed-coupling physical interacting C-star algebra, the nonperturbative continuum completion, or a target-equivalence certificate.
+
+<a id="sec:physical-family-consumer"></a>
+
+## Which family data the interacting extension still needs
+
+The frozen physical-family dependency theorem, contextualized in the companion quantum-mechanics source account, sharpens the last ledger row \[[1](#ref-FrozenFamily)\]. Finitely many projected connection coefficients cannot select a smooth connection: a finite-rank map on the affine space of smooth connections has an infinite-dimensional kernel. Varying a discarded connection direction can change the Dirac operator and its Hessian while leaving every retained source coefficient fixed. This is a nonselection statement, not an exclusion of a future HYM or action-based selection theorem.
+
+Once the same-source physical HYM data, operator intertwiner, and upper action are supplied with smooth common domains, standard elliptic-family theory gives the internal Dirac/Hessian family. On a declared gapped chart, Riesz projectors and Kato transport follow; the supplied elliptic family also has its analytic determinant line. These constructions do not select the source, nor do they define a local fermion-measure current transverse to gauge orbits. Crossing-stratum and disconnected-sector gluing, together with cutoff-uniform locality and fixed-coupling norm control, remain additional requirements. An internal determinant line is not a Lorentzian local net.
+
+The source record’s older hidden-HYM opening is read at the current tier: hidden projective and existential HYM results are retained; the missing input is a selected common visible–hidden physical endpoint and its intertwiner. None of these interacting requirements reopens the free CAR construction or supplies the naturality map in [(6.1)](#eq:naturality).
 
 # Scoped reconstruction theorem
 
@@ -310,7 +345,7 @@ Open. The free CAR net does not supply the naturality interface <a href="#eq:nat
 
 1.  *admissible contexts can carry a pregeometric precosheaf when their algebras and functorial extension maps are supplied;*
 
-2.  *a selected Lorentzian base, a local upper net, and a decomposable coherent projector produce the physical local net <a href="#eq:compressed-net" data-reference-type="eqref" data-reference="eq:compressed-net">[eq:compressed-net]</a> on the compatible subalgebra;*
+2.  *a selected Lorentzian base, a local upper net, and a decomposable coherent projector produce the physical local net [(5.1)](#eq:compressed-net) on the compatible subalgebra;*
 
 3.  *upper isotony and Einstein causality descend to that physical net; and*
 
@@ -322,7 +357,7 @@ Open. The free CAR net does not supply the naturality interface <a href="#eq:nat
 
 <div class="proof">
 
-*Proof.* The first item is the definition and functoriality requirement of $`\mathfrak B`$. The second and third are Theorem <a href="#thm:descent" data-reference-type="ref" data-reference="thm:descent">6</a>. The fourth is Proposition <a href="#prop:naturality" data-reference-type="ref" data-reference="prop:naturality">7</a>. The final exclusions follow from the typing arguments and the inductive-limit state proposition above. ◻
+*Proof.* The first item is the definition and functoriality requirement of $`\mathfrak B`$. The second and third are Theorem [5.1](#thm:descent). The fourth is Proposition [6.1](#prop:naturality). The final exclusions follow from the typing arguments and the inductive-limit state proposition above. ◻
 
 </div>
 
@@ -352,6 +387,25 @@ MTT currently has both a rigorous conditional locality-descent bridge and one se
 
 The result does not make locality emerge from non-comparability. Nor does it construct the chart-to-region map or the interacting physical completion. The precise next targets are the naturality and equivalence conditions linking the free physical net to the admissibility precosheaf, followed by a selected interacting state and nonperturbative interacting C-star completion.
 
+<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
+# Computational Evidence and Reproducibility
+
+The precosheaf and conditional-net results are proved from supplied algebraic data, not from the embedded Standard Model profile audit. That audit is a lower-sector cross-check only. The open strict-upgrade ledger records an unresolved source problem and supplies no AQFT reconstruction theorem.
+
+The referenced rows are frozen to the curated results repository state identified below. Hashes are grouped in eight-character blocks for line breaking.
+
+> **Repository:** <https://github.com/PeterNero/mtt-results-repro>
+> **Commit:** `31247ebb 5c22f3fb b5443024 365433c6 ee0bff4a`
+> **Manifest:**
+> **Manifest SHA-256:**
+> `fb399689 60b00584 631dbf53 1a708e18`
+> `ef928d6b 6d935119 c185d7f6 32b1e7cd`
+
+Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper’s local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+
+= by -
+<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+
 #### Corpus-state cross-checks.
 
 - (*profile replay*).
@@ -368,44 +422,40 @@ The result does not make locality emerge from non-comparability. Nor does it con
 
 No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
 
-<!-- BEGIN MTT MANAGED COMPUTATIONAL EVIDENCE -->
-# Computational Evidence and Reproducibility
+# References
 
-The precosheaf and conditional-net results are proved from supplied algebraic data, not from the embedded Standard Model profile audit. That audit is a lower-sector cross-check only. The open strict-upgrade ledger records an unresolved source problem and supplies no AQFT reconstruction theorem.
+<a id="ref-FrozenFamily"></a>
 
-The referenced rows are frozen to the curated results repository at commit `31247ebb5c22f3fbb5443024365433c6ee0bff4a`. The [immutable result manifest](https://github.com/PeterNero/mtt-results-repro/blob/31247ebb5c22f3fbb5443024365433c6ee0bff4a/release/result_manifest.json) has SHA-256 `fb39968960b00584631dbf531a708e18ef928d6b6d935119c185d7f632b1e7cd`.
+\[1\] P. Nero, *Physical-Family Source Dependency, Analytic Completion, and Finite-Projection Nonpromotion*, frozen source record, 2026. <https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/q79_family_source_cutset/artifact.json>. Contextual owner: *Modal Triplet Theory and Nonrelativistic Quantum Mechanics*, source-family discussion; this paper consumes the QFT boundary.
 
-Tier labels are quoted verbatim from that manifest. A row used directly supports only the specific computational statement identified above; a corpus-state cross-check does not prove this paper's local theorems; and an open row is evidence of an unresolved obligation, never of closure.
+<a id="ref-HaagKastler1964"></a>
 
-## Corpus-state cross-checks
+\[2\] R. Haag and D. Kastler, *An Algebraic Approach to Quantum Field Theory*, Journal of Mathematical Physics **5** (1964), 848–861, doi:10.1063/1.1704187.
 
-- `A04/final_12_of_12_audit` (**PROFILE_REPLAY**): Twelve-obligation embedded renormalized-SM equivalence audit.
+<a id="ref-BFV2003"></a>
 
-## Open boundary (not evidence of closure)
+\[3\] R. Brunetti, K. Fredenhagen, and R. Verch, *The Generally Covariant Locality Principle—A New Paradigm for Local Quantum Physics*, Communications in Mathematical Physics **237** (2003), 31–68, arXiv:math-ph/0112041.
 
-- `A05/strict_upgrade_ledger` (**OPEN**): Current 2/9 strict no-knob upgrade ledger.
+<a id="ref-ChilianFredenhagen2008"></a>
 
-No imported row changes theorem ownership or promotes a neighboring claim: all local statements retain their stated hypotheses, domains, and limitations.
-<!-- END MTT MANAGED COMPUTATIONAL EVIDENCE -->
+\[4\] B. Chilian and K. Fredenhagen, *The Time Slice Axiom in Perturbative Quantum Field Theory on Globally Hyperbolic Spacetimes*, arXiv:0802.1642.
 
-<div class="thebibliography">
+<a id="ref-Projectionv2"></a>
 
-9
+\[5\] P. Nero, *The Projection–Admissibility Principle: Descent, Recovery, and Structural Constraints on Effective Description*, version 2, 2026.
 
-R. Haag and D. Kastler, *An Algebraic Approach to Quantum Field Theory*, Journal of Mathematical Physics **5** (1964), 848–861, doi:10.1063/1.1704187.
+<a id="ref-FPVIv4"></a>
 
-R. Brunetti, K. Fredenhagen, and R. Verch, *The Generally Covariant Locality Principle—A New Paradigm for Local Quantum Physics*, Communications in Mathematical Physics **237** (2003), 31–68, arXiv:math-ph/0112041.
+\[6\] P. Nero, *Fixed Points VI: Formal Synthesis and Physical Interpretations*, corrected version 4, 2026.
 
-B. Chilian and K. Fredenhagen, *The Time Slice Axiom in Perturbative Quantum Field Theory on Globally Hyperbolic Spacetimes*, arXiv:0802.1642.
+<a id="ref-Atlasv3"></a>
 
-P. Nero, *The Projection–Admissibility Principle: Descent, Recovery, and Structural Constraints on Effective Description*, version 2, 2026.
+\[7\] P. Nero, *Modal Triplet Theory: A Typed Relationship Atlas*, version 3, 2026.
 
-P. Nero, *Fixed Points VI: Formal Synthesis and Physical Interpretations*, corrected version 4, 2026.
+<a id="ref-QFTAudit2026"></a>
 
-P. Nero, *Modal Triplet Theory: A Typed Relationship Atlas*, version 3, 2026.
+\[8\] P. Nero, *MTT Selected Quantization and Nonperturbative-QFT Strict-Upgrade Audit*, technical audit version 1, 2026.
 
-P. Nero, *MTT Selected Quantization and Nonperturbative-QFT Strict-Upgrade Audit*, technical audit version 1, 2026.
+<a id="ref-SelectedQFT2026"></a>
 
-P. Nero, *Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A Selected Free CAR Net and the Interacting Reconstruction Boundary*, version 4, 2026.
-
-</div>
+\[9\] P. Nero, *Modal Triplet Theory and Quantum Field Theory on Curved Spacetime: A Selected Free CAR Net and the Interacting Reconstruction Boundary*, version 4, 2026.

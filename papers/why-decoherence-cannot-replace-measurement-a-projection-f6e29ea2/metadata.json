@@ -5,8 +5,8 @@
   ],
   "canonical_markdown": "paper.md",
   "canonical_tex": "main.tex",
-  "current_version": "v2",
-  "date": "July 2026 Version 2",
+  "current_version": "v3",
+  "date": "12 September 2026 Version 3",
   "latest_zenodo_release": {
     "concept_doi": "10.5281/zenodo.18261892",
     "created": "2026-07-29T08:52:39.632808+00:00",
@@ -32,46 +32,55 @@
     "updated": "2026-07-29T08:52:40.095115+00:00",
     "version": "v2"
   },
-  "main_tex_sha256": "64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03",
+  "main_tex_sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5",
   "paper_id": "why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2",
-  "paper_md_sha256": "4809f297a44b5b5f0821185bf303e9393a0042652075b52662dbab9d8753ba71",
-  "release_state": "zenodo_released",
-  "result_refs": [],
+  "paper_md_sha256": "bbbcea235b1dbba495558c9f40612e5fce1de6839f48ad9a77656d95a4d64a28",
+  "release_state": "current_revised_tex",
+  "result_refs": [
+    "q79_continuum_recorder_compiler",
+    "q79_fock_output_measure",
+    "q79_ontology_nonentailment"
+  ],
   "revision": {
     "revision_evidence_path": "papers/why-decoherence-cannot-replace-measurement-a-projection-f6e29ea2/REVISION_AUDIT.md",
-    "revision_evidence_sha256": "21db9df5c34f81dd8622b37f951b303ae08b34d817eb4b767de98afdb9a435c5",
+    "revision_evidence_sha256": "04a6a04d88959e64b9ec34c8496527626d29d3219845ff8750dd415af9bb7ba4",
     "selected_revision": true,
     "superseded_source_path": "8 Measurement, Selection & Computation/_work/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
   "schema": "mtt.paper.v1",
   "source_files": [
     {
-      "bytes": 353854,
+      "bytes": 362723,
       "path": "main.pdf",
-      "sha256": "9f6a71a59891f0068f65654aef81e703bd52969545d42085c59a9ddb9a930e09"
+      "sha256": "20fb159886bdc8516b8cde5b94bd3316f1848197fc9da7cc20c97434e1e98525"
     },
     {
-      "bytes": 26690,
+      "bytes": 30511,
       "path": "main.tex",
-      "sha256": "64942a8dd44794a33ed2ef44570b0e549a595332817a74e45e3d7cc6b6c39f03"
+      "sha256": "76b2b212a578a51943fea73b6fe8c051d6deafb097df8e174fa6cbb33eb0a5d5"
     },
     {
-      "bytes": 5840,
+      "bytes": 8021,
       "path": "REVISION_AUDIT.md",
-      "sha256": "21db9df5c34f81dd8622b37f951b303ae08b34d817eb4b767de98afdb9a435c5"
+      "sha256": "04a6a04d88959e64b9ec34c8496527626d29d3219845ff8750dd415af9bb7ba4"
     },
     {
       "bytes": 3784,
       "path": "series.sty",
       "sha256": "ce673121850d01807b01a4730fec0a7b892611e13f91dbeaae90fa3c2ea3ee4d"
+    },
+    {
+      "bytes": 4458,
+      "path": "paper-markdown.lua",
+      "sha256": "3d9060d49d0c0e448ff27b6c62d412c51c46448ce0c6dc20657421c2e684016b"
     }
   ],
   "source_provenance": {
     "legacy_source_path": "8 Measurement, Selection & Computation/_work/Why_Decoherence_Cannot_Replace_Measurement__A_Projection_Based_Shadow_Bridge_in_Modal_Triplet_Theory"
   },
-  "source_tree_sha256": "a2e72be431ef16e2863473d33ec5584ded380e582075228654948f26fec779ba",
+  "source_tree_sha256": "af74f44db2cf483716d3afbd1577ae64414b6a66f3746851bb7edde8a97a901f",
   "title": "Why Decoherence Cannot Replace Measurement Outcome-Resolved Dynamics Without a Fundamental Measurement Postulate in Modal Triplet Theory",
-  "version_relation": "matches_latest_release",
+  "version_relation": "current_source_newer_than_release",
   "zenodo_releases": [
     {
       "concept_doi": "10.5281/zenodo.18261892",
