@@ -15,10 +15,10 @@
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "note": "V8 explains curved projective-overlap descent and the actual rational q79 Hirsch topology, preserving all thirty-six earlier substantive imports. Includes the noncommuting positive 4/3-cost witness, cyclic-pairing compensation, connection law, 96-to-88 contraction, strict higher-operation vanishing and a nonmultiplicative representative example. Distinguishes rational topology, twisted coefficients, analytic/HYM realization and physical carriers. All 44 PDF pages inspected; zero warnings and seven new exact checks pass. No archived triple-table rerun, physical-tier promotion or Zenodo authorization.",
-      "reviewed_main_tex_sha256": "def433a6c6165a9df2b25deeb3aa9962e8e8dabe21f8839aed72cb81d4f3949c",
-      "reviewed_pdf_sha256": "fd2aae31db37ff401416895b0a02de212a9a40239a3530682d0ae94b3a2b18eb",
-      "reviewed_source_tree_sha256": "dfc40142b2ef5d9b599049a29d2f67f098e4bb498a762693ebe76675469f3a49",
+      "note": "V9 explains cotangent/BV reduction, the zero-section obstruction, normalized orientation lift and the sharp topology-only Euler lifting bound. Includes exact graded examples and the required physical source/representation/low-energy boundaries; preserves all thirty-eight earlier substantive imports. All 49 final PDF pages visually inspected; zero build warnings and ten new focused exact editorial tests pass. Independent worker and frozen scientific artifacts unchanged. No physical-tier promotion or Zenodo authorization.",
+      "reviewed_main_tex_sha256": "4cfc7599f0449e43ff488be7fff6bbe213355348cb5bd04a003dc33602c89c00",
+      "reviewed_pdf_sha256": "04809991fc85096c94f9f89a72ec2a61405d827740c21027d9edf432aa7fb9db",
+      "reviewed_source_tree_sha256": "881a5bcbdc5fc6d72fce9b58d3885c6eddf782a9c5949972b62d7fef18bdf100",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {

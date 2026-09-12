@@ -9,15 +9,32 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v8
-date: September 2026, Version 8
-generated_from_main_tex_sha256: def433a6c6165a9df2b25deeb3aa9962e8e8dabe21f8839aed72cb81d4f3949c
+current_version: v9
+date: September 2026, Version 9
+generated_from_main_tex_sha256: 4cfc7599f0449e43ff488be7fff6bbe213355348cb5bd04a003dc33602c89c00
 paper_id: cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows
 release_state: current_revised_tex
 title: |
   **Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:**
   From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary
 ---
+
+# Version 9 Revision Note
+
+Supersedes
+The local Version 8 manuscript; no public release is implied.
+
+Reason
+The physical-action discussion needed the exact BV reduction mechanism and its relation to the already-integrated rational q79 topology.
+
+Resolution
+Explains the cotangent retract, zero-section obstruction, normalized unit–orientation lift, sharp Euler lifting obstruction and the distinct mode/representation gates.
+
+Retained result
+The earlier thirty-eight source imports keep their stated scopes. The foundational Fixed Points series is unchanged.
+
+Remaining boundary
+A right inverse for a supplied action is not its selected physical origin, a mass-gap theorem or quantum BV transport.
 
 # Version 8 Revision Note
 
@@ -1523,6 +1540,158 @@ On a compact complex threefold with holomorphic volume form $`\Omega`$, the cand
 \tau(x)=\int_X\Omega\wedge\mathop{\mathrm{Str}}(x),
 ```
 and <a href="#eq:mc-action" data-reference-type="eqref" data-reference="eq:mc-action">[eq:mc-action]</a> becomes holomorphic Chern–Simons theory . This supplies a signed action for the integrability lane. It does not automatically supply nondegenerate cyclic pairings for the HYM, balanced, anomaly, coframe, and Lorentzian lanes.
+
+# From a cotangent lift to a four-dimensional BV theory
+
+The action boundary has a constructive continuation. A multiplier pairs an equation with a dual variable; Batalin–Vilkovisky (BV) geometry organizes fields, ghosts and antifields with an odd symplectic pairing. Antifields are dual bookkeeping variables for the gauge equations, not additional observed particles. With consistent ghost degrees, the classical master equation $`\{S,S\}=0`$ expresses compatibility of the action and gauge differential. A volume element, integration prescription and quantum master equation are further data . The following two source results explain what this construction preserves under reduction .
+
+## Retain fields and their correct duals together
+
+Let $`(L,d_L)`$ retract onto $`(H,d_H)`$ by cochain maps $`p,i`$ and a degree-minus-one map $`h`$, with
+``` math
+pi=1,\qquad d_Lh+hd_L=1-ip,\qquad h^2=ph=hi=0.
+```
+Assume finite-dimensional complexes, or locally perfect complexes with a specified density-valued dual and nondegenerate evaluation. A functional analytic realization must additionally specify domains and continuous duals. Write $`p^!,i^!`$ for the graded density transposes. In the cyclic DGLA convention used by the internal source, the cotangent complexes and maps are
+``` math
+\begin{align}
+ \widehat L&=L\oplus L^![-3],&
+ \widehat H&=H\oplus H^![-3], \notag\\
+ \widehat i&=i\oplus p^!,&
+ \widehat p&=p\oplus i^!.
+ \label{eq:bv-cotangent-lift}
+\end{align}
+```
+The suspension to field coordinates gives the degree-minus-one BV pairing; the bracket notation in <a href="#eq:bv-cotangent-lift" data-reference-type="eqref" data-reference="eq:bv-cotangent-lift">[eq:bv-cotangent-lift]</a> is not itself a spacetime dimension. Transpose the homotopy with the same graded convention. For the ordinary block-matrix check, the differential and homotopy are
+``` math
+\widehat d=\operatorname{diag}(d_L,-d_L^T),\qquad
+ \widehat h=\operatorname{diag}(h,-h^T).
+```
+Then
+``` math
+\widehat p\widehat i=1,\qquad
+ \widehat d\widehat h+\widehat h\widehat d
+   =1-\widehat i\widehat p,\qquad
+ \widehat i^*\omega_L=\omega_H .
+```
+The pairing identity follows from $`(p^!\eta)(iy)=\eta(piy)=\eta(y)`$. Thus it is the *inclusion of the retained field–dual sector*, not the projection on the entire upper space, that preserves the nondegenerate pairing.
+
+For example, retain $`r_1,r_2`$ from a complex with basis $`(r_1,r_2,u,v)`$, $`du=v`$, and $`h(v)=u`$. The cotangent lift has eight coordinates above and four below. A discarded pair $`u,u^*`$ has pairing one above and zero after projection. This elementary example explains why deleting modes is not automatically a symplectic equivalence. Restricting to the retained symplectic sector is exact; integrating the complement instead requires a suitable BV pushforward. Such effective-action constructions are established mathematics ; the existing downstream q79 results apply after their four-dimensional BV complex and compatible split have been supplied.
+
+A cochain contraction alone does not transport an arbitrary nonlinear action. If the retained nonlinear maps obey $`Q_L i=iQ_H`$, then
+``` math
+S_L(\widehat i(x,\eta))
+ =\langle p^!\eta,Q_L(ix)\rangle
+ =\langle\eta,Q_H(x)\rangle .
+```
+For a BV interpretation $`Q`$ must have the appropriate degree and satisfy $`Q^2=0`$; an arbitrary residual only defines a multiplier action. With non-strict transfer, all required higher brackets and the compatible cyclic map must be retained. Neither a bare projection nor a truncated residual proves that action identity.
+
+## Why the field-only action cannot be obtained by relabeling
+
+The internal multiplier has $`S_{\mathrm{cot}}(x,0)=0`$. A supplied four-dimensional BV theory generally has
+``` math
+S_{\mathrm{BV}}(z,z^*)=S_0(z)+\sum_i z_i^*Q^i(z),
+ \qquad S_{\mathrm{BV}}(z,0)=S_0(z)\not\equiv0.
+```
+Consequently a zero-section-preserving pullback cannot identify these actions without a field-only upper term that reduces to $`S_0`$. This is a restricted obstruction, not a theorem against every canonical transformation: a transformation mixing fields and antifields would need its own generating data and proof.
+
+The cyclic integrability action in the preceding section supplies one signed field-only functional. It is not thereby the complete Standard Model action on a Lorentzian four-manifold. In particular, matching the abstract cotangent degree does not identify internal adjoint/form fields with gauge potentials, charged fermions, ghosts and the Higgs. Their representations, density, real structure, statistics and operator domains must be carried by the same reduction.
+
+## The exact unit–orientation construction
+
+There is nevertheless a simple exact reduction mechanism. Use the rational q79 algebra of Section <a href="#sec:q79-hirsch-model" data-reference-type="ref" data-reference="sec:q79-hirsch-model">10.3</a>, and let $`\nu=utv`$ be its degree-six top class, with $`\tau(\nu)=1`$. The two-dimensional subalgebra
+``` math
+R=\operatorname{span}\{1,\nu\},\qquad
+ 1\nu=\nu1=\nu,\qquad \nu^2=0
+```
+has nondegenerate cyclic pairing
+``` math
+B_R=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
+```
+These are two complementary *internal profiles*, not two physical fields or two universes. The raw topological trace has $`\tau(1)=0`$. A normalized density is therefore essential for a field-only term: $`\tau(\nu S_0)=S_0`$. Choosing an algebraic map $`\star1=\nu,\star\nu=1`$ gives $`B_R\star=I_2`$, but does not select the physical Hodge star or volume. For a Riemannian metric with volume $`V`$ and $`\nu=\mathrm{vol}/V`$, instead $`\star1=V\nu`$, $`\star\nu=1/V`$; the pairing matrix is $`\operatorname{diag}(V,1/V)`$. Topological normalization does not determine $`V`$.
+
+Now supply an antifield-linear classical BV action with $`Q^2=0`$ and $`Q(S_0)=0`$, and assign profiles
+``` math
+z_i\longmapsto z_i\otimes1,\qquad
+ z_i^*\longmapsto z_i^*\otimes\nu .
+```
+Declare the degree-minus-six fiber-integration shift, as well as the field/ghost gradings. Then both the action and odd pairing reduce exactly:
+``` math
+\begin{align}
+ \tau\!\left(\nu S_0(z\otimes1)
+       +\sum_i(z_i^*\otimes\nu)Q^i(z\otimes1)\right)
+   &=S_{\mathrm{BV}}(z,z^*), \label{eq:bv-orientation-action}\\
+ \omega_{\mathrm{red}}(z\otimes1,z^*\otimes\nu)
+   &=\omega_4(z,z^*). \label{eq:bv-orientation-pairing}
+\end{align}
+```
+Without the degree shift these equations establish coefficient agreement, not agreement of BV degrees. The restriction to antifield-linear actions also matters: a term with two such antifield profiles would contain $`\nu^2=0`$. General open gauge algebras require additional structure.
+
+A small example has even fields $`x,z`$, odd ghost $`c`$, and $`Qx=c,\ Qc=Qz=0`$. Choose
+``` math
+S_0(z)=\tfrac12z^2+\tfrac13z^3,\qquad
+ S_{\mathrm{BV}}=S_0+x^*c .
+```
+Here $`Q^2=0`$ and $`Q(S_0)=0`$, so the classical master equation holds. Both terms return unchanged under <a href="#eq:bv-orientation-action" data-reference-type="eqref" data-reference="eq:bv-orientation-action">[eq:bv-orientation-action]</a>. The ghost is a Grassmann variable, not a freely substituted ordinary number; rational coefficient checks are not a replacement for that grading.
+
+The construction has the precise direction $`\mathrm{Red}\circ\mathrm{Lift}=1`$. It reconstructs a theory already specified below and demonstrates that the reduction rules can fit together. It does not prove that the selected upper MTT source is this lift, or derive the chosen coefficients of $`S_0`$.
+
+## A consistent sector is not all low-energy modes
+
+Tensoring the full internal contraction by an external cochain complex $`(E,d_E)`$ is exact. The total differential and homotopy are
+``` math
+D(e\otimes a)=d_Ee\otimes a+(-1)^{|e|}e\otimes d_Aa,\qquad
+ K(e\otimes a)=(-1)^{|e|}e\otimes h(a).
+```
+With $`I=1\otimes i`$, $`P=1\otimes p`$, the signs cancel the mixed terms and give $`DK+KD=1-IP`$ and the normalized side conditions. For the archived three-state external example this is a $`288`$-to-$`264`$ contraction, retaining all $`88`$ internal cohomology profiles.
+
+By contrast, the orientation choice keeps only two of them. The cyclic pairing splits
+``` math
+H(A)=R\oplus R^\perp,\qquad \dim R^\perp=86,
+```
+and its restriction to $`R^\perp`$ remains nondegenerate. These classes cannot be contracted away by the bare topology differential. Nor need $`R^\perp`$ be an ideal: the degree-one class $`v`$ and degree-five class $`ut`$ lie in the complement but $`v(ut)=-\nu`$. Thus the two-profile projection is not an algebra quotient of the full cohomology.
+
+A consistent classical restriction is still possible when the full Hamiltonian vector field is tangent to the retained symplectic sector. Cyclicity, orthogonality and preservation by all source operations are sufficient for the usual cyclic construction; a newly added field-only term must satisfy the same tangency condition. This is stronger than having a subalgebra. It is weaker than proving that the discarded modes are absent or massive. A physical bundle/flux/Hessian operator would have to constrain or lift the extra profiles and certify the relevant energy scale. The number $`86`$ counts bare rational cohomology classes, not 86 predicted particles.
+
+## The topology-only lifting question is already decided
+
+A stronger follow-on theorem sharpens the preceding boundary . On the *unchanged graded* 88-dimensional carrier,
+``` math
+\chi(H)=1-1+21-42+21-1+1=0,\qquad
+ \chi(R)=1+1=2.
+```
+Euler characteristic is invariant under replacing a finite cochain complex by its cohomology. Hence no degree-one square-zero differential on this carrier can leave exactly $`R`$ as cohomology. If it preserves $`H=R\oplus R^\perp`$ and is zero on $`R`$, then
+``` math
+\chi(R^\perp)=-2,\qquad
+ \dim H(R^\perp,d_{\mathrm{eff}})\geq2.
+```
+Thus at most $`84`$ of the $`86`$ complement profiles can be lifted within this specified cochain model. This is not an unsolved numerical search.
+
+The bound is attained, including cyclic compatibility. Choose rational Poincare-dual bases $`b_i,b_i^\vee`$ in degrees two and four and symplectic pairs $`w_i,z_i`$ in degree three, $`0\leq i\leq20`$. Set $`\langle b_i,b_j^\vee\rangle=\langle w_i,z_j\rangle=\delta_{ij}`$; let $`c_1=v`$, $`c_5=ut`$, so $`\langle c_1,c_5\rangle=-1`$ in the present orientation convention. Define the only nonzero arrows by
+``` math
+\begin{align*}
+ d_{\mathrm{eff}}c_1&=b_0,&
+ d_{\mathrm{eff}}b_i&=w_{i-1}\quad(1\leq i\leq20),\\
+ d_{\mathrm{eff}}z_j&=-b_{j+1}^\vee\quad(0\leq j\leq19),&
+ d_{\mathrm{eff}}b_0^\vee&=-c_5 .
+\end{align*}
+```
+Each image has zero outgoing differential. The paired arrows give $`\langle da,b\rangle+(-1)^{|a|}\langle a,db\rangle=0`$. The degreewise differential ranks and cohomology ranks are respectively
+``` math
+(0,1,20,20,1,0,0),\qquad (1,0,0,2,0,0,1).
+```
+Declaring this adapted basis orthonormal yields $`\Delta_{\mathrm{aux}}=d^\dagger d+dd^\dagger`$ with four zero eigenvalues and $`84`$ eigenvalues equal to one. The extra survivors are $`w_{20},z_{20}`$. This is a cyclic cochain witness; it is not asserted to be a derivation of the original cup product. The metric and unit gap are auxiliary choices, not an HYM metric or a physical mass prediction.
+
+This theorem rules out only the unchanged-carrier differential route. Bundle-valued coefficients, a larger BV complex, a derived gauge quotient, or an independently sourced noncochain mass Hessian change its premises. It does not predict two extra particles. Nor is the topology count $`88`$ the $`8+80`$ gauge-adjoint fiber count, despite the numerical coincidence. The rank-102 deformation block and the index-bearing matter complex must remain separately typed.
+
+## Where physical representations must enter
+
+If a group acts trivially on the topology factor, then
+``` math
+(V\otimes A)_\chi=V_\chi\otimes A.
+```
+Tensoring changes multiplicities, not character support. This elementary obstruction does not identify the shared differential line with hypercharge, and does not say that every adjoint is neutral under every subgroup. An adjoint of a larger group can acquire nonzero weights on restriction. The no-go concerns a *specified action that is trivial on the source*. Charged/chiral modes may instead enter through bundle-valued cohomology, off-diagonal Hom sectors or an index-bearing Dirac complex.
+
+The selected physical comparison must therefore supply one compatible chain: an externalized source and field-only action; its charged fields and duals; density, degree and real-structure maps; a BV-compatible low-energy contraction; Lorentzian gauge-fixed domains; and, for a quantum claim, the measure, integration cycle and master-equation transport. Sections <a href="#sec:morita-metric-boundary" data-reference-type="ref" data-reference="sec:morita-metric-boundary">10.2</a> and <a href="#sec:morita-compiler-range" data-reference-type="ref" data-reference="sec:morita-compiler-range">10.5</a> still govern the global pairing and normalization. The exact two-profile construction removes the need to invent abstract product reduction. It neither replaces those physical inputs nor reopens the accepted downstream BV results at their declared scope.
 
 # The cohesive closure-repair theorem
 

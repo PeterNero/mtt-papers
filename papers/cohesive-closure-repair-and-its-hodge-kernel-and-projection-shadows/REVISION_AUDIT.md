@@ -1,5 +1,47 @@
 # Cohesive Source Revision Audit
 
+## Version 9 BV Reduction and Sharp Topology-Mode Boundary
+
+Date: 2026-09-12. Supersedes local v8; no release authorized.
+
+Three frozen H4-T15/T16/T17 records, their owning theorem notes and the
+relevant implementation formulas were read in context. The thirty-eight
+earlier substantive imports are unchanged. This is editorial integration,
+not a new selected physical action or a reopening of downstream BV results.
+
+- Explain the normalized cotangent retract, density-dual conventions and
+  why the retained inclusion preserves pairing while full projection does not.
+  Nonlinear compatibility is an additional condition on the cochain retract.
+- State the restricted zero-section obstruction: a pure multiplier cannot
+  reproduce a nonzero field-only action by a zero-section-preserving map.
+- Import the exact unit/orientation right inverse for a supplied antifield-linear
+  BV action. Spell out the degree-six fiber shift, Grassmann ghost, density
+  normalization and the failure for products of two top-class antifields.
+- Separate normalized trace from a selected physical metric or volume.
+- Explain the full tensor contraction and why its 88 retained internal classes
+  differ from a two-profile consistent restriction. The complement is not an
+  ideal, and tangency of the full Hamiltonian field must be supplied.
+- Use the later Euler theorem rather than leave an obsolete open search:
+  on the unchanged carrier, at most 84 of 86 complement classes can be lifted.
+  Give the sharp cyclic witness, differential signs, degreewise ranks and
+  auxiliary four-zero/84-unit Laplacian. This witness is not claimed to be a
+  derivation of the cup product, an HYM mass spectrum or extra particles.
+- Restrict the neutral-tensor statement to a specified trivial group action.
+  An adjoint restricted from a larger group need not be neutral.
+- Keep topology, gauge-adjoint fibers and index-bearing matter complexes
+  distinct. Source/action selection, physical low-energy reduction and quantum
+  master-equation transport are separate physical requirements.
+
+The source-bound review registry records all three artifact IDs and hashes.
+Ten exact focused tests in `scripts/test_cohesive_bv_editorial.py` cover the
+cotangent witness, all 288 tensor states, the 88-state sharp cyclic witness,
+Euler bound, pairing/volume, Grassmann action and character counterexamples.
+No research worker code was executed and no frozen artifact was modified.
+The 49-page PDF builds with zero warnings. Every final page was visually
+inspected, including the revised two-page contents and new section 13.
+Reviewed LF-normalized TeX SHA-256:
+`4cfc7599f0449e43ff488be7fff6bbe213355348cb5bd04a003dc33602c89c00`.
+
 ## Version 8 Global Descent and Rational q79 Topology
 
 Date: 2026-09-12. Supersedes local v7; no release authorized.

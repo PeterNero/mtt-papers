@@ -2,7 +2,7 @@
 
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
-cohesive v8 and SM v4. Fixed Points and the companion remain unchanged.
+cohesive v9 and SM v4. Fixed Points and the companion remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -113,8 +113,17 @@ mn>=3 vanish there without removing coefficient-level interactions. The
 finite overlap witness preserves the algebra, but scalar cyclic pairing
 requires phase compensation. The intrinsic compiler range uses transported
 unit and trace. No new physical endpoint, HYM metric or 27 map is selected.
-All 44 PDF pages were inspected; seven new exact checks pass. Current totals
-are 77 reviewed, comprising 75 integrated and two historical.
+All 44 PDF pages were inspected; seven new exact checks pass. The v8 checkpoint
+had 77 reviewed, comprising 75 integrated and two historical.
+
+V9 integrates H4-T15/T16/T17 in section 13: the cotangent/BV retract,
+normalized unit-orientation construction and sharp topology-mode Euler bound.
+The exact right inverse reconstructs a supplied action, not selected coefficients.
+The unchanged 88-class carrier cannot have only the two orientation classes
+as cohomology; at most 84 complement classes lift, with an explicit cyclic
+witness attaining the bound. Its auxiliary metric is not a physical mass gap.
+Ten new exact editorial tests pass and all 49 final PDF pages were inspected.
+Current totals are 80 reviewed: 78 integrated and two historical; 225 unreviewed.
 
 Counts below come from the current source-bound ownership registry. Review
 source hypotheses, actual paper discussion and the latest superseding result;
@@ -122,7 +131,7 @@ do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 30 | Next: cotangent/BV reduction and normalized orientation. Charge, CBF, nested transfer, Morita and Hirsch imports are done. Compare the closed structural/topological steps with the hypotheses of physical compactification. |
+| 1 | Cohesive source | 27 | Next: equivariant index-first kernel compiler and derived matter zero-mode compiler (H4-T18/T19). BV/orientation/Euler imports are done. Separate signed first-order index, deformation rank, matter representation and actual zero modes; preserve accepted downstream scopes. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |

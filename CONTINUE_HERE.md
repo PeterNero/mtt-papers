@@ -6,7 +6,7 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 - The catalog contains 142 papers, and all 305 curated results have one integration home.
 - Flux v6 now preserves the established projective rank-nine hidden carrier and existential HYM connection. The numerical chamber, common visible endpoint and Bianchi data remain separate.
-- The cohesive manuscript is now v8: explicit six-row residual, 25-block support,
+- The cohesive manuscript is now v9: explicit six-row residual, 25-block support,
   conditional character reduction, metric comparison and source-factorization
   imports are integrated. Its isometric-embedding statement is corrected.
   V4 additionally corrects whole-projector comparison: exact retained
@@ -32,6 +32,13 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
   Scalar cyclic descent needs the phase-pairing hypothesis, and algebraic
   contraction is not a physical low-energy projection. All 44 pages inspected;
   seven new exact editorial checks pass. The earlier 36 imports are retained.
+  V9 integrates cotangent/BV reduction, the unit-orientation right inverse and
+  the sharp Euler lifting obstruction in section 13. At most 84 of 86 bare
+  complement profiles can be lifted on the unchanged graded carrier; this is
+  not an unresolved topology-only search or a physical particle prediction.
+  Source/action selection and physical matter/low-energy maps remain distinct.
+  All 49 pages inspected; ten new exact editorial tests pass. All 38 earlier
+  substantive imports and the foundational series are retained unchanged.
 - The new nine-page finite-mode calculation companion owns the recurrence,
   cubic heat-trace and L11 channel package. It cites the foundational series;
   the reverse FP III citation has been removed in v8.
@@ -51,9 +58,9 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 `catalog/research-integration-reviews.json` is the manual contextual record. `catalog/research-ownership.json` and per-paper `RESEARCH_INTEGRATION.md` are generated views.
 
-77 result assignments have been reviewed: 75 integrated and two historical
+80 result assignments have been reviewed: 78 integrated and two historical
 provenance records needing no new theorem. All 19 originally confirmed
-additions/details have been handled. The other 228 are unreviewed, not known
+additions/details have been handled. The other 225 are unreviewed, not known
 omissions. This is editorial integration, not a new physical closure claim.
 A literal ID in metadata is not manuscript integration. A missing literal ID
 does not prove the mathematics is absent.
@@ -62,16 +69,16 @@ Reviews bind LF-normalized manuscript bytes, exact result hashes and real source
 
 ## Next Editorial Work
 
-1. Continue with the remaining 30 cohesive-source assignments, grouping local
+1. Continue with the remaining 27 cohesive-source assignments, grouping local
    transfer/action witnesses rather than adding a long packet inventory. The
    evolving mathematical-language atlas needs separate scoped reading.
-   Next coherent cluster: `preprojection_h4_cotangent_reduction_q79_bv_gate`
-   and `preprojection_h4_normalized_orientation_bv_reduction`. Compare the
-   already-integrated cyclic action, global descent and Hirsch model with
-   the actual hypotheses of four-dimensional BV reduction. Do not repeat
-   charge, CBF, nested, Morita or Hirsch reviews. Rational transfer is closed;
-   it is not a completed physical coefficient-to-carrier realization.
-2. Continue the 228 contextual reviews in the order and clusters recorded in
+   Next coherent cluster: `preprojection_h4_equivariant_index_first_kernel_compiler`
+   and `preprojection_h4_derived_matter_zero_mode_compiler`. Preserve first-order
+   grading/index information, separate the rank-102 deformation block from
+   matter complexes, and distinguish net index from actual zero-mode counts.
+   Do not repeat charge, CBF, nested, Morita, Hirsch or BV/Euler reviews. Their
+   structural results are closed; physical realization has different premises.
+2. Continue the 225 contextual reviews in the order and clusters recorded in
    EDITORIAL_INTEGRATION_PLAN.md. SM has no remaining assigned imports.
 3. Review downstream uses of embedded isometries against the corrected cohesive
    theorem. Cost pullback alone is not reducing operator intertwining; exact
