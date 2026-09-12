@@ -1217,24 +1217,24 @@
       "sha256_lf": "7e728a840a029d5b53f83efe6cef091daa29ef12a5f77340606ec2d789bfc86a"
     },
     "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/REVISION_AUDIT.md": {
-      "bytes_lf": 7130,
-      "sha256_lf": "be2a72a0b299e342c0c3358e618cddf31107484c24784c458c65104a11470b13"
+      "bytes_lf": 7789,
+      "sha256_lf": "d3244609257f19933aa204cd6ab9a1c44055709098d8b58d8ca11676bce5f23f"
     },
     "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/main.tex": {
-      "bytes_lf": 36424,
-      "sha256_lf": "53fa7c9bc62aedb3cbf90608f56f366597a3ec8a0e869e972862ddd56b05ef8e"
+      "bytes_lf": 36620,
+      "sha256_lf": "73c4681a1815850cbce99b2c50598f6995124c736061485da179283d8181bdfd"
     },
     "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/metadata.json": {
-      "bytes_lf": 6652,
-      "sha256_lf": "a0420848ba5a10ce150559888c0b61aa03dba2b580cf3a0f9d80a74ed0065a68"
+      "bytes_lf": 6426,
+      "sha256_lf": "c447a030d4d12d8f5f24fea664b8f0e03d5e3a280fe28dc75727bd8d98d2c97e"
     },
     "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/paper.md": {
-      "bytes_lf": 39806,
-      "sha256_lf": "cc5d8c25ae7bb0bbf1313a61ed94cd6519cc041cd6c71edffe30f8ecf0685569"
+      "bytes_lf": 40040,
+      "sha256_lf": "03c13dd7ff6ff19686c1f82d4961f73d8e0309081aa022b4e0a92522f716b323"
     },
     "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/references.bib": {
-      "bytes_lf": 2775,
-      "sha256_lf": "44a1a93d9ac677cefb17ccb0926f415a4e5e0676a7baaf5d35d8a025a28907df"
+      "bytes_lf": 2330,
+      "sha256_lf": "89d98a1f09ca79ccba8e545645222c5f41bec5318a5462556345242c5a2b03b2"
     },
     "papers/fixed-points-ii-projected-fixed-points-and-equilibria-i-e079d534/series.sty": {
       "bytes_lf": 15299,
@@ -1245,24 +1245,24 @@
       "sha256_lf": "95521e02a9c16821cd16f78ed6bdaaaf41bd981b87e1d0ac42d4dd98fa05981d"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/REVISION_AUDIT.md": {
-      "bytes_lf": 5808,
-      "sha256_lf": "5b89018a4b04fb0acac30c89a7813a2cea1b81850333a88eeb772f165d8ed328"
+      "bytes_lf": 6512,
+      "sha256_lf": "91276fac03c7da6faa85a69ee6e259ec0810cc9261c977d3c172f1c437521a17"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/main.tex": {
-      "bytes_lf": 24086,
-      "sha256_lf": "b455229ff01a17bc555ad822b89c412f31cb42cacbbcae26d0927708b5cbf688"
+      "bytes_lf": 24199,
+      "sha256_lf": "8adba629db5766876009dac92737d9672cd0062772d9fb5d586cd161235ce94f"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/metadata.json": {
-      "bytes_lf": 6401,
-      "sha256_lf": "b9146a43ff8d4526b4db28f7d19c62e489c9ccaa993940f7363cad10cdb73de6"
+      "bytes_lf": 6400,
+      "sha256_lf": "fce1bba11c4cadf040120b3c4bc5db0616322afd2d24e744eb55ad778b9c2070"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/paper.md": {
-      "bytes_lf": 23598,
-      "sha256_lf": "1e28583c6743890cb1dde027b3580e5716630fdb6434dd7a2a32f5bb6443cbb8"
+      "bytes_lf": 23651,
+      "sha256_lf": "b165a8daa70cb89f76afd3c300d4e6060b9678114f02df2ace3b348b45e91c41"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/refs.bib": {
-      "bytes_lf": 3837,
-      "sha256_lf": "65376b5e6b2af2ea44e1140155a3e78158ed681ba9284c9932a87f2f49c8be8f"
+      "bytes_lf": 3360,
+      "sha256_lf": "c62887e74b1280c77cb7a684b9aa9ba20d2cf4aa2d530dace52833629f479414"
     },
     "papers/fixed-points-iii-disturbance-damping-balance-and-stability/series.sty": {
       "bytes_lf": 15299,
@@ -1273,20 +1273,20 @@
       "sha256_lf": "abe5bf40b40163e3f19683b1acb7c7c2fdedc62632ef55f313336f4250f11341"
     },
     "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/REVISION_AUDIT.md": {
-      "bytes_lf": 6894,
-      "sha256_lf": "48521fafe126601039df046c48aac13d76f8301c42bf53fe48f5acd29fbbfc3f"
+      "bytes_lf": 7663,
+      "sha256_lf": "c84094e902b808491755eb2c247ede232555da1700cef9dec686aed89c3e506f"
     },
     "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/main.tex": {
-      "bytes_lf": 24629,
-      "sha256_lf": "8ec3d526adebe99b15f30b6a555fca6be21371ed1a0b0edeef9153443630881f"
+      "bytes_lf": 28063,
+      "sha256_lf": "10d0befa241869189219b12a9c32b1123c23e8aaab503cacc4f53f7bcd369793"
     },
     "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/metadata.json": {
-      "bytes_lf": 7090,
-      "sha256_lf": "d15b19a565afc2548799cbc0fb2c6a48edf603149c8e57eff9393effcda0cb8e"
+      "bytes_lf": 6696,
+      "sha256_lf": "ba43ba098bcc05bcbde416763f288861b3619e0bdf9f5e65d2fc4156c3957a1f"
     },
     "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/paper.md": {
-      "bytes_lf": 23740,
-      "sha256_lf": "46322e0c722b9961b35c86566ca9bb7fcb15f8df2fe1b1b50716c38a2f86b817"
+      "bytes_lf": 27252,
+      "sha256_lf": "4a45da765dfd7cb79183ba04ee296cc0366204865af732dd21be7f50497751a7"
     },
     "papers/fixed-points-iv-curvature-centroid-motion-and-structura-47f7cbce/refs.bib": {
       "bytes_lf": 3592,
@@ -1301,20 +1301,20 @@
       "sha256_lf": "10044041c63fde4d18d0a194278692e37cb7637aed27738d584850e0e2dd7369"
     },
     "papers/fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8/REVISION_AUDIT.md": {
-      "bytes_lf": 7074,
-      "sha256_lf": "eae8daecf6c36825665f5643d82fd0fe703b6ae1c586190ef2c83e48a23c3e21"
+      "bytes_lf": 7722,
+      "sha256_lf": "077441cf4b23ab81066e79e11417871cc2d4e836f63d6f0899f60823675ba21d"
     },
     "papers/fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8/main.tex": {
-      "bytes_lf": 22883,
-      "sha256_lf": "ff62dc870051f6f8b94aac7411030f4a2644ea63ea3a7c1819f2a68f3ed90c6e"
+      "bytes_lf": 23776,
+      "sha256_lf": "afa55a08a3c53a59ca2bd27702ad67221d397ca7616b3b09a8d6ff76d215ca0d"
     },
     "papers/fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8/metadata.json": {
       "bytes_lf": 6576,
-      "sha256_lf": "5f6fb0282dca96a5ff7165fed0240775e5f4415bfadfc80f6d8554577699f76b"
+      "sha256_lf": "d4939c673a4e1fabb4fc1651e9dcbe0f3c236d60b497a8c8eed0882a75cc0c06"
     },
     "papers/fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8/paper.md": {
-      "bytes_lf": 23144,
-      "sha256_lf": "d88cce5c5a5332031b7159da33d64487a30c8805e17f265fed5ce3225d89f370"
+      "bytes_lf": 23885,
+      "sha256_lf": "909a2b44441d642a849159b25ec1660426b6ec2f3a5009f81de2cff6b44f71b5"
     },
     "papers/fixed-points-v-curvature-coupling-multi-structure-dynam-e0cf3ba8/series.sty": {
       "bytes_lf": 15299,
@@ -1325,20 +1325,20 @@
       "sha256_lf": "58fd92f18392cae40d1fdcc01127f90b8f5c5c77d31d7191feff54f05a3ec064"
     },
     "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/REVISION_AUDIT.md": {
-      "bytes_lf": 9031,
-      "sha256_lf": "8d208b10aad35404ab968681cca6952dd8b9710aa9da5d67edcf743def8e7a8d"
+      "bytes_lf": 9697,
+      "sha256_lf": "3e93a7c5079fc29a3ba3de25e4c775c51fae33e9f750d439c8423f803facf795"
     },
     "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/main.tex": {
-      "bytes_lf": 29701,
-      "sha256_lf": "2533c10b150cd29e0f82edef455fa7c25fc67475a078de4a1c9d206c9de1918d"
+      "bytes_lf": 26589,
+      "sha256_lf": "7e24f09516791d59c5be2a9bbe669a59d76f4efa2c8d8a4d15942ce9bd4fd1a9"
     },
     "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/metadata.json": {
-      "bytes_lf": 7095,
-      "sha256_lf": "47ddf7d1a59e05a40091e65fe5708565aa2062265ae4783633b189ab839ee87b"
+      "bytes_lf": 6469,
+      "sha256_lf": "4ae6c2f2c99064f9bf032509cc6fa62d15bef0edfac7821328e189ddf260a273"
     },
     "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/paper.md": {
-      "bytes_lf": 29229,
-      "sha256_lf": "96a12ee52321c5a785f53daace8c87bdfe041b4772bcf44c0a5a07d5141eb26c"
+      "bytes_lf": 26169,
+      "sha256_lf": "d78c8e99d779de0af1375c071f8ef99c3f78359e381d7ff6828cb14b37f4af05"
     },
     "papers/fixed-points-vi-formal-synthesis-and-physical-interpretations/series.sty": {
       "bytes_lf": 15299,
@@ -3679,5 +3679,5 @@
   },
   "normalization": "CRLF and CR converted to LF; all other bytes preserved",
   "schema": "mtt.portable-text-hashes.v1",
-  "source_ref": "HEAD"
+  "source_ref": "91263c680758b69dc5377f1263e64dc8c1172d48"
 }
