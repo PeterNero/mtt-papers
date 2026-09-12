@@ -17,7 +17,7 @@
 \title{\textbf{Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:}\\
 \large From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary}
 \author{Peter Nero}
-\date{September 2026, Version 9}
+\date{September 2026, Version 10}
 
 \begin{document}
 \maketitle
@@ -61,6 +61,21 @@ continuum-to-finite intertwiner remain open.  Thus closure repair explains
 why the operator and kernel language should recur, without promoting that
 recurrence into a completed theory of dynamics or quantization.
 \end{abstract}
+
+\section*{Version 10 Revision Note}
+\begin{description}
+\item[Supersedes] The local Version 9 manuscript; no public release is implied.
+\item[Reason] The BV/topology boundary needed the already-available
+first-order matter and normalized spectral-localization results.
+\item[Resolution] Explains graded index, chain projectors, mirror and
+exotic-rank tests, the ordinary graph-Prym obstruction, and the exact
+85-by-82 evaluation criterion with its derived cohomology shift.
+\item[Retained result] All forty-one earlier source imports and the
+foundational Fixed Points series retain their stated scopes.
+\item[Remaining boundary] The selected line and its evaluation entries,
+harmonic normalization and physical lifting operator are not supplied by
+an auxiliary rank witness. Equivariant duality retains its canonical-line data.
+\end{description}
 
 \section*{Version 9 Revision Note}
 \begin{description}
@@ -225,7 +240,7 @@ application remains an exact structural benchmark rather than a physical
 promotion.
 
 \begingroup
-\small
+\fontsize{9}{10.5}\selectfont
 \tableofcontents
 \endgroup
 \clearpage
@@ -2503,6 +2518,299 @@ normalization. The exact two-profile construction removes the need to
 invent abstract product reduction. It neither replaces those physical
 inputs nor reopens the accepted downstream BV results at their declared
 scope.
+
+\section{From background repair to a chiral matter test}
+\label{sec:matter-index-theta}
+
+The preceding topology obstruction makes bundle-valued matter a natural
+next construction, but a background deformation and a particle field do
+not have the same job. Four source results connect the first-order index,
+associated representation, spectral localization and mirror test
+\cite{PreprojectionIndexFirst2026,PreprojectionMatterCompiler2026,
+PreprojectionMatterTheta2026,PreprojectionBHTLocalization2026}.
+Their contribution here is an ordered calculation, not a new derivation
+of the already-established finite Standard Model representation.
+
+\subsection{Keep the grading before taking the square}
+\label{sec:matter-index-first}
+
+Let \(D_+:\mathcal H_+\to\mathcal H_-\) be a closed densely defined
+Fredholm operator with its Hilbert adjoint. With their natural domains,
+\[
+ H_+=D_+^\dagger D_+,\qquad H_-=D_+D_+^\dagger,\qquad
+ \operatorname{ind}D_+=\dim\ker H_+-\dim\ker H_- .
+\]
+The nonzero spectra pair; the kernels need not. Replacing \(D_+\) by its
+adjoint reverses the index and exchanges the two positive blocks.
+Consequently the \emph{ungraded} direct sum \(H_+\oplus H_-\) does not
+determine the sign of chirality. This is not a claim that a positive
+operator loses its index when its grading has actually been retained.
+
+For an exact finite example take \(D_+=(1,0,0,0):\mathbb Q^4\to\mathbb Q\).
+Its index is \(3\); the adjoint has index \(-3\). The full normal matrices
+have diagonals
+\[
+ (1,0,0,0,1),\qquad (1,1,0,0,0),
+\]
+related by a permutation. With \(\Gamma=+1\) on the source and \(-1\)
+on the target, however,
+\[
+ \operatorname{Tr}\!\left(\Gamma f(H_+\oplus H_-)\right)
+ =\operatorname{ind}D_+,\qquad f(0)=1.
+\]
+This identity holds for every function on the finite spectrum.
+In an infinite-dimensional realization the trace must exist; for
+heat kernels this is the graded heat-trace/index mechanism
+\cite{McKeanSinger1967,BerlineGetzlerVergne2004}. Compact ellipticity
+supplies the usual trace-class setting. A general noncompact Fredholm
+operator alone does not.
+
+If a finite abelian unitary group action commutes with \(D_+\), the same argument works
+in every character block, giving
+\[
+ k_{+,\chi}+k_{-,\chi}\geq |I_\chi|,
+ \qquad I_\chi=k_{+,\chi}-k_{-,\chi}.
+\]
+An inverse-character pairing requires the \emph{equivariant} duality
+data. Serre duality pairs \(F\) with \(F^\vee\otimes K_X\);
+\(K_X\simeq\mathcal O_X\) as a line bundle does not by itself identify
+their group actions. For an equivariantly self-dual, dual-complete carrier
+with an invariant holomorphic volume form, the familiar relation is
+\(I_{\chi^{-1}}=-I_\chi\). If the canonical line has a nontrivial
+character, that character must be included in the pairing. The source's
+finite inverse-character witness uses the invariant-volume case; it does
+not select the physical q79 character assignment.
+
+On a compact complex threefold with \(c_1(TX)=c_1(F)=0\),
+Hirzebruch--Riemann--Roch gives
+\[
+ \chi(X,F)=\int_X\operatorname{ch}_3(F)
+          =\frac12\int_Xc_3(F).
+\]
+Thus a valid bundle with \(|\int_Xc_3(F)|=6\) has net index magnitude
+three. This is a difference of multiplicities, not their separate values.
+By duality \(\chi(X,\operatorname{End}_0F)=0\) when \(K_X\) is trivial;
+the tangent and cotangent contributions also cancel. These facts explain
+why the rank-\(102\) background deformation carrier is not itself the
+associated chiral matter complex. Index zero does not mean invertibility.
+
+\subsection{A representation projector is not a zero-mode count}
+\label{sec:matter-projector-lift}
+
+The existing representation construction supplies
+\(27=16_1\oplus10_{-2}\oplus1_4\). The \(16\) here includes the neutral
+right-handed-neutrino slot of the adopted carrier; it is not a claim that
+the minimal Standard Model requires this additional field. Let \(Q_\psi\)
+have the three indicated eigenvalues. Its polynomial projectors are
+\begin{align*}
+ P_{16}&=-\frac{(Q_\psi+2I)(Q_\psi-4I)}9,\\
+ P_{10}&=\frac{(Q_\psi-I)(Q_\psi-4I)}{18},&
+ P_1&=\frac{(Q_\psi-I)(Q_\psi+2I)}{18}.
+\end{align*}
+They sum to the identity, are pairwise orthogonal, and have ranks
+\(16,10,1\). If the associated differential has the form
+\(D_V\otimes I_{27}\), or commutes with a parallel \(Q_\psi\), they are
+chain projectors. A merely pointwise branching is insufficient when
+the differential mixes those sectors. The choice of \(Q_\psi\) here
+does not establish a surviving physical current or require a Wilson
+line in the independent direct MTT gauge-group construction.
+
+Write \(k_+-k_-=3\) and \(m=k_-\). The associated \(16\) and conjugate
+lanes then contain
+\[
+ 16(k_++k_-)=48+32m
+\]
+component zero modes. The net count is \(48\), but the total is \(48\)
+only if the opposite kernel vanishes. Each mirror pair adds \(32\)
+components without changing the index. The accepted \(48\)-dimensional
+representation and anomaly calculation remain valid at their original
+tier; this condition asks whether one particular geometric operator
+realizes exactly that spectrum.
+
+\subsection{What a one-doublet lifting witness does establish}
+\label{sec:matter-exotic-ranks}
+
+Under the three-copy, no-mirror premise, the remaining
+\(3(10\oplus1)\) sector has dimension \(33\). In each copy its Standard
+Model representations have dimensions \(3,3,2,2,1\), denoted
+\(D,D^c,H_u,H_d,S\), with hypercharges
+\(-1/3,1/3,1/2,-1/2,0\). A complex-linear, gauge-equivariant Hermitian
+normal acts through the multiplicity spaces:
+\[
+ H_{\mathrm{ex}}
+ = (M_D\otimes I_3)\oplus(M_{D^c}\otimes I_3)
+ \oplus(M_{H_u}\otimes I_2)\oplus(M_{H_d}\otimes I_2)\oplus M_S .
+\]
+Each \(M_s\) is a positive semidefinite \(3\times3\) matrix.
+Ranks \((3,3,2,3,3)\) give
+\[
+ \operatorname{rank}H_{\mathrm{ex}}=9+9+4+6+3=31,\qquad
+ \dim\ker H_{\mathrm{ex}}=2.
+\]
+The exact witness takes all blocks equal to \(I_3\), except
+\(M_{H_u}=\operatorname{diag}(0,1,1)\). Its kernel carries one
+positive-hypercharge weak doublet. In contrast, \(m_H I_3\) has either
+zero or three family-kernel directions, never one.
+
+This is an equivariant operator feasibility result. It neither selects
+a physical mass scale nor turns a fermionic matter component into a
+bosonic Higgs. Field statistics, conjugation and the signed action must
+supply that interpretation. Nor may every such positive normal be
+identified with an arbitrary conjugate-pair mass term: a single
+square \(3\times3\) map \(B\) pairing two conjugate families has normals
+\(B^\dagger B\) and \(BB^\dagger\) of equal rank, so cannot alone realize
+the unequal doublet ranks \(2\) and \(3\). Additional bosonic terms,
+symmetry breaking or another explicitly typed field construction must
+justify the proposed physical realization. The unit positive gap of
+the witness is only its chosen normalization.
+
+\subsection{Localizing the family question on a curve}
+\label{sec:matter-bht-localization}
+
+The family multiplicity can be tested before normalizing harmonic
+wavefunctions. For this route take a holomorphic principal elliptic
+bundle \(\pi:X\to B\), with translation structure group and relative
+Jacobian \(J=B\times E^\vee\). The zero section is
+\(\sigma:B\to J\), with image \(D_0\). Use the normalized BHT analytic
+gerbe \(\alpha\), its specified zero-section trivialization \(t_0\),
+and the dual normalized universal kernel \(\mathcal P^\vee\).
+The underlying twisted transform is established in
+\cite{BrinzanescuHalanayTrautmann2010}; spectral cohomology localization
+also has the classical bundle-theoretic precedent
+\cite{FriedmanMorganWitten1997}.
+
+Let \(i:C\hookrightarrow J\) be a smooth surface finite flat over \(B\)
+carrying an \(\alpha|_C\)-twisted line \(\mathcal L_\alpha\).
+Assume a smooth transverse intersection
+\(\Sigma=C\cap D_0\). The trivialization \(t_0\) makes the restriction
+an ordinary line \(M\) on \(\Sigma\). In the normalized convention of
+the source result,
+\begin{align}
+ R\pi_*V&=s_*M[-1],&
+ R\Gamma(X,V)&=R\Gamma(\Sigma,M)[-1],
+ \label{eq:matter-bht-localization}
+\end{align}
+where \(V=\Psi(i_*\mathcal L_\alpha)\) and \(s:\Sigma\to B\).
+
+The shift has content. Locally the elliptic transform of the normalized
+Poincare kernel is \(\mathcal O_0[-1]\). A derived fiber at the origin
+has two adjacent classes because the skyscraper's Cartier resolution
+acquires a zero differential there. Transverse intersection eliminates
+the extra Tor terms when the spectral surface is inserted. Principal
+translations and the specified normalization supply the global
+zero-section identity without an unprinted base line. A differently
+normalized kernel, nonprincipal fibration or nontransverse support
+requires its own formula; it is not covered by
+\eqref{eq:matter-bht-localization}.
+
+In particular,
+\[
+ h^0(X,V)=h^3(X,V)=0,\qquad
+ h^1(X,V)=h^0(\Sigma,M),\quad h^2(X,V)=h^1(\Sigma,M).
+\]
+The Euler characteristic changes sign. This upgrades the earlier
+unordered localization contract to an exact oriented statement on
+the declared domain, without asserting that its selected physical
+inputs have already been supplied.
+
+\subsection{The ordinary representative fails, but the selected line decides}
+\label{sec:matter-graph-prym}
+
+For the frozen eta9 graph-Prym route, the product Jacobian has
+\(H^2=2\), \(D_0^2=0\), and spectral class \(9H+3D_0\).
+Consequently the smooth matter curve has class \(9H\) on the K3,
+\[
+ g(\Sigma)=1+\frac{(9H)^2}{2}=82,\qquad \deg(H|_\Sigma)=18.
+\]
+The three graph degrees \(3,3,6\) cut a length-\(12\) cycle \(Z\);
+the ordinary restricted line is
+\[
+ M_{\mathrm{alg}}=\mathcal O_\Sigma(5H)(-Z),\qquad
+ \deg M_{\mathrm{alg}}=78,\qquad \chi(M_{\mathrm{alg}})=-3.
+\]
+The K3 restriction sequence from \(\mathcal O_B(-4H)\) to
+\(\mathcal O_B(5H)\), with Kodaira/Serre vanishing, gives
+\(h^0(\Sigma,\mathcal O_\Sigma(5H))=27\).
+Twelve point conditions remove at most twelve sections. Hence
+\[
+ h^0(M_{\mathrm{alg}})\geq15,\qquad
+ h^1(M_{\mathrm{alg}})\geq18.
+\]
+Under the localization hypotheses the corresponding component count
+is at least \(16(15+18)=528\), not \(48\). This rejects the
+\emph{uncorrected ordinary representative} as a mirror-free source.
+It does not construct that representative as an admissible twisted
+endpoint or exclude the completed twisted construction.
+
+The relevant line is instead
+\[
+ M_\ast=M_{\mathrm{alg}}\otimes F_\alpha,\qquad
+ F_\alpha\in\operatorname{Pic}^0(\Sigma).
+\]
+Here \(F_\alpha\) compares an explicit cover trivialization \(b_C\),
+available after the cover obstruction vanishes, with \(t_0\) on
+the intersection. Degree zero follows after enforcing the fixed
+Chern/index rows in the same normalization. Zero obstruction is an
+existence condition, not the printed cochain or its comparison line.
+Ambient zero-section normalization does not force \(F_\alpha\) to be
+trivial.
+
+For smooth ample \(C\subset B\times E^\vee\), weak Lefschetz identifies
+\(\operatorname{Pic}^0(C)\) with the elliptic-factor Picard variety.
+Those lines restrict trivially to \(\Sigma\subset B\times\{0\}\).
+Thus the ordinary fixed-Chern ambiguity on the cover is not a knob
+that freely tunes the matter line. This conclusion uses ampleness;
+changing that domain would require a fresh restriction calculation.
+
+\subsection{A finite test, not a substitute matrix}
+\label{sec:matter-theta-test}
+
+Mirror freedom on this route is the exact condition \(h^0(M_\ast)=0\).
+The effective locus \(W^0_{78}(\Sigma)\subset\operatorname{Pic}^{78}(\Sigma)\)
+has dimension at most \(78\), while the Picard variety has dimension \(82\).
+Generic degree-zero twists therefore avoid it, but this says nothing
+about where the selected \(F_\alpha\) lands. The \emph{theta test} here
+means this line-cohomology non-speciality test; it is not a weak-angle
+prediction or a reuse of observed flavor data.
+
+Choose an effective divisor \(A\) of degree \(85\). Then
+\[
+ \deg M_\ast(A)=163>2g-2=162,\qquad h^0(M_\ast(A))=82.
+\]
+The evaluation sequence gives one map
+\[
+ \operatorname{Ev}_A:H^0(M_\ast(A))\longrightarrow
+ H^0(M_\ast(A)|_A),\qquad \text{matrix size }85\times82.
+\]
+If its rank is \(r\), exactness gives the entire multiplicity calculation:
+\[
+ h^0(M_\ast)=82-r,\qquad h^1(M_\ast)=85-r.
+\]
+Full column rank, certified by one nonzero \(82\times82\) minor,
+is therefore equivalent to mirror freedom. A rank deficiency
+\(m=82-r\) gives \(48+32m\) components. An identity block padded
+with three rows shows algebraic feasibility, not the value of this
+geometric map. Its entries must be evaluations of sections of the
+same selected line, with bases, divisor and exactness certificate.
+
+For the \(c_3(V)=+6\) normalization, the derived shift fixes
+\[
+ \chi(X,V)=3,\qquad (h^1(X,V),h^2(X,V))=(0,3)
+\]
+when the test passes. Dualization swaps the middle lanes; the naming
+of matter and antimatter follows the representation convention.
+This is not a new selection of a time arrow. Dimensions do not
+require a metric, but normalized harmonic representatives and their
+Yukawa overlaps do. The physical exotic/Higgs operator remains a
+separate same-source export.
+
+The resulting order is now concrete: selected cover and twisted line,
+normalized restriction and transversality, evaluation-map rank, then
+harmonic normalization and physical lifting. The localization theorem
+and finite test are available. A completed obstruction calculation
+must still emit its trivialization and line before it can instantiate
+them. This organization preserves the existing finite SM/profile
+results while identifying what connects them to this geometric source.
 
 \section{The cohesive closure-repair theorem}
 \label{sec:master}

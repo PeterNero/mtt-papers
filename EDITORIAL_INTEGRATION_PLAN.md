@@ -2,7 +2,7 @@
 
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
-cohesive v9 and SM v4. Fixed Points and the companion remain unchanged.
+cohesive v10 and SM v4. Fixed Points and the companion remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -123,7 +123,18 @@ The unchanged 88-class carrier cannot have only the two orientation classes
 as cohomology; at most 84 complement classes lift, with an explicit cyclic
 witness attaining the bound. Its auxiliary metric is not a physical mass gap.
 Ten new exact editorial tests pass and all 49 final PDF pages were inspected.
-Current totals are 80 reviewed: 78 integrated and two historical; 225 unreviewed.
+The v9 checkpoint had 80 reviewed: 78 integrated and two historical; 225 unreviewed.
+
+V10 integrates H4-T18/T19/T20/T21 in section 14, from graded index and
+chain projectors to actual mirror multiplicities, exotic lifting feasibility,
+normalized BHT localization and the selected-line evaluation gate.
+The ordinary graph-Prym representative fails the mirror-free test, but this
+does not reject a completed twisted endpoint. The exact 85-by-82 rank
+criterion is not an emitted geometric matrix. Equivariant duality retains
+its canonical character; a positive rank witness does not supply bosonic
+statistics or a physical conjugate-pair mass action. All 41 earlier imports
+are retained. Eleven new exact tests pass; all 53 PDF pages were inspected.
+Current totals are 84 reviewed: 82 integrated and two historical; 221 unreviewed.
 
 Counts below come from the current source-bound ownership registry. Review
 source hypotheses, actual paper discussion and the latest superseding result;
@@ -131,7 +142,7 @@ do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 27 | Next: equivariant index-first kernel compiler and derived matter zero-mode compiler (H4-T18/T19). BV/orientation/Euler imports are done. Separate signed first-order index, deformation rank, matter representation and actual zero modes; preserve accepted downstream scopes. |
+| 1 | Cohesive source | 23 | Next: q79 string-algebroid promotion, Bott-Chern Maurer-Cartan lift and moment-map reduction. Index/matter/BHT/theta imports are done. Preserve source/action versus evaluated physical data. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |
@@ -144,7 +155,7 @@ do not infer absence or completion from an identifier search.
 | 11 | Perturbative QG | 6 | State the established perturbative/conditional scope, not UV-complete gravity. |
 | 12 | Parameters | 2 | No double-counting of shared inputs, profile coordinates and derived outputs. |
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
-| | Total | 228 | These are not 228 confirmed omissions. |
+| | Total | 221 | These are not 221 confirmed omissions. |
 
 The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
 multi-thousand-line artifact with later appendices, not merely a July status
@@ -166,8 +177,8 @@ historical after reading only its early inventory or newest tail.
   public results paper lock from committed manuscript state.
 - End the next handoff with exact completed result IDs and remaining counts.
 
-Current totals: 305 assigned, 77 reviewed (75 integrated, two historical),
-zero currently confirmed additions, 228 unreviewed, zero stale contextual
+Current totals: 305 assigned, 84 reviewed (82 integrated, two historical),
+zero currently confirmed additions, 221 unreviewed, zero stale contextual
 reviews. The original 19 additions/details are now handled. Further reviews
 may legitimately identify new additions or corrections; these counts are not
 scientific proof-completion scores.

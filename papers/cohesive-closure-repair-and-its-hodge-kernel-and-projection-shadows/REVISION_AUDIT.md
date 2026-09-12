@@ -1,5 +1,49 @@
 # Cohesive Source Revision Audit
 
+## Version 10 Graded Matter and Selected-Line Localization
+
+Date: 2026-09-12. Supersedes local v9; no release authorized.
+
+Four frozen H4-T18/T19/T20/T21 artifacts, their owning proofs and core
+verification formulas were read in context. The forty-one earlier imports
+are retained unchanged; the latest BHT localization theorem resolves the
+earlier localization premise only on its explicitly normalized domain.
+
+- Distinguish the graded first-order index from an ungraded positive square.
+  Require trace-class heat operators in infinite dimension and retain the
+  canonical-line character in equivariant Serre duality.
+- Lift the existing 16/10/1 representation projectors only when they commute
+  with the associated differential. Net index 48 is not actual count 48:
+  mirror pairs produce 48+32m components.
+- Explain the rank-31 normal on 33 exotic components and its one-doublet
+  kernel. It is an equivariant feasibility witness, not a physical Higgs
+  action or a change of statistics. Conjugate-pair square mass maps have
+  equal-rank normals; unequal 2/3 doublet ranks need additional typed data.
+- State normalized principal-elliptic BHT localization, transverse support,
+  zero-section trivialization and the derived [-1] shift. Do not identify
+  vanishing obstruction with an emitted line or trivialization.
+- Compute genus 82, degree 78 and the ordinary graph-Prym obstruction:
+  at least 15/18 middle cohomology classes, hence at least 528 components
+  under localization, not the mirror-free 48. This does not reject every
+  twisted endpoint.
+- Explain the selected degree-zero comparison line and the exact 85-by-82
+  evaluation test. Full column rank is equivalent to mirror freedom; an
+  auxiliary identity matrix or a generic Picard argument is not its value.
+- Keep the index orientation separate from an arrow of time. The selected
+  harmonic normalization and physical lifting/action remain distinct exports.
+
+The source-bound registry names all four exact artifact hashes and anchors.
+Eleven new focused exact tests cover the graded and character examples,
+projector chain maps, mirror counts, all exotic representation matrix units,
+paired-mass rank obstruction, K3 arithmetic, finite evaluation ranks and
+the derived Cartier shift. No scientific worker code was run and no frozen
+research artifact was modified. The abstract is unchanged; the version
+delta is separate. The two-page contents and all 53 final PDF pages were
+visually inspected. The build has zero warnings.
+
+Reviewed LF-normalized TeX SHA-256:
+`056623fbbf72e2dbfe25a1f87e759064038ae24f0c6154c92dad150b6ae82751`.
+
 ## Version 9 BV Reduction and Sharp Topology-Mode Boundary
 
 Date: 2026-09-12. Supersedes local v8; no release authorized.

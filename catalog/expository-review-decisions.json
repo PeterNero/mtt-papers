@@ -15,10 +15,10 @@
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "note": "V9 explains cotangent/BV reduction, the zero-section obstruction, normalized orientation lift and the sharp topology-only Euler lifting bound. Includes exact graded examples and the required physical source/representation/low-energy boundaries; preserves all thirty-eight earlier substantive imports. All 49 final PDF pages visually inspected; zero build warnings and ten new focused exact editorial tests pass. Independent worker and frozen scientific artifacts unchanged. No physical-tier promotion or Zenodo authorization.",
-      "reviewed_main_tex_sha256": "4cfc7599f0449e43ff488be7fff6bbe213355348cb5bd04a003dc33602c89c00",
-      "reviewed_pdf_sha256": "04809991fc85096c94f9f89a72ec2a61405d827740c21027d9edf432aa7fb9db",
-      "reviewed_source_tree_sha256": "881a5bcbdc5fc6d72fce9b58d3885c6eddf782a9c5949972b62d7fef18bdf100",
+      "note": "V10 integrates four index/matter/BHT/theta results in a connected explanatory section. Preserves all forty-one earlier substantive imports and foundational FP scope. Qualifies canonical-character duality and distinguishes a general Hermitian rank witness from a physical bosonic or conjugate-pair mass construction. All 53 final PDF pages visually inspected; zero build warnings and eleven new focused exact editorial tests pass. Independent worker and frozen scientific artifacts unchanged. No physical-tier promotion or Zenodo authorization.",
+      "reviewed_main_tex_sha256": "056623fbbf72e2dbfe25a1f87e759064038ae24f0c6154c92dad150b6ae82751",
+      "reviewed_pdf_sha256": "1e4d21ef396d5aefe2bbf71bd5e91f08a7d8f8e0c4a69206c431fb77ba4d2eed",
+      "reviewed_source_tree_sha256": "7ba4b86bfd50a6bf6e14a6e3bd8a3bfdbb6ea65871c69ebbbd9ae8bcf4cf141b",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {
