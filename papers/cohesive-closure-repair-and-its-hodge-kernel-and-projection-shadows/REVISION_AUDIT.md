@@ -1,5 +1,51 @@
 # Cohesive Source Revision Audit
 
+## Version 5 Compression and Finite Transfer Integration
+
+Date: 2026-09-12. Supersedes local v4; no release authorized.
+
+Eleven frozen CBF source records are integrated into the new section
+"What survives a projection: compression, elimination and transfer".
+The integration ledger lists every artifact hash and literal manuscript anchor.
+The source theorem owner remains CBF; this paper owns their contextual
+comparison with repair, Hodge theory and compatible projection.
+
+- Compression: derive the leakage identity and explain the nonzero compressed
+  commutator without claiming CCR, a quantum state or a physical gauge group.
+- Elimination: distinguish the raw excursion, inverse-weighted Feshbach term
+  and degree-minus-one transfer homotopy. Include the exact block example and
+  an auxiliary Heisenberg differential-algebra witness, not Lens-Nil topology.
+- Finite covariance: explain the old 36-dimensional calculus, its harmonic
+  quarter-turn shadow, and the 144-dimensional signed completion. The latter
+  really adds twelve harmonic classes; the old reducing inclusion is not a
+  quasi-isomorphism or a product embedding.
+- First jets: integrate the formal connection identity and strict harmonic
+  ideal quotient. Qualify the packet's `Rees_degeneration` wording: the
+  specialization of a family of maps has a rank drop, which is not by itself
+  a flat family of algebras with a dimension-changing special fiber. The
+  source theorem's image/kernel identities remain valid. No research artifact
+  is rewritten and no finite quotient result is downgraded.
+- Response: explain the 144-to-48 strong deformation retract, nonzero m1,
+  exact m3/m4 tables and the all-arity nonvanishing family. Do not mistake
+  a nonminimal response model for the four-class harmonic minimal model.
+- Source promotion: explain the tree induction transporting every operation
+  under a contraction-preserving DGA map. Exact all-arity naturality does not
+  compute the full m5 table or provide a selected physical continuum source.
+
+Earlier v3/v4 sections were reread in context and remain unchanged apart from
+pagination: residual/Hessian scope, the six physical rows, the action boundary,
+the embedded-isometry counterexample, ambient projector completeness and the
+seven-row endpoint factorization. Existing reviews may be rebound to this
+revision on that basis, not because an automated verifier requests new hashes.
+Fixed Points I-VI are untouched and remain the upstream foundation.
+
+Validation: final v5 has 31 pages, all rendered and visually inspected on
+2026-09-12; equations on pages 17-18 and bibliography were additionally
+inspected at page scale. Compilation has zero warnings. The five exact
+tests in `scripts/test_cohesive_transfer_editorial.py` pass. Large archived
+operation tables were not rerun. Full corpus verification is recorded in
+the repository continuation handoff.
+
 ## Version 4 Projector Completeness Correction
 
 Date: 2026-09-12. Supersedes local v3; no release authorized.

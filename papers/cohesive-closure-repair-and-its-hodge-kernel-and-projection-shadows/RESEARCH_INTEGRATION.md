@@ -36,10 +36,10 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:243`: `Covariant residual-Hessian identity`
-- `main.tex:498`: `Endomorphism untwisting`
-- `main.tex:612`: `Hodge and kernel package`
-- `main.tex:1247`: `The q79 benchmark and its exact boundary`
+- `main.tex:260`: `Covariant residual-Hessian identity`
+- `main.tex:515`: `Endomorphism untwisting`
+- `main.tex:629`: `Hodge and kernel package`
+- `main.tex:1506`: `The q79 benchmark and its exact boundary`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -59,9 +59,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:555`: `Cohesive Maurer--Cartan repair`
-- `main.tex:734`: `Nonlinear repair descent`
-- `main.tex:774`: `For a finite connected cover with unitary local-system transitions`
+- `main.tex:572`: `Cohesive Maurer--Cartan repair`
+- `main.tex:751`: `Nonlinear repair descent`
+- `main.tex:791`: `For a finite connected cover with unitary local-system transitions`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -95,9 +95,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:555`: `Cohesive Maurer--Cartan repair`
-- `main.tex:734`: `Nonlinear repair descent`
-- `main.tex:774`: `For a finite connected cover with unitary local-system transitions`
+- `main.tex:572`: `Cohesive Maurer--Cartan repair`
+- `main.tex:751`: `Nonlinear repair descent`
+- `main.tex:791`: `For a finite connected cover with unitary local-system transitions`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -117,9 +117,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:555`: `Cohesive Maurer--Cartan repair`
-- `main.tex:734`: `Nonlinear repair descent`
-- `main.tex:774`: `For a finite connected cover with unitary local-system transitions`
+- `main.tex:572`: `Cohesive Maurer--Cartan repair`
+- `main.tex:751`: `Nonlinear repair descent`
+- `main.tex:791`: `For a finite connected cover with unitary local-system transitions`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -167,8 +167,8 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: Version 3 displays all six extra residuals, fixed-chart derivatives including alpha-prime/2, the lane incidence matrix and the 19-to-25-block correction. It explains that allowed support is neither a numerical nonzero matrix nor the full Hilbert-space dimension. The exact kernel intersection is retained, while the old candidate audit is explicitly historical so later hidden-carrier/HYM advances are not regressed. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:1306`: `The explicit residual and its block support`
-- `main.tex:1417`: `These are imported compiler results`
+- `main.tex:1565`: `The explicit residual and its block support`
+- `main.tex:1676`: `These are imported compiler results`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -188,9 +188,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: Contextual import with an explicit source correction, not blanket validation: exact isometric intertwining and rational witnesses are retained. The old global projector estimate from embedding residual and gap alone is false when transverse zero modes exist. V4 gives an exact counterexample, the missing completeness condition and a Riesz-contour replacement on common operator domains. Literal kernels need not persist under small perturbation. The source artifact is immutable; this review records the rejected subclaim and the repair.
 
-- `main.tex:844`: `Retained projectors are not the whole ambient projector`
-- `main.tex:1760`: `its unqualified whole-projector gap estimate is corrected explicitly`
-- `main.tex:876`: `common rectifiable`
+- `main.tex:861`: `Retained projectors are not the whole ambient projector`
+- `main.tex:2019`: `its unqualified whole-projector gap estimate is corrected explicitly`
+- `main.tex:893`: `common rectifiable`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -210,7 +210,7 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The additional E[3] invariance and 22 neutral external-mode assumptions are displayed beside the 1548 count, hidden character multiplicities and general sum-of-squares formula. This is a conditional character reduction, not 1548 accepted numerical coefficients and not a retraction of dense structural support. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:1402`: `There is also a lawful conditional sparsification`
+- `main.tex:1661`: `There is also a lawful conditional sparsification`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -230,9 +230,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:324`: `Why the correction cannot be dropped`
-- `main.tex:388`: `Repair monotonicity and tangent generator`
-- `main.tex:1085`: `Information erased by the square`
+- `main.tex:341`: `Why the correction cannot be dropped`
+- `main.tex:405`: `Repair monotonicity and tangent generator`
+- `main.tex:1344`: `Information erased by the square`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -252,9 +252,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:324`: `Why the correction cannot be dropped`
-- `main.tex:388`: `Repair monotonicity and tangent generator`
-- `main.tex:1085`: `Information erased by the square`
+- `main.tex:341`: `Why the correction cannot be dropped`
+- `main.tex:405`: `Repair monotonicity and tangent generator`
+- `main.tex:1344`: `Information erased by the square`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -288,10 +288,10 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:243`: `Covariant residual-Hessian identity`
-- `main.tex:498`: `Endomorphism untwisting`
-- `main.tex:612`: `Hodge and kernel package`
-- `main.tex:1247`: `The q79 benchmark and its exact boundary`
+- `main.tex:260`: `Covariant residual-Hessian identity`
+- `main.tex:515`: `Endomorphism untwisting`
+- `main.tex:629`: `Hodge and kernel package`
+- `main.tex:1506`: `The q79 benchmark and its exact boundary`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -311,9 +311,9 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:324`: `Why the correction cannot be dropped`
-- `main.tex:388`: `Repair monotonicity and tangent generator`
-- `main.tex:1085`: `Information erased by the square`
+- `main.tex:341`: `Why the correction cannot be dropped`
+- `main.tex:405`: `Repair monotonicity and tangent generator`
+- `main.tex:1344`: `Information erased by the square`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -515,8 +515,8 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: Version 3 gives the transported metric, physical distortion, adjoint and chain-commutator formulas, the I2 versus diag(4,1/9) witness, and the polar product criterion. Bounded invertibility and domain transport are stated. The related embedding counterexample repairs the formerly overbroad projection claim; a physical analytic BHT map remains unconstructed. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:899`: `The transported-metric result makes the latter task concrete`
-- `main.tex:834`: `For example, let`
+- `main.tex:916`: `The transported-metric result makes the latter task concrete`
+- `main.tex:851`: `For example, let`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 
@@ -892,11 +892,18 @@ Compression-induced incompatibility and compatible locality descent are separate
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_constraint_compression_leakage_packet/artifact.json); SHA-256 `e4a0a88d2e5ef13c51aeff58cb094a80275e3608ed3ddbb686d17834e5fbeebd`.
+
+Reviewed 2026-09-12: Reviewed exact leakage and commutator identities, the signed-permutation repair example, and raw versus inverse-weighted versus degree-minus-one excursions. V5 explains each with small exact witnesses. These construct finite algebraic mechanisms, not CCR, an SM gauge group or a physical q79 source.
+
+- `main.tex:949`: `sec:compression-leakage`
+- `main.tex:990`: `sec:excursion-comparison`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_repair_fixedpoint_gauge_descent_packet
 
@@ -906,11 +913,18 @@ Repair equivariance now has an exact path through fixed-point linearization, iso
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_repair_fixedpoint_gauge_descent_packet/artifact.json); SHA-256 `78f6c3296961c901e4a74df6c2d5766b850faa33809b3f3774a07f20f734a57b`.
+
+Reviewed 2026-09-12: Reviewed exact leakage and commutator identities, the signed-permutation repair example, and raw versus inverse-weighted versus degree-minus-one excursions. V5 explains each with small exact witnesses. These construct finite algebraic mechanisms, not CCR, an SM gauge group or a physical q79 source.
+
+- `main.tex:949`: `sec:compression-leakage`
+- `main.tex:990`: `sec:excursion-comparison`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_cohesive_repair_compression_transfer_comparison_packet
 
@@ -920,11 +934,18 @@ The conjectured direct identification is decided negatively on the pinned benchm
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_cohesive_repair_compression_transfer_comparison_packet/artifact.json); SHA-256 `9d0deec9096b8b9ee59fb82ec4e39a9327b55c159279c1b631525330d3544a7c`.
+
+Reviewed 2026-09-12: Reviewed exact leakage and commutator identities, the signed-permutation repair example, and raw versus inverse-weighted versus degree-minus-one excursions. V5 explains each with small exact witnesses. These construct finite algebraic mechanisms, not CCR, an SM gauge group or a physical q79 source.
+
+- `main.tex:949`: `sec:compression-leakage`
+- `main.tex:990`: `sec:excursion-comparison`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet
 
@@ -934,11 +955,17 @@ The selected finite q79 Weyl pair now emits an exact same-source differential, D
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet/artifact.json); SHA-256 `c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c`.
+
+Reviewed 2026-09-12: Reviewed the 36-dimensional Weyl Hodge complex, cohomological S3/C4 transport and product failure, followed by the symmetric 144-dimensional DGA completion. V5 explains the exact order-36 covariance and twelve extra harmonic classes. The latter are not removed by the isometric reducing inclusion. Archived status fields are read in chronological context, not imported as current physical status.
+
+- `main.tex:1021`: `sec:finite-weyl-completion`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner_packet
 
@@ -948,11 +975,17 @@ The selected q79 affine S3 holonomy and shared-root Fourier C4 now act exactly b
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner_packet/artifact.json); SHA-256 `9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d`.
+
+Reviewed 2026-09-12: Reviewed the 36-dimensional Weyl Hodge complex, cohomological S3/C4 transport and product failure, followed by the symmetric 144-dimensional DGA completion. V5 explains the exact order-36 covariance and twelve extra harmonic classes. The latter are not removed by the isometric reducing inclusion. Archived status fields are read in chronological context, not imported as current physical status.
+
+- `main.tex:1021`: `sec:finite-weyl-completion`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet
 
@@ -962,11 +995,17 @@ The unique minimal signed-direction completion of the selected Weyl calculus is 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet/artifact.json); SHA-256 `8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e`.
+
+Reviewed 2026-09-12: Reviewed the 36-dimensional Weyl Hodge complex, cohomological S3/C4 transport and product failure, followed by the symmetric 144-dimensional DGA completion. V5 explains the exact order-36 covariance and twelve extra harmonic classes. The latter are not removed by the isometric reducing inclusion. Archived status fields are read in chronological context, not imported as current physical status.
+
+- `main.tex:1021`: `sec:finite-weyl-completion`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_q79_signed_edge_first_jet_harmonic_ideal_quotient_packet
 
@@ -976,11 +1015,17 @@ The orientation-odd q79 harmonic plane is now proved to be the unique principal 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_signed_edge_first_jet_harmonic_ideal_quotient_packet/artifact.json); SHA-256 `ae56ef0cbada9420152b77d1a7ceec84f4bbd7bc005856dfc1b088172d8ccccf`.
+
+Reviewed 2026-09-12: Reviewed the signed transport identity, unique odd orthogonal principal-symbol plane and twelve-dimensional harmonic ideal quotient. V5 qualifies the packet's Rees_degeneration field: specialized images drop rank, but this does not establish a flat dimension-changing family. The source theorem's map/image identities and strict quotient remain correct. No finite-to-continuum small-spacing family or physical mode-deletion rule is supplied.
+
+- `main.tex:1064`: `sec:first-jet-quotient`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_q79_symmetric_response_retraction_transferred_m3_packet
 
@@ -990,11 +1035,17 @@ The 144-dimensional symmetric signed Weyl DGA now has an exact 48-dimensional st
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_retraction_transferred_m3_packet/artifact.json); SHA-256 `d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532`.
+
+Reviewed 2026-09-12: Reviewed the 144-to-48 normalized contraction, exact m2/m3/m4 census, higher-jet support argument and two-parity all-arity nonvanishing proof. V5 distinguishes the nonminimal response model from harmonic cohomology, mathematical all-arity identities from exhaustive tables, and finite operations from physical vertices. Large tables were not recalculated.
+
+- `main.tex:1100`: `sec:response-retract`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_q79_symmetric_response_transferred_m4_packet
 
@@ -1004,11 +1055,17 @@ The finite transferred q79 response structure is now computed through arity four
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_symmetric_response_transferred_m4_packet/artifact.json); SHA-256 `70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86`.
+
+Reviewed 2026-09-12: Reviewed the 144-to-48 normalized contraction, exact m2/m3/m4 census, higher-jet support argument and two-parity all-arity nonvanishing proof. V5 distinguishes the nonminimal response model from harmonic cohomology, mathematical all-arity identities from exhaustive tables, and finite operations from physical vertices. Large tables were not recalculated.
+
+- `main.tex:1100`: `sec:response-retract`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet
 
@@ -1018,11 +1075,17 @@ A finite invariant-subspace certificate proves for every n>=3 that m_n vanishes 
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet/artifact.json); SHA-256 `800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046`.
+
+Reviewed 2026-09-12: Reviewed the 144-to-48 normalized contraction, exact m2/m3/m4 census, higher-jet support argument and two-parity all-arity nonvanishing proof. V5 distinguishes the nonminimal response model from harmonic cohomology, mathematical all-arity identities from exhaustive tables, and finite operations from physical vertices. Large tables were not recalculated.
+
+- `main.tex:1100`: `sec:response-retract`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_q79_all_arity_source_promotion_packet
 
@@ -1032,11 +1095,17 @@ Exact all-arity functoriality of homotopy transfer and faithful order-36 covaria
 
 Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.
 
-Contextual integration: `unreviewed`.
+Contextual integration: `integrated`.
 
 Literal identifier scan: TeX=False, metadata=False. A missing identifier is not proof of missing mathematics.
 
 [Frozen source artifact](https://github.com/PeterNero/mtt-results-repro/blob/f141a20ea23c5c3ff19cc2161c0e226e29ade8a7/release/results/causal_base_q79_all_arity_source_promotion_packet/artifact.json); SHA-256 `e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563`.
+
+Reviewed 2026-09-12: Reviewed the contraction-morphism tree induction and exact finite translation/Fourier naturality. V5 explains how finitely many source identities imply all-arity transport. Exact reduction of the number of proof obligations is not selection of a physical HYM endpoint, action, continuum domains or approximate-to-exact transport.
+
+- `main.tex:1151`: `sec:all-arity-source-map`
+
+Remaining: Preserve the reviewed scope; no new integration action.
 
 ## causal_base_q79_seven_row_endpoint_factorization_packet
 
@@ -1054,7 +1123,7 @@ Literal identifier scan: TeX=False, metadata=True. A missing identifier is not p
 
 Reviewed 2026-09-12: The manuscript imports the exact dependency organization into GAS, SYN and BV4 and identifies shared-line calculus and Galerkin/Feshbach execution as derived arrows. It states explicitly that three structured packet types are not three scalar parameters and that complete physical source acceptance remains open. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.
 
-- `main.tex:1602`: `The later endpoint-factorization record organizes seven acceptance rows`
+- `main.tex:1861`: `The later endpoint-factorization record organizes seven acceptance rows`
 
 Remaining: Preserve the reviewed scope; no new integration action.
 

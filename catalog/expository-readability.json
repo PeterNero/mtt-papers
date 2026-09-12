@@ -634,11 +634,11 @@
     {
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
       "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
-      "total_words": 8825,
-      "narrative_words": 6189,
+      "total_words": 10471,
+      "narrative_words": 7685,
       "formal_results": 19,
       "proofs": 13,
-      "narrative_words_per_result": 325.7,
+      "narrative_words_per_result": 404.5,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -648,10 +648,10 @@
       "conclusion": true,
       "coverage_dimensions": 7,
       "audit_priority": "reviewed",
-      "heuristic_priority": "moderate",
+      "heuristic_priority": "low",
       "review_status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "review_note": "Version 4 corrects the frozen cutset's whole-projector estimate: extra transverse zero modes are invisible to a retained intertwining residual. The exact counterexample, completeness requirement and isolated-cluster resolvent comparison are proved and explained. Existing twelve imports were reread and retained; no source-selection or physical claim was promoted. All 27 PDF pages were rendered and visually inspected; compilation has zero warnings. Five focused editorial regression tests pass.",
+      "review_note": "V5 integrates eleven compression/finite-transfer records in context: raw versus inverse-weighted versus homotopy excursions, 36/144/48 carriers, twelve extra harmonic classes, the first-jet quotient, nonminimal higher operations and all-arity source-map naturality. Qualifies the Rees image/fiber distinction without downgrading the exact quotient. Prior residual/action/projector corrections reread and retained. All 31 PDF pages rendered and visually inspected, including page-scale equations and references; zero compile warnings and five new small exact checks pass. No large research reruns or physical-source promotion. No Zenodo authorization.",
       "missing_dimensions": []
     },
     {

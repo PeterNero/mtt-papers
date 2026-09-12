@@ -15,10 +15,10 @@
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "note": "Version 4 corrects the frozen cutset's whole-projector estimate: extra transverse zero modes are invisible to a retained intertwining residual. The exact counterexample, completeness requirement and isolated-cluster resolvent comparison are proved and explained. Existing twelve imports were reread and retained; no source-selection or physical claim was promoted. All 27 PDF pages were rendered and visually inspected; compilation has zero warnings. Five focused editorial regression tests pass.",
-      "reviewed_main_tex_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
-      "reviewed_pdf_sha256": "461288cb33b9bd84d0205c41fea1ed95ac657447c069f1c844be7e2a9e792a09",
-      "reviewed_source_tree_sha256": "0a4f55fe0d2d70982eb475299ba216fc70d979bf940c7d3ab380c678d097f561",
+      "note": "V5 integrates eleven compression/finite-transfer records in context: raw versus inverse-weighted versus homotopy excursions, 36/144/48 carriers, twelve extra harmonic classes, the first-jet quotient, nonminimal higher operations and all-arity source-map naturality. Qualifies the Rees image/fiber distinction without downgrading the exact quotient. Prior residual/action/projector corrections reread and retained. All 31 PDF pages rendered and visually inspected, including page-scale equations and references; zero compile warnings and five new small exact checks pass. No large research reruns or physical-source promotion. No Zenodo authorization.",
+      "reviewed_main_tex_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+      "reviewed_pdf_sha256": "f719a1b1d82c5309f5e00a74fa9661b16b07e5821f9193718bc82983ad108c21",
+      "reviewed_source_tree_sha256": "be7ca8bb075dd69cff05d602a6fb62afa9d860b976752bf54f8a082028bcf954",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {

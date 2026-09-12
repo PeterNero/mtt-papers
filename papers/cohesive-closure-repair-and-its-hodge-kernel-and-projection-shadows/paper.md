@@ -9,15 +9,32 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v4
-date: September 2026, Version 4
-generated_from_main_tex_sha256: d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45
+current_version: v5
+date: September 2026, Version 5
+generated_from_main_tex_sha256: 2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411
 paper_id: cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows
 release_state: current_revised_tex
 title: |
   **Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:**
   From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary
 ---
+
+# Version 5 Revision Note
+
+Supersedes
+The local Version 4 manuscript; no public release is implied.
+
+Reason
+Compatible projection alone did not distinguish compression, inverse-weighted elimination and higher-product transfer, or explain the additional harmonic modes required by finite covariance completion.
+
+Resolution
+Integrates eleven source records into one comparison: leakage, finite gauge descent, the 36- and 144-dimensional calculi, and the 48-dimensional response retract with its nontruncating higher products. Separates a harmonic quotient from a flat degeneration and an all-arity theorem from exhaustive operation tables.
+
+Retained result
+The residual, action and projector-completeness corrections remain. No foundational Fixed Points theorem is changed.
+
+Remaining boundary
+Finite covariance and higher operations do not select a physical HYM endpoint, continuum intertwiner, action or measured coupling.
 
 # Version 4 Revision Note
 
@@ -121,7 +138,7 @@ The central distinction of this paper is therefore:
 
 ## How to read the paper
 
-Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">7</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">8</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
+Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">8</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">9</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
 
 ## Vocabulary of claim strength
 
@@ -725,6 +742,129 @@ D_k^{\dagger_{\rm phys}}
 C_k=E_{k+1}D_k-D_kE_k .
 ```
 Thus $`C_k=0`$ is the metric-chain compatibility test. The exact witness in the transported-metric record has transported Hodge matrix $`I_2`$ but physical matrix $`\operatorname{diag}(4,1/9)`$. Polar normalization does not automatically repair the product: if $`T=US`$, its positive factor must itself respect the differential and product for $`U`$ to be a dg-algebra map. These are explicit comparison tests, not a construction of the physical BHT operator or its HYM metric.
+
+# What survives a projection: compression, elimination and transfer
+
+A retained space can inherit an operator without inheriting its entire algebra. Agreement of quadratic forms, products, Green operators and interaction vertices are different requirements. The following comparison integrates the finite compression and transfer results without identifying their carriers with a physical mass matrix. The general transfer machinery is standard homological algebra ; the source-specific content is the exact finite realization and its constraints.
+
+## Leakage measures the failure of an algebra to descend
+
+Let $`P`$ be an orthogonal projector, $`Q=I-P`$, and write $`\Phi_P(S)=PSP|_{P\mathcal H}`$. For bounded operators,
+``` math
+\Phi_P(S)\Phi_P(T)-\Phi_P(ST)=-PSQTP.
+```
+Insert $`I=P+Q`$ between $`S`$ and $`T`$ to prove the identity. The missing term is an excursion out of the retained space and back. Compression is multiplicative on a chosen algebra only when its excursions vanish, for example when the space reduces that algebra.
+
+For commuting self-adjoint $`A,B`$, put $`L_A=QAP`$ and $`L_B=QBP`$. Then
+``` math
+[\Phi_P(A),\Phi_P(B)]=L_B^\dagger L_A-L_A^\dagger L_B,
+ \qquad \left\lVert [\Phi_P(A),\Phi_P(B)] \right\rVert\leq2\left\lVert L_A \right\rVert\left\lVert L_B \right\rVert.
+```
+The exact three-dimensional witness takes $`Q=\frac13\mathbf1\mathbf1^{\mathsf T}`$, $`A=\operatorname{diag}(1,0,0)`$, $`B=\operatorname{diag}(0,1,0)`$. Its compressed commutator, embedded in the ambient space, is
+``` math
+\frac19\begin{pmatrix}0&-1&1\\1&0&-1\\-1&1&0\end{pmatrix}.
+```
+Commuting observables can therefore acquire a noncommutative compression. This does not prove that every projection does so, or derive canonical commutation relations, a Born state or Planck’s constant .
+
+The gauge-descent example supplies a concrete origin for this projector. On $`\mathbb R^3`$, set $`H_0=2P+5Q`$ and $`F(u)=H_0u+(u^{\mathsf T}u)u`$, with repair equation $`\dot u=-F(u)`$. The inner product with $`u`$ shows that $`F(u)=0`$ only at zero. The tangent operator is $`H_0`$; its isolated eigenvalue-two space selects $`P`$. Signed permutations preserve the construction. Their conjugation action on the retained full matrix algebra has kernel $`\{\pm I\}`$, leaving a faithful quotient of order six. In general one must use the stabilizer of the chosen fixed point and an isolated spectral subspace. This is a descent mechanism, not selection of the Standard Model gauge group .
+
+## The internal operator cannot be omitted
+
+For $`R=QRQ`$, write
+``` math
+E_R(S,T)=PSRTP,\qquad E_R(S,T)-E_Q(S,T)=PS(R-Q)TP.
+```
+Raw compression uses $`R=Q`$. Feshbach elimination uses the inverse of $`Q(H-z)Q`$ on $`Q\mathcal H`$, when it exists, and gives
+``` math
+P(H-z)P-PHQ\,[Q(H-z)Q]^{-1}QHP.
+```
+For $`P`$ the first two coordinates of
+``` math
+H=\begin{pmatrix}1&0&1/2&0\\0&2&0&0\\1/2&0&3&0\\0&0&0&4\end{pmatrix},
+```
+the raw $`PHQHP`$ is $`\operatorname{diag}(1/4,0)`$, whereas the inverse-weighted term at zero is $`\operatorname{diag}(1/12,0)`$. The effective operator is $`\operatorname{diag}(11/12,2)`$.
+
+Homotopy transfer inserts a different object again: $`h=d^\dagger G`$, of degree minus one, rather than a degree-zero projector or resolvent. Its ternary operation has three inputs and two signed tree terms. An exterior differential algebra makes the distinction tangible: take $`da=db=0`$, $`dc=ab`$, an orthonormal monomial basis and harmonic complement spanned by $`ab,c`$. Here $`G=Q`$, but $`h(ab)=c`$; the source sign convention gives $`m_3(a,a,b)=ac`$. Equality of $`G`$ and $`Q`$ has not removed the differential or changed a ternary map into a binary compression defect. This Heisenberg differential-algebra example is an auxiliary witness, not the global q79 topology .
+
+## Covariance completion changes the harmonic content
+
+Start with $`A=M_3(\mathbb Q(\omega))`$, $`\omega^2+\omega+1=0`$, a qutrit Weyl pair $`ZX=\omega XZ`$, and commuting automorphisms $`\alpha=\operatorname{Ad}X`$, $`\beta=\operatorname{Ad}Z`$. The two-direction crossed exterior calculus has
+``` math
+K_W=A\oplus(A\theta_x\oplus A\theta_z)\oplus A\theta_x\theta_z,
+ \qquad\dim K_W=(9,18,9).
+```
+Its relations are $`\theta_xa=\alpha(a)\theta_x`$, $`\theta_za=\beta(a)\theta_z`$, with anticommuting square-zero forms, and $`da=(\alpha(a)-a)\theta_x+(\beta(a)-a)\theta_z`$. The finite metric gives Weyl-mode Laplacian eigenvalues $`0,3,6`$, with multiplicities $`1,4,4`$ before tensoring by forms. Harmonic dimensions are $`(1,2,1)`$. Their scalar-coefficient representatives form an exterior subalgebra, so transfer to these harmonics has $`m_n=0`$ for $`n\geq3`$. A Hodge package alone does not manufacture nonzero interactions .
+
+On harmonic degree one reflection acts as $`-I_2`$, and the quarter-turn as $`\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)`$. The associated determinant-twisted rank-six local-system construction has a rank-two Reynolds sector and four complementary strain directions. But the selected full-chain reflection and quarter-turn fail to preserve the old product. Cohomological compatibility is not full differential graded algebra (DGA) compatibility .
+
+Closing the direction orbit under inversion and the quarter-turn gives $`+x,-x,+z,-z`$, hence a symmetric DGA $`A_{\rm sym}`$ with degree dimensions $`(9,36,54,36,9)`$, totaling 144. Squared norm $`1/2`$ per signed edge retains the eigenvalues $`0,3,6`$. The finite order-36 group $`(\mathbb Z_3\times\mathbb Z_3)\rtimes C_4`$ now acts by DGA automorphisms. The old complex embeds isometrically as a reducing cochain summand, but not as a product subalgebra; its orthogonally compressed product is nonassociative off harmonics .
+
+The completion has harmonic dimensions $`(1,4,6,4,1)`$, not $`(1,2,1)`$. The twelve extra classes exemplify the ambient modes that a retained intertwiner cannot exclude. These complexes are not quasi-isomorphic. Their dimensions are neither spacetime dimension, the 27-dimensional finite carrier, nor the rank-102 continuum response bundle.
+
+## A first-jet quotient is not a deletion theorem
+
+Let $`O`$ span the odd differences $`o_i=\theta_{+i}-\theta_{-i}`$, and $`E`$ the even sums $`e_i=\theta_{+i}+\theta_{-i}`$, for $`i=x,z`$. Formal connection transport along one direction gives
+``` math
+\frac{(e^{h\nabla_i}-1)\theta_{+i}+(e^{-h\nabla_i}-1)\theta_{-i}}{h}
+ =\frac{\sinh(h\nabla_i)}{h}o_i+
+   \frac{\cosh(h\nabla_i)-1}{h}e_i.
+```
+The first jet is $`\nabla_i o_i`$; the even channel starts with $`h\nabla_i^2e_i/2`$. Reversal selects $`O`$ as the universal first-symbol landing plane, with unique orthogonal projector $`(I-f^2)/2`$ for the quarter-turn $`f`$. This formal identity does not construct a small-spacing family for the finite qutrit translations .
+
+The exact harmonic quotient is
+``` math
+\mathcal J=\langle E\rangle\subset\Lambda(O\oplus E),\qquad
+ \Lambda(O\oplus E)/\mathcal J\simeq\Lambda(O).
+```
+The ideal has dimensions $`(0,2,5,4,1)`$, totaling twelve. This is a strict associative quotient of the harmonic algebra, not the nonassociative compression of the old full cochain complex.
+
+Scaling $`o_i\mapsto o_i`$, $`e_i\mapsto h e_i`$ defines a family of algebra maps. At nonzero scalar $`h`$ it is invertible; at zero its image has dimension four and kernel $`\mathcal J`$. This statement about specialized images is not a flat family whose fiber dimension drops from sixteen to four. Specialization of the image module over $`\mathbb Q(\omega)[h]`$ need not equal the image of the specialized map. The quotient and suppression order are exact; a flat Rees degeneration requires a separate construction. Higher-jet data are not thereby physically absent modes.
+
+## The response retract keeps the missing classes
+
+An actual strong deformation retract keeps these classes instead of discarding cohomology. Its target is
+``` math
+T=K_W\oplus\mathcal J,\qquad
+ \dim T=(9,20,14,4,1),\qquad\dim T=48.
+```
+For inclusion $`i`$, projection $`p`$ and degree-minus-one homotopy $`\mathsf h`$, the certified identities are
+``` math
+pi=I_T,\qquad d\mathsf h+\mathsf h d=I-ip,
+ \qquad \mathsf h^2=p\mathsf h=\mathsf h i=0.
+```
+The target differential $`m_1=d_T`$ is not zero. This is a response model, not a minimal model consisting only of cohomology. Transfer gives $`m_2=p\mu(i\otimes i)`$ and, in the source convention,
+``` math
+\begin{align*}
+ m_3(a,b,c)={}&p\mu(\mathsf h\mu(ia,ib),ic)\\
+ &-(-1)^{|a|}p\mu(ia,\mathsf h\mu(ib,ic)).
+\end{align*}
+```
+The arity-three identity expresses the associator of $`m_2`$ as the corresponding differential of $`m_3`$: strict associativity has a controlled chain-level replacement .
+
+The frozen computation evaluates every target basis pair and triple and then all degree-admissible quadruples. Both $`m_3,m_4`$ are nonzero; the arity-three and arity-four identities pass exactly. The quadruple audit checks 3,869,500 degree-admissible inputs, with 693,208 nonzero $`m_4`$ values . These archived computations are not rerun here. The nonzero inputs use response modes, so they do not contradict the vanishing of higher products on the harmonic subalgebra.
+
+There is also an all-arity proof. In the fixed source basis take degree-one $`x,y,w`$ and degree-zero $`z`$, labeled $`x=C_{0,0,1}`$, $`y=C_{1,0,1}`$, $`z=C_{1,0,0}`$, $`w=C_{2,0,1}`$. The final index is an exterior-basis mask, not a third Weyl charge. A two-parity state recurrence proves
+``` math
+\begin{align*}
+ m_{2r+3}(x^{\otimes(2r+1)},y,z)&=\frac{2+\omega}{4\,12^r}w,\\
+ m_{2r+4}(x^{\otimes(2r+2)},y,z)&=-\frac{\omega}{8\,12^r}w
+ \qquad(r\geq0).
+\end{align*}
+```
+The hierarchy therefore does not truncate. A separate invariant-subspace argument gives $`m_n=0`$ for $`n\geq3`$ when at least $`n-1`$ inputs lie in $`\mathcal J`$ . These are not exhaustive tables: the cited snapshot does not compute the complete $`m_5`$ table or enumerate every arity-five Stasheff residual. The transfer theorem supplies formal identities; exhaustive table verification is a distinct implementation check.
+
+## One source map can transport the whole hierarchy
+
+Let $`\varphi:A\to A'`$ be a degree-zero DGA morphism and $`\psi:T\to T'`$ a retained chain map between normalized contractions. If
+``` math
+\varphi i=i'\psi,\qquad p'\varphi=\psi p,
+ \qquad\varphi\mathsf h=\mathsf h'\varphi,
+```
+then $`\psi m_n=m'_n\psi^{\otimes n}`$ for every $`n\geq1`$. Move $`\varphi`$ through each decorated transfer tree: its product identity handles vertices, the homotopy square handles internal edges, and the other squares handle leaves and root. Degrees, hence signs, are unchanged. This proves all-arity naturality rather than extrapolating from low-order tests .
+
+The finite translation and Fourier generators preserve the complete 144-to-48 contraction. Their order-36 covariance therefore acts on every transferred operation. At the continuum level a same-source product-preserving map, reducing domains, metric and physical symmetry lift must still be supplied. Approximate squares require defect bounds; they do not give exact naturality.
+
+The finite program thus has an exact response hierarchy and a finite set of sufficient source identities for transporting it. It has not selected the continuum HYM source or its Lorentzian/cyclic action. These $`m_n`$ are not measured Yukawa or gauge couplings: they specify what must be preserved before that physical interpretation is justified.
 
 # Higher repair jets and graph shadows
 

@@ -266,11 +266,13 @@
         "The q79 benchmark and its exact boundary"
       ],
       "assessment": "The owning manuscript supplies the residual-contracted Hessian term, exact-zero normal square, twisted endomorphism dg algebra and stratified Hodge package, with a benchmark/source boundary and original packet ownership. The presence of those results does not require literal machine IDs in each theorem. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
-      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
       "result_hashes": {
         "q79_cohesive_superconnection": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
         "preprojection_covariant_residual_hessian": "247b1b52198dc250f80293e6807f1d2fc7ac126a930c9642ef2b5a3fb7a74921"
-      }
+      },
+      "reevaluated_at": "2026-09-12",
+      "reevaluation": "Reread the v3/v4 residual, action, metric, embedded-isometry, ambient-projector and endpoint-factorization passages. Their text and scope are retained unchanged in v5; the new compression/transfer section supplies context and does not replace their hypotheses."
     },
     {
       "id": "COHESIVE-PHYSICAL-RESIDUAL-20260912",
@@ -286,10 +288,12 @@
         "These are imported compiler results"
       ],
       "assessment": "Version 3 displays all six extra residuals, fixed-chart derivatives including alpha-prime/2, the lane incidence matrix and the 19-to-25-block correction. It explains that allowed support is neither a numerical nonzero matrix nor the full Hilbert-space dimension. The exact kernel intersection is retained, while the old candidate audit is explicitly historical so later hidden-carrier/HYM advances are not regressed. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
-      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
       "result_hashes": {
         "q79_v3w9_full_residual": "937039df105881a4dcbf1ed31d86ab842b5da2ee6df832e7c834d9eb71cae441"
-      }
+      },
+      "reevaluated_at": "2026-09-12",
+      "reevaluation": "Reread the v3/v4 residual, action, metric, embedded-isometry, ambient-projector and endpoint-factorization passages. Their text and scope are retained unchanged in v5; the new compression/transfer section supplies context and does not replace their hypotheses."
     },
     {
       "id": "COHESIVE-DESCENT-20260912",
@@ -308,12 +312,14 @@
         "For a finite connected cover with unitary local-system transitions"
       ],
       "assessment": "The paper owns the MC residual/gauge-row Hessian, nonlinear cost/flow descent and holonomy-fixed equalizer. Version 3 explicitly explains spanning-tree linear descent and compatible projectors. These results were substantially present; literal identifier absence was not missing mathematics. Unitary equivalence and the newly explicit reducing-embedding condition delimit analytic transport; BHT physical metrics and outcome selection are not inferred. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
-      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
       "result_hashes": {
         "q79_maurer_cartan_repair": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
         "local_cech_hilbert_descent": "b6d9a73e29ec3b2e832c99544efa1a8b364db84e0b9ca91c99ad8d26a9e99912",
         "local_closure_repair_descent": "b83aadb5b7d611f11db0d5c307b897cc7230e0f7ebf06681beae4abbe789cafc"
-      }
+      },
+      "reevaluated_at": "2026-09-12",
+      "reevaluation": "Reread the v3/v4 residual, action, metric, embedded-isometry, ambient-projector and endpoint-factorization passages. Their text and scope are retained unchanged in v5; the new compression/transfer section supplies context and does not replace their hypotheses."
     },
     {
       "id": "COHESIVE-LOCAL-WITNESSES-20260912",
@@ -332,12 +338,14 @@
         "Information erased by the square"
       ],
       "assessment": "The exact Phi=(x,x^2+1) example is already displayed with Gram 1, residual correction 2 and Hessian 3. The reversible/dissipative theorem and protected-circulation boundary cover the damping witness. The first-order sign/phase loss is explained by the square-nonselection result; its qutrit phase witness is supporting evidence rather than a new physical CP theorem. No new standalone theorem needs duplication. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
-      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
       "result_hashes": {
         "preprojection_nonzero_defect_hessian_witness": "1c17362537af94ecbbb40de8944ae0c1fd583aa3ffd31231b55e0c6eeef91d15",
         "preprojection_first_order_phase_loss_witness": "9a0a92dad8ad6d461b0d67c61c8b96c266d43c94a1f83a626063c786805a1496",
         "preprojection_reversible_dissipative_repair": "d8ca1cee978ee72b57deb6990b50614a058d499b1a12f249f46a71cc460892cf"
-      }
+      },
+      "reevaluated_at": "2026-09-12",
+      "reevaluation": "Reread the v3/v4 residual, action, metric, embedded-isometry, ambient-projector and endpoint-factorization passages. Their text and scope are retained unchanged in v5; the new compression/transfer section supplies context and does not replace their hypotheses."
     },
     {
       "id": "COHESIVE-METRIC-IMPORT-20260912",
@@ -353,10 +361,12 @@
         "For example, let"
       ],
       "assessment": "Version 3 gives the transported metric, physical distortion, adjoint and chain-commutator formulas, the I2 versus diag(4,1/9) witness, and the polar product criterion. Bounded invertibility and domain transport are stated. The related embedding counterexample repairs the formerly overbroad projection claim; a physical analytic BHT map remains unconstructed. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
-      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
       "result_hashes": {
         "preprojection_bht_transported_metric": "67a0109c6a7c7d02b97e863af1f6ebdeab3a66b27e8e37f4adc4733bb368fee7"
-      }
+      },
+      "reevaluated_at": "2026-09-12",
+      "reevaluation": "Reread the v3/v4 residual, action, metric, embedded-isometry, ambient-projector and endpoint-factorization passages. Their text and scope are retained unchanged in v5; the new compression/transfer section supplies context and does not replace their hypotheses."
     },
     {
       "id": "COHESIVE-SYMMETRY-IMPORT-20260912",
@@ -371,10 +381,12 @@
         "There is also a lawful conditional sparsification"
       ],
       "assessment": "The additional E[3] invariance and 22 neutral external-mode assumptions are displayed beside the 1548 count, hidden character multiplicities and general sum-of-squares formula. This is a conditional character reduction, not 1548 accepted numerical coefficients and not a retraction of dense structural support. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
-      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
       "result_hashes": {
         "q79_rank102_qutrit_reduction": "18b978d0bab66d3f40cf45f8ceab33fd5c6fe6bb031ae8f66c10721fdc5f43d7"
-      }
+      },
+      "reevaluated_at": "2026-09-12",
+      "reevaluation": "Reread the v3/v4 residual, action, metric, embedded-isometry, ambient-projector and endpoint-factorization passages. Their text and scope are retained unchanged in v5; the new compression/transfer section supplies context and does not replace their hypotheses."
     },
     {
       "id": "COHESIVE-ENDPOINT-IMPORT-20260912",
@@ -389,10 +401,12 @@
         "The later endpoint-factorization record organizes seven acceptance rows"
       ],
       "assessment": "The manuscript imports the exact dependency organization into GAS, SYN and BV4 and identifies shared-line calculus and Galerkin/Feshbach execution as derived arrows. It states explicitly that three structured packet types are not three scalar parameters and that complete physical source acceptance remains open. Rechecked in v4: the reviewed source/jet/physical-residual sections are unchanged; the new whole-projector warning adds an independent completeness condition without weakening exact retained transport.",
-      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
       "result_hashes": {
         "causal_base_q79_seven_row_endpoint_factorization_packet": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa"
-      }
+      },
+      "reevaluated_at": "2026-09-12",
+      "reevaluation": "Reread the v3/v4 residual, action, metric, embedded-isometry, ambient-projector and endpoint-factorization passages. Their text and scope are retained unchanged in v5; the new compression/transfer section supplies context and does not replace their hypotheses."
     },
     {
       "id": "FP-CALCULATION-COMPANION-20260912",
@@ -453,9 +467,114 @@
         "common rectifiable"
       ],
       "assessment": "Contextual import with an explicit source correction, not blanket validation: exact isometric intertwining and rational witnesses are retained. The old global projector estimate from embedding residual and gap alone is false when transverse zero modes exist. V4 gives an exact counterexample, the missing completeness condition and a Riesz-contour replacement on common operator domains. Literal kernels need not persist under small perturbation. The source artifact is immutable; this review records the rejected subclaim and the repair.",
-      "main_tex_lf_sha256": "d67e3889c2976cbb7bd9065f2d9bf079672be14617e5ebdafa6c2fca64b79b45",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
       "result_hashes": {
         "q79_continuum_finite_intertwiner_cutset": "565219b949d9f82cb39090489994450f7dfc2a54e9abbb4a28332a3ab2d73891"
+      },
+      "reevaluated_at": "2026-09-12",
+      "reevaluation": "Reread the v3/v4 residual, action, metric, embedded-isometry, ambient-projector and endpoint-factorization passages. Their text and scope are retained unchanged in v5; the new compression/transfer section supplies context and does not replace their hypotheses."
+    },
+    {
+      "id": "COH-COMPRESSION-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "causal_base_constraint_compression_leakage_packet",
+        "causal_base_repair_fixedpoint_gauge_descent_packet",
+        "causal_base_cohesive_repair_compression_transfer_comparison_packet"
+      ],
+      "anchors": [
+        "sec:compression-leakage",
+        "sec:excursion-comparison"
+      ],
+      "assessment": "Reviewed exact leakage and commutator identities, the signed-permutation repair example, and raw versus inverse-weighted versus degree-minus-one excursions. V5 explains each with small exact witnesses. These construct finite algebraic mechanisms, not CCR, an SM gauge group or a physical q79 source.",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+      "result_hashes": {
+        "causal_base_constraint_compression_leakage_packet": "e4a0a88d2e5ef13c51aeff58cb094a80275e3608ed3ddbb686d17834e5fbeebd",
+        "causal_base_repair_fixedpoint_gauge_descent_packet": "78f6c3296961c901e4a74df6c2d5766b850faa33809b3f3774a07f20f734a57b",
+        "causal_base_cohesive_repair_compression_transfer_comparison_packet": "9d0deec9096b8b9ee59fb82ec4e39a9327b55c159279c1b631525330d3544a7c"
+      }
+    },
+    {
+      "id": "COH-FINITE-COVARIANCE-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet",
+        "causal_base_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner_packet",
+        "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet"
+      ],
+      "anchors": [
+        "sec:finite-weyl-completion"
+      ],
+      "assessment": "Reviewed the 36-dimensional Weyl Hodge complex, cohomological S3/C4 transport and product failure, followed by the symmetric 144-dimensional DGA completion. V5 explains the exact order-36 covariance and twelve extra harmonic classes. The latter are not removed by the isometric reducing inclusion. Archived status fields are read in chronological context, not imported as current physical status.",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+      "result_hashes": {
+        "causal_base_selected_finite_weyl_koszul_hodge_and_interaction_cutset_packet": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c",
+        "causal_base_q79_weyl_koszul_monodromy_c4_cohomology_intertwiner_packet": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d",
+        "causal_base_q79_symmetric_weyl_calculus_isometric_retraction_packet": "8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e"
+      }
+    },
+    {
+      "id": "COH-FIRST-JET-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "causal_base_q79_signed_edge_first_jet_harmonic_ideal_quotient_packet"
+      ],
+      "anchors": [
+        "sec:first-jet-quotient"
+      ],
+      "assessment": "Reviewed the signed transport identity, unique odd orthogonal principal-symbol plane and twelve-dimensional harmonic ideal quotient. V5 qualifies the packet's Rees_degeneration field: specialized images drop rank, but this does not establish a flat dimension-changing family. The source theorem's map/image identities and strict quotient remain correct. No finite-to-continuum small-spacing family or physical mode-deletion rule is supplied.",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+      "result_hashes": {
+        "causal_base_q79_signed_edge_first_jet_harmonic_ideal_quotient_packet": "ae56ef0cbada9420152b77d1a7ceec84f4bbd7bc005856dfc1b088172d8ccccf"
+      }
+    },
+    {
+      "id": "COH-RESPONSE-TRANSFER-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet",
+        "causal_base_q79_symmetric_response_transferred_m4_packet",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet"
+      ],
+      "anchors": [
+        "sec:response-retract"
+      ],
+      "assessment": "Reviewed the 144-to-48 normalized contraction, exact m2/m3/m4 census, higher-jet support argument and two-parity all-arity nonvanishing proof. V5 distinguishes the nonminimal response model from harmonic cohomology, mathematical all-arity identities from exhaustive tables, and finite operations from physical vertices. Large tables were not recalculated.",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+      "result_hashes": {
+        "causal_base_q79_symmetric_response_retraction_transferred_m3_packet": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
+        "causal_base_q79_symmetric_response_transferred_m4_packet": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
+        "causal_base_q79_higher_transfer_jet_filtration_and_m5_feasibility_packet": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046"
+      }
+    },
+    {
+      "id": "COH-ALL-ARITY-20260912",
+      "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
+      "reviewed_at": "2026-09-12",
+      "reviewer": "Codex contextual consolidation",
+      "state": "integrated",
+      "result_ids": [
+        "causal_base_q79_all_arity_source_promotion_packet"
+      ],
+      "anchors": [
+        "sec:all-arity-source-map"
+      ],
+      "assessment": "Reviewed the contraction-morphism tree induction and exact finite translation/Fourier naturality. V5 explains how finitely many source identities imply all-arity transport. Exact reduction of the number of proof obligations is not selection of a physical HYM endpoint, action, continuum domains or approximate-to-exact transport.",
+      "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+      "result_hashes": {
+        "causal_base_q79_all_arity_source_promotion_packet": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563"
       }
     }
   ]

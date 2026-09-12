@@ -2,7 +2,7 @@
 
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
-cohesive v4 and SM v4 remain unchanged.
+cohesive v5 and SM v4. Fixed Points and the companion remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -66,6 +66,25 @@ Riesz-cluster replacement. All 27 pages were inspected; five source-regression
 tests pass. The frozen artifact is preserved, with the subclaim correction
 recorded in Kernel rather than silently overwriting historical evidence.
 
+## Completed: Eleven Cohesive Compression/Transfer Imports
+
+Cohesive v5 explains the compression and finite-transfer chain in section 7,
+with frozen citations, worked examples and an explicit physical boundary.
+The 36-dimensional calculus, 144-dimensional covariance completion and
+48-dimensional response retract are not interchangeable carriers. The
+twelve extra harmonic classes are retained in a genuine contraction; a
+four-class harmonic quotient is a different operation. Nonzero m3/m4 and
+the all-arity family are integrated without claiming a full m5 table.
+Contraction-morphism naturality removes separate higher-operation transport
+obligations only after its source hypotheses are supplied.
+
+The first-jet packet's Rees wording is qualified: the specialized image of
+a scaling map can drop rank, but that alone does not construct a flat
+family with a smaller special fiber. Exact quotient identities survive.
+The 31-page PDF is rebuilt and visually reviewed, with zero build warnings.
+Five new small exact editorial checks pass; no large research computation
+was rerun. The registry identifies all eleven result IDs and source hashes.
+
 ## Remaining Contextual Review
 
 Counts below come from the current source-bound ownership registry. Review
@@ -74,7 +93,7 @@ do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 55 | Separate local transfer witnesses, finite signed-edge calculus, endpoint contracts and physical geometry. Prefer a focused companion if the main synthesis would become an inventory. |
+| 1 | Cohesive source | 44 | Next: central charge/curvature and compression. The eleven CBF compression/finite-transfer imports are done; do not repeat them. Keep local/nested transfer and physical geometry distinct. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |
@@ -87,7 +106,7 @@ do not infer absence or completion from an identifier search.
 | 11 | Perturbative QG | 6 | State the established perturbative/conditional scope, not UV-complete gravity. |
 | 12 | Parameters | 2 | No double-counting of shared inputs, profile coordinates and derived outputs. |
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
-| | Total | 253 | These are not 253 confirmed omissions. |
+| | Total | 242 | These are not 242 confirmed omissions. |
 
 The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
 multi-thousand-line artifact with later appendices, not merely a July status
@@ -109,8 +128,8 @@ historical after reading only its early inventory or newest tail.
   public results paper lock from committed manuscript state.
 - End the next handoff with exact completed result IDs and remaining counts.
 
-Current totals: 305 assigned, 52 reviewed (50 integrated, two historical),
-zero currently confirmed additions, 253 unreviewed, zero stale contextual
+Current totals: 305 assigned, 63 reviewed (61 integrated, two historical),
+zero currently confirmed additions, 242 unreviewed, zero stale contextual
 reviews. The original 19 additions/details are now handled. Further reviews
 may legitimately identify new additions or corrections; these counts are not
 scientific proof-completion scores.
