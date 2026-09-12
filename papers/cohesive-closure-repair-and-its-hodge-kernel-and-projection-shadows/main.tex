@@ -17,7 +17,7 @@
 \title{\textbf{Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:}\\
 \large From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary}
 \author{Peter Nero}
-\date{September 2026, Version 12}
+\date{September 2026, Version 13}
 
 \begin{document}
 \maketitle
@@ -61,6 +61,21 @@ continuum-to-finite intertwiner remain open.  Thus closure repair explains
 why the operator and kernel language should recur, without promoting that
 recurrence into a completed theory of dynamics or quantization.
 \end{abstract}
+
+\section*{Version 13 Revision Note}
+\begin{description}
+\item[Supersedes] The local Version 12 manuscript; no public release is implied.
+\item[Reason] Auxiliary-pencil and global-gerbe results needed a coherent
+account without confusing their ranks with the physical eta9 source.
+\item[Resolution] Integrates eight records, explaining family versus fiber
+triviality, local versus global monodromy and affine compression. Distinguishes
+integral quotient and vanishing lattices, and qualifies Neron-model applicability.
+\item[Retained result] All fifty-six earlier integrations and the
+foundational Fixed Points series retain their stated scope.
+\item[Remaining boundary] A rational characteristic is not its normalized
+integral lift. An auxiliary witness is not a selected physical path or
+an analytic gerbe zero.
+\end{description}
 
 \section*{Version 12 Revision Note}
 \begin{description}
@@ -2316,6 +2331,320 @@ physical coefficient-to-carrier map, common connection and analytic
 domains, signed action, and independent map to the accepted 27-state
 algebra remain distinct tasks. No numerical dimension equality closes
 those maps.
+
+\section{Auxiliary pencils and the global gerbe problem}
+\label{sec:deligne-family}
+
+Endomorphism descent does not neutralize the original module gerbe.
+The distinction in \cref{sec:morita-curved-descent} leads to a concrete
+question: can a spectral object be obtained on a suitable cover even
+when no trivialization exists over the whole family? The eight source
+records here answer preparatory questions. They do not identify a
+topological family class with the normalized analytic gerbe value at
+one physical endpoint.
+
+\subsection{Fix the spectral class before using a matrix size}
+\label{sec:deligne-rank-separation}
+Let \(J=S\times E\), where \(S\) is a K3 surface with ample
+polarization \(H^2=2\), and \(D_0=S\times\{p\}\). For a smooth ample
+surface \(C_m\in|mH+3D_0|\), adjunction and Noether's formula give
+\begin{align}
+ C_m^3&=18m^2,& c_2(J)\cdot C_m&=72,\nonumber\\
+ \chi(\mathcal O_{C_m})&=3m^2+6,& q(C_m)&=1,\nonumber\\
+ p_g(C_m)&=3m^2+6,& b_2(C_m)&=18m^2+74 .
+ \label{eq:deligne-surface-ranks}\tag{D1}
+\end{align}
+Only the cubic product with two K3 factors and one elliptic divisor
+survives. Weak Lefschetz gives \(b_1=2\). Subtracting the injected
+ambient \(H^2(J)\), with Hodge dimensions \((1,21,1)\), gives
+\[
+ (h^{2,0},h^{1,1},h^{0,2})_{\rm van}
+   =(3m^2+5,12m^2+41,3m^2+5),\qquad
+ \operatorname{rk}V_m=18m^2+51 .
+ \tag{D2}\label{eq:deligne-vanishing-ranks}
+\]
+Also \(h^0(J,\mathcal O(mH+3D_0))=3(m^2+2)\), by K3 and elliptic
+Riemann--Roch. Hence the projective parameter dimension equals the
+first and last vanishing Hodge dimensions
+\cite{PreprojectionSpectralRanks2026}.
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Quantity & Auxiliary \(m=3\) & Physical eta9 \(m=9\)\\
+\midrule
+Section-space dimension & 33 & 249\\
+Projective parameter dimension & 32 & 248\\
+Vanishing Hodge dimensions & \(32,149,32\) & \(248,1013,248\)\\
+Vanishing local-system rank & 213 & 1509\\
+Affine homogenization rank & 214 & 1510\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Both covers have degree three over \(S\); that degree does not fix
+the K3 polarization. The 792-node pencil and lattice below concern
+\(m=3\) only. The physical eta9 source uses \(m=9\), matching its
+existing compiler. A new physical rank-213 compiler would use the
+wrong carrier. Equal ranks of a compiler frame and an affine extension
+are nevertheless only a consistency check, not an isomorphism of
+filtered differential objects.
+
+\subsection{Fiberwise triviality need not glue}
+\label{sec:deligne-incidence}
+For \(\mathcal L=\mathcal O_J(3H+3D_0)\), global generation gives
+\[
+ 0\to\mathcal K\to H^0(J,\mathcal L)\otimes\mathcal O_J
+       \to\mathcal L\to0,\qquad \operatorname{rk}\mathcal K=32 .
+\]
+The universal incidence is \(\mathcal C=\mathbb P_J(\mathcal K)\):
+over each point of \(J\), sections vanishing there form a
+\(\mathbb P^{31}\). With \(q:\mathcal C\to J\) and
+\(\eta=c_1(\mathcal O_q(1))\), the projective-bundle formula gives
+\[
+ H^3(\mathcal C;\mathbb Z)=
+ q^*H^3(J;\mathbb Z)\oplus\eta q^*H^1(J;\mathbb Z).
+ \tag{D3}\label{eq:deligne-incidence}
+\]
+Its rank is \(44+2=46\). For the source class \(h=\delta\smile x\),
+with \(\delta\cdot H=0\) and \(0\ne x\in H^1(E;\mathbb Z)\),
+one therefore has \(q^*h\ne0\). Yet \(h|_C=0\) on every smooth cover:
+its degree-three pairings vanish by \(x^2=0\) and
+\(\delta\cdot H=0\), with torsion-free cohomology as supplied by
+the source hypotheses \cite{PreprojectionIncidenceDD2026}.
+
+A trivialization on each fiber need not vary compatibly around
+parameter loops. Nonzero \(q^*h\) excludes a universal compatible
+trivialization, hence a universal rank-one twisted line, on the whole
+incidence. It does not exclude one on a selected cover. Topological
+DD zero on that cover is also weaker than analytic gerbe zero.
+
+Removing the discriminant does not remove this family class.
+The source computes
+\[
+ \operatorname{im}\{H^3_{\mathcal D}(\mathcal C;\mathbb Q)
+                         \to H^3(\mathcal C;\mathbb Q)\}
+ =\eta q^*H^1(J;\mathbb Q),\qquad
+ q^*h|_{\mathcal C_U}\ne0 .
+ \tag{D4}\label{eq:deligne-support}
+\]
+The boundary double-incidence resolution has four degree-one
+generators from a cover point \(z\) and its marked singular point
+\(w\). The \(z\) generators map to \(792\eta q^*H^1(J)\);
+the \(w\) generators vanish because odd degree cannot integrate
+against even Chern classes to the real top degree six of \(J_w\).
+The full boundary resolution and mixed-Hodge strictness are also
+required: lower-weight singular gluing cannot enter pure weight-three
+cohomology \cite{PreprojectionSmoothDD2026}. The small Gysin matrix
+alone would not prove that it describes every boundary contribution.
+This decides the earlier survival/boundary dichotomy in favor of
+survival, but does not evaluate the physical eta9 residual.
+
+\subsection{The horizontal characteristic and its integral typing}
+\label{sec:deligne-leray}
+Since \(h\smile(3H+3D_0)=0\), the tube construction gives
+\[
+ 0\ne\kappa_{h,\mathbb Q}\in H^1(U,V_{\mathbb Q}),\qquad
+ \operatorname{rk}V_{\mathbb Q}=213 .
+ \tag{D5}\label{eq:deligne-leray}
+\]
+The primitive ambient space has rank \(44-2=42\). The
+universal-hyperplane map is rationally injective; its pencil
+version detects the class on a Lefschetz pencil
+\cite{PreprojectionLerayDD2026,SchnellTube2009}.
+This is horizontal information about incompatible local
+trivializations, not a nonzero DD class on an individual fiber.
+
+An integral qualification matters. Set \(L_C=H^2(C;\mathbb Z)\),
+\(A_{\mathbb Z}=i^*H^2(J;\mathbb Z)\) and
+\(V_{\mathbb Z}=A_{\mathbb Z}^{\perp}\).
+For the source's primitive ambient embedding in the unimodular
+surface lattice, restriction of the pairing gives
+\[
+ L_C/A_{\mathbb Z}\simeq V_{\mathbb Z}^{\vee},\qquad
+ [V_{\mathbb Z}^{\vee}:V_{\mathbb Z}]=2\cdot3^{23}.
+ \tag{D6}\label{eq:deligne-integral-comparison}
+\]
+Thus the integral quotient is not the vanishing lattice itself.
+An integral trivialization torsor must retain its actual coefficient
+lattice. A rational edge does not by notation become a canonically
+normalized class in \(H^1(U,V_{\mathbb Z})\); that requires a
+lattice comparison or explicitly declared denominator clearing.
+Nonzero rationalization proves non-torsion for an integral
+representative when supplied, but does not construct that lift.
+Schnell explicitly distinguishes the integral quotient and vanishing
+lattices \cite{SchnellTube2009}. We retain rational nonvanishing,
+the family obstruction and the following lattice theorem, while
+qualifying the stronger integral identification in the abbreviated
+source formulation.
+
+\subsection{Local double traversal and a common global origin}
+\label{sec:deligne-local-global}
+The auxiliary surface has signature \((67,169)\). For the K3
+Gram matrix \(Q\) and polarization vector \(a\), its ambient form is
+\[
+ 3\begin{pmatrix}Q&Qa\\a^tQ&0\end{pmatrix}
+       \simeq3\bigl(Q\oplus\langle-2\rangle\bigr).
+\]
+Its Smith invariants are twenty-two 3s and one 6. The even
+orthogonal vanishing lattice has signature \((64,149)\) and
+discriminant group \((\mathbb Z/3)^{22}\oplus\mathbb Z/6\)
+\cite{PreprojectionPencilLattice2026}.
+Its roots \(e_i^2=-2\) generate it integrally and form a monodromy
+orbit. If all had divisibility two, every Gram entry would be even,
+forcing \(2^{213}\mid\det V_{\mathbb Z}\); the determinant actually
+has 2-adic valuation one. Therefore every root has divisibility one.
+
+For \(T_i(v)=v+(v,e_i)e_i\), this implies
+\[
+ (T_i-I)V_{\mathbb Z}=\mathbb Z e_i,\qquad
+ \lambda_i=a_i e_i\ (a_i\in\mathbb Z)
+ \ \Longrightarrow\
+ [\lambda_i]_{\rm local}=0,\quad(I+T_i)\lambda_i=0 .
+ \tag{D7}\label{eq:deligne-local}
+\]
+The local conclusion holds on \(V_{\mathbb Z}^{\vee}\) as well:
+divisibility one gives
+\(V_{\mathbb Z}^{\vee}\cap\mathbb Qe_i=\mathbb Ze_i\);
+primitivity gives \((T_i-I)V_{\mathbb Z}^{\vee}=\mathbb Ze_i\).
+The integral comparison qualification therefore does not undo the
+local root calculation. The selected torsor's meridian must still
+be identified with that rational vanishing line.
+
+The earlier isolated sign-line model had
+\(H^1(C_2,\mathbb Z_-)=\mathbb Z/2\); this is not the answer
+for the full auxiliary lattice. In general,
+\((v\mapsto Tv+a)^2\) translates by \((I+T)a\), so invariant
+translations double, not vanish. It is the selected local root
+calculation, not double traversal alone, that removes the local
+component here \cite{PreprojectionDeligneCutset2026}.
+
+For a simple global counterexample, let two free generators act
+linearly by the swap \(T(x,y)=(y,x)\), with translations \(0\)
+and \((1,-1)\). Each affine generator squares to the identity
+and can separately be conjugated integrally to \(T\). A common
+origin would require both \((T-I)b=0\) and
+\((T-I)b=(1,-1)\), which is impossible. This illustrates,
+without replacing the geometric proof, why zero local components
+can coexist with a globally nonzero characteristic. The
+marking-dependent translations are not independent physical constants.
+
+\subsection{An explicit pencil, not a physical endpoint}
+\label{sec:deligne-explicit-pencil}
+Two integer \(3\times11\) section matrices realize the auxiliary
+existence statement. The basis is the ten cubic K3 monomials and
+its weight-three coordinate, tensored with three elliptic sections.
+For \(C(u)=C_{\rm second}+uC_{\rm smooth}\), nine product charts
+certify smoothness of the base locus modulo 101. All critical
+points lie in one dense chart, with algebra
+\[
+ A_{101}\simeq\mathbb F_{101}[u]/(f_{101}),\qquad
+ \deg f_{101}=792,\qquad \gcd(f_{101},f'_{101})=1 .
+ \tag{D8}\label{eq:deligne-pencil}
+\]
+Product-minor and ratio-minor elimination and an independent
+rational-univariate computation give the same polynomial
+\cite{PreprojectionExplicitPencil2026}.
+Equality of algebra length and eliminant degree makes \(u\)
+separating; squarefreeness gives distinct geometric points, not
+792 rational points over the finite field.
+
+Together with the universal degree-792 discriminant and smooth
+member at infinity, good reduction gives 792 distinct
+characteristic-zero A1 fibers. Merely finding modular points
+would not suffice; the finite critical scheme, proper pencil and
+degree bound matter. The modular nodal anchor at \(u=0\) also
+does not assert that the integer member is singular over \(\mathbb Q\).
+This is an explicit auxiliary witness, not an upstream uniqueness
+rule or an eta9 physical path. This editorial review reads the
+recorded argument and arithmetic; it does not rerun the large
+elimination campaign.
+
+\subsection{Compress the representation, not the source obligations}
+\label{sec:deligne-affine-connection}
+For a specified integral lattice \(\Lambda\) and cocycle
+\(\lambda(gh)=\lambda(g)+\rho(g)\lambda(h)\), set
+\[
+ \widetilde\rho(g)=
+ \begin{pmatrix}\rho(g)&\lambda(g)\\0&1\end{pmatrix},
+ \qquad
+ 0\to\Lambda\to\widetilde\Lambda\to\mathbb Z\to0 .
+ \tag{D9}\label{eq:deligne-affine}
+\]
+Block multiplication proves the representation law.
+Changing one common origin gives a coboundary; splitting means
+vanishing of that class. This works for either correctly specified
+integral lattice, not only a rational basis
+\cite{PreprojectionAffineGM2026}.
+
+On the auxiliary punctured pencil the rank is \(213+1=214\).
+For a local A1 reflection put \(P_-=(I-T)/2\). The convention
+\(\nabla=d-\tfrac12P_-\,dt/t\) has monodromy \(T\);
+after \(t=s^2\), its monodromy is trivial on the local cover.
+The order-two root stack records the sign in its isotropy.
+This gives local regular boundary charts, not a global splitting;
+the usual parabolic correspondence requires the appropriate
+normal-crossing boundary data \cite{BorneLaaroussi2021}.
+
+A regular-singular extension connection
+\[
+ \nabla_{\rm ext}=
+ \begin{pmatrix}\nabla_{\rm GM}&\vartheta\\0&d\end{pmatrix}
+\]
+can encode all marked meridian matrices and translations.
+This packaging does not evaluate \(\vartheta\), supply an integral
+marking or normalize the differential-gerbe lift. A complex
+connection alone does not recover the period lattice.
+Affine homogenization transfers to eta9; the auxiliary ranks,
+792 critical values and divisibility-one proof do not. Its
+application requires the actual rank-1509 source and comparison
+with its rank-1510 augmentation.
+
+\subsection{What would prove an individual analytic zero?}
+\label{sec:deligne-zero-boundary}
+The Euler sequence gives \(H^0(\mathbb P^{32},\Omega^1)=0\).
+For one smooth irreducible divisor of degree \(d>0\), the residue
+sequence also gives \(H^0(\Omega^1(\log\Delta))=0\): the connecting
+map sends \(1\) to \(dH\). Neither is a vector bundle carrying the
+proposed nonconstant global lift. The value
+\(c_{32}(\Omega^1_{\mathbb P^{32}})=33\) is not its zero count.
+The actual discriminant is singular; the smooth-boundary
+calculation tests a shortcut, not its resolved logarithmic bundle
+\cite{PreprojectionDeligneCutset2026}.
+
+The target must keep the normalized gerbe, actual integral image
+and differential refinement. A quotient such as
+\(H^2(C,\mathcal O_C)/\operatorname{im}H^2(C,\mathbb Z)\) is not
+automatically a Hausdorff complex torus.
+Standard intermediate-Jacobian Neron models concern polarized
+weight-minus-one variations \cite{SchnellNeron2010};
+they do not apply to this degree-two gerbe quotient just by
+renaming it a normal function. The filtered/derived comparison
+and representability argument must be supplied. Likewise an
+algebraic zero-locus theorem does not prove a nonempty zero
+\cite{BrosnanPearlstein2009}.
+
+If a correctly typed extended group or torsor object, section and
+localized zero-section intersection are constructed, then
+\[
+ \deg Z_{\rm interior}
+       =\deg Z_{\rm total}-\deg Z_{\rm boundary}.
+ \tag{D10}\label{eq:deligne-zero-degree}
+\]
+Positive interior degree forces nonempty support under those
+intersection hypotheses; it is not obtained from the diagnostic 33.
+An intrinsic construction may retain nonzero global characteristic
+and boundary components. Demanding that every class vanish would
+unnecessarily force the different global-vector route.
+
+The resulting division of work is coherent: the auxiliary family
+explains why local and global repair differ; the physical eta9
+compiler supplies the correct carrier for selected calculation;
+a normalized analytic comparison, certified global transport and
+period decision remain necessary for that endpoint. Existing
+finite-quotient and small-chart results are retained. This
+synthesis neither sets \(\beta_C=0\), supplies \(b_C\), nor reopens
+established hidden-carrier existence at its separate tier.
 
 \section{Higher repair jets and graph shadows}
 \label{sec:graphs}

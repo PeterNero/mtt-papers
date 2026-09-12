@@ -1,5 +1,47 @@
 # Cohesive Source Revision Audit
 
+## Version 13 Auxiliary Pencils, Deligne Data and Integral Typing
+
+Date: 2026-09-12. Supersedes local v12; no release authorized.
+
+Read the eight frozen H4-T22--T29 records, their owning arguments and core
+verifier formulas. T29 was read first to keep the auxiliary |3H+3D0| family
+separate from physical eta9 |9H+3D0|. Primary-source checking includes
+Schnell's tube theorem and integral warning, the weight-minus-one hypotheses
+of his Neron construction, and the root-stack/parabolic correspondence.
+
+The new section 12 connects the Chern/Hodge rank computation, universal
+incidence DD obstruction, smooth-family survival, primitive rational Leray
+edge, local lattice calculation, explicit mod101 pencil, affine compression
+and conditional analytic zero criterion. Each is cited to its single source
+owner. The earlier local parity possibility and survival dichotomy are read
+through their later scoped resolutions, not reopened.
+
+Two substantive qualifications are documented in RESULT_ERRATA and Kernel:
+- The integral ambient quotient is the dual vanishing lattice, not the
+  orthogonal vanishing lattice itself; their index is 2*3^23. Rational
+  injection does not supply a normalized integral lift. Root divisibility
+  and the local component conclusion survive on the full lattice and dual.
+- A degree-two analytic gerbe quotient is not automatically a Hausdorff
+  intermediate-Jacobian torus. Weight-minus-one Neron theorems require a
+  typed comparison. The conditional localized-degree criterion survives.
+
+An exact additive-diff comparison confirms all 56 previous source imports,
+abstract and substantive formulas unchanged. FP I--VI, worker checkouts and
+adopted A/B physical tiers are untouched.
+
+Nine bounded exact editorial tests cover Hodge ranks, signatures/discriminant,
+integral quotient counterexample, affine conjugacy/composition, incompatible
+local origins, Gysin arithmetic and source anchors. These do not replay
+Singular/msolve or prove all topological premises by finite arithmetic.
+
+The final 69-page PDF builds with zero warnings. All pages were visually
+inspected, especially the new section, contents, tables and references.
+
+Reviewed LF-normalized TeX SHA-256:
+`b292dfed0cd6d05cb455a5d025e91d0e11fe19d9f32d8aed0a0d64d53a83ae54`.
+
+
 ## Version 12 PBW/Apolar Quotient and Terminal-Socle Integration
 
 Date: 2026-09-12. Supersedes local v11; no release authorized.

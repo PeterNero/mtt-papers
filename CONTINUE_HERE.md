@@ -6,7 +6,7 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 - The catalog contains 142 papers, and all 305 curated results have one integration home.
 - Flux v6 now preserves the established projective rank-nine hidden carrier and existential HYM connection. The numerical chamber, common visible endpoint and Bianchi data remain separate.
-- The cohesive manuscript is now v12: explicit six-row residual, 25-block support,
+- The cohesive manuscript is now v13: explicit six-row residual, 25-block support,
   conditional character reduction, metric comparison and source-factorization
   imports are integrated. Its isometric-embedding statement is corrected.
   V4 additionally corrects whole-projector comparison: exact retained
@@ -58,6 +58,12 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
   All 48 earlier integrations remain unchanged. Finite symmetric pairing
   is not a positive physical metric; reconstructed quotients are not extra
   actual source returns. All 62 pages inspected; nine exact tests pass.
+  V13 integrates all eight auxiliary-pencil/Deligne records in section 12,
+  with the physical eta9 rank comparison first. Fiberwise DD zero is not
+  family triviality; local double traversal is not a common global origin.
+  Integral quotient versus vanishing lattice and degree-two gerbe versus
+  ordinary Neron-model typing are explicit. All 69 pages inspected and nine
+  new bounded tests pass. All 56 earlier imports are textually unchanged.
 - The new nine-page finite-mode calculation companion owns the recurrence,
   cubic heat-trace and L11 channel package. It cites the foundational series;
   the reverse FP III citation has been removed in v8.
@@ -77,9 +83,9 @@ Current editorial checkpoint: 2026-09-12. Read AGENTS.md and the release require
 
 `catalog/research-integration-reviews.json` is the manual contextual record. `catalog/research-ownership.json` and per-paper `RESEARCH_INTEGRATION.md` are generated views.
 
-95 result assignments have been reviewed: 93 integrated and two historical
+103 result assignments have been reviewed: 101 integrated and two historical
 provenance records needing no new theorem. All 19 originally confirmed
-additions/details have been handled. The other 210 are unreviewed, not known
+additions/details have been handled. The other 202 are unreviewed, not known
 omissions. This is editorial integration, not a new physical closure claim.
 A literal ID in metadata is not manuscript integration. A missing literal ID
 does not prove the mathematics is absent.
@@ -88,14 +94,13 @@ Reviews bind LF-normalized manuscript bytes, exact result hashes and real source
 
 ## Next Editorial Work
 
-1. Continue with the remaining 12 cohesive-source assignments. Next is the
-   auxiliary-pencil/global-Deligne cluster: read the later spectral-class/rank
-   separation before its earlier auxiliary-family claims. Then handle global
-   Fitting descent, pathwise repair, BK3 and the separately scoped atlas.
-   Do not repeat PBW/apolar, string/Bott-Chern, charge, CBF, nested, Morita,
-   Hirsch, BV/Euler or matter reviews. Their declared results are retained.
-   The evolving mathematical-language atlas still needs full scoped reading.
-2. Continue the 210 contextual reviews in the order and clusters recorded in
+1. Continue with the remaining four cohesive-source assignments: global Fitting
+   descent, pathwise repair, BK3 and the separately scoped mathematical-language
+   atlas. The atlas needs full scoped reading, not only an early inventory.
+   Do not repeat the auxiliary-pencil/Deligne or PBW/apolar clusters; all 64
+   earlier integrations retain their stated scope. Check consumer uses of
+   the new integral-lattice and Neron-applicability qualifications.
+2. Continue the 202 contextual reviews in the order and clusters recorded in
    EDITORIAL_INTEGRATION_PLAN.md. SM has no remaining assigned imports.
 3. Review downstream uses of embedded isometries against the corrected cohesive
    theorem. Cost pullback alone is not reducing operator intertwining; exact

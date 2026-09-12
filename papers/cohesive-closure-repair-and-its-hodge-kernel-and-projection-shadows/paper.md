@@ -9,15 +9,32 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v12
-date: September 2026, Version 12
-generated_from_main_tex_sha256: 0afc3ae0af7d40e6ed42fc3ba282b4414ee9fbc7bc62735c58d1d15c9efa2d45
+current_version: v13
+date: September 2026, Version 13
+generated_from_main_tex_sha256: b292dfed0cd6d05cb455a5d025e91d0e11fe19d9f32d8aed0a0d64d53a83ae54
 paper_id: cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows
 release_state: current_revised_tex
 title: |
   **Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:**
   From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary
 ---
+
+# Version 13 Revision Note
+
+Supersedes
+The local Version 12 manuscript; no public release is implied.
+
+Reason
+Auxiliary-pencil and global-gerbe results needed a coherent account without confusing their ranks with the physical eta9 source.
+
+Resolution
+Integrates eight records, explaining family versus fiber triviality, local versus global monodromy and affine compression. Distinguishes integral quotient and vanishing lattices, and qualifies Neron-model applicability.
+
+Retained result
+All fifty-six earlier integrations and the foundational Fixed Points series retain their stated scope.
+
+Remaining boundary
+A rational characteristic is not its normalized integral lift. An auxiliary witness is not a selected physical path or an analytic gerbe zero.
 
 # Version 12 Revision Note
 
@@ -257,7 +274,7 @@ The central distinction of this paper is therefore:
 
 ## How to read the paper
 
-Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">12</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">13</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
+Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">13</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">14</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
 
 ## Vocabulary of claim strength
 
@@ -1536,7 +1553,7 @@ p(H)=H,\qquad H H=2t,\qquad p(HH)=0,\qquad h(HH)=2u\gamma .
 ```
 The homotopy carries the difference. Nor does algebraic $`p`$ supply a spectral gap, an analytic Hodge projector or a low-energy truncation.
 
-This result identifies where additional structure is needed, not a no-go for physical interactions. It concerns higher operations transferred from this particular rational cup-product DGA. A nonlinear residual with nonzero higher jets, twisted bundle coefficients, Yoneda operations or analytic overlap data is a different source of vertices. The repair-jet mechanism already explained in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">12</a> remains valid; its physical coefficients must still be evaluated. The full Hull–Strominger source is not proved formal, and no spacetime scattering amplitude vanishes merely because the topology model has $`m_3=0`$.
+This result identifies where additional structure is needed, not a no-go for physical interactions. It concerns higher operations transferred from this particular rational cup-product DGA. A nonlinear residual with nonzero higher jets, twisted bundle coefficients, Yoneda operations or analytic overlap data is a different source of vertices. The repair-jet mechanism already explained in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">13</a> remains valid; its physical coefficients must still be evaluated. The full Hull–Strominger source is not proved formal, and no spacetime scattering amplitude vanishes merely because the topology model has $`m_3=0`$.
 
 The contrast with the auxiliary Heisenberg model is deliberate: $`dc=ab`$ leaves a nonzero ternary operation there; the selected q79 Hirsch contraction does not. The nonminimal CBF response hierarchy is a third object. None should replace either of the others solely because it is finite-dimensional.
 
@@ -1552,6 +1569,161 @@ For a supplied isometry $`U`$, operations transport exactly to its intrinsic ran
 At arity zero this means $`\widetilde M_0=UM_0`$. The unit, cyclic functional and pairings must also be transported to that range. Using an unrelated ambient unit or ambient rank-normalized trace is not the same construction. This is consistent with the corrected embedded-intertwiner and whole-projector results above.
 
 Thus two obligations are resolved at their stated tiers: projective coefficient descent and rational q79 topology transfer. A selected physical coefficient-to-carrier map, common connection and analytic domains, signed action, and independent map to the accepted 27-state algebra remain distinct tasks. No numerical dimension equality closes those maps.
+
+# Auxiliary pencils and the global gerbe problem
+
+Endomorphism descent does not neutralize the original module gerbe. The distinction in <a href="#sec:morita-curved-descent" data-reference-type="ref+label" data-reference="sec:morita-curved-descent">11.1</a> leads to a concrete question: can a spectral object be obtained on a suitable cover even when no trivialization exists over the whole family? The eight source records here answer preparatory questions. They do not identify a topological family class with the normalized analytic gerbe value at one physical endpoint.
+
+## Fix the spectral class before using a matrix size
+
+Let $`J=S\times E`$, where $`S`$ is a K3 surface with ample polarization $`H^2=2`$, and $`D_0=S\times\{p\}`$. For a smooth ample surface $`C_m\in|mH+3D_0|`$, adjunction and Noether’s formula give
+``` math
+\begin{align}
+ C_m^3&=18m^2,& c_2(J)\cdot C_m&=72,\nonumber\\
+ \chi(\mathcal O_{C_m})&=3m^2+6,& q(C_m)&=1,\nonumber\\
+ p_g(C_m)&=3m^2+6,& b_2(C_m)&=18m^2+74 .
+ \label{eq:deligne-surface-ranks}\tag{D1}
+\end{align}
+```
+Only the cubic product with two K3 factors and one elliptic divisor survives. Weak Lefschetz gives $`b_1=2`$. Subtracting the injected ambient $`H^2(J)`$, with Hodge dimensions $`(1,21,1)`$, gives
+``` math
+(h^{2,0},h^{1,1},h^{0,2})_{\rm van}
+   =(3m^2+5,12m^2+41,3m^2+5),\qquad
+ \operatorname{rk}V_m=18m^2+51 .
+ \tag{D2}\label{eq:deligne-vanishing-ranks}
+```
+Also $`h^0(J,\mathcal O(mH+3D_0))=3(m^2+2)`$, by K3 and elliptic Riemann–Roch. Hence the projective parameter dimension equals the first and last vanishing Hodge dimensions .
+
+<div class="center">
+
+| Quantity                       | Auxiliary $`m=3`$ | Physical eta9 $`m=9`$ |
+|:-------------------------------|------------------:|----------------------:|
+| Section-space dimension        |                33 |                   249 |
+| Projective parameter dimension |                32 |                   248 |
+| Vanishing Hodge dimensions     |     $`32,149,32`$ |      $`248,1013,248`$ |
+| Vanishing local-system rank    |               213 |                  1509 |
+| Affine homogenization rank     |               214 |                  1510 |
+
+</div>
+
+Both covers have degree three over $`S`$; that degree does not fix the K3 polarization. The 792-node pencil and lattice below concern $`m=3`$ only. The physical eta9 source uses $`m=9`$, matching its existing compiler. A new physical rank-213 compiler would use the wrong carrier. Equal ranks of a compiler frame and an affine extension are nevertheless only a consistency check, not an isomorphism of filtered differential objects.
+
+## Fiberwise triviality need not glue
+
+For $`\mathcal L=\mathcal O_J(3H+3D_0)`$, global generation gives
+``` math
+0\to\mathcal K\to H^0(J,\mathcal L)\otimes\mathcal O_J
+       \to\mathcal L\to0,\qquad \operatorname{rk}\mathcal K=32 .
+```
+The universal incidence is $`\mathcal C=\mathbb P_J(\mathcal K)`$: over each point of $`J`$, sections vanishing there form a $`\mathbb P^{31}`$. With $`q:\mathcal C\to J`$ and $`\eta=c_1(\mathcal O_q(1))`$, the projective-bundle formula gives
+``` math
+H^3(\mathcal C;\mathbb Z)=
+ q^*H^3(J;\mathbb Z)\oplus\eta q^*H^1(J;\mathbb Z).
+ \tag{D3}\label{eq:deligne-incidence}
+```
+Its rank is $`44+2=46`$. For the source class $`h=\delta\smile x`$, with $`\delta\cdot H=0`$ and $`0\ne x\in H^1(E;\mathbb Z)`$, one therefore has $`q^*h\ne0`$. Yet $`h|_C=0`$ on every smooth cover: its degree-three pairings vanish by $`x^2=0`$ and $`\delta\cdot H=0`$, with torsion-free cohomology as supplied by the source hypotheses .
+
+A trivialization on each fiber need not vary compatibly around parameter loops. Nonzero $`q^*h`$ excludes a universal compatible trivialization, hence a universal rank-one twisted line, on the whole incidence. It does not exclude one on a selected cover. Topological DD zero on that cover is also weaker than analytic gerbe zero.
+
+Removing the discriminant does not remove this family class. The source computes
+``` math
+\operatorname{im}\{H^3_{\mathcal D}(\mathcal C;\mathbb Q)
+                         \to H^3(\mathcal C;\mathbb Q)\}
+ =\eta q^*H^1(J;\mathbb Q),\qquad
+ q^*h|_{\mathcal C_U}\ne0 .
+ \tag{D4}\label{eq:deligne-support}
+```
+The boundary double-incidence resolution has four degree-one generators from a cover point $`z`$ and its marked singular point $`w`$. The $`z`$ generators map to $`792\eta q^*H^1(J)`$; the $`w`$ generators vanish because odd degree cannot integrate against even Chern classes to the real top degree six of $`J_w`$. The full boundary resolution and mixed-Hodge strictness are also required: lower-weight singular gluing cannot enter pure weight-three cohomology . The small Gysin matrix alone would not prove that it describes every boundary contribution. This decides the earlier survival/boundary dichotomy in favor of survival, but does not evaluate the physical eta9 residual.
+
+## The horizontal characteristic and its integral typing
+
+Since $`h\smile(3H+3D_0)=0`$, the tube construction gives
+``` math
+0\ne\kappa_{h,\mathbb Q}\in H^1(U,V_{\mathbb Q}),\qquad
+ \operatorname{rk}V_{\mathbb Q}=213 .
+ \tag{D5}\label{eq:deligne-leray}
+```
+The primitive ambient space has rank $`44-2=42`$. The universal-hyperplane map is rationally injective; its pencil version detects the class on a Lefschetz pencil . This is horizontal information about incompatible local trivializations, not a nonzero DD class on an individual fiber.
+
+An integral qualification matters. Set $`L_C=H^2(C;\mathbb Z)`$, $`A_{\mathbb Z}=i^*H^2(J;\mathbb Z)`$ and $`V_{\mathbb Z}=A_{\mathbb Z}^{\perp}`$. For the source’s primitive ambient embedding in the unimodular surface lattice, restriction of the pairing gives
+``` math
+L_C/A_{\mathbb Z}\simeq V_{\mathbb Z}^{\vee},\qquad
+ [V_{\mathbb Z}^{\vee}:V_{\mathbb Z}]=2\cdot3^{23}.
+ \tag{D6}\label{eq:deligne-integral-comparison}
+```
+Thus the integral quotient is not the vanishing lattice itself. An integral trivialization torsor must retain its actual coefficient lattice. A rational edge does not by notation become a canonically normalized class in $`H^1(U,V_{\mathbb Z})`$; that requires a lattice comparison or explicitly declared denominator clearing. Nonzero rationalization proves non-torsion for an integral representative when supplied, but does not construct that lift. Schnell explicitly distinguishes the integral quotient and vanishing lattices . We retain rational nonvanishing, the family obstruction and the following lattice theorem, while qualifying the stronger integral identification in the abbreviated source formulation.
+
+## Local double traversal and a common global origin
+
+The auxiliary surface has signature $`(67,169)`$. For the K3 Gram matrix $`Q`$ and polarization vector $`a`$, its ambient form is
+``` math
+3\begin{pmatrix}Q&Qa\\a^tQ&0\end{pmatrix}
+       \simeq3\bigl(Q\oplus\langle-2\rangle\bigr).
+```
+Its Smith invariants are twenty-two 3s and one 6. The even orthogonal vanishing lattice has signature $`(64,149)`$ and discriminant group $`(\mathbb Z/3)^{22}\oplus\mathbb Z/6`$ . Its roots $`e_i^2=-2`$ generate it integrally and form a monodromy orbit. If all had divisibility two, every Gram entry would be even, forcing $`2^{213}\mid\det V_{\mathbb Z}`$; the determinant actually has 2-adic valuation one. Therefore every root has divisibility one.
+
+For $`T_i(v)=v+(v,e_i)e_i`$, this implies
+``` math
+(T_i-I)V_{\mathbb Z}=\mathbb Z e_i,\qquad
+ \lambda_i=a_i e_i\ (a_i\in\mathbb Z)
+ \ \Longrightarrow\
+ [\lambda_i]_{\rm local}=0,\quad(I+T_i)\lambda_i=0 .
+ \tag{D7}\label{eq:deligne-local}
+```
+The local conclusion holds on $`V_{\mathbb Z}^{\vee}`$ as well: divisibility one gives $`V_{\mathbb Z}^{\vee}\cap\mathbb Qe_i=\mathbb Ze_i`$; primitivity gives $`(T_i-I)V_{\mathbb Z}^{\vee}=\mathbb Ze_i`$. The integral comparison qualification therefore does not undo the local root calculation. The selected torsor’s meridian must still be identified with that rational vanishing line.
+
+The earlier isolated sign-line model had $`H^1(C_2,\mathbb Z_-)=\mathbb Z/2`$; this is not the answer for the full auxiliary lattice. In general, $`(v\mapsto Tv+a)^2`$ translates by $`(I+T)a`$, so invariant translations double, not vanish. It is the selected local root calculation, not double traversal alone, that removes the local component here .
+
+For a simple global counterexample, let two free generators act linearly by the swap $`T(x,y)=(y,x)`$, with translations $`0`$ and $`(1,-1)`$. Each affine generator squares to the identity and can separately be conjugated integrally to $`T`$. A common origin would require both $`(T-I)b=0`$ and $`(T-I)b=(1,-1)`$, which is impossible. This illustrates, without replacing the geometric proof, why zero local components can coexist with a globally nonzero characteristic. The marking-dependent translations are not independent physical constants.
+
+## An explicit pencil, not a physical endpoint
+
+Two integer $`3\times11`$ section matrices realize the auxiliary existence statement. The basis is the ten cubic K3 monomials and its weight-three coordinate, tensored with three elliptic sections. For $`C(u)=C_{\rm second}+uC_{\rm smooth}`$, nine product charts certify smoothness of the base locus modulo 101. All critical points lie in one dense chart, with algebra
+``` math
+A_{101}\simeq\mathbb F_{101}[u]/(f_{101}),\qquad
+ \deg f_{101}=792,\qquad \gcd(f_{101},f'_{101})=1 .
+ \tag{D8}\label{eq:deligne-pencil}
+```
+Product-minor and ratio-minor elimination and an independent rational-univariate computation give the same polynomial . Equality of algebra length and eliminant degree makes $`u`$ separating; squarefreeness gives distinct geometric points, not 792 rational points over the finite field.
+
+Together with the universal degree-792 discriminant and smooth member at infinity, good reduction gives 792 distinct characteristic-zero A1 fibers. Merely finding modular points would not suffice; the finite critical scheme, proper pencil and degree bound matter. The modular nodal anchor at $`u=0`$ also does not assert that the integer member is singular over $`\mathbb Q`$. This is an explicit auxiliary witness, not an upstream uniqueness rule or an eta9 physical path. This editorial review reads the recorded argument and arithmetic; it does not rerun the large elimination campaign.
+
+## Compress the representation, not the source obligations
+
+For a specified integral lattice $`\Lambda`$ and cocycle $`\lambda(gh)=\lambda(g)+\rho(g)\lambda(h)`$, set
+``` math
+\widetilde\rho(g)=
+ \begin{pmatrix}\rho(g)&\lambda(g)\\0&1\end{pmatrix},
+ \qquad
+ 0\to\Lambda\to\widetilde\Lambda\to\mathbb Z\to0 .
+ \tag{D9}\label{eq:deligne-affine}
+```
+Block multiplication proves the representation law. Changing one common origin gives a coboundary; splitting means vanishing of that class. This works for either correctly specified integral lattice, not only a rational basis .
+
+On the auxiliary punctured pencil the rank is $`213+1=214`$. For a local A1 reflection put $`P_-=(I-T)/2`$. The convention $`\nabla=d-\tfrac12P_-\,dt/t`$ has monodromy $`T`$; after $`t=s^2`$, its monodromy is trivial on the local cover. The order-two root stack records the sign in its isotropy. This gives local regular boundary charts, not a global splitting; the usual parabolic correspondence requires the appropriate normal-crossing boundary data .
+
+A regular-singular extension connection
+``` math
+\nabla_{\rm ext}=
+ \begin{pmatrix}\nabla_{\rm GM}&\vartheta\\0&d\end{pmatrix}
+```
+can encode all marked meridian matrices and translations. This packaging does not evaluate $`\vartheta`$, supply an integral marking or normalize the differential-gerbe lift. A complex connection alone does not recover the period lattice. Affine homogenization transfers to eta9; the auxiliary ranks, 792 critical values and divisibility-one proof do not. Its application requires the actual rank-1509 source and comparison with its rank-1510 augmentation.
+
+## What would prove an individual analytic zero?
+
+The Euler sequence gives $`H^0(\mathbb P^{32},\Omega^1)=0`$. For one smooth irreducible divisor of degree $`d>0`$, the residue sequence also gives $`H^0(\Omega^1(\log\Delta))=0`$: the connecting map sends $`1`$ to $`dH`$. Neither is a vector bundle carrying the proposed nonconstant global lift. The value $`c_{32}(\Omega^1_{\mathbb P^{32}})=33`$ is not its zero count. The actual discriminant is singular; the smooth-boundary calculation tests a shortcut, not its resolved logarithmic bundle .
+
+The target must keep the normalized gerbe, actual integral image and differential refinement. A quotient such as $`H^2(C,\mathcal O_C)/\operatorname{im}H^2(C,\mathbb Z)`$ is not automatically a Hausdorff complex torus. Standard intermediate-Jacobian Neron models concern polarized weight-minus-one variations ; they do not apply to this degree-two gerbe quotient just by renaming it a normal function. The filtered/derived comparison and representability argument must be supplied. Likewise an algebraic zero-locus theorem does not prove a nonempty zero .
+
+If a correctly typed extended group or torsor object, section and localized zero-section intersection are constructed, then
+``` math
+\deg Z_{\rm interior}
+       =\deg Z_{\rm total}-\deg Z_{\rm boundary}.
+ \tag{D10}\label{eq:deligne-zero-degree}
+```
+Positive interior degree forces nonempty support under those intersection hypotheses; it is not obtained from the diagnostic 33. An intrinsic construction may retain nonzero global characteristic and boundary components. Demanding that every class vanish would unnecessarily force the different global-vector route.
+
+The resulting division of work is coherent: the auxiliary family explains why local and global repair differ; the physical eta9 compiler supplies the correct carrier for selected calculation; a normalized analytic comparison, certified global transport and period decision remain necessary for that endpoint. Existing finite-quotient and small-chart results are retained. This synthesis neither sets $`\beta_C=0`$, supplies $`b_C`$, nor reopens established hidden-carrier existence at its separate tier.
 
 # Higher repair jets and graph shadows
 
@@ -1853,7 +2025,7 @@ D\mathcal A\,j=D\mathcal N\,j=0,\qquad
 ```
 Here $`W`$ is any chosen positive residual metric. All terms involving the vanished rows, including cross terms, vanish on this tangent space. The proof is the chain rule at $`D\mathcal{C}=0`$, not cancellation of positive terms in the ambient Hessian. The normal and obstruction complex is still needed. Gauge/diffeomorphism slices concern the quotient analysis; they are not additional physical residual equations.
 
-For example, take an ambient $`\mathbb R^{11}`$ with coordinates $`(\phi,a,\mu_1,\ldots,\mu_4,n,g_1,\ldots,g_4)`$. Let $`J=(I_7\ 0)`$. Its Euclidean Gram matrix has rank seven. Inclusion of $`(\mu_1,\ldots,\mu_4,g_1,\ldots,g_4)`$, setting $`\phi=a=n=0`$, pulls it back to $`\operatorname{diag}(I_4,0_4)`$, of rank four. The three removed directions are transverse, not three newly discovered physical gauge modes. This conditional restriction does not contradict the ambient 25-block support in <a href="#sec:q79" data-reference-type="ref+label" data-reference="sec:q79">18</a>, and is not proof of a reducing or isometric spectral intertwiner. Without the inclusion and convention match, deleting the anomaly row remains unjustified.
+For example, take an ambient $`\mathbb R^{11}`$ with coordinates $`(\phi,a,\mu_1,\ldots,\mu_4,n,g_1,\ldots,g_4)`$. Let $`J=(I_7\ 0)`$. Its Euclidean Gram matrix has rank seven. Inclusion of $`(\mu_1,\ldots,\mu_4,g_1,\ldots,g_4)`$, setting $`\phi=a=n=0`$, pulls it back to $`\operatorname{diag}(I_4,0_4)`$, of rank four. The three removed directions are transverse, not three newly discovered physical gauge modes. This conditional restriction does not contradict the ambient 25-block support in <a href="#sec:q79" data-reference-type="ref+label" data-reference="sec:q79">19</a>, and is not proof of a reducing or isometric spectral intertwiner. Without the inclusion and convention match, deleting the anomaly row remains unjustified.
 
 ## The action bridge and its positivity boundary
 
@@ -2320,7 +2492,7 @@ K_{\mathcal N}v&=i(\dot\Psi\wedge\bar\Psi+
 ```
 Here $`\dot{\log\nu}=\operatorname{Re}\langle\dot\Omega_{\rm hol},
 \Omega_{\rm hol}\rangle/
-\|\Omega_{\rm hol}\|^2-\tfrac12\operatorname{tr}_g\dot g`$ in the fixed-chart metric convention. Varying complex structure requires the corresponding typed chart terms as well; these formulas do not supply their endpoint coefficients. In particular the factor $`\alpha'/2`$, rather than $`\alpha'/4`$, is forced by differentiating the curvature square. On the normalized chart $`\Psi=\Omega_{\rm unit}`$, with matching volume constants, $`\mathcal N`$ is an identity and its tangent derivative vanishes. If instead $`\Psi=\Omega_{\rm hol}`$, its vanishing imposes the additional constant-norm condition discussed in <a href="#sec:string-calabi" data-reference-type="ref+label" data-reference="sec:string-calabi">14.3</a>. This role clarification preserves the six-row ambient differentiation, while avoiding an unintended restriction on conformally balanced solutions.
+\|\Omega_{\rm hol}\|^2-\tfrac12\operatorname{tr}_g\dot g`$ in the fixed-chart metric convention. Varying complex structure requires the corresponding typed chart terms as well; these formulas do not supply their endpoint coefficients. In particular the factor $`\alpha'/2`$, rather than $`\alpha'/4`$, is forced by differentiating the curvature square. On the normalized chart $`\Psi=\Omega_{\rm unit}`$, with matching volume constants, $`\mathcal N`$ is an identity and its tangent derivative vanishes. If instead $`\Psi=\Omega_{\rm hol}`$, its vanishing imposes the additional constant-norm condition discussed in <a href="#sec:string-calabi" data-reference-type="ref+label" data-reference="sec:string-calabi">15.3</a>. This role clarification preserves the six-row ambient differentiation, while avoiding an unintended restriction on conformally balanced solutions.
 
 The rank-102 complex fiber is
 ``` math
