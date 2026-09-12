@@ -11,12 +11,12 @@
     "owner_papers": 15,
     "manuscript_integration": {
       "historical_context": 2,
-      "integrated": 61,
-      "unreviewed": 242
+      "integrated": 67,
+      "unreviewed": 236
     },
     "reference_scan": {
       "tex_hits": 35,
-      "metadata_hits": 55
+      "metadata_hits": 72
     }
   },
   "results": [
@@ -1528,27 +1528,27 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 260,
+            "line_start": 277,
             "anchor": "Covariant residual-Hessian identity"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 515,
+            "line_start": 532,
             "anchor": "Endomorphism untwisting"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 629,
+            "line_start": 880,
             "anchor": "Hodge and kernel package"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1506,
+            "line_start": 1757,
             "anchor": "The q79 benchmark and its exact boundary"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "8f5c96d5bd396a34a9906899ffd25d29b9dc7bae518bf3812fdd784b0066c8f8",
         "stale_reasons": []
       }
@@ -1577,22 +1577,22 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 572,
+            "line_start": 589,
             "anchor": "Cohesive Maurer--Cartan repair"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 751,
+            "line_start": 1002,
             "anchor": "Nonlinear repair descent"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 791,
+            "line_start": 1042,
             "anchor": "For a finite connected cover with unitary local-system transitions"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "4b9d6e653bb29c098c7a8f8825efc08682956db5e976af48f9a7478a392dbcf6",
         "stale_reasons": []
       }
@@ -1672,22 +1672,22 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 572,
+            "line_start": 589,
             "anchor": "Cohesive Maurer--Cartan repair"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 751,
+            "line_start": 1002,
             "anchor": "Nonlinear repair descent"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 791,
+            "line_start": 1042,
             "anchor": "For a finite connected cover with unitary local-system transitions"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "b6d9a73e29ec3b2e832c99544efa1a8b364db84e0b9ca91c99ad8d26a9e99912",
         "stale_reasons": []
       }
@@ -1716,22 +1716,22 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 572,
+            "line_start": 589,
             "anchor": "Cohesive Maurer--Cartan repair"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 751,
+            "line_start": 1002,
             "anchor": "Nonlinear repair descent"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 791,
+            "line_start": 1042,
             "anchor": "For a finite connected cover with unitary local-system transitions"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "b83aadb5b7d611f11db0d5c307b897cc7230e0f7ebf06681beae4abbe789cafc",
         "stale_reasons": []
       }
@@ -1811,17 +1811,17 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1565,
+            "line_start": 1816,
             "anchor": "The explicit residual and its block support"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1676,
+            "line_start": 1927,
             "anchor": "These are imported compiler results"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "937039df105881a4dcbf1ed31d86ab842b5da2ee6df832e7c834d9eb71cae441",
         "stale_reasons": []
       }
@@ -1850,22 +1850,22 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 861,
+            "line_start": 1112,
             "anchor": "Retained projectors are not the whole ambient projector"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 2019,
+            "line_start": 2270,
             "anchor": "its unqualified whole-projector gap estimate is corrected explicitly"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 893,
+            "line_start": 1144,
             "anchor": "common rectifiable"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "565219b949d9f82cb39090489994450f7dfc2a54e9abbb4a28332a3ab2d73891",
         "stale_reasons": []
       }
@@ -1911,12 +1911,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1661,
+            "line_start": 1912,
             "anchor": "There is also a lawful conditional sparsification"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "18b978d0bab66d3f40cf45f8ceab33fd5c6fe6bb031ae8f66c10721fdc5f43d7",
         "stale_reasons": []
       }
@@ -2608,22 +2608,22 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 341,
+            "line_start": 358,
             "anchor": "Why the correction cannot be dropped"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 405,
+            "line_start": 422,
             "anchor": "Repair monotonicity and tangent generator"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1344,
+            "line_start": 1595,
             "anchor": "Information erased by the square"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "1c17362537af94ecbbb40de8944ae0c1fd583aa3ffd31231b55e0c6eeef91d15",
         "stale_reasons": []
       }
@@ -2652,22 +2652,22 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 341,
+            "line_start": 358,
             "anchor": "Why the correction cannot be dropped"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 405,
+            "line_start": 422,
             "anchor": "Repair monotonicity and tangent generator"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1344,
+            "line_start": 1595,
             "anchor": "Information erased by the square"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "9a0a92dad8ad6d461b0d67c61c8b96c266d43c94a1f83a626063c786805a1496",
         "stale_reasons": []
       }
@@ -2684,10 +2684,27 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COH-CENTRAL-CHARACTER-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual consolidation",
+        "assessment": "The exact independent-lane Weyl/Fourier witness is explained. Identified lane centers are distinguished from a diagonal tensor action, whose cubic central character cancels. This does not identify the physical 27-carrier, CLN or the continuum shared line.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 643,
+            "anchor": "sec:central-qutrit-character"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
+        "result_sha256": "475384a4bf2415a95274ea176e5e186ba989e47cc553598c6b9a5acf96147f8f",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_covariant_residual_hessian",
@@ -2713,27 +2730,27 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 260,
+            "line_start": 277,
             "anchor": "Covariant residual-Hessian identity"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 515,
+            "line_start": 532,
             "anchor": "Endomorphism untwisting"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 629,
+            "line_start": 880,
             "anchor": "Hodge and kernel package"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1506,
+            "line_start": 1757,
             "anchor": "The q79 benchmark and its exact boundary"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "247b1b52198dc250f80293e6807f1d2fc7ac126a930c9642ef2b5a3fb7a74921",
         "stale_reasons": []
       }
@@ -2762,22 +2779,22 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 341,
+            "line_start": 358,
             "anchor": "Why the correction cannot be dropped"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 405,
+            "line_start": 422,
             "anchor": "Repair monotonicity and tangent generator"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1344,
+            "line_start": 1595,
             "anchor": "Information erased by the square"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "d8ca1cee978ee72b57deb6990b50614a058d499b1a12f249f46a71cc460892cf",
         "stale_reasons": []
       }
@@ -2794,10 +2811,32 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COH-SINGLE-CURVED-CHARGE-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual consolidation",
+        "assessment": "Nilpotent factorization and the curved-square formula are integrated with finite examples. The phase-dependence claim survives, but unique phase recovery even modulo sign does not follow; the displayed conjugate rational phases give a counterexample. Harmonic motion requires a supplied skew generator; grading rotations can be unitarily equivalent. Central MC curvature can act trivially. No continuum domain or physical phase is silently selected.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 668,
+            "anchor": "sec:single-charge-factorization"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 717,
+            "anchor": "sec:curved-phase-boundary"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
+        "result_sha256": "f5afb58c3db5bf76a0d3c6f578c5bfad4ab6e47a6b46f6b52d4a96ac69d4ba19",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_curved_charge_phase_curvature",
@@ -2811,10 +2850,32 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COH-SINGLE-CURVED-CHARGE-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual consolidation",
+        "assessment": "Nilpotent factorization and the curved-square formula are integrated with finite examples. The phase-dependence claim survives, but unique phase recovery even modulo sign does not follow; the displayed conjugate rational phases give a counterexample. Harmonic motion requires a supplied skew generator; grading rotations can be unitarily equivalent. Central MC curvature can act trivially. No continuum domain or physical phase is silently selected.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 668,
+            "anchor": "sec:single-charge-factorization"
+          },
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 717,
+            "anchor": "sec:curved-phase-boundary"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
+        "result_sha256": "83525dfc59971e21f9d981b7881487a0f7675e6eabe3e4b479027dbbc1d38ca8",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_common_curvature_jordan_lie",
@@ -2828,10 +2889,27 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COH-JORDAN-CENTER-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual consolidation",
+        "assessment": "The trace residual correction and complementary Jordan/Lie maps are explained on the declared real matrix slice. Lie data on the full algebra leave its center; the full Jordan map recovers F via the unit. Restricted tangent readouts need not supply that unit. One scalar per imposed block orbit counts central ambiguity, not all physical parameters or selected SM values.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 756,
+            "anchor": "sec:jordan-lie-center"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
+        "result_sha256": "5ddb63e3ca9aa3eed390b460f7cca22c91b752d0eaf838302d98e6f9d4b3f9b9",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_curved_cyclic_repair_germ",
@@ -2862,10 +2940,27 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COH-ADMISSIBLE-RADIAL-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual consolidation",
+        "assessment": "The homogeneous radial no-go and exact four-dimensional phase circle are integrated. A constrained critical point needs the second-fundamental-form Hessian term: eight minus eight equals zero here. The admissible stratum, physical shared line, traversal speed and Lorentzian time are not supplied by this witness. The result does not apply unchanged to arbitrary nonhomogeneous defects.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 810,
+            "anchor": "sec:admissible-radial-circle"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
+        "result_sha256": "e4bac1eafabd604a95281d7cce6fe250d065560db9dc303cce0ab5ded0864795",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_central_curvature_compression",
@@ -2879,10 +2974,27 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
-      "manuscript_integration": "unreviewed",
-      "contextual_review": null
+      "manuscript_integration": "integrated",
+      "contextual_review": {
+        "id": "COH-JORDAN-CENTER-20260912",
+        "state": "integrated",
+        "reviewed_at": "2026-09-12",
+        "reviewer": "Codex contextual consolidation",
+        "assessment": "The trace residual correction and complementary Jordan/Lie maps are explained on the declared real matrix slice. Lie data on the full algebra leave its center; the full Jordan map recovers F via the unit. Restricted tangent readouts need not supply that unit. One scalar per imposed block orbit counts central ambiguity, not all physical parameters or selected SM values.",
+        "locations": [
+          {
+            "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
+            "line_start": 756,
+            "anchor": "sec:jordan-lie-center"
+          }
+        ],
+        "remaining_action": "",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
+        "result_sha256": "20b8ec7f4b0288d7856d60bfe021a7dbfbb58c43b2660d1a5bd7920f731b8ca0",
+        "stale_reasons": []
+      }
     },
     {
       "result_id": "preprojection_nested_witten_repair",
@@ -3044,17 +3156,17 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 916,
+            "line_start": 1167,
             "anchor": "The transported-metric result makes the latter task concrete"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 851,
+            "line_start": 1102,
             "anchor": "For example, let"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "67a0109c6a7c7d02b97e863af1f6ebdeab3a66b27e8e37f4adc4733bb368fee7",
         "stale_reasons": []
       }
@@ -5768,7 +5880,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -5780,17 +5892,17 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 949,
+            "line_start": 1200,
             "anchor": "sec:compression-leakage"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 990,
+            "line_start": 1241,
             "anchor": "sec:excursion-comparison"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "e4a0a88d2e5ef13c51aeff58cb094a80275e3608ed3ddbb686d17834e5fbeebd",
         "stale_reasons": []
       }
@@ -5807,7 +5919,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -5819,17 +5931,17 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 949,
+            "line_start": 1200,
             "anchor": "sec:compression-leakage"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 990,
+            "line_start": 1241,
             "anchor": "sec:excursion-comparison"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "78f6c3296961c901e4a74df6c2d5766b850faa33809b3f3774a07f20f734a57b",
         "stale_reasons": []
       }
@@ -5846,7 +5958,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -5858,17 +5970,17 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 949,
+            "line_start": 1200,
             "anchor": "sec:compression-leakage"
           },
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 990,
+            "line_start": 1241,
             "anchor": "sec:excursion-comparison"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "9d0deec9096b8b9ee59fb82ec4e39a9327b55c159279c1b631525330d3544a7c",
         "stale_reasons": []
       }
@@ -5885,7 +5997,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -5897,12 +6009,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1021,
+            "line_start": 1272,
             "anchor": "sec:finite-weyl-completion"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "c517c8088ee948998866ff08a077f5cdde3c58e1278d1ab7b96cd32d8044f33c",
         "stale_reasons": []
       }
@@ -5919,7 +6031,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -5931,12 +6043,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1021,
+            "line_start": 1272,
             "anchor": "sec:finite-weyl-completion"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "9f0ac382f936b8ad85ec096d13c165ee3237ba9a1d3c1a4b620fe4dd7c33801d",
         "stale_reasons": []
       }
@@ -5953,7 +6065,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -5965,12 +6077,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1021,
+            "line_start": 1272,
             "anchor": "sec:finite-weyl-completion"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "8a050ec488410408626f1923ca82fee6dd29a28cba51da95dd193ea358feca9e",
         "stale_reasons": []
       }
@@ -5987,7 +6099,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -5999,12 +6111,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1064,
+            "line_start": 1315,
             "anchor": "sec:first-jet-quotient"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "ae56ef0cbada9420152b77d1a7ceec84f4bbd7bc005856dfc1b088172d8ccccf",
         "stale_reasons": []
       }
@@ -6021,7 +6133,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -6033,12 +6145,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1100,
+            "line_start": 1351,
             "anchor": "sec:response-retract"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "d5c105d467c2580b52ecf640cc233ab5bae607c2df359c9cd8d217b2cfa1b532",
         "stale_reasons": []
       }
@@ -6055,7 +6167,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -6067,12 +6179,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1100,
+            "line_start": 1351,
             "anchor": "sec:response-retract"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "70d066f35fe358e16a3e315949163a9246a70e1acf018ccbb62059c7ceb6ba86",
         "stale_reasons": []
       }
@@ -6089,7 +6201,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -6101,12 +6213,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1100,
+            "line_start": 1351,
             "anchor": "sec:response-retract"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "800eaa213102e93b2d8874ff4c18cfa045abb7ac5565a46b9bef38ad01ac3046",
         "stale_reasons": []
       }
@@ -6123,7 +6235,7 @@
       "scope": "Preserve the artifact's exact tier and guards; paper ownership does not promote a source claim.",
       "reference_scan": {
         "tex": false,
-        "metadata": false
+        "metadata": true
       },
       "manuscript_integration": "integrated",
       "contextual_review": {
@@ -6135,12 +6247,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1151,
+            "line_start": 1402,
             "anchor": "sec:all-arity-source-map"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "e04772e06f9748194387e624b5b4d9d4930a81346a4bc332da1ecc010b34b563",
         "stale_reasons": []
       }
@@ -6169,12 +6281,12 @@
         "locations": [
           {
             "source_ref": "papers/cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows/main.tex",
-            "line_start": 1861,
+            "line_start": 2112,
             "anchor": "The later endpoint-factorization record organizes seven acceptance rows"
           }
         ],
         "remaining_action": "",
-        "main_tex_lf_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
+        "main_tex_lf_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
         "result_sha256": "a8b7a1361e3e84a7195a23255169d8f0019f62da0223128fe4cf47a7c3b1f8aa",
         "stale_reasons": []
       }

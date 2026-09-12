@@ -9,15 +9,32 @@ author:
 - Peter Nero
 bibliography:
 - main.bib
-current_version: v5
-date: September 2026, Version 5
-generated_from_main_tex_sha256: 2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411
+current_version: v6
+date: September 2026, Version 6
+generated_from_main_tex_sha256: c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78
 paper_id: cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows
 release_state: current_revised_tex
 title: |
   **Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows:**
   From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary
 ---
+
+# Version 6 Revision Note
+
+Supersedes
+The local Version 5 manuscript; no public release is implied.
+
+Reason
+The common-source discussion had not yet integrated the single-charge, curved-charge, central-curvature and admissible-tangent results.
+
+Resolution
+Explains six finite/local source records: shared central characters, nilpotent factorization, phase-dependent curved squares, complementary Jordan/Lie readouts, central identifiability and intrinsic stability on a constrained phase circle.
+
+Retained result
+The previous residual, action, projection, finite transfer and first-jet qualifications remain. Fixed Points I–VI are unchanged.
+
+Remaining boundary
+An algebraic charge is not an electric charge; phase dependence is not unique phase recovery; a small center does not select physical constants. The physical source, admissible stratum, domains and shared-line realization still require their own construction.
 
 # Version 5 Revision Note
 
@@ -138,7 +155,7 @@ The central distinction of this paper is therefore:
 
 ## How to read the paper
 
-Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">8</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">9</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
+Readers interested in the universal differential geometry may read <a href="#sec:residual-hessian,sec:dynamics" data-reference-type="ref+label" data-reference="sec:residual-hessian,sec:dynamics">[sec:residual-hessian,sec:dynamics]</a>. The cohesive and q79 construction is in <a href="#sec:cohesive,sec:q79" data-reference-type="ref+label" data-reference="sec:cohesive,sec:q79">[sec:cohesive,sec:q79]</a>. The operator, kernel, and projection chain is proved in <a href="#sec:hodge,sec:descent-projection" data-reference-type="ref+label" data-reference="sec:hodge,sec:descent-projection">[sec:hodge,sec:descent-projection]</a>. The relation to perturbative graphs is in <a href="#sec:graphs" data-reference-type="ref+label" data-reference="sec:graphs">9</a>. The crucial warning that repair is not automatically action appears in <a href="#sec:action-boundary" data-reference-type="ref+label" data-reference="sec:action-boundary">10</a>. The final status and theorem-ownership tables are in <a href="#sec:ownership,sec:frontier" data-reference-type="ref+label" data-reference="sec:ownership,sec:frontier">[sec:ownership,sec:frontier]</a>.
 
 ## Vocabulary of claim strength
 
@@ -502,6 +519,126 @@ d_a=d+[a,-].
 </div>
 
 The algebraic residual is canonical once the cohesive object is fixed. The Hermitian metric, adjoint, normalization, and physical moment-map rows are not. In particular, $`d_0^{\dagger}a=0`$ is a gauge slice and must not be renamed the physical HYM equation.
+
+# One charge, complementary curvature readouts
+
+The preceding construction starts from a defect and a metric. The next question is whether its reversible, dissipative and curvature operators can come from fewer independent choices. Six finite/local source records give a precise partial answer. Here *charge* means an algebraic operator, as in a differential or supersymmetry charge, not an electric charge or a selected particle quantum number. The Hodge-square mechanism has established precedents in supersymmetric quantum mechanics . Its use here supplies a constrained source architecture, not a claim that the mechanism itself is new.
+
+## The shared center must be specified as a representation
+
+On a qutrit basis $`e_j`$, $`j\in\mathbb Z_3`$, put
+``` math
+Xe_j=e_{j+1},\qquad Ze_j=\omega^j e_j,\qquad \omega^3=1,
+ \quad \omega\ne1.
+```
+Then $`XZ=\omega^{-1}ZX`$ and $`XZX^{-1}Z^{-1}=\omega^{-1}I`$. The Fourier matrix with entries $`\omega^{jk}`$ conjugates $`X`$ to $`Z`$ and $`Z`$ to $`X^{-1}`$. On $`(\mathbb C^3)^{\otimes3}`$, placing $`X,Z`$ separately in each factor gives three commuting lanes with the same scalar commutator $`\omega^{-1}I_{27}`$ .
+
+The representation qualification matters. These are independent lane actions with their scalar centers identified, a central-product construction. They are not the diagonal tensor action of one qutrit group. For that diagonal action the two operators $`X^{\otimes3},Z^{\otimes3}`$ commute, since their commutator is $`\omega^{-3}I_{27}=I_{27}`$. Thus even the same tensor dimension does not specify the central character. The witness does not identify this carrier with CLN, the physical finite 27-dimensional carrier, or an exceptional Jordan algebra. Nor does an order-three scalar action alone construct the shared differential line with its continuum connection and holonomy.
+
+## Nilpotence links reversible transport and damping
+
+Let $`d`$ act on a finite-dimensional complex Hilbert space, with $`d^2=0`$. For a unit phase $`\zeta`$, define
+``` math
+B_\zeta=\zeta d+\bar\zeta d^\dagger,\qquad
+ \Delta=dd^\dagger+d^\dagger d.
+```
+The square expansion gives $`B_\zeta^\dagger=B_\zeta`$, $`B_\zeta^2=\Delta\geq0`$, and $`\ker\Delta=\ker d\cap\ker d^\dagger`$. Let $`P_h`$ project onto this harmonic space. If $`Z_h`$ is skew-adjoint and commutes with $`d`$ and $`d^\dagger`$, then for $`\gamma\geq0`$ the generator
+``` math
+\mathcal L=-iB_\zeta-\gamma\Delta+Z_hP_h
+```
+has mutually commuting summands. Consequently
+``` math
+e^{s\mathcal L}=e^{sZ_hP_h}e^{-isB_\zeta}e^{-\gamma s\Delta},
+ \qquad
+ \frac{d}{ds}\left\lVert \psi \right\rVert^2=-2\gamma\langle\psi,\Delta\psi\rangle.
+```
+This is the single-charge factorization result . It derives compatibility between the reversible operator and damping from $`d`$, while leaving $`d`$, its metric, $`\zeta`$, $`\gamma`$, and $`Z_h`$ as supplied data. The parameter $`s`$ is not automatically physical time. Continuum extensions need domains and strong commutation, not just formal commutator identities.
+
+For a small example take $`d=E_{12}`$ on $`\mathbb C^3`$. Then $`\Delta=\operatorname{diag}(1,1,0)`$. The first two modes decay for $`\gamma>0`$; on the third mode both $`B_\zeta`$ and $`\Delta`$ vanish. Persistent harmonic phase motion must therefore be supplied by $`Z_hP_h`$, not by the Hodge operator. This is compatible with the earlier strict-gradient circulation obstruction: the undamped motion belongs to the extra skew generator, not to gradient repair.
+
+Changing $`\zeta`$ changes the unsquared operator in a fixed frame, but that is not by itself an observable distinction. When $`d`$ raises an integer grading $`N`$ by one,
+``` math
+U_\theta=e^{i\theta N},\qquad
+ B_{e^{i\theta}}=U_\theta B_1U_\theta^\dagger.
+```
+If states and observables are transported as well, these are unitarily equivalent descriptions. A physical relative phase requires fixed comparison data. Squaring alone selects neither that data nor an arrow of time.
+
+## Curved squares can see phase without identifying it
+
+For an arbitrary finite operator $`d`$, put $`\Delta_0=dd^\dagger+d^\dagger d`$. The same expansion gives
+``` math
+B_\zeta^2=\Delta_0+\zeta^2d^2+
+                  \bar\zeta^2(d^\dagger)^2.
+```
+The family is independent of *every* unit phase exactly when $`d^2=0`$. Its two nonconstant Fourier coefficients are $`d^2`$ and $`(d^\dagger)^2`$; both must vanish for constancy. But the sign pair $`\zeta,-\zeta`$ always gives the same square .
+
+There can be further ambiguities. For
+``` math
+d=\begin{pmatrix}0&1\\2&0\end{pmatrix},\qquad
+ d^2=2I,\qquad \Delta_0=5I,
+```
+one obtains $`B_{e^{i\theta}}^2=(5+4\cos2\theta)I`$. The squares at $`\theta=0`$ and $`\pi/2`$ are $`9I`$ and $`I`$, but $`\theta`$ and $`-\theta`$ give the same square and need not differ by a sign phase. Phase dependence is therefore not unique recovery even modulo sign.
+
+For the graded Maurer–Cartan source the related identity is
+``` math
+d_a=d+[a,-],\qquad d_a^2=[F(a),-],\qquad F(a)=da+a^2,
+```
+with graded brackets . Here the operator curvature is the *action* of $`F`$, not necessarily the element $`F`$ itself. Central curvature can be nonzero while its adjoint action vanishes. Ordinary cohomology is unavailable when $`d_a^2\ne0`$, but nonzero curvature does not forbid it in a representation where that curvature acts trivially. The curved-square correction is also not automatically the residual-Hessian correction of <a href="#thm:residual-hessian" data-reference-type="ref+label" data-reference="thm:residual-hessian">1</a>; relating them requires their common source, pairing and admissible variations.
+
+## Jordan and Lie readouts lose different information
+
+In a finite unital matrix star algebra with positive cyclic trace $`\tau`$, take $`F=F^\dagger`$ and define
+``` math
+C_F(X)=FX+XF,\qquad A_F(X)=FX-XF.
+```
+Together they reconstruct $`FX=(C_FX+A_FX)/2`$ and $`XF=(C_FX-A_FX)/2`$. The Jordan map $`C_F`$ is self-adjoint on the real Hermitian slice. The commutator is a derivation; $`-iA_F`$, not $`A_F`$ itself, maps Hermitian observables to Hermitian observables and generates their unitary conjugation .
+
+For a residual whose second derivative is $`XY+YX`$, the trace identity
+``` math
+\tau\bigl(F(XY+YX)\bigr)=\tau\bigl((FX+XF)Y\bigr)
+```
+identifies the ambient residual-Hessian correction with $`C_F`$ on this real slice. For instance $`F=\operatorname{diag}(2,1)`$ and $`X=E_{12}+E_{21}`$ give $`C_FX=3X`$, $`A_FX=E_{12}-E_{21}`$ and a Jordan quadratic pairing of six. This finite trace model does not automatically supply the graded signs, positive real slice or cyclic pairing of a physical q79 theory. A gauge row, a curved admissible stratum or additional physical residuals can also change its Hessian.
+
+The information loss is exact in $`\mathcal A=\bigoplus_{\alpha=1}^r M_{n_\alpha}(\mathbb C)`$. Write
+``` math
+F=F_0+z,\qquad z=\bigoplus_\alpha\lambda_\alpha I_{n_\alpha},
+ \qquad\lambda_\alpha=\frac{\operatorname{Tr}F_\alpha}{n_\alpha},
+```
+where each block of $`F_0`$ is traceless. The split is orthogonal for a positive weighted block trace. Knowing $`[F,X]`$ for *all* $`X\in\mathcal A`$ determines $`F`$ only modulo this center, whereas $`F=\frac12 C_F(1)`$ recovers it from the complete Jordan map .
+
+This last qualification is essential. A Hessian known only on an admissible tangent space may not include the unit or determine $`C_F(1)`$; restricted commutator observations can likewise leave more ambiguity than the center. Complete ambient readouts cannot be assumed from a few projected rows.
+
+An exact group action permuting isomorphic blocks leaves one invariant real central coordinate per block orbit. For $`M_2\oplus M_2`$, the two center coordinates reduce to one under an imposed block exchange. That counts the remaining *central ambiguity*, not all source parameters. The algebra, symmetry, trace, admissible variations and traceless data remain inputs until selected. A one-dimensional center of $`M_{27}`$ is not a theorem that the physical 27-carrier model has one free constant, or that the unresolved scalar rows are central curvature.
+
+## Admissible geometry comes before physical stability
+
+For an odd self-adjoint finite charge $`Q`$, consider the specific homogeneous cost
+``` math
+F=Q^2,\qquad E(Q)=\tfrac12\left\lVert Q^2 \right\rVert^2,
+ \qquad L_Q(a)=Qa+aQ.
+```
+With a fixed positive trace pairing, $`dE_Q(a)=\langle F,L_Q(a)\rangle`$. If the admissible tangent space $`V`$ contains the radial direction $`Q`$, stationarity would require
+``` math
+0=dE_Q(Q)=2\left\lVert F \right\rVert^2,
+```
+so nonzero curvature cannot be stationary in that radial direction . This is a no-go for this homogeneous cost and variation space, not for every nonlinear defect. Fixing a differential’s principal symbol, a normalization stratum or boundary data may remove the radial variation, but that restriction is source data and must be justified.
+
+On a smooth admissible submanifold $`S`$, tangent restriction of the ambient Hessian alone is insufficient. With $`\mathrm{II}`$ its normal second fundamental form,
+``` math
+\mathop{\mathrm{Hess}}_S(E|_S)(a,b)=\mathop{\mathrm{Hess}}_{\rm amb}E(a,b)
+            +\langle\mathop{\mathrm{grad}}_{\rm amb}E,\mathrm{II}(a,b)\rangle.
+```
+This is the same covariant chain rule as <a href="#thm:residual-hessian" data-reference-type="ref+label" data-reference="thm:residual-hessian">1</a>, now applied to the constrained source geometry. The extra term may remain nonzero at a critical point of $`E|_S`$, because that point need not be ambient-critical.
+
+The finite circle witness takes $`J=\left(\begin{smallmatrix}0&1\\-1&0
+\end{smallmatrix}\right)`$ and
+``` math
+Q_0=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix},\qquad
+ Q_1=\begin{pmatrix}0&J\\-J&0\end{pmatrix}.
+```
+Both are self-adjoint and odd for grading $`\operatorname{diag}(I_2,-I_2)`$; $`Q_0^2=Q_1^2=I_4`$ and $`Q_0Q_1+Q_1Q_0=0`$. Thus $`Q_\theta=\cos\theta Q_0+\sin\theta Q_1`$ has constant square $`I_4`$ and cost two under the ordinary trace. At zero, the ambient Hessian along $`Q_1`$ is eight, while the normal-acceleration term is minus eight. The intrinsic circle Hessian is zero.
+
+The circle therefore carries a protected first-order coordinate, not a damped mode proved by its positive ambient entry. This also does not select its traversal speed, identify it with the physical shared line, or turn its parameter into Lorentzian time. The useful synthesis is a source with an operator, metric, admissible variation geometry and shared representation, from which compatible readouts can follow. None of those source data can be reconstructed merely by renaming their projections.
 
 # Hodge, Green, and kernel shadows
 

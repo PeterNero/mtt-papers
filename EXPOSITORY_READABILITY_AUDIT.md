@@ -33,7 +33,7 @@ Canonical papers audited: **142**.
 | reviewed | critical | `the-modal-triplet-theory-program-a0-a-structural-theory-bebae240` | 46 | 84.3 | 7/7 | - |
 | reviewed | critical | `fixed-points-i-fixed-points-over-multi-bundle-manifolds-725f9fce` | 43 | 69.9 | 7/7 | - |
 | reviewed | moderate | `wave-particle-duality-as-projection-duality-in-modal-tr-785c9af8` | 33 | 392.8 | 7/7 | - |
-| reviewed | low | `cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows` | 19 | 404.5 | 7/7 | - |
+| reviewed | low | `cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows` | 19 | 478.3 | 7/7 | - |
 | reviewed | critical | `the-modal-triplet-theory-program-b1-gravity-as-kinemati-5a71db38` | 19 | 128.5 | 7/7 | - |
 | reviewed | major | `the-modal-triplet-theory-program-b4-encoding-intersecti-633a4113` | 18 | 170.3 | 6/7 | object_intuition |
 | reviewed | major | `the-modal-triplet-theory-program-b5-saturated-and-unifi-b0579f7f` | 18 | 171.2 | 7/7 | - |

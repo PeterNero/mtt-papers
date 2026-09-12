@@ -634,11 +634,11 @@
     {
       "paper_id": "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows",
       "title": "Cohesive Closure Repair and Its Hodge, Kernel, and Projection Shadows: From Nonlinear Defects to Tangent Semigroups, with the Physical-Action Boundary",
-      "total_words": 10471,
-      "narrative_words": 7685,
+      "total_words": 11994,
+      "narrative_words": 9087,
       "formal_results": 19,
       "proofs": 13,
-      "narrative_words_per_result": 404.5,
+      "narrative_words_per_result": 478.3,
       "orientation": true,
       "object_intuition": true,
       "argument_flow": true,
@@ -651,7 +651,7 @@
       "heuristic_priority": "low",
       "review_status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "review_note": "V5 integrates eleven compression/finite-transfer records in context: raw versus inverse-weighted versus homotopy excursions, 36/144/48 carriers, twelve extra harmonic classes, the first-jet quotient, nonminimal higher operations and all-arity source-map naturality. Qualifies the Rees image/fiber distinction without downgrading the exact quotient. Prior residual/action/projector corrections reread and retained. All 31 PDF pages rendered and visually inspected, including page-scale equations and references; zero compile warnings and five new small exact checks pass. No large research reruns or physical-source promotion. No Zenodo authorization.",
+      "review_note": "V6 integrates six charge/curvature/admissible-tangent records with examples: independent lane versus diagonal central characters, nilpotent factorization, curved-square phase ambiguity, complementary Jordan/Lie maps, restricted-readout caveats and exact constrained-circle Hessian cancellation. The prior residual/action/projector and eleven finite-transfer imports are reread and unchanged. All 35 PDF pages rendered and visually inspected, with pages 11 and 13 also checked at page scale; zero compile warnings and six new exact checks pass. No large research reruns or physical-source promotion. No Zenodo authorization.",
       "missing_dimensions": []
     },
     {

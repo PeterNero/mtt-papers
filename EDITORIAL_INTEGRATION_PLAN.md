@@ -2,7 +2,7 @@
 
 Checkpoint: 2026-09-12, after the foundational dependency repair: FP I v7,
 II v6, III v8, IV v7, V v9 and VI v7. The finite-mode companion v1,
-cohesive v5 and SM v4. Fixed Points and the companion remain unchanged.
+cohesive v6 and SM v4. Fixed Points and the companion remain unchanged.
 This is an editorial queue, not a list of unproved research claims.
 No Zenodo upload or publication is authorized.
 
@@ -87,13 +87,22 @@ was rerun. The registry identifies all eleven result IDs and source hashes.
 
 ## Remaining Contextual Review
 
+V6 additionally integrates six charge/curvature/tangent records in section 5.
+These connect the operator architectures with explicit finite examples:
+independent lane centers versus diagonal tensor action, nilpotent factorization,
+curved-square phase non-identifiability, Jordan/Lie information loss, central
+ambiguity and the intrinsic circle Hessian. All earlier reviewed sections are
+unchanged. The 35-page PDF is visually inspected and six new exact checks pass.
+The registry now has 69 reviewed assignments: 67 integrated and two historical.
+This is an editorial advance, not a physical parameter or source promotion.
+
 Counts below come from the current source-bound ownership registry. Review
 source hypotheses, actual paper discussion and the latest superseding result;
 do not infer absence or completion from an identifier search.
 
 | Order | Owner family | Unreviewed | Focus |
 |---|---|---:|---|
-| 1 | Cohesive source | 44 | Next: central charge/curvature and compression. The eleven CBF compression/finite-transfer imports are done; do not repeat them. Keep local/nested transfer and physical geometry distinct. |
+| 1 | Cohesive source | 38 | Next: nested Witten repair, Heisenberg/Nil transfer and restricted nested transfer; then noncentral curved/positive nested and strict-unital extension. Six charge and eleven CBF transfer imports are done. Keep local/nested transfer and physical geometry distinct. |
 | 2 | Flux/q79 | 51 | Read latest correction before earlier source-route claims. Preserve local versus global domains, auxiliary versus physical spectral class, and hidden existence. |
 | 3 | Hull-Strominger | 37 | Common-source realization, moment-map role reduction and current hidden existence without relabeling symbolic formulas as evaluated coefficients. |
 | 4 | Proto-spinor | 29 | Shared-line and representation imports; distinguish finite algebra, graded matter index, first-order operators and the physical endpoint. |
@@ -106,7 +115,7 @@ do not infer absence or completion from an identifier search.
 | 11 | Perturbative QG | 6 | State the established perturbative/conditional scope, not UV-complete gravity. |
 | 12 | Parameters | 2 | No double-counting of shared inputs, profile coordinates and derived outputs. |
 | 13 | Closure strain | 1 | Preserve local carrier/strain and physical-spacetime distinctions. |
-| | Total | 242 | These are not 242 confirmed omissions. |
+| | Total | 236 | These are not 236 confirmed omissions. |
 
 The broad `mathematical_language_atlas` remains unreviewed. It is an evolving
 multi-thousand-line artifact with later appendices, not merely a July status

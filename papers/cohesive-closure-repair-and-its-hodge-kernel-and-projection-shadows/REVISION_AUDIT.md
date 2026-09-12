@@ -1,5 +1,42 @@
 # Cohesive Source Revision Audit
 
+## Version 6 Charge, Curvature and Admissible Geometry
+
+Date: 2026-09-12. Supersedes local v5; no release authorized.
+
+Six frozen preprojection records are integrated in the section "One charge,
+complementary curvature readouts", with explicit examples and scope limits.
+The source records own the finite calculations. This paper explains their
+relation to residual repair, projection and the physical-action boundary.
+
+- The qutrit witness uses independent lane actions with identified centers.
+  The diagonal tensor action instead has trivial central commutator; neither
+  construction alone identifies the physical 27-carrier or shared line.
+- Nilpotence gives a phase-independent Hodge square and commuting reversible,
+  dissipative and harmonic factors. Harmonic circulation requires the supplied
+  skew generator. Grading rotations can make phases unitarily equivalent.
+- Curved squares depend on phase but need not identify it even modulo sign.
+  The explicit two-dimensional example distinguishes variation from recovery.
+- Jordan and Lie readouts reconstruct left/right multiplication on the full
+  algebra. Central curvature is invisible to the full commutator but visible
+  through C_F(1). A restricted physical tangent space may not contain the unit.
+- One invariant central coordinate per block orbit counts only that ambiguity,
+  not the theory's total parameters or a derived Standard Model constant.
+- The radial no-go applies to the specified homogeneous square cost. The
+  constrained-circle example has ambient Hessian eight and normal correction
+  minus eight: its intrinsic Hessian is zero, not positive damping.
+
+The complete v5 diff was checked: previously reviewed substantive sections
+are unchanged. Their source hashes and assessments remain valid in context;
+only the manuscript hash and pagination are renewed. Fixed Points I-VI remain
+untouched. No archived source calculation is rerun or rewritten.
+
+Validation: the final 35-page v6 PDF was rendered and every page visually
+inspected on 2026-09-12, with pages 11 and 13 also checked at page scale.
+Compilation has zero warnings. The six exact checks in
+`scripts/test_cohesive_charge_editorial.py` pass, including the phase
+non-identifiability and intrinsic-circle cancellation examples.
+
 ## Version 5 Compression and Finite Transfer Integration
 
 Date: 2026-09-12. Supersedes local v4; no release authorized.

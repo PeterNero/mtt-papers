@@ -15,10 +15,10 @@
     "cohesive-closure-repair-and-its-hodge-kernel-and-projection-shadows": {
       "status": "reviewed",
       "reviewed_on": "2026-09-12",
-      "note": "V5 integrates eleven compression/finite-transfer records in context: raw versus inverse-weighted versus homotopy excursions, 36/144/48 carriers, twelve extra harmonic classes, the first-jet quotient, nonminimal higher operations and all-arity source-map naturality. Qualifies the Rees image/fiber distinction without downgrading the exact quotient. Prior residual/action/projector corrections reread and retained. All 31 PDF pages rendered and visually inspected, including page-scale equations and references; zero compile warnings and five new small exact checks pass. No large research reruns or physical-source promotion. No Zenodo authorization.",
-      "reviewed_main_tex_sha256": "2575132ba6200ea785ebd15295f5772f756907e6321932dece2f434977f38411",
-      "reviewed_pdf_sha256": "f719a1b1d82c5309f5e00a74fa9661b16b07e5821f9193718bc82983ad108c21",
-      "reviewed_source_tree_sha256": "be7ca8bb075dd69cff05d602a6fb62afa9d860b976752bf54f8a082028bcf954",
+      "note": "V6 integrates six charge/curvature/admissible-tangent records with examples: independent lane versus diagonal central characters, nilpotent factorization, curved-square phase ambiguity, complementary Jordan/Lie maps, restricted-readout caveats and exact constrained-circle Hessian cancellation. The prior residual/action/projector and eleven finite-transfer imports are reread and unchanged. All 35 PDF pages rendered and visually inspected, with pages 11 and 13 also checked at page scale; zero compile warnings and six new exact checks pass. No large research reruns or physical-source promotion. No Zenodo authorization.",
+      "reviewed_main_tex_sha256": "c12b39c3e1b673124b01a3df987b119067ed18af952a8b2dc57fea8f452e5a78",
+      "reviewed_pdf_sha256": "bcb377e155005a1f5aaeeb3d85bfa0ef44bce8fecc0bf82119811519d439df89",
+      "reviewed_source_tree_sha256": "d8066b567edb011b87b4624fe414c90928516268950fb797b4eae45d2e1c41a5",
       "release_authorized": false
     },
     "modal-triplet-theory-from-mtt-to-standard-model-a-rigor-923ad6b1": {
